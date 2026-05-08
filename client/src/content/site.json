@@ -1,0 +1,35 @@
+{
+  "name": "Cicero Grand",
+  "tagline": "Rested. Set. Go.",
+  "shortDescription": "An all-suite stay in Central New York — minutes from Syracuse, Micron, and the airport.",
+  "address": {
+    "street": "5875 Carmenica Drive",
+    "city": "Cicero",
+    "state": "NY",
+    "zip": "13039",
+    "full": "5875 Carmenica Drive, Cicero, NY 13039"
+  },
+  "phone": "(315) 752-0150",
+  "phoneRaw": "+13157520150",
+  "tollFree": "(877) 424-6423",
+  "tollFreeRaw": "+18774246423",
+  "salesPhone": "(315) 715-7410",
+  "salesPhoneRaw": "+13157157410",
+  "email": "sales@sundhm.com",
+  "checkIn": "3:00 PM",
+  "checkOut": "11:00 AM",
+  "bookingUrl": "https://us2.cloudbeds.com/reservation/Uw3WC6",
+  "social": {
+    "facebook": "https://www.facebook.com/ComfortSuitesSyrCicero",
+    "instagram": "",
+    "tripadvisor": "https://www.tripadvisor.com/Hotel_Review-g47472-d1474930-Reviews-Comfort_Suites_Syracuse_Cicero-Cicero_Finger_Lakes_New_York.html"
+  },
+  "highlights": [
+    "All-suite hotel — every room sleeps four",
+    "Free hot breakfast every morning",
+    "Indoor heated pool & 24-hour fitness",
+    "Pet friendly · 100% smoke-free",
+    "Free parking — cars, trucks, buses",
+    "Minutes from Micron & Syracuse Airport"
+  ]
+}

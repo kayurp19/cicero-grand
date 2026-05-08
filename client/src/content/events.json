@@ -1,0 +1,17 @@
+{
+  "intro": "Corporate meetings, conferences, banquets, reunions, holiday parties — flexible spaces, on-site catering, and overnight accommodations all under one roof.",
+  "spaces": [
+    { "name": "The Ballroom", "size": "45ft × 64ft", "classroom": 100, "theater": 220, "banquet": 200, "uShape": 80, "boardroom": 80 },
+    { "name": "Cicero Room", "size": "45ft × 32ft", "classroom": 45, "theater": 110, "banquet": 70, "uShape": 40, "boardroom": 40 },
+    { "name": "Syracuse Room", "size": "45ft × 32ft", "classroom": 45, "theater": 110, "banquet": 70, "uShape": 40, "boardroom": 40 },
+    { "name": "Oasis Room", "size": "20ft × 25ft", "classroom": "—", "theater": 20, "banquet": 20, "uShape": 15, "boardroom": 20 }
+  ],
+  "features": [
+    "On-site catering — breakfast through full plated dinner",
+    "AV available — projectors, screens, mics, podiums",
+    "Free Wi-Fi for every attendee",
+    "Free parking — including bus and truck",
+    "Block of guest rooms at preferred rates",
+    "Dedicated event coordinator from booking through teardown"
+  ]
+}

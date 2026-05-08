@@ -1,0 +1,70 @@
+{
+  "intro": "Off I-81 at Exit 30. Minutes from Syracuse, Micron's chip campus, and Hancock International Airport. Here's what's close.",
+  "groups": [
+    {
+      "title": "Big employers & medical",
+      "items": [
+        { "name": "Micron Chip Campus", "note": "Featured project employer" },
+        { "name": "Syracuse Hancock International Airport" },
+        { "name": "Upstate Medical University" },
+        { "name": "Crouse Hospital" },
+        { "name": "St. Joseph's Hospital" },
+        { "name": "VA Medical Center" }
+      ]
+    },
+    {
+      "title": "Universities",
+      "items": [
+        { "name": "Syracuse University" },
+        { "name": "Le Moyne College" },
+        { "name": "Onondaga Community College" },
+        { "name": "SUNY Oswego" },
+        { "name": "SUNY Cortland" }
+      ]
+    },
+    {
+      "title": "Eat & drink nearby",
+      "items": [
+        { "name": "Cracker Barrel", "note": "0.5 mi" },
+        { "name": "Cooper-Top Tavern", "note": "2.5 mi" },
+        { "name": "Chick-fil-A", "note": "2.5 mi" },
+        { "name": "Hafner's Tavern", "note": "4.6 mi" },
+        { "name": "Panera Bread", "note": "3.9 mi" },
+        { "name": "Dinosaur Bar-B-Que", "note": "10.7 mi · downtown Syracuse" }
+      ]
+    },
+    {
+      "title": "Shop, play, casinos",
+      "items": [
+        { "name": "Destiny USA", "note": "Shopping, dining, entertainment" },
+        { "name": "Finger Lakes Premium Outlets" },
+        { "name": "Turning Stone Resort & Casino" },
+        { "name": "Point Place Casino", "note": "Bridgeport, NY" },
+        { "name": "Yellow Brick Road Casino" },
+        { "name": "Vernon Downs" }
+      ]
+    },
+    {
+      "title": "Sports & entertainment",
+      "items": [
+        { "name": "NBT Bank Stadium", "note": "Syracuse Mets (MiLB)" },
+        { "name": "Cicero Twin Ice Arena" },
+        { "name": "Syracuse Indoor Sports Center (SISC)" },
+        { "name": "EmpowerFCU Amphitheater" },
+        { "name": "Brewerton & Fulton Speedways" },
+        { "name": "NYS Fairgrounds" }
+      ]
+    },
+    {
+      "title": "Outdoors & culture",
+      "items": [
+        { "name": "Oneida Lake & Oneida Shores" },
+        { "name": "Onondaga Lake Park" },
+        { "name": "Green Lakes State Park" },
+        { "name": "Rosamond Gifford Zoo" },
+        { "name": "MOST Museum" },
+        { "name": "Erie Canal Museum" }
+      ]
+    }
+  ]
+}

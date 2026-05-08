@@ -1,0 +1,34 @@
+[
+  {
+    "id": "micron-rate",
+    "badge": "Project rate",
+    "title": "Micron & Project Stay Rate",
+    "description": "Working on the Micron campus or another long-term project nearby? Ask about our weekly project rate — meaningful savings for stays of 7+ nights.",
+    "cta": "Call sales: (315) 715-7410",
+    "ctaHref": "tel:+13157157410"
+  },
+  {
+    "id": "group-coach",
+    "badge": "Groups & coaches",
+    "title": "Motorcoach & Group Package",
+    "description": "One complimentary room per coach, discounted driver rate, on-board greeting, key packets at arrival, and luggage handling at $4 per person round trip. Free coach parking on-site.",
+    "cta": "Request group rates",
+    "ctaHref": "tel:+13157520150"
+  },
+  {
+    "id": "government",
+    "badge": "Per diem",
+    "title": "FEMA & Government Travelers",
+    "description": "FEMA-approved property with per-diem-friendly rates, easy billing, and direct routes to government and military destinations across Central New York.",
+    "cta": "Reserve at per-diem rate",
+    "ctaHref": "tel:+13157520150"
+  },
+  {
+    "id": "weekend-getaway",
+    "badge": "Weekenders",
+    "title": "Central NY Weekend Escape",
+    "description": "King suite with jacuzzi, late check-out, and breakfast for two. Easy access to Destiny USA, Turning Stone, the Finger Lakes — and Oneida Lake five minutes away.",
+    "cta": "Book direct & save",
+    "ctaHref": "https://us2.cloudbeds.com/reservation/Uw3WC6"
+  }
+]
