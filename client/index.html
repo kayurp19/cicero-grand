@@ -17,6 +17,21 @@
     <meta property="og:image" content="/brand/cicero-grand-logo.jpg" />
     <meta property="og:description" content="All-suite stays in Central New York. Free hot breakfast, indoor pool, pet friendly." />
     <meta property="og:type" content="website" />
+    <script>
+      // Strip leftover hash routing from old URLs (e.g. /#/, /#/events).
+      // Migrates browser history entries from hash routing to clean paths.
+      (function () {
+        try {
+          var h = window.location.hash;
+          if (h && h.startsWith('#/')) {
+            var newPath = h.slice(1) || '/';
+            window.history.replaceState(null, '', newPath + window.location.search);
+          } else if (h === '#' || h === '#/') {
+            window.history.replaceState(null, '', window.location.pathname + window.location.search);
+          }
+        } catch (e) {}
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
