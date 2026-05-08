@@ -54,7 +54,7 @@ export default function Weddings() {
                 </a>
               </div>
               <div className="col-span-12 lg:col-span-6 grid grid-cols-2 gap-3">
-                <img src="/photos/venue-ceremony-arch.jpg" alt="Ceremony setup with floral arch" loading="lazy" className="aspect-[3/4] object-cover rounded-3xl" />
+                <img src="/photos/venue-ceremony-arch.jpg" alt="Candlelit aisle detail with white roses and eucalyptus" loading="lazy" className="aspect-[3/4] object-cover rounded-3xl" />
                 <img src="/photos/venue-tablescape.jpg" alt="Reception tablescape detail" loading="lazy" className="aspect-[3/4] object-cover rounded-3xl mt-12" />
               </div>
             </div>

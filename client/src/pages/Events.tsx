@@ -48,7 +48,7 @@ export default function Events() {
               />
               <img
                 src="/photos/venue-foyer-prefunction.jpg"
-                alt="Pre-function foyer outside the ballroom"
+                alt="Coffee break station detail with pastries"
                 loading="lazy"
                 className="aspect-[4/3] object-cover rounded-3xl"
               />
@@ -243,7 +243,7 @@ export default function Events() {
           </div>
           <div className="col-span-12 lg:col-span-7 grid grid-cols-2 gap-3">
             <img src="/photos/venue-tablescape.jpg" alt="Place setting detail" loading="lazy" className="aspect-[4/5] object-cover rounded-3xl" />
-            <img src="/photos/venue-dance-floor.jpg" alt="Dance floor with mood lighting" loading="lazy" className="aspect-[4/5] object-cover rounded-3xl mt-10" />
+            <img src="/photos/venue-dance-floor.jpg" alt="Warm seasonal centerpiece detail with sunflowers and candles" loading="lazy" className="aspect-[4/5] object-cover rounded-3xl mt-10" />
           </div>
         </div>
       </section>
