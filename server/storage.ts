@@ -3,13 +3,36 @@ import type { ContentBlock, ContactSubmission, InsertContact } from "@shared/sch
 import { drizzle } from "drizzle-orm/better-sqlite3";
 import Database from "better-sqlite3";
 import { eq } from "drizzle-orm";
+import fs from "node:fs";
+import path from "node:path";
 
 // Database path. Locally we use ./data.db. In production (Railway) we expect
 // a persistent volume — set DATABASE_PATH=/data/data.db so the database survives
-// redeploys.
-const DB_PATH =
-  process.env.DATABASE_PATH ||
-  (process.env.NODE_ENV === "production" ? "/data/data.db" : "data.db");
+// redeploys. If the configured directory doesn't exist (e.g. volume not yet
+// mounted), fall back to /tmp so the server still boots and the healthcheck
+// passes — data won't persist, but the user can SEE the site and fix the
+// volume after the fact.
+function resolveDbPath(): string {
+  const configured =
+    process.env.DATABASE_PATH ||
+    (process.env.NODE_ENV === "production" ? "/data/data.db" : "data.db");
+  try {
+    const dir = path.dirname(configured);
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir, { recursive: true });
+    }
+    // Test that we can actually write here.
+    fs.accessSync(dir, fs.constants.W_OK);
+    return configured;
+  } catch (err) {
+    console.error(
+      `[storage] cannot use DB path ${configured} (${(err as Error).message}); falling back to /tmp/data.db. Persistence is DISABLED until the volume is mounted correctly.`,
+    );
+    return "/tmp/data.db";
+  }
+}
+const DB_PATH = resolveDbPath();
+console.log(`[storage] using SQLite at ${DB_PATH}`);
 const sqlite = new Database(DB_PATH);
 sqlite.pragma("journal_mode = WAL");
 

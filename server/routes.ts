@@ -17,14 +17,33 @@ const SESSION_SECRET =
 const SALES_EMAIL = process.env.SALES_EMAIL || "sales@sundhm.com";
 
 // Persistent upload directory. Locally we use ./uploads, in production
-// (Railway) we expect a volume mounted at /data/uploads.
-const UPLOAD_DIR =
-  process.env.UPLOAD_DIR ||
-  (process.env.NODE_ENV === "production" ? "/data/uploads" : "uploads");
-
-if (!fs.existsSync(UPLOAD_DIR)) {
-  fs.mkdirSync(UPLOAD_DIR, { recursive: true });
+// (Railway) we expect a volume mounted at /data/uploads. If the configured
+// path can't be created (e.g. volume not yet mounted), fall back to /tmp so
+// the server still boots — uploads will not persist across redeploys until
+// the volume is fixed.
+function resolveUploadDir(): string {
+  const configured =
+    process.env.UPLOAD_DIR ||
+    (process.env.NODE_ENV === "production" ? "/data/uploads" : "uploads");
+  try {
+    if (!fs.existsSync(configured)) {
+      fs.mkdirSync(configured, { recursive: true });
+    }
+    fs.accessSync(configured, fs.constants.W_OK);
+    return configured;
+  } catch (err) {
+    console.error(
+      `[routes] cannot use upload dir ${configured} (${(err as Error).message}); falling back to /tmp/uploads. Uploads will NOT persist until the volume is mounted correctly.`,
+    );
+    const fallback = "/tmp/uploads";
+    if (!fs.existsSync(fallback)) {
+      fs.mkdirSync(fallback, { recursive: true });
+    }
+    return fallback;
+  }
 }
+const UPLOAD_DIR = resolveUploadDir();
+console.log(`[routes] uploads dir: ${UPLOAD_DIR}`);
 
 // ----- Auth helpers (HMAC-signed cookie token, no extra deps) -----
 function signToken(payload: object): string {
