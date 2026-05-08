@@ -1,0 +1,18 @@
+# Nixpacks build config for Railway.
+# Pins Node 22 (LTS) so better-sqlite3 v11 can use prebuilt binaries
+# (it doesn't have Node 24 prebuilts yet). Also installs build tools
+# in case any native module needs to compile from source.
+
+providers = ["node"]
+
+[phases.setup]
+nixPkgs = ["nodejs_22", "npm-9_x", "python3", "gcc", "gnumake", "openssl"]
+
+[phases.install]
+cmds = ["npm ci --include=dev"]
+
+[phases.build]
+cmds = ["npm run build"]
+
+[start]
+cmd = "npm start"
