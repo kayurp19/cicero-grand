@@ -1,25 +1,29 @@
 {
-  "intro": "Off I-81 at Exit 30. Just 6 minutes from Micron's $100B megafab in Clay, plus Syracuse and Hancock International Airport. Here's what's close.",
+  "intro": "Off I-81 at Exit 30. Just 6 minutes from Micron's $100B megafab in Clay, plus Syracuse, Hancock International Airport, Oneida Lake, and dozens of restaurants, parks, and attractions. Here's what's close.",
   "groups": [
     {
       "title": "Big employers & medical",
       "items": [
-        { "name": "Micron Megafab · Clay, NY", "note": "6 minutes · $100B project, ground prep underway 2026" },
-        { "name": "Syracuse Hancock International Airport" },
-        { "name": "Upstate Medical University" },
-        { "name": "Crouse Hospital" },
-        { "name": "St. Joseph's Hospital" },
-        { "name": "VA Medical Center" }
+        { "name": "Micron Megafab — Clay, NY", "note": "6 min" },
+        { "name": "Syracuse Hancock International Airport", "note": "14 min" },
+        { "name": "Upstate Medical University", "note": "15 min" },
+        { "name": "Crouse Hospital", "note": "15 min" },
+        { "name": "St. Joseph's Hospital", "note": "16 min" },
+        { "name": "VA Medical Center", "note": "15 min" },
+        { "name": "Lockheed Martin — Salina", "note": "12 min" },
+        { "name": "JMA Wireless HQ", "note": "16 min" }
       ]
     },
     {
       "title": "Universities",
       "items": [
-        { "name": "Syracuse University" },
-        { "name": "Le Moyne College" },
-        { "name": "Onondaga Community College" },
-        { "name": "SUNY Oswego" },
-        { "name": "SUNY Cortland" }
+        { "name": "Syracuse University", "note": "16 min" },
+        { "name": "Le Moyne College", "note": "15 min" },
+        { "name": "Onondaga Community College", "note": "20 min" },
+        { "name": "SUNY Oswego", "note": "45 min" },
+        { "name": "SUNY Cortland", "note": "55 min" },
+        { "name": "SUNY ESF", "note": "16 min" },
+        { "name": "Cazenovia College", "note": "30 min" }
       ]
     },
     {
@@ -28,42 +32,106 @@
         { "name": "Cracker Barrel", "note": "0.5 mi" },
         { "name": "Cooper-Top Tavern", "note": "2.5 mi" },
         { "name": "Chick-fil-A", "note": "2.5 mi" },
-        { "name": "Hafner's Tavern", "note": "4.6 mi" },
         { "name": "Panera Bread", "note": "3.9 mi" },
-        { "name": "Dinosaur Bar-B-Que", "note": "10.7 mi · downtown Syracuse" }
+        { "name": "Hafner's Tavern", "note": "4.6 mi" },
+        { "name": "Texas Roadhouse", "note": "3.2 mi" },
+        { "name": "Olive Garden", "note": "3.5 mi" },
+        { "name": "Buffalo Wild Wings", "note": "2.8 mi" },
+        { "name": "Dinosaur Bar-B-Que", "note": "10.7 mi · downtown" },
+        { "name": "Funk 'n Waffles", "note": "11 mi · Armory Sq" },
+        { "name": "Pastabilities", "note": "11 mi · Armory Sq" },
+        { "name": "The Mission", "note": "11 mi · downtown" }
       ]
     },
     {
-      "title": "Shop, play, casinos",
+      "title": "Oneida Lake & on the water",
       "items": [
-        { "name": "Destiny USA", "note": "Shopping, dining, entertainment" },
-        { "name": "Finger Lakes Premium Outlets" },
-        { "name": "Turning Stone Resort & Casino" },
-        { "name": "Point Place Casino", "note": "Bridgeport, NY" },
-        { "name": "Yellow Brick Road Casino" },
-        { "name": "Vernon Downs" }
+        { "name": "Oneida Shores Park", "note": "5 min · beach, swimming" },
+        { "name": "Oneida Lake boat launches", "note": "5 min" },
+        { "name": "Oneida Lake fishing charters", "note": "walleye, bass, perch" },
+        { "name": "Oneida Lake Boat Rentals", "note": "Brewerton" },
+        { "name": "Toad Harbor shoreline", "note": "panfish, kid-friendly" },
+        { "name": "Brewerton Marina", "note": "8 min" },
+        { "name": "Erie Canal access", "note": "Sylvan Beach, Brewerton" }
+      ]
+    },
+    {
+      "title": "Shopping & casinos",
+      "items": [
+        { "name": "Destiny USA", "note": "12 min · 2.4M sq ft mall" },
+        { "name": "Finger Lakes Premium Outlets", "note": "35 min" },
+        { "name": "Turning Stone Resort & Casino", "note": "30 min · Verona" },
+        { "name": "Point Place Casino", "note": "12 min · Bridgeport" },
+        { "name": "Yellow Brick Road Casino", "note": "20 min · Chittenango" },
+        { "name": "Vernon Downs Casino & Hotel", "note": "35 min" },
+        { "name": "Olde Wicker Mill", "note": "5 min · gift boutique" }
       ]
     },
     {
       "title": "Sports & entertainment",
       "items": [
-        { "name": "NBT Bank Stadium", "note": "Syracuse Mets (MiLB)" },
-        { "name": "Cicero Twin Ice Arena" },
-        { "name": "Syracuse Indoor Sports Center (SISC)" },
-        { "name": "EmpowerFCU Amphitheater" },
-        { "name": "Brewerton & Fulton Speedways" },
-        { "name": "NYS Fairgrounds" }
+        { "name": "JMA Wireless Dome", "note": "Syracuse Orange football & basketball" },
+        { "name": "NBT Bank Stadium", "note": "Syracuse Mets baseball (MiLB)" },
+        { "name": "Empower FCU Amphitheater", "note": "Outdoor concert venue" },
+        { "name": "The Oncenter", "note": "Conventions, concerts, theater" },
+        { "name": "Landmark Theatre", "note": "Historic Broadway-style venue" },
+        { "name": "Cicero Twin Ice Arena", "note": "5 min · hockey, skating" },
+        { "name": "Syracuse Indoor Sports Center (SISC)", "note": "8 min" },
+        { "name": "Brewerton Speedway", "note": "10 min · dirt track" },
+        { "name": "Fulton Speedway", "note": "30 min · dirt track" },
+        { "name": "NYS Fairgrounds & Expo Center", "note": "15 min" }
       ]
     },
     {
-      "title": "Outdoors & culture",
+      "title": "Outdoors, parks & nature",
       "items": [
-        { "name": "Oneida Lake & Oneida Shores" },
-        { "name": "Onondaga Lake Park" },
-        { "name": "Green Lakes State Park" },
-        { "name": "Rosamond Gifford Zoo" },
-        { "name": "MOST Museum" },
-        { "name": "Erie Canal Museum" }
+        { "name": "Oneida Shores Park", "note": "5 min · beach, picnics" },
+        { "name": "Onondaga Lake Park", "note": "10 min · 7-mi paved path" },
+        { "name": "Green Lakes State Park", "note": "20 min · hiking, beach" },
+        { "name": "Clark Reservation State Park", "note": "20 min · cliffs, glacial lake" },
+        { "name": "Pratt's Falls Park", "note": "30 min · 137-ft waterfall" },
+        { "name": "Chittenango Falls State Park", "note": "30 min · 167-ft waterfall" },
+        { "name": "Cicero Swamp Wildlife Area", "note": "Bird watching, hiking" },
+        { "name": "Highland Forest", "note": "35 min · trails, x-country skiing" },
+        { "name": "Beaver Lake Nature Center", "note": "20 min" }
+      ]
+    },
+    {
+      "title": "Family & rainy-day fun",
+      "items": [
+        { "name": "Rosamond Gifford Zoo", "note": "15 min · Burnet Park" },
+        { "name": "MOST Museum (Science & Tech)", "note": "11 min · Armory Sq" },
+        { "name": "WonderWorks Syracuse", "note": "12 min · Destiny USA" },
+        { "name": "Erie Canal Museum", "note": "11 min · downtown" },
+        { "name": "Sky Zone Trampoline Park", "note": "10 min" },
+        { "name": "Apex Entertainment", "note": "10 min · arcade & bowling" },
+        { "name": "Big Don's Wild River Mini Golf", "note": "Cicero" }
+      ]
+    },
+    {
+      "title": "Golf & seasonal",
+      "items": [
+        { "name": "Drumlins Country Club", "note": "20 min" },
+        { "name": "Radisson Greens", "note": "25 min · public 18-hole" },
+        { "name": "Foxfire Golf Club", "note": "25 min" },
+        { "name": "Timber Banks", "note": "25 min · Robert Trent Jones II" },
+        { "name": "Liverpool Public Golf Course", "note": "12 min" },
+        { "name": "Four Seasons Golf & Ski Center", "note": "25 min · ski + tubing winter" },
+        { "name": "Toggenburg Mountain", "note": "40 min · skiing & snowboarding" }
+      ]
+    },
+    {
+      "title": "Annual events nearby",
+      "items": [
+        { "name": "Great New York State Fair", "note": "Late Aug – Labor Day" },
+        { "name": "Taste of Syracuse", "note": "Early June · Clinton Sq" },
+        { "name": "Syracuse Nationals Car Show", "note": "Mid-July · Fairgrounds" },
+        { "name": "Syracuse Jazz Fest", "note": "Late June" },
+        { "name": "La Festa Italiana", "note": "September · downtown" },
+        { "name": "Syracuse Winterfest", "note": "February · Clinton Sq" },
+        { "name": "Lights on the Lake", "note": "Nov–Jan · Onondaga Lake Park" },
+        { "name": "SU football & basketball season", "note": "Sept–March · JMA Dome" },
+        { "name": "Syracuse Mets season", "note": "April–Sept · NBT Stadium" }
       ]
     }
   ]

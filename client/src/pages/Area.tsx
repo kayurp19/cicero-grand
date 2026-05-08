@@ -21,10 +21,10 @@ export default function Area() {
             <div className="col-span-12 md:col-span-3" />
             <div className="col-span-12 md:col-span-9 grid grid-cols-2 md:grid-cols-4 gap-3">
               {[
-                { label: 'Syracuse Airport', d: '14 min' },
-                { label: 'Micron Campus', d: '20 min' },
-                { label: 'Downtown Syracuse', d: '15 min' },
+                { label: 'Micron Campus', d: '6 min' },
                 { label: 'Oneida Lake', d: '5 min' },
+                { label: 'Syracuse Airport', d: '14 min' },
+                { label: 'Downtown Syracuse', d: '15 min' },
               ].map((p) => (
                 <div key={p.label} className="bg-card border border-card-border rounded-2xl p-5">
                   <div className="text-xs uppercase tracking-[0.16em] text-muted-foreground mb-1">{p.label}</div>
@@ -46,15 +46,15 @@ export default function Area() {
                   </h2>
                 </div>
                 <div className="col-span-12 lg:col-span-8">
-                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3">
+                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-1">
                     {group.items.map((item) => (
                       <li
                         key={item.name}
-                        className="flex items-center justify-between gap-4 py-3 border-b border-border/60 last:border-b-0"
+                        className="flex items-baseline justify-between gap-3 py-3 border-b border-border/60"
                       >
-                        <span className="font-medium text-base">{item.name}</span>
+                        <span className="font-medium text-base leading-tight">{item.name}</span>
                         {item.note && (
-                          <span className="text-sm text-muted-foreground tabular-nums shrink-0">
+                          <span className="text-xs text-muted-foreground tabular-nums shrink-0 text-right">
                             {item.note}
                           </span>
                         )}
