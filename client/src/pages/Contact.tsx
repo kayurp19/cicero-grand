@@ -63,7 +63,6 @@ export default function Contact() {
                       <a href={`tel:${site.phoneRaw}`} className="font-display text-2xl tracking-tight hover:text-primary transition-colors">
                         {site.phone}
                       </a>
-                      <div className="text-sm text-muted-foreground mt-1">Toll free: {site.tollFree}</div>
                     </div>
                   </div>
                 </li>

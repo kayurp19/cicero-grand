@@ -73,12 +73,6 @@ export function SiteForm({
           <Field label="Front desk phone (raw)" hint="With +1 country code, no spaces. Used for click-to-call.">
             <TextInput value={value.phoneRaw} onChange={(v) => update("phoneRaw", v)} />
           </Field>
-          <Field label="Toll-free (display)">
-            <TextInput value={value.tollFree} onChange={(v) => update("tollFree", v)} />
-          </Field>
-          <Field label="Toll-free (raw)">
-            <TextInput value={value.tollFreeRaw} onChange={(v) => update("tollFreeRaw", v)} />
-          </Field>
           <Field label="Sales phone (display)">
             <TextInput value={value.salesPhone} onChange={(v) => update("salesPhone", v)} />
           </Field>

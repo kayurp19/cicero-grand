@@ -9,12 +9,26 @@ import multer from "multer";
 import cookieParser from "cookie-parser";
 import { storage } from "./storage";
 import { insertContactSchema } from "@shared/schema";
+import { Resend } from "resend";
 
 // ----- Config -----
 const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "cicero-admin";
 const SESSION_SECRET =
   process.env.SESSION_SECRET || "change-me-in-production-please-32-chars-min";
-const SALES_EMAIL = process.env.SALES_EMAIL || "sales@sundhm.com";
+const SALES_EMAIL = process.env.SALES_EMAIL || "sales@cicerogrand.com";
+const RESEND_API_KEY = process.env.RESEND_API_KEY || "";
+const RESEND_FROM = process.env.RESEND_FROM || "Cicero Grand <noreply@cicerogrand.com>";
+const resend = RESEND_API_KEY ? new Resend(RESEND_API_KEY) : null;
+
+function escapeHtml(s: string | undefined | null): string {
+  if (!s) return "";
+  return String(s)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
 
 // Persistent upload directory. Locally we use ./uploads, in production
 // (Railway) we expect a volume mounted at /data/uploads. If the configured
@@ -157,11 +171,45 @@ export async function registerRoutes(
         .json({ message: "Invalid form data", errors: parse.error.flatten() });
     }
     const submission = await storage.createContact(parse.data);
-    // Emails would be sent here in production. For now we persist + log so the
-    // owner can see submissions in the admin panel.
     console.log(
       `[contact] new submission #${submission.id} from ${submission.email} (notify ${SALES_EMAIL})`
     );
+
+    // Email notification via Resend (if API key configured)
+    if (resend) {
+      const { name, email, phone, topic, message } = parse.data;
+      const subject = `New Cicero Grand inquiry: ${topic || "General question"} — ${name}`;
+      const html = `
+        <div style="font-family:system-ui,-apple-system,sans-serif;max-width:600px;margin:0 auto;padding:24px;color:#1a1a1a;">
+          <h2 style="font-family:Georgia,serif;font-size:24px;color:#a36b3f;margin:0 0 16px;">New inquiry from cicerogrand.com</h2>
+          <table style="width:100%;border-collapse:collapse;font-size:14px;">
+            <tr><td style="padding:8px 0;width:120px;color:#666;">Topic</td><td style="padding:8px 0;font-weight:600;">${escapeHtml(topic || "General question")}</td></tr>
+            <tr><td style="padding:8px 0;color:#666;">Name</td><td style="padding:8px 0;">${escapeHtml(name)}</td></tr>
+            <tr><td style="padding:8px 0;color:#666;">Email</td><td style="padding:8px 0;"><a href="mailto:${escapeHtml(email)}">${escapeHtml(email)}</a></td></tr>
+            <tr><td style="padding:8px 0;color:#666;">Phone</td><td style="padding:8px 0;">${escapeHtml(phone || "—")}</td></tr>
+          </table>
+          <div style="margin:24px 0 8px;color:#666;font-size:13px;text-transform:uppercase;letter-spacing:0.1em;">Message</div>
+          <div style="padding:16px;background:#f7f5f2;border-left:3px solid #a36b3f;border-radius:4px;white-space:pre-wrap;line-height:1.55;">${escapeHtml(message)}</div>
+          <p style="margin-top:32px;font-size:12px;color:#999;">Submission #${submission.id} · also viewable in the <a href="https://www.cicerogrand.com/admin" style="color:#a36b3f;">admin panel</a>.</p>
+        </div>
+      `;
+      try {
+        await resend.emails.send({
+          from: RESEND_FROM,
+          to: SALES_EMAIL,
+          replyTo: email,
+          subject,
+          html,
+        });
+        console.log(`[contact] email sent to ${SALES_EMAIL} for submission #${submission.id}`);
+      } catch (err) {
+        console.error(`[contact] email send failed for #${submission.id}:`, err);
+        // Don't fail the request — submission is already saved
+      }
+    } else {
+      console.warn(`[contact] RESEND_API_KEY not set — submission #${submission.id} saved but no email sent`);
+    }
+
     return res.json({ ok: true, id: submission.id });
   });
 
