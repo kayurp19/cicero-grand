@@ -1,10 +1,34 @@
 import { PageHero } from '../components/PageHero';
 import { Reveal } from '../components/Reveal';
 import { useContent } from '../lib/content';
+import { useSeo, SITE } from '../hooks/useSeo';
 import areaSeed from '../content/area.json';
 
 export default function Area() {
   const area = useContent<typeof areaSeed>('area');
+
+  useSeo({
+    title: 'Things to Do Near Cicero & Syracuse NY · The Cicero Grand',
+    description:
+      'Stay 6 minutes from the Micron megafab and minutes from Oneida Lake, Destiny USA, Syracuse Hancock Airport, and downtown Syracuse. Drive times, attractions, and dining near The Cicero Grand.',
+    canonicalPath: '/area',
+    ogImage: '/photos/exterior-1.jpg',
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'TouristAttraction',
+      name: 'Cicero & Syracuse, NY — Things to Do',
+      description:
+        'Attractions and drive times near The Cicero Grand: Micron megafab (6 min), Oneida Lake (5 min), Syracuse Hancock Airport (14 min), Downtown Syracuse (15 min).',
+      url: `${SITE.url}/area`,
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Cicero',
+        addressRegion: 'NY',
+        postalCode: '13039',
+        addressCountry: 'US',
+      },
+    },
+  });
 
   return (
     <>

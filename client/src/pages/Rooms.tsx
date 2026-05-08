@@ -2,12 +2,46 @@ import { Check, ArrowUpRight } from 'lucide-react';
 import { PageHero } from '../components/PageHero';
 import { Reveal } from '../components/Reveal';
 import { useContent } from '../lib/content';
+import { useSeo, SITE } from '../hooks/useSeo';
 import roomsSeed from '../content/rooms.json';
 import siteSeed from '../content/site.json';
 
 export default function Rooms() {
   const rooms = useContent<typeof roomsSeed>('rooms');
   const site = useContent<typeof siteSeed>('site');
+
+  useSeo({
+    title: 'All-Suite Rooms · Sleeps 4 · The Cicero Grand Hotel, Syracuse NY',
+    description:
+      'Spacious all-suite rooms near Syracuse, NY — each suite sleeps up to 4 with a separate living area, kitchenette, and free hot breakfast. Book direct for the lowest rate.',
+    canonicalPath: '/rooms',
+    ogImage: '/photos/exterior-entrance.jpg',
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'Hotel',
+      name: SITE.name,
+      url: `${SITE.url}/rooms`,
+      telephone: SITE.phone,
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: SITE.street,
+        addressLocality: SITE.locality,
+        addressRegion: SITE.region,
+        postalCode: SITE.postalCode,
+        addressCountry: SITE.country,
+      },
+      makesOffer: Array.isArray(rooms)
+        ? (rooms as any[]).map((r: any) => ({
+            '@type': 'Offer',
+            name: r.name,
+            description: r.tagline,
+            priceCurrency: 'USD',
+            price: r.startingFrom,
+            url: `${SITE.url}/rooms`,
+          }))
+        : [],
+    },
+  });
 
   return (
     <>

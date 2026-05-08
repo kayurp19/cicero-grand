@@ -3,11 +3,19 @@ import { X } from 'lucide-react';
 import { PageHero } from '../components/PageHero';
 import { Reveal } from '../components/Reveal';
 import { useContent } from '../lib/content';
+import { useSeo } from '../hooks/useSeo';
 import gallerySeed from '../content/gallery.json';
 
 export default function Gallery() {
   const photos = useContent<string[]>('gallery');
   const [open, setOpen] = useState<string | null>(null);
+
+  useSeo({
+    title: 'Photo Gallery · The Cicero Grand Hotel, Cicero NY',
+    description:
+      'Photos of The Cicero Grand: all-suite guest rooms, indoor pool, breakfast, lobby, fitness center, and event spaces near Syracuse, NY.',
+    canonicalPath: '/gallery',
+  });
 
   return (
     <>

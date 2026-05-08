@@ -2,12 +2,20 @@ import { ArrowUpRight } from 'lucide-react';
 import { PageHero } from '../components/PageHero';
 import { Reveal } from '../components/Reveal';
 import { useContent } from '../lib/content';
+import { useSeo } from '../hooks/useSeo';
 import offersSeed from '../content/offers.json';
 import siteSeed from '../content/site.json';
 
 export default function Offers() {
   const offers = useContent<typeof offersSeed>('offers');
   const site = useContent<typeof siteSeed>('site');
+
+  useSeo({
+    title: 'Hotel Deals & Special Offers · The Cicero Grand, Syracuse NY',
+    description:
+      'Current hotel deals near Syracuse, NY: extended-stay rates, project-crew packages, weekend getaways, and AAA discounts at The Cicero Grand. Book direct for the lowest price.',
+    canonicalPath: '/offers',
+  });
 
   return (
     <>

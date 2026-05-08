@@ -2,12 +2,45 @@ import { Check, ChevronDown } from 'lucide-react';
 import { PageHero } from '../components/PageHero';
 import { Reveal } from '../components/Reveal';
 import { useContent } from '../lib/content';
+import { useSeo, SITE } from '../hooks/useSeo';
 import eventsSeed from '../content/events.json';
 import siteSeed from '../content/site.json';
 
 export default function Events() {
   const events = useContent<typeof eventsSeed>('events');
   const site = useContent<typeof siteSeed>('site');
+
+  useSeo({
+    title: 'Banquet Hall & Event Venue in Cicero NY · The Cicero Grand',
+    description:
+      'Host meetings, training sessions, banquets, and corporate events at The Cicero Grand. Flexible event space, on-site catering options, and 75+ guest suites near Syracuse, NY.',
+    canonicalPath: '/events',
+    ogImage: '/photos/exterior-entrance.jpg',
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'EventVenue',
+      name: `${SITE.name} — Events & Meetings`,
+      description:
+        'Banquet hall and meeting space in Cicero, NY. Outside caterers welcome. Hotel suites available for overnight guests.',
+      url: `${SITE.url}/events`,
+      telephone: SITE.salesPhone,
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: SITE.street,
+        addressLocality: SITE.locality,
+        addressRegion: SITE.region,
+        postalCode: SITE.postalCode,
+        addressCountry: SITE.country,
+      },
+      maximumAttendeeCapacity: 250,
+      amenityFeature: [
+        { '@type': 'LocationFeatureSpecification', name: 'Outside Caterers Welcome', value: true },
+        { '@type': 'LocationFeatureSpecification', name: 'On-site Audio/Visual', value: true },
+        { '@type': 'LocationFeatureSpecification', name: 'Free Parking', value: true },
+        { '@type': 'LocationFeatureSpecification', name: 'Hotel Suites On-site', value: true },
+      ],
+    },
+  });
 
   return (
     <>

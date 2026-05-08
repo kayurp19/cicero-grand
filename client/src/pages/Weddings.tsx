@@ -2,12 +2,46 @@ import { Check, Star, ChevronDown } from 'lucide-react';
 import { PageHero } from '../components/PageHero';
 import { Reveal } from '../components/Reveal';
 import { useContent } from '../lib/content';
+import { useSeo, SITE } from '../hooks/useSeo';
 import weddingsSeed from '../content/weddings.json';
 import siteSeed from '../content/site.json';
 
 export default function Weddings() {
   const w = useContent<typeof weddingsSeed>('weddings');
   const site = useContent<typeof siteSeed>('site');
+
+  useSeo({
+    title: 'Syracuse Wedding Venue · Outside Caterers Welcome · The Cicero Grand',
+    description:
+      'Rated 5.0/5.0 on WeddingWire. Host your Syracuse-area wedding at The Cicero Grand — flexible ballroom, outside caterers welcome, on-site suites for the bridal party and out-of-town guests.',
+    canonicalPath: '/weddings',
+    ogImage: '/photos/exterior-entrance.jpg',
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'EventVenue',
+      name: `${SITE.name} — Weddings`,
+      description:
+        'Wedding venue near Syracuse, NY. Outside caterers welcome. On-site hotel suites for bridal party and guests. Rated 5.0/5.0 on WeddingWire.',
+      url: `${SITE.url}/weddings`,
+      telephone: SITE.salesPhone,
+      email: SITE.email,
+      image: `${SITE.url}/photos/exterior-entrance.jpg`,
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: SITE.street,
+        addressLocality: SITE.locality,
+        addressRegion: SITE.region,
+        postalCode: SITE.postalCode,
+        addressCountry: SITE.country,
+      },
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: '5.0',
+        reviewCount: '31',
+        bestRating: '5',
+      },
+    },
+  });
 
   return (
     <>

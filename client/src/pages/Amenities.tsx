@@ -1,12 +1,21 @@
 import { PageHero } from '../components/PageHero';
 import { Reveal } from '../components/Reveal';
 import { useContent } from '../lib/content';
+import { useSeo } from '../hooks/useSeo';
 import amenitiesSeed from '../content/amenities.json';
 import siteSeed from '../content/site.json';
 
 export default function Amenities() {
   const amenities = useContent<typeof amenitiesSeed>('amenities');
   const site = useContent<typeof siteSeed>('site');
+
+  useSeo({
+    title: 'Hotel Amenities · Indoor Pool, Free Breakfast · The Cicero Grand',
+    description:
+      'Indoor heated pool, free hot breakfast, fitness center, free parking, pet friendly, free Wi-Fi, and 24-hour business essentials at The Cicero Grand near Syracuse, NY.',
+    canonicalPath: '/amenities',
+    ogImage: '/photos/pool.jpg',
+  });
 
   return (
     <>

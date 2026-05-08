@@ -3,6 +3,7 @@ import { ArrowUpRight, MapPin, Wifi, Coffee, Waves, Dumbbell, Dog, Car, Sparkles
 import { BookingWidget } from '../components/BookingWidget';
 import { Reveal } from '../components/Reveal';
 import { useContent } from '../lib/content';
+import { useSeo, SITE } from '../hooks/useSeo';
 import siteSeed from '../content/site.json';
 import roomsSeed from '../content/rooms.json';
 import offersSeed from '../content/offers.json';
@@ -28,6 +29,94 @@ export default function Home() {
   const site = useContent<typeof siteSeed>('site');
   const rooms = useContent<typeof roomsSeed>('rooms');
   const offers = useContent<typeof offersSeed>('offers');
+
+  useSeo({
+    title: 'The Cicero Grand · Hotel 6 Minutes from Micron Megafab · Syracuse, NY',
+    description:
+      "All-suite hotel 6 minutes from Micron's New York megafab in Clay. Off I-81 Exit 30. Free hot breakfast, indoor pool, free parking, pet friendly. Built for project crews, vendors, and visiting teams.",
+    canonicalPath: '/',
+    ogImage: '/photos/exterior-entrance.jpg',
+    jsonLd: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Hotel',
+        name: SITE.name,
+        description:
+          'All-suite hotel near Syracuse, NY — 6 minutes from the Micron megafab. Free hot breakfast, indoor pool, pet friendly, free parking.',
+        url: SITE.url,
+        telephone: SITE.phone,
+        email: SITE.email,
+        image: [`${SITE.url}/photos/exterior-entrance.jpg`, `${SITE.url}/photos/pool.jpg`],
+        logo: SITE.logo,
+        priceRange: SITE.priceRange,
+        checkinTime: SITE.checkIn,
+        checkoutTime: SITE.checkOut,
+        starRating: { '@type': 'Rating', ratingValue: '3' },
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: SITE.street,
+          addressLocality: SITE.locality,
+          addressRegion: SITE.region,
+          postalCode: SITE.postalCode,
+          addressCountry: SITE.country,
+        },
+        geo: {
+          '@type': 'GeoCoordinates',
+          latitude: SITE.latitude,
+          longitude: SITE.longitude,
+        },
+        amenityFeature: [
+          { '@type': 'LocationFeatureSpecification', name: 'Free Breakfast', value: true },
+          { '@type': 'LocationFeatureSpecification', name: 'Free Parking', value: true },
+          { '@type': 'LocationFeatureSpecification', name: 'Free WiFi', value: true },
+          { '@type': 'LocationFeatureSpecification', name: 'Indoor Pool', value: true },
+          { '@type': 'LocationFeatureSpecification', name: 'Fitness Center', value: true },
+          { '@type': 'LocationFeatureSpecification', name: 'Pet Friendly', value: true },
+          { '@type': 'LocationFeatureSpecification', name: 'All-Suite Rooms', value: true },
+        ],
+        aggregateRating: {
+          '@type': 'AggregateRating',
+          ratingValue: '5.0',
+          reviewCount: '31',
+          bestRating: '5',
+        },
+        potentialAction: {
+          '@type': 'ReserveAction',
+          target: {
+            '@type': 'EntryPoint',
+            urlTemplate: SITE.bookingUrl,
+            actionPlatform: [
+              'http://schema.org/DesktopWebPlatform',
+              'http://schema.org/MobileWebPlatform',
+            ],
+          },
+        },
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        name: SITE.legalName,
+        url: SITE.url,
+        logo: SITE.logo,
+        contactPoint: [
+          {
+            '@type': 'ContactPoint',
+            telephone: SITE.phone,
+            contactType: 'reservations',
+            areaServed: 'US',
+            availableLanguage: 'English',
+          },
+          {
+            '@type': 'ContactPoint',
+            telephone: SITE.salesPhone,
+            contactType: 'sales',
+            email: SITE.email,
+            areaServed: 'US',
+          },
+        ],
+      },
+    ],
+  });
 
   return (
     <>

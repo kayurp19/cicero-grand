@@ -3,9 +3,16 @@ import { Phone, Mail, MapPin, Clock, Send } from 'lucide-react';
 import { PageHero } from '../components/PageHero';
 import { Reveal } from '../components/Reveal';
 import { useContent } from '../lib/content';
+import { useSeo } from '../hooks/useSeo';
 import siteSeed from '../content/site.json';
 
 export default function Contact() {
+  useSeo({
+    title: 'Contact The Cicero Grand · 5875 Carmenica Dr, Cicero NY',
+    description:
+      'Reach The Cicero Grand: front desk (315) 752-0150, sales (315) 715-7410, sales@cicerogrand.com. 5875 Carmenica Drive, Cicero, NY 13039.',
+    canonicalPath: '/contact',
+  });
   const site = useContent<typeof siteSeed>('site');
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle');
   const [errorMsg, setErrorMsg] = useState<string>('');
