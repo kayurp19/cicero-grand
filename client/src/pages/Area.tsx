@@ -67,6 +67,52 @@ export default function Area() {
           ))}
         </div>
       </section>
+
+      {/* Live events calendar — powered by Visit Syracuse */}
+      <section className="bg-muted/30 py-24 lg:py-32 border-t border-border">
+        <div className="max-w-[1400px] mx-auto px-5 lg:px-10">
+          <Reveal>
+            <div className="grid grid-cols-12 gap-8 lg:gap-12 mb-10">
+              <div className="col-span-12 lg:col-span-5">
+                <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
+                  What's on this week
+                </span>
+                <h2 className="font-display text-[clamp(2rem,4.5vw,3.8rem)] leading-[1] tracking-tight mt-3 text-balance">
+                  Live events <em className="italic font-light">calendar</em>.
+                </h2>
+              </div>
+              <div className="col-span-12 lg:col-span-7 lg:pt-4">
+                <p className="text-base text-muted-foreground max-w-prose">
+                  Concerts, festivals, sports, theater, and family events happening across Syracuse and Onondaga County. Updated daily by Visit Syracuse — plan your stay around what's on.
+                </p>
+                <a
+                  href="https://events.visitsyracuse.com/events/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 mt-4 text-sm font-medium hover:text-primary transition-colors"
+                >
+                  Open full calendar at visitsyracuse.com →
+                </a>
+              </div>
+            </div>
+          </Reveal>
+
+          <Reveal>
+            <div className="rounded-3xl overflow-hidden border border-border bg-background shadow-sm">
+              <iframe
+                src="https://events.visitsyracuse.com/events/"
+                title="Syracuse area events calendar — powered by Visit Syracuse"
+                loading="lazy"
+                className="w-full h-[900px] border-0"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
+            <p className="text-xs text-muted-foreground mt-4 text-center">
+              Calendar courtesy of <a href="https://www.visitsyracuse.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary">Visit Syracuse</a>. Listings are not affiliated with The Cicero Grand.
+            </p>
+          </Reveal>
+        </div>
+      </section>
     </>
   );
 }
