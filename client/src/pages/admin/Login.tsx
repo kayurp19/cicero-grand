@@ -38,7 +38,7 @@ export default function AdminLogin() {
     <div className="min-h-screen bg-background grain flex flex-col">
       <header className="border-b border-border">
         <div className="max-w-[1400px] mx-auto px-5 lg:px-10 h-[72px] flex items-center">
-          <Logo />
+          <Logo variant="dark" />
         </div>
       </header>
 

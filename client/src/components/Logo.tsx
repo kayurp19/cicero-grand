@@ -1,36 +1,38 @@
+import markWhite from '/brand/cicero-grand-mark-white.png';
+import markDark from '/brand/cicero-grand-mark-dark.png';
+
 interface LogoProps {
   className?: string;
   textClassName?: string;
+  /** "light" = white mark + light text (for dark hero/footer); "dark" = dark mark + dark text (for cream surfaces) */
+  variant?: 'light' | 'dark';
+  /** Show the wordmark next to the icon. Default true. */
+  showWordmark?: boolean;
 }
 
-export function Logo({ className = '', textClassName = '' }: LogoProps) {
+export function Logo({
+  className = '',
+  textClassName = '',
+  variant = 'light',
+  showWordmark = true,
+}: LogoProps) {
+  const mark = variant === 'light' ? markWhite : markDark;
   return (
-    <div className={`flex items-center gap-2 ${className}`}>
-      <svg
-        width="28"
-        height="28"
-        viewBox="0 0 32 32"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
+    <div className={`flex items-center gap-2.5 ${className}`}>
+      <img
+        src={mark}
+        alt=""
         aria-hidden="true"
-      >
-        <path
-          d="M16 2 L28 9 L28 23 L16 30 L4 23 L4 9 Z"
-          stroke="currentColor"
-          strokeWidth="1.6"
-          fill="none"
-        />
-        <path
-          d="M11 13 Q16 8 21 13 M11 19 Q16 24 21 19"
-          stroke="currentColor"
-          strokeWidth="1.6"
-          fill="none"
-          strokeLinecap="round"
-        />
-      </svg>
-      <span className={`font-display text-[1.35rem] leading-none tracking-tight ${textClassName}`}>
-        Cicero Grand
-      </span>
+        className="h-9 w-auto select-none"
+        draggable={false}
+      />
+      {showWordmark && (
+        <span
+          className={`font-display text-[1.3rem] leading-none tracking-tight ${textClassName}`}
+        >
+          The Cicero Grand
+        </span>
+      )}
     </div>
   );
 }

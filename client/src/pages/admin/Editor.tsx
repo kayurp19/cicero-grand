@@ -154,7 +154,7 @@ export default function AdminEditor() {
       <header className="border-b border-border bg-background/85 backdrop-blur-xl sticky top-0 z-30">
         <div className="max-w-[1400px] mx-auto px-5 lg:px-10 h-[72px] flex items-center justify-between gap-4">
           <div className="flex items-center gap-5 min-w-0">
-            <Logo />
+            <Logo variant="dark" />
             <Link
               href="/admin/dashboard"
               className="hidden md:inline-flex items-center gap-2 text-sm opacity-70 hover:opacity-100"

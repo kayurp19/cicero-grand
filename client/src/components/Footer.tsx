@@ -67,7 +67,7 @@ export function Footer() {
         </div>
 
         <div className="pt-8 border-t border-background/15 flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-xs text-background/50">
-          <div>© {new Date().getFullYear()} Cicero Grand. All rights reserved.</div>
+          <div>© {new Date().getFullYear()} The Cicero Grand. All rights reserved.</div>
           <div className="flex items-center gap-5">
             <span>Check-in {site.checkIn} · Check-out {site.checkOut}</span>
             {site.social.facebook && (

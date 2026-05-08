@@ -60,7 +60,7 @@ export default function AdminDashboard() {
     <div className="min-h-screen bg-background grain">
       <header className="border-b border-border bg-background/80 backdrop-blur-xl sticky top-0 z-30">
         <div className="max-w-[1400px] mx-auto px-5 lg:px-10 h-[72px] flex items-center justify-between">
-          <Logo />
+          <Logo variant="dark" />
           <div className="flex items-center gap-3">
             <a
               href="/"
