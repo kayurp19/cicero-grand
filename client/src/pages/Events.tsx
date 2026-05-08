@@ -96,6 +96,45 @@ export default function Events() {
         </div>
       </section>
 
+      {/* MAKE IT YOURS — OUTSIDE CATERING CALLOUT */}
+      <section className="bg-foreground text-background py-24 lg:py-32">
+        <div className="max-w-[1400px] mx-auto px-5 lg:px-10">
+          <Reveal>
+            <div className="grid grid-cols-12 gap-8 lg:gap-12 items-start">
+              <div className="col-span-12 lg:col-span-5">
+                <span className="text-xs uppercase tracking-[0.2em] text-background/60 mb-4 inline-flex items-center gap-2">
+                  <span className="w-8 h-px bg-background/40" /> What sets us apart
+                </span>
+                <h2 className="font-display text-[clamp(2rem,4.5vw,3.8rem)] leading-[1] tracking-tight text-balance">
+                  Bring your own <em className="italic font-light">caterer</em>.
+                </h2>
+              </div>
+              <div className="col-span-12 lg:col-span-7">
+                <p className="text-lg leading-relaxed mb-6 max-w-prose text-background/90">
+                  Most hotel banquet venues won't let outside food in the door. We will. Cultural events, religious gatherings, family reunions, ethnic association banquets — bring the caterer that gets your community right.
+                </p>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-base mb-6">
+                  {[
+                    'Cultural & ethnic catering welcome',
+                    'Kosher, halal, vegetarian, vegan',
+                    'Religious & community events',
+                    'Or use our full on-site catering',
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <Check className="w-5 h-5 text-primary mt-0.5 shrink-0" strokeWidth={2.5} />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="text-sm text-background/60 max-w-prose">
+                  Modest catering fee applies for outside caterers. We provide tables, chairs, linens, china, glassware, silverware, and full kitchen access — just bring your menu.
+                </p>
+              </div>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       {/* PACKAGES */}
       <section className="bg-muted/30 py-24 lg:py-32">
         <div className="max-w-[1400px] mx-auto px-5 lg:px-10">

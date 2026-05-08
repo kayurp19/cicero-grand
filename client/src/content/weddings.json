@@ -1,5 +1,5 @@
 {
-  "intro": "Elegant wedding receptions are what we do best. The Ballroom at Cicero Grand seats up to 200 for plated dinner, with a connected pre-function space for cocktail hour, full on-site catering, and a discounted guest-room block — all under one roof.",
+  "intro": "Modern, dressed-up, and approachable. The Ballroom at Cicero Grand seats up to 200 for plated dinner, with a connected pre-function space for cocktail hour, full on-site catering OR bring your own caterer, and a discounted guest-room block — all under one roof.",
   "rating": "5.0 / 5.0",
   "ratingSource": "31 reviews · WeddingWire",
   "ratingUrl": "https://m.weddingwire.com/reviews/the-ballroom-at-the-comfort-suites-cicero-cicero/1e392d133ab87fcb.html",
@@ -20,7 +20,7 @@
     {
       "title": "Cocktail Hour",
       "image": "/photos/venue-cocktail-hour.jpg",
-      "description": "Pre-function foyer with high-tops, draped fabric, and string lights. Passed hors d'oeuvres and signature cocktails."
+      "description": "Adjacent pre-function foyer with linen-draped high-tops, simple florals, and warm lighting. Passed hors d'oeuvres and signature cocktails."
     },
     {
       "title": "Reception",
@@ -124,8 +124,12 @@
       "a": "Yes. Every wedding qualifies for a discounted block of suites at preferred rates, plus a complimentary suite for the couple on their wedding night (with qualifying packages)."
     },
     {
-      "q": "Can we bring our own vendors?",
-      "a": "Outside florists, photographers, DJs, and officiants are welcome. Outside cake is welcome with a cutting and plating fee."
+      "q": "Can we bring our own caterer?",
+      "a": "Yes — and this is one of our biggest differences from most hotel venues. Many ballrooms lock you into their kitchen. We don't. Bring your own caterer (cultural, family, kosher, halal, ethnic specialties — whoever you want) with a modest catering fee. We also offer full on-site catering if you'd rather have it handled."
+    },
+    {
+      "q": "What about other outside vendors?",
+      "a": "Florists, photographers, videographers, DJs, bands, and officiants are all welcome — bring whoever you love working with. Outside cake is welcome with a cutting and plating fee."
     },
     {
       "q": "What about decor and setup?",

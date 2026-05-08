@@ -7,7 +7,7 @@
     { "name": "Oasis Room", "size": "20ft × 25ft", "classroom": "—", "theater": 20, "banquet": 20, "uShape": 15, "boardroom": 20 }
   ],
   "features": [
-    "On-site catering — breakfast through full plated dinner",
+    "On-site catering — or bring your own caterer",
     "AV available — projectors, screens, microphones, podiums",
     "Free Wi-Fi for every attendee",
     "Free parking — including bus and truck",
@@ -191,6 +191,10 @@
     {
       "q": "How far in advance should I book?",
       "a": "Most weekend events book 6–12 months out. Weekday meetings often book 2–6 weeks ahead. Holiday parties: book by early fall."
+    },
+    {
+      "q": "Can we bring our own caterer?",
+      "a": "Yes — and this is one of the biggest things that sets us apart. Most hotel ballrooms lock you into their in-house kitchen. We don't. Cultural, family, kosher, halal, ethnic, or just-your-favorite-restaurant catering — bring whoever you want with a modest catering fee. We also offer full on-site catering if you'd rather have everything handled."
     },
     {
       "q": "Can we bring our own cake or outside dessert?",
