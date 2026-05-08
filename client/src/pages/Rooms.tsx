@@ -14,8 +14,8 @@ export default function Rooms() {
       <PageHero
         eyebrow="The Suites"
         image="/photos/king-jacuzzi.jpg"
-        title={<>Sixty-five suites. <em className="italic font-light">No</em> regular rooms.</>}
-        intro="Every stay at Cicero Grand comes with a separate living area, sofa sleeper, microwave, mini-fridge, pillow-top mattress, and 4K TV. Pick the bed config — we'll handle the rest."
+        title={<>Eight suite types. <em className="italic font-light">No</em> regular rooms.</>}
+        intro="Every stay at Cicero Grand comes with a separate living area, sofa sleeper, microwave, mini-fridge, pillow-top mattress, and 4K TV. Pick the layout — we'll handle the rest."
       />
 
       <section className="bg-background py-24 lg:py-32">
@@ -41,6 +41,12 @@ export default function Rooms() {
                   <span className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
                     <span className="text-primary tabular-nums">{String(i + 1).padStart(2, '0')}</span>
                     Sleeps {room.sleeps} · {room.beds}
+                    {(room as any).startingFrom ? (
+                      <>
+                        <span className="opacity-50">·</span>
+                        <span className="text-foreground font-medium">From ${(room as any).startingFrom}/night</span>
+                      </>
+                    ) : null}
                   </span>
                   <h2 className="font-display text-[clamp(2rem,4.5vw,3.8rem)] leading-[1] tracking-tight mb-5 text-balance">
                     {room.name}

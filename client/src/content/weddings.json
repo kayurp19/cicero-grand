@@ -1,5 +1,5 @@
 {
-  "intro": "Elegant wedding receptions are what we do best at the Ballroom at the Cicero Grand. Flexible space, on-site catering, and a guest-room block — all in one place.",
+  "intro": "Elegant wedding receptions are what we do best. The Ballroom at Cicero Grand seats up to 200 for plated dinner, with a connected pre-function space for cocktail hour, full on-site catering, and a discounted guest-room block — all under one roof.",
   "rating": "5.0 / 5.0",
   "ratingSource": "31 reviews · WeddingWire",
   "ratingUrl": "https://m.weddingwire.com/reviews/the-ballroom-at-the-comfort-suites-cicero-cicero/1e392d133ab87fcb.html",
@@ -10,6 +10,91 @@
     "Discounted guest-room block for your party",
     "Bridal suite available the night of",
     "Dedicated wedding coordinator"
+  ],
+  "dayOfFlow": [
+    {
+      "title": "Ceremony",
+      "image": "/photos/venue-ceremony-arch.jpg",
+      "description": "Host your ceremony on-site. White folding chairs, floral arch, candle-lined aisle. We turn the room before reception."
+    },
+    {
+      "title": "Cocktail Hour",
+      "image": "/photos/venue-cocktail-hour.jpg",
+      "description": "Pre-function foyer with high-tops, draped fabric, and string lights. Passed hors d'oeuvres and signature cocktails."
+    },
+    {
+      "title": "Reception",
+      "image": "/photos/venue-wedding-reception.jpg",
+      "description": "Round banquet tables, gold chiavari chairs, custom centerpieces, plated or buffet dinner with cake service."
+    },
+    {
+      "title": "Dance Floor",
+      "image": "/photos/venue-dance-floor.jpg",
+      "description": "Open dance floor, draped backdrop, warm uplighting. Hosted bar runs through the night, then guests walk upstairs."
+    }
+  ],
+  "packages": [
+    {
+      "name": "Buffet Wedding",
+      "tagline": "Two entrées, two starches, vegetable, salad, rolls, cake service, coffee & tea.",
+      "menu": [
+        "Choose two entrées: Chicken Marsala, Chicken Francaise, Baked Ziti, Pasta Primavera",
+        "Choose two starches: Garlic mashed potatoes, Rice pilaf, Roasted red potatoes",
+        "Choose one vegetable: Seasonal vegetables, Green beans almondine",
+        "Salad, rolls, cake service, coffee & tea"
+      ]
+    },
+    {
+      "name": "Plated Wedding",
+      "tagline": "Choose your entrée — Chicken Francaise to prime rib. Salad, chef's sides, cake service included.",
+      "menu": [
+        "Entrée selections: Chicken Francaise, Chicken Marsala, Ravioli Trio, Roast pork loin, Stuffed haddock, Citrus-herbed salmon, Prime rib",
+        "Salad, chef's starch & vegetable",
+        "Cake service, coffee & tea"
+      ]
+    },
+    {
+      "name": "Hors d'Oeuvres Reception",
+      "tagline": "Cocktail-style reception with displays, flatbreads, passed bites, and a 3-hour bar.",
+      "menu": [
+        "Farmer's market display & cheese display",
+        "Choose two flatbreads: Margherita, Pepperoni, Chicken Alfredo",
+        "Choose three passed hors d'oeuvres: Bourbon meatballs, Chicken skewers, Spinach & cheese pinwheels, Mac & cheese bites",
+        "Includes 3-hour bar, coffee & tea"
+      ]
+    }
+  ],
+  "bridalParty": {
+    "title": "The Morning Of — Bridal Party Add-Ons",
+    "intro": "Use a private suite to get ready, with breakfast brought in for the whole party.",
+    "items": [
+      {
+        "name": "Bridal Brunch",
+        "menu": "Scrambled eggs, bacon, breakfast potatoes, breakfast salad, fresh fruit, rolls, coffee & juice"
+      },
+      {
+        "name": "Breakfast Buffet",
+        "menu": "Scrambled eggs, bacon or sausage, breakfast potatoes, toast & pastries, coffee & juice"
+      },
+      {
+        "name": "Apps & Toast",
+        "menu": "Three passed hors d'oeuvres with optional champagne toast or hosted bar"
+      }
+    ]
+  },
+  "hostedBar": {
+    "title": "Hosted Open Bar",
+    "intro": "Per-person, continuous service. Beer, wine, hard seltzers, and a full liquor selection with mixers. 3, 4, 5, or 6-hour packages available."
+  },
+  "addOns": [
+    "Champagne or prosecco toast",
+    "Signature cocktail",
+    "After-dinner cordials",
+    "Late-night snack station",
+    "Live carving, pasta, taco, or pizza station",
+    "Premium hors d'oeuvres",
+    "Dessert display",
+    "Outside cake cutting & plating"
   ],
   "testimonials": [
     {
@@ -23,6 +108,32 @@
     {
       "quote": "Beautiful ballroom, attentive staff, and our guests loved that they could just walk upstairs at the end of the night.",
       "rating": 5
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can we host the ceremony and reception in the same room?",
+      "a": "Yes. We flip the room from ceremony to reception during cocktail hour — no second venue, no transportation."
+    },
+    {
+      "q": "Is a tasting included?",
+      "a": "Yes. Every plated and buffet wedding package includes a complimentary menu tasting for the couple."
+    },
+    {
+      "q": "Do you offer a guest-room block?",
+      "a": "Yes. Every wedding qualifies for a discounted block of suites at preferred rates, plus a complimentary suite for the couple on their wedding night (with qualifying packages)."
+    },
+    {
+      "q": "Can we bring our own vendors?",
+      "a": "Outside florists, photographers, DJs, and officiants are welcome. Outside cake is welcome with a cutting and plating fee."
+    },
+    {
+      "q": "What about decor and setup?",
+      "a": "Tables, chairs, linens, china, glassware, and silverware are included. We'll set up your centerpieces, place cards, and signage at no extra charge — just drop them off ahead of time."
+    },
+    {
+      "q": "How far in advance should we book?",
+      "a": "Most weddings book 9–18 months ahead. Saturday evenings during peak season (May–October) book first."
     }
   ]
 }

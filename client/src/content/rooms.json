@@ -5,9 +5,10 @@
     "shortName": "King",
     "sleeps": 4,
     "beds": "1 King + Sofa Sleeper",
+    "startingFrom": 106,
     "image": "/photos/king-suite.jpg",
     "imageGallery": ["/photos/king-suite.jpg", "/photos/king-suite-2.jpg"],
-    "tagline": "Our most-booked suite. Pillow-top king, separate living area, sleeps four.",
+    "tagline": "Pillow-top king, separate living area, sofa sleeper. Sleeps four with everything you need for a longer stay.",
     "features": [
       "Pillow-top king bed",
       "Living room with desk & ergonomic chair",
@@ -23,9 +24,10 @@
     "shortName": "Two Queen",
     "sleeps": 6,
     "beds": "2 Queens + Sofa Sleeper",
+    "startingFrom": 111,
     "image": "/photos/two-queen-suite.jpg",
     "imageGallery": ["/photos/two-queen-suite.jpg", "/photos/two-queen-suite-2.jpg", "/photos/two-queen-suite-3.jpg"],
-    "tagline": "Built for families and project teams. Two pillow-top queens plus a sleeper.",
+    "tagline": "Built for families and project teams. Two pillow-top queens plus a sleeper, with a full living area.",
     "features": [
       "Two pillow-top queen beds",
       "Living room with desk & ergonomic chair",
@@ -36,16 +38,56 @@
     ]
   },
   {
-    "id": "king-jacuzzi",
-    "name": "King Suite with Jacuzzi",
-    "shortName": "King + Jacuzzi",
+    "id": "executive-king",
+    "name": "Executive King Suite",
+    "shortName": "Executive King",
+    "sleeps": 6,
+    "beds": "1 King + Sofa Sleeper",
+    "startingFrom": 116,
+    "image": "/photos/king-suite-2.jpg",
+    "imageGallery": ["/photos/king-suite-2.jpg", "/photos/king-suite.jpg"],
+    "tagline": "Our upgraded king layout. Extra room to work and relax, with a pillow-top king and a full sleeper sofa.",
+    "features": [
+      "Pillow-top king bed",
+      "Expanded living area with desk & ergonomic chair",
+      "Sofa sleeper for two more guests",
+      "55\" 4K TV with casting",
+      "Microwave, mini-fridge, coffee maker",
+      "Free high-speed Wi-Fi"
+    ]
+  },
+  {
+    "id": "executive-two-queen",
+    "name": "Executive Two Queen Suite",
+    "shortName": "Executive Two Queen",
+    "sleeps": 6,
+    "beds": "2 Queens + Sofa Sleeper",
+    "startingFrom": 121,
+    "image": "/photos/two-queen-suite-3.jpg",
+    "imageGallery": ["/photos/two-queen-suite-3.jpg", "/photos/two-queen-suite-4.jpg"],
+    "tagline": "Our largest two-queen layout. Two pillow-top queens, a sofa sleeper, and the most spacious living area.",
+    "features": [
+      "Two pillow-top queen beds",
+      "Expanded living area with desk & ergonomic chair",
+      "Sofa sleeper for two more guests",
+      "55\" 4K TV with casting",
+      "Microwave, mini-fridge, coffee maker",
+      "Free high-speed Wi-Fi"
+    ]
+  },
+  {
+    "id": "ada-king-roll-in",
+    "name": "ADA King Suite with Roll-In Shower",
+    "shortName": "ADA King Roll-In",
     "sleeps": 4,
     "beds": "1 King + Sofa Sleeper",
-    "image": "/photos/king-jacuzzi.jpg",
-    "imageGallery": ["/photos/king-jacuzzi.jpg", "/photos/king-jacuzzi-2.jpg"],
-    "tagline": "Our signature suite. Two-person jacuzzi, king bed, room to unwind.",
+    "startingFrom": 106,
+    "image": "/photos/accessible-queen.jpg",
+    "imageGallery": ["/photos/accessible-queen.jpg", "/photos/bathroom.jpg"],
+    "tagline": "Fully accessible king suite with a roll-in shower. Same all-suite comfort, designed for easy access.",
     "features": [
-      "2-person in-room Jacuzzi tub",
+      "ADA accessible features",
+      "Roll-in shower",
       "Pillow-top king bed",
       "Living room with desk & ergonomic chair",
       "Sofa sleeper for two more guests",
@@ -54,21 +96,63 @@
     ]
   },
   {
-    "id": "accessible-queen",
-    "name": "Accessible Two Queen Suite",
-    "shortName": "Accessible",
+    "id": "ada-king",
+    "name": "ADA King Suite",
+    "shortName": "ADA King",
+    "sleeps": 4,
+    "beds": "1 King + Sofa Sleeper",
+    "startingFrom": 106,
+    "image": "/photos/accessible-queen.jpg",
+    "imageGallery": ["/photos/accessible-queen.jpg", "/photos/bathroom-2.jpg"],
+    "tagline": "Accessible king suite with the same separate living area, sleeper sofa, and in-suite kitchenette.",
+    "features": [
+      "ADA accessible features",
+      "Pillow-top king bed",
+      "Living room with desk & ergonomic chair",
+      "Sofa sleeper for two more guests",
+      "55\" 4K TV with casting",
+      "Microwave, mini-fridge, coffee maker",
+      "Free high-speed Wi-Fi"
+    ]
+  },
+  {
+    "id": "ada-two-queen",
+    "name": "ADA Two Queen Suite",
+    "shortName": "ADA Two Queen",
     "sleeps": 6,
     "beds": "2 Queens + Sofa Sleeper",
+    "startingFrom": 106,
     "image": "/photos/accessible-queen.jpg",
-    "imageGallery": ["/photos/accessible-queen.jpg"],
-    "tagline": "ADA-accessible features with the same all-suite comfort.",
+    "imageGallery": ["/photos/accessible-queen.jpg", "/photos/two-queen-suite-2.jpg"],
+    "tagline": "Accessible two-queen layout for families who need extra room and accessibility together.",
     "features": [
       "ADA accessible features",
       "Two pillow-top queen beds",
       "Living room with desk & ergonomic chair",
       "Sofa sleeper for two more guests",
       "55\" 4K TV with casting",
-      "Microwave, mini-fridge, coffee maker"
+      "Microwave, mini-fridge, coffee maker",
+      "Free high-speed Wi-Fi"
+    ]
+  },
+  {
+    "id": "king-jacuzzi",
+    "name": "King Jacuzzi Suite",
+    "shortName": "King + Jacuzzi",
+    "sleeps": 2,
+    "beds": "1 King + Sofa Sleeper",
+    "startingFrom": 306,
+    "image": "/photos/king-jacuzzi.jpg",
+    "imageGallery": ["/photos/king-jacuzzi.jpg", "/photos/king-jacuzzi-2.jpg"],
+    "tagline": "Our signature suite. In-room two-person jacuzzi, pillow-top king, and a full living area to unwind.",
+    "features": [
+      "2-person in-room jacuzzi tub",
+      "Pillow-top king bed",
+      "Living room with desk & ergonomic chair",
+      "Sofa sleeper for two more guests",
+      "55\" 4K TV with casting",
+      "Microwave, mini-fridge, coffee maker",
+      "Free high-speed Wi-Fi"
     ]
   }
 ]

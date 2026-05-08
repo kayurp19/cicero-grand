@@ -1,5 +1,5 @@
 {
-  "intro": "Corporate meetings, conferences, banquets, reunions, holiday parties — flexible spaces, on-site catering, and overnight accommodations all under one roof.",
+  "intro": "Corporate meetings, conferences, banquets, reunions, holiday parties, and showers — flexible spaces, on-site catering, AV, and overnight accommodations all under one roof.",
   "spaces": [
     { "name": "The Ballroom", "size": "45ft × 64ft", "classroom": 100, "theater": 220, "banquet": 200, "uShape": 80, "boardroom": 80 },
     { "name": "Cicero Room", "size": "45ft × 32ft", "classroom": 45, "theater": 110, "banquet": 70, "uShape": 40, "boardroom": 40 },
@@ -8,10 +8,193 @@
   ],
   "features": [
     "On-site catering — breakfast through full plated dinner",
-    "AV available — projectors, screens, mics, podiums",
+    "AV available — projectors, screens, microphones, podiums",
     "Free Wi-Fi for every attendee",
     "Free parking — including bus and truck",
     "Block of guest rooms at preferred rates",
     "Dedicated event coordinator from booking through teardown"
+  ],
+  "packages": [
+    {
+      "category": "Corporate Meetings & Conferences",
+      "image": "/photos/venue-corporate-banquet.jpg",
+      "items": [
+        {
+          "name": "Quick Meeting",
+          "tagline": "Half-day session — soup & salad lunch or wrap buffet, iced tea included.",
+          "menu": [
+            "Executive soup & salad lunch — soup du jour, garden salad, rolls & butter",
+            "OR Wrap & roll buffet — turkey, ham, vegetarian wraps, chips, cookies",
+            "Iced tea"
+          ]
+        },
+        {
+          "name": "Standard Meeting",
+          "tagline": "Hot lunch with two entrées and two starches — iced tea and soda included.",
+          "menu": [
+            "Choose two entrées: Chicken Francaise, Chicken Marsala, BBQ Chicken, Sausage & Peppers, Baked Ziti",
+            "Choose two starches: Garlic mashed potatoes, Rice pilaf, Roasted red potatoes",
+            "Iced tea & soda"
+          ]
+        },
+        {
+          "name": "Full-Day Conference",
+          "tagline": "Breakfast, full lunch, and afternoon break — keep your team fueled all day.",
+          "menu": [
+            "Breakfast: Scrambled eggs, bacon, breakfast potatoes, fresh fruit, coffee & juice",
+            "Lunch: Chicken Francaise, BBQ Chicken, Pasta Primavera, with rice pilaf & roasted red potatoes",
+            "Afternoon break: Cookies, brownies, coffee, tea & water"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Social Events — Showers, Birthdays, Reunions",
+      "image": "/photos/venue-tablescape.jpg",
+      "items": [
+        {
+          "name": "Classic",
+          "tagline": "Two entrées, two starches, vegetable, salad, rolls, dessert, coffee & tea.",
+          "menu": [
+            "Choose two entrées: Chicken Marsala, Chicken Francaise, Sausage & Peppers, Baked Ziti",
+            "Choose two starches: Garlic mashed potatoes, Rice pilaf, Roasted red potatoes",
+            "Choose one vegetable: Seasonal vegetables, Green beans almondine",
+            "Salad, rolls, dessert, coffee & tea included"
+          ]
+        },
+        {
+          "name": "Taste of Italy",
+          "tagline": "Antipasto display, soup du jour, two entrées, two starches, dessert.",
+          "menu": [
+            "Soup du jour & antipasto display",
+            "Choose two entrées: Chicken Marsala, Chicken Francaise, Sausage & Peppers, Baked Ziti",
+            "Choose two starches: Penne marinara, Roasted red potatoes",
+            "Dessert, coffee & tea"
+          ]
+        },
+        {
+          "name": "Premium Social",
+          "tagline": "Two dinner entrées plus a live station — pasta, taco, pizza, or carving.",
+          "menu": [
+            "Choose two dinner entrées: Chicken Francaise, Roast pork loin, Baked Ziti",
+            "Choose one station upgrade: Pasta, Taco, Pizza, or Carving station"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Sports Teams & Group Travel",
+      "image": "/photos/breakfast.jpg",
+      "items": [
+        {
+          "name": "Boxed Meals",
+          "tagline": "Sandwich, chips, cookie, drink — on the bus or in the room.",
+          "menu": [
+            "Choice of turkey, ham, or vegetarian sandwich",
+            "Chips, cookie, soda or water"
+          ]
+        },
+        {
+          "name": "Pizza & Wings",
+          "tagline": "Cheese & pepperoni pizza, chicken wings, salad, soda & water.",
+          "menu": [
+            "Cheese pizza & pepperoni pizza",
+            "Chicken wings",
+            "Garden salad",
+            "Soda & water"
+          ]
+        },
+        {
+          "name": "Taco Bar",
+          "tagline": "Build-your-own taco bar with seasoned beef, chicken, and all the fixings.",
+          "menu": [
+            "Seasoned beef & chicken",
+            "Flour tortillas, rice, beans",
+            "Lettuce, cheese & salsa",
+            "Soda & water"
+          ]
+        }
+      ]
+    }
+  ],
+  "hostedBar": {
+    "title": "All-Inclusive Hosted Open Bar",
+    "intro": "Per-person, continuous service. Includes beer, wine, hard seltzers, vodka, gin, rum, tequila, whiskey, bourbon & scotch with mixers.",
+    "tiers": ["3 hours", "4 hours", "5 hours", "6 hours"]
+  },
+  "addOns": {
+    "title": "Add-Ons & Upgrades",
+    "groups": [
+      {
+        "label": "Menu Upgrades",
+        "items": [
+          "Additional entrée",
+          "Additional side or vegetable",
+          "Pasta station",
+          "Taco station",
+          "Pizza station",
+          "Carving station (with chef attendant)",
+          "Additional or premium hors d'oeuvres",
+          "Dessert display",
+          "Late-night snack station"
+        ]
+      },
+      {
+        "label": "Bar Enhancements",
+        "items": [
+          "Champagne or prosecco toast",
+          "Signature cocktail",
+          "After-dinner cordials",
+          "Additional bar hour"
+        ]
+      },
+      {
+        "label": "Audio Visual",
+        "items": [
+          "Projector & screen",
+          "Microphone",
+          "Basic AV package",
+          "Podium (included with most packages)"
+        ]
+      },
+      {
+        "label": "Service & Logistics",
+        "items": [
+          "Additional servers or bartenders",
+          "Same-day room reset / flip",
+          "Early access or extended room time",
+          "Special dietary or off-menu meals",
+          "Cake cutting & plating",
+          "Outside dessert or vendor coordination",
+          "Decor drop-off & overnight storage"
+        ]
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "How do I get pricing?",
+      "a": "Pricing depends on guest count, package, season, and add-ons. Call or email our sales team and we'll send a custom quote within one business day."
+    },
+    {
+      "q": "What's included in every package?",
+      "a": "Tables, chairs, linens, china, glassware, silverware, setup and teardown, dedicated coordinator, and free Wi-Fi & parking. Service charge and applicable tax are additional."
+    },
+    {
+      "q": "Can you accommodate dietary restrictions?",
+      "a": "Yes — vegetarian, vegan, gluten-free, and allergy-conscious meals are all available. Just give your coordinator a head count for special meals when you submit your final guarantee."
+    },
+    {
+      "q": "Do you offer guest-room blocks?",
+      "a": "Yes. Every event qualifies for a discounted block of suites for your guests. Ask your coordinator about preferred rates and cutoff dates."
+    },
+    {
+      "q": "How far in advance should I book?",
+      "a": "Most weekend events book 6–12 months out. Weekday meetings often book 2–6 weeks ahead. Holiday parties: book by early fall."
+    },
+    {
+      "q": "Can we bring our own cake or outside dessert?",
+      "a": "Yes — outside cakes and desserts are welcome with a small cutting and plating fee."
+    }
   ]
 }
