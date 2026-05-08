@@ -8,11 +8,14 @@ import siteSeed from '../content/site.json';
 export default function Contact() {
   const site = useContent<typeof siteSeed>('site');
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle');
+  const [errorMsg, setErrorMsg] = useState<string>('');
 
   const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus('sending');
-    const fd = new FormData(e.currentTarget);
+    setErrorMsg('');
+    const formEl = e.currentTarget;
+    const fd = new FormData(formEl);
     const payload = Object.fromEntries(fd.entries());
     try {
       const res = await fetch('/api/contact', {
@@ -20,14 +23,17 @@ export default function Contact() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
       });
+      const data = await res.json().catch(() => ({}));
       if (res.ok) {
         setStatus('sent');
-        (e.target as HTMLFormElement).reset();
+        formEl.reset();
       } else {
         setStatus('error');
+        setErrorMsg(data.message || `Server error (${res.status})`);
       }
-    } catch {
+    } catch (err) {
       setStatus('error');
+      setErrorMsg('Network error — check your connection');
     }
   };
 
@@ -186,9 +192,9 @@ export default function Contact() {
                   </label>
                 </div>
                 <div className="mt-7 flex items-center justify-between gap-4 flex-wrap">
-                  <p className="text-xs text-muted-foreground">
-                    {status === 'sent' && '✓ Thanks — we\'ll be in touch shortly.'}
-                    {status === 'error' && 'Something went wrong. Please call us at ' + site.phone}
+                  <p className={`text-xs ${status === 'sent' ? 'text-green-700 dark:text-green-400' : status === 'error' ? 'text-red-700 dark:text-red-400' : 'text-muted-foreground'}`}>
+                    {status === 'sent' && '✓ Thanks — we received your message. We respond within one business day.'}
+                    {status === 'error' && `Could not send: ${errorMsg}. Please call us at ${site.phone} or email ${site.email}.`}
                     {status === 'idle' && 'We respond within one business day.'}
                     {status === 'sending' && 'Sending...'}
                   </p>
