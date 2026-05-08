@@ -1,10 +1,10 @@
 {
-  "intro": "Off I-81 at Exit 30. Minutes from Syracuse, Micron's chip campus, and Hancock International Airport. Here's what's close.",
+  "intro": "Off I-81 at Exit 30. Just 6 minutes from Micron's $100B megafab in Clay, plus Syracuse and Hancock International Airport. Here's what's close.",
   "groups": [
     {
       "title": "Big employers & medical",
       "items": [
-        { "name": "Micron Chip Campus", "note": "Featured project employer" },
+        { "name": "Micron Megafab · Clay, NY", "note": "6 minutes · $100B project, ground prep underway 2026" },
         { "name": "Syracuse Hancock International Airport" },
         { "name": "Upstate Medical University" },
         { "name": "Crouse Hospital" },

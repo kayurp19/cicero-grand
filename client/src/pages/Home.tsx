@@ -14,7 +14,8 @@ const tickerItems = [
   'Pet friendly',
   'Free parking',
   'Off I-81 · Exit 30',
-  'Minutes to Micron',
+  '6 minutes to Micron build',
+  'Crews & vendors welcome',
   'Near Syracuse Airport',
   'Walkable to Oneida Lake',
 ];
@@ -92,7 +93,7 @@ export default function Home() {
             <div className="grid grid-cols-12 gap-6 mt-16">
               <div className="col-span-12 md:col-span-3" />
               <p className="col-span-12 md:col-span-6 text-lg leading-relaxed text-muted-foreground">
-                Off I-81 at Exit 30, the Cicero Grand sits between everything you came for — Syracuse, Micron, the Finger Lakes, the airport, and Oneida Lake. Every room is a suite. Breakfast is hot. Parking is free. The pool is open year-round.
+                Off I-81 at Exit 30, the Cicero Grand sits between everything you came for — just 6 minutes from the Micron megafab in Clay, plus Syracuse, the airport, the Finger Lakes, and Oneida Lake. Every room is a suite. Breakfast is hot. Parking is free. The pool is open year-round.
               </p>
               <Link
                 href="/rooms"
