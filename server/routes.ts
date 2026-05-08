@@ -120,6 +120,12 @@ export async function registerRoutes(
 ): Promise<Server> {
   app.use(cookieParser());
 
+  // Dedicated healthcheck endpoint — always returns 200 if the server is up.
+  // Railway uses this to confirm a new deploy is healthy before swapping traffic.
+  app.get("/api/health", (_req, res) => {
+    res.status(200).json({ status: "ok" });
+  });
+
   // Serve uploaded images
   app.use("/uploads", express.static(UPLOAD_DIR, { maxAge: "7d" }));
 
