@@ -15,7 +15,14 @@ import nodemailer from "nodemailer";
 const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "cicero-admin";
 const SESSION_SECRET =
   process.env.SESSION_SECRET || "change-me-in-production-please-32-chars-min";
+// Comma-separated list supported, e.g. "sales@cicerogrand.com,sales@sundhm.com".
+// Avoids relying on flaky shared-host forwarders (Microsoft 365 silently drops
+// forwards that fail SPF re-check).
 const SALES_EMAIL = process.env.SALES_EMAIL || "sales@cicerogrand.com";
+const SALES_EMAILS: string[] = SALES_EMAIL
+  .split(",")
+  .map((s) => s.trim())
+  .filter(Boolean);
 
 // ----- Email config -----
 // Preferred: Resend HTTPS API (Railway blocks outbound SMTP).
@@ -41,7 +48,7 @@ function usingResendApi(): boolean {
 
 async function sendViaResend(args: {
   from: string;
-  to: string;
+  to: string | string[];
   replyTo?: string;
   subject: string;
   text: string;
@@ -49,7 +56,7 @@ async function sendViaResend(args: {
 }): Promise<any> {
   const payload: any = {
     from: args.from,
-    to: [args.to],
+    to: Array.isArray(args.to) ? args.to : [args.to],
     subject: args.subject,
     text: args.text,
     html: args.html,
@@ -101,7 +108,7 @@ const mailer =
 console.log(
   `[mail] mode=${
     usingResendApi() ? "resend-https" : mailer ? "smtp" : "none"
-  } from="${SMTP_FROM}" to="${SALES_EMAIL}"`
+  } from="${SMTP_FROM}" to="${SALES_EMAILS.join(", ")}"`
 );
 
 function escapeHtml(s: string | undefined | null): string {
@@ -296,11 +303,11 @@ export async function registerRoutes(
 
     if (usingResendApi()) {
       console.log(
-        `[contact] sending #${submission.id} via Resend HTTPS → ${SALES_EMAIL}`
+        `[contact] sending #${submission.id} via Resend HTTPS → ${SALES_EMAILS.join(", ")}`
       );
       sendViaResend({
         from: SMTP_FROM,
-        to: SALES_EMAIL,
+        to: SALES_EMAILS,
         replyTo: email,
         subject,
         text,
@@ -318,12 +325,12 @@ export async function registerRoutes(
         });
     } else if (mailer) {
       console.log(
-        `[contact] sending #${submission.id} via SMTP ${SMTP_HOST}:${SMTP_PORT} → ${SALES_EMAIL}`
+        `[contact] sending #${submission.id} via SMTP ${SMTP_HOST}:${SMTP_PORT} → ${SALES_EMAILS.join(", ")}`
       );
       mailer
         .sendMail({
           from: SMTP_FROM,
-          to: SALES_EMAIL,
+          to: SALES_EMAILS.join(", "),
           replyTo: email,
           subject,
           text,
@@ -368,7 +375,7 @@ export async function registerRoutes(
           mode: "resend-https-api",
           status: r.status,
           from: SMTP_FROM,
-          to: SALES_EMAIL,
+          to: SALES_EMAILS,
           response: json || body.slice(0, 400),
         });
       } catch (err: any) {
@@ -390,7 +397,7 @@ export async function registerRoutes(
         host: SMTP_HOST,
         port: SMTP_PORT,
         from: SMTP_FROM,
-        to: SALES_EMAIL,
+        to: SALES_EMAILS,
       });
     } catch (err: any) {
       return res.json({
