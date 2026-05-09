@@ -17,34 +17,92 @@ const SESSION_SECRET =
   process.env.SESSION_SECRET || "change-me-in-production-please-32-chars-min";
 const SALES_EMAIL = process.env.SALES_EMAIL || "sales@cicerogrand.com";
 
-// SMTP via WebHostingPad mailbox (mail.cicerogrand.com)
+// ----- Email config -----
+// Preferred: Resend HTTPS API (Railway blocks outbound SMTP).
+// Fallback: nodemailer SMTP (works locally, blocked on Railway).
+const RESEND_API_KEY = process.env.RESEND_API_KEY || "";
+const DIAG_KEY = process.env.DIAG_KEY || "";
+
 const SMTP_HOST = process.env.SMTP_HOST || "mail.cicerogrand.com";
 const SMTP_PORT = parseInt(process.env.SMTP_PORT || "587", 10);
-const SMTP_USER = process.env.SMTP_USER || ""; // e.g. sales@cicerogrand.com
+const SMTP_USER = process.env.SMTP_USER || "";
 const SMTP_PASS = process.env.SMTP_PASS || "";
 const SMTP_FROM =
   process.env.SMTP_FROM ||
-  (SMTP_USER ? `Cicero Grand Website <${SMTP_USER}>` : "");
-// Port 465 = implicit TLS (secure: true). Port 587 = STARTTLS (secure: false, requireTLS: true).
+  (RESEND_API_KEY
+    ? "Cicero Grand Website <hello@cicerogrand.com>"
+    : SMTP_USER
+    ? `Cicero Grand Website <${SMTP_USER}>`
+    : "");
+
+function usingResendApi(): boolean {
+  return !!RESEND_API_KEY;
+}
+
+async function sendViaResend(args: {
+  from: string;
+  to: string;
+  replyTo?: string;
+  subject: string;
+  text: string;
+  html: string;
+}): Promise<any> {
+  const payload: any = {
+    from: args.from,
+    to: [args.to],
+    subject: args.subject,
+    text: args.text,
+    html: args.html,
+  };
+  if (args.replyTo) payload.reply_to = args.replyTo;
+
+  const r = await fetch("https://api.resend.com/emails", {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${RESEND_API_KEY}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(payload),
+  });
+  const bodyText = await r.text();
+  let json: any = null;
+  try {
+    json = JSON.parse(bodyText);
+  } catch {}
+  if (!r.ok) {
+    const err: any = new Error(
+      `Resend API ${r.status}: ${(json && json.message) || bodyText.slice(0, 200)}`
+    );
+    err.status = r.status;
+    err.responseBody = json || bodyText;
+    throw err;
+  }
+  return json;
+}
+
+// SMTP fallback (will time out on Railway — kept only for local dev)
 const mailer =
-  SMTP_USER && SMTP_PASS
+  !RESEND_API_KEY && SMTP_USER && SMTP_PASS
     ? nodemailer.createTransport({
         host: SMTP_HOST,
         port: SMTP_PORT,
         secure: SMTP_PORT === 465,
         requireTLS: SMTP_PORT === 587,
         auth: { user: SMTP_USER, pass: SMTP_PASS },
-        // Aggressive timeouts so a hung SMTP server can't tie up the request loop
         connectionTimeout: 8000,
         greetingTimeout: 8000,
         socketTimeout: 10000,
-        // WebHostingPad shared mail servers sometimes serve a generic cert;
-        // tolerate cert/hostname mismatches rather than failing the send.
         tls: { rejectUnauthorized: false },
         logger: process.env.SMTP_DEBUG === "1",
         debug: process.env.SMTP_DEBUG === "1",
       })
     : null;
+
+console.log(
+  `[mail] mode=${
+    usingResendApi() ? "resend-https" : mailer ? "smtp" : "none"
+  } from="${SMTP_FROM}" to="${SALES_EMAIL}"`
+);
 
 function escapeHtml(s: string | undefined | null): string {
   if (!s) return "";
@@ -205,39 +263,62 @@ export async function registerRoutes(
     // Email notification fires in the background; failures are logged but never block the user.
     res.json({ ok: true, id: submission.id });
 
-    if (mailer) {
-      const { name, email, phone, topic, message } = parse.data;
-      const subject = `New Cicero Grand inquiry: ${topic || "General question"} — ${name}`;
-      const text = [
-        `New inquiry from cicerogrand.com`,
-        ``,
-        `Topic:   ${topic || "General question"}`,
-        `Name:    ${name}`,
-        `Email:   ${email}`,
-        `Phone:   ${phone || "—"}`,
-        ``,
-        `Message:`,
-        message,
-        ``,
-        `—`,
-        `Submission #${submission.id} · admin: https://www.cicerogrand.com/admin`,
-      ].join("\n");
-      const html = `
-        <div style="font-family:system-ui,-apple-system,sans-serif;max-width:600px;margin:0 auto;padding:24px;color:#1a1a1a;">
-          <h2 style="font-family:Georgia,serif;font-size:24px;color:#a36b3f;margin:0 0 16px;">New inquiry from cicerogrand.com</h2>
-          <table style="width:100%;border-collapse:collapse;font-size:14px;">
-            <tr><td style="padding:8px 0;width:120px;color:#666;">Topic</td><td style="padding:8px 0;font-weight:600;">${escapeHtml(topic || "General question")}</td></tr>
-            <tr><td style="padding:8px 0;color:#666;">Name</td><td style="padding:8px 0;">${escapeHtml(name)}</td></tr>
-            <tr><td style="padding:8px 0;color:#666;">Email</td><td style="padding:8px 0;"><a href="mailto:${escapeHtml(email)}">${escapeHtml(email)}</a></td></tr>
-            <tr><td style="padding:8px 0;color:#666;">Phone</td><td style="padding:8px 0;">${escapeHtml(phone || "—")}</td></tr>
-          </table>
-          <div style="margin:24px 0 8px;color:#666;font-size:13px;text-transform:uppercase;letter-spacing:0.1em;">Message</div>
-          <div style="padding:16px;background:#f7f5f2;border-left:3px solid #a36b3f;border-radius:4px;white-space:pre-wrap;line-height:1.55;">${escapeHtml(message)}</div>
-          <p style="margin-top:32px;font-size:12px;color:#999;">Submission #${submission.id} · also viewable in the <a href="https://www.cicerogrand.com/admin" style="color:#a36b3f;">admin panel</a>.</p>
-        </div>
-      `;
+    const { name, email, phone, topic, message } = parse.data;
+    const subject = `New Cicero Grand inquiry: ${topic || "General question"} — ${name}`;
+    const text = [
+      `New inquiry from cicerogrand.com`,
+      ``,
+      `Topic:   ${topic || "General question"}`,
+      `Name:    ${name}`,
+      `Email:   ${email}`,
+      `Phone:   ${phone || "—"}`,
+      ``,
+      `Message:`,
+      message,
+      ``,
+      `—`,
+      `Submission #${submission.id} · admin: https://www.cicerogrand.com/admin`,
+    ].join("\n");
+    const html = `
+      <div style="font-family:system-ui,-apple-system,sans-serif;max-width:600px;margin:0 auto;padding:24px;color:#1a1a1a;">
+        <h2 style="font-family:Georgia,serif;font-size:24px;color:#a36b3f;margin:0 0 16px;">New inquiry from cicerogrand.com</h2>
+        <table style="width:100%;border-collapse:collapse;font-size:14px;">
+          <tr><td style="padding:8px 0;width:120px;color:#666;">Topic</td><td style="padding:8px 0;font-weight:600;">${escapeHtml(topic || "General question")}</td></tr>
+          <tr><td style="padding:8px 0;color:#666;">Name</td><td style="padding:8px 0;">${escapeHtml(name)}</td></tr>
+          <tr><td style="padding:8px 0;color:#666;">Email</td><td style="padding:8px 0;"><a href="mailto:${escapeHtml(email)}">${escapeHtml(email)}</a></td></tr>
+          <tr><td style="padding:8px 0;color:#666;">Phone</td><td style="padding:8px 0;">${escapeHtml(phone || "—")}</td></tr>
+        </table>
+        <div style="margin:24px 0 8px;color:#666;font-size:13px;text-transform:uppercase;letter-spacing:0.1em;">Message</div>
+        <div style="padding:16px;background:#f7f5f2;border-left:3px solid #a36b3f;border-radius:4px;white-space:pre-wrap;line-height:1.55;">${escapeHtml(message)}</div>
+        <p style="margin-top:32px;font-size:12px;color:#999;">Submission #${submission.id} · also viewable in the <a href="https://www.cicerogrand.com/admin" style="color:#a36b3f;">admin panel</a>.</p>
+      </div>
+    `;
+
+    if (usingResendApi()) {
       console.log(
-        `[contact] sending email for #${submission.id} via ${SMTP_HOST}:${SMTP_PORT} as ${SMTP_USER} → ${SALES_EMAIL}`
+        `[contact] sending #${submission.id} via Resend HTTPS → ${SALES_EMAIL}`
+      );
+      sendViaResend({
+        from: SMTP_FROM,
+        to: SALES_EMAIL,
+        replyTo: email,
+        subject,
+        text,
+        html,
+      })
+        .then((info: any) => {
+          console.log(
+            `[contact] Resend OK for #${submission.id}: id=${info?.id || "?"}`
+          );
+        })
+        .catch((err: any) => {
+          console.error(
+            `[contact] Resend FAILED for #${submission.id}: status=${err?.status} message=${err?.message} body=${JSON.stringify(err?.responseBody)?.slice(0, 400)}`
+          );
+        });
+    } else if (mailer) {
+      console.log(
+        `[contact] sending #${submission.id} via SMTP ${SMTP_HOST}:${SMTP_PORT} → ${SALES_EMAIL}`
       );
       mailer
         .sendMail({
@@ -250,22 +331,75 @@ export async function registerRoutes(
         })
         .then((info) => {
           console.log(
-            `[contact] email OK for #${submission.id}: messageId=${info.messageId} accepted=${JSON.stringify(
-              info.accepted
-            )} rejected=${JSON.stringify(info.rejected)} response=${info.response}`
+            `[contact] SMTP OK for #${submission.id}: messageId=${info.messageId}`
           );
         })
         .catch((err: any) => {
           console.error(
-            `[contact] email FAILED for #${submission.id}: code=${err?.code} command=${err?.command} response=${err?.response} message=${err?.message}`
+            `[contact] SMTP FAILED for #${submission.id}: code=${err?.code} message=${err?.message}`
           );
         });
     } else {
       console.warn(
-        `[contact] SMTP_USER/SMTP_PASS not set — submission #${submission.id} saved but no email sent`
+        `[contact] no email transport configured — submission #${submission.id} saved but no email sent`
       );
     }
     return;
+  });
+
+  // ----- Email diagnostic -----
+  // Hit GET /api/smtp-verify?key=<DIAG_KEY> to confirm Resend key + domain.
+  app.get("/api/smtp-verify", async (req: Request, res: Response) => {
+    if (!DIAG_KEY || req.query.key !== DIAG_KEY) {
+      return res.status(404).json({ ok: false });
+    }
+    if (usingResendApi()) {
+      try {
+        const r = await fetch("https://api.resend.com/domains", {
+          headers: { Authorization: `Bearer ${RESEND_API_KEY}` },
+        });
+        const body = await r.text();
+        let json: any = null;
+        try {
+          json = JSON.parse(body);
+        } catch {}
+        return res.json({
+          ok: r.ok,
+          mode: "resend-https-api",
+          status: r.status,
+          from: SMTP_FROM,
+          to: SALES_EMAIL,
+          response: json || body.slice(0, 400),
+        });
+      } catch (err: any) {
+        return res.json({
+          ok: false,
+          mode: "resend-https-api",
+          error: err?.message || "unknown",
+        });
+      }
+    }
+    if (!mailer) {
+      return res.json({ ok: false, mode: "none", error: "no transport configured" });
+    }
+    try {
+      const ok = await mailer.verify();
+      return res.json({
+        ok,
+        mode: "smtp",
+        host: SMTP_HOST,
+        port: SMTP_PORT,
+        from: SMTP_FROM,
+        to: SALES_EMAIL,
+      });
+    } catch (err: any) {
+      return res.json({
+        ok: false,
+        mode: "smtp",
+        code: err?.code,
+        message: err?.message,
+      });
+    }
   });
 
   // ----- Admin auth -----
