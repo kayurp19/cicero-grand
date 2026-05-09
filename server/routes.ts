@@ -234,6 +234,18 @@ export async function registerRoutes(
   // Serve uploaded images
   app.use("/uploads", express.static(UPLOAD_DIR, { maxAge: "7d" }));
 
+  // ----- 301 redirects: legacy URLs → Event Center -----
+  // Preserves SEO ranking when consolidating /events + /weddings into /event-center.
+  const legacyRedirects: Record<string, string> = {
+    "/events": "/event-center",
+    "/events/": "/event-center",
+    "/weddings": "/event-center/weddings",
+    "/weddings/": "/event-center/weddings",
+  };
+  for (const [from, to] of Object.entries(legacyRedirects)) {
+    app.get(from, (_req, res) => res.redirect(301, to));
+  }
+
   // ----- Public: read content -----
   app.get("/api/content/:key", async (req, res) => {
     const { key } = req.params;

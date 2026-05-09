@@ -1,10 +1,11 @@
 import { Check, Star, ChevronDown } from 'lucide-react';
-import { PageHero } from '../components/PageHero';
-import { Reveal } from '../components/Reveal';
-import { useContent } from '../lib/content';
-import { useSeo, SITE } from '../hooks/useSeo';
-import weddingsSeed from '../content/weddings.json';
-import siteSeed from '../content/site.json';
+import { Link } from 'wouter';
+import { PageHero } from '../../components/PageHero';
+import { Reveal } from '../../components/Reveal';
+import { useContent } from '../../lib/content';
+import { useSeo, SITE } from '../../hooks/useSeo';
+import weddingsSeed from '../../content/weddings.json';
+import siteSeed from '../../content/site.json';
 
 export default function Weddings() {
   const w = useContent<typeof weddingsSeed>('weddings');
@@ -14,18 +15,18 @@ export default function Weddings() {
     title: 'Syracuse Wedding Venue · Outside Caterers Welcome · The Cicero Grand',
     description:
       'Rated 5.0/5.0 on WeddingWire. Host your Syracuse-area wedding at The Cicero Grand — flexible ballroom, outside caterers welcome, on-site suites for the bridal party and out-of-town guests.',
-    canonicalPath: '/weddings',
-    ogImage: '/photos/exterior-entrance.jpg',
+    canonicalPath: '/event-center/weddings',
+    ogImage: '/photos/venue-ballroom-empty.jpg',
     jsonLd: {
       '@context': 'https://schema.org',
       '@type': 'EventVenue',
       name: `${SITE.name} — Weddings`,
       description:
         'Wedding venue near Syracuse, NY. Outside caterers welcome. On-site hotel suites for bridal party and guests. Rated 5.0/5.0 on WeddingWire.',
-      url: `${SITE.url}/weddings`,
+      url: `${SITE.url}/event-center/weddings`,
       telephone: SITE.salesPhone,
       email: SITE.email,
-      image: `${SITE.url}/photos/exterior-entrance.jpg`,
+      image: `${SITE.url}/photos/venue-ballroom-empty.jpg`,
       address: {
         '@type': 'PostalAddress',
         streetAddress: SITE.street,
@@ -46,11 +47,20 @@ export default function Weddings() {
   return (
     <>
       <PageHero
-        eyebrow="Weddings"
-        image="/photos/venue-wedding-reception.jpg"
+        eyebrow="Event Center · Weddings"
+        image="/photos/venue-ballroom-empty.jpg"
         title={<>Your day. <em className="italic font-light">All</em> in one place.</>}
         intro={w.intro}
       />
+
+      {/* Breadcrumb */}
+      <nav className="bg-background border-b border-border" aria-label="Breadcrumb">
+        <div className="max-w-[1400px] mx-auto px-5 lg:px-10 py-4 flex items-center gap-2 text-sm text-muted-foreground">
+          <Link href="/event-center" className="hover:text-foreground transition-colors">Event Center</Link>
+          <span>/</span>
+          <span className="text-foreground">Weddings</span>
+        </div>
+      </nav>
 
       {/* Hero highlights */}
       <section className="bg-background py-24 lg:py-32">

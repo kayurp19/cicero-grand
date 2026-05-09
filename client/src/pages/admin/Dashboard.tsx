@@ -33,8 +33,8 @@ const SECTIONS: Section[] = [
   { key: "amenities", href: "/admin/edit/amenities", label: "Amenities", icon: Sparkles, desc: "What's included for guests" },
   { key: "area", href: "/admin/edit/area", label: "The area", icon: MapPin, desc: "Nearby points of interest" },
   { key: "offers", href: "/admin/edit/offers", label: "Offers", icon: Tag, desc: "Special rates and packages" },
-  { key: "events", href: "/admin/edit/events", label: "Events", icon: GlassWater, desc: "Meeting & gathering spaces" },
-  { key: "weddings", href: "/admin/edit/weddings", label: "Weddings", icon: CalendarHeart, desc: "Wedding content & testimonials" },
+  { key: "events", href: "/admin/edit/events", label: "Event Center — Meetings & Social", icon: GlassWater, desc: "Spaces, capacities, packages, FAQ" },
+  { key: "weddings", href: "/admin/edit/weddings", label: "Event Center — Weddings", icon: CalendarHeart, desc: "Wedding content & testimonials" },
   { key: "gallery", href: "/admin/edit/gallery", label: "Photo gallery", icon: Images, desc: "Hotel photos" },
 ];
 

@@ -14,8 +14,10 @@ import Home from "@/pages/Home";
 import Rooms from "@/pages/Rooms";
 import Amenities from "@/pages/Amenities";
 import Area from "@/pages/Area";
-import Events from "@/pages/Events";
-import Weddings from "@/pages/Weddings";
+import EventCenter from "@/pages/EventCenter";
+import CorporateMeetings from "@/pages/event-center/CorporateMeetings";
+import SocialEvents from "@/pages/event-center/SocialEvents";
+import Weddings from "@/pages/event-center/Weddings";
 import Offers from "@/pages/Offers";
 import Gallery from "@/pages/Gallery";
 import Contact from "@/pages/Contact";
@@ -74,7 +76,12 @@ function AppRouter() {
         <Route path="/amenities" component={Amenities} />
         <Route path="/area" component={Area} />
         <Route path="/area-guide" component={Area} />
-        <Route path="/events" component={Events} />
+        <Route path="/event-center" component={EventCenter} />
+        <Route path="/event-center/corporate-meetings" component={CorporateMeetings} />
+        <Route path="/event-center/social-events" component={SocialEvents} />
+        <Route path="/event-center/weddings" component={Weddings} />
+        {/* Legacy URL fallbacks — Express handles 301 in prod, these handle SPA dev navigation */}
+        <Route path="/events" component={EventCenter} />
         <Route path="/weddings" component={Weddings} />
         <Route path="/offers" component={Offers} />
         <Route path="/gallery" component={Gallery} />

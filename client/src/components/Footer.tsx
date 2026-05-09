@@ -58,8 +58,10 @@ export function Footer() {
           <div className="md:col-span-2">
             <h3 className="font-display text-xl mb-5">Gather</h3>
             <ul className="space-y-2.5 text-sm text-background/75">
-              <li><Link href="/events" className="hover:text-background">Events</Link></li>
-              <li><Link href="/weddings" className="hover:text-background">Weddings</Link></li>
+              <li><Link href="/event-center" className="hover:text-background">Event Center</Link></li>
+              <li><Link href="/event-center/corporate-meetings" className="hover:text-background">Corporate meetings</Link></li>
+              <li><Link href="/event-center/social-events" className="hover:text-background">Social events & banquets</Link></li>
+              <li><Link href="/event-center/weddings" className="hover:text-background">Weddings</Link></li>
               <li><Link href="/area-guide" className="hover:text-background">Area Guide</Link></li>
               <li><Link href="/contact" className="hover:text-background">Contact</Link></li>
             </ul>
