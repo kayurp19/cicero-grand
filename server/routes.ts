@@ -9,16 +9,33 @@ import multer from "multer";
 import cookieParser from "cookie-parser";
 import { storage } from "./storage";
 import { insertContactSchema } from "@shared/schema";
-import { Resend } from "resend";
+import nodemailer from "nodemailer";
 
 // ----- Config -----
 const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "cicero-admin";
 const SESSION_SECRET =
   process.env.SESSION_SECRET || "change-me-in-production-please-32-chars-min";
 const SALES_EMAIL = process.env.SALES_EMAIL || "sales@cicerogrand.com";
-const RESEND_API_KEY = process.env.RESEND_API_KEY || "";
-const RESEND_FROM = process.env.RESEND_FROM || "Cicero Grand <noreply@cicerogrand.com>";
-const resend = RESEND_API_KEY ? new Resend(RESEND_API_KEY) : null;
+
+// SMTP via WebHostingPad mailbox (mail.cicerogrand.com)
+const SMTP_HOST = process.env.SMTP_HOST || "mail.cicerogrand.com";
+const SMTP_PORT = parseInt(process.env.SMTP_PORT || "587", 10);
+const SMTP_USER = process.env.SMTP_USER || ""; // e.g. sales@cicerogrand.com
+const SMTP_PASS = process.env.SMTP_PASS || "";
+const SMTP_FROM =
+  process.env.SMTP_FROM ||
+  (SMTP_USER ? `Cicero Grand Website <${SMTP_USER}>` : "");
+// Port 465 = implicit TLS (secure: true). Port 587 = STARTTLS (secure: false, requireTLS: true).
+const mailer =
+  SMTP_USER && SMTP_PASS
+    ? nodemailer.createTransport({
+        host: SMTP_HOST,
+        port: SMTP_PORT,
+        secure: SMTP_PORT === 465,
+        requireTLS: SMTP_PORT === 587,
+        auth: { user: SMTP_USER, pass: SMTP_PASS },
+      })
+    : null;
 
 function escapeHtml(s: string | undefined | null): string {
   if (!s) return "";
@@ -175,10 +192,24 @@ export async function registerRoutes(
       `[contact] new submission #${submission.id} from ${submission.email} (notify ${SALES_EMAIL})`
     );
 
-    // Email notification via Resend (if API key configured)
-    if (resend) {
+    // Email notification via SMTP (mail.cicerogrand.com) if credentials configured
+    if (mailer) {
       const { name, email, phone, topic, message } = parse.data;
       const subject = `New Cicero Grand inquiry: ${topic || "General question"} — ${name}`;
+      const text = [
+        `New inquiry from cicerogrand.com`,
+        ``,
+        `Topic:   ${topic || "General question"}`,
+        `Name:    ${name}`,
+        `Email:   ${email}`,
+        `Phone:   ${phone || "—"}`,
+        ``,
+        `Message:`,
+        message,
+        ``,
+        `—`,
+        `Submission #${submission.id} · admin: https://www.cicerogrand.com/admin`,
+      ].join("\n");
       const html = `
         <div style="font-family:system-ui,-apple-system,sans-serif;max-width:600px;margin:0 auto;padding:24px;color:#1a1a1a;">
           <h2 style="font-family:Georgia,serif;font-size:24px;color:#a36b3f;margin:0 0 16px;">New inquiry from cicerogrand.com</h2>
@@ -194,20 +225,23 @@ export async function registerRoutes(
         </div>
       `;
       try {
-        await resend.emails.send({
-          from: RESEND_FROM,
+        await mailer.sendMail({
+          from: SMTP_FROM,
           to: SALES_EMAIL,
           replyTo: email,
           subject,
+          text,
           html,
         });
-        console.log(`[contact] email sent to ${SALES_EMAIL} for submission #${submission.id}`);
+        console.log(`[contact] email sent to ${SALES_EMAIL} via ${SMTP_HOST} for submission #${submission.id}`);
       } catch (err) {
         console.error(`[contact] email send failed for #${submission.id}:`, err);
         // Don't fail the request — submission is already saved
       }
     } else {
-      console.warn(`[contact] RESEND_API_KEY not set — submission #${submission.id} saved but no email sent`);
+      console.warn(
+        `[contact] SMTP_USER/SMTP_PASS not set — submission #${submission.id} saved but no email sent`
+      );
     }
 
     return res.json({ ok: true, id: submission.id });
