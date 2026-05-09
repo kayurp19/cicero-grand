@@ -18,7 +18,7 @@ const SESSION_SECRET =
 const SALES_EMAIL = process.env.SALES_EMAIL || "sales@cicerogrand.com";
 
 // SMTP via WebHostingPad mailbox (mail.cicerogrand.com)
-const SMTP_HOST = process.env.SMTP_HOST || "mail.cicerogrand.com";
+const SMTP_HOST = process.env.SMTP_HOST || "gn404.whpservers.com";
 const SMTP_PORT = parseInt(process.env.SMTP_PORT || "587", 10);
 const SMTP_USER = process.env.SMTP_USER || ""; // e.g. sales@cicerogrand.com
 const SMTP_PASS = process.env.SMTP_PASS || "";
