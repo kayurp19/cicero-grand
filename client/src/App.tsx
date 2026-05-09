@@ -28,6 +28,7 @@ import NotFound from "@/pages/not-found";
 import AdminLogin from "@/pages/admin/Login";
 import AdminDashboard from "@/pages/admin/Dashboard";
 import AdminEditor from "@/pages/admin/Editor";
+import AdminSubmissions from "@/pages/admin/Submissions";
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -58,6 +59,7 @@ function AppRouter() {
       <Switch>
         <Route path="/admin" component={AdminLogin} />
         <Route path="/admin/dashboard" component={AdminDashboard} />
+        <Route path="/admin/submissions" component={AdminSubmissions} />
         <Route path="/admin/edit/:key" component={AdminEditor} />
         <Route component={NotFound} />
       </Switch>

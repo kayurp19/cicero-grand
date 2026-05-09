@@ -2,7 +2,7 @@ import { contentBlocks, contactSubmissions } from "@shared/schema";
 import type { ContentBlock, ContactSubmission, InsertContact } from "@shared/schema";
 import { drizzle } from "drizzle-orm/better-sqlite3";
 import Database from "better-sqlite3";
-import { eq } from "drizzle-orm";
+import { desc, eq } from "drizzle-orm";
 import fs from "node:fs";
 import path from "node:path";
 
@@ -61,6 +61,9 @@ export interface IStorage {
   setContent(key: string, value: string): Promise<ContentBlock>;
   listContentKeys(): Promise<string[]>;
   createContact(data: InsertContact): Promise<ContactSubmission>;
+  listContacts(limit?: number): Promise<ContactSubmission[]>;
+  getContact(id: number): Promise<ContactSubmission | undefined>;
+  deleteContact(id: number): Promise<void>;
 }
 
 export class DatabaseStorage implements IStorage {
@@ -92,11 +95,40 @@ export class DatabaseStorage implements IStorage {
   }
 
   async createContact(data: InsertContact): Promise<ContactSubmission> {
+    // Public form posts `topic`; underlying DB column is `subject` (legacy).
     return db
       .insert(contactSubmissions)
-      .values({ ...data, createdAt: Date.now() })
+      .values({
+        name: data.name,
+        email: data.email,
+        phone: data.phone,
+        subject: data.topic,
+        message: data.message,
+        createdAt: Date.now(),
+      })
       .returning()
       .get();
+  }
+
+  async listContacts(limit = 200): Promise<ContactSubmission[]> {
+    return db
+      .select()
+      .from(contactSubmissions)
+      .orderBy(desc(contactSubmissions.createdAt))
+      .limit(limit)
+      .all();
+  }
+
+  async getContact(id: number): Promise<ContactSubmission | undefined> {
+    return db
+      .select()
+      .from(contactSubmissions)
+      .where(eq(contactSubmissions.id, id))
+      .get();
+  }
+
+  async deleteContact(id: number): Promise<void> {
+    db.delete(contactSubmissions).where(eq(contactSubmissions.id, id)).run();
   }
 }
 

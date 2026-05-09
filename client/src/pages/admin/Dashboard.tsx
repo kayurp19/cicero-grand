@@ -10,21 +10,32 @@ import {
   CalendarHeart,
   GlassWater,
   Images,
+  Inbox,
   LogOut,
   ExternalLink,
 } from "lucide-react";
 import { Logo } from "@/components/Logo";
 import { apiRequest } from "@/lib/queryClient";
 
-const SECTIONS = [
-  { key: "site", label: "Site & contact info", icon: Building2, desc: "Phones, address, taglines, social" },
-  { key: "rooms", label: "Suites", icon: BedDouble, desc: "Room types, photos, features" },
-  { key: "amenities", label: "Amenities", icon: Sparkles, desc: "What's included for guests" },
-  { key: "area", label: "The area", icon: MapPin, desc: "Nearby points of interest" },
-  { key: "offers", label: "Offers", icon: Tag, desc: "Special rates and packages" },
-  { key: "events", label: "Events", icon: GlassWater, desc: "Meeting & gathering spaces" },
-  { key: "weddings", label: "Weddings", icon: CalendarHeart, desc: "Wedding content & testimonials" },
-  { key: "gallery", label: "Photo gallery", icon: Images, desc: "Hotel photos" },
+type Section = {
+  key: string;
+  href: string;
+  label: string;
+  icon: typeof Building2;
+  desc: string;
+  highlight?: boolean;
+};
+
+const SECTIONS: Section[] = [
+  { key: "submissions", href: "/admin/submissions", label: "Form submissions", icon: Inbox, desc: "Inquiries from the website Contact form", highlight: true },
+  { key: "site", href: "/admin/edit/site", label: "Site & contact info", icon: Building2, desc: "Phones, address, taglines, social" },
+  { key: "rooms", href: "/admin/edit/rooms", label: "Suites", icon: BedDouble, desc: "Room types, photos, features" },
+  { key: "amenities", href: "/admin/edit/amenities", label: "Amenities", icon: Sparkles, desc: "What's included for guests" },
+  { key: "area", href: "/admin/edit/area", label: "The area", icon: MapPin, desc: "Nearby points of interest" },
+  { key: "offers", href: "/admin/edit/offers", label: "Offers", icon: Tag, desc: "Special rates and packages" },
+  { key: "events", href: "/admin/edit/events", label: "Events", icon: GlassWater, desc: "Meeting & gathering spaces" },
+  { key: "weddings", href: "/admin/edit/weddings", label: "Weddings", icon: CalendarHeart, desc: "Wedding content & testimonials" },
+  { key: "gallery", href: "/admin/edit/gallery", label: "Photo gallery", icon: Images, desc: "Hotel photos" },
 ];
 
 export default function AdminDashboard() {
@@ -101,9 +112,13 @@ export default function AdminDashboard() {
             return (
               <Link
                 key={s.key}
-                href={`/admin/edit/${s.key}`}
+                href={s.href}
                 data-testid={`card-edit-${s.key}`}
-                className="group relative bg-card border border-card-border rounded-2xl p-7 hover:border-primary/50 hover:shadow-md transition-all"
+                className={`group relative bg-card border rounded-2xl p-7 hover:shadow-md transition-all ${
+                  s.highlight
+                    ? "border-primary/40 hover:border-primary md:col-span-2"
+                    : "border-card-border hover:border-primary/50"
+                }`}
               >
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex items-center gap-4">

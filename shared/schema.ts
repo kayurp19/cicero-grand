@@ -11,6 +11,9 @@ export const contentBlocks = sqliteTable("content_blocks", {
   updatedAt: integer("updated_at").notNull(),
 });
 
+// NOTE: the underlying SQLite column is still `subject` (legacy), but the
+// public/form-facing field name is `topic`. The route handler maps topic↔subject
+// so old DB rows continue to work and new submissions store the topic dropdown.
 export const contactSubmissions = sqliteTable("contact_submissions", {
   id: integer("id").primaryKey({ autoIncrement: true }),
   name: text("name").notNull(),
@@ -21,9 +24,14 @@ export const contactSubmissions = sqliteTable("contact_submissions", {
   createdAt: integer("created_at").notNull(),
 });
 
-export const insertContactSchema = createInsertSchema(contactSubmissions).omit({
-  id: true,
-  createdAt: true,
+// Public form schema — accepts `topic` from the contact form, which the
+// server then maps to the `subject` column when persisting.
+export const insertContactSchema = z.object({
+  name: z.string().min(1).max(200),
+  email: z.string().email().max(200),
+  phone: z.string().max(40).optional().nullable().transform((v) => v || undefined),
+  topic: z.string().max(120).optional().nullable().transform((v) => v || undefined),
+  message: z.string().min(1).max(8000),
 });
 
 export type InsertContact = z.infer<typeof insertContactSchema>;

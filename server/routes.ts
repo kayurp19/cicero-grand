@@ -296,6 +296,46 @@ export async function registerRoutes(
     return res.json({ authenticated: ok });
   });
 
+  // ----- Admin: list/view/delete contact submissions -----
+  app.get("/api/admin/submissions", requireAdmin, async (_req, res) => {
+    const items = await storage.listContacts(500);
+    // Map DB column `subject` back to public name `topic` so the admin UI
+    // matches what users actually selected on the form.
+    const mapped = items.map((s) => ({
+      id: s.id,
+      name: s.name,
+      email: s.email,
+      phone: s.phone,
+      topic: s.subject,
+      message: s.message,
+      createdAt: s.createdAt,
+    }));
+    return res.json({ items: mapped });
+  });
+
+  app.get("/api/admin/submissions/:id", requireAdmin, async (req, res) => {
+    const id = parseInt(req.params.id, 10);
+    if (!Number.isFinite(id)) return res.status(400).json({ message: "Bad id" });
+    const item = await storage.getContact(id);
+    if (!item) return res.status(404).json({ message: "Not found" });
+    return res.json({
+      id: item.id,
+      name: item.name,
+      email: item.email,
+      phone: item.phone,
+      topic: item.subject,
+      message: item.message,
+      createdAt: item.createdAt,
+    });
+  });
+
+  app.delete("/api/admin/submissions/:id", requireAdmin, async (req, res) => {
+    const id = parseInt(req.params.id, 10);
+    if (!Number.isFinite(id)) return res.status(400).json({ message: "Bad id" });
+    await storage.deleteContact(id);
+    return res.json({ ok: true });
+  });
+
   // ----- Admin: write content -----
   app.put("/api/admin/content/:key", requireAdmin, async (req, res) => {
     const { key } = req.params;
