@@ -14,7 +14,7 @@ const tickerItems = [
   'Indoor heated pool',
   'Pet friendly',
   'Free parking',
-  'Off I-81 · Exit 30',
+  'Off I-81 · Exit 98',
   '6 minutes to Micron build',
   'Crews & vendors welcome',
   'Near Syracuse Airport',
@@ -33,7 +33,7 @@ export default function Home() {
   useSeo({
     title: 'The Cicero Grand · Hotel 6 Minutes from Micron Megafab · Syracuse, NY',
     description:
-      "All-suite hotel 6 minutes from Micron's New York megafab in Clay. Off I-81 Exit 30. Free hot breakfast, indoor pool, free parking, pet friendly. Built for project crews, vendors, and visiting teams.",
+      "All-suite hotel 6 minutes from Micron's New York megafab in Clay. Off I-81 Exit 98. Free hot breakfast, indoor pool, free parking, pet friendly. Built for project crews, vendors, and visiting teams.",
     canonicalPath: '/',
     ogImage: '/photos/exterior-entrance.jpg',
     jsonLd: [
@@ -182,7 +182,7 @@ export default function Home() {
             <div className="grid grid-cols-12 gap-6 mt-16">
               <div className="col-span-12 md:col-span-3" />
               <p className="col-span-12 md:col-span-6 text-lg leading-relaxed text-muted-foreground">
-                Off I-81 at Exit 30, the Cicero Grand sits between everything you came for — just 6 minutes from the Micron megafab in Clay, plus Syracuse, the airport, the Finger Lakes, and Oneida Lake. Every room is a suite. Breakfast is hot. Parking is free. The pool is open year-round.
+                Off I-81 at Exit 98, the Cicero Grand sits between everything you came for — just 6 minutes from the Micron megafab in Clay, plus Syracuse, the airport, the Finger Lakes, and Oneida Lake. Every room is a suite. Breakfast is hot. Parking is free. The pool is open year-round.
               </p>
               <Link
                 href="/rooms"
@@ -296,7 +296,7 @@ export default function Home() {
               { icon: 'Car', title: 'Free parking', sub: 'Cars, trucks, coaches' },
               { icon: 'Dog', title: 'Pet friendly', sub: 'Bring the whole family' },
               { icon: 'Sparkles', title: '100% smoke-free', sub: 'Inside and out' },
-              { icon: 'MapPin', title: 'I-81 · Exit 30', sub: 'Minutes from anywhere' },
+              { icon: 'MapPin', title: 'I-81 · Exit 98', sub: 'Minutes from anywhere' },
             ].map((a, i) => {
               const Icon = ((ICONS as any)[a.icon] || MapPin) as typeof MapPin;
               return (
@@ -336,7 +336,7 @@ export default function Home() {
                 Central NY's <em className="italic font-light">middle</em> of everywhere.
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-md">
-                Off I-81 at Exit 30. Five minutes to Oneida Lake. Twelve to downtown Syracuse. Twenty to the airport. Right next door to Micron's growing chip campus.
+                Off I-81 at Exit 98. Five minutes to Oneida Lake. Twelve to downtown Syracuse. Twenty to the airport. Right next door to Micron's growing chip campus.
               </p>
               <Link
                 href="/area"

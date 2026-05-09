@@ -69,7 +69,7 @@ export default function Area() {
     <>
       <PageHero
         eyebrow="Area Guide"
-        image="/photos/exterior-1.jpg"
+        image="/photos/area/onondaga-lake.jpg"
         title={
           <>
             The middle <em className="italic font-light">of</em> everywhere.
@@ -77,6 +77,66 @@ export default function Area() {
         }
         intro={area.intro}
       />
+
+      {/* Featured attractions — photo grid */}
+      {area.featured && area.featured.length > 0 && (
+        <section className="bg-background pt-20 lg:pt-28">
+          <div className="max-w-[1400px] mx-auto px-5 lg:px-10">
+            <Reveal>
+              <div className="grid grid-cols-12 gap-6 mb-10">
+                <div className="col-span-12 md:col-span-5">
+                  <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
+                    Within fifteen minutes
+                  </span>
+                  <h2 className="font-display text-[clamp(2rem,4vw,3.4rem)] leading-[1] tracking-tight mt-3 text-balance">
+                    Why people come <em className="italic font-light">to Syracuse</em>.
+                  </h2>
+                </div>
+                <div className="col-span-12 md:col-span-7 md:pt-3">
+                  <p className="text-base text-muted-foreground max-w-prose">
+                    Twelve headline stops — every one a short drive from our front door at I-81 Exit 98. From the Micron megafab seven minutes north, to the Dome and Destiny USA south on the highway.
+                  </p>
+                </div>
+              </div>
+            </Reveal>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
+              {(area.featured as any[]).map((f, i) => (
+                <Reveal key={f.name} delay={i * 40}>
+                  <article className="group relative aspect-[4/5] rounded-2xl overflow-hidden bg-muted">
+                    <img
+                      src={f.image}
+                      alt={f.name}
+                      loading="lazy"
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
+                    <div className="absolute top-4 right-4">
+                      <span className="inline-flex items-center px-2.5 h-7 rounded-full bg-background/90 text-foreground text-xs font-medium tabular-nums">
+                        {f.drive}
+                      </span>
+                    </div>
+                    <div className="absolute inset-x-0 bottom-0 p-6 text-white">
+                      <h3 className="font-display text-2xl leading-tight tracking-tight text-balance">
+                        {f.name}
+                      </h3>
+                      {f.blurb && (
+                        <p className="mt-2 text-sm text-white/85 leading-snug max-w-[36ch]">
+                          {f.blurb}
+                        </p>
+                      )}
+                      {f.address && (
+                        <p className="mt-2 text-[11px] uppercase tracking-[0.14em] text-white/60">
+                          {f.address}
+                        </p>
+                      )}
+                    </div>
+                  </article>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Quick distance snapshot */}
       <section className="bg-background pt-20 lg:pt-28">
@@ -109,8 +169,137 @@ export default function Area() {
         </div>
       </section>
 
+      {/* Neighborhoods — rich text cards */}
+      {area.neighborhoodsRich && area.neighborhoodsRich.length > 0 && (
+        <section className="bg-background py-20 lg:py-28 border-t border-border mt-12">
+          <div className="max-w-[1400px] mx-auto px-5 lg:px-10">
+            <Reveal>
+              <div className="grid grid-cols-12 gap-6 mb-12">
+                <div className="col-span-12 md:col-span-5">
+                  <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
+                    Neighborhoods
+                  </span>
+                  <h2 className="font-display text-[clamp(2rem,4vw,3.4rem)] leading-[1] tracking-tight mt-3 text-balance">
+                    Where to <em className="italic font-light">point your GPS</em>.
+                  </h2>
+                </div>
+                <div className="col-span-12 md:col-span-7 md:pt-3">
+                  <p className="text-base text-muted-foreground max-w-prose">
+                    Each Syracuse neighborhood has its own personality — Tipperary Hill is Irish, Westcott is bohemian, Armory Square is downtown nightlife. Here's how to find what you're looking for.
+                  </p>
+                </div>
+              </div>
+            </Reveal>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+              {(area.neighborhoodsRich as any[]).map((n, i) => (
+                <Reveal key={n.name} delay={i * 40}>
+                  <article className="h-full bg-card border border-card-border rounded-2xl p-6 lg:p-7 hover:border-foreground/30 transition-colors">
+                    <span className="text-[11px] uppercase tracking-[0.16em] text-muted-foreground">
+                      {n.subtitle}
+                    </span>
+                    <h3 className="font-display text-2xl leading-tight tracking-tight mt-2">
+                      {n.name}
+                    </h3>
+                    <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
+                      {n.description}
+                    </p>
+                  </article>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Day trips */}
+      {area.dayTrips && area.dayTrips.length > 0 && (
+        <section className="bg-muted/30 py-20 lg:py-28 border-t border-border">
+          <div className="max-w-[1400px] mx-auto px-5 lg:px-10">
+            <Reveal>
+              <div className="grid grid-cols-12 gap-6 mb-12">
+                <div className="col-span-12 md:col-span-5">
+                  <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
+                    Day trips
+                  </span>
+                  <h2 className="font-display text-[clamp(2rem,4vw,3.4rem)] leading-[1] tracking-tight mt-3 text-balance">
+                    Worth the <em className="italic font-light">drive</em>.
+                  </h2>
+                </div>
+                <div className="col-span-12 md:col-span-7 md:pt-3">
+                  <p className="text-base text-muted-foreground max-w-prose">
+                    Stay with us, drive to one of these. Skaneateles Lake, Green Lakes, Beak & Skiff orchards, the Finger Lakes wine trails — all an easy turn from Cicero.
+                  </p>
+                </div>
+              </div>
+            </Reveal>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+              {(area.dayTrips as any[]).map((d, i) => (
+                <Reveal key={d.name} delay={i * 30}>
+                  <article className="flex gap-5 bg-background border border-border rounded-2xl p-6 lg:p-7">
+                    <div className="shrink-0">
+                      <span className="inline-flex flex-col items-center justify-center w-20 h-20 rounded-full bg-primary/[0.08] border border-primary/20">
+                        <span className="font-display text-xl tracking-tight tabular-nums">
+                          {d.drive.replace(/\s*min/, '')}
+                        </span>
+                        <span className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground mt-0.5">min</span>
+                      </span>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="font-display text-xl leading-tight tracking-tight">{d.name}</h3>
+                      <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{d.description}</p>
+                    </div>
+                  </article>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Seasonal — when to come */}
+      {area.seasonal && area.seasonal.length > 0 && (
+        <section className="bg-background py-20 lg:py-28 border-t border-border">
+          <div className="max-w-[1400px] mx-auto px-5 lg:px-10">
+            <Reveal>
+              <div className="grid grid-cols-12 gap-6 mb-12">
+                <div className="col-span-12 md:col-span-5">
+                  <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
+                    Year on the calendar
+                  </span>
+                  <h2 className="font-display text-[clamp(2rem,4vw,3.4rem)] leading-[1] tracking-tight mt-3 text-balance">
+                    A season for <em className="italic font-light">every visit</em>.
+                  </h2>
+                </div>
+                <div className="col-span-12 md:col-span-7 md:pt-3">
+                  <p className="text-base text-muted-foreground max-w-prose">
+                    Plan your stay around what's on. Spring opening day, summer concerts at the Amphitheater, the State Fair in late August, fall foliage and apple season, winter ski weekends and SU basketball.
+                  </p>
+                </div>
+              </div>
+            </Reveal>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+              {(area.seasonal as any[]).map((s, i) => (
+                <Reveal key={s.name} delay={i * 40}>
+                  <article className="h-full bg-card border border-card-border rounded-2xl p-6 lg:p-7">
+                    <span className="text-[11px] uppercase tracking-[0.16em] text-primary/80">
+                      {s.season}
+                    </span>
+                    <h3 className="font-display text-xl leading-tight tracking-tight mt-2">
+                      {s.name}
+                    </h3>
+                    <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
+                      {s.description}
+                    </p>
+                  </article>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Inline CTA #1 — after snapshot */}
-      <section className="bg-background pb-12">
+      <section className="bg-background pb-12 pt-12">
         <div className="max-w-[1400px] mx-auto px-5 lg:px-10">
           <div className="bg-primary/[0.04] border border-primary/15 rounded-3xl p-8 lg:p-10 grid grid-cols-12 gap-6 items-center">
             <div className="col-span-12 md:col-span-8">
@@ -118,7 +307,7 @@ export default function Area() {
                 Stay 5 minutes away
               </span>
               <h3 className="font-display text-2xl lg:text-3xl tracking-tight mt-2 text-balance">
-                Spacious all-suite rooms at I-81 Exit 30 — every suite sleeps four.
+                Spacious all-suite rooms at I-81 Exit 98 — every suite sleeps four.
               </h3>
             </div>
             <div className="col-span-12 md:col-span-4 flex md:justify-end gap-3">

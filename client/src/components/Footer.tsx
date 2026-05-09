@@ -11,7 +11,7 @@ export function Footer() {
           <div className="md:col-span-5">
             <Logo textClassName="text-background" />
             <p className="mt-6 text-background/70 max-w-md leading-relaxed">
-              An all-suite hotel just off I-81 at Exit 30. Six minutes from Micron's New York
+              An all-suite hotel just off I-81 at Exit 98. Six minutes from Micron's New York
               megafab in Clay, plus Syracuse and Hancock International Airport.
             </p>
             <a
