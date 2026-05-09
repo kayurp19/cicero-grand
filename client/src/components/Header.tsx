@@ -7,7 +7,7 @@ import site from '../content/site.json';
 const nav = [
   { href: '/rooms', label: 'Suites' },
   { href: '/amenities', label: 'Amenities' },
-  { href: '/area', label: 'The Area' },
+  { href: '/area-guide', label: 'Area Guide' },
   { href: '/events', label: 'Events' },
   { href: '/weddings', label: 'Weddings' },
   { href: '/offers', label: 'Offers' },

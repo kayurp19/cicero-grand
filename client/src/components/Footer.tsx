@@ -60,14 +60,32 @@ export function Footer() {
             <ul className="space-y-2.5 text-sm text-background/75">
               <li><Link href="/events" className="hover:text-background">Events</Link></li>
               <li><Link href="/weddings" className="hover:text-background">Weddings</Link></li>
-              <li><Link href="/area" className="hover:text-background">The Area</Link></li>
+              <li><Link href="/area-guide" className="hover:text-background">Area Guide</Link></li>
               <li><Link href="/contact" className="hover:text-background">Contact</Link></li>
             </ul>
           </div>
         </div>
 
-        <div className="pt-8 border-t border-background/15 flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-xs text-background/50">
-          <div>© {new Date().getFullYear()} The Cicero Grand. All rights reserved.</div>
+        {/* Discover deeper links — helps SEO crawl + visitors */}
+        <div className="pt-8 mt-8 border-t border-background/15">
+          <h3 className="text-xs uppercase tracking-[0.2em] text-background/55 mb-4">Hotels near</h3>
+          <ul className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-background/75">
+            <li><Link href="/hotels-near-micron" className="hover:text-background">Hotels near Micron</Link></li>
+            <li><Link href="/hotels-near-syracuse-airport" className="hover:text-background">Hotels near Syracuse Airport</Link></li>
+            <li><Link href="/hotels-near-destiny-usa" className="hover:text-background">Hotels near Destiny USA</Link></li>
+            <li><Link href="/hotels-near-jma-wireless-dome" className="hover:text-background">Hotels near the JMA Dome</Link></li>
+            <li><Link href="/hotels-near-turning-stone" className="hover:text-background">Hotels near Turning Stone</Link></li>
+          </ul>
+        </div>
+
+        {/* Legal row */}
+        <div className="pt-8 mt-8 border-t border-background/15 flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-xs text-background/55">
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
+            <Link href="/privacy" className="hover:text-background">Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-background">Terms of Use</Link>
+            <Link href="/accessibility" className="hover:text-background">Accessibility</Link>
+            <Link href="/contact" className="hover:text-background">Do Not Sell My Info</Link>
+          </div>
           <div className="flex items-center gap-5">
             <span>Check-in {site.checkIn} · Check-out {site.checkOut}</span>
             {site.social.facebook && (
@@ -82,6 +100,16 @@ export function Footer() {
               </a>
             )}
           </div>
+        </div>
+
+        {/* Copyright + ADA */}
+        <div className="pt-6 mt-6 border-t border-background/10 text-xs text-background/45 leading-relaxed space-y-2">
+          <p>
+            © {new Date().getFullYear()} The Cicero Grand. All rights reserved. The Cicero Grand is an independently owned and operated hotel.
+          </p>
+          <p>
+            The Cicero Grand is committed to making this website accessible to all visitors. If you experience any difficulty accessing this site or need assistance with your reservation, please call <a href="tel:+13157520150" className="underline hover:text-background">(315) 752-0150</a>. See our <Link href="/accessibility" className="underline hover:text-background">Accessibility Statement</Link> for details.
+          </p>
         </div>
       </div>
     </footer>

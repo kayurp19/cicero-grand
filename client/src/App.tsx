@@ -8,6 +8,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { StickyBookBar } from "@/components/StickyBookBar";
+import { CookieConsent } from "@/components/CookieConsent";
 
 import Home from "@/pages/Home";
 import Rooms from "@/pages/Rooms";
@@ -18,6 +19,10 @@ import Weddings from "@/pages/Weddings";
 import Offers from "@/pages/Offers";
 import Gallery from "@/pages/Gallery";
 import Contact from "@/pages/Contact";
+import Privacy from "@/pages/Privacy";
+import Terms from "@/pages/Terms";
+import Accessibility from "@/pages/Accessibility";
+import LandingPage from "@/pages/LandingPage";
 import NotFound from "@/pages/not-found";
 
 import AdminLogin from "@/pages/admin/Login";
@@ -39,6 +44,7 @@ function PublicLayout({ children }: { children: React.ReactNode }) {
       <main>{children}</main>
       <Footer />
       <StickyBookBar />
+      <CookieConsent />
     </>
   );
 }
@@ -65,11 +71,30 @@ function AppRouter() {
         <Route path="/rooms" component={Rooms} />
         <Route path="/amenities" component={Amenities} />
         <Route path="/area" component={Area} />
+        <Route path="/area-guide" component={Area} />
         <Route path="/events" component={Events} />
         <Route path="/weddings" component={Weddings} />
         <Route path="/offers" component={Offers} />
         <Route path="/gallery" component={Gallery} />
         <Route path="/contact" component={Contact} />
+        <Route path="/privacy" component={Privacy} />
+        <Route path="/terms" component={Terms} />
+        <Route path="/accessibility" component={Accessibility} />
+        <Route path="/hotels-near-destiny-usa">
+          {() => <LandingPage slug="destiny-usa" />}
+        </Route>
+        <Route path="/hotels-near-syracuse-airport">
+          {() => <LandingPage slug="syracuse-airport" />}
+        </Route>
+        <Route path="/hotels-near-jma-wireless-dome">
+          {() => <LandingPage slug="jma-wireless-dome" />}
+        </Route>
+        <Route path="/hotels-near-micron">
+          {() => <LandingPage slug="micron" />}
+        </Route>
+        <Route path="/hotels-near-turning-stone">
+          {() => <LandingPage slug="turning-stone" />}
+        </Route>
         <Route component={NotFound} />
       </Switch>
     </PublicLayout>
