@@ -34,6 +34,15 @@ const mailer =
         secure: SMTP_PORT === 465,
         requireTLS: SMTP_PORT === 587,
         auth: { user: SMTP_USER, pass: SMTP_PASS },
+        // Aggressive timeouts so a hung SMTP server can't tie up the request loop
+        connectionTimeout: 8000,
+        greetingTimeout: 8000,
+        socketTimeout: 10000,
+        // WebHostingPad shared mail servers sometimes serve a generic cert;
+        // tolerate cert/hostname mismatches rather than failing the send.
+        tls: { rejectUnauthorized: false },
+        logger: process.env.SMTP_DEBUG === "1",
+        debug: process.env.SMTP_DEBUG === "1",
       })
     : null;
 
@@ -192,7 +201,10 @@ export async function registerRoutes(
       `[contact] new submission #${submission.id} from ${submission.email} (notify ${SALES_EMAIL})`
     );
 
-    // Email notification via SMTP (mail.cicerogrand.com) if credentials configured
+    // Respond to the user RIGHT NOW so the form button doesn't hang on slow/timing-out SMTP.
+    // Email notification fires in the background; failures are logged but never block the user.
+    res.json({ ok: true, id: submission.id });
+
     if (mailer) {
       const { name, email, phone, topic, message } = parse.data;
       const subject = `New Cicero Grand inquiry: ${topic || "General question"} — ${name}`;
@@ -224,27 +236,36 @@ export async function registerRoutes(
           <p style="margin-top:32px;font-size:12px;color:#999;">Submission #${submission.id} · also viewable in the <a href="https://www.cicerogrand.com/admin" style="color:#a36b3f;">admin panel</a>.</p>
         </div>
       `;
-      try {
-        await mailer.sendMail({
+      console.log(
+        `[contact] sending email for #${submission.id} via ${SMTP_HOST}:${SMTP_PORT} as ${SMTP_USER} → ${SALES_EMAIL}`
+      );
+      mailer
+        .sendMail({
           from: SMTP_FROM,
           to: SALES_EMAIL,
           replyTo: email,
           subject,
           text,
           html,
+        })
+        .then((info) => {
+          console.log(
+            `[contact] email OK for #${submission.id}: messageId=${info.messageId} accepted=${JSON.stringify(
+              info.accepted
+            )} rejected=${JSON.stringify(info.rejected)} response=${info.response}`
+          );
+        })
+        .catch((err: any) => {
+          console.error(
+            `[contact] email FAILED for #${submission.id}: code=${err?.code} command=${err?.command} response=${err?.response} message=${err?.message}`
+          );
         });
-        console.log(`[contact] email sent to ${SALES_EMAIL} via ${SMTP_HOST} for submission #${submission.id}`);
-      } catch (err) {
-        console.error(`[contact] email send failed for #${submission.id}:`, err);
-        // Don't fail the request — submission is already saved
-      }
     } else {
       console.warn(
         `[contact] SMTP_USER/SMTP_PASS not set — submission #${submission.id} saved but no email sent`
       );
     }
-
-    return res.json({ ok: true, id: submission.id });
+    return;
   });
 
   // ----- Admin auth -----
