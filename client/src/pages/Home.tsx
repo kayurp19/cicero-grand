@@ -190,7 +190,7 @@ export default function Home() {
             <div className="grid grid-cols-12 gap-6 mt-16">
               <div className="col-span-12 md:col-span-3" />
               <p className="col-span-12 md:col-span-6 text-lg leading-relaxed text-muted-foreground">
-                Off I-81 at Exit 98, the Cicero Grand sits between everything you came for — just 6 minutes from the Micron megafab in Clay, plus Syracuse, the airport, the Finger Lakes, and Oneida Lake. Every room is a suite. Breakfast is hot. Parking is free. The pool is open year-round.
+                Off I-81 at Exit 98, the Cicero Grand sits between everything you came for — just 7 minutes from the Micron megafab in Clay, plus Syracuse, the airport, the Finger Lakes, and Oneida Lake. Every room is a suite. Breakfast is hot. Parking is free. The pool is open year-round.
               </p>
               <Link
                 href="/rooms"
@@ -355,6 +355,17 @@ export default function Home() {
             </Reveal>
 
             <Reveal as="div" className="col-span-12 lg:col-span-7" delay={120}>
+              <Link
+                href="/micron-crew-long-stay"
+                data-testid="link-micron-crew"
+                className="group mb-3 flex items-center justify-between gap-4 bg-foreground text-background rounded-2xl p-5 hover:opacity-90 transition-opacity"
+              >
+                <div>
+                  <div className="text-[10px] uppercase tracking-[0.22em] opacity-60 mb-1">✦ For Micron crews</div>
+                  <div className="text-sm font-medium">Long-stay program — weekly + monthly rates, PO billing</div>
+                </div>
+                <ArrowUpRight className="w-5 h-5 shrink-0 transition-transform group-hover:rotate-45" />
+              </Link>
               <div className="grid grid-cols-2 gap-3">
                 {[
                   { label: 'Micron Campus', distance: '7 min' },

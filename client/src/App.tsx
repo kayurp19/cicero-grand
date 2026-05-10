@@ -27,6 +27,7 @@ import Terms from "@/pages/Terms";
 import Accessibility from "@/pages/Accessibility";
 import LandingPage from "@/pages/LandingPage";
 import Packages from "@/pages/Packages";
+import MicronCrewLongStay from "@/pages/MicronCrewLongStay";
 import NotFound from "@/pages/not-found";
 
 import AdminLogin from "@/pages/admin/Login";
@@ -88,6 +89,8 @@ function AppRouter() {
         <Route path="/weddings" component={Weddings} />
         <Route path="/offers" component={Offers} />
         <Route path="/packages" component={Packages} />
+        <Route path="/micron-crew-long-stay" component={MicronCrewLongStay} />
+        <Route path="/micron-long-stay" component={MicronCrewLongStay} />
         <Route path="/gallery" component={Gallery} />
         <Route path="/contact" component={Contact} />
         <Route path="/privacy" component={Privacy} />
