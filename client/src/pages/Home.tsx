@@ -336,7 +336,7 @@ export default function Home() {
                 Central NY's <em className="italic font-light">middle</em> of everywhere.
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-md">
-                Off I-81 at Exit 98. Five minutes to Oneida Lake. Twelve to downtown Syracuse. Twenty to the airport. Right next door to Micron's growing chip campus.
+                Off I-81 at Exit 98. Seven minutes to Micron's growing chip campus. Ten to the airport. Twelve to downtown Syracuse. Five to Oneida Lake.
               </p>
               <Link
                 href="/area"
@@ -349,14 +349,14 @@ export default function Home() {
             <Reveal as="div" className="col-span-12 lg:col-span-7" delay={120}>
               <div className="grid grid-cols-2 gap-3">
                 {[
-                  { label: 'Syracuse Airport', distance: '14 min' },
-                  { label: 'Micron Campus', distance: '20 min' },
-                  { label: 'Downtown Syracuse', distance: '15 min' },
-                  { label: 'Destiny USA', distance: '15 min' },
-                  { label: 'Oneida Lake', distance: '5 min' },
+                  { label: 'Micron Campus', distance: '7 min' },
+                  { label: 'Syracuse Airport', distance: '10 min' },
+                  { label: 'Downtown Syracuse', distance: '12 min' },
+                  { label: 'Destiny USA', distance: '12 min' },
+                  { label: 'NYS Fairgrounds', distance: '13 min' },
+                  { label: 'Syracuse University', distance: '16 min' },
                   { label: 'Turning Stone', distance: '25 min' },
-                  { label: 'Syracuse University', distance: '17 min' },
-                  { label: 'NYS Fairgrounds', distance: '20 min' },
+                  { label: 'Oneida Lake', distance: '5 min' },
                 ].map((p) => (
                   <div
                     key={p.label}
