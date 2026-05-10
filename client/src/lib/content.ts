@@ -11,6 +11,7 @@ import offersSeed from "../content/offers.json";
 import eventsSeed from "../content/events.json";
 import weddingsSeed from "../content/weddings.json";
 import gallerySeed from "../content/gallery.json";
+import testimonialsSeed from "../content/testimonials.json";
 
 export const seeds: Record<string, unknown> = {
   site: siteSeed,
@@ -21,6 +22,7 @@ export const seeds: Record<string, unknown> = {
   events: eventsSeed,
   weddings: weddingsSeed,
   gallery: gallerySeed,
+  testimonials: testimonialsSeed,
 };
 
 const cache = new Map<string, unknown>();

@@ -217,6 +217,7 @@ const VALID_KEYS = new Set([
   "events",
   "weddings",
   "gallery",
+  "testimonials",
 ]);
 
 export async function registerRoutes(
