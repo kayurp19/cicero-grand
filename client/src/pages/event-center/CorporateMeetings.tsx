@@ -24,7 +24,7 @@ export default function CorporateMeetings() {
       '@type': 'EventVenue',
       name: `${SITE.name} — Corporate Meetings & Conferences`,
       description:
-        'Corporate meeting venue near Syracuse, NY. A/V, in-house catering led by our exec chef of 30+ years (or bring your own), and on-site hotel suites for attendees.',
+        'Corporate meeting venue near Syracuse, NY. A/V, in-house catering (or bring your own), and on-site hotel suites for attendees.',
       url: `${SITE.url}/event-center/corporate-meetings`,
       telephone: SITE.salesPhone,
       email: SITE.email,

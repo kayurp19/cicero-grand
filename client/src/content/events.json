@@ -1,5 +1,5 @@
 {
-  "intro": "Corporate meetings, conferences, banquets, reunions, holiday parties, and showers — flexible spaces, in-house catering led by our executive chef of 30+ years, AV, and overnight accommodations all under one roof. Outside catering also welcome.",
+  "intro": "Corporate meetings, conferences, banquets, reunions, holiday parties, and showers — flexible spaces, in-house catering, AV, and overnight accommodations all under one roof. Outside catering also welcome.",
   "spaces": [
     { "name": "The Ballroom", "size": "45ft × 64ft", "classroom": 100, "theater": 220, "banquet": 200, "uShape": 80, "boardroom": 80 },
     { "name": "Cicero Room", "size": "45ft × 32ft", "classroom": 45, "theater": 110, "banquet": 70, "uShape": 40, "boardroom": 40 },
@@ -194,7 +194,7 @@
     },
     {
       "q": "Can we bring our own caterer?",
-      "a": "Yes — and this is one of the biggest things that sets us apart. Most hotel ballrooms lock you into their in-house kitchen. We don't. You have two great options: (1) use our full in-house catering, led by our executive chef with 30+ years of experience — plated dinners, buffets, carving stations, the full menu; or (2) bring your own caterer for cultural, family, kosher, halal, ethnic, or just-your-favorite-restaurant cuisine, with a modest catering fee. Whichever route you take, we provide tables, chairs, linens, china, glassware, silverware, and full kitchen access."
+      "a": "Yes — and this is one of the biggest things that sets us apart. Most hotel ballrooms lock you into their in-house kitchen. We don't. You have two great options: (1) use our full in-house catering — plated dinners, buffets, carving stations, the full menu, prepared by Chef Ken and his team; or (2) bring your own caterer for cultural, family, kosher, halal, ethnic, or just-your-favorite-restaurant cuisine, with a modest catering fee. Whichever route you take, we provide tables, chairs, linens, china, glassware, silverware, and full kitchen access."
     },
     {
       "q": "Can we bring our own cake or outside dessert?",

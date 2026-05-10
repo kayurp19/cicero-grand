@@ -166,7 +166,7 @@ export default function Weddings() {
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-base mb-6">
                   {[
                     'Cultural & ethnic catering welcome',
-                    'In-house catering led by our exec chef of 30+ years',
+                    'Or use our in-house kitchen',
                     'Kosher, halal, vegetarian, vegan',
                     'Family recipes & favorite restaurants',
                     'Or use our full on-site catering',
@@ -178,7 +178,7 @@ export default function Weddings() {
                   ))}
                 </ul>
                 <p className="text-sm text-muted-foreground max-w-prose">
-                  Two paths: use our in-house catering led by our executive chef of 30+ years (plated, buffet, stations, carving), or bring your own caterer with a modest catering fee. Either way we provide tables, chairs, linens, china, glassware, silverware, and full kitchen access.
+                  Two paths: use our in-house kitchen — plated, buffet, stations, carving, prepared by Chef Ken and his team — or bring your own caterer with a modest catering fee. Either way we provide tables, chairs, linens, china, glassware, silverware, and full kitchen access.
                 </p>
               </div>
             </div>
