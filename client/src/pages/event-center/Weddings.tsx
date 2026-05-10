@@ -166,6 +166,7 @@ export default function Weddings() {
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-base mb-6">
                   {[
                     'Cultural & ethnic catering welcome',
+                    'In-house catering led by our exec chef of 30+ years',
                     'Kosher, halal, vegetarian, vegan',
                     'Family recipes & favorite restaurants',
                     'Or use our full on-site catering',
@@ -177,7 +178,7 @@ export default function Weddings() {
                   ))}
                 </ul>
                 <p className="text-sm text-muted-foreground max-w-prose">
-                  Modest catering fee applies for outside caterers. We provide tables, chairs, linens, china, glassware, silverware, and full kitchen access — just bring your menu.
+                  Two paths: use our in-house catering led by our executive chef of 30+ years (plated, buffet, stations, carving), or bring your own caterer with a modest catering fee. Either way we provide tables, chairs, linens, china, glassware, silverware, and full kitchen access.
                 </p>
               </div>
             </div>
