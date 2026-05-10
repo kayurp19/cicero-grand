@@ -1,34 +1,34 @@
 {
-  "intro": "Looking for a hotel near Syracuse, NY? The Cicero Grand sits at I-81 Exit 98 — inside the 15-mile circle that holds everything Syracuse is known for. The JMA Wireless Dome, the Empower FCU Amphitheater, the Oncenter, the State Fairgrounds, NBT Bank Stadium, Syracuse University, Le Moyne, Destiny USA, the Micron build site, and Hancock International Airport are all 6 to 17 minutes from our front door. This is our locals' guide to Syracuse — what to do, where to eat, and what's worth driving for. If a friend was visiting, this is what we'd tell them.",
+  "intro": "Looking for a hotel near Syracuse, NY? The Cicero Grand sits at I-81 Exit 98 \u2014 inside the 15-mile circle that holds everything Syracuse is known for. The JMA Wireless Dome, the Empower FCU Amphitheater, the Oncenter, the State Fairgrounds, NBT Bank Stadium, Syracuse University, Le Moyne, Destiny USA, the Micron build site, and Hancock International Airport are all 7 to 16 minutes from our front door. This is our locals' guide to Syracuse \u2014 what to do, where to eat, and what's worth driving for. If a friend was visiting, this is what we'd tell them.",
   "seoBlurb": "The Cicero Grand is one of the closest hotels to Micron, Destiny USA, the JMA Wireless Dome, the Empower FCU Amphitheater at Lakeview, the New York State Fairgrounds, and Syracuse Hancock International Airport. Every suite sleeps four with a separate living area, free hot breakfast, indoor heated pool, free parking, and pet-friendly rooms.",
   "faqs": [
     {
       "q": "What's the closest hotel to Micron in Syracuse?",
-      "a": "The Cicero Grand is six minutes from the Micron megafab campus in Clay, NY — making us one of the closest full-service hotels to the build site. We host project crews, vendors, and visiting engineers with extended-stay rates, direct billing, and free truck and trailer parking."
+      "a": "The Cicero Grand is seven minutes from the Micron megafab campus in Clay, NY \u2014 making us one of the closest full-service hotels to the build site. We host project crews, vendors, and visiting engineers with extended-stay rates, direct billing, and free truck and trailer parking."
     },
     {
       "q": "How far is The Cicero Grand from Syracuse Hancock International Airport (SYR)?",
-      "a": "Fourteen minutes by car. We're a straight shot south on I-81 from the airport, with no tolls. Park free in our lot during your stay or while you fly."
+      "a": "Eight minutes by car. We're a straight shot north on I-81 from the airport, with no tolls. Park free in our lot during your stay or while you fly."
     },
     {
       "q": "Is The Cicero Grand close to Destiny USA?",
-      "a": "Yes — twelve minutes south on I-81 to Destiny USA, New York's largest shopping center with 250+ stores, restaurants, and entertainment."
+      "a": "Yes \u2014 thirteen minutes south on I-81 to Destiny USA, New York's largest shopping center with 250+ stores, restaurants, and entertainment."
     },
     {
       "q": "How far are we from the JMA Wireless Dome and Syracuse University?",
-      "a": "Sixteen minutes to the JMA Wireless Dome and the SU campus. We're a popular choice for SU football, basketball, and lacrosse weekends, parents weekends, recruiting visits, and graduations."
+      "a": "Fourteen minutes to the JMA Wireless Dome and the SU campus. We're a popular choice for SU football, basketball, and lacrosse weekends, parents weekends, recruiting visits, and graduations."
     },
     {
       "q": "How close is the hotel to the Empower FCU Amphitheater at Lakeview?",
-      "a": "Twelve minutes. The Empower Federal Credit Union Amphitheater at Lakeview holds 17,500 fans and hosts the biggest summer concerts in Central New York. We're one of the closest hotels for show nights without paying downtown rates."
+      "a": "Thirteen minutes. The Empower Federal Credit Union Amphitheater at Lakeview holds 17,500 fans and hosts the biggest summer concerts in Central New York. We're one of the closest hotels for show nights without paying downtown rates."
     },
     {
       "q": "How close are we to the New York State Fairgrounds?",
-      "a": "Thirteen minutes. The Great New York State Fair (late August through Labor Day) draws nearly a million visitors. The Fairgrounds also host the Syracuse Nationals car show, the Expo Center events, and concerts year-round."
+      "a": "Fourteen minutes. The Great New York State Fair (late August through Labor Day) draws nearly a million visitors. The Fairgrounds also host the Syracuse Nationals car show, the Expo Center events, and concerts year-round."
     },
     {
       "q": "What's the closest hotel to the Oncenter and War Memorial?",
-      "a": "Fifteen minutes. The Oncenter complex covers the convention center, Crouse-Hinds Theater, the Upstate Medical University Arena (Syracuse Crunch hockey), and the War Memorial — all in downtown Syracuse off I-81."
+      "a": "Fourteen minutes. The Oncenter complex covers the convention center, Crouse-Hinds Theater, the Upstate Medical University Arena (Syracuse Crunch hockey), and the War Memorial \u2014 all in downtown Syracuse off I-81."
     },
     {
       "q": "Where should I eat near the hotel?",
@@ -36,17 +36,17 @@
     },
     {
       "q": "What's the Syracuse food I have to try?",
-      "a": "Three things: salt potatoes (boiled in brine, drowned in butter — a CNY original), chicken riggies (Utica‐style pasta with cherry peppers and cream), and a half-moon cookie from Harrison Bakery. Bonus: a white hot from Heid's."
+      "a": "Three things: salt potatoes (boiled in brine, drowned in butter \u2014 a CNY original), chicken riggies (Utica\u2010style pasta with cherry peppers and cream), and a half-moon cookie from Harrison Bakery. Bonus: a white hot from Heid's."
     },
     {
       "q": "Is the hotel close to Turning Stone Casino?",
-      "a": "Thirty-five minutes east on I-90. We're one of the closest non‐Turning Stone hotels for guests attending shows or events. Two more casinos — Yellow Brick Road in Chittenango and Point Place in Bridgeport — are 15–20 minutes away."
+      "a": "Thirty minutes east on I-90. We're one of the closest non\u2010Turning Stone hotels for guests attending shows or events. Two more casinos \u2014 Yellow Brick Road in Chittenango and Point Place in Bridgeport \u2014 are 15\u201320 minutes away."
     }
   ],
   "snapshot": [
     {
       "label": "Micron Megafab",
-      "d": "6 min"
+      "d": "7 min"
     },
     {
       "label": "Oneida Lake",
@@ -54,160 +54,160 @@
     },
     {
       "label": "Syracuse Airport",
-      "d": "14 min"
+      "d": "8 min"
     },
     {
       "label": "Downtown Syracuse",
-      "d": "15 min"
+      "d": "14 min"
     },
     {
       "label": "Destiny USA",
-      "d": "12 min"
+      "d": "13 min"
     },
     {
       "label": "Syracuse University",
-      "d": "16 min"
+      "d": "14 min"
     },
     {
       "label": "JMA Wireless Dome",
-      "d": "16 min"
+      "d": "14 min"
     },
     {
       "label": "Empower FCU Amphitheater",
-      "d": "12 min"
+      "d": "13 min"
     }
   ],
   "sections": [
     {
       "id": "venues",
-      "title": "Major venues — the reasons people come to Syracuse",
+      "title": "Major venues \u2014 the reasons people come to Syracuse",
       "blurb": "If you booked a hotel in Syracuse, odds are you're headed to one of these. All within 17 minutes of our front door.",
       "items": [
         {
           "name": "JMA Wireless Dome",
           "address": "900 Irving Ave, Syracuse, NY",
-          "note": "16 min",
-          "tag": "SU football, basketball, lacrosse · concerts"
+          "note": "14 min",
+          "tag": "SU football, basketball, lacrosse \u00b7 concerts"
         },
         {
           "name": "Empower FCU Amphitheater at Lakeview",
           "address": "490 Restoration Way, Geddes, NY",
-          "note": "12 min",
-          "tag": "17,500-cap · biggest summer concerts in CNY"
+          "note": "13 min",
+          "tag": "17,500-cap \u00b7 biggest summer concerts in CNY"
         },
         {
           "name": "St. Joseph's Health Amphitheater at Lakeview",
           "address": "490 Restoration Way, Geddes, NY",
-          "note": "12 min",
+          "note": "13 min",
           "tag": "Same Lakeview venue, alternate naming"
         },
         {
           "name": "New York State Fairgrounds",
           "address": "581 State Fair Blvd, Syracuse, NY",
-          "note": "13 min",
-          "tag": "NYS Fair · Expo Center · Syracuse Nationals"
+          "note": "14 min",
+          "tag": "NYS Fair \u00b7 Expo Center \u00b7 Syracuse Nationals"
         },
         {
           "name": "The Oncenter Convention Complex",
           "address": "800 S State St, Syracuse, NY",
-          "note": "15 min",
-          "tag": "Conventions · trade shows"
+          "note": "14 min",
+          "tag": "Conventions \u00b7 trade shows"
         },
         {
           "name": "Crouse-Hinds Theater at the Oncenter",
           "address": "411 Montgomery St, Syracuse, NY",
-          "note": "15 min",
-          "tag": "Touring acts · comedy · Broadway"
+          "note": "14 min",
+          "tag": "Touring acts \u00b7 comedy \u00b7 Broadway"
         },
         {
           "name": "Upstate Medical University Arena (War Memorial)",
           "address": "800 S State St, Syracuse, NY",
-          "note": "15 min",
-          "tag": "Syracuse Crunch hockey · 6,200 cap"
+          "note": "14 min",
+          "tag": "Syracuse Crunch hockey \u00b7 6,200 cap"
         },
         {
           "name": "NBT Bank Stadium",
           "address": "1 Tex Simone Dr, Syracuse, NY",
-          "note": "12 min",
-          "tag": "Syracuse Mets baseball (AAA) · 11,117 seats"
+          "note": "13 min",
+          "tag": "Syracuse Mets baseball (AAA) \u00b7 11,117 seats"
         },
         {
           "name": "Landmark Theatre",
           "address": "362 S Salina St, Syracuse, NY",
-          "note": "15 min",
-          "tag": "Touring Broadway · historic"
+          "note": "14 min",
+          "tag": "Touring Broadway \u00b7 historic"
         },
         {
           "name": "Syracuse Stage",
           "address": "820 E Genesee St, Syracuse, NY",
-          "note": "16 min",
+          "note": "14 min",
           "tag": "Resident professional theater"
         },
         {
           "name": "Redhouse Arts Center",
           "address": "400 S Salina St, Syracuse, NY",
-          "note": "15 min",
-          "tag": "Independent theater · music"
+          "note": "14 min",
+          "tag": "Independent theater \u00b7 music"
         },
         {
           "name": "Westcott Theater",
           "address": "524 Westcott St, Syracuse, NY",
-          "note": "16 min",
-          "tag": "Indie concerts · 800 cap"
+          "note": "15 min",
+          "tag": "Indie concerts \u00b7 800 cap"
         },
         {
           "name": "Funk 'n Waffles Music Hall",
           "address": "307 S Clinton St, Syracuse, NY",
-          "note": "15 min",
-          "tag": "Live music · brunch"
+          "note": "14 min",
+          "tag": "Live music \u00b7 brunch"
         }
       ]
     },
     {
       "id": "universities",
       "title": "Colleges & universities",
-      "blurb": "Game weekend, campus visit, recruiting trip, graduation — we host families and visiting teams every year.",
+      "blurb": "Game weekend, campus visit, recruiting trip, graduation \u2014 we host families and visiting teams every year.",
       "items": [
         {
           "name": "Syracuse University",
           "address": "900 S Crouse Ave, Syracuse, NY",
-          "note": "16 min",
+          "note": "14 min",
           "tag": "Main campus"
         },
         {
           "name": "Hendricks Chapel (SU)",
           "address": "Syracuse University, Syracuse, NY",
-          "note": "16 min",
-          "tag": "Chapel · ceremonies · weddings"
+          "note": "14 min",
+          "tag": "Chapel \u00b7 ceremonies \u00b7 weddings"
         },
         {
           "name": "Schine Student Center (SU)",
           "address": "303 University Pl, Syracuse, NY",
-          "note": "16 min",
+          "note": "14 min",
           "tag": "Campus hub"
         },
         {
           "name": "SUNY ESF",
           "address": "1 Forestry Dr, Syracuse, NY",
-          "note": "16 min",
+          "note": "14 min",
           "tag": "Environmental Science & Forestry"
         },
         {
           "name": "SUNY Upstate Medical University",
           "address": "766 Irving Ave, Syracuse, NY",
-          "note": "15 min",
-          "tag": "Medical school · hospital"
+          "note": "14 min",
+          "tag": "Medical school \u00b7 hospital"
         },
         {
           "name": "Le Moyne College",
           "address": "1419 Salt Springs Rd, Syracuse, NY",
-          "note": "15 min",
-          "tag": "Jesuit · D-II athletics"
+          "note": "14 min",
+          "tag": "Jesuit \u00b7 D-II athletics"
         },
         {
           "name": "Onondaga Community College (OCC)",
           "address": "4585 W Seneca Tpke, Syracuse, NY",
-          "note": "20 min",
+          "note": "18 min",
           "tag": "SRC Arena on campus"
         }
       ]
@@ -220,117 +220,202 @@
         {
           "name": "Micron Technology Megafab",
           "address": "Clay, NY (NY-31 corridor)",
-          "note": "6 min",
-          "tag": "Tech · $100B build"
+          "note": "7 min",
+          "tag": "Tech \u00b7 $100B build"
         },
         {
           "name": "Syracuse Hancock International Airport (SYR)",
           "address": "1000 Col. Eileen Collins Blvd, Syracuse, NY",
-          "note": "14 min",
+          "note": "8 min",
           "tag": "Travel"
         },
         {
           "name": "Upstate Medical University Hospital",
           "address": "750 E Adams St, Syracuse, NY",
-          "note": "15 min",
+          "note": "14 min",
           "tag": "Region's only Level 1 trauma center"
         },
         {
           "name": "Crouse Hospital",
           "address": "736 Irving Ave, Syracuse, NY",
-          "note": "15 min",
+          "note": "14 min",
           "tag": "Medical"
         },
         {
           "name": "St. Joseph's Health Hospital",
           "address": "301 Prospect Ave, Syracuse, NY",
-          "note": "16 min",
+          "note": "14 min",
           "tag": "Medical"
         },
         {
           "name": "Syracuse VA Medical Center",
           "address": "800 Irving Ave, Syracuse, NY",
-          "note": "15 min",
+          "note": "14 min",
           "tag": "Medical"
         },
         {
           "name": "Lockheed Martin",
           "address": "Electronics Park, Liverpool, NY",
-          "note": "12 min",
+          "note": "10 min",
           "tag": "Defense"
         },
         {
           "name": "JMA Wireless HQ",
           "address": "140 Cortland Ave, Syracuse, NY",
-          "note": "16 min",
+          "note": "14 min",
           "tag": "Tech"
         },
         {
           "name": "SRC Inc.",
           "address": "7502 Round Pond Rd, North Syracuse, NY",
           "note": "8 min",
-          "tag": "Defense · R&D"
+          "tag": "Defense \u00b7 R&D"
         },
         {
           "name": "National Grid CNY",
           "address": "300 Erie Blvd W, Syracuse, NY",
-          "note": "15 min",
+          "note": "14 min",
           "tag": "Utility"
         },
         {
           "name": "Anheuser-Busch Brewery",
           "address": "2885 Belgium Rd, Baldwinsville, NY",
-          "note": "20 min",
+          "note": "18 min",
           "tag": "Manufacturing"
+        }
+      ]
+    },
+    {
+      "id": "north-employers",
+      "title": "Major employers north of us \u2014 Pulaski, Clay & Oswego County",
+      "blurb": "Project teams, vendors, and visiting staff working in Oswego County's industrial corridor stay with us instead of in town \u2014 better suites, hot breakfast, and a 25\u201340 minute commute up I-81 / Route 481.",
+      "items": [
+        {
+          "name": "The Fulton Companies (Pulaski)",
+          "drive": "38 min",
+          "note": "Heat-transfer & boiler manufacturing HQ \u2014 972 Centerville Rd, Pulaski"
+        },
+        {
+          "name": "Schindler Elevator (Clay)",
+          "drive": "6 min",
+          "note": "Elevator & escalator manufacturing \u2014 Henry Clay Blvd"
+        },
+        {
+          "name": "Felix Schoeller Group (Pulaski)",
+          "drive": "38 min",
+          "note": "Specialty paper manufacturing"
+        },
+        {
+          "name": "Novelis Aluminum (Oswego)",
+          "drive": "39 min",
+          "note": "Aluminum rolling mill"
+        },
+        {
+          "name": "Constellation Energy / Nine Mile Point (Oswego)",
+          "drive": "39 min",
+          "note": "Nuclear power generation"
+        },
+        {
+          "name": "Oswego Health",
+          "drive": "39 min",
+          "note": "Regional hospital system"
+        },
+        {
+          "name": "SUNY Oswego",
+          "drive": "39 min",
+          "note": "State university \u2014 7,400+ students/staff"
+        }
+      ]
+    },
+    {
+      "id": "north-corridor",
+      "title": "North of us \u2014 Salmon River, Oswego County, the I-81 corridor",
+      "blurb": "Cicero is the southern gateway to the I-81 corridor that runs straight up to Lake Ontario. If you're working in Fulton or Oswego, fishing the Salmon River, or visiting SUNY Oswego, we're your easy-access base \u2014 no hotel north of us has the same range.",
+      "items": [
+        {
+          "name": "Salmon River (Pulaski)",
+          "address": "I-81 Exit 36, Pulaski, NY",
+          "note": "38 min",
+          "tag": "World-class steelhead and salmon fishing \u00b7 Sept\u2013Apr"
+        },
+        {
+          "name": "Salmon River Falls",
+          "address": "Falls Rd, Orwell, NY",
+          "note": "36 min",
+          "tag": "110-ft waterfall \u00b7 short hike from parking lot"
+        },
+        {
+          "name": "Selkirk Shores State Park",
+          "address": "7101 NY-3, Pulaski, NY",
+          "note": "40 min",
+          "tag": "Lake Ontario shoreline \u00b7 camping, beach, fishing access"
+        },
+        {
+          "name": "Oswego (city center & SUNY Oswego)",
+          "address": "Oswego, NY",
+          "note": "39 min",
+          "tag": "SUNY campus \u00b7 Lake Ontario harbor \u00b7 Fort Ontario"
+        },
+        {
+          "name": "Central Square",
+          "address": "Central Square, NY",
+          "note": "14 min",
+          "tag": "I-81 north of us \u00b7 gateway to North Country"
+        },
+        {
+          "name": "Phoenix",
+          "address": "Phoenix, NY",
+          "note": "15 min",
+          "tag": "Oswego River canal town"
         }
       ]
     },
     {
       "id": "attractions",
       "title": "Top Syracuse attractions",
-      "blurb": "The headline stops — what visitors come to Syracuse to see.",
+      "blurb": "The headline stops \u2014 what visitors come to Syracuse to see.",
       "items": [
         {
           "name": "Destiny USA",
           "address": "9090 Destiny USA Dr, Syracuse, NY",
-          "note": "12 min",
-          "tag": "Largest mall in NY · 250+ stores"
+          "note": "13 min",
+          "tag": "Largest mall in NY \u00b7 250+ stores"
         },
         {
           "name": "Museum of Science & Technology (MOST)",
           "address": "500 S Franklin St, Syracuse, NY",
-          "note": "15 min",
-          "tag": "IMAX · planetarium"
+          "note": "14 min",
+          "tag": "IMAX \u00b7 planetarium"
         },
         {
           "name": "Erie Canal Museum",
           "address": "318 Erie Blvd E, Syracuse, NY",
-          "note": "15 min",
+          "note": "14 min",
           "tag": "Free admission"
         },
         {
           "name": "Rosamond Gifford Zoo at Burnet Park",
           "address": "1 Conservation Pl, Syracuse, NY",
-          "note": "17 min",
-          "tag": "Family · year-round"
+          "note": "16 min",
+          "tag": "Family \u00b7 year-round"
         },
         {
           "name": "Everson Museum of Art",
           "address": "401 Harrison St, Syracuse, NY",
-          "note": "15 min",
-          "tag": "I.M. Pei building · American ceramics"
+          "note": "14 min",
+          "tag": "I.M. Pei building \u00b7 American ceramics"
         },
         {
           "name": "Onondaga Historical Association Museum",
           "address": "321 Montgomery St, Syracuse, NY",
-          "note": "15 min",
-          "tag": "Local history · free"
+          "note": "14 min",
+          "tag": "Local history \u00b7 free"
         },
         {
           "name": "Wonderworks Syracuse",
           "address": "9090 Destiny USA Dr, Syracuse, NY",
-          "note": "12 min",
-          "tag": "Family · indoor"
+          "note": "13 min",
+          "tag": "Family \u00b7 indoor"
         },
         {
           "name": "Salt Museum at Onondaga Lake Park",
@@ -339,7 +424,7 @@
           "tag": "How Syracuse became Salt City"
         },
         {
-          "name": "Skä•nonh — Great Law of Peace Center",
+          "name": "Sk\u00e4\u2022nonh \u2014 Great Law of Peace Center",
           "address": "6680 Onondaga Lake Pkwy, Liverpool, NY",
           "note": "11 min",
           "tag": "Haudenosaunee heritage"
@@ -359,8 +444,8 @@
         {
           "name": "Clinton Square Ice Rink",
           "address": "Clinton Sq, Syracuse, NY",
-          "note": "15 min",
-          "tag": "Open-air skating · winter"
+          "note": "14 min",
+          "tag": "Open-air skating \u00b7 winter"
         }
       ]
     },
@@ -372,99 +457,99 @@
         {
           "name": "Oneida Shores Park",
           "address": "9248 Bartel Rd, Brewerton, NY",
-          "note": "5 min",
-          "tag": "Beach · swimming"
+          "note": "4 min",
+          "tag": "Beach \u00b7 swimming"
         },
         {
           "name": "Oneida Lake & Brewerton Marina",
           "address": "Brewerton, NY",
           "note": "8 min",
-          "tag": "Boat launches · fishing charters"
+          "tag": "Boat launches \u00b7 fishing charters"
         },
         {
           "name": "Onondaga Lake Park",
           "address": "106 Lake Dr, Liverpool, NY",
           "note": "10 min",
-          "tag": "7-mile loop · skating · trails"
+          "tag": "7-mile loop \u00b7 skating \u00b7 trails"
         },
         {
           "name": "Old Erie Canal State Historic Park",
-          "address": "Cicero–DeWitt corridor",
-          "note": "5 min",
+          "address": "Cicero\u2013DeWitt corridor",
+          "note": "3 min",
           "tag": "Towpath trail"
         },
         {
           "name": "Cicero Swamp Wildlife Management Area",
           "address": "Cicero, NY",
           "note": "5 min",
-          "tag": "Birding · hiking"
+          "tag": "Birding \u00b7 hiking"
         },
         {
           "name": "Beaver Lake Nature Center",
           "address": "8477 E Mud Lake Rd, Baldwinsville, NY",
-          "note": "20 min",
-          "tag": "Hiking · birding · snowshoeing"
+          "note": "18 min",
+          "tag": "Hiking \u00b7 birding \u00b7 snowshoeing"
         },
         {
           "name": "Green Lakes State Park",
           "address": "7900 Green Lakes Rd, Fayetteville, NY",
-          "note": "20 min",
-          "tag": "Glacial lakes · golf · swimming"
+          "note": "16 min",
+          "tag": "Glacial lakes \u00b7 golf \u00b7 swimming"
         },
         {
           "name": "Clark Reservation State Park",
           "address": "6105 E Seneca Tpke, Jamesville, NY",
-          "note": "20 min",
-          "tag": "Glacial lake · cliffs"
+          "note": "18 min",
+          "tag": "Glacial lake \u00b7 cliffs"
         },
         {
           "name": "Pratt's Falls Park",
           "address": "7671 Pratts Falls Rd, Manlius, NY",
-          "note": "20 min",
+          "note": "24 min",
           "tag": "137-ft waterfall"
         },
         {
           "name": "Highland Forest",
           "address": "1254 Highland Park Rd, Fabius, NY",
-          "note": "30 min",
-          "tag": "XC skiing · sleigh rides"
+          "note": "35 min",
+          "tag": "XC skiing \u00b7 sleigh rides"
         },
         {
           "name": "Jamesville Beach Park",
           "address": "3993 Apulia Rd, Jamesville, NY",
-          "note": "20 min",
+          "note": "18 min",
           "tag": "Lakeside beach"
         }
       ]
     },
     {
       "id": "iconic-eats",
-      "title": "Iconic Syracuse eats — the must-try list",
-      "blurb": "If you've only got one dinner in Syracuse, eat here. These are the local legends — some have been around since 1917.",
+      "title": "Iconic Syracuse eats \u2014 the must-try list",
+      "blurb": "If you've only got one dinner in Syracuse, eat here. These are the local legends \u2014 some have been around since 1917.",
       "items": [
         {
           "name": "Dinosaur Bar-B-Que",
           "address": "246 W Willow St, Syracuse, NY",
           "note": "11 min",
-          "tag": "BBQ · since 1988 · the original"
+          "tag": "BBQ \u00b7 since 1988 \u00b7 the original"
         },
         {
           "name": "Heid's of Liverpool",
           "address": "305 Oswego St, Liverpool, NY",
           "note": "8 min",
-          "tag": "White hots · since 1917"
+          "tag": "White hots \u00b7 since 1917"
         },
         {
           "name": "Pastabilities",
           "address": "311 S Franklin St, Syracuse, NY",
           "note": "15 min",
-          "tag": "Italian · Armory Square · stretch bread"
+          "tag": "Italian \u00b7 Armory Square \u00b7 stretch bread"
         },
         {
           "name": "The Mission Restaurant",
           "address": "304 E Onondaga St, Syracuse, NY",
           "note": "15 min",
-          "tag": "Pan-Latin · in a former church"
+          "tag": "Pan-Latin \u00b7 in a former church"
         },
         {
           "name": "Phoebe's Restaurant & Coffee Lounge",
@@ -476,10 +561,10 @@
           "name": "Funk 'n Waffles",
           "address": "307 S Clinton St, Syracuse, NY",
           "note": "15 min",
-          "tag": "Brunch · live music"
+          "tag": "Brunch \u00b7 live music"
         },
         {
-          "name": "Sal's Birdland — Cicero",
+          "name": "Sal's Birdland \u2014 Cicero",
           "address": "8140 Brewerton Rd, Cicero, NY",
           "note": "5 min",
           "tag": "Local fried chicken"
@@ -488,7 +573,7 @@
           "name": "Cooper-Top Tavern",
           "address": "5841 NY-31, Cicero, NY",
           "note": "4 min",
-          "tag": "Pub · walking distance"
+          "tag": "Pub \u00b7 walking distance"
         },
         {
           "name": "Hafner's Tavern",
@@ -513,7 +598,7 @@
     {
       "id": "pizza-wings",
       "title": "Pizza, wings & chicken riggies",
-      "blurb": "Syracuse takes pizza seriously. Twin Trees Cicero is five minutes away. Chicken riggies — Utica‐style pasta with hot peppers and cream — is the regional specialty everyone has an opinion about.",
+      "blurb": "Syracuse takes pizza seriously. Twin Trees Cicero is five minutes away. Chicken riggies \u2014 Utica\u2010style pasta with hot peppers and cream \u2014 is the regional specialty everyone has an opinion about.",
       "items": [
         {
           "name": "Twin Trees Cicero",
@@ -537,7 +622,7 @@
           "name": "Avicolli's Restaurant",
           "address": "215 N Mill St, Liverpool, NY",
           "note": "10 min",
-          "tag": "Fancy slice · sit-down Italian"
+          "tag": "Fancy slice \u00b7 sit-down Italian"
         },
         {
           "name": "Pavone's Pizza",
@@ -555,13 +640,13 @@
           "name": "Gino & Joe's Famous NY Pizza",
           "address": "8487 Oswego Rd, Baldwinsville, NY",
           "note": "15 min",
-          "tag": "Big slices · late night"
+          "tag": "Big slices \u00b7 late night"
         },
         {
           "name": "Apizza Regionale",
           "address": "260 W Genesee St, Syracuse, NY",
           "note": "15 min",
-          "tag": "Coal-fired · Armory Square"
+          "tag": "Coal-fired \u00b7 Armory Square"
         },
         {
           "name": "Patsy's Pizza (Tipp Hill)",
@@ -573,25 +658,25 @@
           "name": "Brooklyn Pickle (Tipp Hill)",
           "address": "1741 W Genesee St, Syracuse, NY",
           "note": "16 min",
-          "tag": "Loaded sandwiches · classic"
+          "tag": "Loaded sandwiches \u00b7 classic"
         },
         {
           "name": "Wings Over Syracuse",
           "address": "900 Butternut St, Syracuse, NY",
           "note": "13 min",
-          "tag": "Wings · SU favorite"
+          "tag": "Wings \u00b7 SU favorite"
         },
         {
           "name": "The Distillery",
           "address": "3112 Erie Blvd E, Syracuse, NY",
           "note": "13 min",
-          "tag": "Wings · chicken riggies"
+          "tag": "Wings \u00b7 chicken riggies"
         }
       ]
     },
     {
       "id": "italian",
-      "title": "Italian — the Syracuse staple",
+      "title": "Italian \u2014 the Syracuse staple",
       "blurb": "Syracuse has deep Italian roots, and it shows on the dinner menu. From red-sauce institutions to modern Neapolitan.",
       "items": [
         {
@@ -622,7 +707,7 @@
           "name": "Grotto Restaurant North Syracuse",
           "address": "401 S Main St, North Syracuse, NY",
           "note": "8 min",
-          "tag": "Date night · modern Italian"
+          "tag": "Date night \u00b7 modern Italian"
         },
         {
           "name": "Colucci Italian Restaurant",
@@ -634,26 +719,26 @@
           "name": "Joey's Restaurant",
           "address": "6594 Thompson Rd, Syracuse, NY",
           "note": "12 min",
-          "tag": "Old school · supper-club vibe"
+          "tag": "Old school \u00b7 supper-club vibe"
         },
         {
           "name": "Daniela's Restaurant",
           "address": "5879 Bridge St, East Syracuse, NY",
           "note": "15 min",
-          "tag": "Italian · white-tablecloth"
+          "tag": "Italian \u00b7 white-tablecloth"
         }
       ]
     },
     {
       "id": "fine-dining",
       "title": "Fine dining & special occasions",
-      "blurb": "Anniversary, closing dinner, parents in town — these are the spots locals book.",
+      "blurb": "Anniversary, closing dinner, parents in town \u2014 these are the spots locals book.",
       "items": [
         {
           "name": "Bistro Elephant Steakhouse",
           "address": "238 W Jefferson St, Syracuse, NY",
           "note": "15 min",
-          "tag": "Steakhouse · Armory Square"
+          "tag": "Steakhouse \u00b7 Armory Square"
         },
         {
           "name": "Kitty Hoynes Irish Pub & Restaurant",
@@ -665,38 +750,38 @@
           "name": "Emerald Cocktail Kitchen",
           "address": "224 Walton St, Syracuse, NY",
           "note": "15 min",
-          "tag": "Craft cocktails · small plates"
+          "tag": "Craft cocktails \u00b7 small plates"
         },
         {
           "name": "Otro Cinco",
           "address": "206 S Warren St, Syracuse, NY",
           "note": "15 min",
-          "tag": "Modern Mexican · cocktails"
+          "tag": "Modern Mexican \u00b7 cocktails"
         },
         {
           "name": "1911 Established at Beak & Skiff",
           "address": "2708 Lords Hill Rd, Lafayette, NY",
-          "note": "30 min",
-          "tag": "Orchard tasting room · dinner"
+          "note": "27 min",
+          "tag": "Orchard tasting room \u00b7 dinner"
         }
       ]
     },
     {
       "id": "international",
-      "title": "International — from Indian to Mexican to Thai",
+      "title": "International \u2014 from Indian to Mexican to Thai",
       "blurb": "Syracuse's food scene runs wider than people expect. Every neighborhood has a hidden gem.",
       "items": [
         {
           "name": "Dakshin Indian Restaurant",
           "address": "117 Harvard Pl, Syracuse, NY",
           "note": "16 min",
-          "tag": "South Indian · dosas"
+          "tag": "South Indian \u00b7 dosas"
         },
         {
           "name": "Royal Indian Grill",
           "address": "5947 Bridge St, East Syracuse, NY",
           "note": "10 min",
-          "tag": "North Indian · lunch buffet"
+          "tag": "North Indian \u00b7 lunch buffet"
         },
         {
           "name": "New Delhi Diamond's Indian Restaurant",
@@ -708,13 +793,13 @@
           "name": "Camino Real II",
           "address": "8270 Brewerton Rd, Cicero, NY",
           "note": "5 min",
-          "tag": "Authentic Mexican · close"
+          "tag": "Authentic Mexican \u00b7 close"
         },
         {
           "name": "Alto Cinco",
           "address": "526 Westcott St, Syracuse, NY",
           "note": "16 min",
-          "tag": "Westcott · Tex-Mex"
+          "tag": "Westcott \u00b7 Tex-Mex"
         },
         {
           "name": "El Canelo",
@@ -744,25 +829,25 @@
           "name": "Yamasho Sushi",
           "address": "4445 W Genesee St, Syracuse, NY",
           "note": "20 min",
-          "tag": "Best sushi · Western Lights"
+          "tag": "Best sushi \u00b7 Western Lights"
         },
         {
           "name": "Ocean Sushi",
           "address": "525 Erie Blvd E, Syracuse, NY",
           "note": "13 min",
-          "tag": "Sashimi · highly rated"
+          "tag": "Sashimi \u00b7 highly rated"
         },
         {
           "name": "Don Juan Cafe",
           "address": "102 Grand Ave, Syracuse, NY",
           "note": "17 min",
-          "tag": "Puerto Rican · Tipp Hill"
+          "tag": "Puerto Rican \u00b7 Tipp Hill"
         },
         {
           "name": "Munjed's Middle Eastern Cafe",
           "address": "505 Westcott St, Syracuse, NY",
           "note": "16 min",
-          "tag": "Lebanese · vegetarian-friendly"
+          "tag": "Lebanese \u00b7 vegetarian-friendly"
         }
       ]
     },
@@ -787,25 +872,25 @@
           "name": "Funk 'n Waffles",
           "address": "307 S Clinton St, Syracuse, NY",
           "note": "15 min",
-          "tag": "Brunch · live music"
+          "tag": "Brunch \u00b7 live music"
         },
         {
           "name": "Original Grain",
           "address": "300 W Fayette St, Syracuse, NY",
           "note": "15 min",
-          "tag": "Healthy bowls · breakfast"
+          "tag": "Healthy bowls \u00b7 breakfast"
         },
         {
           "name": "Modern Malt",
           "address": "325 S Clinton St, Syracuse, NY",
           "note": "15 min",
-          "tag": "Pancakes · milkshakes"
+          "tag": "Pancakes \u00b7 milkshakes"
         },
         {
           "name": "Thee Diner (Cicero)",
           "address": "5859 NY-31, Cicero, NY",
           "note": "5 min",
-          "tag": "Local diner · close"
+          "tag": "Local diner \u00b7 close"
         },
         {
           "name": "Rise N Shine Diner",
@@ -824,16 +909,16 @@
           "name": "Salt City Coffee",
           "address": "509 W Onondaga St, Syracuse, NY",
           "note": "16 min",
-          "tag": "Local roaster · Reddit's #1"
+          "tag": "Local roaster \u00b7 Reddit's #1"
         },
         {
-          "name": "Recess Coffee — Westcott",
+          "name": "Recess Coffee \u2014 Westcott",
           "address": "110 Harvard Pl, Syracuse, NY",
-          "note": "16 min",
+          "note": "15 min",
           "tag": "Westcott flagship"
         },
         {
-          "name": "Recess Coffee — Tipp Hill",
+          "name": "Recess Coffee \u2014 Tipp Hill",
           "address": "Ulster St, Syracuse, NY",
           "note": "17 min",
           "tag": "Newest location"
@@ -866,7 +951,7 @@
           "name": "Columbus Bakery",
           "address": "502 Pearl St, Syracuse, NY",
           "note": "14 min",
-          "tag": "Italian bread · since 1895"
+          "tag": "Italian bread \u00b7 since 1895"
         },
         {
           "name": "Biscotti Cafe & Pastry Shop",
@@ -885,13 +970,13 @@
           "name": "Gannon's Isle Ice Cream",
           "address": "1525 Valley Dr, Syracuse, NY",
           "note": "20 min",
-          "tag": "Hand-dipped · 50+ flavors"
+          "tag": "Hand-dipped \u00b7 50+ flavors"
         },
         {
           "name": "Byrne Dairy (Cicero)",
           "address": "8170 Brewerton Rd, Cicero, NY",
           "note": "5 min",
-          "tag": "CNY classic · milk + soft-serve"
+          "tag": "CNY classic \u00b7 milk + soft-serve"
         },
         {
           "name": "Bonnie Castle Ice Cream",
@@ -903,7 +988,7 @@
           "name": "Heid's of Liverpool",
           "address": "305 Oswego St, Liverpool, NY",
           "note": "8 min",
-          "tag": "Soft-serve · since 1917"
+          "tag": "Soft-serve \u00b7 since 1917"
         },
         {
           "name": "Sno Top",
@@ -916,19 +1001,19 @@
     {
       "id": "breweries",
       "title": "Breweries, distilleries & wineries",
-      "blurb": "The Salt City Brew Trail runs right through us — 20+ breweries in Onondaga County alone.",
+      "blurb": "The Salt City Brew Trail runs right through us \u2014 20+ breweries in Onondaga County alone.",
       "items": [
         {
           "name": "Heritage Hill North Syracuse",
           "address": "628 S Main St, North Syracuse, NY",
           "note": "8 min",
-          "tag": "New · closest to the hotel"
+          "tag": "New \u00b7 closest to the hotel"
         },
         {
           "name": "Heritage Hill Brewhouse (Pompey)",
           "address": "3149 Sweet Rd, Pompey, NY",
           "note": "30 min",
-          "tag": "Hilltop views · game day"
+          "tag": "Hilltop views \u00b7 game day"
         },
         {
           "name": "Middle Ages Brewing Company",
@@ -946,12 +1031,12 @@
           "name": "Buried Acorn Brewing",
           "address": "881 Van Rensselaer St, Syracuse, NY",
           "note": "15 min",
-          "tag": "Inner Harbor · craft"
+          "tag": "Inner Harbor \u00b7 craft"
         },
         {
-          "name": "Meier's Creek — Inner Harbor",
+          "name": "Meier's Creek \u2014 Inner Harbor",
           "address": "33 Bear St, Syracuse, NY",
-          "note": "15 min",
+          "note": "13 min",
           "tag": "Farmhouse ales"
         },
         {
@@ -964,18 +1049,18 @@
           "name": "Stout Beard Brewing",
           "address": "115 N Franklin St, Syracuse, NY",
           "note": "15 min",
-          "tag": "Downtown · IPAs"
+          "tag": "Downtown \u00b7 IPAs"
         },
         {
           "name": "Eastwood Brewing Company",
           "address": "3127 James St, Syracuse, NY",
           "note": "13 min",
-          "tag": "SU pride · stouts"
+          "tag": "SU pride \u00b7 stouts"
         },
         {
           "name": "Bull Finch Brewing (Destiny USA)",
           "address": "9090 Destiny USA Dr, Syracuse, NY",
-          "note": "12 min",
+          "note": "13 min",
           "tag": "Inside the mall"
         },
         {
@@ -987,8 +1072,8 @@
         {
           "name": "Last Shot Distillery (Destiny USA)",
           "address": "8987 Destiny USA Dr, Syracuse, NY",
-          "note": "12 min",
-          "tag": "Bourbon · whiskey"
+          "note": "13 min",
+          "tag": "Bourbon \u00b7 whiskey"
         }
       ]
     },
@@ -1000,25 +1085,25 @@
         {
           "name": "Destiny USA",
           "address": "9090 Destiny USA Dr, Syracuse, NY",
-          "note": "12 min",
-          "tag": "Largest mall in NY · 250+ stores"
+          "note": "13 min",
+          "tag": "Largest mall in NY \u00b7 250+ stores"
         },
         {
           "name": "Township 5",
           "address": "5879 Highbridge St, Fayetteville, NY",
-          "note": "15 min",
+          "note": "16 min",
           "tag": "Open-air plaza"
         },
         {
           "name": "Towne Center at Fayetteville",
           "address": "Fayetteville, NY",
-          "note": "20 min",
+          "note": "18 min",
           "tag": "Open-air retail"
         },
         {
           "name": "Fairmount Fair",
           "address": "3401 W Genesee St, Syracuse, NY",
-          "note": "20 min",
+          "note": "18 min",
           "tag": "Plaza retail"
         },
         {
@@ -1030,31 +1115,31 @@
         {
           "name": "Armory Square District",
           "address": "Walton & Franklin Sts, Syracuse, NY",
-          "note": "15 min",
-          "tag": "Boutiques · dining"
+          "note": "14 min",
+          "tag": "Boutiques \u00b7 dining"
         },
         {
           "name": "Westcott Neighborhood",
           "address": "Westcott St, Syracuse, NY",
-          "note": "16 min",
+          "note": "15 min",
           "tag": "Indie shops"
         },
         {
           "name": "Wildflowers Armory",
           "address": "224 Walton St, Syracuse, NY",
-          "note": "15 min",
+          "note": "14 min",
           "tag": "Local makers"
         },
         {
           "name": "CNY Regional Market",
           "address": "2100 Park St, Syracuse, NY",
           "note": "12 min",
-          "tag": "Saturdays · farmers"
+          "tag": "Saturdays \u00b7 farmers"
         },
         {
           "name": "Cicero Commons",
           "address": "5891 Bridge St, Cicero, NY",
-          "note": "5 min",
+          "note": "4 min",
           "tag": "Local plaza"
         }
       ]
@@ -1062,79 +1147,79 @@
     {
       "id": "casinos",
       "title": "Casinos & gaming",
-      "blurb": "Three casinos within 35 minutes — plus full-service gaming next door at Sylvan Beach.",
+      "blurb": "Three casinos within 35 minutes \u2014 plus full-service gaming next door at Sylvan Beach.",
       "items": [
         {
           "name": "Point Place Casino",
           "address": "450 NY-31, Bridgeport, NY",
-          "note": "15 min",
+          "note": "16 min",
           "tag": "Closest casino"
         },
         {
           "name": "Yellow Brick Road Casino",
           "address": "800 W Genesee St, Chittenango, NY",
-          "note": "20 min",
+          "note": "18 min",
           "tag": "Largest sportsbook in NY"
         },
         {
           "name": "Turning Stone Resort Casino",
           "address": "5218 Patrick Rd, Verona, NY",
-          "note": "35 min",
-          "tag": "Resort · hotel · golf · shows"
+          "note": "30 min",
+          "tag": "Resort \u00b7 hotel \u00b7 golf \u00b7 shows"
         }
       ]
     },
     {
       "id": "family",
       "title": "Family & kid-friendly",
-      "blurb": "Rainy day, snowy day, summer day — there's something within fifteen minutes.",
+      "blurb": "Rainy day, snowy day, summer day \u2014 there's something within fifteen minutes.",
       "items": [
         {
           "name": "Rosamond Gifford Zoo",
           "address": "1 Conservation Pl, Syracuse, NY",
-          "note": "17 min",
+          "note": "16 min",
           "tag": "Year-round"
         },
         {
           "name": "Wonderworks Syracuse",
           "address": "9090 Destiny USA Dr, Syracuse, NY",
-          "note": "12 min",
-          "tag": "Indoor · interactive"
+          "note": "13 min",
+          "tag": "Indoor \u00b7 interactive"
         },
         {
           "name": "MOST Museum",
           "address": "500 S Franklin St, Syracuse, NY",
-          "note": "15 min",
-          "tag": "IMAX · hands-on"
+          "note": "14 min",
+          "tag": "IMAX \u00b7 hands-on"
         },
         {
           "name": "Apex Entertainment",
           "address": "9090 Destiny USA Dr, Syracuse, NY",
           "note": "12 min",
-          "tag": "Bowling · arcade · go-karts"
+          "tag": "Bowling \u00b7 arcade \u00b7 go-karts"
         },
         {
           "name": "Get Air Trampoline Park",
           "address": "5775 Bridge St, East Syracuse, NY",
           "note": "15 min",
-          "tag": "Indoor · jumping"
+          "tag": "Indoor \u00b7 jumping"
         },
         {
           "name": "Four Seasons Golf & Ski Center",
           "address": "8012 E Genesee St, Fayetteville, NY",
           "note": "20 min",
-          "tag": "Skiing · tubing"
+          "tag": "Skiing \u00b7 tubing"
         },
         {
-          "name": "Lights on the Lake (Nov–Jan)",
+          "name": "Lights on the Lake (Nov\u2013Jan)",
           "address": "Onondaga Lake Park, Liverpool, NY",
           "note": "10 min",
           "tag": "Drive-thru holiday lights"
         },
         {
-          "name": "Clinton Square Ice Rink (Nov–Mar)",
+          "name": "Clinton Square Ice Rink (Nov\u2013Mar)",
           "address": "Clinton Sq, Syracuse, NY",
-          "note": "15 min",
+          "note": "14 min",
           "tag": "Open-air skating downtown"
         }
       ]
@@ -1142,13 +1227,13 @@
     {
       "id": "annual-events",
       "title": "Annual events & festivals",
-      "blurb": "Plan your stay around what's happening — Syracuse hosts something major nearly every month.",
+      "blurb": "Plan your stay around what's happening \u2014 Syracuse hosts something major nearly every month.",
       "items": [
         {
           "name": "Great New York State Fair",
           "address": "581 State Fair Blvd, Syracuse, NY",
-          "note": "Late Aug–Labor Day",
-          "tag": "13 days · 925K+ attendees"
+          "note": "Late Aug\u2013Labor Day",
+          "tag": "13 days \u00b7 925K+ attendees"
         },
         {
           "name": "Syracuse Nationals Car Show",
@@ -1219,7 +1304,7 @@
         {
           "name": "Lights on the Lake",
           "address": "Onondaga Lake Park, Liverpool, NY",
-          "note": "Late Nov–early Jan",
+          "note": "Late Nov\u2013early Jan",
           "tag": "Holiday drive-thru"
         },
         {
@@ -1232,7 +1317,7 @@
           "name": "Winterfest at Clinton Square",
           "address": "Clinton Square, Syracuse, NY",
           "note": "February",
-          "tag": "Ice skating · music"
+          "tag": "Ice skating \u00b7 music"
         }
       ]
     },
@@ -1244,38 +1329,38 @@
         {
           "name": "Armory Square",
           "address": "Walton & Franklin Sts, Syracuse",
-          "note": "15 min",
-          "tag": "Dining · nightlife"
+          "note": "14 min",
+          "tag": "Dining \u00b7 nightlife"
         },
         {
           "name": "Hanover Square",
           "address": "E Genesee St, Syracuse",
-          "note": "15 min",
-          "tag": "Historic · bars"
+          "note": "14 min",
+          "tag": "Historic \u00b7 bars"
         },
         {
           "name": "Clinton Square",
           "address": "Clinton Sq, Syracuse",
-          "note": "15 min",
-          "tag": "Festivals · ice rink · city center"
+          "note": "14 min",
+          "tag": "Festivals \u00b7 ice rink \u00b7 city center"
         },
         {
           "name": "Tipperary Hill",
           "address": "Burnet Park area, Syracuse",
           "note": "17 min",
-          "tag": "Irish heritage · upside-down stoplight"
+          "tag": "Irish heritage \u00b7 upside-down stoplight"
         },
         {
           "name": "Westcott",
           "address": "Westcott St, Syracuse",
-          "note": "16 min",
-          "tag": "University Hill · indie"
+          "note": "15 min",
+          "tag": "University Hill \u00b7 indie"
         },
         {
           "name": "Inner Harbor",
           "address": "Bear St, Syracuse",
           "note": "13 min",
-          "tag": "Brewery · waterfront"
+          "tag": "Brewery \u00b7 waterfront"
         },
         {
           "name": "Eastwood",
@@ -1286,32 +1371,32 @@
         {
           "name": "Little Italy / North Side",
           "address": "N Salina St, Syracuse",
-          "note": "14 min",
+          "note": "13 min",
           "tag": "Italian heritage"
         },
         {
           "name": "Liverpool Village",
           "address": "Liverpool, NY",
-          "note": "10 min",
+          "note": "12 min",
           "tag": "Lakeside dining"
         },
         {
           "name": "Brewerton",
           "address": "Brewerton, NY",
-          "note": "5 min",
+          "note": "8 min",
           "tag": "Oneida Lake gateway"
         },
         {
           "name": "Manlius / Fayetteville",
           "address": "Manlius, NY",
-          "note": "20 min",
+          "note": "18 min",
           "tag": "Suburban dining"
         }
       ]
     },
     {
       "id": "essentials",
-      "title": "Essentials in Cicero — forgot something?",
+      "title": "Essentials in Cicero \u2014 forgot something?",
       "blurb": "Here's what's within walking distance or a five-minute drive of the hotel.",
       "items": [
         {
@@ -1355,7 +1440,7 @@
           "note": "5 min"
         },
         {
-          "name": "St. Joseph's Primary Care — Cicero",
+          "name": "St. Joseph's Primary Care \u2014 Cicero",
           "address": "8086 Brewerton Rd, Cicero",
           "note": "5 min"
         },
@@ -1368,7 +1453,7 @@
           "name": "Lowe's (Liverpool)",
           "address": "3851 NY-31, Liverpool",
           "note": "10 min",
-          "tag": "Hardware · tools"
+          "tag": "Hardware \u00b7 tools"
         },
         {
           "name": "Home Depot (East Syracuse)",
@@ -1382,14 +1467,14 @@
   "transit": {
     "title": "Getting around",
     "items": [
-      "Syracuse Hancock International Airport (SYR) — 14 min · direct flights to ATL, DCA, ORD, JFK, BOS, CLT, MCO and more",
-      "I-81 Exit 98 — directly off the highway · north to Watertown / 1000 Islands, south to Binghamton & NYC",
-      "I-90 NY State Thruway — 8 min · Buffalo (2.5 hr west), Albany (2 hr east)",
-      "Amtrak Syracuse Station — 18 min · daily service to NYC, Toronto, Chicago",
-      "CENTRO Bus — Syracuse regional transit · stops along Brewerton Rd",
-      "Rideshare — Uber & Lyft serve the area; ~$25–35 to downtown",
-      "Rental cars — at the airport (Hertz, Enterprise, Avis, National, Budget)",
-      "Free hotel parking — including space for trucks, trailers, and project vehicles"
+      "Syracuse Hancock International Airport (SYR) \u2014 14 min \u00b7 direct flights to ATL, DCA, ORD, JFK, BOS, CLT, MCO and more",
+      "I-81 Exit 98 \u2014 directly off the highway \u00b7 north to Watertown / 1000 Islands, south to Binghamton & NYC",
+      "I-90 NY State Thruway \u2014 8 min \u00b7 Buffalo (2.5 hr west), Albany (2 hr east)",
+      "Amtrak Syracuse Station \u2014 18 min \u00b7 daily service to NYC, Toronto, Chicago",
+      "CENTRO Bus \u2014 Syracuse regional transit \u00b7 stops along Brewerton Rd",
+      "Rideshare \u2014 Uber & Lyft serve the area; ~$25\u201335 to downtown",
+      "Rental cars \u2014 at the airport (Hertz, Enterprise, Avis, National, Budget)",
+      "Free hotel parking \u2014 including space for trucks, trailers, and project vehicles"
     ]
   },
   "featured": [
@@ -1397,64 +1482,71 @@
       "name": "Micron Campus",
       "image": "/photos/area/micron.jpg",
       "drive": "7 min",
-      "blurb": "The future home of one of the largest semiconductor fabs in the U.S. — closer to us than to anyone else.",
+      "blurb": "The future home of one of the largest semiconductor fabs in the U.S. \u2014 closer to us than to anyone else.",
       "address": "Clay, NY"
     },
     {
       "name": "Destiny USA",
       "image": "/photos/area/destiny-usa.jpg",
-      "drive": "12 min",
-      "blurb": "The largest shopping, dining, and entertainment center in New York State — 250+ stores under one roof.",
-      "address": "9090 Destiny USA Dr"
+      "drive": "13 min",
+      "blurb": "The largest shopping, dining, and entertainment center in New York State \u2014 250+ stores under one roof.",
+      "address": "9090 Destiny USA Dr",
+      "note": "13 min"
     },
     {
       "name": "Syracuse University & The Dome",
       "image": "/photos/area/syracuse-university.jpg",
-      "drive": "16 min",
-      "blurb": "Game days, graduations, parents weekends, campus visits — and home of the JMA Wireless Dome.",
-      "address": "900 S Crouse Ave"
+      "drive": "14 min",
+      "blurb": "Game days, graduations, parents weekends, campus visits \u2014 and home of the JMA Wireless Dome.",
+      "address": "900 S Crouse Ave",
+      "note": "14 min"
     },
     {
       "name": "NYS Fairgrounds",
       "image": "/photos/area/state-fair.jpg",
-      "drive": "13 min",
+      "drive": "14 min",
       "blurb": "The Great New York State Fair every August, plus concerts, expos, and the Syracuse Nationals year-round.",
-      "address": "581 State Fair Blvd"
+      "address": "581 State Fair Blvd",
+      "note": "14 min"
     },
     {
       "name": "Empower FCU Amphitheater",
       "image": "/photos/area/empower-amphitheater.jpg",
-      "drive": "12 min",
-      "blurb": "Open-air concerts on the shores of Onondaga Lake — 17,500 fans for the biggest summer tours in CNY.",
-      "address": "490 Restoration Way, Geddes"
+      "drive": "13 min",
+      "blurb": "Open-air concerts on the shores of Onondaga Lake \u2014 17,500 fans for the biggest summer tours in CNY.",
+      "address": "490 Restoration Way, Geddes",
+      "note": "13 min"
     },
     {
       "name": "Onondaga Lake Park",
       "image": "/photos/area/onondaga-lake.jpg",
       "drive": "10 min",
-      "blurb": "A scenic seven-mile loop along the lake — ideal for a morning walk, run, or bike ride.",
-      "address": "106 Lake Dr, Liverpool"
+      "blurb": "A scenic seven-mile loop along the lake \u2014 ideal for a morning walk, run, or bike ride.",
+      "address": "106 Lake Dr, Liverpool",
+      "note": "10 min"
     },
     {
       "name": "Landmark Theatre",
       "image": "/photos/area/landmark-theatre.jpg",
-      "drive": "15 min",
+      "drive": "14 min",
       "blurb": "A meticulously restored 1928 movie palace hosting Broadway tours, concerts, and comedy.",
-      "address": "362 S Salina St"
+      "address": "362 S Salina St",
+      "note": "14 min"
     },
     {
       "name": "Upstate Medical Arena",
       "image": "/photos/area/oncenter-arena.jpg",
       "drive": "15 min",
-      "blurb": "The Oncenter War Memorial Arena — home of the Syracuse Crunch and a regular concert stop.",
+      "blurb": "The Oncenter War Memorial Arena \u2014 home of the Syracuse Crunch and a regular concert stop.",
       "address": "800 S State St"
     },
     {
       "name": "Oncenter Convention Center",
       "image": "/photos/area/oncenter-convention.jpg",
-      "drive": "15 min",
-      "blurb": "Central New York's largest convention venue — expos, weddings, and trade shows.",
-      "address": "800 S State St"
+      "drive": "14 min",
+      "blurb": "Central New York's largest convention venue \u2014 expos, weddings, and trade shows.",
+      "address": "800 S State St",
+      "note": "14 min"
     },
     {
       "name": "Mulroy Civic Center",
@@ -1466,33 +1558,35 @@
     {
       "name": "Rosamond Gifford Zoo",
       "image": "/photos/area/zoo.jpg",
-      "drive": "17 min",
-      "blurb": "Elephants, primates, penguins and more — a great half-day for traveling families.",
-      "address": "1 Conservation Pl, Burnet Park"
+      "drive": "16 min",
+      "blurb": "Elephants, primates, penguins and more \u2014 a great half-day for traveling families.",
+      "address": "1 Conservation Pl, Burnet Park",
+      "note": "16 min"
     },
     {
       "name": "Downtown Syracuse",
       "image": "/photos/area/downtown-syracuse.jpg",
-      "drive": "15 min",
+      "drive": "14 min",
       "blurb": "Restaurants, breweries, galleries, and live music in the city's most walkable district.",
-      "address": "Armory Square & beyond"
+      "address": "Armory Square & beyond",
+      "note": "14 min"
     }
   ],
   "neighborhoodsRich": [
     {
-      "name": "Cicero — our village",
+      "name": "Cicero \u2014 our village",
       "subtitle": "Home base",
       "description": "Our home in northern Onondaga County, sitting between Oneida Lake and the I-81 corridor. Twin Trees pizza, Cracker Barrel across the street, the Cicero Swamp birding preserve, and a five-minute hop to Brewerton Beach."
     },
     {
       "name": "Liverpool",
       "subtitle": "Lakeside village",
-      "description": "On the eastern shore of Onondaga Lake — Heid's white hots since 1917, Limp Lizard BBQ, the Salt Museum, and the start of the seven-mile Onondaga Lake Park loop. Ten minutes from the hotel."
+      "description": "On the eastern shore of Onondaga Lake \u2014 Heid's white hots since 1917, Limp Lizard BBQ, the Salt Museum, and the start of the seven-mile Onondaga Lake Park loop. Ten minutes from the hotel."
     },
     {
       "name": "Armory Square",
       "subtitle": "Downtown nightlife",
-      "description": "The lively heart of downtown Syracuse — restored industrial buildings now packed with restaurants, bars, boutiques, and clubs. The Shot Clock Monument and Onondaga Creekwalk run through it."
+      "description": "The lively heart of downtown Syracuse \u2014 restored industrial buildings now packed with restaurants, bars, boutiques, and clubs. The Shot Clock Monument and Onondaga Creekwalk run through it."
     },
     {
       "name": "Skaneateles",
@@ -1517,7 +1611,7 @@
     {
       "name": "Westcott",
       "subtitle": "Funky & eclectic",
-      "description": "\"#WestcottNation\" — coffee shops, bakeries, fresh restaurants, and the annual Westcott Street Cultural Fair. Independent and proud of it."
+      "description": "\"#WestcottNation\" \u2014 coffee shops, bakeries, fresh restaurants, and the annual Westcott Street Cultural Fair. Independent and proud of it."
     },
     {
       "name": "Cazenovia",
@@ -1528,54 +1622,62 @@
   "dayTrips": [
     {
       "name": "Skaneateles Lake",
-      "drive": "25 min",
-      "description": "The \"Jewel of the Finger Lakes.\" Stroll the village, lunch at Doug's Fish Fry, wine and views at Anyela's Vineyards. A perfect weekend turn."
+      "drive": "32 min",
+      "description": "The \"Jewel of the Finger Lakes.\" Stroll the village, lunch at Doug's Fish Fry, wine and views at Anyela's Vineyards. A perfect weekend turn.",
+      "note": "32 min"
     },
     {
       "name": "Green Lakes State Park",
-      "drive": "20 min",
-      "description": "Two glacial lakes with otherworldly turquoise color, plus hiking trails, a swimming beach, and a championship golf course."
+      "drive": "16 min",
+      "description": "Two glacial lakes with otherworldly turquoise color, plus hiking trails, a swimming beach, and a championship golf course.",
+      "note": "16 min"
     },
     {
       "name": "Cazenovia",
-      "drive": "25 min",
-      "description": "Lakeside village dining at the Brewster Inn, wine at Owera Vineyards, beer at Meier's Creek, u-pick fruit and a kids' area at Critz Farms."
+      "drive": "30 min",
+      "description": "Lakeside village dining at the Brewster Inn, wine at Owera Vineyards, beer at Meier's Creek, u-pick fruit and a kids' area at Critz Farms.",
+      "note": "30 min"
     },
     {
       "name": "Beak & Skiff Apple Orchards",
-      "drive": "35 min",
-      "description": "U-pick apples, wagon rides, hot apple fritters, donuts, and the 1911 Tasting Room for hard cider and spirits. Best in fall."
+      "drive": "27 min",
+      "description": "U-pick apples, wagon rides, hot apple fritters, donuts, and the 1911 Tasting Room for hard cider and spirits. Best in fall.",
+      "note": "27 min"
     },
     {
       "name": "Tinker Falls & Labrador Hollow",
-      "drive": "40 min",
-      "description": "A peaceful hike to a tiered waterfall and a unique boardwalk through wetlands. Spring through fall, easy difficulty."
+      "drive": "38 min",
+      "description": "A peaceful hike to a tiered waterfall and a unique boardwalk through wetlands. Spring through fall, easy difficulty.",
+      "note": "38 min"
     },
     {
       "name": "Pratt's Falls State Park",
-      "drive": "20 min",
-      "description": "137-foot glacier-formed waterfall plus the site of Onondaga County's first mill (1796). Trails, picnic spots, and an archery range."
+      "drive": "24 min",
+      "description": "137-foot glacier-formed waterfall plus the site of Onondaga County's first mill (1796). Trails, picnic spots, and an archery range.",
+      "note": "24 min"
     },
     {
       "name": "Beaver Lake Nature Center",
-      "drive": "20 min",
-      "description": "Family-friendly trails, guided nature programs, and a great kids' option for a half-day outdoors."
+      "drive": "18 min",
+      "description": "Family-friendly trails, guided nature programs, and a great kids' option for a half-day outdoors.",
+      "note": "18 min"
     },
     {
       "name": "Finger Lakes wine country",
       "drive": "75 min",
-      "description": "Cayuga and Seneca Lake wine trails are an easy drive. Make it a long lunch or a full day; the Riesling country is world-class."
+      "description": "Cayuga and Seneca Lake wine trails are an easy drive. Make it a long lunch or a full day; the Riesling country is world-class.",
+      "note": "75 min"
     }
   ],
   "seasonal": [
     {
       "name": "St. Patrick's Day & opening day",
-      "season": "Spring · Mar–May",
+      "season": "Spring \u00b7 Mar\u2013May",
       "description": "Tipperary Hill goes all-in for St. Paddy's. Syracuse Mets opening day at NBT Bank Stadium. Onondaga Lake Park reopens to full activity. Cherry blossoms at Onondaga Park."
     },
     {
       "name": "Lake season & amphitheater concerts",
-      "season": "Summer · Jun–Aug",
+      "season": "Summer \u00b7 Jun\u2013Aug",
       "description": "Onondaga Lake Park trails, Skaneateles boating, Mets baseball, and the Empower FCU Amphitheater concert run. Westcott Street Cultural Fair late summer."
     },
     {
@@ -1585,18 +1687,18 @@
     },
     {
       "name": "Foliage & apple season",
-      "season": "Fall · Sep–Nov",
+      "season": "Fall \u00b7 Sep\u2013Nov",
       "description": "Syracuse fall is exceptional. Beak & Skiff for apple picking, Lafayette Apple Festival in October, drives through the Route 20 Scenic Byway. SU football season is here too."
     },
     {
       "name": "Snow, ski, & SU basketball",
-      "season": "Winter · Dec–Feb",
+      "season": "Winter \u00b7 Dec\u2013Feb",
       "description": "Labrador Mountain and Song Mountain for skiing, Highland Forest for cross-country. SU basketball is in season at the Dome. Lights on the Lake at Onondaga Lake Park."
     },
     {
       "name": "The Dome, year-round",
       "season": "Year-Round",
-      "description": "JMA Wireless Dome (the \"Loud House\") draws Springsteen and Billy Joel as readily as it draws SU games. Always check the calendar — there's usually something on."
+      "description": "JMA Wireless Dome (the \"Loud House\") draws Springsteen and Billy Joel as readily as it draws SU games. Always check the calendar \u2014 there's usually something on."
     }
   ]
 }
