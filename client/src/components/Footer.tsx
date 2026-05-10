@@ -50,6 +50,7 @@ export function Footer() {
             <ul className="space-y-2.5 text-sm text-background/75">
               <li><Link href="/rooms" className="hover:text-background">Suites</Link></li>
               <li><Link href="/amenities" className="hover:text-background">Amenities</Link></li>
+              <li><Link href="/packages" className="hover:text-background">Packages</Link></li>
               <li><Link href="/offers" className="hover:text-background">Offers</Link></li>
               <li><Link href="/gallery" className="hover:text-background">Gallery</Link></li>
             </ul>
@@ -70,12 +71,18 @@ export function Footer() {
 
         {/* Discover deeper links — helps SEO crawl + visitors */}
         <div className="pt-8 mt-8 border-t border-background/15">
-          <h3 className="text-xs uppercase tracking-[0.2em] text-background/55 mb-4">Hotels near</h3>
+          <h3 className="text-xs uppercase tracking-[0.2em] text-background/55 mb-4">Hotels in & near Syracuse</h3>
           <ul className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-background/75">
+            <li><Link href="/hotels-syracuse-ny" className="hover:text-background">Hotels in Syracuse, NY</Link></li>
+            <li><Link href="/cicero-ny-hotels" className="hover:text-background">Hotels in Cicero, NY</Link></li>
+            <li><Link href="/pet-friendly-hotels-syracuse" className="hover:text-background">Pet-friendly hotels</Link></li>
             <li><Link href="/hotels-near-micron" className="hover:text-background">Hotels near Micron</Link></li>
             <li><Link href="/hotels-near-syracuse-airport" className="hover:text-background">Hotels near Syracuse Airport</Link></li>
             <li><Link href="/hotels-near-destiny-usa" className="hover:text-background">Hotels near Destiny USA</Link></li>
             <li><Link href="/hotels-near-jma-wireless-dome" className="hover:text-background">Hotels near the JMA Dome</Link></li>
+            <li><Link href="/hotels-near-empower-amphitheater" className="hover:text-background">Hotels near Empower Amphitheater</Link></li>
+            <li><Link href="/hotels-near-upstate-medical" className="hover:text-background">Hotels near Upstate Medical</Link></li>
+            <li><Link href="/hotels-near-nys-fair" className="hover:text-background">Hotels near the NYS Fair</Link></li>
             <li><Link href="/hotels-near-turning-stone" className="hover:text-background">Hotels near Turning Stone</Link></li>
           </ul>
         </div>

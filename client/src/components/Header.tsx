@@ -9,6 +9,7 @@ const nav = [
   { href: '/amenities', label: 'Amenities' },
   { href: '/area-guide', label: 'Area Guide' },
   { href: '/event-center', label: 'Event Center' },
+  { href: '/packages', label: 'Packages' },
   { href: '/offers', label: 'Offers' },
   { href: '/gallery', label: 'Gallery' },
   { href: '/contact', label: 'Contact' },
@@ -36,7 +37,8 @@ export function Header() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        style={{ top: 'var(--banner-height, 0px)' }}
+        className={`fixed left-0 right-0 z-50 transition-all duration-500 ${
           transparent
             ? 'bg-transparent text-white'
             : 'bg-background/85 backdrop-blur-xl text-foreground border-b border-border/60'

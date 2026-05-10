@@ -9,6 +9,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { StickyBookBar } from "@/components/StickyBookBar";
 import { CookieConsent } from "@/components/CookieConsent";
+import { RateBanner } from "@/components/RateBanner";
 
 import Home from "@/pages/Home";
 import Rooms from "@/pages/Rooms";
@@ -25,6 +26,7 @@ import Privacy from "@/pages/Privacy";
 import Terms from "@/pages/Terms";
 import Accessibility from "@/pages/Accessibility";
 import LandingPage from "@/pages/LandingPage";
+import Packages from "@/pages/Packages";
 import NotFound from "@/pages/not-found";
 
 import AdminLogin from "@/pages/admin/Login";
@@ -43,6 +45,7 @@ function ScrollToTop() {
 function PublicLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
+      <RateBanner />
       <Header />
       <main>{children}</main>
       <Footer />
@@ -84,6 +87,7 @@ function AppRouter() {
         <Route path="/events" component={EventCenter} />
         <Route path="/weddings" component={Weddings} />
         <Route path="/offers" component={Offers} />
+        <Route path="/packages" component={Packages} />
         <Route path="/gallery" component={Gallery} />
         <Route path="/contact" component={Contact} />
         <Route path="/privacy" component={Privacy} />
@@ -103,6 +107,24 @@ function AppRouter() {
         </Route>
         <Route path="/hotels-near-turning-stone">
           {() => <LandingPage slug="turning-stone" />}
+        </Route>
+        <Route path="/hotels-near-empower-amphitheater">
+          {() => <LandingPage slug="empower-amphitheater" />}
+        </Route>
+        <Route path="/hotels-near-upstate-medical">
+          {() => <LandingPage slug="upstate-medical" />}
+        </Route>
+        <Route path="/hotels-near-nys-fair">
+          {() => <LandingPage slug="nys-fair" />}
+        </Route>
+        <Route path="/hotels-syracuse-ny">
+          {() => <LandingPage slug="syracuse-hotels" />}
+        </Route>
+        <Route path="/cicero-ny-hotels">
+          {() => <LandingPage slug="cicero-ny-hotels" />}
+        </Route>
+        <Route path="/pet-friendly-hotels-syracuse">
+          {() => <LandingPage slug="pet-friendly-syracuse" />}
         </Route>
         <Route component={NotFound} />
       </Switch>

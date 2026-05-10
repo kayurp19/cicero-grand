@@ -1,0 +1,116 @@
+{
+  "intro": "Built around what actually brings people to Central New York — Micron crews, JMA Dome game days, Empower FCU concerts, Turning Stone weekends, and family trips to Destiny. Book direct for the lowest rate. Every package includes free hot breakfast, free parking, and free WiFi.",
+  "items": [
+    {
+      "id": "micron-crew",
+      "slug": "micron-crew-stay",
+      "badge": "Project rate",
+      "name": "Micron Crew Stay",
+      "from": "129",
+      "headline": "Built for project work",
+      "blurb": "All-suite, 7+ night discount, late checkout, breakfast, parking, fast WiFi. Designed for contractors, engineers, and visiting Micron staff.",
+      "includes": [
+        "Weekly project rate (7+ nights)",
+        "Late checkout 1pm — for shift schedules",
+        "Free hot breakfast 6:30–9:30 AM",
+        "Free parking — including pickup trucks and crew vans",
+        "Fast Wi-Fi · in-room workspace",
+        "Coin laundry on-site · mini-fridge & microwave"
+      ],
+      "image": "/photos/exterior-1.jpg",
+      "ctaTitle": "Set up a crew block",
+      "ctaText": "Email sales@cicerogrand.com or call (315) 715-7410 for direct corporate billing and master folios.",
+      "audienceLine": "For: contractors, vendors, relocating Micron staff",
+      "venueDistance": "7 minutes from the Micron Clay megafab"
+    },
+    {
+      "id": "jma-dome",
+      "slug": "jma-dome-game-day",
+      "badge": "Game day",
+      "name": "JMA Dome Game Day",
+      "from": "179",
+      "headline": "Walk-distance feel, drive comfort",
+      "blurb": "Sixteen minutes to the Dome on I-81 — same time as a downtown hotel, but bigger room and free parking back at base. Late checkout the day after the game.",
+      "includes": [
+        "Late checkout 1pm — recover from a Saturday game",
+        "Free hot breakfast — pre-game fuel",
+        "Free parking · no game-day surcharge",
+        "All-suite layout · sleeps 4",
+        "Indoor heated pool open to 11 PM",
+        "Easy I-81 in/out · same exit as the Dome route"
+      ],
+      "image": "/photos/exterior-1.jpg",
+      "ctaTitle": "Block rooms for parents weekend",
+      "ctaText": "Hosting alumni or family for the game? Call (315) 715-7410 for group rates.",
+      "audienceLine": "For: SU football, basketball, lacrosse fans · alumni · parents weekend",
+      "venueDistance": "16 minutes from JMA Wireless Dome"
+    },
+    {
+      "id": "concert-night",
+      "slug": "concert-night",
+      "badge": "Tour stop",
+      "name": "Concert Night at Empower FCU Amphitheater",
+      "from": "159",
+      "headline": "Twelve minutes door-to-stage",
+      "blurb": "Don't fight downtown traffic after the encore. Twelve minutes back to a quiet all-suite room, late checkout, and a hot breakfast before you hit the road.",
+      "includes": [
+        "Late checkout 1pm — sleep in after the encore",
+        "Free hot breakfast 6:30–9:30 AM",
+        "Free parking — drive yourself or rideshare to the venue",
+        "All-suite layout · separate bedroom for quiet sleep",
+        "Quick I-81 to I-690 venue route · 12 minutes",
+        "Indoor pool open year-round"
+      ],
+      "image": "/photos/exterior-1.jpg",
+      "ctaTitle": "See the concert calendar",
+      "ctaText": "Empower FCU Amphitheater hosts 20+ summer shows. Plan your stay around the schedule.",
+      "audienceLine": "For: concert-goers, tour crews, fan groups",
+      "venueDistance": "12 minutes from Empower FCU Amphitheater"
+    },
+    {
+      "id": "turning-stone",
+      "slug": "turning-stone-getaway",
+      "badge": "Casino partner",
+      "name": "Turning Stone Casino Stay",
+      "from": "149",
+      "headline": "Stay clean, play late",
+      "blurb": "Twenty-five minutes to Turning Stone Resort Casino — the affordable, all-suite alternative when the casino's sold out or you'd rather sleep somewhere quiet.",
+      "includes": [
+        "Late checkout 1pm — recovery is the new luxury",
+        "Free hot breakfast · easier than casino brunch",
+        "Free parking · no resort fees",
+        "All-suite layout · separate living area",
+        "Indoor pool · 24-hour fitness",
+        "25 min to Turning Stone via I-81 + NY-Thruway"
+      ],
+      "image": "/photos/exterior-1.jpg",
+      "ctaTitle": "Group rates for casino weekends",
+      "ctaText": "Hosting a bachelor party or buddies weekend? Call (315) 715-7410.",
+      "audienceLine": "For: casino weekends, golf trips at Atunyote, comedy/concert shows at Turning Stone",
+      "venueDistance": "25 minutes from Turning Stone Resort Casino"
+    },
+    {
+      "id": "family-destiny",
+      "slug": "family-destiny-weekend",
+      "badge": "Family",
+      "name": "Family Destiny Weekend",
+      "from": "169",
+      "headline": "Indoor pool · free breakfast · mall in 12 min",
+      "blurb": "Built for the family weekend trip. Every suite sleeps four, kids under 12 are free, and Destiny USA — the largest mall in New York — is twelve minutes south on I-81.",
+      "includes": [
+        "Kids under 12 stay free in same suite",
+        "All-suite — bedroom + separate living room",
+        "Free hot breakfast — kid-friendly menu",
+        "Indoor heated pool — open year-round",
+        "12 min to Destiny USA · 7 min to Clay Park",
+        "Pet-friendly so the dog comes too"
+      ],
+      "image": "/photos/exterior-1.jpg",
+      "ctaTitle": "Plan a holiday-weekend stay",
+      "ctaText": "Memorial Day, July 4th, Labor Day, Thanksgiving weekend — book direct for the best family rate.",
+      "audienceLine": "For: family travel, school breaks, holiday weekends",
+      "venueDistance": "12 minutes from Destiny USA"
+    }
+  ],
+  "disclaimer": "Starter rates shown. Final rate varies by date, demand, and inventory. Book direct on cicerogrand.com or call (315) 752-0150 for the lowest available rate."
+}

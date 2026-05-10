@@ -58,7 +58,6 @@
       }
     ]
   },
-
   "syracuse-airport": {
     "path": "/hotels-near-syracuse-airport",
     "title": "Hotels Near Syracuse Hancock Airport (SYR) · 14 Min · The Cicero Grand",
@@ -121,7 +120,6 @@
       }
     ]
   },
-
   "jma-wireless-dome": {
     "path": "/hotels-near-jma-wireless-dome",
     "title": "Hotels Near JMA Wireless Dome · Syracuse University · The Cicero Grand",
@@ -185,7 +183,6 @@
       }
     ]
   },
-
   "micron": {
     "path": "/hotels-near-micron",
     "title": "Hotels Near Micron Megafab · 6 Min Away · The Cicero Grand",
@@ -249,7 +246,6 @@
       }
     ]
   },
-
   "turning-stone": {
     "path": "/hotels-near-turning-stone",
     "title": "Hotels Near Turning Stone Casino · 35 Min · The Cicero Grand",
@@ -306,6 +302,442 @@
       {
         "q": "Are there other casinos closer to your hotel?",
         "a": "Yes. Point Place Casino in Bridgeport is fifteen minutes away. Yellow Brick Road in Chittenango is twenty. Both are smaller than Turning Stone but worth a stop."
+      }
+    ]
+  },
+  "empower-amphitheater": {
+    "path": "/hotels-near-empower-amphitheater",
+    "title": "Hotels Near Empower FCU Amphitheater · 12 Min · The Cicero Grand",
+    "description": "Stay 12 minutes from Empower FCU Amphitheater. All-suite rooms, free hot breakfast, indoor pool, free parking. Quiet sleep after the show. Book direct.",
+    "h1": "Hotels Near Empower FCU Amphitheater",
+    "subtitle": "Twelve minutes door-to-stage. Free parking back at the hotel. Late checkout the morning after.",
+    "venue": {
+      "name": "Empower FCU Amphitheater",
+      "address": "490 Restoration Way, Geddes, NY 13209",
+      "drive": "12 minutes",
+      "miles": "9.1 mi west on I-690"
+    },
+    "ogImage": "/photos/exterior-1.jpg",
+    "highlights": [
+      "Twelve minutes door-to-stage on I-81 South to I-690 West",
+      "All-suite rooms — separate living area, sleeps four",
+      "Late checkout 1pm available for show-night guests",
+      "Free hot breakfast, indoor pool, free parking",
+      "Pet-friendly · 100% smoke-free property",
+      "Quieter than downtown — drift off after the encore"
+    ],
+    "intro": "Empower FCU Amphitheater (formerly St. Joseph's Health Amphitheater) is Central New York's premier outdoor concert venue — 17,500 capacity on the shore of Onondaga Lake, hosting summer tours from Dave Matthews Band, Kenny Chesney, Luke Bryan, and more every season. The Cicero Grand is twelve minutes door-to-stage. Free parking when you get back, and a late checkout the morning after means you can sleep in.",
+    "why": [
+      {
+        "title": "Twelve minutes door-to-stage",
+        "body": "I-81 South to I-690 West to Exit 7. Same route the locals take. No surface streets, no city traffic. Easier in and out than parking at the venue."
+      },
+      {
+        "title": "Late checkout, post-show breakfast",
+        "body": "Concert ends at 11pm. Last thing you want is an 11am checkout. Ask at the front desk — late checkout is on us when the venue's lit up. Hot breakfast 6:30–9:30 AM."
+      },
+      {
+        "title": "All-suite means quiet sleep",
+        "body": "Separate bedroom, separate living area, full doors between. A true rest stop after a loud night out — not a single hotel-room cube."
+      },
+      {
+        "title": "Free parking, no surge",
+        "body": "Free parking for cars, trucks, and SUVs. No after-hours fee. No paid valet. No surprise add-ons at checkout."
+      }
+    ],
+    "nearby": [
+      "Onondaga Lake Park — 7 min · walking trails along the lake",
+      "Destiny USA — 5 min · 250+ stores under one roof",
+      "NBT Bank Stadium (Syracuse Mets) — 6 min",
+      "Lakeview Amphitheater stage — at the venue",
+      "Heid's of Liverpool — 8 min · classic Coney dogs since 1917",
+      "Inner Harbor — 10 min · waterfront dining",
+      "The Solvay Tyrol Club — 5 min · post-show late bites",
+      "Whole Foods Market — 9 min"
+    ],
+    "faqs": [
+      {
+        "q": "How long does it take to drive from The Cicero Grand to Empower FCU Amphitheater?",
+        "a": "About twelve minutes — I-81 South to I-690 West, then Exit 7 to the venue. Allow 25-30 minutes if you're heading to a sold-out show because traffic backs up at the venue exit."
+      },
+      {
+        "q": "Is parking at Empower FCU Amphitheater free or paid?",
+        "a": "Empower FCU Amphitheater offers paid on-site parking for most concerts. The Cicero Grand offers free guest parking — many guests prefer to park at the hotel and rideshare to and from the show."
+      },
+      {
+        "q": "Does The Cicero Grand offer late checkout for concert nights?",
+        "a": "Yes — let the front desk know you're attending a show at Empower FCU Amphitheater and we'll extend checkout to 1pm at no charge, subject to availability."
+      },
+      {
+        "q": "What's the closest hotel to Empower FCU Amphitheater?",
+        "a": "The closest hotels are 5-10 minutes away in Liverpool and Solvay, but availability is limited and rates spike on concert nights. The Cicero Grand is 12 minutes north, with all-suite rooms, free breakfast, indoor pool, free parking, and typically lower rates than the closest options."
+      }
+    ]
+  },
+  "upstate-medical": {
+    "path": "/hotels-near-upstate-medical",
+    "title": "Hotels Near Upstate Medical University · 15 Min · The Cicero Grand",
+    "description": "All-suite hotel 15 minutes from Upstate Medical University and Crouse Hospital. Free hot breakfast, indoor pool, free parking. Patient-family rates available.",
+    "h1": "Hotels Near Upstate Medical University",
+    "subtitle": "Fifteen minutes from Upstate, Crouse, and Golisano Children's Hospital. A quiet place to rest when family is in care.",
+    "venue": {
+      "name": "Upstate Medical University",
+      "address": "750 E Adams St, Syracuse, NY 13210",
+      "drive": "15 minutes",
+      "miles": "11.2 mi south on I-81"
+    },
+    "ogImage": "/photos/exterior-1.jpg",
+    "highlights": [
+      "Fifteen minutes south on I-81 — direct route to University Hill",
+      "All-suite rooms — separate sleeping and living space",
+      "Free hot breakfast 6:30–9:30 AM, indoor heated pool",
+      "Free parking · Pet-friendly · 100% smoke-free",
+      "Patient-family rates available — ask at the front desk",
+      "24-hour front desk · in-room mini-fridge for medications"
+    ],
+    "intro": "When a family member is being treated at Upstate Medical University, Crouse Hospital, Golisano Children's Hospital, or any of the University Hill medical campuses, you need a quiet, comfortable place that's close enough for daily visits but far enough to truly rest. The Cicero Grand is fifteen minutes north on I-81 — every suite has a separate living area, mini-fridge for medications, and a kitchenette. Free breakfast, free parking, and a 24-hour front desk so late-night arrivals and early-morning hospital runs are never a problem.",
+    "why": [
+      {
+        "title": "Fifteen minutes door-to-door",
+        "body": "I-81 South · Exit 18 (Adams Street) · directly to University Hill. The same route the doctors and residents take. Free guest parking on both ends."
+      },
+      {
+        "title": "Built for extended hospital stays",
+        "body": "Every suite has a separate sleeping area, kitchenette, mini-fridge, and microwave. Coin laundry on-site. Pet-friendly rooms. Long-stay discounts available — ask at the front desk when you arrive."
+      },
+      {
+        "title": "Quiet, restful rooms",
+        "body": "100% smoke-free property. Blackout curtains. Separate living area means you can take a phone call without waking the rest of the family. We know the hospital schedule isn't always 9-to-5."
+      },
+      {
+        "title": "Patient-family rates",
+        "body": "If you're staying with us because a family member is in care at Upstate, Crouse, or Golisano, mention it at check-in. We offer patient-family rates and flexible cancellation policies."
+      }
+    ],
+    "nearby": [
+      "Upstate University Hospital — 15 min south on I-81",
+      "Crouse Hospital — 14 min south on I-81",
+      "Golisano Children's Hospital (at Upstate) — 15 min",
+      "VA Medical Center — 16 min",
+      "St. Joseph's Health Hospital — 14 min",
+      "Syracuse University campus — 16 min",
+      "SUNY ESF — 16 min",
+      "Westcott neighborhood (cafes, restaurants) — 17 min"
+    ],
+    "faqs": [
+      {
+        "q": "How far is The Cicero Grand from Upstate Medical University?",
+        "a": "Fifteen minutes (11.2 miles) south on I-81 to Exit 18 (Adams Street). The route is direct interstate the entire way. Allow 20-25 minutes during morning rush."
+      },
+      {
+        "q": "Do you offer rates for patients' families?",
+        "a": "Yes. We offer patient-family rates with flexible cancellation policies — please mention it at check-in or call the sales line at (315) 715-7410 in advance to set up an extended-stay rate."
+      },
+      {
+        "q": "Is there a refrigerator in the room for medications?",
+        "a": "Yes. Every Cicero Grand suite includes a mini-fridge and microwave. Coolers and additional ice are available at the front desk."
+      },
+      {
+        "q": "What's the closest hotel to Upstate Medical University?",
+        "a": "Several limited-service hotels sit within a few minutes of University Hill, but most are smaller rooms with paid parking. The Cicero Grand is fifteen minutes north on I-81 with full-size all-suite rooms, free parking, free breakfast, indoor pool, and patient-family rates — usually a more comfortable choice for stays longer than a night."
+      }
+    ]
+  },
+  "nys-fair": {
+    "path": "/hotels-near-nys-fair",
+    "title": "Hotels Near the New York State Fair · 13 Min · The Cicero Grand",
+    "description": "Stay 13 minutes from the NYS Fairgrounds at The Cicero Grand. All-suite rooms, free hot breakfast, indoor pool, free parking. Group rates for the State Fair.",
+    "h1": "Hotels Near the New York State Fairgrounds",
+    "subtitle": "Thirteen minutes door-to-gate. Free parking back at the hotel. Hot breakfast before you go back for round two.",
+    "venue": {
+      "name": "New York State Fairgrounds",
+      "address": "581 State Fair Blvd, Syracuse, NY 13209",
+      "drive": "13 minutes",
+      "miles": "9.7 mi west on I-690"
+    },
+    "ogImage": "/photos/exterior-1.jpg",
+    "highlights": [
+      "Thirteen minutes from the Fair gates · I-81 to I-690",
+      "All-suite rooms sleep four — bring the whole family",
+      "Free hot breakfast every morning of the Fair",
+      "Indoor heated pool — perfect post-Fair cool-down",
+      "Free parking — cars, trucks, RVs, even tour buses",
+      "Group rates and block bookings for Fair weekends"
+    ],
+    "intro": "The Great New York State Fair is the largest agricultural fair in the Northeast — 13 days, 1+ million visitors, ending Labor Day. The Cicero Grand sits thirteen minutes from the fairgrounds via I-81 and I-690, putting you close enough for full days at the Fair without sleeping inside the chaos. All-suite rooms, free parking for whatever you're driving, and a hot breakfast that gets the whole family out the door before the Midway opens.",
+    "why": [
+      {
+        "title": "Thirteen minutes door-to-gate",
+        "body": "I-81 South to I-690 West to Exit 7 (State Fair Blvd). Same route the Fair shuttles use. Plan to leave 30-45 min before gates if you're heading in on Free-Sunday."
+      },
+      {
+        "title": "All-suite means the family fits",
+        "body": "Every Cicero Grand suite sleeps four with a separate living area. No paying for two rooms or two beds when one suite handles it. Kids under 12 free."
+      },
+      {
+        "title": "Free parking — even for the trailer",
+        "body": "Bringing a livestock trailer, RV, or tour bus to the Fair? Our oversized parking is free — no surcharge, no advance booking required. Same for cars, trucks, and SUVs."
+      },
+      {
+        "title": "Group rates for Fair weekends",
+        "body": "Hosting friends and family for the Fair? Call sales at (315) 715-7410 for 5+ room blocks. We hold space for vendors, performers, and 4-H groups every year."
+      }
+    ],
+    "nearby": [
+      "NYS Fairgrounds Main Gate — 13 min",
+      "Empower FCU Amphitheater — 12 min · concerts year-round at the Fair site",
+      "Syracuse Nationals Car Show (July) — at the Fairgrounds",
+      "Onondaga Lake Park — 7 min",
+      "Destiny USA — 5 min",
+      "Heid's of Liverpool — 8 min · classic Coney dogs",
+      "Inner Harbor restaurants — 10 min",
+      "Whole Foods Market — 9 min"
+    ],
+    "faqs": [
+      {
+        "q": "How far is The Cicero Grand from the NYS Fairgrounds?",
+        "a": "Thirteen minutes (9.7 miles) via I-81 South to I-690 West, exiting at State Fair Blvd. Allow 20-30 minutes on Saturday or Free-Sunday — Fair traffic backs up the I-690 exit ramp."
+      },
+      {
+        "q": "Do you offer group rates for State Fair vendors?",
+        "a": "Yes. We hold rooms every year for vendors, performers, judges, and 4-H groups. Call sales at (315) 715-7410 or email sales@cicerogrand.com to set up a block."
+      },
+      {
+        "q": "Can I park an RV or trailer overnight?",
+        "a": "Yes — we offer free oversized parking for RVs, trailers, and tour buses. Please let the front desk know at check-in so we can direct you to the appropriate area."
+      },
+      {
+        "q": "What's the closest hotel to the NYS Fairgrounds?",
+        "a": "The closest hotels are in Geddes and Solvay (5-10 min from the gate), but rates spike during Fair days and most are limited-service. The Cicero Grand is thirteen minutes north with all-suite rooms, free breakfast, indoor pool, and free oversized parking — typically a better value for families and groups during Fair weeks."
+      }
+    ]
+  },
+  "syracuse-hotels": {
+    "path": "/hotels-syracuse-ny",
+    "title": "Hotels in Syracuse NY · The Cicero Grand · All-Suite",
+    "description": "Looking for hotels in Syracuse, NY? The Cicero Grand is an all-suite hotel just outside the city — minutes from Micron, Destiny USA, the Dome, and the airport. Free breakfast, indoor pool, free parking.",
+    "h1": "Hotels in Syracuse, NY",
+    "subtitle": "An all-suite hotel just outside Syracuse — quieter than downtown, closer to Micron, and free parking that downtown can't match.",
+    "venue": {
+      "name": "Syracuse, NY",
+      "address": "Central New York · Onondaga County",
+      "drive": "10–18 minutes",
+      "miles": "I-81 Exit 98"
+    },
+    "ogImage": "/photos/exterior-1.jpg",
+    "highlights": [
+      "All-suite hotel · every room sleeps four · separate living area",
+      "10 minutes to downtown Syracuse · 7 minutes to Micron",
+      "Free hot breakfast · indoor heated pool · 24-hour fitness",
+      "Free parking — cars, trucks, RVs, tour buses",
+      "Pet-friendly · 100% smoke-free property",
+      "I-81 Exit 98 · easy in-and-out for road trips & business travel"
+    ],
+    "intro": "If you're searching for hotels in Syracuse, NY, you're looking at two basic choices: stay downtown and pay for parking, or stay just outside the city and get more room for less. The Cicero Grand is an all-suite hotel ten minutes north of downtown Syracuse, off I-81 Exit 98 — putting you closer to Micron, the airport, Destiny USA, and the State Fair than most downtown options. Every suite sleeps four. Parking is free. Breakfast is free. The pool is heated and indoor. It's the practical choice for families, project crews, and business travelers who want a real bed and a quiet night.",
+    "why": [
+      {
+        "title": "All-suite, not a single hotel-room cube",
+        "body": "Every Cicero Grand suite has a separate sleeping area, separate living area, and a kitchenette. You're not paying $200 for a single queen and 9 square feet of bathroom — you're getting a real apartment-style stay."
+      },
+      {
+        "title": "Closer to Micron than downtown is",
+        "body": "Micron's Clay megafab is seven minutes from us. From most downtown Syracuse hotels, it's twenty. If your trip involves Micron — contractor work, vendor visits, relocation house-hunting — staying with us cuts your daily commute in half."
+      },
+      {
+        "title": "Free parking — even for the truck",
+        "body": "Most downtown Syracuse hotels charge $15-25/night for parking. Some don't have on-site parking at all. We have free parking for cars, trucks, SUVs, RVs, trailers, and tour buses. No advance booking, no surcharge."
+      },
+      {
+        "title": "Better breakfast, indoor pool, and a quiet night",
+        "body": "Free hot breakfast 6:30–9:30 AM with eggs, meat, waffles, fruit, and coffee. Indoor heated pool open year-round. And because we're north of the city, you actually sleep — no late-night downtown traffic noise."
+      }
+    ],
+    "nearby": [
+      "Downtown Syracuse — 15 min · Armory Square, restaurants, nightlife",
+      "Syracuse Hancock International Airport (SYR) — 10 min",
+      "Destiny USA — 12 min · 250+ stores, the largest mall in NY",
+      "Syracuse University & JMA Wireless Dome — 16 min",
+      "Micron Megafab (Clay) — 7 min · closer than downtown hotels",
+      "Onondaga Lake Park — 10 min · 7-mile lakeside trail",
+      "NYS Fairgrounds — 13 min · State Fair, concerts, expos",
+      "Empower FCU Amphitheater — 12 min · summer concert venue",
+      "Upstate Medical University — 15 min",
+      "Turning Stone Resort Casino — 25 min",
+      "Skaneateles Lake — 25 min · the Finger Lakes' clearest lake"
+    ],
+    "faqs": [
+      {
+        "q": "What hotel in Syracuse, NY has the best amenities?",
+        "a": "The Cicero Grand offers all-suite rooms (every room sleeps four), free hot breakfast, an indoor heated pool, 24-hour fitness center, free parking (including oversized vehicles), free WiFi, and a pet-friendly policy. We're rated highly for value among Syracuse-area hotels."
+      },
+      {
+        "q": "Where should I stay in Syracuse — downtown or outside the city?",
+        "a": "It depends on your trip. If your visit centers on Syracuse University or downtown nightlife, downtown might be convenient — but expect smaller rooms and paid parking. If your trip involves Micron, the airport, Destiny USA, or the State Fair, staying just outside the city (like at The Cicero Grand) gives you bigger rooms, free parking, and a quieter night, with all of those destinations 10-15 minutes away by interstate."
+      },
+      {
+        "q": "Are there pet-friendly hotels in Syracuse?",
+        "a": "Yes. The Cicero Grand is pet-friendly and 100% smoke-free, with non-smoking suites and a small pet fee. We welcome dogs and cats — call ahead for any special requests."
+      },
+      {
+        "q": "Which Syracuse hotel is closest to the airport?",
+        "a": "Several hotels sit within 5-10 minutes of Syracuse Hancock International Airport. The Cicero Grand is 10 minutes from the airport via I-81 — close enough for early flights, far enough that you actually sleep through the night."
+      },
+      {
+        "q": "Which Syracuse hotel is closest to Micron?",
+        "a": "The Cicero Grand is the closest practical hotel to Micron's Clay megafab — about 7 minutes by car. Most downtown Syracuse hotels are 18-25 minutes away. If your trip is Micron-related, staying at The Cicero Grand cuts your daily commute significantly."
+      },
+      {
+        "q": "Are there hotels in Syracuse with indoor pools?",
+        "a": "Yes — The Cicero Grand has an indoor heated pool open year-round, plus a 24-hour fitness center. Many limited-service hotels in the area do not have pools, so this is one of the things families specifically book us for."
+      },
+      {
+        "q": "What's a good hotel in Syracuse for a long stay?",
+        "a": "The Cicero Grand is purpose-built for extended stays. Every room is an all-suite layout with a separate living area, kitchenette, and mini-fridge. We offer weekly project rates for stays of 7+ nights — ideal for relocation, contractors, or anyone working a multi-week assignment in CNY."
+      }
+    ]
+  },
+  "cicero-ny-hotels": {
+    "path": "/cicero-ny-hotels",
+    "title": "Hotels in Cicero, NY · The Cicero Grand · All-Suite",
+    "description": "The Cicero Grand is an all-suite hotel in Cicero, NY — I-81 Exit 98. Free hot breakfast, indoor pool, free parking, pet-friendly. Minutes from Syracuse and Oneida Lake.",
+    "h1": "Hotels in Cicero, NY",
+    "subtitle": "An all-suite hotel right in the village of Cicero — between Onondaga Lake and Oneida Lake, minutes from Syracuse and the Micron campus.",
+    "venue": {
+      "name": "Cicero, NY",
+      "address": "5875 Carmenica Drive, Cicero, NY 13039",
+      "drive": "0 minutes",
+      "miles": "I-81 Exit 98"
+    },
+    "ogImage": "/photos/exterior-1.jpg",
+    "highlights": [
+      "Right in the village of Cicero · I-81 Exit 98",
+      "All-suite hotel · every room sleeps four",
+      "Free hot breakfast · indoor heated pool · 24-hour fitness",
+      "Free parking for cars, trucks, RVs, and tour buses",
+      "Pet-friendly · 100% smoke-free property",
+      "Minutes from Oneida Lake, Onondaga Lake, and downtown Syracuse"
+    ],
+    "intro": "Cicero, NY is a town of about 30,000 people in northern Onondaga County, sitting between Onondaga Lake to the south and Oneida Lake to the north. The Cicero Grand is the village's flagship hotel — an all-suite property right off I-81 Exit 98, with free hot breakfast, an indoor pool, free parking, and a pet-friendly policy. We're 10 minutes from downtown Syracuse and 7 minutes from the Micron Clay campus — close enough to commute, far enough to truly rest.",
+    "why": [
+      {
+        "title": "Right in the village of Cicero",
+        "body": "We're on Carmenica Drive, just off I-81 Exit 98 — minutes from Twin Trees Pizza, Cracker Barrel, the Cicero Swamp birding preserve, and a five-minute hop to Brewerton Beach on Oneida Lake."
+      },
+      {
+        "title": "Every room is an all-suite layout",
+        "body": "Separate sleeping area, separate living area, kitchenette, mini-fridge, microwave. Every suite sleeps four. Built for families, traveling crews, and stays longer than a night."
+      },
+      {
+        "title": "Free everything that matters",
+        "body": "Free hot breakfast 6:30–9:30 AM. Free WiFi. Free parking for cars, trucks, SUVs, RVs, and tour buses. Free coin-free coffee 24/7. No surprise add-ons at checkout."
+      },
+      {
+        "title": "Closest practical hotel to Micron",
+        "body": "Micron's Clay megafab is seven minutes from our front door. We're the most convenient base for project crews, vendors, and visiting Micron staff."
+      }
+    ],
+    "nearby": [
+      "Twin Trees Pizza Cicero — 3 min",
+      "Cracker Barrel — across the street",
+      "Brewerton Beach (Oneida Lake) — 7 min",
+      "Cicero Swamp Wildlife Management Area — 5 min",
+      "Micron Clay Campus — 7 min",
+      "Driver's Village (auto retail) — 4 min",
+      "Onondaga Lake Park — 10 min",
+      "Downtown Syracuse — 15 min",
+      "Syracuse Hancock Airport — 10 min",
+      "Destiny USA — 12 min",
+      "JMA Wireless Dome — 16 min"
+    ],
+    "faqs": [
+      {
+        "q": "Where is Cicero, NY?",
+        "a": "Cicero is a town of about 30,000 in northern Onondaga County, NY — about 10 miles north of downtown Syracuse on I-81. The Cicero Grand is at Exit 98, between Onondaga Lake to the south and Oneida Lake to the north."
+      },
+      {
+        "q": "Why stay in Cicero instead of Syracuse?",
+        "a": "Cicero gives you cheaper hotel rates, free parking, quieter nights, and better access to Micron and Oneida Lake. Downtown Syracuse is 10-15 minutes away by interstate — close enough for nightlife or a meeting, far enough to actually sleep."
+      },
+      {
+        "q": "Is The Cicero Grand the only hotel in Cicero, NY?",
+        "a": "There are a few limited-service hotels and roadside motels in the Cicero/Brewerton/Clay area. The Cicero Grand is the all-suite, full-amenity option — every room sleeps four with a separate living area, plus an indoor pool, free hot breakfast, free parking, and a pet-friendly policy."
+      },
+      {
+        "q": "Is The Cicero Grand close to Oneida Lake?",
+        "a": "Yes — Brewerton Beach on Oneida Lake is about seven minutes north on I-81, and the Erie Canal Lock 23 (where the canal meets Oneida Lake) is in the same area. Great for boating, fishing, and summer evenings on the water."
+      }
+    ]
+  },
+  "pet-friendly-syracuse": {
+    "path": "/pet-friendly-hotels-syracuse",
+    "title": "Pet-Friendly Hotels in Syracuse · The Cicero Grand",
+    "description": "Looking for pet-friendly hotels in Syracuse, NY? The Cicero Grand welcomes dogs and cats in our all-suite rooms. Free hot breakfast, indoor pool, free parking. Book direct.",
+    "h1": "Pet-Friendly Hotels in Syracuse, NY",
+    "subtitle": "All-suite rooms · separate living space for the pet · free hot breakfast for the humans · plenty of grass to walk before bed.",
+    "venue": {
+      "name": "The Cicero Grand",
+      "address": "5875 Carmenica Drive, Cicero, NY 13039",
+      "drive": "0 minutes",
+      "miles": "I-81 Exit 98"
+    },
+    "ogImage": "/photos/exterior-1.jpg",
+    "highlights": [
+      "Pet-friendly suites · dogs and cats welcome",
+      "All-suite layout — separate sleeping and living space for your pet",
+      "Grass and walking paths on-property — easy bathroom breaks",
+      "Free hot breakfast · indoor heated pool · free parking",
+      "Small pet fee · no breed restrictions on most stays",
+      "100% smoke-free property"
+    ],
+    "intro": "Traveling with a pet in the Syracuse area? The Cicero Grand welcomes dogs and cats in our all-suite rooms. The separate living area gives your pet some space of their own, and we have grass and walking paths right on the property — no parking lot bathroom breaks. Free breakfast for you, free parking for the road trip, and a quiet night for everyone, including your travel companion.",
+    "why": [
+      {
+        "title": "Pet-friendly without being pet-only",
+        "body": "We welcome pets in designated suites, but we're a 100% smoke-free, family-friendly property. Your pet is treated like a guest — but the room is still clean and quiet for everyone."
+      },
+      {
+        "title": "All-suite means your pet gets their own space",
+        "body": "Most pet-friendly hotels are single-room layouts where your dog is on top of you all night. Our all-suite rooms have a separate living area — perfect for a crate, a bed, or just a place for your pet to settle in."
+      },
+      {
+        "title": "Grass and walking paths on-property",
+        "body": "We're not a parking-lot-only setup. There's real grass and walking space right on the property for bathroom breaks and short walks. Onondaga Lake Park (7-mile trail) is 10 minutes away if you want to make a real walk of it."
+      },
+      {
+        "title": "Reasonable pet fee, no surprise charges",
+        "body": "We charge a flat per-stay pet fee — much less than typical chain pet fees. No deep-cleaning surcharges, no by-the-night markups. Ask at booking."
+      }
+    ],
+    "nearby": [
+      "Onondaga Lake Park — 10 min · 7-mile pet-friendly trail",
+      "Cicero Swamp Wildlife Management Area — 5 min",
+      "Brewerton Beach (Oneida Lake) — 7 min",
+      "Clay Pet Resort — 6 min · daycare and boarding",
+      "PetSmart Syracuse — 12 min",
+      "Pratt's Falls County Park — 25 min · pet-friendly hiking",
+      "Green Lakes State Park — 20 min · pets allowed on trails",
+      "Beaver Lake Nature Center — 20 min · seasonal pet access"
+    ],
+    "faqs": [
+      {
+        "q": "Does The Cicero Grand allow pets?",
+        "a": "Yes — we welcome dogs and cats in our pet-friendly suites. There's a small pet fee per stay. Please let us know at booking that you're traveling with a pet so we can assign the right room."
+      },
+      {
+        "q": "What's the pet fee at The Cicero Grand?",
+        "a": "We charge a reasonable flat per-stay fee for pets — please call (315) 752-0150 or check at booking for the current rate. There are no per-night surcharges or breed-based add-ons for most stays."
+      },
+      {
+        "q": "Are there breed or size restrictions for pets?",
+        "a": "We accommodate most dogs and cats without breed restrictions. For very large dogs or service animals, please call ahead so we can assign the right suite."
+      },
+      {
+        "q": "Is there grass on-property for dog walks?",
+        "a": "Yes — we have grass and walking paths right on the property for quick bathroom breaks. For real walks, Onondaga Lake Park (a 7-mile pet-friendly trail) is 10 minutes away."
+      },
+      {
+        "q": "Are there other pet-friendly hotels in Syracuse?",
+        "a": "Several Syracuse-area hotels accept pets, but most are single-room layouts. The Cicero Grand is one of the few all-suite pet-friendly options — your pet gets a separate living area, and you get a real night's sleep."
       }
     ]
   }
