@@ -1,5 +1,5 @@
 import { Link } from 'wouter';
-import { ArrowUpRight, MapPin, Wifi, Coffee, Waves, Dumbbell, Dog, Car, Sparkles } from 'lucide-react';
+import { ArrowUpRight, MapPin, Star, Wifi, Coffee, Waves, Dumbbell, Dog, Car, Sparkles } from 'lucide-react';
 import { BookingWidget } from '../components/BookingWidget';
 import { Reveal } from '../components/Reveal';
 import { useContent } from '../lib/content';
@@ -7,6 +7,7 @@ import { useSeo, SITE } from '../hooks/useSeo';
 import siteSeed from '../content/site.json';
 import roomsSeed from '../content/rooms.json';
 import offersSeed from '../content/offers.json';
+import testimonialsSeed from '../content/testimonials.json';
 
 const tickerItems = [
   'All-suite stays',
@@ -29,6 +30,7 @@ export default function Home() {
   const site = useContent<typeof siteSeed>('site');
   const rooms = useContent<typeof roomsSeed>('rooms');
   const offers = useContent<typeof offersSeed>('offers');
+  const testimonials = useContent<typeof testimonialsSeed>('testimonials');
 
   useSeo({
     title: 'The Cicero Grand · Hotel 6 Minutes from Micron Megafab · Syracuse, NY',
@@ -76,10 +78,16 @@ export default function Home() {
         ],
         aggregateRating: {
           '@type': 'AggregateRating',
-          ratingValue: '5.0',
-          reviewCount: '31',
+          ratingValue: testimonials.rating,
+          reviewCount: String(testimonials.reviewCount),
           bestRating: '5',
         },
+        review: testimonials.items.slice(0, 4).map((t) => ({
+          '@type': 'Review',
+          reviewRating: { '@type': 'Rating', ratingValue: String(t.stars), bestRating: '5' },
+          author: { '@type': 'Person', name: t.name },
+          reviewBody: t.quote,
+        })),
         potentialAction: {
           '@type': 'ReserveAction',
           target: {
@@ -416,6 +424,67 @@ export default function Home() {
                   >
                     {o.cta} <ArrowUpRight className="w-4 h-4" />
                   </a>
+                </article>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* TESTIMONIALS */}
+      <section className="relative bg-background py-24 lg:py-36">
+        <div className="max-w-[1400px] mx-auto px-5 lg:px-10">
+          <Reveal>
+            <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14 lg:mb-20">
+              <div>
+                <span className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
+                  ✦ Guest reviews
+                </span>
+                <h2 className="font-display text-[clamp(2.2rem,5vw,4.5rem)] leading-[1] tracking-tight text-balance max-w-3xl">
+                  What guests are <em className="italic font-light">saying</em>.
+                </h2>
+              </div>
+              <a
+                href={testimonials.sourceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-sm hover:text-primary transition-colors"
+              >
+                <div className="flex items-center gap-1">
+                  {[1, 2, 3, 4].map((n) => (
+                    <Star key={n} className="w-4 h-4 fill-primary text-primary" />
+                  ))}
+                  <Star className="w-4 h-4 fill-primary/40 text-primary" />
+                </div>
+                <span className="uppercase tracking-[0.16em]">
+                  {testimonials.rating} · {testimonials.reviewCount} reviews on {testimonials.source}
+                </span>
+                <ArrowUpRight className="w-4 h-4" />
+              </a>
+            </div>
+          </Reveal>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {testimonials.items.slice(0, 6).map((t, i) => (
+              <Reveal key={`${t.name}-${i}`} delay={i * 60}>
+                <article
+                  className="group relative h-full bg-card border border-card-border rounded-3xl p-8 flex flex-col hover:border-primary/40 transition-colors"
+                  data-testid={`testimonial-${i}`}
+                >
+                  <div className="flex items-center gap-1 mb-5">
+                    {Array.from({ length: t.stars }).map((_, n) => (
+                      <Star key={n} className="w-4 h-4 fill-primary text-primary" />
+                    ))}
+                  </div>
+                  <blockquote className="text-[15px] leading-relaxed text-foreground/85 flex-1">
+                    “{t.quote}”
+                  </blockquote>
+                  <footer className="mt-7 pt-5 border-t border-card-border">
+                    <div className="text-sm font-medium">{t.name}</div>
+                    <div className="text-xs text-muted-foreground mt-1">
+                      {t.location} · Stayed {t.stayMonth}
+                    </div>
+                  </footer>
                 </article>
               </Reveal>
             ))}

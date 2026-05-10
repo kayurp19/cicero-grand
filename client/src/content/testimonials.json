@@ -1,0 +1,62 @@
+{
+  "rating": "4.1",
+  "reviewCount": 367,
+  "source": "TripAdvisor",
+  "sourceUrl": "https://www.tripadvisor.com/Hotel_Review-g47472-d1474930-Reviews-Cicero_Grand-Cicero_Finger_Lakes_New_York.html",
+  "items": [
+    {
+      "quote": "The staff at the Cicero Grand treated us like their own family. They were so polite and engaging with the children. We are so grateful for all the amenities they provided, never hesitating once to accommodate our every need.",
+      "name": "Jayson S.",
+      "location": "Florida",
+      "stayMonth": "Feb 2025",
+      "tripType": "Family",
+      "stars": 5,
+      "theme": "staff"
+    },
+    {
+      "quote": "Room was large and well apportioned — everything was comfortable: beds, chair, linens, towels. Very good breakfast: eggs, bacon, waffles, cereals, juices, and fruit. Staff was quite welcoming and friendly. If ever in the Syracuse area again, we'd not hesitate to return.",
+      "name": "Joseph G.",
+      "location": "Louisville, KY",
+      "stayMonth": "Jul 2024",
+      "tripType": "Couple",
+      "stars": 5,
+      "theme": "comfort"
+    },
+    {
+      "quote": "Really nice hotel. Friendly staff. Lovely, large room. Very clean. Most importantly, it is cat friendly. I would like to return to this hotel sometime when I have time to enjoy all of the features.",
+      "name": "K B.",
+      "location": "Pittsburgh, PA",
+      "stayMonth": "Feb 2025",
+      "tripType": "Solo",
+      "stars": 5,
+      "theme": "pet-friendly"
+    },
+    {
+      "quote": "We had to travel to New York from Florida unexpectedly in the middle of winter. They let us check in early after two days of driving — and we had six kids with us. Especially Maria at the front desk; she loved on those kiddos. Thank you for such a wonderful experience.",
+      "name": "Jayson family",
+      "location": "Florida",
+      "stayMonth": "Feb 2025",
+      "tripType": "Family",
+      "stars": 5,
+      "theme": "service"
+    },
+    {
+      "quote": "Right off of 81, easy to find — a 10-minute drive north of Syracuse University. Friendly staff. Immaculately clean, comfortable room with a sitting area, microwave, coffee maker, and nice TV. Bathroom had granite countertops and a great tub.",
+      "name": "TripAdvisor guest",
+      "location": "Syracuse area",
+      "stayMonth": "2022",
+      "tripType": "College visit",
+      "stars": 5,
+      "theme": "location"
+    },
+    {
+      "quote": "We've stayed four times in the last few months. The rooms were clean and quiet. The breakfast was great and the coffee is the best. The pool and gym were clean and neat. We plan on staying here every time we visit the Syracuse area. The parking lot is well lit and we felt very secure.",
+      "name": "Repeat guest",
+      "location": "Central NY",
+      "stayMonth": "2022",
+      "tripType": "Couple",
+      "stars": 5,
+      "theme": "repeat-visitor"
+    }
+  ]
+}
