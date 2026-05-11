@@ -1,5 +1,5 @@
 import { Link } from 'wouter';
-import { Check, ArrowUpRight, ChevronDown } from 'lucide-react';
+import { Check, ArrowUpRight, ChevronDown, Phone, Calendar } from 'lucide-react';
 import { PageHero } from '../components/PageHero';
 import { Reveal } from '../components/Reveal';
 import { useContent } from '../lib/content';
@@ -83,6 +83,35 @@ export default function EventCenter() {
         title={<>One ballroom. <em className="italic font-light">Every</em> kind of gathering.</>}
         intro="A 45 × 64 ballroom plus three flexible breakout rooms — built to host meetings, banquets, and weddings up to 250 guests. Outside caterers welcome, on-site suites for overnight guests, and one coordinator from booking through teardown."
       />
+
+      {/* CALL-FIRST CTA BAR — directly under hero so ad traffic sees it immediately */}
+      <section className="bg-primary text-primary-foreground">
+        <div className="max-w-[1400px] mx-auto px-5 lg:px-10 py-8 lg:py-10 grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+          <div className="lg:col-span-7">
+            <p className="text-sm uppercase tracking-[0.2em] opacity-80 mb-2">Tour the ballroom this week</p>
+            <h2 className="font-display text-2xl lg:text-3xl leading-tight tracking-tight">
+              Talk to a coordinator now — availability, pricing, and menus in one call.
+            </h2>
+          </div>
+          <div className="lg:col-span-5 flex flex-col sm:flex-row gap-3 lg:justify-end">
+            <a
+              href={`tel:${site.salesPhoneRaw}`}
+              data-testid="event-hero-call"
+              className="inline-flex items-center justify-center gap-2 px-6 h-14 rounded-full bg-background text-foreground font-medium hover:bg-background/90 transition-colors"
+            >
+              <Phone className="w-5 h-5" strokeWidth={2.2} />
+              Call {site.salesPhone}
+            </a>
+            <a
+              href={`mailto:${site.email}?subject=Event%20Center%20-%20Request%20a%20tour`}
+              className="inline-flex items-center justify-center gap-2 px-6 h-14 rounded-full border border-background/40 hover:bg-background/10 transition-colors"
+            >
+              <Calendar className="w-5 h-5" strokeWidth={2.2} />
+              Request a tour
+            </a>
+          </div>
+        </div>
+      </section>
 
       {/* CATEGORY CARDS — 3 sub-pages */}
       <section className="bg-background py-24 lg:py-32">
