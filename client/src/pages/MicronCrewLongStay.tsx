@@ -4,6 +4,7 @@ import { ArrowUpRight, Check, Phone, Mail, MapPin, Clock, Building2, Bed, Wifi, 
 import { PageHero } from '../components/PageHero';
 import { Reveal } from '../components/Reveal';
 import { useSeo, SITE } from '../hooks/useSeo';
+import { trackContactSubmit } from '../lib/tracking';
 
 const heroSubcopy =
   '65 all-suite rooms · 6 minutes from White Pine Commerce Park · weekly + monthly crew rates · billed by PO · no minimum commitment · pet-friendly.';
@@ -119,6 +120,7 @@ Notes: ${fd.get('notes') || '—'}`,
         }),
       });
       if (!res.ok) throw new Error('Submit failed');
+      trackContactSubmit({ topic: 'Micron Crew Long-Stay', source: 'micron_crew_page' });
       setSubmitted(true);
     } catch (err) {
       setError('Could not submit. Please call (315) 752-0150 or email sales@cicerogrand.com.');

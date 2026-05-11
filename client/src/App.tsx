@@ -28,17 +28,41 @@ import Accessibility from "@/pages/Accessibility";
 import LandingPage from "@/pages/LandingPage";
 import Packages from "@/pages/Packages";
 import MicronCrewLongStay from "@/pages/MicronCrewLongStay";
+import TrackingTest from "@/pages/TrackingTest";
 import NotFound from "@/pages/not-found";
 
 import AdminLogin from "@/pages/admin/Login";
 import AdminDashboard from "@/pages/admin/Dashboard";
 import AdminEditor from "@/pages/admin/Editor";
 import AdminSubmissions from "@/pages/admin/Submissions";
+import { initTracking, trackPageView, installGlobalClickTracking } from "@/lib/tracking";
 
 function ScrollToTop() {
   const [location] = useLocation();
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior });
+  }, [location]);
+  return null;
+}
+
+/**
+ * Boots GTM once, then fires a virtual page_view event into the dataLayer
+ * every time the wouter route changes. Safe to mount before tracking IDs
+ * are pasted into TRACKING config — it short-circuits silently.
+ */
+function TrackingProvider() {
+  const [location] = useLocation();
+  useEffect(() => {
+    initTracking();
+    installGlobalClickTracking();
+  }, []);
+  useEffect(() => {
+    // Defer one tick so the document.title from useSeo lands before the
+    // pageview event captures it.
+    const id = window.setTimeout(() => {
+      trackPageView(location, document.title);
+    }, 0);
+    return () => window.clearTimeout(id);
   }, [location]);
   return null;
 }
@@ -91,6 +115,7 @@ function AppRouter() {
         <Route path="/packages" component={Packages} />
         <Route path="/micron-crew-long-stay" component={MicronCrewLongStay} />
         <Route path="/micron-long-stay" component={MicronCrewLongStay} />
+        <Route path="/tracking-test" component={TrackingTest} />
         <Route path="/gallery" component={Gallery} />
         <Route path="/contact" component={Contact} />
         <Route path="/privacy" component={Privacy} />
@@ -141,6 +166,7 @@ function App() {
       <TooltipProvider>
         <Toaster />
         <ScrollToTop />
+        <TrackingProvider />
         <AppRouter />
       </TooltipProvider>
     </QueryClientProvider>

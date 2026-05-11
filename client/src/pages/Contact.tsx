@@ -3,6 +3,7 @@ import { Phone, Mail, MapPin, Clock, Send } from 'lucide-react';
 import { PageHero } from '../components/PageHero';
 import { Reveal } from '../components/Reveal';
 import { useContent } from '../lib/content';
+import { trackContactSubmit } from '../lib/tracking';
 import { useSeo } from '../hooks/useSeo';
 import siteSeed from '../content/site.json';
 
@@ -33,6 +34,7 @@ export default function Contact() {
       const data = await res.json().catch(() => ({}));
       if (res.ok) {
         setStatus('sent');
+        trackContactSubmit({ topic: String(payload.topic || ''), source: 'contact_page' });
         formEl.reset();
       } else {
         setStatus('error');
