@@ -14,7 +14,7 @@ export const TRACKING = {
    * Where to find: tagmanager.google.com → your container → top-right of the
    * workspace shows the ID.
    */
-  GTM_CONTAINER_ID: "" as string,
+  GTM_CONTAINER_ID: "GTM-T39JPZVF" as string,
 
   /**
    * GA4 measurement ID — looks like "G-XXXXXXXXXX".
