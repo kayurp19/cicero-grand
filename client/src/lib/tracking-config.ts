@@ -21,7 +21,7 @@ export const TRACKING = {
    * Where to find: analytics.google.com → Admin → Data Streams → click your
    * Cicero Grand web stream → Measurement ID is in the top-right.
    */
-  GA4_MEASUREMENT_ID: "" as string,
+  GA4_MEASUREMENT_ID: "G-GC9V8V3440" as string,
 
   /**
    * Google Ads conversion ID — looks like "AW-XXXXXXXXX".
@@ -29,7 +29,7 @@ export const TRACKING = {
    * conversion action → "Tag setup" → "Use Google Tag Manager" → the
    * Conversion ID is shown there.
    */
-  GADS_CONVERSION_ID: "" as string,
+  GADS_CONVERSION_ID: "AW-16665941603" as string,
 
   /**
    * Optional: pass through to GA4 / GAds as conversion labels for events
@@ -38,7 +38,7 @@ export const TRACKING = {
    */
   GADS_LABELS: {
     BEGIN_CHECKOUT: "" as string,
-    PHONE_CLICK: "" as string,
+    PHONE_CLICK: "zI1UCLj8rascEOOs-Io-" as string,
   },
 };
 
