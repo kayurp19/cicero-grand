@@ -33,9 +33,9 @@ export default function Home() {
   const testimonials = useContent<typeof testimonialsSeed>('testimonials');
 
   useSeo({
-    title: 'The Cicero Grand · Hotel 6 Minutes from Micron Megafab · Syracuse, NY',
+    title: 'The Cicero Grand · Hotel in Cicero NY · 7 Min to Micron · Syracuse North',
     description:
-      "All-suite hotel 6 minutes from Micron's New York megafab in Clay. Off I-81 Exit 98. Free hot breakfast, indoor pool, free parking, pet friendly. Built for project crews, vendors, and visiting teams.",
+      'All-suite hotel in Cicero NY (Syracuse North), 7 minutes from the Micron megafab. Off I-81 Exit 98 · free hot breakfast · indoor pool · pet-friendly · weekly + monthly crew rates. Book direct: (315) 752-0150.',
     canonicalPath: '/',
     ogImage: '/photos/exterior-entrance.jpg',
     jsonLd: [
