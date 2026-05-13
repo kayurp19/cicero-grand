@@ -308,10 +308,11 @@ export default function EventCenter() {
                 Call sales: {site.salesPhone}
               </a>
               <a
-                href={`mailto:${site.email}?subject=Event%20Center%20inquiry%20-%20Cicero%20Grand`}
+                href="/contact?topic=Event%20%2F%20meeting%20inquiry#contact-form"
+                data-testid="event-bottom-cta"
                 className="inline-flex items-center px-7 h-12 rounded-full border border-background/30 hover:bg-background/10 transition-colors"
               >
-                Email sales
+                Request a quote
               </a>
             </div>
           </div>

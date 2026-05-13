@@ -160,7 +160,7 @@ export default function CorporateMeetings() {
                   Fueled, <em className="italic font-light">focused</em>, on-time.
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Pick a starting package — half-day, full lunch, or all-day with breakfast and breaks. Your coordinator builds the final menu with you. <a href={`mailto:${site.email}?subject=Corporate%20meeting%20pricing%20-%20Cicero%20Grand`} className="text-foreground underline underline-offset-4 hover:text-primary">Request a custom quote</a>.
+                  Pick a starting package — half-day, full lunch, or all-day with breakfast and breaks. Your coordinator builds the final menu with you. <a href="/contact?topic=Event%20%2F%20meeting%20inquiry&event_type=Corporate%20meeting#contact-form" data-testid="corp-pricing-quote" className="text-foreground underline underline-offset-4 hover:text-primary">Request a custom quote</a>.
                 </p>
                 <p className="mt-4 text-sm text-muted-foreground/80 italic">Menu items below are example selections — your coordinator will tailor everything.</p>
               </div>
@@ -204,7 +204,8 @@ export default function CorporateMeetings() {
                 Block 10+ all-suite rooms at preferred rates for out-of-town attendees. Every suite sleeps 4, so teams can share when budgets are tight. Free hot breakfast included.
               </p>
               <a
-                href={`mailto:${site.email}?subject=Group%20room%20block%20-%20Cicero%20Grand`}
+                href="/contact?topic=Group%20blocks&event_type=Corporate%20meeting%20room%20block#contact-form"
+                data-testid="corp-room-block"
                 className="inline-flex items-center text-background underline underline-offset-4 hover:text-primary transition-colors"
               >
                 Request a group block →
@@ -276,7 +277,8 @@ export default function CorporateMeetings() {
               Call sales: {site.salesPhone}
             </a>
             <a
-              href={`mailto:${site.email}?subject=Corporate%20meeting%20inquiry%20-%20Cicero%20Grand`}
+              href="/contact?topic=Event%20%2F%20meeting%20inquiry&event_type=Corporate%20meeting&tour=1#contact-form"
+              data-testid="corp-cta-quote"
               className="inline-flex items-center px-8 h-14 rounded-full border border-background/30 hover:bg-background/10 transition-colors"
             >
               Request a quote

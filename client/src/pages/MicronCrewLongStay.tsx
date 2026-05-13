@@ -109,18 +109,21 @@ export default function MicronCrewLongStay() {
           name: fd.get('name'),
           email: fd.get('email'),
           phone: fd.get('phone') || undefined,
-          topic: 'Micron Crew Long-Stay',
-          message: `Micron Crew Long-Stay inquiry
-
-Company: ${fd.get('company') || '—'}
+          topic: 'Corporate / extended stays',
+          message: `— EVENT LEAD DETAILS —
+Lead source: Micron Crew Long-Stay page
+Event type: Crew long-stay / project housing
+Company / organization: ${fd.get('company') || '—'}
 Rooms needed: ${fd.get('rooms')}
 Start date: ${fd.get('startDate')}
 Duration: ${fd.get('duration')}
-Notes: ${fd.get('notes') || '—'}`,
+
+— MESSAGE —
+${fd.get('notes') || '—'}`,
         }),
       });
       if (!res.ok) throw new Error('Submit failed');
-      trackContactSubmit({ topic: 'Micron Crew Long-Stay', source: 'micron_crew_page' });
+      trackContactSubmit({ topic: 'Corporate / extended stays', source: 'micron_crew_page' });
       setSubmitted(true);
     } catch (err) {
       setError('Could not submit. Please call (315) 752-0150 or email sales@cicerogrand.com.');

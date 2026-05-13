@@ -198,7 +198,7 @@ export default function Weddings() {
                 Three ways to <em className="italic font-light">celebrate</em>.
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Buffet, plated, or hors d'oeuvres-only. Mix in stations, premium bites, and bar enhancements. Tastings included on every plated and buffet package. <a href={`mailto:${site.email}?subject=Wedding%20pricing%20request%20-%20Cicero%20Grand`} className="text-foreground underline underline-offset-4 hover:text-primary">Request a custom quote</a>.
+                Buffet, plated, or hors d'oeuvres-only. Mix in stations, premium bites, and bar enhancements. Tastings included on every plated and buffet package. <a href="/contact?topic=Wedding%20inquiry&event_type=Wedding%20reception#contact-form" data-testid="wedding-pricing-quote" className="text-foreground underline underline-offset-4 hover:text-primary">Request a custom quote</a>.
               </p>
               <p className="mt-4 text-sm text-muted-foreground/80 italic">Menu items below are example selections — your coordinator will tailor the final menu to your day.</p>
             </div>
@@ -337,7 +337,8 @@ export default function Weddings() {
               Call sales: {site.salesPhone}
             </a>
             <a
-              href={`mailto:${site.email}?subject=Wedding%20inquiry%20-%20Cicero%20Grand`}
+              href="/contact?topic=Wedding%20inquiry&event_type=Wedding%20reception&tour=1#contact-form"
+              data-testid="wedding-cta-quote"
               className="inline-flex items-center px-8 h-14 rounded-full border border-background/30 hover:bg-background/10 transition-colors"
             >
               Request a quote
