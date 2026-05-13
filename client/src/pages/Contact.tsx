@@ -9,7 +9,8 @@ import siteSeed from '../content/site.json';
 
 const TOPIC_OPTIONS = [
   'General question',
-  'Group / project rate',
+  'Group blocks',
+  'Corporate / extended stays',
   'Wedding inquiry',
   'Event / meeting inquiry',
   'Lost & found',
@@ -21,10 +22,12 @@ function matchTopic(raw: string | null): string {
   const exact = TOPIC_OPTIONS.find((t) => t.toLowerCase() === lower);
   if (exact) return exact;
   if (lower.includes('wedding')) return 'Wedding inquiry';
-  if (lower.includes('tour') || lower.includes('event') || lower.includes('meeting') || lower.includes('banquet') || lower.includes('corporate'))
+  if (lower.includes('corporate') || lower.includes('extended') || lower.includes('long stay') || lower.includes('crew') || lower.includes('project rate'))
+    return 'Corporate / extended stays';
+  if (lower.includes('group') || lower.includes('block'))
+    return 'Group blocks';
+  if (lower.includes('tour') || lower.includes('event') || lower.includes('meeting') || lower.includes('banquet'))
     return 'Event / meeting inquiry';
-  if (lower.includes('group') || lower.includes('project') || lower.includes('block'))
-    return 'Group / project rate';
   if (lower.includes('lost')) return 'Lost & found';
   return 'General question';
 }
@@ -61,7 +64,8 @@ export default function Contact() {
   const isEventLead =
     topic === 'Wedding inquiry' ||
     topic === 'Event / meeting inquiry' ||
-    topic === 'Group / project rate';
+    topic === 'Group blocks' ||
+    topic === 'Corporate / extended stays';
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
