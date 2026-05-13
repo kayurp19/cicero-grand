@@ -1,4 +1,4 @@
-import { useState, FormEvent } from 'react';
+import { useState, useEffect, useRef, FormEvent } from 'react';
 import { Phone, Mail, MapPin, Clock, Send } from 'lucide-react';
 import { PageHero } from '../components/PageHero';
 import { Reveal } from '../components/Reveal';
@@ -6,6 +6,28 @@ import { useContent } from '../lib/content';
 import { trackContactSubmit } from '../lib/tracking';
 import { useSeo } from '../hooks/useSeo';
 import siteSeed from '../content/site.json';
+
+const TOPIC_OPTIONS = [
+  'General question',
+  'Group / project rate',
+  'Wedding inquiry',
+  'Event / meeting inquiry',
+  'Lost & found',
+] as const;
+
+function matchTopic(raw: string | null): string {
+  if (!raw) return 'General question';
+  const lower = raw.toLowerCase();
+  const exact = TOPIC_OPTIONS.find((t) => t.toLowerCase() === lower);
+  if (exact) return exact;
+  if (lower.includes('wedding')) return 'Wedding inquiry';
+  if (lower.includes('tour') || lower.includes('event') || lower.includes('meeting') || lower.includes('banquet') || lower.includes('corporate'))
+    return 'Event / meeting inquiry';
+  if (lower.includes('group') || lower.includes('project') || lower.includes('block'))
+    return 'Group / project rate';
+  if (lower.includes('lost')) return 'Lost & found';
+  return 'General question';
+}
 
 export default function Contact() {
   useSeo({
@@ -17,6 +39,24 @@ export default function Contact() {
   const site = useContent<typeof siteSeed>('site');
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle');
   const [errorMsg, setErrorMsg] = useState<string>('');
+  const [prefillTopic, setPrefillTopic] = useState<string>('General question');
+  const [prefillMessage, setPrefillMessage] = useState<string>('');
+  const formRef = useRef<HTMLFormElement | null>(null);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const params = new URLSearchParams(window.location.search);
+    const topicParam = params.get('topic');
+    const messageParam = params.get('message');
+    if (topicParam) setPrefillTopic(matchTopic(topicParam));
+    if (messageParam) setPrefillMessage(messageParam);
+    if (topicParam || messageParam || window.location.hash === '#contact-form') {
+      // scroll the form into view after layout
+      setTimeout(() => {
+        formRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 80);
+    }
+  }, []);
 
   const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -141,9 +181,11 @@ export default function Contact() {
             {/* Form column */}
             <Reveal as="div" className="col-span-12 lg:col-span-7" delay={120}>
               <form
+                ref={formRef}
+                id="contact-form"
                 onSubmit={onSubmit}
                 data-testid="contact-form"
-                className="bg-card border border-card-border rounded-3xl p-7 lg:p-10"
+                className="bg-card border border-card-border rounded-3xl p-7 lg:p-10 scroll-mt-24"
               >
                 <h3 className="font-display text-2xl tracking-tight mb-7">Send a message</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -180,13 +222,13 @@ export default function Contact() {
                     <select
                       name="topic"
                       data-testid="input-topic"
+                      value={prefillTopic}
+                      onChange={(e) => setPrefillTopic(e.target.value)}
                       className="mt-1.5 w-full bg-background border border-border rounded-xl px-4 h-12 outline-none focus:border-primary transition-colors"
                     >
-                      <option>General question</option>
-                      <option>Group / project rate</option>
-                      <option>Wedding inquiry</option>
-                      <option>Event / meeting inquiry</option>
-                      <option>Lost & found</option>
+                      {TOPIC_OPTIONS.map((t) => (
+                        <option key={t}>{t}</option>
+                      ))}
                     </select>
                   </label>
                   <label className="block md:col-span-2">
@@ -196,6 +238,8 @@ export default function Contact() {
                       required
                       rows={5}
                       data-testid="input-message"
+                      value={prefillMessage}
+                      onChange={(e) => setPrefillMessage(e.target.value)}
                       className="mt-1.5 w-full bg-background border border-border rounded-xl px-4 py-3 outline-none focus:border-primary transition-colors resize-none"
                     />
                   </label>

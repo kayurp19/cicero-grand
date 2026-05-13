@@ -103,7 +103,8 @@ export default function EventCenter() {
               Call {site.salesPhone}
             </a>
             <a
-              href={`mailto:${site.email}?subject=Event%20Center%20-%20Request%20a%20tour`}
+              href="/contact?topic=Event%20%2F%20meeting%20inquiry&message=I%27d%20like%20to%20schedule%20a%20tour%20of%20the%20event%20space.%20Please%20let%20me%20know%20available%20dates%20and%20times.%0A%0AEvent%20type%3A%20%0AApprox.%20guest%20count%3A%20%0APreferred%20dates%3A%20%0A#contact-form"
+              data-testid="event-hero-tour"
               className="inline-flex items-center justify-center gap-2 px-6 h-14 rounded-full border border-background/40 hover:bg-background/10 transition-colors"
             >
               <Calendar className="w-5 h-5" strokeWidth={2.2} />
