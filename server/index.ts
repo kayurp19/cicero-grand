@@ -38,11 +38,16 @@ const LEGACY_REDIRECTS: Record<string, string> = {
 };
 
 app.use((req, res, next) => {
-  // Only apply to GET/HEAD on non-API, non-admin routes
+  // Only apply to GET/HEAD on non-API, non-admin, non-asset routes.
+  // Skip anything with a file extension (e.g. /assets/index-Cmppl74e.js,
+  // /favicon.png, /sitemap.xml) — Vite uses mixed-case hashed filenames
+  // that must NOT be lowercased.
   if (
     (req.method !== "GET" && req.method !== "HEAD") ||
     req.path.startsWith("/api") ||
-    req.path.startsWith("/admin")
+    req.path.startsWith("/admin") ||
+    req.path.startsWith("/assets") ||
+    /\.[a-zA-Z0-9]+$/.test(req.path)
   ) {
     return next();
   }
