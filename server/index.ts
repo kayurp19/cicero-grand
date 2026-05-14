@@ -24,6 +24,55 @@ app.use(
 
 app.use(express.urlencoded({ extended: false }));
 
+// =====================================================================
+// SEO canonicalization middleware
+// 1. Force lowercase paths
+// 2. Strip trailing slashes (except for root "/")
+// 3. 301 redirect legacy aliases to their canonical URLs
+// =====================================================================
+const LEGACY_REDIRECTS: Record<string, string> = {
+  "/area-guide": "/area",
+  "/events": "/event-center",
+  "/weddings": "/event-center/weddings",
+  "/micron-long-stay": "/micron-crew-long-stay",
+};
+
+app.use((req, res, next) => {
+  // Only apply to GET/HEAD on non-API, non-admin routes
+  if (
+    (req.method !== "GET" && req.method !== "HEAD") ||
+    req.path.startsWith("/api") ||
+    req.path.startsWith("/admin")
+  ) {
+    return next();
+  }
+
+  let canonicalPath = req.path;
+
+  // strip trailing slash (except root)
+  if (canonicalPath.length > 1 && canonicalPath.endsWith("/")) {
+    canonicalPath = canonicalPath.replace(/\/+$/, "");
+  }
+
+  // lowercase URL path (Google treats /Events and /events as duplicates)
+  if (canonicalPath !== canonicalPath.toLowerCase()) {
+    canonicalPath = canonicalPath.toLowerCase();
+  }
+
+  // legacy alias redirects
+  if (LEGACY_REDIRECTS[canonicalPath]) {
+    canonicalPath = LEGACY_REDIRECTS[canonicalPath];
+  }
+
+  // if we changed anything, 301 redirect
+  if (canonicalPath !== req.path) {
+    const qs = req.url.includes("?") ? req.url.slice(req.url.indexOf("?")) : "";
+    return res.redirect(301, canonicalPath + qs);
+  }
+
+  next();
+});
+
 export function log(message: string, source = "express") {
   const formattedTime = new Date().toLocaleTimeString("en-US", {
     hour: "numeric",

@@ -10,6 +10,7 @@ import { Footer } from "@/components/Footer";
 import { StickyBookBar } from "@/components/StickyBookBar";
 import { CookieConsent } from "@/components/CookieConsent";
 import { RateBanner } from "@/components/RateBanner";
+import { Canonical } from "@/components/Canonical";
 
 import Home from "@/pages/Home";
 import Rooms from "@/pages/Rooms";
@@ -179,6 +180,7 @@ function App() {
         <Toaster />
         <ScrollToTop />
         <TrackingProvider />
+        <Canonical />
         <AppRouter />
       </TooltipProvider>
     </QueryClientProvider>
