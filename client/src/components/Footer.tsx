@@ -52,6 +52,7 @@ export function Footer() {
               <li><Link href="/amenities" className="hover:text-background">Amenities</Link></li>
               <li><Link href="/packages" className="hover:text-background">Packages</Link></li>
               <li><Link href="/offers" className="hover:text-background">Offers</Link></li>
+              <li><Link href="/direct-perks" className="hover:text-background">Book Direct &amp; Save</Link></li>
               <li><Link href="/gallery" className="hover:text-background">Gallery</Link></li>
             </ul>
           </div>

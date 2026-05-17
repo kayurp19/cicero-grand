@@ -21,6 +21,7 @@ import CorporateMeetings from "@/pages/event-center/CorporateMeetings";
 import SocialEvents from "@/pages/event-center/SocialEvents";
 import Weddings from "@/pages/event-center/Weddings";
 import Offers from "@/pages/Offers";
+import DirectPerks from "@/pages/DirectPerks";
 import Gallery from "@/pages/Gallery";
 import Contact from "@/pages/Contact";
 import Privacy from "@/pages/Privacy";
@@ -113,6 +114,8 @@ function AppRouter() {
         <Route path="/events" component={EventCenter} />
         <Route path="/weddings" component={Weddings} />
         <Route path="/offers" component={Offers} />
+        <Route path="/direct-perks" component={DirectPerks} />
+        <Route path="/book-direct" component={DirectPerks} />
         <Route path="/packages" component={Packages} />
         <Route path="/micron-crew-long-stay" component={MicronCrewLongStay} />
         <Route path="/micron-long-stay" component={MicronCrewLongStay} />

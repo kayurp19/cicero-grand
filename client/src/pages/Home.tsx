@@ -157,6 +157,18 @@ export default function Home() {
           </div>
 
           <div className="mt-auto pt-10 lg:pt-14">
+            {/* Direct-booking perks strip — pulls guests away from OTAs */}
+            <Link href="/direct-perks" className="group block mb-4 rounded-2xl bg-primary/15 border border-primary/30 backdrop-blur-sm px-4 py-3 hover:bg-primary/20 transition-colors">
+              <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-1 text-xs md:text-sm text-white font-medium text-center">
+                <span className="inline-flex items-center gap-1.5"><span className="text-primary">✓</span> Free upgrade</span>
+                <span className="text-white/30 hidden md:inline">·</span>
+                <span className="inline-flex items-center gap-1.5"><span className="text-primary">✓</span> 2 PM late checkout</span>
+                <span className="text-white/30 hidden md:inline">·</span>
+                <span className="inline-flex items-center gap-1.5"><span className="text-primary">✓</span> 10% off next stay</span>
+                <span className="text-white/30 hidden md:inline">·</span>
+                <span className="inline-flex items-center gap-1.5 underline-offset-4 group-hover:underline">When you book direct →</span>
+              </div>
+            </Link>
             <BookingWidget variant="overlay" />
           </div>
         </div>
