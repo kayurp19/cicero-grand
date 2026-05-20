@@ -170,6 +170,9 @@ function AppRouter() {
         <Route path="/hotel-syracuse-ny">
           {() => <LandingPage slug="syracuse-hotel" />}
         </Route>
+        <Route path="/hotels-east-syracuse-ny">
+          {() => <LandingPage slug="east-syracuse-hotels" />}
+        </Route>
         <Route component={NotFound} />
       </Switch>
     </PublicLayout>
