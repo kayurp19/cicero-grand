@@ -651,20 +651,109 @@
     ],
     "faqs": [
       {
-        "q": "Where is Cicero, NY?",
-        "a": "Cicero is a town of about 30,000 in northern Onondaga County, NY \u2014 about 10 miles north of downtown Syracuse on I-81. The Cicero Grand is at Exit 98, between Onondaga Lake to the south and Oneida Lake to the north."
+        "q": "What hotels are actually in Cicero, NY?",
+        "a": "The Cicero Grand at 5875 Carmenica Drive (I-81 Exit 98) is the primary all-suite hotel inside the Town of Cicero. Other properties listed as \"Cicero hotels\" on OTAs are typically budget motels along Route 11 in North Syracuse or Mattydale, just outside Cicero's town lines."
       },
       {
-        "q": "Why stay in Cicero instead of Syracuse?",
-        "a": "Cicero gives you cheaper hotel rates, free parking, quieter nights, and better access to Micron and Oneida Lake. Downtown Syracuse is 10-15 minutes away by interstate \u2014 close enough for nightlife or a meeting, far enough to actually sleep."
+        "q": "What I-81 exit is The Cicero Grand at?",
+        "a": "Exit 98 \u2014 the same exit cluster that serves Syracuse Hancock International Airport. From I-81 northbound, exit, turn right, and we're a few hundred feet east on Carmenica Drive."
       },
       {
-        "q": "Is The Cicero Grand the only hotel in Cicero, NY?",
-        "a": "There are a few limited-service hotels and roadside motels in the Cicero/Brewerton/Clay area. The Cicero Grand is the all-suite, full-amenity option \u2014 every room sleeps four with a separate living area, plus an indoor pool, free hot breakfast, free parking, and a pet-friendly policy."
+        "q": "How far is The Cicero Grand from Syracuse?",
+        "a": "15 minutes south on I-81 to downtown Syracuse, 16 minutes to Syracuse University and the JMA Wireless Dome, 12 minutes to Destiny USA, and 14 minutes to Upstate Medical."
       },
       {
-        "q": "Is The Cicero Grand close to Oneida Lake?",
-        "a": "Yes \u2014 Brewerton Beach on Oneida Lake is about seven minutes north on I-81, and the Erie Canal Lock 23 (where the canal meets Oneida Lake) is in the same area. Great for boating, fishing, and summer evenings on the water."
+        "q": "How far is The Cicero Grand from the Micron site?",
+        "a": "About 7 minutes via Route 31 to the Clay megafab site. We're the closest full-service hotel."
+      },
+      {
+        "q": "Is The Cicero Grand pet-friendly?",
+        "a": "Yes. Pet-friendly suites available with a small fee. The suite layout gives your pet space in the living room, and there's grass on-property for short walks."
+      },
+      {
+        "q": "Does The Cicero Grand have a pool?",
+        "a": "Yes \u2014 indoor heated pool, open year-round, with a 24-hour fitness room next door."
+      },
+      {
+        "q": "Is parking free at The Cicero Grand?",
+        "a": "Yes \u2014 free for cars, trucks, SUVs, RVs, trailers, and tour buses. No validation, no registration."
+      },
+      {
+        "q": "Is breakfast free at The Cicero Grand?",
+        "a": "Yes \u2014 free hot breakfast every morning, 6:30 to 9:30 AM. Hot items, fresh fruit, breads, cereals, juices, and coffee."
+      }
+    ],
+    "longContent": [
+      {
+        "h2": "The only true hotel in Cicero, NY",
+        "body": "The Cicero Grand sits at 5875 Carmenica Drive in the heart of the Town of Cicero, just off I-81 Exit 98 \u2014 the only full-service all-suite hotel inside Cicero's town lines. Most other \"Cicero hotels\" listed on OTAs are actually budget motels along Route 11 in North Syracuse or Mattydale. We're a 3-star property with an indoor heated pool, free hot breakfast, 24-hour fitness room, business center, free parking, and pet-friendly rooms. Every suite sleeps four with a separate living area, kitchenette, mini-fridge, microwave, and 55\" smart TV with Netflix, Hulu, and casting built in."
+      },
+      {
+        "h2": "What's around The Cicero Grand",
+        "body": "We're a five-minute drive to most of Cicero's daily life. Wegmans, Tops, Aldi, Target, Home Depot, Lowes, Walmart Supercenter \u2014 all within walking or short driving distance. Northern Lights Plaza shopping, Driver's Village auto mall, and the Cicero Driving Range are right around the corner. For food, you've got Tully's Good Times, Texas Roadhouse, Buffalo Wild Wings, Panera, Chipotle, Five Guys, and more along Route 11 and Route 31.",
+        "list": [
+          "Cicero Twin Rinks (hockey + ice skating) \u00b7 5 min",
+          "Cicero Swamp Wildlife Management Area \u00b7 5 min",
+          "Northern Lights Plaza \u00b7 3 min",
+          "Driver's Village \u00b7 4 min",
+          "Wegmans Cicero \u00b7 5 min",
+          "Cicero Town Hall \u00b7 4 min",
+          "Cicero Driving Range \u00b7 6 min",
+          "Oneida Lake (Brewerton public access) \u00b7 7 min",
+          "Micron Clay campus \u00b7 7 min",
+          "Downtown Syracuse \u00b7 15 min",
+          "Syracuse Hancock Airport \u00b7 10 min"
+        ]
+      },
+      {
+        "h2": "Cicero hotels vs. downtown Syracuse hotels",
+        "body": "Booking a Cicero hotel instead of downtown Syracuse usually saves $80\u2013$150 per night on event weekends (SU football, basketball, Dome concerts, NYS Fair). Parking is free here \u2014 downtown Syracuse hotels charge $25\u2013$35 per night. The drive to the SU campus and the JMA Wireless Dome is 16 minutes via I-81. For traveling teams, families, and longer stays, the math gets even better since every Cicero Grand room is a full suite that sleeps four, not a 300-square-foot standard hotel room."
+      },
+      {
+        "h2": "Cicero hotels for Micron contractors and project crews",
+        "body": "The Micron megafab site in Clay is a 7-minute drive via Route 31 \u2014 closer than any other branded hotel. We host Micron project contractors, vendors, and out-of-town engineers regularly with long-stay rates: $99/night for 7+ nights, $89 for 14+, $79 for 30+. Direct corporate billing available. Crew bookings of 5+ rooms get dedicated coordination through hello@cicerogrand.com."
+      },
+      {
+        "h2": "Cicero hotels for families and youth sports",
+        "body": "Cicero is a hub for youth sports travel \u2014 Cicero Twin Rinks (hockey), Cicero-North Syracuse High School athletics, and proximity to the Onondaga County parks system make it a routine stop for travel teams. Every Cicero Grand suite sleeps four with separate living and sleeping areas, free hot breakfast, indoor heated pool, and 24-hour fitness. Group room blocks for tournaments are easy to set up \u2014 call (315) 752-0150."
+      },
+      {
+        "h2": "Pet-friendly Cicero hotel",
+        "body": "Pet-friendly suites available at The Cicero Grand. The all-suite layout means your pet has space in the living room while you sleep. Cicero has plenty of grass for short walks, and Onondaga Lake Park is 10 minutes away if you want a real off-property stretch. A small pet fee applies \u2014 see our pet-friendly hotels in Syracuse page for full details."
+      }
+    ],
+    "internalLinks": [
+      {
+        "href": "/hotel-syracuse-ny",
+        "label": "Hotel in Syracuse, NY"
+      },
+      {
+        "href": "/hotels-brewerton-ny",
+        "label": "Hotels in Brewerton, NY"
+      },
+      {
+        "href": "/hotels-baldwinsville-ny",
+        "label": "Hotels near Baldwinsville, NY"
+      },
+      {
+        "href": "/hotels-clay-ny",
+        "label": "Hotels in Clay, NY"
+      },
+      {
+        "href": "/pet-friendly-hotels-syracuse",
+        "label": "Pet-friendly hotels in Syracuse"
+      },
+      {
+        "href": "/event-center",
+        "label": "Event Center & Weddings"
+      },
+      {
+        "href": "/micron-crew-long-stay",
+        "label": "Micron Crew Long-Stay"
+      },
+      {
+        "href": "/direct-perks",
+        "label": "Book Direct & Save"
       }
     ]
   },
@@ -720,24 +809,98 @@
     ],
     "faqs": [
       {
-        "q": "Does The Cicero Grand allow pets?",
-        "a": "Yes \u2014 we welcome dogs and cats in our pet-friendly suites. There's a small pet fee per stay. Please let us know at booking that you're traveling with a pet so we can assign the right room."
+        "q": "Is The Cicero Grand pet-friendly?",
+        "a": "Yes \u2014 pet-friendly suites available with a small per-stay pet fee. The all-suite layout gives your pet a separate living area to settle without sharing the bed."
       },
       {
         "q": "What's the pet fee at The Cicero Grand?",
-        "a": "We charge a reasonable flat per-stay fee for pets \u2014 please call (315) 752-0150 or check at booking for the current rate. There are no per-night surcharges or breed-based add-ons for most stays."
+        "a": "A small per-stay fee applies (not per night). For exact current pricing call (315) 752-0150 or check during the booking flow."
       },
       {
-        "q": "Are there breed or size restrictions for pets?",
-        "a": "We accommodate most dogs and cats without breed restrictions. For very large dogs or service animals, please call ahead so we can assign the right suite."
+        "q": "Are there breed restrictions?",
+        "a": "We don't maintain a breed restriction list. We do ask that aggressive or untrained pets be crated when housekeeping enters the room."
       },
       {
-        "q": "Is there grass on-property for dog walks?",
-        "a": "Yes \u2014 we have grass and walking paths right on the property for quick bathroom breaks. For real walks, Onondaga Lake Park (a 7-mile pet-friendly trail) is 10 minutes away."
+        "q": "How many pets can stay in one room?",
+        "a": "Two pets per room maximum, typical weight limit 50 lbs. Call ahead at (315) 752-0150 if you're close to either limit \u2014 we work with most travelers."
       },
       {
-        "q": "Are there other pet-friendly hotels in Syracuse?",
-        "a": "Several Syracuse-area hotels accept pets, but most are single-room layouts. The Cicero Grand is one of the few all-suite pet-friendly options \u2014 your pet gets a separate living area, and you get a real night's sleep."
+        "q": "Can I leave my pet in the room while I'm out?",
+        "a": "We ask that pets not be left alone in the room. If you need to step out, please crate the pet or coordinate with the front desk so housekeeping can plan around it."
+      },
+      {
+        "q": "Where can I walk my dog near the hotel?",
+        "a": "Grass on the property for short walks; Onondaga Lake Park's 7-mile paved loop 10 minutes away; Cicero Swamp Wildlife Management Area 5 minutes away."
+      },
+      {
+        "q": "Is The Cicero Grand pet-friendly hotel near Syracuse Airport?",
+        "a": "Yes \u2014 10 minutes from Syracuse Hancock International Airport (SYR) via I-81 Exit 98. Good for layovers and early flights with a pet."
+      }
+    ],
+    "longContent": [
+      {
+        "h2": "Pet-friendly hotels in Syracuse \u00b7 The Cicero Grand",
+        "body": "The Cicero Grand is one of the better pet-friendly options near Syracuse \u2014 not because of a marketing claim but because of the layout. Every room is an all-suite with a separate living area, which means your pet has space to settle without sharing the bed. We're 15 minutes north of downtown Syracuse on I-81 Exit 98, with plenty of grass on the property for short walks, Onondaga Lake Park's 7-mile trail loop 10 minutes away, and a 24-hour front desk that won't be surprised when you check in with a Labrador, a Frenchie, or a senior cat in a carrier."
+      },
+      {
+        "h2": "Our pet policy in plain English",
+        "body": "Pet-friendly suites are available at The Cicero Grand. A small pet fee applies per stay (not per night). Two pets per room maximum, typical weight limit is 50 lbs (call ahead if you're close). All breeds welcome \u2014 we don't have a breed restriction list. We do ask that pets aren't left alone in the room while you're out (housekeeping concern). Pets must be on a leash or in a carrier in shared spaces. For specifics or large/special-needs pets, call (315) 752-0150."
+      },
+      {
+        "h2": "Why all-suite rooms work better for pets",
+        "body": "A standard hotel room is about 300 square feet \u2014 the bed dominates, and your pet ends up underfoot or on top of you. An all-suite room is 450\u2013600 square feet with a separate living room. Your pet has its own zone, you have yours, and crating works better with the extra wall space. For longer stays (training trips, dog shows, traveling with a senior pet), the kitchenette makes feeding routines easier."
+      },
+      {
+        "h2": "Dog-friendly things to do near The Cicero Grand",
+        "body": "Onondaga Lake Park has a 7-mile paved trail loop and several leash-friendly stretches \u2014 a good morning walk. Cicero Swamp Wildlife Management Area has off-leash trails (check current regulations). For dog-friendly patios, Tully's Good Times in Cicero and several Armory Square spots in downtown Syracuse welcome dogs.",
+        "list": [
+          "Onondaga Lake Park trail loop \u00b7 10 min",
+          "Cicero Swamp Wildlife Management Area \u00b7 5 min",
+          "Beaver Lake Nature Center \u00b7 18 min",
+          "Oneida Lake (Brewerton public beach) \u00b7 7 min",
+          "Highland Forest dog-friendly trails \u00b7 30 min",
+          "Green Lakes State Park \u00b7 25 min",
+          "Tully's Good Times patio \u00b7 5 min",
+          "Empire State Trail (Cicero stretch) \u00b7 5 min"
+        ]
+      },
+      {
+        "h2": "Pet-friendly hotels near Syracuse Hancock Airport",
+        "body": "If you're flying in or out with a pet, The Cicero Grand is 10 minutes from Syracuse Hancock International Airport (SYR) \u2014 same I-81 exit cluster. Good for layovers, early flights, and post-arrival overnights with a stressed pet who needs space to decompress. Free parking lets you avoid airport pet-carrier handling fees."
+      }
+    ],
+    "internalLinks": [
+      {
+        "href": "/hotel-syracuse-ny",
+        "label": "Hotel in Syracuse, NY"
+      },
+      {
+        "href": "/cicero-ny-hotels",
+        "label": "Hotels in Cicero, NY"
+      },
+      {
+        "href": "/hotels-brewerton-ny",
+        "label": "Hotels in Brewerton, NY"
+      },
+      {
+        "href": "/hotels-baldwinsville-ny",
+        "label": "Hotels near Baldwinsville, NY"
+      },
+      {
+        "href": "/hotels-clay-ny",
+        "label": "Hotels in Clay, NY"
+      },
+      {
+        "href": "/event-center",
+        "label": "Event Center & Weddings"
+      },
+      {
+        "href": "/micron-crew-long-stay",
+        "label": "Micron Crew Long-Stay"
+      },
+      {
+        "href": "/direct-perks",
+        "label": "Book Direct & Save"
       }
     ]
   },
@@ -795,20 +958,100 @@
     ],
     "faqs": [
       {
-        "q": "Where is Brewerton, NY?",
-        "a": "Brewerton sits on the southwest shore of Oneida Lake, about 12 miles north of downtown Syracuse along I-81. It's the spot where the Erie Canal enters Oneida Lake at Lock 23. The Cicero Grand is 7 minutes south on I-81."
+        "q": "What hotels are in Brewerton, NY?",
+        "a": "Brewerton has limited full-service hotel options. Most travelers stay at The Cicero Grand, 7 minutes south on I-81 Exit 98 \u2014 a 3-star all-suite hotel with indoor pool, free breakfast, free parking for boats and trailers, and pet-friendly suites."
       },
       {
-        "q": "Are there hotels in Brewerton, NY itself?",
-        "a": "Brewerton has a handful of motels and small inns near the lake, but the closest full-amenity, all-suite hotel is The Cicero Grand \u2014 7 minutes south on I-81 Exit 98. We offer free hot breakfast, indoor heated pool, suites with separate living areas, and free boat/trailer parking."
+        "q": "How far is The Cicero Grand from Oneida Lake?",
+        "a": "About 7 minutes north on I-81 to the Brewerton public beach and boat launch, and 8 minutes to Winter Harbor Marina on the lake's southern shore."
       },
       {
-        "q": "Can I park my boat trailer at The Cicero Grand?",
-        "a": "Yes. Our lot accommodates boats, trailers, RVs, tour buses, and oversized trucks at no extra charge. Just let the front desk know at check-in so we can direct you to the right area."
+        "q": "Can I park my boat and trailer at The Cicero Grand?",
+        "a": "Yes \u2014 our parking lot accommodates trucks with boats, trailers, and RVs. Free, no registration, no validation. Popular with the walleye and bass tournament crowd."
       },
       {
-        "q": "Is The Cicero Grand pet-friendly for lake-trip dogs?",
-        "a": "Yes \u2014 we welcome dogs with a small one-time pet fee. Bring the lake dog. We're 7 minutes from Oneida Lake, with grassy walking areas on the property."
+        "q": "Does The Cicero Grand offer early breakfast for fishermen?",
+        "a": "Free hot breakfast starts at 6:30 AM \u2014 early enough for first-light launches on Oneida Lake. Coffee is available 24/7 in the lobby."
+      },
+      {
+        "q": "Are there pet-friendly hotels near Brewerton, NY?",
+        "a": "Yes \u2014 The Cicero Grand has pet-friendly suites, 7 minutes south on I-81. All-suite layout means your pet has space in the living room while you sleep."
+      },
+      {
+        "q": "How far is The Cicero Grand from Sylvan Beach?",
+        "a": "About 30 minutes east on Route 49 along Oneida Lake's northern shore. Easy day-trip from the hotel."
+      },
+      {
+        "q": "How far is The Cicero Grand from Brewerton Speedway?",
+        "a": "About 10 minutes by car. Friday-night dirt-track racing fans regularly stay with us."
+      }
+    ],
+    "longContent": [
+      {
+        "h2": "Hotels near Brewerton, NY \u00b7 The Cicero Grand on Oneida Lake",
+        "body": "Brewerton, NY sits on the southern shore of Oneida Lake at the mouth of the Oneida River \u2014 the historic head of the Erie Canal's Lake Ontario route. There are limited full-service hotels in Brewerton itself; most travelers stay at The Cicero Grand, 7 minutes south on I-81 Exit 98. We're the practical base for Oneida Lake weekends, fishing tournaments, Erie Canal Lock 23 visits, Fort Brewerton history walks, and boating events out of Winter Harbor Marina."
+      },
+      {
+        "h2": "What's in Brewerton, NY",
+        "body": "Brewerton is a lake town \u2014 walkable downtown, marinas on both sides of the Oneida River, a few good restaurants on the water, and direct access to Oneida Lake's southern shore. Worth a trip:",
+        "list": [
+          "Oneida Lake (Brewerton public beach + boat launch) \u00b7 7 min",
+          "Fort Brewerton historic site \u00b7 7 min",
+          "Erie Canal Lock 23 \u00b7 7 min",
+          "Winter Harbor Marina \u00b7 8 min",
+          "Pirate's Cove Resort (boat rentals) \u00b7 8 min",
+          "Brewerton Speedway \u00b7 10 min",
+          "Mariner's Landing restaurant \u00b7 7 min",
+          "Steak 'n' Sundae (lake-side classic) \u00b7 8 min",
+          "Verona Beach State Park \u00b7 25 min",
+          "Sylvan Beach Amusement Park \u00b7 30 min"
+        ]
+      },
+      {
+        "h2": "Oneida Lake fishing tournaments",
+        "body": "Oneida Lake hosts walleye, bass, and perch tournaments throughout spring, summer, and fall. The Cicero Grand is a routine pick for traveling anglers \u2014 free parking for trucks and boat trailers, pet-friendly suites for dogs, breakfast starts at 6:30 AM (early enough for first-light launches), and rooms have mini-fridges to store catches and bait. Group room blocks for tournament teams are easy \u2014 call (315) 752-0150."
+      },
+      {
+        "h2": "Brewerton, NY weddings and family events",
+        "body": "Several wedding venues operate on the Oneida Lake shoreline near Brewerton (Winter Harbor, The Beachhouse, Pirate's Cove). The Cicero Grand handles overflow guest rooms for those weddings \u2014 7 minutes from most venues, group rates available, and our event center can host the rehearsal dinner or post-wedding brunch. Reach our events team at hello@cicerogrand.com."
+      },
+      {
+        "h2": "Hotels near Brewerton vs. hotels in Brewerton",
+        "body": "Most travelers searching \"hotels in Brewerton NY\" actually end up at a hotel just outside Brewerton because the village has few full-service properties. The Cicero Grand is the closest 3-star all-suite hotel \u2014 7 minutes south on I-81, with an indoor heated pool, free breakfast, 24-hour fitness, free parking for boats and trailers, and pet-friendly rooms. Rates are typically $40\u2013$80 lower than the lake-front inns during peak summer."
+      }
+    ],
+    "internalLinks": [
+      {
+        "href": "/hotel-syracuse-ny",
+        "label": "Hotel in Syracuse, NY"
+      },
+      {
+        "href": "/cicero-ny-hotels",
+        "label": "Hotels in Cicero, NY"
+      },
+      {
+        "href": "/hotels-baldwinsville-ny",
+        "label": "Hotels near Baldwinsville, NY"
+      },
+      {
+        "href": "/hotels-clay-ny",
+        "label": "Hotels in Clay, NY"
+      },
+      {
+        "href": "/pet-friendly-hotels-syracuse",
+        "label": "Pet-friendly hotels in Syracuse"
+      },
+      {
+        "href": "/event-center",
+        "label": "Event Center & Weddings"
+      },
+      {
+        "href": "/micron-crew-long-stay",
+        "label": "Micron Crew Long-Stay"
+      },
+      {
+        "href": "/direct-perks",
+        "label": "Book Direct & Save"
       }
     ]
   },
@@ -866,20 +1109,102 @@
     ],
     "faqs": [
       {
-        "q": "Where is Clay, NY?",
-        "a": "Clay is a town of about 60,000 in northern Onondaga County, bordered by Cicero to the east and Liverpool to the south. It's home to the Micron Clay semiconductor megafab at White Pine Commerce Park, plus the Route 31 retail corridor."
+        "q": "What's the closest hotel to the Micron Clay megafab site?",
+        "a": "The Cicero Grand at 5875 Carmenica Drive, Cicero, NY \u2014 about 7 minutes from the Clay megafab site via Route 31. We're the closest full-service all-suite hotel."
       },
       {
-        "q": "What's the closest hotel to Micron's Clay site?",
-        "a": "The Cicero Grand is the closest all-suite, full-amenity hotel to Micron's Clay megafab \u2014 a 7-minute drive west on Route 31. We host Micron crews, vendors, and visiting staff on a regular basis. Long-stay rates available."
+        "q": "Does The Cicero Grand offer Micron contractor rates?",
+        "a": "Yes. Long-stay rates: $99/night for 7+ nights, $89 for 14+, $79 for 30+. Direct corporate billing available. Reach out at hello@cicerogrand.com."
       },
       {
-        "q": "Do you offer long-stay or crew rates?",
-        "a": "Yes. We offer corporate and crew rates for stays of seven nights or longer, especially for Micron contractors, construction crews, and project teams. Email reservations@cicerogrand.com or call (315) 715-7410 to discuss."
+        "q": "Can I park a work truck or trailer at The Cicero Grand?",
+        "a": "Yes \u2014 free parking for trucks, vans, RVs, and trailers. No validation, no registration. Used routinely by project crews."
       },
       {
-        "q": "Is parking free for trucks and crew rigs?",
-        "a": "Yes. Our lot accommodates trucks, vans, trailers, RVs, and tour buses at no charge. Just let the front desk know your vehicle type at check-in."
+        "q": "Does The Cicero Grand do direct billing for Micron contractors?",
+        "a": "Yes \u2014 direct billing available for established corporate accounts. Setup is fast \u2014 call (315) 752-0150 or email hello@cicerogrand.com."
+      },
+      {
+        "q": "Does breakfast work for early site call times?",
+        "a": "Yes \u2014 hot breakfast starts at 6:30 AM, with 24/7 lobby coffee and grab-and-go items available before that. Plenty of time before a 7 AM site call."
+      },
+      {
+        "q": "Are there hotels in the Town of Clay, NY?",
+        "a": "Limited inventory inside Clay itself. The Cicero Grand is just east of the Clay border in the Town of Cicero \u2014 7 minutes from the Micron site, with all-suite rooms and long-stay rates."
+      },
+      {
+        "q": "How far is The Cicero Grand from Great Northern Mall?",
+        "a": "About 8 minutes by car via Route 31."
+      }
+    ],
+    "longContent": [
+      {
+        "h2": "The closest hotel to Clay, NY \u00b7 7 minutes to the Micron megafab",
+        "body": "The Town of Clay sits west of Cicero on Route 31, anchored by the planned Micron Technology megafab campus \u2014 the largest semiconductor manufacturing investment in U.S. history. The Cicero Grand is the closest full-service all-suite hotel to the Clay megafab site, 7 minutes via Route 31. We host Micron project contractors, vendors, visiting engineers, and trade crews on a routine basis with long-stay rates and direct corporate billing."
+      },
+      {
+        "h2": "Hotels for Micron Clay megafab work",
+        "body": "Our long-stay rate structure is built for project crews: $99/night for 7+ consecutive nights, $89/night for 14+ nights, $79/night for 30+ nights. Direct billing available for established corporate accounts (no employee out-of-pocket). All rates include free hot breakfast, free parking for work trucks and trailers, in-suite kitchenettes for cooking, and weekly housekeeping. Reach our corporate sales team at hello@cicerogrand.com or (315) 752-0150.",
+        "list": [
+          "Closest full-service hotel to the Clay Micron site (7 min)",
+          "All-suite rooms with kitchenette and mini-fridge",
+          "Free parking for work trucks, vans, and trailers",
+          "Free hot breakfast 6:30\u20139:30 AM (early for site call times)",
+          "Long-stay weekly + monthly rates",
+          "Direct corporate billing available",
+          "Weekly housekeeping included",
+          "24-hour fitness and indoor heated pool"
+        ]
+      },
+      {
+        "h2": "What else is in Clay, NY",
+        "body": "Beyond the Micron site, Clay has the Great Northern Mall area, Route 31 retail corridor (Wegmans, Target, Lowes, Home Depot), and a residential population of about 60,000. The Town of Clay border is a 5-minute drive from The Cicero Grand. Worth knowing:",
+        "list": [
+          "Micron Clay campus site \u00b7 7 min",
+          "Great Northern Mall area \u00b7 8 min",
+          "Wegmans Liverpool (closest to Clay) \u00b7 10 min",
+          "Onondaga Lake Park \u00b7 10 min",
+          "Liverpool Village \u00b7 12 min",
+          "Syracuse Hancock Airport \u00b7 10 min"
+        ]
+      },
+      {
+        "h2": "Why The Cicero Grand beats downtown Syracuse for Clay work",
+        "body": "Several downtown Syracuse hotels are technically \"close\" to Clay on a map. But the I-690 / I-81 commute during shift changes adds 15\u201320 minutes each way. We're a straight shot up Route 31 from the megafab site \u2014 no downtown traffic, no $25-a-night garage fees, free parking for work vehicles, and rates that don't spike on SU game weekends. Over a 4-week project rotation, the cost and time savings stack up fast."
+      }
+    ],
+    "internalLinks": [
+      {
+        "href": "/hotel-syracuse-ny",
+        "label": "Hotel in Syracuse, NY"
+      },
+      {
+        "href": "/cicero-ny-hotels",
+        "label": "Hotels in Cicero, NY"
+      },
+      {
+        "href": "/hotels-brewerton-ny",
+        "label": "Hotels in Brewerton, NY"
+      },
+      {
+        "href": "/hotels-baldwinsville-ny",
+        "label": "Hotels near Baldwinsville, NY"
+      },
+      {
+        "href": "/pet-friendly-hotels-syracuse",
+        "label": "Pet-friendly hotels in Syracuse"
+      },
+      {
+        "href": "/event-center",
+        "label": "Event Center & Weddings"
+      },
+      {
+        "href": "/micron-crew-long-stay",
+        "label": "Micron Crew Long-Stay"
+      },
+      {
+        "href": "/direct-perks",
+        "label": "Book Direct & Save"
       }
     ]
   },
@@ -937,20 +1262,96 @@
     ],
     "faqs": [
       {
-        "q": "Where is Baldwinsville, NY?",
-        "a": "Baldwinsville (B'ville) is a village of about 7,500 along the Seneca River in northwestern Onondaga County, NY \u2014 about 12 miles northwest of downtown Syracuse. It's surrounded by the Town of Lysander."
+        "q": "What hotels are near Baldwinsville, NY?",
+        "a": "Baldwinsville has limited hotel inventory. Most travelers stay at The Cicero Grand on I-81 Exit 98, 15 minutes east via Route 31 \u2014 a 3-star all-suite hotel with indoor pool, free breakfast, free parking, and pet-friendly suites."
       },
       {
-        "q": "Are there hotels in Baldwinsville itself?",
-        "a": "B'ville has a couple of small inns and motels. The closest full-amenity hotel \u2014 with an indoor pool, free hot breakfast, all-suite rooms, and pet-friendly policy \u2014 is The Cicero Grand, a 15-minute drive east on Route 31."
+        "q": "How far is The Cicero Grand from downtown Baldwinsville?",
+        "a": "About 15 minutes by car via Route 31 or 9 miles east. Easy drive, no surface-street navigation through Syracuse."
       },
       {
-        "q": "How long is the drive from The Cicero Grand to Baldwinsville?",
-        "a": "Fifteen minutes east on Route 31. The Anheuser-Busch Brewery is 10 minutes from us; the village center of B'ville is 15 minutes."
+        "q": "How far is The Cicero Grand from Paper Mill Island?",
+        "a": "About 15 minutes by car. Popular with summer concert-goers \u2014 the venue parking lot fills early, and our free hotel parking is much easier."
       },
       {
-        "q": "Is The Cicero Grand pet-friendly?",
-        "a": "Yes. We welcome dogs with a one-time pet fee. The property is 100% smoke-free with grassy walking areas."
+        "q": "Are there hotels in Lysander, NY?",
+        "a": "Lysander itself has limited lodging. The Cicero Grand is the nearest full-service hotel, about 15 minutes east on Route 31, and handles most Lysander corporate travel and family-event bookings."
+      },
+      {
+        "q": "Does The Cicero Grand offer group rates for Baldwinsville weddings?",
+        "a": "Yes \u2014 we set up group room blocks for B'ville-area weddings regularly. Call (315) 752-0150 or email hello@cicerogrand.com to coordinate."
+      },
+      {
+        "q": "How far is The Cicero Grand from Beaver Lake Nature Center?",
+        "a": "About 18 minutes via Route 31. The nature center has 8 miles of trails plus a boardwalk and visitor center."
+      }
+    ],
+    "longContent": [
+      {
+        "h2": "Hotels near Baldwinsville, NY",
+        "body": "Baldwinsville (B'ville) sits west of Cicero on the Seneca River \u2014 a Lysander-area village with a charming walkable downtown, the historic Baldwinsville Lock E24, and easy access to the Erie Canal trail system. There's limited hotel inventory inside B'ville itself, so most travelers stay at The Cicero Grand on I-81 Exit 98, 15 minutes east via Route 31 or Route 481. We're the practical base for B'ville weddings, Lysander business visits, Seneca River weekends, and Baker High School events."
+      },
+      {
+        "h2": "What's in Baldwinsville, NY",
+        "body": "Downtown Baldwinsville has a few good restaurants on the Seneca River, the Paper Mill Island amphitheater (summer concerts), the Beaver Lake Nature Center, and easy paddling access to the Erie Canal. Worth a visit:",
+        "list": [
+          "Paper Mill Island Amphitheater (summer concerts) \u00b7 15 min",
+          "Beaver Lake Nature Center \u00b7 18 min",
+          "Baker High School \u00b7 15 min",
+          "Lysander Town Park \u00b7 16 min",
+          "Baldwinsville Lock E24 (Erie Canal) \u00b7 15 min",
+          "Mohegan Manor Restaurant \u00b7 15 min",
+          "B'ville Diner \u00b7 15 min",
+          "Seneca River paddling launch \u00b7 15 min",
+          "Onondaga Lake Park \u00b7 12 min",
+          "Destiny USA \u00b7 18 min"
+        ]
+      },
+      {
+        "h2": "Baldwinsville weddings and Paper Mill Island concerts",
+        "body": "B'ville's Paper Mill Island Amphitheater hosts a strong summer concert series \u2014 The Cicero Grand fills regularly on those weekends. Wedding venues around B'ville (Lysander, Plainville, and the Seneca River shoreline) routinely book overflow rooms with us. We're 15 minutes by car, free parking, and our event center can host rehearsal dinners or next-day brunches. Reach out at hello@cicerogrand.com."
+      },
+      {
+        "h2": "Hotels for Lysander and B'ville-area business travel",
+        "body": "Several mid-size employers operate in the Lysander business corridor near B'ville. The Cicero Grand handles their corporate travel \u2014 direct billing available, group rates for project teams, and 7 minutes from the Micron Clay megafab for any work that brings teams to both sites. Long-stay tiers (7+/14+/30+ nights) make extended assignments simple."
+      },
+      {
+        "h2": "Hotels near Baldwinsville vs. driving from Syracuse",
+        "body": "Many travelers default to a Syracuse downtown hotel and drive to Baldwinsville. That's a 25\u201335 minute commute through traffic. The Cicero Grand cuts that to 15 minutes via Route 31 or Route 481, with free parking and rates that don't spike on game days. For anyone with multiple B'ville commitments over a few days, the math works strongly in our favor."
+      }
+    ],
+    "internalLinks": [
+      {
+        "href": "/hotel-syracuse-ny",
+        "label": "Hotel in Syracuse, NY"
+      },
+      {
+        "href": "/cicero-ny-hotels",
+        "label": "Hotels in Cicero, NY"
+      },
+      {
+        "href": "/hotels-brewerton-ny",
+        "label": "Hotels in Brewerton, NY"
+      },
+      {
+        "href": "/hotels-clay-ny",
+        "label": "Hotels in Clay, NY"
+      },
+      {
+        "href": "/pet-friendly-hotels-syracuse",
+        "label": "Pet-friendly hotels in Syracuse"
+      },
+      {
+        "href": "/event-center",
+        "label": "Event Center & Weddings"
+      },
+      {
+        "href": "/micron-crew-long-stay",
+        "label": "Micron Crew Long-Stay"
+      },
+      {
+        "href": "/direct-perks",
+        "label": "Book Direct & Save"
       }
     ]
   },
