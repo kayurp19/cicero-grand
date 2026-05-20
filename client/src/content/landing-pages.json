@@ -758,6 +758,10 @@
       {
         "href": "/hotels-east-syracuse-ny",
         "label": "Hotels near East Syracuse, NY"
+      },
+      {
+        "href": "/hotels-liverpool-ny",
+        "label": "Hotels in Liverpool, NY"
       }
     ]
   },
@@ -909,6 +913,10 @@
       {
         "href": "/hotels-east-syracuse-ny",
         "label": "Hotels near East Syracuse, NY"
+      },
+      {
+        "href": "/hotels-liverpool-ny",
+        "label": "Hotels in Liverpool, NY"
       }
     ]
   },
@@ -1064,6 +1072,10 @@
       {
         "href": "/hotels-east-syracuse-ny",
         "label": "Hotels near East Syracuse, NY"
+      },
+      {
+        "href": "/hotels-liverpool-ny",
+        "label": "Hotels in Liverpool, NY"
       }
     ]
   },
@@ -1221,6 +1233,10 @@
       {
         "href": "/hotels-east-syracuse-ny",
         "label": "Hotels near East Syracuse, NY"
+      },
+      {
+        "href": "/hotels-liverpool-ny",
+        "label": "Hotels in Liverpool, NY"
       }
     ]
   },
@@ -1372,6 +1388,10 @@
       {
         "href": "/hotels-east-syracuse-ny",
         "label": "Hotels near East Syracuse, NY"
+      },
+      {
+        "href": "/hotels-liverpool-ny",
+        "label": "Hotels in Liverpool, NY"
       }
     ]
   },
@@ -1549,6 +1569,10 @@
       {
         "href": "/hotels-east-syracuse-ny",
         "label": "Hotels near East Syracuse, NY"
+      },
+      {
+        "href": "/hotels-liverpool-ny",
+        "label": "Hotels in Liverpool, NY"
       }
     ]
   },
@@ -1573,11 +1597,11 @@
       "Pet-friendly suites \u00b7 100% smoke-free property",
       "Off I-81 Exit 98 \u2014 quick highway access"
     ],
-    "intro": "Looking for a hotel near East Syracuse, NY? The Cicero Grand is 12 minutes north via I-481 / I-81 \u2014 a 3-star all-suite property with indoor heated pool, free hot breakfast, free parking, and pet-friendly suites. We're a practical pick for travelers visiting Carrier Park business campus, the Syracuse Inland Port (CSX intermodal terminal), Bristol Myers Squibb, JMA Wireless, and the SRC research corridor. Every suite sleeps four with separate living and sleeping areas, kitchenette, and 55\" smart TV with Netflix, Hulu, and casting.",
+    "intro": "Looking for a hotel near East Syracuse, NY? The Cicero Grand is 12 minutes north via I-481 / I-81 \u2014 a 3-star all-suite property with indoor heated pool, free hot breakfast, free parking, and pet-friendly suites. We're a practical pick for travelers visiting Carrier Park business campus, the Syracuse Inland Port (CSX intermodal terminal), Bristol Myers Squibb, SRC Inc., and the Le Moyne College / DeWitt corridor. Every suite sleeps four with separate living and sleeping areas, kitchenette, and 55\" smart TV with Netflix, Hulu, and casting.",
     "why": [
       {
         "title": "Closer to East Syracuse employers than downtown",
-        "body": "Carrier Park, Bristol Myers Squibb, JMA Wireless, and the Syracuse Inland Port are 10\u201315 minutes south on I-481. Downtown Syracuse hotels add traffic and parking fees without saving you any drive time."
+        "body": "Carrier Park, Bristol Myers Squibb, the Syracuse Inland Port, and SRC Inc. are 10\u201314 minutes south on I-481. Downtown Syracuse hotels add traffic and parking fees without saving you any drive time."
       },
       {
         "title": "Every room is a full suite",
@@ -1596,9 +1620,9 @@
       "Carrier Park business campus \u00b7 12 min",
       "Syracuse Inland Port (CSX intermodal) \u00b7 12 min",
       "Bristol Myers Squibb \u00b7 14 min",
-      "JMA Wireless HQ \u00b7 14 min",
       "SRC Inc. \u00b7 13 min",
       "Le Moyne College \u00b7 14 min",
+      "DeWitt Town Center \u00b7 14 min",
       "Syracuse Hancock Airport \u00b7 10 min",
       "Downtown Syracuse \u00b7 15 min",
       "Micron Clay campus \u00b7 7 min",
@@ -1622,26 +1646,30 @@
         "a": "About 14 minutes south via I-481."
       },
       {
+        "q": "How far is The Cicero Grand from SRC Inc.?",
+        "a": "About 13 minutes south via I-481."
+      },
+      {
         "q": "Do you offer corporate rates for East Syracuse-area work?",
         "a": "Yes \u2014 direct corporate billing available, plus long-stay rates ($99/7+, $89/14+, $79/30+ nights). Call (315) 752-0150."
       },
       {
         "q": "Is parking free?",
-        "a": "Yes \u2014 free for cars, trucks, SUVs, RVs, trailers, and tour buses. No validation, no registration."
+        "a": "Yes \u2014 free for cars, trucks, SUVs, RVs, trailers, and tour buses."
       },
       {
         "q": "Is breakfast free?",
-        "a": "Yes \u2014 free hot breakfast every morning, 6:30 to 9:30 AM. Hot items, fresh fruit, breads, cereals, juices, and coffee."
+        "a": "Yes \u2014 free hot breakfast every morning, 6:30 to 9:30 AM."
       }
     ],
     "longContent": [
       {
         "h2": "East Syracuse, NY \u2014 business corridor at a glance",
-        "body": "East Syracuse is the village just east of the city of Syracuse along I-690 and I-481, anchored by the Carrier Park business campus (originally Carrier Corporation's HQ), the Syracuse Inland Port CSX intermodal terminal, Bristol Myers Squibb's local operations, JMA Wireless, SRC Inc., and Le Moyne College. The neighborhood has limited full-service hotel options inside its village lines, so most business travelers stay either downtown (15 min west) or in the Cicero / Syracuse North cluster (12 min north). The Cicero Grand is the closer of the two for anyone who also needs the airport or the Micron Clay megafab."
+        "body": "East Syracuse is the village just east of the city of Syracuse along I-690 and I-481, anchored by the Carrier Park business campus (originally Carrier Corporation's HQ), the Syracuse Inland Port CSX intermodal terminal, Bristol Myers Squibb's local operations, SRC Inc., and Le Moyne College. The neighborhood has limited full-service hotel options inside its village lines, so most business travelers stay either downtown (15 min west) or in the Cicero / Syracuse North cluster (12 min north). The Cicero Grand is the closer of the two for anyone who also needs the airport or the Micron Clay megafab."
       },
       {
         "h2": "Why The Cicero Grand for East Syracuse work",
-        "body": "Three reasons: (1) the drive to Carrier Park, the Inland Port, and Bristol Myers Squibb is 12\u201314 minutes via I-481 \u2014 same as downtown Syracuse hotels, sometimes less; (2) parking is free for cars, trucks, work vans, and trailers; (3) every room is a full suite with kitchenette, separate living area, and dedicated workspace \u2014 better for multi-day project work than a 300-square-foot standard hotel room."
+        "body": "Three reasons: (1) the drive to Carrier Park, the Inland Port, Bristol Myers Squibb, and SRC is 12\u201314 minutes via I-481 \u2014 same as downtown Syracuse hotels, sometimes less; (2) parking is free for cars, trucks, work vans, and trailers; (3) every room is a full suite with kitchenette, separate living area, and dedicated workspace \u2014 better for multi-day project work than a 300-square-foot standard hotel room."
       },
       {
         "h2": "East Syracuse hotels for Micron-adjacent vendors",
@@ -1664,6 +1692,177 @@
       {
         "href": "/cicero-ny-hotels",
         "label": "Hotels in Cicero, NY"
+      },
+      {
+        "href": "/hotels-brewerton-ny",
+        "label": "Hotels in Brewerton, NY"
+      },
+      {
+        "href": "/hotels-baldwinsville-ny",
+        "label": "Hotels near Baldwinsville, NY"
+      },
+      {
+        "href": "/hotels-clay-ny",
+        "label": "Hotels in Clay, NY"
+      },
+      {
+        "href": "/pet-friendly-hotels-syracuse",
+        "label": "Pet-friendly hotels in Syracuse"
+      },
+      {
+        "href": "/micron-crew-long-stay",
+        "label": "Micron Crew Long-Stay"
+      },
+      {
+        "href": "/event-center",
+        "label": "Event Center & Weddings"
+      },
+      {
+        "href": "/direct-perks",
+        "label": "Book Direct & Save"
+      },
+      {
+        "href": "/hotels-liverpool-ny",
+        "label": "Hotels in Liverpool, NY"
+      }
+    ]
+  },
+  "liverpool-ny-hotels": {
+    "path": "/hotels-liverpool-ny",
+    "title": "Hotels in Liverpool, NY \u00b7 The Cicero Grand \u00b7 Near JMA Wireless & NYS Fair",
+    "description": "Hotels near Liverpool, NY \u2014 The Cicero Grand is 8 minutes north via I-81. All-suite rooms, free hot breakfast, indoor pool, free parking, pet-friendly. Near JMA Wireless, the NYS Fairgrounds, and Onondaga Lake.",
+    "h1": "Hotels in Liverpool, NY",
+    "subtitle": "An all-suite hotel 8 minutes north of Liverpool on I-81 \u2014 close to JMA Wireless, the NYS Fairgrounds, Empower FCU Amphitheater, and Onondaga Lake Park.",
+    "venue": {
+      "name": "Liverpool, NY",
+      "address": "5875 Carmenica Drive, Cicero, NY 13039",
+      "drive": "8 minutes",
+      "miles": "5 miles north via I-81"
+    },
+    "ogImage": "/photos/exterior-1.jpg",
+    "highlights": [
+      "8 minutes north of Liverpool on I-81 Exit 98",
+      "All-suite hotel \u00b7 every room sleeps four",
+      "Free hot breakfast \u00b7 indoor heated pool \u00b7 24-hour fitness",
+      "Free parking for cars, trucks, RVs, and trailers",
+      "Pet-friendly suites \u00b7 100% smoke-free property",
+      "Close to JMA Wireless, Lockheed Martin, NYS Fair, Empower Amphitheater"
+    ],
+    "intro": "Looking for a hotel in Liverpool, NY? The Cicero Grand is 8 minutes north on I-81 \u2014 the practical pick for travelers visiting JMA Wireless corporate offices (7645 Henry Clay Blvd), Lockheed Martin's Electronics Park campus (497 Electronics Parkway), the NYS Fairgrounds, Empower FCU Amphitheater concerts, Onondaga Lake Park, and the Liverpool Village waterfront. All-suite rooms with separate living and sleeping areas, free hot breakfast, indoor heated pool, 24-hour fitness, free parking, and pet-friendly suites.",
+    "why": [
+      {
+        "title": "Close to Liverpool, lower price than Liverpool",
+        "body": "Liverpool's branded hotels along Electronics Parkway and Seventh North Street tend to run $20\u2013$60 higher than us on event weekends \u2014 same drive time to the NYS Fairgrounds, Empower Amphitheater, and JMA Wireless. Free parking, free hot breakfast, every room a full suite."
+      },
+      {
+        "title": "Every room is a full suite",
+        "body": "Separate sleeping and living areas, kitchenette, mini-fridge, microwave, 55\" smart TV. Every suite sleeps four \u2014 better space for families heading to the Fair, traveling teams, and project crews than a standard hotel room."
+      },
+      {
+        "title": "8 minutes to JMA Wireless and Lockheed Martin",
+        "body": "JMA Wireless corporate offices at 7645 Henry Clay Blvd and Lockheed Martin's Electronics Park campus at 497 Electronics Parkway are both about 8 minutes south on I-81. Long-stay rates ($99/7+, $89/14+, $79/30+) make extended consulting or project work easy. Direct corporate billing available."
+      },
+      {
+        "title": "Free parking for the NYS Fair",
+        "body": "NYS Fair traffic and parking are notorious. We're 18 minutes from the Fairgrounds via I-81 / I-690 with free parking on-site \u2014 use the Fair's shuttle or rideshare and skip the headache."
+      }
+    ],
+    "nearby": [
+      "JMA Wireless (7645 Henry Clay Blvd) \u00b7 8 min",
+      "Lockheed Martin Electronics Park (497 Electronics Parkway) \u00b7 8 min",
+      "NYS Fairgrounds \u00b7 18 min",
+      "Empower FCU Amphitheater \u00b7 18 min",
+      "Onondaga Lake Park \u00b7 10 min",
+      "Liverpool Village waterfront \u00b7 8 min",
+      "Heid's of Liverpool (historic hot dogs) \u00b7 8 min",
+      "Wegmans Liverpool \u00b7 10 min",
+      "Destiny USA \u00b7 12 min",
+      "Syracuse Hancock Airport \u00b7 6 min"
+    ],
+    "faqs": [
+      {
+        "q": "What hotels are in Liverpool, NY?",
+        "a": "Liverpool has several branded hotels along Electronics Parkway and Seventh North Street. The Cicero Grand is 8 minutes north on I-81 \u2014 a 3-star all-suite hotel that's typically $20\u2013$60/night less than Liverpool properties on event weekends, with the same drive time to NYS Fair and JMA Wireless."
+      },
+      {
+        "q": "How far is The Cicero Grand from JMA Wireless in Liverpool?",
+        "a": "About 8 minutes south on I-81 to JMA's corporate offices at 7645 Henry Clay Blvd. Long-stay rates and direct billing available for JMA contractors and consultants."
+      },
+      {
+        "q": "How far is The Cicero Grand from Lockheed Martin in Salina/Liverpool?",
+        "a": "About 8 minutes south on I-81 to Lockheed Martin's Electronics Park campus at 497 Electronics Parkway. Long-stay rates and direct corporate billing available for Lockheed consultants and vendors."
+      },
+      {
+        "q": "How far is The Cicero Grand from the NYS Fairgrounds?",
+        "a": "About 18 minutes via I-81 and I-690. Free parking on-property, then rideshare or shuttle to the Fair to skip the parking nightmare."
+      },
+      {
+        "q": "How far is The Cicero Grand from Empower FCU Amphitheater?",
+        "a": "About 18 minutes \u2014 same I-81 / I-690 route as the Fairgrounds. Concert nights book fast \u2014 reserve well ahead."
+      },
+      {
+        "q": "How far is The Cicero Grand from Onondaga Lake Park?",
+        "a": "About 10 minutes south on I-81. 7-mile paved trail loop, pet-friendly stretches, Salt Museum, and the Skate Park."
+      },
+      {
+        "q": "How far is The Cicero Grand from Liverpool Village?",
+        "a": "About 8 minutes south via I-81 \u2014 quick trip for Heid's hot dogs, the waterfront, or dinner at one of the village restaurants."
+      },
+      {
+        "q": "Is The Cicero Grand close to Syracuse Hancock Airport?",
+        "a": "Yes \u2014 about 6 minutes via I-81. Same exit cluster as the airport. Good for early flights and post-arrival overnights."
+      },
+      {
+        "q": "Do you offer corporate rates for JMA Wireless work?",
+        "a": "Yes \u2014 long-stay rates ($99/7+, $89/14+, $79/30+ nights) and direct billing available. Call (315) 752-0150."
+      }
+    ],
+    "longContent": [
+      {
+        "h2": "Hotels in Liverpool, NY vs. The Cicero Grand",
+        "body": "Liverpool, NY has a strong cluster of branded business hotels along Electronics Parkway (off I-81 Exit 25A) and around Seventh North Street \u2014 Embassy Suites, Hampton Inn, Hilton Garden Inn, Homewood Suites, Drury Inn, and more. These are well-run properties that do well on midweek business travel. The Cicero Grand is 8 minutes north of that Liverpool cluster on I-81 Exit 98, and we typically price $20\u2013$60 below Liverpool on Fair weekends, Empower Amphitheater concert nights, and SU game weekends. Every room is a full suite (kitchenette, separate living area, sleeps four), parking is free, and we're closer to the airport (6 min) and the Micron Clay campus (7 min)."
+      },
+      {
+        "h2": "Hotels for JMA Wireless and Lockheed Martin corporate visits",
+        "body": "Two of Liverpool's biggest employers \u2014 JMA Wireless (corporate offices at 7645 Henry Clay Boulevard) and Lockheed Martin (Electronics Park campus at 497 Electronics Parkway, ~1,800 employees on radar, sonar, and electronic warfare programs) \u2014 host visiting consultants, customers, and vendors year-round. The Cicero Grand is 8 minutes north of both on I-81. Long-stay rates make extended consulting engagements easy: $99/night for 7+ nights, $89/night for 14+ nights, $79/night for 30+ nights. Direct corporate billing available. Workspace in every suite, fast WiFi, 55\" smart TVs with casting for video calls."
+      },
+      {
+        "h2": "Hotels for the NYS Fair and Empower FCU Amphitheater",
+        "body": "The Great New York State Fair and the adjacent Empower FCU Amphitheater (formerly Lakeview Amphitheater) draw huge crowds every August through October. Hotels inside the Fairgrounds' immediate radius sell out months in advance at premium rates. The Cicero Grand is 18 minutes from both venues via I-81 and I-690 with free on-site parking, every room sleeping four, and rates that don't multiply during Fair week. Use a rideshare or the Fair's shuttle service and skip the parking nightmare entirely.",
+        "list": [
+          "NYS Fairgrounds \u00b7 18 min",
+          "Empower FCU Amphitheater (Lakeview) \u00b7 18 min",
+          "Onondaga Lake Park (Long Branch entrance) \u00b7 10 min",
+          "Onondaga Lake bike/walking loop (7 mi) \u00b7 10 min",
+          "Salt Museum at Onondaga Lake \u00b7 10 min",
+          "Wegmans Liverpool \u00b7 10 min"
+        ]
+      },
+      {
+        "h2": "Liverpool Village waterfront and Heid's",
+        "body": "Liverpool Village sits on the eastern shore of Onondaga Lake \u2014 a small but lively waterfront with restaurants, a marina, and the historic Heid's of Liverpool (a Central New York hot dog institution since 1917). It's a quick 8-minute drive from The Cicero Grand. Worth a sunset stop after Fair, a concert, or a long workday at JMA."
+      },
+      {
+        "h2": "Onondaga Lake Park",
+        "body": "Onondaga Lake Park has a 7-mile paved trail loop popular with runners, cyclists, and dog walkers \u2014 plus the Salt Museum, a skate park, and several lakefront pavilions. 10 minutes from The Cicero Grand. The trail is leash-friendly for dogs, which pairs well with our pet-friendly suites."
+      },
+      {
+        "h2": "Liverpool hotels vs. The Cicero Grand for families",
+        "body": "Families heading to the NYS Fair, an Empower Amphitheater concert, or a Le Moyne College visit often default to a Liverpool hotel because of the cluster's brand recognition. The Cicero Grand offers a better layout for families \u2014 every room is a full suite with separate living and sleeping areas, sleeping four, with a kitchenette and a 55\" smart TV with Netflix, Hulu, and casting. Free hot breakfast for the family, indoor heated pool, 24-hour fitness, and rates that hold steady during big-event weekends."
+      }
+    ],
+    "internalLinks": [
+      {
+        "href": "/hotel-syracuse-ny",
+        "label": "Hotel in Syracuse, NY"
+      },
+      {
+        "href": "/cicero-ny-hotels",
+        "label": "Hotels in Cicero, NY"
+      },
+      {
+        "href": "/hotels-east-syracuse-ny",
+        "label": "Hotels near East Syracuse, NY"
       },
       {
         "href": "/hotels-brewerton-ny",
