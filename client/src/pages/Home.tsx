@@ -102,6 +102,32 @@ export default function Home() {
       },
       {
         '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        name: 'The Cicero Grand site navigation',
+        itemListElement: [
+          { '@type': 'SiteNavigationElement', position: 1, name: 'Rooms & Suites', description: 'All-suite hotel rooms — every suite sleeps four with kitchenette, separate living area, and 55" smart TV.', url: `${SITE.url}/rooms` },
+          { '@type': 'SiteNavigationElement', position: 2, name: 'Event Center & Weddings', description: 'Banquet hall, wedding venue, corporate meetings, and group events at The Cicero Grand.', url: `${SITE.url}/event-center` },
+          { '@type': 'SiteNavigationElement', position: 3, name: 'Group Rates & Room Blocks', description: 'Group room blocks for weddings, sports teams, corporate events, and Micron project crews.', url: `${SITE.url}/event-center/corporate-meetings` },
+          { '@type': 'SiteNavigationElement', position: 4, name: 'Local Area & Cicero Guide', description: 'Things to do near The Cicero Grand — Syracuse, Oneida Lake, Destiny USA, and Cicero attractions.', url: `${SITE.url}/area` },
+          { '@type': 'SiteNavigationElement', position: 5, name: 'Amenities', description: 'Free hot breakfast, indoor heated pool, 24-hour fitness, free parking, pet-friendly, free WiFi.', url: `${SITE.url}/amenities` },
+          { '@type': 'SiteNavigationElement', position: 6, name: 'Micron Crew Long-Stay', description: 'Weekly and monthly long-stay rates for Micron contractors and project crews.', url: `${SITE.url}/micron-crew-long-stay` },
+          { '@type': 'SiteNavigationElement', position: 7, name: 'Book Direct & Save', description: 'Lowest rate guarantee, free upgrade, late checkout, and 10% off your next stay when you book direct.', url: `${SITE.url}/direct-perks` },
+          { '@type': 'SiteNavigationElement', position: 8, name: 'Contact', description: 'Front desk, sales, and reservations: hello@cicerogrand.com · (315) 752-0150.', url: `${SITE.url}/contact` },
+        ],
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: SITE.name,
+        url: SITE.url,
+        potentialAction: {
+          '@type': 'SearchAction',
+          target: { '@type': 'EntryPoint', urlTemplate: `${SITE.url}/?q={search_term_string}` },
+          'query-input': 'required name=search_term_string',
+        },
+      },
+      {
+        '@context': 'https://schema.org',
         '@type': 'Organization',
         name: SITE.legalName,
         url: SITE.url,

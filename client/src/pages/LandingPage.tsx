@@ -227,6 +227,50 @@ export default function LandingPage({ slug }: LandingPageProps) {
         </div>
       </section>
 
+      {/* Long-form content for SEO */}
+      {data.longContent && data.longContent.length > 0 && (
+        <section className="bg-background py-20 lg:py-28 border-t border-border">
+          <div className="max-w-[1400px] mx-auto px-5 lg:px-10">
+            <div className="grid grid-cols-12 gap-8 lg:gap-12">
+              <div className="col-span-12 lg:col-span-4">
+                <Reveal>
+                  <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
+                    The full picture
+                  </span>
+                  <h2 className="font-display text-[clamp(1.8rem,4vw,3.2rem)] leading-[1] tracking-tight mt-3 text-balance">
+                    Everything you need to know.
+                  </h2>
+                </Reveal>
+              </div>
+              <div className="col-span-12 lg:col-span-8 space-y-12">
+                {data.longContent.map((section: any, i: number) => (
+                  <Reveal key={i}>
+                    <article>
+                      <h2 className="font-display text-2xl lg:text-3xl tracking-tight mb-4">
+                        {section.h2}
+                      </h2>
+                      <p className="text-base lg:text-lg leading-relaxed text-foreground/85 max-w-prose">
+                        {section.body}
+                      </p>
+                      {section.list && section.list.length > 0 && (
+                        <ul className="mt-5 space-y-2.5 max-w-prose">
+                          {section.list.map((item: string, j: number) => (
+                            <li key={j} className="flex items-start gap-3">
+                              <Check className="w-4 h-4 text-primary mt-1.5 shrink-0" />
+                              <span className="text-base leading-relaxed">{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </article>
+                  </Reveal>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Nearby places */}
       <section className="bg-background py-20 lg:py-28 border-t border-border">
         <div className="max-w-[1400px] mx-auto px-5 lg:px-10">
@@ -241,7 +285,7 @@ export default function LandingPage({ slug }: LandingPageProps) {
                 </h2>
                 <p className="text-sm text-muted-foreground mt-5 max-w-md leading-relaxed">
                   See the full{' '}
-                  <Link href="/area-guide" className="underline hover:text-primary">
+                  <Link href="/area" className="underline hover:text-primary">
                     Syracuse Area Guide
                   </Link>{' '}
                   for restaurants, breweries, attractions, and more.
@@ -263,6 +307,35 @@ export default function LandingPage({ slug }: LandingPageProps) {
           </div>
         </div>
       </section>
+
+      {/* Internal links / Related pages */}
+      {data.internalLinks && data.internalLinks.length > 0 && (
+        <section className="bg-background py-20 lg:py-28 border-t border-border">
+          <div className="max-w-[1400px] mx-auto px-5 lg:px-10">
+            <Reveal>
+              <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
+                Related pages
+              </span>
+              <h2 className="font-display text-[clamp(1.8rem,4vw,3.2rem)] leading-[1] tracking-tight mt-3 max-w-3xl text-balance">
+                Keep exploring.
+              </h2>
+            </Reveal>
+            <ul className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              {data.internalLinks.map((link: any, i: number) => (
+                <li key={i}>
+                  <Link
+                    href={link.href}
+                    className="group flex items-center justify-between gap-4 px-5 py-4 rounded-2xl border border-border bg-card hover:bg-foreground hover:text-background transition-colors"
+                  >
+                    <span className="text-sm font-medium">{link.label}</span>
+                    <ArrowUpRight className="w-4 h-4 shrink-0 opacity-60 group-hover:opacity-100" />
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
 
       {/* FAQ */}
       <section className="bg-muted/30 py-20 lg:py-28 border-t border-border">

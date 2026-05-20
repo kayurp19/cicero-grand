@@ -1009,19 +1009,121 @@
     "faqs": [
       {
         "q": "Is The Cicero Grand actually in Syracuse, NY?",
-        "a": "We're in Cicero, NY \u2014 a town in northern Onondaga County, 15 minutes north of downtown Syracuse on I-81. Most search engines and OTAs treat the Cicero/Syracuse area as one market because of the short drive."
+        "a": "We're in Cicero, NY \u2014 a town in northern Onondaga County, 15 minutes north of downtown Syracuse on I-81 Exit 98. Most search engines, OTAs, and corporate travel platforms treat the Cicero / Syracuse North area as part of the Syracuse hotel market because of the short drive and shared airport."
       },
       {
         "q": "Why stay at The Cicero Grand instead of a downtown Syracuse hotel?",
-        "a": "Three reasons: (1) rates don't spike on SU game days or Dome event nights, (2) parking is free \u2014 no $25/night downtown garage fees, (3) every room is a full suite that sleeps four, not a standard hotel room. You give up about 15 minutes of drive time and get a lot in return."
+        "a": "Three reasons: (1) rates don't spike on SU game days or Dome event nights, (2) parking is free \u2014 no $25/night downtown garage fees, (3) every room is a full suite that sleeps four with a kitchenette, not a standard hotel room. You give up about 15 minutes of drive time and get back about $150 a night on event weekends."
       },
       {
-        "q": "How far is The Cicero Grand from Syracuse University?",
-        "a": "About 16 minutes south on I-81 to the SU campus and the JMA Wireless Dome (formerly the Carrier Dome). Quick and direct \u2014 no surface-street navigation."
+        "q": "How far is The Cicero Grand from Syracuse University and the JMA Wireless Dome?",
+        "a": "About 16 minutes south on I-81 to the SU campus and the JMA Wireless Dome (the venue formerly known as the Carrier Dome). Quick and direct \u2014 no surface-street navigation. Free parking at the hotel, then street or paid lot at the Dome."
       },
       {
-        "q": "Is parking really free?",
+        "q": "How far is The Cicero Grand from Syracuse Hancock International Airport (SYR)?",
+        "a": "About 10 minutes \u2014 we share the I-81 Exit 98 cluster with the airport. Good for early flights, post-arrival overnights, and crew layovers. Park-and-fly arrangements are available for qualifying stays \u2014 ask the front desk at (315) 752-0150."
+      },
+      {
+        "q": "Is parking at The Cicero Grand really free?",
         "a": "Yes \u2014 free for cars, trucks, SUVs, RVs, trailers, and tour buses. No registration required, no validation at the desk. Compare to $25\u2013$35/night at most downtown Syracuse hotels."
+      },
+      {
+        "q": "Is The Cicero Grand pet-friendly?",
+        "a": "Yes. Pet-friendly suites available \u2014 a small pet fee applies. Plenty of grass on the property for short walks. See our pet-friendly hotels in Syracuse page for full details."
+      },
+      {
+        "q": "Does The Cicero Grand serve free breakfast?",
+        "a": "Yes \u2014 free hot breakfast every morning, 6:30 to 9:30 AM. Hot items, fresh fruit, breads, cereals, juices, and coffee. Included for every booking, every rate plan, every guest in the suite."
+      },
+      {
+        "q": "How close is The Cicero Grand to the Micron campus?",
+        "a": "The Micron Clay megafab site is about 7 minutes from our front door via Route 31. We're a routine pick for Micron project contractors, vendors, and visiting engineers. Long-stay corporate rates and direct billing available \u2014 see our Micron Crew Long-Stay page."
+      }
+    ],
+    "longContent": [
+      {
+        "h2": "Where The Cicero Grand fits in Syracuse, NY lodging",
+        "body": "Syracuse hotels fall into three buckets: downtown business hotels (Marriott Syracuse Downtown, Crowne Plaza, Sheraton at SU), airport-cluster chains north of I-90 (Embassy Suites, Homewood Suites, Hilton Garden Inn), and value chains scattered along I-81 and Route 11. The Cicero Grand sits in a fourth category \u2014 an independent, all-suite property 15 minutes north of downtown on I-81 Exit 98, halfway between Syracuse Hancock International Airport (SYR) and the Micron Clay megafab. You get downtown access without downtown markup, parking-garage fees, or game-night surge pricing. Every room is a full suite with separate sleeping and living areas, sleeping four, with a kitchenette, mini-fridge, microwave, and 55\" smart TV with Netflix, Hulu, and casting."
+      },
+      {
+        "h2": "Drive times to Syracuse landmarks from The Cicero Grand",
+        "body": "Every destination below is a single straight shot \u2014 most via I-81 or I-481, no surface-street navigation needed once you're moving.",
+        "list": [
+          "Downtown Syracuse \u00b7 15 minutes south on I-81",
+          "Syracuse University and the JMA Wireless Dome \u00b7 16 minutes via I-81 Exit 18",
+          "Destiny USA shopping and dining \u00b7 12 minutes south on I-81",
+          "Upstate Medical University and Crouse Hospital \u00b7 14 minutes",
+          "Syracuse Hancock International Airport (SYR) \u00b7 10 minutes (same I-81 exit cluster)",
+          "Onondaga Lake Park and the Salt Museum \u00b7 10 minutes",
+          "Micron Technology's Clay campus site \u00b7 7 minutes via Route 31",
+          "NBT Bank Stadium (Syracuse Mets) \u00b7 14 minutes",
+          "NYS Fairgrounds and Empower FCU Amphitheater \u00b7 20 minutes",
+          "Oneida Lake (Brewerton public access) \u00b7 7 minutes north on I-81",
+          "Turning Stone Casino \u00b7 35 minutes east on I-90",
+          "Beak & Skiff Apple Orchards \u00b7 35 minutes south"
+        ]
+      },
+      {
+        "h2": "Why guests pick The Cicero Grand over downtown Syracuse hotels",
+        "body": "On Syracuse University home football and basketball weekends, downtown rates routinely jump $80\u2013$150 over weekday rates, and most downtown properties add a $25\u2013$35 nightly parking fee on top. The Cicero Grand is far enough up I-81 to escape both \u2014 rates stay steady through the Orange schedule, the Dome concert season, and graduation weekends. Parking is free for cars, trucks, RVs, trailers, and tour buses, with no validation required. For travelers visiting Upstate Medical, ALE/insurance displacement guests, traveling nurses on 13-week contracts, and Micron project crews, the suite layout and weekly rate structure beats downtown business hotels on both space and total cost."
+      },
+      {
+        "h2": "Best Syracuse hotel for business travel, long stays, and project work",
+        "body": "Suites include workspace, fast WiFi, and 55\" smart TVs with casting \u2014 useful for video calls and project reviews. Direct corporate billing is available for established contracts. Our long-stay tiers (7+ nights, 14+ nights, 30+ nights) include weekly housekeeping, in-suite laundry options, and free breakfast across the entire stay. Travel-nurse housing and insurance-displacement (ALE/CRS) bookings are routine \u2014 we handle the billing details so the guest doesn't have to. For Micron contractors, the Clay megafab is a 7-minute drive via Route 31, which is faster than commuting from downtown Syracuse."
+      },
+      {
+        "h2": "Best Syracuse hotel for families and youth sports travel",
+        "body": "Every Cicero Grand suite sleeps four \u2014 separate living room with a queen sleeper, separate bedroom with one or two beds, kitchenette, and a full bathroom. Indoor heated pool, free hot breakfast, and 24-hour fitness make it a practical pick for hockey weekends at the Cicero Twin Rinks (5 minutes away), softball and baseball tournaments at the Onondaga County parks, and SU campus visits. Driving Town of Clay or Brewerton parents stay because the suite layout actually fits a real travel team \u2014 and the price doesn't move when the Dome is hosting an event."
+      },
+      {
+        "h2": "What's nearby in the Town of Cicero",
+        "body": "Within a five-minute drive: Wegmans, Tops, Aldi, Target, Home Depot, Lowes, Walmart Supercenter, Northern Lights Plaza retail, the Cicero Driving Range, and the Cicero Swamp Wildlife Management Area. Restaurants within walking distance include Tully's Good Times, Texas Roadhouse, Buffalo Wild Wings, Panera, Chipotle, Five Guys, and a dozen more along Route 11 and Route 31. For finer dining, downtown Syracuse and Armory Square are 15 minutes south."
+      },
+      {
+        "h2": "Booking The Cicero Grand direct vs. an OTA",
+        "body": "Book direct on cicerogrand.com to get our lowest rate, free room upgrade when available, 2 PM late checkout when available, and 10% off your next stay. Direct guests also skip OTA service fees that aren't always disclosed up front. We honor a Best Rate Guarantee on direct bookings \u2014 find a lower public rate for the same room and dates before booking and we'll beat it. Already booked through Expedia, Booking.com, or another OTA? Call (315) 752-0150 the day of arrival and we'll add a complimentary upgrade if available."
+      }
+    ],
+    "internalLinks": [
+      {
+        "href": "/hotels-syracuse-ny",
+        "label": "All Syracuse, NY hotel options"
+      },
+      {
+        "href": "/cicero-ny-hotels",
+        "label": "Hotels in Cicero, NY"
+      },
+      {
+        "href": "/hotels-brewerton-ny",
+        "label": "Hotels in Brewerton, NY"
+      },
+      {
+        "href": "/hotels-baldwinsville-ny",
+        "label": "Hotels near Baldwinsville, NY"
+      },
+      {
+        "href": "/hotels-clay-ny",
+        "label": "Hotels in Clay, NY"
+      },
+      {
+        "href": "/pet-friendly-hotels-syracuse",
+        "label": "Pet-friendly hotels in Syracuse"
+      },
+      {
+        "href": "/hotels-near-empower-amphitheater",
+        "label": "Hotels near Empower FCU Amphitheater"
+      },
+      {
+        "href": "/jma-wireless-dome",
+        "label": "Hotels near JMA Wireless Dome (Carrier Dome)"
+      },
+      {
+        "href": "/upstate-medical",
+        "label": "Hotels near Upstate Medical University"
+      },
+      {
+        "href": "/micron-crew-long-stay",
+        "label": "Micron Crew long-stay rates"
       }
     ]
   }
