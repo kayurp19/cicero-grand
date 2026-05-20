@@ -111,7 +111,7 @@ export default function Home() {
           { '@type': 'SiteNavigationElement', position: 4, name: 'Local Area & Cicero Guide', description: 'Things to do near The Cicero Grand — Syracuse, Oneida Lake, Destiny USA, and Cicero attractions.', url: `${SITE.url}/area` },
           { '@type': 'SiteNavigationElement', position: 5, name: 'Amenities', description: 'Free hot breakfast, indoor heated pool, 24-hour fitness, free parking, pet-friendly, free WiFi.', url: `${SITE.url}/amenities` },
           { '@type': 'SiteNavigationElement', position: 6, name: 'Micron Crew Long-Stay', description: 'Weekly and monthly long-stay rates for Micron contractors and project crews.', url: `${SITE.url}/micron-crew-long-stay` },
-          { '@type': 'SiteNavigationElement', position: 7, name: 'Book Direct & Save', description: 'Lowest rate guarantee, free upgrade, late checkout, and 10% off your next stay when you book direct.', url: `${SITE.url}/direct-perks` },
+          { '@type': 'SiteNavigationElement', position: 7, name: 'Book Direct & Save', description: 'Lowest rate guarantee, free upgrade, late checkout upon request, and 10% off your next stay when you book direct.', url: `${SITE.url}/direct-perks` },
           { '@type': 'SiteNavigationElement', position: 8, name: 'Contact', description: 'Front desk, sales, and reservations: hello@cicerogrand.com · (315) 752-0150.', url: `${SITE.url}/contact` },
         ],
       },
@@ -188,7 +188,7 @@ export default function Home() {
               <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-1 text-xs md:text-sm text-white font-medium text-center">
                 <span className="inline-flex items-center gap-1.5"><span className="text-primary">✓</span> Free upgrade</span>
                 <span className="text-white/30 hidden md:inline">·</span>
-                <span className="inline-flex items-center gap-1.5"><span className="text-primary">✓</span> 2 PM late checkout</span>
+                <span className="inline-flex items-center gap-1.5"><span className="text-primary">✓</span> Late checkout up to 1 PM</span>
                 <span className="text-white/30 hidden md:inline">·</span>
                 <span className="inline-flex items-center gap-1.5"><span className="text-primary">✓</span> 10% off next stay</span>
                 <span className="text-white/30 hidden md:inline">·</span>

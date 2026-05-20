@@ -19,9 +19,9 @@ const perks = [
     id: 'late-checkout',
     badge: 'Perk 02',
     icon: Clock,
-    title: '2 PM late checkout',
+    title: 'Late checkout up to 1 PM',
     description:
-      'Direct guests get a 2 PM checkout instead of 11 AM. Three extra hours to sleep in, finish work, or get a real breakfast before the drive home. Subject to availability for the following arrival.',
+      'Late checkout upon request at no additional cost up to 1 PM — instead of the standard 11 AM. Two extra hours to sleep in, finish work, or get a real breakfast before the drive home. Subject to availability for the following arrival.',
   },
   {
     id: 'discount',
@@ -45,9 +45,9 @@ export default function DirectPerks() {
   const site = useContent<typeof siteSeed>('site');
 
   useSeo({
-    title: 'Book Direct & Save · Free Upgrade + Late Checkout · The Cicero Grand',
+    title: 'Book Direct & Save · Free Upgrade + Late Checkout up to 1 PM · The Cicero Grand',
     description:
-      'Book direct at The Cicero Grand for four perks Expedia and Booking.com cannot offer: free room upgrade, 2 PM late checkout, 10% off your next stay, and a welcome amenity. No booking fees, best rate guaranteed.',
+      'Book direct at The Cicero Grand for four perks Expedia and Booking.com cannot offer: free room upgrade, late checkout up to 1 PM at no additional cost, 10% off your next stay, and a welcome amenity. No booking fees, best rate guaranteed.',
     canonicalPath: '/direct-perks',
   });
 
@@ -116,7 +116,7 @@ export default function DirectPerks() {
                     ['Best available rate', '✓', '✓'],
                     ['No booking fees', '✓', '✗'],
                     ['Free room upgrade at check-in', '✓', '✗'],
-                    ['2 PM late checkout', '✓', '✗'],
+                    ['Late checkout up to 1 PM', '✓', '✗'],
                     ['10% off your next stay', '✓', '✗'],
                     ['Welcome amenity', '✓', '✗'],
                     ['Flexible cancellation', '✓', 'Varies'],
