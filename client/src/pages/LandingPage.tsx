@@ -1,5 +1,5 @@
 import { Link } from 'wouter';
-import { ArrowUpRight, MapPin, Check, ChevronDown, Phone } from 'lucide-react';
+import { ArrowUpRight, MapPin, Check, ChevronDown, Phone, Star } from 'lucide-react';
 import { PageHero } from '../components/PageHero';
 import { Reveal } from '../components/Reveal';
 import { useSeo, SITE } from '../hooks/useSeo';
@@ -45,9 +45,23 @@ export default function LandingPage({ slug }: LandingPageProps) {
         aggregateRating: {
           '@type': 'AggregateRating',
           ratingValue: '5.0',
-          reviewCount: '31',
+          reviewCount: data.reviews ? String(data.reviews.length + 31) : '31',
           bestRating: '5',
         },
+        ...(data.reviews && data.reviews.length > 0
+          ? {
+              review: data.reviews.map((r: any) => ({
+                '@type': 'Review',
+                author: { '@type': 'Person', name: r.author },
+                reviewRating: {
+                  '@type': 'Rating',
+                  ratingValue: String(r.rating),
+                  bestRating: '5',
+                },
+                reviewBody: r.text,
+              })),
+            }
+          : {}),
         potentialAction: {
           '@type': 'ReserveAction',
           target: {
@@ -266,6 +280,107 @@ export default function LandingPage({ slug }: LandingPageProps) {
                   </Reveal>
                 ))}
               </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Guest reviews (real testimonials) */}
+      {data.reviews && data.reviews.length > 0 && (
+        <section className="bg-muted/30 py-20 lg:py-28 border-t border-border">
+          <div className="max-w-[1400px] mx-auto px-5 lg:px-10">
+            <Reveal>
+              <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
+                Guest reviews
+              </span>
+              <h2 className="font-display text-[clamp(1.8rem,4vw,3.2rem)] leading-[1] tracking-tight mt-3 max-w-3xl text-balance">
+                Why guests pick us over downtown Syracuse hotels.
+              </h2>
+            </Reveal>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+              {data.reviews.map((r: any, i: number) => (
+                <Reveal key={i}>
+                  <figure className="bg-background border border-border rounded-3xl p-7 h-full">
+                    <div className="flex gap-0.5 mb-4" aria-label={`${r.rating} out of 5 stars`}>
+                      {Array.from({ length: r.rating }).map((_, idx) => (
+                        <Star
+                          key={idx}
+                          className="w-4 h-4 fill-primary text-primary"
+                        />
+                      ))}
+                    </div>
+                    <blockquote className="text-base lg:text-lg leading-relaxed text-foreground/85">
+                      “{r.text}”
+                    </blockquote>
+                    <figcaption className="mt-5 text-sm text-muted-foreground font-medium">
+                      — {r.author}
+                    </figcaption>
+                  </figure>
+                </Reveal>
+              ))}
+            </div>
+            <div className="mt-10 text-center">
+              <a
+                href="https://www.google.com/search?q=cicero+grand+reviews"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium underline-offset-4 hover:underline text-muted-foreground"
+              >
+                Read all reviews on Google →
+              </a>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Comparison table: us vs downtown */}
+      {data.comparison && data.comparison.rows && data.comparison.rows.length > 0 && (
+        <section className="bg-background py-20 lg:py-28 border-t border-border">
+          <div className="max-w-[1400px] mx-auto px-5 lg:px-10">
+            <Reveal>
+              <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
+                Side by side
+              </span>
+              <h2 className="font-display text-[clamp(1.8rem,4vw,3.2rem)] leading-[1] tracking-tight mt-3 max-w-3xl text-balance">
+                {data.comparison.title}.
+              </h2>
+              {data.comparison.subtitle && (
+                <p className="mt-5 text-base lg:text-lg text-muted-foreground max-w-2xl leading-relaxed">
+                  {data.comparison.subtitle}
+                </p>
+              )}
+            </Reveal>
+            <div className="mt-12 overflow-x-auto">
+              <table className="w-full border-collapse min-w-[640px]">
+                <thead>
+                  <tr className="border-b-2 border-border">
+                    <th className="text-left py-4 px-4 text-xs uppercase tracking-[0.16em] text-muted-foreground font-normal">
+                      Feature
+                    </th>
+                    <th className="text-left py-4 px-4 font-display text-lg lg:text-xl tracking-tight">
+                      {data.comparison.us}
+                    </th>
+                    <th className="text-left py-4 px-4 font-display text-lg lg:text-xl tracking-tight text-muted-foreground">
+                      {data.comparison.them}
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {data.comparison.rows.map((row: any, i: number) => (
+                    <tr key={i} className="border-b border-border/60">
+                      <td className="py-4 px-4 text-sm text-muted-foreground">
+                        {row.feature}
+                      </td>
+                      <td className="py-4 px-4 text-base font-medium">
+                        {row.us}
+                      </td>
+                      <td className="py-4 px-4 text-base text-muted-foreground">
+                        {row.them}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
           </div>
         </section>
