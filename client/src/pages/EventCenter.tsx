@@ -51,9 +51,9 @@ export default function EventCenter() {
   const site = useContent<typeof siteSeed>('site');
 
   useSeo({
-    title: 'Event Center · Banquet Hall, Meetings & Weddings · The Cicero Grand',
+    title: 'Syracuse Event Venue · Weddings, Banquets, Meetings | The Cicero Grand',
     description:
-      'The Cicero Grand Event Center — banquet hall, corporate meeting space, and wedding venue near Syracuse, NY. Outside caterers welcome. On-site suites for guests. Get a custom quote.',
+      'All-in-one Syracuse-area event venue. Wedding ballroom, corporate meeting rooms, and banquet hall. Outside caterers welcome. On-site hotel suites for out-of-town guests. Tour the space — call (315) 752-0150.',
     canonicalPath: '/event-center',
     ogImage: '/photos/venue-ballroom-empty.jpg',
     jsonLd: {

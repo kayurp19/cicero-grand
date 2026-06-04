@@ -32,9 +32,9 @@ export default function SocialEvents() {
   );
 
   useSeo({
-    title: 'Banquet Hall Syracuse · Outside Caterers Welcome · The Cicero Grand',
+    title: 'Banquet Hall Syracuse NY · Showers, Reunions, Holiday Parties | The Cicero Grand',
     description:
-      'Banquet hall near Syracuse, NY for showers, reunions, holiday parties, religious & cultural events. Outside caterers welcome. Buffet, plated, or stations. Hotel suites on-site.',
+      'Syracuse-area banquet hall for showers, reunions, Quinceañeras, holiday parties, and celebrations of life. Outside caterers welcome. Buffet, plated, or stations. On-site hotel suites for guests. Call (315) 752-0150.',
     canonicalPath: '/event-center/social-events',
     ogImage: '/photos/venue-ballroom-empty.jpg',
     jsonLd: {

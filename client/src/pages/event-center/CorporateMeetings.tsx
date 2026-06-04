@@ -14,9 +14,9 @@ export default function CorporateMeetings() {
   const corporate = events.packages.find((p) => p.category.startsWith('Corporate'));
 
   useSeo({
-    title: 'Corporate Meeting Space Syracuse · Conference Venue · The Cicero Grand',
+    title: 'Meeting Rooms Syracuse NY · Free A/V, Wi-Fi & Parking | The Cicero Grand',
     description:
-      'Boardroom, classroom, and full-day conference space near Syracuse, NY. Free Wi-Fi, A/V, breakfast & lunch packages, and discounted suite blocks for out-of-town attendees.',
+      'Conference & meeting rooms 6 min from Micron, off I-81 Exit 98. Free A/V, Wi-Fi & parking. Catered breakfast and lunch packages. Discounted suite blocks for out-of-town attendees. Call (315) 752-0150.',
     canonicalPath: '/event-center/corporate-meetings',
     ogImage: '/photos/venue-ballroom-empty.jpg',
     jsonLd: {

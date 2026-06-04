@@ -10,9 +10,9 @@ export default function Amenities() {
   const site = useContent<typeof siteSeed>('site');
 
   useSeo({
-    title: 'Hotel Amenities · Indoor Pool, Free Breakfast · The Cicero Grand',
+    title: 'Indoor Pool, Free Hot Breakfast, Pet-Friendly · Cicero NY Hotel | The Cicero Grand',
     description:
-      'Indoor heated pool, free hot breakfast, fitness center, free parking, pet friendly, free Wi-Fi, and 24-hour business essentials at The Cicero Grand near Syracuse, NY.',
+      'Indoor heated pool, free hot breakfast, fitness center, free parking, free Wi-Fi, pet-friendly suites, and 24-hr business essentials. 6 min from Micron. Off I-81 Exit 98. Book direct — (315) 752-0150.',
     canonicalPath: '/amenities',
     ogImage: '/photos/pool.jpg',
   });
