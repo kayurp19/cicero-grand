@@ -111,6 +111,7 @@ function AppRouter() {
         <Route path="/event-center/corporate-meetings" component={CorporateMeetings} />
         <Route path="/event-center/social-events" component={SocialEvents} />
         <Route path="/event-center/weddings" component={Weddings} />
+        <Route path="/event-center/menus" component={Menus} />
         {/* Legacy URL fallbacks — Express handles 301 in prod, these handle SPA dev navigation */}
         <Route path="/events" component={EventCenter} />
         <Route path="/weddings" component={Weddings} />

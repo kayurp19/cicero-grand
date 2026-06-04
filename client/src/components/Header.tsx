@@ -9,7 +9,6 @@ const nav = [
   { href: '/amenities', label: 'Amenities' },
   { href: '/area-guide', label: 'Area Guide' },
   { href: '/event-center', label: 'Event Center' },
-  { href: '/menus', label: 'Menus' },
   { href: '/packages', label: 'Packages' },
   { href: '/offers', label: 'Offers' },
   { href: '/gallery', label: 'Gallery' },

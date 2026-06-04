@@ -80,20 +80,20 @@ export default function Menus() {
     title: 'Banquet & Catering Menus · The Cicero Grand · Syracuse-Area Event Center',
     description:
       'Download wedding, corporate, social, and sports-team banquet menus from The Cicero Grand Event Center in Cicero, NY. Custom quotes within one business day.',
-    canonicalPath: '/menus',
+    canonicalPath: '/event-center/menus',
     ogImage: '/photos/venue-tablescape.jpg',
     jsonLd: {
       '@context': 'https://schema.org',
       '@type': 'Restaurant',
       name: `${SITE.name} — Banquet Catering`,
       servesCuisine: ['American', 'Italian-American', 'Buffet', 'Catering'],
-      url: `${SITE.url}/menus`,
+      url: `${SITE.url}/event-center/menus`,
       telephone: SITE.salesPhone,
       email: SITE.email,
       hasMenu: MENUS.map((m) => ({
         '@type': 'Menu',
         name: m.title,
-        url: `${SITE.url}/menus#${m.slug}`,
+        url: `${SITE.url}/event-center/menus#${m.slug}`,
       })),
       address: {
         '@type': 'PostalAddress',

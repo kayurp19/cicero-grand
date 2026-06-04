@@ -35,6 +35,15 @@ const categories = [
     image: '/photos/venue-wedding-reception.jpg',
     cta: 'Plan a wedding',
   },
+  {
+    href: '/event-center/menus',
+    eyebrow: '04',
+    title: 'Banquet & Catering Menus',
+    blurb:
+      'Download our wedding, corporate, social, sports-team, and hosted-bar menus — every package and option in branded PDFs. Custom quote within one business day.',
+    image: '/photos/venue-tablescape.jpg',
+    cta: 'See the menus',
+  },
 ];
 
 export default function EventCenter() {
