@@ -1,5 +1,5 @@
-import { contentBlocks, contactSubmissions } from "@shared/schema";
-import type { ContentBlock, ContactSubmission, InsertContact } from "@shared/schema";
+import { contentBlocks, contactSubmissions, menuRequests } from "@shared/schema";
+import type { ContentBlock, ContactSubmission, InsertContact, MenuRequest, InsertMenuRequest } from "@shared/schema";
 import { drizzle } from "drizzle-orm/better-sqlite3";
 import Database from "better-sqlite3";
 import { desc, eq } from "drizzle-orm";
@@ -52,6 +52,18 @@ sqlite.exec(`
     message TEXT NOT NULL,
     created_at INTEGER NOT NULL
   );
+  CREATE TABLE IF NOT EXISTS menu_requests (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    email TEXT NOT NULL,
+    phone TEXT,
+    event_type TEXT NOT NULL,
+    event_date TEXT,
+    guest_count TEXT,
+    menus_requested TEXT NOT NULL,
+    notes TEXT,
+    created_at INTEGER NOT NULL
+  );
 `);
 
 export const db = drizzle(sqlite);
@@ -64,6 +76,8 @@ export interface IStorage {
   listContacts(limit?: number): Promise<ContactSubmission[]>;
   getContact(id: number): Promise<ContactSubmission | undefined>;
   deleteContact(id: number): Promise<void>;
+  createMenuRequest(data: InsertMenuRequest): Promise<MenuRequest>;
+  listMenuRequests(limit?: number): Promise<MenuRequest[]>;
 }
 
 export class DatabaseStorage implements IStorage {
@@ -129,6 +143,33 @@ export class DatabaseStorage implements IStorage {
 
   async deleteContact(id: number): Promise<void> {
     db.delete(contactSubmissions).where(eq(contactSubmissions.id, id)).run();
+  }
+
+  async createMenuRequest(data: InsertMenuRequest): Promise<MenuRequest> {
+    return db
+      .insert(menuRequests)
+      .values({
+        name: data.name,
+        email: data.email,
+        phone: data.phone,
+        eventType: data.eventType,
+        eventDate: data.eventDate,
+        guestCount: data.guestCount,
+        menusRequested: JSON.stringify(data.menusRequested),
+        notes: data.notes,
+        createdAt: Date.now(),
+      })
+      .returning()
+      .get();
+  }
+
+  async listMenuRequests(limit = 200): Promise<MenuRequest[]> {
+    return db
+      .select()
+      .from(menuRequests)
+      .orderBy(desc(menuRequests.createdAt))
+      .limit(limit)
+      .all();
   }
 }
 

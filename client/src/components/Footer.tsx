@@ -64,6 +64,7 @@ export function Footer() {
               <li><Link href="/event-center/corporate-meetings" className="hover:text-background">Corporate meetings</Link></li>
               <li><Link href="/event-center/social-events" className="hover:text-background">Social events & banquets</Link></li>
               <li><Link href="/event-center/weddings" className="hover:text-background">Weddings</Link></li>
+              <li><Link href="/menus" className="hover:text-background">Banquet menus</Link></li>
               <li><Link href="/area-guide" className="hover:text-background">Area Guide</Link></li>
               <li><Link href="/contact" className="hover:text-background">Contact</Link></li>
             </ul>

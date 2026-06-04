@@ -8,7 +8,7 @@ import crypto from "node:crypto";
 import multer from "multer";
 import cookieParser from "cookie-parser";
 import { storage } from "./storage";
-import { insertContactSchema } from "@shared/schema";
+import { insertContactSchema, insertMenuRequestSchema } from "@shared/schema";
 import nodemailer from "nodemailer";
 
 // ----- Config -----
@@ -365,6 +365,156 @@ export async function registerRoutes(
       );
     }
     return;
+  });
+
+  // ----- Menu PDF lead-capture -----
+  // POST /api/menu-request — captures lead, emails sales@ + sends PDF links to user.
+  const MENU_CATALOG: Record<string, { title: string; file: string }> = {
+    "master-banquet-packages": { title: "Master Banquet Packages (All Menus)", file: "cicero-grand-menu-master-banquet-packages.pdf" },
+    "weddings": { title: "Wedding Reception Menus", file: "cicero-grand-menu-weddings.pdf" },
+    "corporate-meetings": { title: "Corporate Meetings & Conferences", file: "cicero-grand-menu-corporate-meetings.pdf" },
+    "social-events": { title: "Social Events (Showers, Birthdays, Reunions)", file: "cicero-grand-menu-social-events.pdf" },
+    "sports-teams": { title: "Sports Teams & Tournament Travel", file: "cicero-grand-menu-sports-teams.pdf" },
+    "hosted-open-bar": { title: "Hosted Open Bar Package", file: "cicero-grand-menu-hosted-open-bar.pdf" },
+  };
+
+  app.post("/api/menu-request", async (req, res) => {
+    const parse = insertMenuRequestSchema.safeParse(req.body);
+    if (!parse.success) {
+      return res.status(400).json({ message: "Invalid form data", errors: parse.error.flatten() });
+    }
+    // Filter to known menus only.
+    const validMenus = parse.data.menusRequested.filter((m) => MENU_CATALOG[m]);
+    if (validMenus.length === 0) {
+      return res.status(400).json({ message: "No valid menus selected" });
+    }
+    const data = { ...parse.data, menusRequested: validMenus };
+    const submission = await storage.createMenuRequest(data);
+    console.log(`[menu-request] new #${submission.id} from ${data.email} (${validMenus.length} menu(s))`);
+
+    // Respond immediately — emails fire in the background.
+    const downloadLinks = validMenus.map((slug) => ({
+      slug,
+      title: MENU_CATALOG[slug].title,
+      url: `/menus/${MENU_CATALOG[slug].file}`,
+    }));
+    res.json({ ok: true, id: submission.id, downloads: downloadLinks });
+
+    const { name, email, phone, eventType, eventDate, guestCount, notes } = data;
+    const menuList = validMenus.map((s) => `• ${MENU_CATALOG[s].title}`).join("\n");
+
+    // --- Internal notification to sales@ ---
+    const internalSubject = `Menu request: ${eventType} — ${name}${guestCount ? ` (${guestCount} guests)` : ""}`;
+    const internalText = [
+      `New menu download request from cicerogrand.com`,
+      ``,
+      `Name:        ${name}`,
+      `Email:       ${email}`,
+      `Phone:       ${phone || "—"}`,
+      `Event Type:  ${eventType}`,
+      `Event Date:  ${eventDate || "—"}`,
+      `Guest Count: ${guestCount || "—"}`,
+      ``,
+      `Menus requested:`,
+      menuList,
+      ``,
+      `Notes:`,
+      notes || "(none)",
+      ``,
+      `— Submission #${submission.id}`,
+    ].join("\n");
+    const internalHtml = `
+      <div style="font-family:system-ui,-apple-system,sans-serif;max-width:600px;margin:0 auto;padding:24px;color:#1a1a1a;">
+        <h2 style="font-family:Georgia,serif;font-size:24px;color:#a36b3f;margin:0 0 8px;">New menu request</h2>
+        <p style="margin:0 0 16px;color:#666;font-size:14px;">Lead captured from /menus on cicerogrand.com</p>
+        <table style="width:100%;border-collapse:collapse;font-size:14px;">
+          <tr><td style="padding:6px 0;width:140px;color:#666;">Event Type</td><td style="padding:6px 0;font-weight:600;">${escapeHtml(eventType)}</td></tr>
+          <tr><td style="padding:6px 0;color:#666;">Name</td><td style="padding:6px 0;">${escapeHtml(name)}</td></tr>
+          <tr><td style="padding:6px 0;color:#666;">Email</td><td style="padding:6px 0;"><a href="mailto:${escapeHtml(email)}">${escapeHtml(email)}</a></td></tr>
+          <tr><td style="padding:6px 0;color:#666;">Phone</td><td style="padding:6px 0;">${escapeHtml(phone || "—")}</td></tr>
+          <tr><td style="padding:6px 0;color:#666;">Event Date</td><td style="padding:6px 0;">${escapeHtml(eventDate || "—")}</td></tr>
+          <tr><td style="padding:6px 0;color:#666;">Guest Count</td><td style="padding:6px 0;">${escapeHtml(guestCount || "—")}</td></tr>
+        </table>
+        <div style="margin:20px 0 6px;color:#666;font-size:13px;text-transform:uppercase;letter-spacing:0.1em;">Menus requested</div>
+        <ul style="margin:0;padding-left:18px;line-height:1.7;">${validMenus.map((s) => `<li>${escapeHtml(MENU_CATALOG[s].title)}</li>`).join("")}</ul>
+        ${notes ? `<div style="margin:20px 0 6px;color:#666;font-size:13px;text-transform:uppercase;letter-spacing:0.1em;">Notes</div><div style="padding:12px;background:#f7f5f2;border-left:3px solid #a36b3f;border-radius:4px;white-space:pre-wrap;line-height:1.55;">${escapeHtml(notes)}</div>` : ""}
+        <p style="margin-top:28px;font-size:12px;color:#999;">Submission #${submission.id} · <a href="https://www.cicerogrand.com/admin" style="color:#a36b3f;">admin panel</a></p>
+      </div>
+    `;
+
+    // --- Auto-reply to the requester with PDF links ---
+    const replySubject = `Your Cicero Grand banquet menus`;
+    const linksHtml = validMenus
+      .map((s) => `<li style="margin:8px 0;"><a href="https://www.cicerogrand.com/menus/${MENU_CATALOG[s].file}" style="color:#a36b3f;font-weight:600;text-decoration:none;">${escapeHtml(MENU_CATALOG[s].title)} →</a></li>`)
+      .join("");
+    const linksText = validMenus
+      .map((s) => `• ${MENU_CATALOG[s].title}\n  https://www.cicerogrand.com/menus/${MENU_CATALOG[s].file}`)
+      .join("\n\n");
+    const replyText = [
+      `Hi ${name},`,
+      ``,
+      `Thanks for your interest in The Cicero Grand. Your requested menus are linked below:`,
+      ``,
+      linksText,
+      ``,
+      `A member of our event team will follow up shortly with availability and a custom quote for your ${eventType.toLowerCase()}.`,
+      ``,
+      `Questions? Just reply to this email or call (315) 752-0150.`,
+      ``,
+      `— The Cicero Grand`,
+      `5875 Carmenica Drive · Cicero, NY 13039`,
+      `sales@cicerogrand.com · (315) 752-0150`,
+      `www.cicerogrand.com`,
+    ].join("\n");
+    const replyHtml = `
+      <div style="font-family:Georgia,serif;max-width:560px;margin:0 auto;padding:32px 24px;color:#1a1a1a;">
+        <div style="text-align:center;padding-bottom:20px;border-bottom:1px solid #d4cdb8;">
+          <div style="font-size:11px;letter-spacing:0.25em;text-transform:uppercase;color:#a36b3f;">The Cicero Grand</div>
+          <div style="font-size:13px;color:#6b6b6b;margin-top:4px;">Event Center · Cicero, NY</div>
+        </div>
+        <h2 style="font-size:24px;margin:28px 0 12px;color:#1a1a1a;">Your menus are ready.</h2>
+        <p style="font-family:system-ui,sans-serif;font-size:15px;line-height:1.6;color:#1a1a1a;margin:0 0 18px;">Hi ${escapeHtml(name)} — thanks for your interest. Click below to open your requested menu${validMenus.length > 1 ? "s" : ""}:</p>
+        <ul style="font-family:system-ui,sans-serif;font-size:15px;padding-left:20px;margin:0 0 24px;">${linksHtml}</ul>
+        <div style="padding:16px 20px;background:#f5f0e6;border-left:3px solid #a36b3f;border-radius:2px;font-family:system-ui,sans-serif;font-size:14px;line-height:1.55;color:#1a1a1a;">
+          A member of our event team will follow up shortly with availability and a custom quote for your <strong>${escapeHtml(eventType.toLowerCase())}</strong>.
+        </div>
+        <p style="font-family:system-ui,sans-serif;font-size:14px;line-height:1.6;color:#1a1a1a;margin:24px 0 0;">Questions? Reply to this email or call <a href="tel:+13157520150" style="color:#a36b3f;text-decoration:none;font-weight:600;">(315) 752-0150</a>.</p>
+        <div style="margin-top:32px;padding-top:20px;border-top:1px solid #d4cdb8;font-family:system-ui,sans-serif;font-size:12px;color:#6b6b6b;line-height:1.55;">
+          The Cicero Grand · 5875 Carmenica Drive, Cicero, NY 13039<br>
+          <a href="mailto:sales@cicerogrand.com" style="color:#a36b3f;text-decoration:none;">sales@cicerogrand.com</a> · <a href="tel:+13157520150" style="color:#a36b3f;text-decoration:none;">(315) 752-0150</a> · <a href="https://www.cicerogrand.com" style="color:#a36b3f;text-decoration:none;">www.cicerogrand.com</a>
+        </div>
+      </div>
+    `;
+
+    const sendEmail = async (to: string | string[], replyTo: string | undefined, subject: string, text: string, html: string, tag: string) => {
+      if (usingResendApi()) {
+        try {
+          const info: any = await sendViaResend({ from: SMTP_FROM, to, replyTo, subject, text, html });
+          console.log(`[menu-request] ${tag} Resend OK for #${submission.id}: id=${info?.id || "?"}`);
+        } catch (err: any) {
+          console.error(`[menu-request] ${tag} Resend FAILED for #${submission.id}: ${err?.message}`);
+        }
+      } else if (mailer) {
+        try {
+          const info = await mailer.sendMail({ from: SMTP_FROM, to: Array.isArray(to) ? to.join(", ") : to, replyTo, subject, text, html });
+          console.log(`[menu-request] ${tag} SMTP OK for #${submission.id}: ${info.messageId}`);
+        } catch (err: any) {
+          console.error(`[menu-request] ${tag} SMTP FAILED for #${submission.id}: ${err?.message}`);
+        }
+      } else {
+        console.warn(`[menu-request] no transport — #${submission.id} ${tag} email skipped`);
+      }
+    };
+
+    sendEmail(SALES_EMAILS, email, internalSubject, internalText, internalHtml, "internal");
+    sendEmail(email, undefined, replySubject, replyText, replyHtml, "auto-reply");
+    return;
+  });
+
+  // List menu requests (admin)
+  app.get("/api/admin/menu-requests", requireAdmin, async (_req, res) => {
+    const rows = await storage.listMenuRequests();
+    res.json(rows.map((r) => ({ ...r, menusRequested: JSON.parse(r.menusRequested) })));
   });
 
   // ----- Email diagnostic -----

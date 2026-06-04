@@ -37,3 +37,31 @@ export const insertContactSchema = z.object({
 export type InsertContact = z.infer<typeof insertContactSchema>;
 export type ContactSubmission = typeof contactSubmissions.$inferSelect;
 export type ContentBlock = typeof contentBlocks.$inferSelect;
+
+// ----- Menu download requests (gated PDF lead capture) -----
+export const menuRequests = sqliteTable("menu_requests", {
+  id: integer("id").primaryKey({ autoIncrement: true }),
+  name: text("name").notNull(),
+  email: text("email").notNull(),
+  phone: text("phone"),
+  eventType: text("event_type").notNull(), // wedding, corporate, social, sports, bar, full
+  eventDate: text("event_date"), // free-text date or estimate
+  guestCount: text("guest_count"), // rough range
+  menusRequested: text("menus_requested").notNull(), // JSON array of menu slugs
+  notes: text("notes"),
+  createdAt: integer("created_at").notNull(),
+});
+
+export const insertMenuRequestSchema = z.object({
+  name: z.string().min(1).max(200),
+  email: z.string().email().max(200),
+  phone: z.string().max(40).optional().nullable().transform((v) => v || undefined),
+  eventType: z.string().min(1).max(60),
+  eventDate: z.string().max(120).optional().nullable().transform((v) => v || undefined),
+  guestCount: z.string().max(60).optional().nullable().transform((v) => v || undefined),
+  menusRequested: z.array(z.string().max(80)).min(1).max(8),
+  notes: z.string().max(2000).optional().nullable().transform((v) => v || undefined),
+});
+
+export type InsertMenuRequest = z.infer<typeof insertMenuRequestSchema>;
+export type MenuRequest = typeof menuRequests.$inferSelect;

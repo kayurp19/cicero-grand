@@ -29,6 +29,7 @@ import Terms from "@/pages/Terms";
 import Accessibility from "@/pages/Accessibility";
 import LandingPage from "@/pages/LandingPage";
 import Packages from "@/pages/Packages";
+import Menus from "@/pages/Menus";
 import MicronCrewLongStay from "@/pages/MicronCrewLongStay";
 import TrackingTest from "@/pages/TrackingTest";
 import NotFound from "@/pages/not-found";
@@ -117,6 +118,10 @@ function AppRouter() {
         <Route path="/direct-perks" component={DirectPerks} />
         <Route path="/book-direct" component={DirectPerks} />
         <Route path="/packages" component={Packages} />
+        <Route path="/menus" component={Menus} />
+        <Route path="/menu" component={Menus} />
+        <Route path="/catering" component={Menus} />
+        <Route path="/catering-menus" component={Menus} />
         <Route path="/micron-crew-long-stay" component={MicronCrewLongStay} />
         <Route path="/micron-long-stay" component={MicronCrewLongStay} />
         <Route path="/tracking-test" component={TrackingTest} />
