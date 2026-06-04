@@ -228,6 +228,70 @@ export async function registerRoutes(
 
   // Dedicated healthcheck endpoint — always returns 200 if the server is up.
   // Railway uses this to confirm a new deploy is healthy before swapping traffic.
+  // ----- Dynamic sitemap.xml -----
+  // Stamped with today's date on every request so Google sees fresh `lastmod`
+  // values and recrawls regularly. Static sitemap files go stale and Google
+  // de-prioritizes recrawling them, which kills indexing freshness.
+  const SITEMAP_URLS: Array<{ path: string; changefreq: string; priority: string }> = [
+    { path: "/", changefreq: "daily", priority: "1.0" },
+    { path: "/rooms", changefreq: "weekly", priority: "0.9" },
+    { path: "/amenities", changefreq: "monthly", priority: "0.7" },
+    { path: "/area-guide", changefreq: "monthly", priority: "0.8" },
+    { path: "/event-center", changefreq: "weekly", priority: "0.95" },
+    { path: "/event-center/corporate-meetings", changefreq: "weekly", priority: "0.9" },
+    { path: "/event-center/social-events", changefreq: "weekly", priority: "0.9" },
+    { path: "/event-center/weddings", changefreq: "weekly", priority: "0.9" },
+    { path: "/event-center/menus", changefreq: "weekly", priority: "0.9" },
+    { path: "/offers", changefreq: "weekly", priority: "0.9" },
+    { path: "/packages", changefreq: "weekly", priority: "0.9" },
+    { path: "/direct-perks", changefreq: "weekly", priority: "0.85" },
+    { path: "/gallery", changefreq: "monthly", priority: "0.7" },
+    { path: "/contact", changefreq: "monthly", priority: "0.6" },
+    { path: "/micron-crew-long-stay", changefreq: "weekly", priority: "0.85" },
+    // SEO landing pages (geo + intent)
+    { path: "/hotels-syracuse-ny", changefreq: "weekly", priority: "0.9" },
+    { path: "/hotel-syracuse-ny", changefreq: "weekly", priority: "0.9" },
+    { path: "/cicero-ny-hotels", changefreq: "weekly", priority: "0.9" },
+    { path: "/hotels-near-micron", changefreq: "weekly", priority: "0.9" },
+    { path: "/hotels-near-syracuse-airport", changefreq: "weekly", priority: "0.85" },
+    { path: "/hotels-near-destiny-usa", changefreq: "weekly", priority: "0.85" },
+    { path: "/hotels-near-jma-wireless-dome", changefreq: "weekly", priority: "0.85" },
+    { path: "/hotels-near-turning-stone", changefreq: "weekly", priority: "0.85" },
+    { path: "/hotels-near-empower-amphitheater", changefreq: "weekly", priority: "0.85" },
+    { path: "/hotels-near-upstate-medical", changefreq: "weekly", priority: "0.85" },
+    { path: "/hotels-near-nys-fair", changefreq: "weekly", priority: "0.85" },
+    { path: "/pet-friendly-hotels-syracuse", changefreq: "weekly", priority: "0.85" },
+    { path: "/hotels-brewerton-ny", changefreq: "weekly", priority: "0.85" },
+    { path: "/hotels-clay-ny", changefreq: "weekly", priority: "0.85" },
+    { path: "/hotels-baldwinsville-ny", changefreq: "weekly", priority: "0.85" },
+    { path: "/hotels-east-syracuse-ny", changefreq: "weekly", priority: "0.85" },
+    { path: "/hotels-liverpool-ny", changefreq: "weekly", priority: "0.85" },
+    // Legal
+    { path: "/privacy", changefreq: "yearly", priority: "0.3" },
+    { path: "/terms", changefreq: "yearly", priority: "0.3" },
+    { path: "/accessibility", changefreq: "yearly", priority: "0.3" },
+  ];
+
+  app.get(["/sitemap.xml", "/sitemap"], (_req, res) => {
+    const today = new Date().toISOString().split("T")[0]; // YYYY-MM-DD
+    const xml =
+      `<?xml version="1.0" encoding="UTF-8"?>\n` +
+      `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
+      SITEMAP_URLS.map(
+        (u) =>
+          `  <url>\n` +
+          `    <loc>https://www.cicerogrand.com${u.path}</loc>\n` +
+          `    <lastmod>${today}</lastmod>\n` +
+          `    <changefreq>${u.changefreq}</changefreq>\n` +
+          `    <priority>${u.priority}</priority>\n` +
+          `  </url>`,
+      ).join("\n") +
+      `\n</urlset>\n`;
+    res.set("Content-Type", "application/xml; charset=utf-8");
+    res.set("Cache-Control", "public, max-age=3600"); // 1h cache
+    res.send(xml);
+  });
+
   app.get("/api/health", (_req, res) => {
     res.status(200).json({ status: "ok" });
   });
