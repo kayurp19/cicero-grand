@@ -20,6 +20,123 @@
     <!-- Baseline canonical (per-route value is updated dynamically by Canonical.tsx) -->
     <link rel="canonical" href="https://www.cicerogrand.com/" />
     <meta property="og:url" content="https://www.cicerogrand.com/" />
+
+    <!--
+      Server-rendered JSON-LD structured data.
+      These MUST be in the static HTML (not injected by React) so Googlebot reads
+      them on first crawl. Powers brand panel, sitelinks, and rich results.
+    -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Hotel",
+      "@id": "https://www.cicerogrand.com/#hotel",
+      "name": "The Cicero Grand",
+      "url": "https://www.cicerogrand.com/",
+      "logo": "https://www.cicerogrand.com/brand/cicero-grand-logo.jpg",
+      "image": [
+        "https://www.cicerogrand.com/brand/cicero-grand-logo.jpg",
+        "https://www.cicerogrand.com/og-image.jpg"
+      ],
+      "description": "All-suite hotel 6 minutes from Micron's New York megafab in Clay. Off I-81 Exit 98. Built for project crews, vendors, and visiting teams. Free hot breakfast, parking, and Wi-Fi.",
+      "telephone": "+1-315-752-0150",
+      "email": "sales@cicerogrand.com",
+      "priceRange": "$$",
+      "currenciesAccepted": "USD",
+      "paymentAccepted": "Cash, Credit Card",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "5875 Carmenica Drive",
+        "addressLocality": "Cicero",
+        "addressRegion": "NY",
+        "postalCode": "13039",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 43.1709,
+        "longitude": -76.1146
+      },
+      "checkinTime": "15:00",
+      "checkoutTime": "11:00",
+      "numberOfRooms": 82,
+      "petsAllowed": true,
+      "starRating": { "@type": "Rating", "ratingValue": "3" },
+      "amenityFeature": [
+        { "@type": "LocationFeatureSpecification", "name": "Free Hot Breakfast", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Free Parking", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Free Wi-Fi", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Indoor Pool", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Fitness Center", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Pet Friendly", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Event Center", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "All-Suite Rooms", "value": true }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/ComfortSuitesSyrCicero",
+        "https://www.google.com/maps?cid=10426371224060360838"
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://www.cicerogrand.com/#organization",
+      "name": "The Cicero Grand",
+      "alternateName": ["Cicero Grand", "Cicero Grand Hotel"],
+      "url": "https://www.cicerogrand.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.cicerogrand.com/brand/cicero-grand-logo.jpg",
+        "width": 512,
+        "height": 512
+      },
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "telephone": "+1-315-752-0150",
+        "contactType": "reservations",
+        "email": "sales@cicerogrand.com",
+        "areaServed": "US",
+        "availableLanguage": ["English"]
+      }],
+      "sameAs": [
+        "https://www.facebook.com/ComfortSuitesSyrCicero",
+        "https://www.google.com/maps?cid=10426371224060360838"
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://www.cicerogrand.com/#website",
+      "url": "https://www.cicerogrand.com/",
+      "name": "The Cicero Grand",
+      "publisher": { "@id": "https://www.cicerogrand.com/#organization" }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "@id": "https://www.cicerogrand.com/#sitenav",
+      "name": "Site Navigation",
+      "itemListElement": [
+        { "@type": "SiteNavigationElement", "position": 1, "name": "Rooms & Suites", "url": "https://www.cicerogrand.com/rooms" },
+        { "@type": "SiteNavigationElement", "position": 2, "name": "Amenities", "url": "https://www.cicerogrand.com/amenities" },
+        { "@type": "SiteNavigationElement", "position": 3, "name": "Event Center", "url": "https://www.cicerogrand.com/event-center" },
+        { "@type": "SiteNavigationElement", "position": 4, "name": "Menus", "url": "https://www.cicerogrand.com/event-center/menus" },
+        { "@type": "SiteNavigationElement", "position": 5, "name": "Area Guide", "url": "https://www.cicerogrand.com/area-guide" },
+        { "@type": "SiteNavigationElement", "position": 6, "name": "Photo Gallery", "url": "https://www.cicerogrand.com/gallery" },
+        { "@type": "SiteNavigationElement", "position": 7, "name": "Offers", "url": "https://www.cicerogrand.com/offers" },
+        { "@type": "SiteNavigationElement", "position": 8, "name": "Contact", "url": "https://www.cicerogrand.com/contact" }
+      ]
+    }
+    </script>
     <!--
       Google Tag Manager bootstrap is handled in JS (src/lib/tracking.ts) so it
       respects the TRACKING config and never loads an empty/invalid GTM ID.
