@@ -47,15 +47,6 @@ const MENUS = [
       'One all-inclusive bar package — beer, wine, spirits, mixers — billed per person on the hour. We hold the New York State Liquor License. TIPS-certified bartenders included.',
     image: '/photos/venue-tablescape.jpg',
   },
-  {
-    slug: 'master-banquet-packages',
-    eyebrow: '06 · Reference',
-    title: 'Master Banquet Packages',
-    blurb:
-      'Everything in one document — every package, every station, every enhancement and add-on. Best for planners and coordinators building a custom multi-element event end-to-end.',
-    image: '/photos/venue-ballroom-empty.jpg',
-    badge: 'All menus in one PDF',
-  },
 ];
 
 const EVENT_TYPES = [
@@ -195,8 +186,8 @@ export default function Menus() {
           <div className="flex items-start gap-3">
             <Check className="w-5 h-5 mt-0.5 flex-shrink-0" />
             <div>
-              <div className="font-semibold">Six full menus, free.</div>
-              <div className="opacity-85">Weddings, corporate, social, sports, bar, and the master reference.</div>
+              <div className="font-semibold">Five full menus, free.</div>
+              <div className="opacity-85">Weddings, corporate, social, sports, and bar packages.</div>
             </div>
           </div>
           <div className="flex items-start gap-3">
