@@ -13,6 +13,8 @@ export interface SeoOptions {
   ogImage?: string;
   /** One or more JSON-LD structured data objects. */
   jsonLd?: JsonLd;
+  /** When true, page is excluded from search engines (private pages like /guest). */
+  noindex?: boolean;
 }
 
 function setMeta(selector: string, attr: "name" | "property", attrValue: string, content: string) {
@@ -37,11 +39,14 @@ function setLink(rel: string, href: string) {
 
 const JSONLD_ID = "ld-json-page";
 
-export function useSeo({ title, description, canonicalPath, ogImage, jsonLd }: SeoOptions) {
+export function useSeo({ title, description, canonicalPath, ogImage, jsonLd, noindex }: SeoOptions) {
   useEffect(() => {
     document.title = title;
 
     setMeta('meta[name="description"]', "name", "description", description);
+    if (noindex) {
+      setMeta('meta[name="robots"]', "name", "robots", "noindex, nofollow");
+    }
     setMeta('meta[property="og:title"]', "property", "og:title", title);
     setMeta('meta[property="og:description"]', "property", "og:description", description);
     setMeta('meta[property="og:type"]', "property", "og:type", "website");
