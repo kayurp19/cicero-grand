@@ -14,6 +14,7 @@ import {
   Users,
   ShieldAlert,
   Sparkles,
+  Utensils,
 } from 'lucide-react';
 
 type Section = {
@@ -247,6 +248,90 @@ const SECTIONS: Section[] = [
             </a>
           </li>
         </ul>
+      </div>
+    ),
+  },
+  {
+    id: 'local-restaurants',
+    title: 'Local Restaurants & Dining',
+    icon: <Utensils className="w-5 h-5" />,
+    body: (
+      <div className="space-y-4 text-sm leading-relaxed">
+        <div className="text-foreground/70">
+          All within ~10 minutes of the hotel. Call ahead to confirm hours.
+        </div>
+
+        <div>
+          <div className="font-semibold text-foreground mb-1">Casual American & Family</div>
+          <ul className="space-y-2">
+            <li>
+              <span className="font-semibold">Cracker Barrel</span> — 8400 Pardee Rd, Cicero
+              <span className="text-foreground/60"> · breakfast all day, Southern home-style</span>
+            </li>
+            <li>
+              <span className="font-semibold">Tully's Good Times</span> — 7838 Brewerton Rd, Cicero
+              <span className="text-foreground/60"> · sports bar, tenders, burgers</span>
+            </li>
+            <li>
+              <span className="font-semibold">Kim's Cicero Family Diner</span> — 8170 Brewerton Rd, Cicero
+              <span className="text-foreground/60"> · classic diner breakfast & lunch</span>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <div className="font-semibold text-foreground mb-1">Italian & Pizza</div>
+          <ul className="space-y-2">
+            <li>
+              <span className="font-semibold">Vicinos Brick &amp; Brew</span> — 7789 Brewerton Rd, Cicero · (315) 802-2291
+              <span className="text-foreground/60"> · brick-oven pizza, craft beer</span>
+            </li>
+            <li>
+              <span className="font-semibold">Twin Trees Cicero</span> — 6259 State Route 31, Cicero · (315) 699-6422
+              <span className="text-foreground/60"> · Syracuse-style thin-crust pizza</span>
+            </li>
+            <li>
+              <span className="font-semibold">Paladino's Cicero Pizza</span> — 8154 Brewerton Rd, Cicero
+              <span className="text-foreground/60"> · family-owned since 1980</span>
+            </li>
+            <li>
+              <span className="font-semibold">Cicero Country Pizza</span> — 8292 Brewerton Rd, Cicero · (315) 699-2775
+              <span className="text-foreground/60"> · pizza, wings, sandwiches</span>
+            </li>
+            <li>
+              <span className="font-semibold">Sapori by Antonio</span> — 5962 NY-31, Unit 12, Cicero
+              <span className="text-foreground/60"> · authentic Italian</span>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <div className="font-semibold text-foreground mb-1">Asian</div>
+          <ul className="space-y-2">
+            <li>
+              <span className="font-semibold">Sake Bomb</span> — 8081 Brewerton Rd, Cicero · (315) 698-7888
+              <span className="text-foreground/60"> · sushi &amp; hibachi</span>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <div className="font-semibold text-foreground mb-1">Mexican</div>
+          <ul className="space-y-2">
+            <li>
+              <span className="font-semibold">Rancho Viejo</span> — Cicero
+              <span className="text-foreground/60"> · authentic Mexican, dine-in &amp; takeout</span>
+            </li>
+            <li>
+              <span className="font-semibold">Moe's Southwest Grill</span> — near I-81 Exit 31, Cicero
+              <span className="text-foreground/60"> · quick Tex-Mex</span>
+            </li>
+          </ul>
+        </div>
+
+        <div className="pt-2 text-foreground/70 text-xs">
+          Need a recommendation or directions? Stop by the front desk — we're happy to help.
+        </div>
       </div>
     ),
   },
