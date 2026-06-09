@@ -20,8 +20,59 @@
       "image": "/photos/venue-corporate-banquet.jpg",
       "items": [
         {
-          "name": "Quick Meeting",
-          "tagline": "Half-day session — soup & salad lunch or wrap buffet, iced tea included.",
+          "name": "Coffee Station",
+          "tagline": "Add-on · Keep the room caffeinated and focused all meeting long.",
+          "menu": [
+            "Freshly brewed coffee & decaf",
+            "Assorted hot teas",
+            "Bottled & still water",
+            "Refreshed throughout your meeting"
+          ]
+        },
+        {
+          "name": "Afternoon Refresh",
+          "tagline": "Add-on · A mid-afternoon pick-me-up for the 1–4 PM stretch.",
+          "menu": [
+            "Fresh-baked cookies & brownies",
+            "Sliced seasonal fruit",
+            "Coffee, decaf, hot tea",
+            "Bottled water & assorted soda"
+          ]
+        },
+        {
+          "name": "Sunrise Continental",
+          "tagline": "Add-on · A light, professional morning start — ready when your team walks in.",
+          "menu": [
+            "Full coffee station — coffee, decaf, hot tea, water",
+            "Assorted fresh-baked muffins",
+            "Assorted Danishes & breakfast pastries"
+          ]
+        },
+        {
+          "name": "Executive Hot Breakfast",
+          "tagline": "Add-on · A full hot breakfast for teams that need real fuel before a long day.",
+          "menu": [
+            "Scrambled eggs, bacon & sausage",
+            "Breakfast potatoes",
+            "Fresh fruit display",
+            "Assorted muffins & pastries",
+            "Coffee, juice, and bottled water"
+          ]
+        },
+        {
+          "name": "Boxed Working Lunch",
+          "tagline": "Lunch · Individually packaged — lunch comes to the meeting room, agenda keeps moving.",
+          "menu": [
+            "Choose one sandwich per guest: Turkey & cheddar wrap, Roast beef & swiss ciabatta, Grilled chicken Caesar wrap, Italian sub, or Caprese vegetarian wrap",
+            "Kettle chips",
+            "Whole fruit",
+            "Fresh-baked cookie",
+            "Bottled water"
+          ]
+        },
+        {
+          "name": "Quick Meeting Lunch",
+          "tagline": "Lunch · A right-sized buffet for shorter meetings — lighter fare, served in the room.",
           "menu": [
             "Executive soup & salad lunch — soup du jour, garden salad, rolls & butter",
             "OR Wrap & roll buffet — turkey, ham, vegetarian wraps, chips, cookies",
@@ -29,20 +80,22 @@
           ]
         },
         {
-          "name": "Standard Meeting",
-          "tagline": "Hot lunch with two entrées and two starches — iced tea and soda included.",
+          "name": "Standard Meeting Buffet",
+          "tagline": "Lunch · Our most-booked corporate package — a hot buffet lunch for mid-size teams.",
           "menu": [
             "Choose two entrées: Chicken Francaise, Chicken Marsala, BBQ Chicken, Sausage & Peppers, Baked Ziti",
             "Choose two starches: Garlic mashed potatoes, Rice pilaf, Roasted red potatoes",
+            "Garden salad, rolls & butter",
             "Iced tea & soda"
           ]
         },
         {
           "name": "Full-Day Conference",
-          "tagline": "Breakfast, full lunch, and afternoon break — keep your team fueled all day.",
+          "tagline": "All-day · Breakfast through afternoon break — one package, one team to coordinate with.",
           "menu": [
             "Breakfast: Scrambled eggs, bacon, breakfast potatoes, fresh fruit, coffee & juice",
-            "Lunch: Chicken Francaise, BBQ Chicken, Pasta Primavera, with rice pilaf & roasted red potatoes",
+            "Lunch: Chicken Francaise, BBQ Chicken, or Pasta Primavera with rice pilaf & roasted red potatoes",
+            "Garden salad, rolls & butter, iced tea & soda with lunch",
             "Afternoon break: Cookies, brownies, coffee, tea & water"
           ]
         }

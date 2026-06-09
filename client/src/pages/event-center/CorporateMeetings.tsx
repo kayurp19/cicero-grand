@@ -160,9 +160,9 @@ export default function CorporateMeetings() {
                   Fueled, <em className="italic font-light">focused</em>, on-time.
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Pick a starting package — half-day, full lunch, or all-day with breakfast and breaks. Your coordinator builds the final menu with you. <a href="/contact?topic=Event%20%2F%20meeting%20inquiry&event_type=Corporate%20meeting#contact-form" data-testid="corp-pricing-quote" className="text-foreground underline underline-offset-4 hover:text-primary">Request a custom quote</a>.
+                  Mix and match — add coffee or breakfast to any meeting, pick the lunch that fits your day, or bundle it all into a full-day conference. Your coordinator builds the final menu with you. <a href="/contact?topic=Event%20%2F%20meeting%20inquiry&event_type=Corporate%20meeting#contact-form" data-testid="corp-pricing-quote" className="text-foreground underline underline-offset-4 hover:text-primary">Request a custom quote</a>.
                 </p>
-                <p className="mt-4 text-sm text-muted-foreground/80 italic">Menu items below are example selections — your coordinator will tailor everything.</p>
+                <p className="mt-4 text-sm text-muted-foreground/80 italic">Menu items below are example selections — your coordinator will tailor everything to your team.</p>
               </div>
             </Reveal>
 
