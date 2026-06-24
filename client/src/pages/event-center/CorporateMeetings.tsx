@@ -19,26 +19,51 @@ export default function CorporateMeetings() {
       'Conference & meeting rooms 6 min from Micron, off I-81 Exit 98. Free A/V, Wi-Fi & parking. Catered breakfast and lunch packages. Discounted suite blocks for out-of-town attendees. Call (315) 752-0150.',
     canonicalPath: '/event-center/corporate-meetings',
     ogImage: '/photos/venue-ballroom-empty.jpg',
-    jsonLd: {
-      '@context': 'https://schema.org',
-      '@type': 'EventVenue',
-      name: `${SITE.name} — Corporate Meetings & Conferences`,
-      description:
-        'Corporate meeting venue near Syracuse, NY. A/V, in-house catering (or bring your own), and on-site hotel suites for attendees.',
-      url: `${SITE.url}/event-center/corporate-meetings`,
-      telephone: SITE.salesPhone,
-      email: SITE.email,
-      image: `${SITE.url}/photos/venue-ballroom-empty.jpg`,
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: SITE.street,
-        addressLocality: SITE.locality,
-        addressRegion: SITE.region,
-        postalCode: SITE.postalCode,
-        addressCountry: SITE.country,
+    jsonLd: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'EventVenue',
+        name: `${SITE.name} — Corporate Meetings & Conferences`,
+        description:
+          'Corporate meeting venue near Syracuse, NY. A/V, in-house catering (or bring your own), and on-site hotel suites for attendees.',
+        url: `${SITE.url}/event-center/corporate-meetings`,
+        telephone: SITE.salesPhone,
+        email: SITE.email,
+        image: `${SITE.url}/photos/venue-ballroom-empty.jpg`,
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: SITE.street,
+          addressLocality: SITE.locality,
+          addressRegion: SITE.region,
+          postalCode: SITE.postalCode,
+          addressCountry: SITE.country,
+        },
+        geo: {
+          '@type': 'GeoCoordinates',
+          latitude: SITE.latitude,
+          longitude: SITE.longitude,
+        },
+        maximumAttendeeCapacity: 220,
       },
-      maximumAttendeeCapacity: 220,
-    },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: (events.faqs || []).map((f: any) => ({
+          '@type': 'Question',
+          name: f.q,
+          acceptedAnswer: { '@type': 'Answer', text: f.a },
+        })),
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE.url}/` },
+          { '@type': 'ListItem', position: 2, name: 'Event Center', item: `${SITE.url}/event-center` },
+          { '@type': 'ListItem', position: 3, name: 'Corporate Meetings', item: `${SITE.url}/event-center/corporate-meetings` },
+        ],
+      },
+    ],
   });
 
   return (

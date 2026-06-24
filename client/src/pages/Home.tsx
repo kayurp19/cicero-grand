@@ -33,9 +33,9 @@ export default function Home() {
   const testimonials = useContent<typeof testimonialsSeed>('testimonials');
 
   useSeo({
-    title: 'The Cicero Grand · Hotel in Cicero NY · 7 Min to Micron · Syracuse North',
+    title: 'Hotels in Cicero, NY | The Cicero Grand — Suites, Pool, Free Breakfast',
     description:
-      'All-suite hotel in Cicero NY (Syracuse North), 7 minutes from the Micron megafab. Off I-81 Exit 98 · free hot breakfast · indoor pool · pet-friendly · weekly + monthly crew rates. Book direct: (315) 752-0150.',
+      'The Cicero Grand is the top-rated hotel in Cicero, NY (formerly Comfort Suites). All-suite rooms, indoor pool, free hot breakfast, free parking & Wi-Fi. Off I-81 Exit 98, 10 min to downtown Syracuse, 6 min to Micron. Pet friendly. Book direct & save · (315) 752-0150.',
     canonicalPath: '/',
     ogImage: '/photos/exterior-entrance.jpg',
     jsonLd: [

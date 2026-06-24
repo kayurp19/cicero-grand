@@ -35,6 +35,10 @@ const LEGACY_REDIRECTS: Record<string, string> = {
   "/events": "/event-center",
   "/weddings": "/event-center/weddings",
   "/micron-long-stay": "/micron-crew-long-stay",
+  // SEO consolidation (2026-06-24): homepage now ranks for "Hotels in Cicero NY".
+  // Redirecting this duplicate page to homepage prevents keyword cannibalization
+  // and pushes all its link equity to the page Google is already ranking.
+  "/cicero-ny-hotels": "/",
 };
 
 app.use((req, res, next) => {

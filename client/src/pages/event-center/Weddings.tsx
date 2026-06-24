@@ -17,31 +17,57 @@ export default function Weddings() {
       'Rated 5.0/5.0 on WeddingWire. Flexible Syracuse-area ballroom with outside caterers welcome. On-site bridal suite and guest rooms. Open bar packages. Tour the venue — call (315) 752-0150.',
     canonicalPath: '/event-center/weddings',
     ogImage: '/photos/venue-ballroom-empty.jpg',
-    jsonLd: {
-      '@context': 'https://schema.org',
-      '@type': 'EventVenue',
-      name: `${SITE.name} — Weddings`,
-      description:
-        'Wedding venue near Syracuse, NY. Outside caterers welcome. On-site hotel suites for bridal party and guests. Rated 5.0/5.0 on WeddingWire.',
-      url: `${SITE.url}/event-center/weddings`,
-      telephone: SITE.salesPhone,
-      email: SITE.email,
-      image: `${SITE.url}/photos/venue-ballroom-empty.jpg`,
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: SITE.street,
-        addressLocality: SITE.locality,
-        addressRegion: SITE.region,
-        postalCode: SITE.postalCode,
-        addressCountry: SITE.country,
+    jsonLd: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'EventVenue',
+        name: `${SITE.name} — Weddings`,
+        description:
+          'Wedding venue near Syracuse, NY. Outside caterers welcome. On-site hotel suites for bridal party and guests. Rated 5.0/5.0 on WeddingWire.',
+        url: `${SITE.url}/event-center/weddings`,
+        telephone: SITE.salesPhone,
+        email: SITE.email,
+        image: `${SITE.url}/photos/venue-ballroom-empty.jpg`,
+        maximumAttendeeCapacity: 180,
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: SITE.street,
+          addressLocality: SITE.locality,
+          addressRegion: SITE.region,
+          postalCode: SITE.postalCode,
+          addressCountry: SITE.country,
+        },
+        geo: {
+          '@type': 'GeoCoordinates',
+          latitude: SITE.latitude,
+          longitude: SITE.longitude,
+        },
+        aggregateRating: {
+          '@type': 'AggregateRating',
+          ratingValue: '5.0',
+          reviewCount: '31',
+          bestRating: '5',
+        },
       },
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: '5.0',
-        reviewCount: '31',
-        bestRating: '5',
+      {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: (w.faqs || []).map((f: any) => ({
+          '@type': 'Question',
+          name: f.q,
+          acceptedAnswer: { '@type': 'Answer', text: f.a },
+        })),
       },
-    },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE.url}/` },
+          { '@type': 'ListItem', position: 2, name: 'Event Center', item: `${SITE.url}/event-center` },
+          { '@type': 'ListItem', position: 3, name: 'Weddings', item: `${SITE.url}/event-center/weddings` },
+        ],
+      },
+    ],
   });
 
   return (
