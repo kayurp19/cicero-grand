@@ -33,13 +33,7 @@ const weddingsSchema = [
       "postalCode": "13039",
       "addressCountry": "US"
     },
-    "geo": { "@type": "GeoCoordinates", "latitude": 43.1709, "longitude": -76.1146 },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "31",
-      "bestRating": "5"
-    }
+    "geo": { "@type": "GeoCoordinates", "latitude": 43.1709, "longitude": -76.1146 }
   },
   {
     "@context": "https://schema.org",
