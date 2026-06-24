@@ -164,8 +164,14 @@ export function serveStatic(app: Express) {
   app.use(express.static(distPath, { index: false }));
 
   // SPA fallback: serve index.html for any non-asset route, with per-route
-  // schema injected when applicable.
+  // schema injected when applicable. Refuse to serve HTML for asset-like
+  // paths (e.g. .js, .css, .png) so a missing asset returns 404 instead of
+  // an HTML page that the browser tries to execute as JS — which silently
+  // blanks the page.
   app.use("/{*path}", (req, res) => {
+    if (/\.[a-zA-Z0-9]+$/.test(req.path)) {
+      return res.status(404).type("text/plain").send("Not found");
+    }
     const route = req.path.replace(/\/+$/, "") || "/";
     const html = injectRouteSchema(indexHtml, route);
     res.setHeader("Content-Type", "text/html; charset=utf-8");
