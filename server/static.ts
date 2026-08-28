@@ -212,6 +212,21 @@ export function serveStatic(app: Express) {
 
   app.use(express.static(distPath, { index: false }));
 
+  // 301 redirects for retired thin-content landing pages. These pages had
+  // 90-day CTR of 0% and were pruned to consolidate authority into the
+  // homepage. Preserves any legacy backlinks.
+  const RETIRED_REDIRECTS: Record<string, string> = {
+    "/hotels-baldwinsville-ny": "/",
+    "/hotels-brewerton-ny": "/",
+    "/hotels-east-syracuse-ny": "/",
+  };
+  app.use((req, res, next) => {
+    const fullPath = req.originalUrl.split("?")[0].replace(/\/+$/, "") || "/";
+    const dest = RETIRED_REDIRECTS[fullPath];
+    if (dest) return res.redirect(301, dest);
+    next();
+  });
+
   // SPA fallback: serve index.html for any non-asset route, with per-route
   // schema injected when applicable. Refuse to serve HTML for asset-like
   // paths (e.g. .js, .css, .png) so a missing asset returns 404 instead of

@@ -168,20 +168,11 @@ function AppRouter() {
         <Route path="/pet-friendly-hotels-syracuse">
           {() => <LandingPage slug="pet-friendly-syracuse" />}
         </Route>
-        <Route path="/hotels-brewerton-ny">
-          {() => <LandingPage slug="brewerton-ny-hotels" />}
-        </Route>
         <Route path="/hotels-clay-ny">
           {() => <LandingPage slug="clay-ny-hotels" />}
         </Route>
-        <Route path="/hotels-baldwinsville-ny">
-          {() => <LandingPage slug="baldwinsville-ny-hotels" />}
-        </Route>
         <Route path="/hotel-syracuse-ny">
           {() => <LandingPage slug="syracuse-hotel" />}
-        </Route>
-        <Route path="/hotels-east-syracuse-ny">
-          {() => <LandingPage slug="east-syracuse-hotels" />}
         </Route>
         <Route path="/hotels-liverpool-ny">
           {() => <LandingPage slug="liverpool-ny-hotels" />}
