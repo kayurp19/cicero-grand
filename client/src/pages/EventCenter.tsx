@@ -31,7 +31,7 @@ const categories = [
     eyebrow: '03',
     title: 'Weddings',
     blurb:
-      'Ceremony to last dance — all on-site. Rated 5.0/5.0 on WeddingWire. Outside caterers welcome. Bridal suite and guest-room block included.',
+      'Ceremony to last dance — all on-site. Rated 5.0/5.0 on WeddingWire. Outside caterers welcome. Getting Ready Room and guest-room block included.',
     image: '/photos/venue-wedding-reception.jpg',
     cta: 'Plan a wedding',
   },

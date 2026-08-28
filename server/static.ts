@@ -19,7 +19,7 @@ const weddingsSchema = [
     "@context": "https://schema.org",
     "@type": "EventVenue",
     "name": "The Cicero Grand — Weddings",
-    "description": "Wedding venue near Syracuse, NY. Outside caterers welcome. On-site hotel suites for bridal party and guests. Rated 5.0/5.0 on WeddingWire.",
+    "description": "Wedding venue near Syracuse, NY. Outside caterers welcome. Getting Ready Room for the wedding party and on-site hotel suites for guests. Rated 5.0/5.0 on WeddingWire.",
     "url": `${SITE_URL}/event-center/weddings`,
     "telephone": "+1-315-752-0150",
     "email": "sales@cicerogrand.com",
@@ -101,7 +101,7 @@ const corporateSchema = [
 const ROUTE_SCHEMA: Record<string, { title: string; description: string; schema: object[] }> = {
   "/event-center/weddings": {
     title: "Syracuse Wedding Venue · 5.0 ★ WeddingWire · Bring Your Own Caterer | The Cicero Grand",
-    description: "Rated 5.0/5.0 on WeddingWire. Flexible Syracuse-area ballroom with outside caterers welcome. On-site bridal suite and guest rooms. Open bar packages. Tour the venue — call (315) 752-0150.",
+    description: "Rated 5.0/5.0 on WeddingWire. Flexible Syracuse-area ballroom with outside caterers welcome. Getting Ready Room for the wedding party and on-site guest rooms. Open bar packages. Tour the venue — call (315) 752-0150.",
     schema: weddingsSchema,
   },
   "/event-center/corporate-meetings": {

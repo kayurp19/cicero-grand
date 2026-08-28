@@ -8,14 +8,14 @@
     "Cocktail-hour space adjacent to the main ballroom",
     "Custom menus — tastings included",
     "Discounted guest-room block for your party",
-    "Bridal suite available the night of",
+    "Getting Ready Room for the wedding party",
     "Dedicated wedding coordinator"
   ],
   "dayOfFlow": [
     {
       "title": "Ceremony",
       "image": "/photos/venue-ceremony-arch.jpg",
-      "description": "Host your ceremony on-site. White folding chairs, floral arch, candle-lined aisle. We turn the room before reception."
+      "description": "Host your ceremony indoors in the event center. White folding chairs, floral arch, candle-lined aisle. We turn the room before reception."
     },
     {
       "title": "Cocktail Hour",
@@ -65,8 +65,8 @@
     }
   ],
   "bridalParty": {
-    "title": "The Morning Of — Bridal Party Add-Ons",
-    "intro": "Use a private suite to get ready, with breakfast brought in for the whole party.",
+    "title": "The Morning Of — Getting Ready Room",
+    "intro": "Use our Getting Ready Room — a private meeting room converted into a comfortable space for the wedding party to get ready, with breakfast brought in.",
     "items": [
       {
         "name": "Bridal Brunch",
@@ -121,7 +121,7 @@
     },
     {
       "q": "Do you offer a guest-room block?",
-      "a": "Yes. Every wedding qualifies for a discounted block of suites at preferred rates, plus a complimentary suite for the couple on their wedding night (with qualifying packages)."
+      "a": "Yes. Every wedding qualifies for a discounted block of suites at preferred rates for out-of-town family and friends."
     },
     {
       "q": "Can we bring our own caterer?",

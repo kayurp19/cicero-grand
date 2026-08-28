@@ -14,7 +14,7 @@ export default function Weddings() {
   useSeo({
     title: 'Syracuse Wedding Venue · 5.0 ★ WeddingWire · Bring Your Own Caterer | The Cicero Grand',
     description:
-      'Rated 5.0/5.0 on WeddingWire. Flexible Syracuse-area ballroom with outside caterers welcome. On-site bridal suite and guest rooms. Open bar packages. Tour the venue — call (315) 752-0150.',
+      'Rated 5.0/5.0 on WeddingWire. Flexible Syracuse-area ballroom with outside caterers welcome. Getting Ready Room for the wedding party and on-site guest rooms. Open bar packages. Tour the venue — call (315) 752-0150.',
     canonicalPath: '/event-center/weddings',
     ogImage: '/photos/venue-ballroom-empty.jpg',
     jsonLd: [
@@ -23,7 +23,7 @@ export default function Weddings() {
         '@type': 'EventVenue',
         name: `${SITE.name} — Weddings`,
         description:
-          'Wedding venue near Syracuse, NY. Outside caterers welcome. On-site hotel suites for bridal party and guests. Rated 5.0/5.0 on WeddingWire.',
+          'Wedding venue near Syracuse, NY. Outside caterers welcome. Getting Ready Room for the wedding party and on-site hotel suites for guests. Rated 5.0/5.0 on WeddingWire.',
         url: `${SITE.url}/event-center/weddings`,
         telephone: SITE.salesPhone,
         email: SITE.email,
