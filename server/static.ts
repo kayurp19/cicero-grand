@@ -99,6 +99,46 @@ const corporateSchema = [
 ];
 
 const ROUTE_SCHEMA: Record<string, { title: string; description: string; schema: object[] }> = {
+  "/": {
+    title: "Cicero Grand · All-Suite Hotel · Free Breakfast + Pool · Cicero NY",
+    description: "All-suite hotel off I-81 Exit 98, 10 min from downtown Syracuse & 6 min from Micron. Free hot breakfast, indoor heated pool, free parking, pet friendly. Book direct & save — best rate guaranteed. Call (315) 752-0150.",
+    schema: [],
+  },
+  "/rooms": {
+    title: "All-Suite Hotel Rooms · Sleeps 4 · Kitchenette · Cicero Grand Syracuse NY",
+    description: "Every room is a suite — sleeps 4 with kitchenette, separate living area, 55\" smart TV. King, queen, and accessible options. Free breakfast + parking. Book direct at (315) 752-0150.",
+    schema: [],
+  },
+  "/amenities": {
+    title: "Free Breakfast · Indoor Pool · Pet Friendly · Cicero Grand Hotel NY",
+    description: "Free hot breakfast every morning, heated indoor pool, 24-hr fitness center, fast free Wi-Fi, free parking, pet friendly, 100% smoke-free. Cicero NY · off I-81 Exit 98.",
+    schema: [],
+  },
+  "/area": {
+    title: "Things to Do Near Cicero NY · Syracuse Attractions Guide | Cicero Grand",
+    description: "Oneida Lake, Destiny USA, downtown Syracuse, Green Lakes State Park, NBT Bank Stadium, Empower Amphitheater — all minutes from The Cicero Grand. Local dining, shopping & event guide.",
+    schema: [],
+  },
+  "/offers": {
+    title: "Hotel Deals & Special Offers · The Cicero Grand · Syracuse NY",
+    description: "Book direct and save. Weekly and monthly long-stay rates, weekend getaway packages, sports team blocks, and Micron crew rates. Best price guaranteed — call (315) 752-0150.",
+    schema: [],
+  },
+  "/direct-perks": {
+    title: "Book Direct & Save · Free Upgrade + Late Checkout · Cicero Grand",
+    description: "Skip Expedia. Book direct for the lowest rate, free room upgrade at check-in, late checkout to 1 PM, welcome water + snack, and 10% off your next stay. Call (315) 752-0150.",
+    schema: [],
+  },
+  "/micron-crew-long-stay": {
+    title: "Micron Crew Housing · 6 min from White Pine Fab · Cicero Grand",
+    description: "Closest all-suite hotel to Micron's Clay megafab — 6 min off I-81 Exit 98. Weekly & monthly crew rates, kitchenettes, free breakfast, laundry, secure parking for trucks. Call (315) 752-0150.",
+    schema: [],
+  },
+  "/event-center": {
+    title: "Syracuse Event Venue · Weddings, Banquets, Meetings | The Cicero Grand",
+    description: "Syracuse-area event center for weddings, corporate meetings, sports teams, showers, milestones, and celebrations of life. Outside caterers welcome. Tour — (315) 752-0150.",
+    schema: [],
+  },
   "/event-center/weddings": {
     title: "Syracuse Wedding Venue · 5.0 ★ WeddingWire · Bring Your Own Caterer | The Cicero Grand",
     description: "Rated 5.0/5.0 on WeddingWire. Flexible Syracuse-area ballroom with outside caterers welcome. Getting Ready Room for the wedding party and on-site guest rooms. Open bar packages. Tour the venue — call (315) 752-0150.",
@@ -108,6 +148,21 @@ const ROUTE_SCHEMA: Record<string, { title: string; description: string; schema:
     title: "Meeting Rooms Syracuse NY · Free A/V, Wi-Fi & Parking | The Cicero Grand",
     description: "Conference & meeting rooms 6 min from Micron, off I-81 Exit 98. Free A/V, Wi-Fi & parking. Catered breakfast and lunch packages. Discounted suite blocks for out-of-town attendees. Call (315) 752-0150.",
     schema: corporateSchema,
+  },
+  "/event-center/social-events": {
+    title: "Syracuse Banquet Hall · Showers, Birthdays, Reunions | The Cicero Grand",
+    description: "Private banquet hall in Cicero, NY for showers, birthdays, quinces, reunions & celebrations of life. Outside caterers welcome. 40–180 guests. Call (315) 752-0150.",
+    schema: [],
+  },
+  "/contact": {
+    title: "Contact The Cicero Grand · (315) 752-0150 · Cicero NY",
+    description: "The Cicero Grand · 5875 Carmenica Dr, Cicero, NY 13039 · (315) 752-0150. Front desk 24/7. Book direct or email hello@cicerogrand.com.",
+    schema: [],
+  },
+  "/gallery": {
+    title: "Photo Gallery · The Cicero Grand Hotel · Cicero NY",
+    description: "Photos of our suites, indoor pool, event center, and Cicero NY hotel. See the difference before you book.",
+    schema: [],
   },
 };
 
