@@ -237,6 +237,31 @@ const ROUTE_SCHEMA: Record<string, { title: string; description: string; schema:
     description: "Hotels near Liverpool, NY — The Cicero Grand is 8 minutes north via I-81. All-suite rooms, free hot breakfast, indoor pool, free parking, pet-friendly. Near JMA Wireless, the NYS Fairgrounds, and Onondaga Lake.",
     schema: [],
   },
+  "/hotels-near-lockheed-martin-syracuse": {
+    title: "Hotels Near Lockheed Martin Salina · 10 Min Away · The Cicero Grand",
+    description: "Closest all-suite hotel to Lockheed Martin's Salina campus. Direct billing for defense corporate accounts, quiet suites for engineers, free parking. Book direct at (315) 752-0150.",
+    schema: [],
+  },
+  "/hotels-near-syracuse-university": {
+    title: "Hotels Near Syracuse University · 15 Min from Campus · The Cicero Grand",
+    description: "All-suite hotel 15 minutes from Syracuse University campus and the JMA Wireless Dome. Parent weekend rates, group blocks for commencement + reunions, free breakfast. Book direct.",
+    schema: [],
+  },
+  "/hotels-near-crouse-hospital": {
+    title: "Hotels Near Crouse Hospital · 15 Min · Family Rates · The Cicero Grand",
+    description: "All-suite hotel 15 minutes from Crouse Hospital in Syracuse. Patient-family rates, weekly nurse rates, quiet suites, free breakfast. Book direct at (315) 752-0150.",
+    schema: [],
+  },
+  "/hotels-near-st-josephs-hospital-syracuse": {
+    title: "Hotels Near St. Joseph's Hospital Syracuse · Family Rates · The Cicero Grand",
+    description: "All-suite hotel 15 minutes from St. Joseph's Hospital in Syracuse. Patient-family rates, quiet suites, kitchenette in every room, free breakfast. Call (315) 752-0150 to book direct.",
+    schema: [],
+  },
+  "/hotels-near-srctec-syracuse": {
+    title: "Hotels Near SRCTec / SRC Inc. · 6 Min Away · The Cicero Grand",
+    description: "Closest all-suite hotel to SRCTec and SRC Inc. — six minutes away. Direct billing for defense corporate accounts, quiet suites for engineers, secure parking. Book direct.",
+    schema: [],
+  },
 };
 
 function injectRouteSchema(html: string, route: string): string {

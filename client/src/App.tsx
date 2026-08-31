@@ -177,6 +177,21 @@ function AppRouter() {
         <Route path="/hotels-liverpool-ny">
           {() => <LandingPage slug="liverpool-ny-hotels" />}
         </Route>
+        <Route path="/hotels-near-lockheed-martin-syracuse">
+          {() => <LandingPage slug="lockheed-martin" />}
+        </Route>
+        <Route path="/hotels-near-syracuse-university">
+          {() => <LandingPage slug="syracuse-university" />}
+        </Route>
+        <Route path="/hotels-near-crouse-hospital">
+          {() => <LandingPage slug="crouse-hospital" />}
+        </Route>
+        <Route path="/hotels-near-st-josephs-hospital-syracuse">
+          {() => <LandingPage slug="st-josephs-hospital" />}
+        </Route>
+        <Route path="/hotels-near-srctec-syracuse">
+          {() => <LandingPage slug="srctec" />}
+        </Route>
         <Route component={NotFound} />
       </Switch>
     </PublicLayout>

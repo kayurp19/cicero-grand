@@ -2053,5 +2053,605 @@
         "text": "Booked direct and got a rate 20% better than the OTAs. Front desk upgraded us at check-in. Pool and gym were clean and empty when we used them."
       }
     ]
+  },
+  "lockheed-martin": {
+    "path": "/hotels-near-lockheed-martin-syracuse",
+    "title": "Hotels Near Lockheed Martin Salina \u00b7 10 Min Away \u00b7 The Cicero Grand",
+    "description": "Closest all-suite hotel to Lockheed Martin's Salina campus. Direct billing for defense contractors, quiet suites for engineers, free parking. Book direct at (315) 752-0150.",
+    "h1": "Hotels Near Lockheed Martin (Salina, NY)",
+    "subtitle": "Ten minutes to the Salina campus \u2014 quiet suites, direct billing, and cleared-defense corporate rates.",
+    "venue": {
+      "name": "Lockheed Martin (Salina)",
+      "address": "Electronics Park, Salina, NY",
+      "drive": "10 minutes",
+      "miles": "5.4 mi via I-81"
+    },
+    "ogImage": "/photos/exterior-entrance.jpg",
+    "highlights": [
+      "10 minutes to Lockheed Martin Electronics Park",
+      "Direct billing for approved corporate accounts",
+      "Quiet suites \u2014 private living area for evening work",
+      "Free parking + EV charging",
+      "Free hot breakfast 6:30 AM \u00b7 24/7 front desk",
+      "5 min to I-81 \u00b7 8 min to Syracuse airport"
+    ],
+    "intro": "Lockheed Martin's Salina campus at Electronics Park is 10 minutes from our front door \u2014 the closest full-service all-suite hotel. We host program engineers, DoD auditors, visiting vendors, and relocating employees weekly. Every suite has a separate living area and full kitchenette, so long project stays feel like an apartment. Corporate direct billing available for approved accounts.",
+    "why": [
+      {
+        "title": "Closest all-suite hotel to Salina",
+        "body": "10 minutes door-to-campus via I-81. No other full-service hotel is closer with all-suite inventory."
+      },
+      {
+        "title": "Built for defense-industry travelers",
+        "body": "Quiet floors, secure entry, private suites with separate work area. Kitchenette in every room. Direct billing for approved corporate accounts."
+      },
+      {
+        "title": "Corporate rate + relocation stays",
+        "body": "Weekly and monthly rates for stays of 7+ nights. Call sales at (315) 715-7410 to set up a Lockheed corporate account."
+      }
+    ],
+    "nearby": [
+      "Lockheed Martin (Salina) \u2014 10 min",
+      "SRCTec (Cicero) \u2014 6 min",
+      "Syracuse Hancock Airport \u2014 12 min",
+      "Micron Megafab (Clay) \u2014 6 min",
+      "Downtown Syracuse \u2014 14 min",
+      "I-81 Exit 98 \u2014 at our doorstep"
+    ],
+    "faqs": [
+      {
+        "q": "What's the closest hotel to Lockheed Martin in Salina?",
+        "a": "The Cicero Grand at 5875 Carmenica Drive, Cicero, NY 13039. About 10 minutes north of the Electronics Park campus via I-81."
+      },
+      {
+        "q": "Do you offer corporate rates for Lockheed Martin employees?",
+        "a": "Yes. Call (315) 715-7410 to set up a Lockheed corporate direct-billing account with a preferred rate."
+      },
+      {
+        "q": "Is direct billing available for defense contractors?",
+        "a": "Yes. We set up direct-bill accounts for approved corporate contractors \u2014 send W-9 and credit reference to sales@cicerogrand.com."
+      },
+      {
+        "q": "Can I get extended-stay rates for a relocation?",
+        "a": "Yes. Weekly and monthly rates for stays of 7+ nights. Every suite has a full kitchenette, so long stays are comfortable."
+      },
+      {
+        "q": "Is there a business center for evening work?",
+        "a": "Yes \u2014 24/7 business center with printing, plus every suite has a full desk and fast free Wi-Fi."
+      },
+      {
+        "q": "How far is the hotel from Syracuse airport?",
+        "a": "12 minutes via I-81. We offer a complimentary 24/7 airport shuttle \u2014 call the front desk from baggage claim."
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Hotels near Micron Megafab",
+        "path": "/hotels-near-micron",
+        "description": "Six minutes from the Clay build site."
+      },
+      {
+        "title": "Hotels near Syracuse airport",
+        "path": "/hotels-near-syracuse-airport",
+        "description": "12 minutes to SYR \u2014 free 24/7 airport shuttle."
+      },
+      {
+        "title": "Hotels near Upstate Medical",
+        "path": "/hotels-near-upstate-medical",
+        "description": "15 minutes to Upstate."
+      },
+      {
+        "title": "Hotels in Syracuse, NY",
+        "path": "/hotels-syracuse-ny",
+        "description": "Full-service suites just north of the city."
+      },
+      {
+        "title": "Hotels in Cicero, NY",
+        "path": "/hotels-cicero-ny",
+        "description": "Cicero exit off I-81."
+      },
+      {
+        "title": "Hotels in Liverpool, NY",
+        "path": "/hotels-liverpool-ny",
+        "description": "Just north of Onondaga Lake."
+      },
+      {
+        "title": "Pet-friendly Syracuse hotels",
+        "path": "/pet-friendly-hotels-syracuse",
+        "description": "No weight limit."
+      }
+    ],
+    "reviews": [
+      {
+        "rating": 5,
+        "author": "Business traveler \u00b7 July 2025",
+        "text": "Suites are enormous, the bed is legitimately comfortable, and breakfast was hot at 6:15 AM when I needed it. Way better than the chain hotels closer to downtown."
+      },
+      {
+        "rating": 5,
+        "author": "Weekend guest \u00b7 June 2025",
+        "text": "Booked direct and got a rate 20% better than the OTAs. Front desk upgraded us at check-in. Pool and gym were clean and empty when we used them."
+      }
+    ]
+  },
+  "syracuse-university": {
+    "path": "/hotels-near-syracuse-university",
+    "title": "Hotels Near Syracuse University \u00b7 15 Min Away \u00b7 The Cicero Grand",
+    "description": "All-suite hotel 15 minutes from Syracuse University campus. Parent weekend rates, group blocks for commencement + reunions, quiet suites, free breakfast. Book direct.",
+    "h1": "Hotels Near Syracuse University",
+    "subtitle": "15 minutes to campus \u2014 for parents, recruits, alumni weekends, and visiting professors.",
+    "venue": {
+      "name": "Syracuse University",
+      "address": "900 S Crouse Ave, Syracuse, NY 13210",
+      "drive": "15 minutes",
+      "miles": "10.2 mi via I-81 S"
+    },
+    "ogImage": "/photos/exterior-entrance.jpg",
+    "highlights": [
+      "15 minutes to SU campus and the JMA Wireless Dome",
+      "Parent weekend, recruit, and reunion rates",
+      "Group blocks for commencement (call early)",
+      "All-suite rooms \u2014 sleeps 4 (great for families)",
+      "Free hot breakfast \u00b7 indoor pool \u00b7 free parking",
+      "Quieter than downtown \u2014 real sleep after game night"
+    ],
+    "intro": "The Cicero Grand is 15 minutes north of Syracuse University campus and the JMA Wireless Dome \u2014 close enough for a home game or campus visit, far enough to skip the noise. Every room is a full one-bedroom suite that sleeps four, which is perfect for parents visiting with siblings, alumni families for reunions, and visiting coaches or recruits. We hold group blocks for SU commencement, Homecoming, and reunion weekends.",
+    "why": [
+      {
+        "title": "Big suites for the whole family",
+        "body": "Sleeps 4 in every suite \u2014 separate living area, king or two queens, sofa bed, kitchenette. Room for parents plus a sibling, or a family of four for graduation."
+      },
+      {
+        "title": "SU commencement and reunion blocks",
+        "body": "May commencement, October Homecoming, and reunion weekends all fill fast. We hold group blocks \u2014 call sales at (315) 715-7410 to lock rooms early."
+      },
+      {
+        "title": "Quiet after the game",
+        "body": "Downtown hotels near campus fill with student parties on football and basketball weekends. We're 15 minutes north \u2014 quiet, professional, real sleep."
+      }
+    ],
+    "nearby": [
+      "Syracuse University campus \u2014 15 min",
+      "JMA Wireless Dome (SU football, basketball, lacrosse) \u2014 15 min",
+      "SUNY Upstate Medical \u2014 15 min",
+      "Downtown Syracuse \u2014 14 min",
+      "Destiny USA \u2014 10 min",
+      "Syracuse Hancock Airport \u2014 12 min"
+    ],
+    "faqs": [
+      {
+        "q": "How far is Syracuse University from your hotel?",
+        "a": "About 15 minutes south via I-81. Straight drive to campus and to the JMA Wireless Dome."
+      },
+      {
+        "q": "Do you offer SU parent or recruit rates?",
+        "a": "Yes. Call sales at (315) 715-7410 for parent weekend, recruit, and family rates."
+      },
+      {
+        "q": "Can I book a group block for commencement or reunions?",
+        "a": "Yes. We hold blocks for commencement, Homecoming, and reunion weekends. Call the sales team early \u2014 those weekends fill fast."
+      },
+      {
+        "q": "Do the suites sleep a family of four?",
+        "a": "Yes \u2014 every suite sleeps 4. King or two-queen bedroom plus a sofa bed in the separate living area. Great for parents with siblings."
+      },
+      {
+        "q": "Is there parking on-site for the football game?",
+        "a": "Yes \u2014 free parking on-site, then rideshare or drive to the JMA Dome. Much easier than parking near campus."
+      },
+      {
+        "q": "Is the hotel closer than downtown Syracuse hotels?",
+        "a": "Downtown is closer to campus (5 min) but noisier and pricier on game weekends. We're 15 minutes north \u2014 quieter, cheaper on peak nights, and full-suite rooms."
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Hotels near Micron Megafab",
+        "path": "/hotels-near-micron",
+        "description": "Six minutes from the Clay build site."
+      },
+      {
+        "title": "Hotels near Syracuse airport",
+        "path": "/hotels-near-syracuse-airport",
+        "description": "12 minutes to SYR \u2014 free 24/7 airport shuttle."
+      },
+      {
+        "title": "Hotels near Upstate Medical",
+        "path": "/hotels-near-upstate-medical",
+        "description": "15 minutes to Upstate."
+      },
+      {
+        "title": "Hotels in Syracuse, NY",
+        "path": "/hotels-syracuse-ny",
+        "description": "Full-service suites just north of the city."
+      },
+      {
+        "title": "Hotels in Cicero, NY",
+        "path": "/hotels-cicero-ny",
+        "description": "Cicero exit off I-81."
+      },
+      {
+        "title": "Hotels in Liverpool, NY",
+        "path": "/hotels-liverpool-ny",
+        "description": "Just north of Onondaga Lake."
+      },
+      {
+        "title": "Pet-friendly Syracuse hotels",
+        "path": "/pet-friendly-hotels-syracuse",
+        "description": "No weight limit."
+      }
+    ],
+    "reviews": [
+      {
+        "rating": 5,
+        "author": "Business traveler \u00b7 July 2025",
+        "text": "Suites are enormous, the bed is legitimately comfortable, and breakfast was hot at 6:15 AM when I needed it. Way better than the chain hotels closer to downtown."
+      },
+      {
+        "rating": 5,
+        "author": "Weekend guest \u00b7 June 2025",
+        "text": "Booked direct and got a rate 20% better than the OTAs. Front desk upgraded us at check-in. Pool and gym were clean and empty when we used them."
+      }
+    ]
+  },
+  "crouse-hospital": {
+    "path": "/hotels-near-crouse-hospital",
+    "title": "Hotels Near Crouse Hospital \u00b7 15 Min \u00b7 Family Rates \u00b7 The Cicero Grand",
+    "description": "All-suite hotel 15 minutes from Crouse Hospital in Syracuse. Patient-family rates, weekly nurse rates, quiet suites, free breakfast. Book direct at (315) 752-0150.",
+    "h1": "Hotels Near Crouse Hospital",
+    "subtitle": "15 minutes to Crouse \u2014 patient family rates, quiet suites, and free hot breakfast.",
+    "venue": {
+      "name": "Crouse Health",
+      "address": "736 Irving Ave, Syracuse, NY 13210",
+      "drive": "15 minutes",
+      "miles": "10 mi via I-81 S"
+    },
+    "ogImage": "/photos/exterior-entrance.jpg",
+    "highlights": [
+      "15 minutes to Crouse Health and Upstate Medical",
+      "Patient family rate \u2014 call for a discounted stay",
+      "Weekly rates for traveling nurses and clinicians",
+      "Kitchenette in every suite \u2014 home-style meals during long stays",
+      "Free hot breakfast \u00b7 indoor pool \u00b7 24/7 front desk",
+      "Quiet suites for real rest between shifts or visits"
+    ],
+    "intro": "The Cicero Grand is 15 minutes north of Crouse Hospital, Upstate Medical, and the University Hill medical campus. We know a hospital stay is stressful \u2014 you need a real bed, a real breakfast, and a suite that feels like home. Every room is a full one-bedroom suite with kitchenette. Ask about our patient family rate when you call.",
+    "why": [
+      {
+        "title": "Patient family rate",
+        "body": "We offer a discounted rate for families of Crouse and Upstate patients. Call (315) 715-7410 or email sales@cicerogrand.com to set it up."
+      },
+      {
+        "title": "Real suites, not standard rooms",
+        "body": "Every room sleeps 4 with a separate living area and full kitchenette. Room for the whole family, and a fridge for meals when you can't leave."
+      },
+      {
+        "title": "Free breakfast when you need it",
+        "body": "Hot breakfast served from 6:30 AM. Eat before you head to the hospital \u2014 no scrambling for coffee at the vending machine."
+      }
+    ],
+    "nearby": [
+      "Crouse Health \u2014 15 min",
+      "SUNY Upstate Medical University \u2014 15 min",
+      "St. Joseph's Hospital \u2014 15 min",
+      "Syracuse VA Medical Center \u2014 15 min",
+      "Ronald McDonald House CNY \u2014 15 min",
+      "Downtown Syracuse \u2014 14 min"
+    ],
+    "faqs": [
+      {
+        "q": "How far is Crouse Hospital from the Cicero Grand?",
+        "a": "About 15 minutes south via I-81. Straight shot to the University Hill medical campus."
+      },
+      {
+        "q": "Do you offer a patient family rate?",
+        "a": "Yes. Call (315) 715-7410 or email sales@cicerogrand.com to request our patient family rate. We do our best to make hospital stays affordable."
+      },
+      {
+        "q": "Are weekly rates available for traveling nurses?",
+        "a": "Yes. Weekly and monthly rates for stays of 7+ nights. Kitchenette in every suite so you can meal-prep between shifts."
+      },
+      {
+        "q": "Is there early check-in for a hospital appointment?",
+        "a": "We accommodate early check-ins based on availability. Call ahead and we'll do our best to have your suite ready when you arrive."
+      },
+      {
+        "q": "Do you have a shuttle to the hospital?",
+        "a": "We don't run a hospital shuttle, but rideshare pickup at the front door runs about $15-20 one-way. We do have a free 24/7 airport shuttle."
+      },
+      {
+        "q": "Can I bring a pet during a long hospital stay?",
+        "a": "Yes \u2014 we're pet-friendly with a one-time fee. No weight limit. Grass lawn on-site."
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Hotels near Micron Megafab",
+        "path": "/hotels-near-micron",
+        "description": "Six minutes from the Clay build site."
+      },
+      {
+        "title": "Hotels near Syracuse airport",
+        "path": "/hotels-near-syracuse-airport",
+        "description": "12 minutes to SYR \u2014 free 24/7 airport shuttle."
+      },
+      {
+        "title": "Hotels near Upstate Medical",
+        "path": "/hotels-near-upstate-medical",
+        "description": "15 minutes to Upstate."
+      },
+      {
+        "title": "Hotels in Syracuse, NY",
+        "path": "/hotels-syracuse-ny",
+        "description": "Full-service suites just north of the city."
+      },
+      {
+        "title": "Hotels in Cicero, NY",
+        "path": "/hotels-cicero-ny",
+        "description": "Cicero exit off I-81."
+      },
+      {
+        "title": "Hotels in Liverpool, NY",
+        "path": "/hotels-liverpool-ny",
+        "description": "Just north of Onondaga Lake."
+      },
+      {
+        "title": "Pet-friendly Syracuse hotels",
+        "path": "/pet-friendly-hotels-syracuse",
+        "description": "No weight limit."
+      }
+    ],
+    "reviews": [
+      {
+        "rating": 5,
+        "author": "Business traveler \u00b7 July 2025",
+        "text": "Suites are enormous, the bed is legitimately comfortable, and breakfast was hot at 6:15 AM when I needed it. Way better than the chain hotels closer to downtown."
+      },
+      {
+        "rating": 5,
+        "author": "Weekend guest \u00b7 June 2025",
+        "text": "Booked direct and got a rate 20% better than the OTAs. Front desk upgraded us at check-in. Pool and gym were clean and empty when we used them."
+      }
+    ]
+  },
+  "st-josephs-hospital": {
+    "path": "/hotels-near-st-josephs-hospital-syracuse",
+    "title": "Hotels Near St. Joseph's Hospital Syracuse \u00b7 Family Rates \u00b7 The Cicero Grand",
+    "description": "All-suite hotel 15 minutes from St. Joseph's Hospital Syracuse. Patient-family rates, quiet suites, kitchenette, free breakfast. Call (315) 752-0150 to book direct.",
+    "h1": "Hotels Near St. Joseph's Hospital (Syracuse)",
+    "subtitle": "15 minutes to St. Joseph's \u2014 patient family rates, real suites, and free hot breakfast.",
+    "venue": {
+      "name": "St. Joseph's Health Hospital",
+      "address": "301 Prospect Ave, Syracuse, NY 13203",
+      "drive": "15 minutes",
+      "miles": "9 mi via I-81 S"
+    },
+    "ogImage": "/photos/exterior-entrance.jpg",
+    "highlights": [
+      "15 minutes to St. Joseph's Hospital in Syracuse",
+      "Patient family rate \u2014 call for discounted stays",
+      "Weekly and monthly rates for extended patient care",
+      "Kitchenette in every suite for home-style meals",
+      "Quiet suites for real rest between hospital visits",
+      "Free hot breakfast \u00b7 pool \u00b7 gym \u00b7 24/7 front desk"
+    ],
+    "intro": "The Cicero Grand is 15 minutes north of St. Joseph's Health Hospital on Syracuse's north side. Every room is a full one-bedroom suite with kitchenette \u2014 a real home away from home for families in town for extended patient care. Ask about our patient family rate when you call.",
+    "why": [
+      {
+        "title": "Patient family rate",
+        "body": "Discounted rate for families of St. Joseph's patients. Call (315) 715-7410 or email sales@cicerogrand.com to set it up."
+      },
+      {
+        "title": "Suites, not rooms",
+        "body": "Every suite sleeps 4 with separate living area and full kitchenette. Room for family plus a place to prep meals when you can't leave."
+      },
+      {
+        "title": "Quiet and close",
+        "body": "15 minutes to St. Joseph's, plus quick access to Upstate, Crouse, and the VA \u2014 one hotel for the whole medical campus."
+      }
+    ],
+    "nearby": [
+      "St. Joseph's Hospital \u2014 15 min",
+      "SUNY Upstate Medical \u2014 15 min",
+      "Crouse Health \u2014 15 min",
+      "Syracuse VA Medical Center \u2014 15 min",
+      "Downtown Syracuse \u2014 14 min",
+      "Ronald McDonald House CNY \u2014 15 min"
+    ],
+    "faqs": [
+      {
+        "q": "How far is St. Joseph's Hospital from your hotel?",
+        "a": "About 15 minutes south via I-81. Direct shot to St. Joseph's on Prospect Ave."
+      },
+      {
+        "q": "Do you offer a family rate for St. Joseph's patients?",
+        "a": "Yes. Call (315) 715-7410 or email sales@cicerogrand.com to request our patient family rate."
+      },
+      {
+        "q": "Are weekly rates available for extended hospital stays?",
+        "a": "Yes. Weekly and monthly rates for stays of 7+ nights, with a full kitchenette in every suite."
+      },
+      {
+        "q": "Is early check-in available for a hospital appointment?",
+        "a": "We accommodate early check-ins based on availability. Call ahead and we'll do our best."
+      },
+      {
+        "q": "Do the suites sleep a full family?",
+        "a": "Yes \u2014 every suite sleeps 4 with a separate living area and sofa bed. Real space for a family visit."
+      },
+      {
+        "q": "Can I bring a pet on a long stay?",
+        "a": "Yes \u2014 pet-friendly, one-time fee, no weight limit."
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Hotels near Micron Megafab",
+        "path": "/hotels-near-micron",
+        "description": "Six minutes from the Clay build site."
+      },
+      {
+        "title": "Hotels near Syracuse airport",
+        "path": "/hotels-near-syracuse-airport",
+        "description": "12 minutes to SYR \u2014 free 24/7 airport shuttle."
+      },
+      {
+        "title": "Hotels near Upstate Medical",
+        "path": "/hotels-near-upstate-medical",
+        "description": "15 minutes to Upstate."
+      },
+      {
+        "title": "Hotels in Syracuse, NY",
+        "path": "/hotels-syracuse-ny",
+        "description": "Full-service suites just north of the city."
+      },
+      {
+        "title": "Hotels in Cicero, NY",
+        "path": "/hotels-cicero-ny",
+        "description": "Cicero exit off I-81."
+      },
+      {
+        "title": "Hotels in Liverpool, NY",
+        "path": "/hotels-liverpool-ny",
+        "description": "Just north of Onondaga Lake."
+      },
+      {
+        "title": "Pet-friendly Syracuse hotels",
+        "path": "/pet-friendly-hotels-syracuse",
+        "description": "No weight limit."
+      }
+    ],
+    "reviews": [
+      {
+        "rating": 5,
+        "author": "Business traveler \u00b7 July 2025",
+        "text": "Suites are enormous, the bed is legitimately comfortable, and breakfast was hot at 6:15 AM when I needed it. Way better than the chain hotels closer to downtown."
+      },
+      {
+        "rating": 5,
+        "author": "Weekend guest \u00b7 June 2025",
+        "text": "Booked direct and got a rate 20% better than the OTAs. Front desk upgraded us at check-in. Pool and gym were clean and empty when we used them."
+      }
+    ]
+  },
+  "srctec": {
+    "path": "/hotels-near-srctec-syracuse",
+    "title": "Hotels Near SRCTec / SRC Inc. \u00b7 6 Min Away \u00b7 The Cicero Grand",
+    "description": "Closest all-suite hotel to SRCTec and SRC Inc. \u2014 six minutes away. Direct billing for defense contractors, quiet suites for engineers, secure parking. Book direct.",
+    "h1": "Hotels Near SRCTec and SRC Inc.",
+    "subtitle": "Six minutes to SRC \u2014 the closest full-service suite hotel with corporate direct billing.",
+    "venue": {
+      "name": "SRCTec / SRC Inc.",
+      "address": "North Syracuse / Cicero, NY",
+      "drive": "6 minutes",
+      "miles": "3 mi"
+    },
+    "ogImage": "/photos/exterior-entrance.jpg",
+    "highlights": [
+      "6 minutes to SRCTec + SRC Inc. campuses",
+      "Direct billing for defense corporate accounts",
+      "Cleared-employee friendly \u2014 quiet suites, secure entry",
+      "Full kitchenette in every suite for long project stays",
+      "Free parking \u00b7 free hot breakfast \u00b7 24/7 desk",
+      "Also 10 min to Lockheed Martin Salina \u00b7 6 min to Micron"
+    ],
+    "intro": "SRCTec and SRC Inc. are 6 minutes from our front door \u2014 the closest full-service all-suite hotel. We host defense-program engineers, DoD auditors, visiting vendors, and relocating employees. Every suite is a full one-bedroom with kitchenette, so long project stays feel like an apartment. Set up a corporate direct-billing account for your team.",
+    "why": [
+      {
+        "title": "Closest hotel to SRC",
+        "body": "6 minutes door-to-campus. No other full-service suite hotel is closer to the SRCTec Cicero site."
+      },
+      {
+        "title": "Corporate direct billing",
+        "body": "Set up a preferred rate + direct-bill account for your team. No expense-report chasing. Call (315) 715-7410 to get started."
+      },
+      {
+        "title": "Built for engineers and program teams",
+        "body": "Quiet floors, private suites with a desk and separate living area, fast free Wi-Fi, and a real kitchen for late nights."
+      }
+    ],
+    "nearby": [
+      "SRCTec / SRC Inc. \u2014 6 min",
+      "Micron Megafab (Clay) \u2014 6 min",
+      "Lockheed Martin (Salina) \u2014 10 min",
+      "Syracuse Hancock Airport \u2014 12 min",
+      "Downtown Syracuse \u2014 14 min",
+      "I-81 Exit 98 \u2014 at our doorstep"
+    ],
+    "faqs": [
+      {
+        "q": "What's the closest hotel to SRCTec?",
+        "a": "The Cicero Grand at 5875 Carmenica Drive, Cicero, NY 13039. Six minutes from SRCTec and SRC Inc. via local roads."
+      },
+      {
+        "q": "Do you offer corporate rates for SRC employees?",
+        "a": "Yes. Call (315) 715-7410 to set up an SRC corporate direct-billing account with a preferred rate."
+      },
+      {
+        "q": "Can we book blocks for a defense-program team on-site?",
+        "a": "Yes. We do group blocks for visiting program teams and DoD audits. Call sales for a group rate."
+      },
+      {
+        "q": "Is the hotel close to Lockheed and Micron too?",
+        "a": "Yes \u2014 10 minutes to Lockheed Martin Salina and 6 minutes to the Micron Megafab. One hotel covers all three."
+      },
+      {
+        "q": "Is there secure parking on-site?",
+        "a": "Free parking on-site with lot lighting and 24/7 desk visibility. Truck and van parking available."
+      },
+      {
+        "q": "Can I get extended-stay rates for a relocation?",
+        "a": "Yes \u2014 weekly and monthly rates for stays of 7+ nights. Full kitchenette in every suite."
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Hotels near Micron Megafab",
+        "path": "/hotels-near-micron",
+        "description": "Six minutes from the Clay build site."
+      },
+      {
+        "title": "Hotels near Syracuse airport",
+        "path": "/hotels-near-syracuse-airport",
+        "description": "12 minutes to SYR \u2014 free 24/7 airport shuttle."
+      },
+      {
+        "title": "Hotels near Upstate Medical",
+        "path": "/hotels-near-upstate-medical",
+        "description": "15 minutes to Upstate."
+      },
+      {
+        "title": "Hotels in Syracuse, NY",
+        "path": "/hotels-syracuse-ny",
+        "description": "Full-service suites just north of the city."
+      },
+      {
+        "title": "Hotels in Cicero, NY",
+        "path": "/hotels-cicero-ny",
+        "description": "Cicero exit off I-81."
+      },
+      {
+        "title": "Hotels in Liverpool, NY",
+        "path": "/hotels-liverpool-ny",
+        "description": "Just north of Onondaga Lake."
+      },
+      {
+        "title": "Pet-friendly Syracuse hotels",
+        "path": "/pet-friendly-hotels-syracuse",
+        "description": "No weight limit."
+      }
+    ],
+    "reviews": [
+      {
+        "rating": 5,
+        "author": "Business traveler \u00b7 July 2025",
+        "text": "Suites are enormous, the bed is legitimately comfortable, and breakfast was hot at 6:15 AM when I needed it. Way better than the chain hotels closer to downtown."
+      },
+      {
+        "rating": 5,
+        "author": "Weekend guest \u00b7 June 2025",
+        "text": "Booked direct and got a rate 20% better than the OTAs. Front desk upgraded us at check-in. Pool and gym were clean and empty when we used them."
+      }
+    ]
   }
 }
