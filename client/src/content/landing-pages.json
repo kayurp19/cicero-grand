@@ -684,6 +684,18 @@
       {
         "q": "What's the closest hotel to Empower FCU Amphitheater?",
         "a": "The closest hotels are 5-10 minutes away in Liverpool and Solvay, but availability is limited and rates spike on concert nights. The Cicero Grand is 12 minutes north, with all-suite rooms, free breakfast, indoor pool, free parking, and typically lower rates than the closest options."
+      },
+      {
+        "q": "How far is Empower Federal Credit Union Amphitheater from the hotel?",
+        "a": "About 10 minutes north via I-81 to the Lakeview Amphitheater on Onondaga Lake. Easy post-concert drive back."
+      },
+      {
+        "q": "Do you offer concert weekend rates?",
+        "a": "Yes \u2014 call (315) 715-7410 for a concert-night rate or group block for multiple rooms."
+      },
+      {
+        "q": "Is late check-out available after a concert?",
+        "a": "Late check-out until noon based on availability \u2014 just ask at the front desk the morning of. Concerts often run late; we get it."
       }
     ],
     "internalLinks": [
@@ -932,6 +944,18 @@
       {
         "q": "What's the closest hotel to the NYS Fairgrounds?",
         "a": "The closest hotels are in Geddes and Solvay (5-10 min from the gate), but rates spike during Fair days and most are limited-service. The Cicero Grand is thirteen minutes north with all-suite rooms, free breakfast, indoor pool, and free oversized parking \u2014 typically a better value for families and groups during Fair weeks."
+      },
+      {
+        "q": "How far is the Cicero Grand from the NY State Fairgrounds?",
+        "a": "About 13 minutes / 8 miles west via I-90. Straight shot down the Thruway to exit 39."
+      },
+      {
+        "q": "Do you offer NYS Fair week rates or shuttle service?",
+        "a": "We hold group blocks for Fair week \u2014 call (315) 715-7410 to lock a rate. No shuttle, but rideshare from our front door to the Fair runs about $18-22."
+      },
+      {
+        "q": "Can I park a truck or RV during the Fair?",
+        "a": "Yes \u2014 free oversized parking on-site for trucks, RVs, and trailers. Much easier than parking near the fairgrounds."
       }
     ],
     "internalLinks": [
