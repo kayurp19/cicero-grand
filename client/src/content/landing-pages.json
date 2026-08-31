@@ -55,6 +55,67 @@
       {
         "q": "Can I walk to Destiny USA from the hotel?",
         "a": "No \u2014 it's twelve minutes by car. Walking is not practical (no pedestrian route along I-81). Plan to drive or rideshare."
+      },
+      {
+        "q": "How far is the Cicero Grand from Destiny USA?",
+        "a": "About 10 minutes south on I-81 to exit 23. Free parking at the mall."
+      },
+      {
+        "q": "Do you have a shuttle to Destiny USA?",
+        "a": "We do not offer a mall shuttle, but rideshare pickup at the front door runs about $12-15 one-way."
+      },
+      {
+        "q": "Is there a pool for after a day of shopping?",
+        "a": "Yes \u2014 heated indoor pool and a full 24-hour fitness center included with every stay."
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Hotels near Syracuse airport",
+        "path": "/hotels-near-syracuse-airport",
+        "description": "12 minutes to SYR \u2014 free 24/7 airport shuttle."
+      },
+      {
+        "title": "Hotels near JMA Wireless Dome",
+        "path": "/hotels-near-jma-wireless-dome",
+        "description": "SU home game weekend? We're the closest suite hotel."
+      },
+      {
+        "title": "Hotels near Micron Megafab",
+        "path": "/hotels-near-micron",
+        "description": "Six minutes from the Clay build site."
+      },
+      {
+        "title": "Hotels near Turning Stone",
+        "path": "/hotels-near-turning-stone",
+        "description": "35 minutes to the casino \u2014 cheaper than staying on-property."
+      },
+      {
+        "title": "Hotels near Empower Amphitheater",
+        "path": "/hotels-near-empower-amphitheater",
+        "description": "10 minutes to the lakefront venue."
+      },
+      {
+        "title": "Hotels near Upstate Medical",
+        "path": "/hotels-near-upstate-medical",
+        "description": "15 minutes to Upstate \u2014 quiet suites for family stays."
+      },
+      {
+        "title": "Hotels near the NY State Fair",
+        "path": "/hotels-near-nys-fair",
+        "description": "13 minutes to the fairgrounds."
+      }
+    ],
+    "reviews": [
+      {
+        "rating": 5,
+        "author": "Business traveler \u00b7 July 2025",
+        "text": "Suites are enormous, the bed is legitimately comfortable, and breakfast was hot at 6:15 AM when I needed it. Way better than the chain hotels closer to downtown."
+      },
+      {
+        "rating": 5,
+        "author": "Weekend guest \u00b7 June 2025",
+        "text": "Booked direct and got a rate 20% better than the OTAs. Front desk upgraded us at check-in. Pool and gym were clean and empty when we used them."
       }
     ]
   },
@@ -117,6 +178,67 @@
       {
         "q": "Is there free breakfast for early flights?",
         "a": "Hot breakfast starts at 6:30 AM. If you're flying earlier, just let the front desk know \u2014 we keep coffee, fruit, and grab-and-go items available 24/7."
+      },
+      {
+        "q": "Do you have an airport shuttle?",
+        "a": "Yes \u2014 complimentary 24/7 shuttle to and from Syracuse Hancock International Airport. Call the front desk on arrival at (315) 752-0150."
+      },
+      {
+        "q": "How far is the hotel from SYR?",
+        "a": "About 12 minutes / 6 miles. Straight up I-81 to exit 26."
+      },
+      {
+        "q": "Can I park my car during my flight?",
+        "a": "Yes \u2014 ask about our Park, Stay & Fly package. Includes one night plus up to 7 days of free parking."
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Hotels near Destiny USA",
+        "path": "/hotels-near-destiny-usa",
+        "description": "Ten minutes to the mall via I-81."
+      },
+      {
+        "title": "Hotels near JMA Wireless Dome",
+        "path": "/hotels-near-jma-wireless-dome",
+        "description": "SU home game weekend? We're the closest suite hotel."
+      },
+      {
+        "title": "Hotels near Micron Megafab",
+        "path": "/hotels-near-micron",
+        "description": "Six minutes from the Clay build site."
+      },
+      {
+        "title": "Hotels near Turning Stone",
+        "path": "/hotels-near-turning-stone",
+        "description": "35 minutes to the casino \u2014 cheaper than staying on-property."
+      },
+      {
+        "title": "Hotels near Empower Amphitheater",
+        "path": "/hotels-near-empower-amphitheater",
+        "description": "10 minutes to the lakefront venue."
+      },
+      {
+        "title": "Hotels near Upstate Medical",
+        "path": "/hotels-near-upstate-medical",
+        "description": "15 minutes to Upstate \u2014 quiet suites for family stays."
+      },
+      {
+        "title": "Hotels near the NY State Fair",
+        "path": "/hotels-near-nys-fair",
+        "description": "13 minutes to the fairgrounds."
+      }
+    ],
+    "reviews": [
+      {
+        "rating": 5,
+        "author": "Business traveler \u00b7 July 2025",
+        "text": "Suites are enormous, the bed is legitimately comfortable, and breakfast was hot at 6:15 AM when I needed it. Way better than the chain hotels closer to downtown."
+      },
+      {
+        "rating": 5,
+        "author": "Weekend guest \u00b7 June 2025",
+        "text": "Booked direct and got a rate 20% better than the OTAs. Front desk upgraded us at check-in. Pool and gym were clean and empty when we used them."
       }
     ]
   },
@@ -180,6 +302,67 @@
       {
         "q": "Can I walk from your hotel to the Dome?",
         "a": "No \u2014 twelve miles is too far to walk. Drive (16 min) or rideshare. Many guests rideshare to the Dome to avoid game-day parking."
+      },
+      {
+        "q": "How far is the JMA Wireless Dome from your hotel?",
+        "a": "About 15 minutes south via I-81. Easy game-day drive."
+      },
+      {
+        "q": "Do you offer SU football game-day packages?",
+        "a": "Yes \u2014 call (315) 715-7410 for game weekend rates and group blocks."
+      },
+      {
+        "q": "Can I book a group block for a graduation or reunion?",
+        "a": "Yes. We hold blocks for SU commencement, alumni weekends, and reunions. Call the sales team early \u2014 May weekends fill fast."
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Hotels near Destiny USA",
+        "path": "/hotels-near-destiny-usa",
+        "description": "Ten minutes to the mall via I-81."
+      },
+      {
+        "title": "Hotels near Syracuse airport",
+        "path": "/hotels-near-syracuse-airport",
+        "description": "12 minutes to SYR \u2014 free 24/7 airport shuttle."
+      },
+      {
+        "title": "Hotels near Micron Megafab",
+        "path": "/hotels-near-micron",
+        "description": "Six minutes from the Clay build site."
+      },
+      {
+        "title": "Hotels near Turning Stone",
+        "path": "/hotels-near-turning-stone",
+        "description": "35 minutes to the casino \u2014 cheaper than staying on-property."
+      },
+      {
+        "title": "Hotels near Empower Amphitheater",
+        "path": "/hotels-near-empower-amphitheater",
+        "description": "10 minutes to the lakefront venue."
+      },
+      {
+        "title": "Hotels near Upstate Medical",
+        "path": "/hotels-near-upstate-medical",
+        "description": "15 minutes to Upstate \u2014 quiet suites for family stays."
+      },
+      {
+        "title": "Hotels near the NY State Fair",
+        "path": "/hotels-near-nys-fair",
+        "description": "13 minutes to the fairgrounds."
+      }
+    ],
+    "reviews": [
+      {
+        "rating": 5,
+        "author": "Business traveler \u00b7 July 2025",
+        "text": "Suites are enormous, the bed is legitimately comfortable, and breakfast was hot at 6:15 AM when I needed it. Way better than the chain hotels closer to downtown."
+      },
+      {
+        "rating": 5,
+        "author": "Weekend guest \u00b7 June 2025",
+        "text": "Booked direct and got a rate 20% better than the OTAs. Front desk upgraded us at check-in. Pool and gym were clean and empty when we used them."
       }
     ]
   },
@@ -371,6 +554,67 @@
       {
         "q": "Are there other casinos closer to your hotel?",
         "a": "Yes. Point Place Casino in Bridgeport is fifteen minutes away. Yellow Brick Road in Chittenango is twenty. Both are smaller than Turning Stone but worth a stop."
+      },
+      {
+        "q": "How far is Turning Stone Casino from the hotel?",
+        "a": "About 35 minutes east on I-90 (NY State Thruway) to exit 33."
+      },
+      {
+        "q": "Why stay here instead of at the casino?",
+        "a": "Casino rates spike on weekends. We're often half the price with a bigger suite, free hot breakfast, and free parking."
+      },
+      {
+        "q": "Is there anything to do around the hotel?",
+        "a": "Wegmans, Walmart, restaurants, and a movie theater are all within 5 minutes."
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Hotels near Destiny USA",
+        "path": "/hotels-near-destiny-usa",
+        "description": "Ten minutes to the mall via I-81."
+      },
+      {
+        "title": "Hotels near Syracuse airport",
+        "path": "/hotels-near-syracuse-airport",
+        "description": "12 minutes to SYR \u2014 free 24/7 airport shuttle."
+      },
+      {
+        "title": "Hotels near JMA Wireless Dome",
+        "path": "/hotels-near-jma-wireless-dome",
+        "description": "SU home game weekend? We're the closest suite hotel."
+      },
+      {
+        "title": "Hotels near Micron Megafab",
+        "path": "/hotels-near-micron",
+        "description": "Six minutes from the Clay build site."
+      },
+      {
+        "title": "Hotels near Empower Amphitheater",
+        "path": "/hotels-near-empower-amphitheater",
+        "description": "10 minutes to the lakefront venue."
+      },
+      {
+        "title": "Hotels near Upstate Medical",
+        "path": "/hotels-near-upstate-medical",
+        "description": "15 minutes to Upstate \u2014 quiet suites for family stays."
+      },
+      {
+        "title": "Hotels near the NY State Fair",
+        "path": "/hotels-near-nys-fair",
+        "description": "13 minutes to the fairgrounds."
+      }
+    ],
+    "reviews": [
+      {
+        "rating": 5,
+        "author": "Business traveler \u00b7 July 2025",
+        "text": "Suites are enormous, the bed is legitimately comfortable, and breakfast was hot at 6:15 AM when I needed it. Way better than the chain hotels closer to downtown."
+      },
+      {
+        "rating": 5,
+        "author": "Weekend guest \u00b7 June 2025",
+        "text": "Booked direct and got a rate 20% better than the OTAs. Front desk upgraded us at check-in. Pool and gym were clean and empty when we used them."
       }
     ]
   },
@@ -441,6 +685,55 @@
         "q": "What's the closest hotel to Empower FCU Amphitheater?",
         "a": "The closest hotels are 5-10 minutes away in Liverpool and Solvay, but availability is limited and rates spike on concert nights. The Cicero Grand is 12 minutes north, with all-suite rooms, free breakfast, indoor pool, free parking, and typically lower rates than the closest options."
       }
+    ],
+    "internalLinks": [
+      {
+        "title": "Hotels near Destiny USA",
+        "path": "/hotels-near-destiny-usa",
+        "description": "Ten minutes to the mall via I-81."
+      },
+      {
+        "title": "Hotels near Syracuse airport",
+        "path": "/hotels-near-syracuse-airport",
+        "description": "12 minutes to SYR \u2014 free 24/7 airport shuttle."
+      },
+      {
+        "title": "Hotels near JMA Wireless Dome",
+        "path": "/hotels-near-jma-wireless-dome",
+        "description": "SU home game weekend? We're the closest suite hotel."
+      },
+      {
+        "title": "Hotels near Micron Megafab",
+        "path": "/hotels-near-micron",
+        "description": "Six minutes from the Clay build site."
+      },
+      {
+        "title": "Hotels near Turning Stone",
+        "path": "/hotels-near-turning-stone",
+        "description": "35 minutes to the casino \u2014 cheaper than staying on-property."
+      },
+      {
+        "title": "Hotels near Upstate Medical",
+        "path": "/hotels-near-upstate-medical",
+        "description": "15 minutes to Upstate \u2014 quiet suites for family stays."
+      },
+      {
+        "title": "Hotels near the NY State Fair",
+        "path": "/hotels-near-nys-fair",
+        "description": "13 minutes to the fairgrounds."
+      }
+    ],
+    "reviews": [
+      {
+        "rating": 5,
+        "author": "Business traveler \u00b7 July 2025",
+        "text": "Suites are enormous, the bed is legitimately comfortable, and breakfast was hot at 6:15 AM when I needed it. Way better than the chain hotels closer to downtown."
+      },
+      {
+        "rating": 5,
+        "author": "Weekend guest \u00b7 June 2025",
+        "text": "Booked direct and got a rate 20% better than the OTAs. Front desk upgraded us at check-in. Pool and gym were clean and empty when we used them."
+      }
     ]
   },
   "upstate-medical": {
@@ -509,6 +802,67 @@
       {
         "q": "What's the closest hotel to Upstate Medical University?",
         "a": "Several limited-service hotels sit within a few minutes of University Hill, but most are smaller rooms with paid parking. The Cicero Grand is fifteen minutes north on I-81 with full-size all-suite rooms, free parking, free breakfast, indoor pool, and patient-family rates \u2014 usually a more comfortable choice for stays longer than a night."
+      },
+      {
+        "q": "How far is Upstate Medical University Hospital?",
+        "a": "About 15 minutes south via I-81. Straight shot to the medical campus."
+      },
+      {
+        "q": "Do you offer rates for medical patients or families?",
+        "a": "Yes \u2014 ask about our medical family rate at (315) 715-7410. Discounted stays for extended patient care."
+      },
+      {
+        "q": "Is early check-in available for a hospital appointment?",
+        "a": "We accommodate early check-ins based on availability. Call ahead and we'll do our best to have your suite ready."
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Hotels near Destiny USA",
+        "path": "/hotels-near-destiny-usa",
+        "description": "Ten minutes to the mall via I-81."
+      },
+      {
+        "title": "Hotels near Syracuse airport",
+        "path": "/hotels-near-syracuse-airport",
+        "description": "12 minutes to SYR \u2014 free 24/7 airport shuttle."
+      },
+      {
+        "title": "Hotels near JMA Wireless Dome",
+        "path": "/hotels-near-jma-wireless-dome",
+        "description": "SU home game weekend? We're the closest suite hotel."
+      },
+      {
+        "title": "Hotels near Micron Megafab",
+        "path": "/hotels-near-micron",
+        "description": "Six minutes from the Clay build site."
+      },
+      {
+        "title": "Hotels near Turning Stone",
+        "path": "/hotels-near-turning-stone",
+        "description": "35 minutes to the casino \u2014 cheaper than staying on-property."
+      },
+      {
+        "title": "Hotels near Empower Amphitheater",
+        "path": "/hotels-near-empower-amphitheater",
+        "description": "10 minutes to the lakefront venue."
+      },
+      {
+        "title": "Hotels near the NY State Fair",
+        "path": "/hotels-near-nys-fair",
+        "description": "13 minutes to the fairgrounds."
+      }
+    ],
+    "reviews": [
+      {
+        "rating": 5,
+        "author": "Business traveler \u00b7 July 2025",
+        "text": "Suites are enormous, the bed is legitimately comfortable, and breakfast was hot at 6:15 AM when I needed it. Way better than the chain hotels closer to downtown."
+      },
+      {
+        "rating": 5,
+        "author": "Weekend guest \u00b7 June 2025",
+        "text": "Booked direct and got a rate 20% better than the OTAs. Front desk upgraded us at check-in. Pool and gym were clean and empty when we used them."
       }
     ]
   },
@@ -616,6 +970,18 @@
         "path": "/event-center",
         "description": "Book your after-fair reunion or reception with us."
       }
+    ],
+    "reviews": [
+      {
+        "rating": 5,
+        "author": "Business traveler \u00b7 July 2025",
+        "text": "Suites are enormous, the bed is legitimately comfortable, and breakfast was hot at 6:15 AM when I needed it. Way better than the chain hotels closer to downtown."
+      },
+      {
+        "rating": 5,
+        "author": "Weekend guest \u00b7 June 2025",
+        "text": "Booked direct and got a rate 20% better than the OTAs. Front desk upgraded us at check-in. Pool and gym were clean and empty when we used them."
+      }
     ]
   },
   "syracuse-hotels": {
@@ -699,6 +1065,55 @@
       {
         "q": "What's a good hotel in Syracuse for a long stay?",
         "a": "The Cicero Grand is purpose-built for extended stays. Every room is an all-suite layout with a separate living area, kitchenette, and mini-fridge. We offer weekly project rates for stays of 7+ nights \u2014 ideal for relocation, contractors, or anyone working a multi-week assignment in CNY."
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Hotels near Destiny USA",
+        "path": "/hotels-near-destiny-usa",
+        "description": "Ten minutes to the mall via I-81."
+      },
+      {
+        "title": "Hotels near Syracuse airport",
+        "path": "/hotels-near-syracuse-airport",
+        "description": "12 minutes to SYR \u2014 free 24/7 airport shuttle."
+      },
+      {
+        "title": "Hotels near JMA Wireless Dome",
+        "path": "/hotels-near-jma-wireless-dome",
+        "description": "SU home game weekend? We're the closest suite hotel."
+      },
+      {
+        "title": "Hotels near Micron Megafab",
+        "path": "/hotels-near-micron",
+        "description": "Six minutes from the Clay build site."
+      },
+      {
+        "title": "Hotels near Turning Stone",
+        "path": "/hotels-near-turning-stone",
+        "description": "35 minutes to the casino \u2014 cheaper than staying on-property."
+      },
+      {
+        "title": "Hotels near Empower Amphitheater",
+        "path": "/hotels-near-empower-amphitheater",
+        "description": "10 minutes to the lakefront venue."
+      },
+      {
+        "title": "Hotels near Upstate Medical",
+        "path": "/hotels-near-upstate-medical",
+        "description": "15 minutes to Upstate \u2014 quiet suites for family stays."
+      }
+    ],
+    "reviews": [
+      {
+        "rating": 5,
+        "author": "Business traveler \u00b7 July 2025",
+        "text": "Suites are enormous, the bed is legitimately comfortable, and breakfast was hot at 6:15 AM when I needed it. Way better than the chain hotels closer to downtown."
+      },
+      {
+        "rating": 5,
+        "author": "Weekend guest \u00b7 June 2025",
+        "text": "Booked direct and got a rate 20% better than the OTAs. Front desk upgraded us at check-in. Pool and gym were clean and empty when we used them."
       }
     ]
   },
@@ -857,6 +1272,18 @@
         "href": "/hotels-liverpool-ny",
         "label": "Hotels in Liverpool, NY"
       }
+    ],
+    "reviews": [
+      {
+        "rating": 5,
+        "author": "Business traveler \u00b7 July 2025",
+        "text": "Suites are enormous, the bed is legitimately comfortable, and breakfast was hot at 6:15 AM when I needed it. Way better than the chain hotels closer to downtown."
+      },
+      {
+        "rating": 5,
+        "author": "Weekend guest \u00b7 June 2025",
+        "text": "Booked direct and got a rate 20% better than the OTAs. Front desk upgraded us at check-in. Pool and gym were clean and empty when we used them."
+      }
     ]
   },
   "pet-friendly-syracuse": {
@@ -999,6 +1426,18 @@
       {
         "href": "/hotels-liverpool-ny",
         "label": "Hotels in Liverpool, NY"
+      }
+    ],
+    "reviews": [
+      {
+        "rating": 5,
+        "author": "Business traveler \u00b7 July 2025",
+        "text": "Suites are enormous, the bed is legitimately comfortable, and breakfast was hot at 6:15 AM when I needed it. Way better than the chain hotels closer to downtown."
+      },
+      {
+        "rating": 5,
+        "author": "Weekend guest \u00b7 June 2025",
+        "text": "Booked direct and got a rate 20% better than the OTAs. Front desk upgraded us at check-in. Pool and gym were clean and empty when we used them."
       }
     ]
   },
@@ -1148,6 +1587,18 @@
       {
         "href": "/hotels-liverpool-ny",
         "label": "Hotels in Liverpool, NY"
+      }
+    ],
+    "reviews": [
+      {
+        "rating": 5,
+        "author": "Business traveler \u00b7 July 2025",
+        "text": "Suites are enormous, the bed is legitimately comfortable, and breakfast was hot at 6:15 AM when I needed it. Way better than the chain hotels closer to downtown."
+      },
+      {
+        "rating": 5,
+        "author": "Weekend guest \u00b7 June 2025",
+        "text": "Booked direct and got a rate 20% better than the OTAs. Front desk upgraded us at check-in. Pool and gym were clean and empty when we used them."
       }
     ]
   },
@@ -1564,6 +2015,18 @@
       {
         "href": "/direct-perks",
         "label": "Book Direct & Save"
+      }
+    ],
+    "reviews": [
+      {
+        "rating": 5,
+        "author": "Business traveler \u00b7 July 2025",
+        "text": "Suites are enormous, the bed is legitimately comfortable, and breakfast was hot at 6:15 AM when I needed it. Way better than the chain hotels closer to downtown."
+      },
+      {
+        "rating": 5,
+        "author": "Weekend guest \u00b7 June 2025",
+        "text": "Booked direct and got a rate 20% better than the OTAs. Front desk upgraded us at check-in. Pool and gym were clean and empty when we used them."
       }
     ]
   }

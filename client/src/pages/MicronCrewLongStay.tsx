@@ -13,22 +13,22 @@ const tiers = [
   {
     name: '5–9 rooms',
     nights: '7+ nights',
-    rate: '$99',
-    note: 'per night, per room — all-in',
+    rate: 'Contact us',
+    note: 'special crew rates — call (315) 715-7410',
     bullets: ['Free hot breakfast', 'Indoor pool, fitness center, business center', 'Free parking + EV charging', 'Pet-friendly'],
   },
   {
     name: '10–24 rooms',
     nights: '30+ nights',
-    rate: '$89',
-    note: 'per night, per room — all-in',
+    rate: 'Contact us',
+    note: 'special crew rates — call (315) 715-7410',
     bullets: ['Dedicated check-in lane for your crew', 'Direct billing or purchase order', 'Weekly housekeeping (or skip-and-save)', 'Late-night arrivals welcome — 24/7 desk'],
     featured: true,
   },
   {
     name: '25+ rooms',
     nights: '30+ nights',
-    rate: 'Custom',
+    rate: 'Contact us',
     note: "we'll beat any modular-camp per-bed cost",
     bullets: ['Block reserved for your project', 'Named account manager', 'Quarterly review + flex scaling', 'Block roll-ups for tax + reporting'],
   },
@@ -36,7 +36,7 @@ const tiers = [
 
 const compareRows = [
   { label: 'Distance to Micron gate', us: '6 min drive', camp: 'On-site or adjacent' },
-  { label: 'Per-bed/night (loaded)', us: '$89–$99 all-in', camp: 'Comparable, but breakfast, gym, pool extra' },
+  { label: 'Per-bed/night (loaded)', us: 'Special crew pricing — call for quote', camp: 'Comparable, but breakfast, gym, pool extra' },
   { label: 'Available today', us: 'Yes — 65 rooms, fully operational', camp: 'Permitting + construction first' },
   { label: 'Room type', us: 'Full hotel suite, real bed, real bathroom, sitting area', camp: 'Modular dorm-style unit' },
   { label: 'Breakfast', us: 'Included — hot buffet, 6am–10am', camp: 'Cafeteria add-on' },
@@ -58,7 +58,7 @@ const amenities = [
 
 const nearby = [
   { name: 'Micron Megafab (White Pine)', drive: '7 min' },
-  { name: 'Schindler Elevator (Clay)', drive: '6 min' },
+  { name: 'SRCTec (Cicero)', drive: '6 min' },
   { name: 'Hancock International Airport', drive: '8 min' },
   { name: 'Lockheed Martin Salina', drive: '10 min' },
   { name: 'Downtown Syracuse', drive: '14 min' },
@@ -91,7 +91,7 @@ export default function MicronCrewLongStay() {
         areaServed: 'Cicero, NY · Clay, NY · Onondaga County',
         description:
           'Weekly and monthly hotel rates for Micron construction crews, contractors, vendors, and engineering teams. 65 all-suite rooms 6 minutes from the White Pine Commerce Park gate.',
-        offers: tiers.map((t) => ({ '@type': 'Offer', name: t.name, priceCurrency: 'USD', price: t.rate.replace('$', '').replace('Custom', '0') })),
+        offers: tiers.map((t) => ({ '@type': 'Offer', name: t.name, description: 'Contact for special crew rates' })),
       },
     ],
   });
@@ -189,7 +189,7 @@ ${fd.get('notes') || '—'}`,
                   <div className="text-xs uppercase tracking-[0.18em] opacity-70 mb-2">{t.name}</div>
                   <div className="text-sm opacity-70 mb-6">{t.nights}</div>
                   <div className="flex items-baseline gap-2 mb-2">
-                    <span className="font-display text-5xl lg:text-6xl leading-none">{t.rate}</span>
+                    <span className="font-display text-3xl lg:text-4xl leading-tight">{t.rate}</span>
                   </div>
                   <div className="text-sm opacity-75 mb-7">{t.note}</div>
                   <ul className="space-y-3 text-sm flex-1">
