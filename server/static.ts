@@ -164,6 +164,79 @@ const ROUTE_SCHEMA: Record<string, { title: string; description: string; schema:
     description: "Photos of our suites, indoor pool, event center, and Cicero NY hotel. See the difference before you book.",
     schema: [],
   },
+  // SEO landing pages (2026-08-31): server-side title/description for geo + intent queries.
+  // Previously these pages inherited the homepage <title>, which killed rankings for
+  // "hotels near micron", "hotels in cicero ny", etc. Now Googlebot sees unique metadata.
+  "/hotels-near-destiny-usa": {
+    title: "Hotels Near Destiny USA · 12 Min from Mall · The Cicero Grand",
+    description: "Stay 12 minutes from Destiny USA at The Cicero Grand. All-suite rooms sleep 4, free hot breakfast, indoor pool, free parking. Book direct for the lowest rate.",
+    schema: [],
+  },
+  "/hotels-near-syracuse-airport": {
+    title: "Hotels Near Syracuse Hancock Airport (SYR) · 14 Min · The Cicero Grand",
+    description: "Just 14 minutes from Syracuse Hancock International Airport. All-suite rooms, free breakfast, indoor pool, free parking — leave your car while you fly. Book direct.",
+    schema: [],
+  },
+  "/hotels-near-jma-wireless-dome": {
+    title: "Hotels Near JMA Wireless Dome · Syracuse University · The Cicero Grand",
+    description: "Sixteen minutes from the JMA Wireless Dome and Syracuse University campus. All-suite rooms, free breakfast, free parking. Book your game-weekend stay direct.",
+    schema: [],
+  },
+  "/hotels-near-micron": {
+    title: "Hotels Near Micron Megafab · 6 Min Away · The Cicero Grand",
+    description: "Closest full-service hotel to Micron's Clay megafab. Six minutes from the build site. Extended-stay rates, direct billing, free truck parking. Book project crew rooms direct.",
+    schema: [],
+  },
+  "/hotels-near-turning-stone": {
+    title: "Hotels Near Turning Stone Casino · 35 Min · The Cicero Grand",
+    description: "Stay 35 minutes from Turning Stone Casino at The Cicero Grand. All-suite rooms sleep 4, free breakfast, free parking. Better rates than staying on-site for shows and events.",
+    schema: [],
+  },
+  "/hotels-near-empower-amphitheater": {
+    title: "Hotels Near Empower FCU Amphitheater · 12 Min · The Cicero Grand",
+    description: "Stay 12 minutes from Empower FCU Amphitheater. All-suite rooms, free hot breakfast, indoor pool, free parking. Quiet sleep after the show. Book direct.",
+    schema: [],
+  },
+  "/hotels-near-upstate-medical": {
+    title: "Hotels Near Upstate Medical University · 15 Min · The Cicero Grand",
+    description: "All-suite hotel 15 minutes from Upstate Medical University and Crouse Hospital. Free hot breakfast, indoor pool, free parking. Patient-family rates available.",
+    schema: [],
+  },
+  "/hotels-near-nys-fair": {
+    title: "Hotels Near the New York State Fair · 13 Min · The Cicero Grand",
+    description: "Stay 13 minutes from the NYS Fairgrounds at The Cicero Grand. All-suite rooms, free hot breakfast, indoor pool, free parking. Group rates for the State Fair.",
+    schema: [],
+  },
+  "/hotels-syracuse-ny": {
+    title: "Hotels in Syracuse NY · The Cicero Grand · All-Suite",
+    description: "Looking for hotels in Syracuse, NY? The Cicero Grand is an all-suite hotel just outside the city — minutes from Micron, Destiny USA, the Dome, and the airport. Free breakfast, indoor pool, free parking.",
+    schema: [],
+  },
+  "/cicero-ny-hotels": {
+    title: "Hotels in Cicero, NY · The Cicero Grand · All-Suite",
+    description: "The Cicero Grand is an all-suite hotel in Cicero, NY — I-81 Exit 98. Free hot breakfast, indoor pool, free parking, pet-friendly. Minutes from Syracuse and Oneida Lake.",
+    schema: [],
+  },
+  "/pet-friendly-hotels-syracuse": {
+    title: "Pet-Friendly Hotels in Syracuse · The Cicero Grand",
+    description: "Looking for pet-friendly hotels in Syracuse, NY? The Cicero Grand welcomes dogs and cats in our all-suite rooms. Free hot breakfast, indoor pool, free parking. Book direct.",
+    schema: [],
+  },
+  "/hotels-clay-ny": {
+    title: "Hotels Near Micron Clay NY · 7 Min from White Pine Fab · Cicero Grand",
+    description: "Closest all-suite hotel to Micron's Clay megafab and White Pine Commerce Park — 7 minutes off I-81 Exit 98. Weekly & monthly crew rates, free breakfast, kitchenettes, secure truck parking. Call (315) 752-0150.",
+    schema: [],
+  },
+  "/hotel-syracuse-ny": {
+    title: "Hotel in Syracuse, NY · The Cicero Grand · All-Suite, Free Parking & Breakfast",
+    description: "The Cicero Grand is the top-rated all-suite hotel near Syracuse, NY — 15 min from downtown, 16 min from Syracuse University & JMA Dome, 6 min from Micron's Clay megafab. Free parking, free hot breakfast, pet-friendly. Book direct for the lowest rate.",
+    schema: [],
+  },
+  "/hotels-liverpool-ny": {
+    title: "Hotels in Liverpool, NY · The Cicero Grand · Near JMA Wireless & NYS Fair",
+    description: "Hotels near Liverpool, NY — The Cicero Grand is 8 minutes north via I-81. All-suite rooms, free hot breakfast, indoor pool, free parking, pet-friendly. Near JMA Wireless, the NYS Fairgrounds, and Onondaga Lake.",
+    schema: [],
+  },
 };
 
 function injectRouteSchema(html: string, route: string): string {
