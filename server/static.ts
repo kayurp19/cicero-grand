@@ -203,8 +203,8 @@ const ROUTE_SCHEMA: Record<string, { title: string; description: string; schema:
     schema: [],
   },
   "/hotels-near-nys-fair": {
-    title: "Hotels Near the New York State Fair · 13 Min · The Cicero Grand",
-    description: "Stay 13 minutes from the NYS Fairgrounds at The Cicero Grand. All-suite rooms, free hot breakfast, indoor pool, free parking. Group rates for the State Fair.",
+    title: "Hotels Near NYS Fairgrounds & Expo Center · 13 Min · The Cicero Grand",
+    description: "13 minutes to the NYS Fairgrounds and Expo Center. Year-round events: Great NYS Fair, concerts, trade shows, RV & boat shows, holiday markets. Group and vendor rates. Free breakfast + parking.",
     schema: [],
   },
   "/hotels-syracuse-ny": {

@@ -882,8 +882,8 @@
     "path": "/hotels-near-nys-fair",
     "title": "Hotels Near the New York State Fair \u00b7 13 Min \u00b7 The Cicero Grand",
     "description": "Stay 13 minutes from the NYS Fairgrounds at The Cicero Grand. All-suite rooms, free hot breakfast, indoor pool, free parking. Group rates for the State Fair.",
-    "h1": "Hotels Near the New York State Fairgrounds",
-    "subtitle": "Thirteen minutes door-to-gate. Free parking back at the hotel. Hot breakfast before you go back for round two.",
+    "h1": "Hotels Near the NYS Fairgrounds & Expo Center",
+    "subtitle": "13 minutes to the Fairgrounds \u2014 for the Great NY State Fair, concerts, trade shows, and Expo Center events year-round.",
     "venue": {
       "name": "New York State Fairgrounds",
       "address": "581 State Fair Blvd, Syracuse, NY 13209",
@@ -892,30 +892,26 @@
     },
     "ogImage": "/photos/exterior-1.jpg",
     "highlights": [
-      "Thirteen minutes from the Fair gates \u00b7 I-81 to I-690",
-      "All-suite rooms sleep four \u2014 bring the whole family",
-      "Free hot breakfast every morning of the Fair",
-      "Indoor heated pool \u2014 perfect post-Fair cool-down",
-      "Free parking \u2014 cars, trucks, RVs, even tour buses",
-      "Group rates and block bookings for Fair weekends"
+      "13 minutes to NYS Fairgrounds Expo Center",
+      "Year-round events: concerts, trade shows, RV & boat shows, holiday markets, monster trucks",
+      "12 min to Empower FCU Amphitheater (same property)",
+      "Group blocks for the Great NYS Fair (Aug-Sep)",
+      "Vendor/crew rates + free truck & trailer parking",
+      "Free hot breakfast \u00b7 indoor pool \u00b7 free parking"
     ],
-    "intro": "The Great New York State Fair is the largest agricultural fair in the Northeast \u2014 13 days, 1+ million visitors, ending Labor Day. The Cicero Grand sits thirteen minutes from the fairgrounds via I-81 and I-690, putting you close enough for full days at the Fair without sleeping inside the chaos. All-suite rooms, free parking for whatever you're driving, and a hot breakfast that gets the whole family out the door before the Midway opens.",
+    "intro": "The NYS Fairgrounds isn't just the Great New York State Fair in August. The Expo Center and Empire Room host concerts, trade shows, monster truck rallies, gun shows, RV & boat shows, holiday markets, cheerleading nationals, and craft fairs all year. The Cicero Grand is 13 minutes north via I-90 \u2014 the closest full-service all-suite hotel with free parking, free breakfast, and group blocks for vendors, performers, and event crews.",
     "why": [
       {
-        "title": "Thirteen minutes door-to-gate",
-        "body": "I-81 South to I-690 West to Exit 7 (State Fair Blvd). Same route the Fair shuttles use. Plan to leave 30-45 min before gates if you're heading in on Free-Sunday."
+        "title": "13 minutes to the Fairgrounds",
+        "body": "Straight shot west on I-90 to Exit 39. Faster and easier than downtown hotels, with free parking on-site."
       },
       {
-        "title": "All-suite means the family fits",
-        "body": "Every Cicero Grand suite sleeps four with a separate living area. No paying for two rooms or two beds when one suite handles it. Kids under 12 free."
+        "title": "Year-round Expo Center events",
+        "body": "Concerts at Empower FCU Amphitheater and the Empire Room, trade shows, gun and knife shows, RV shows, monster trucks, boat shows, holiday markets \u2014 we host attendees, vendors, and crews every month."
       },
       {
-        "title": "Free parking \u2014 even for the trailer",
-        "body": "Bringing a livestock trailer, RV, or tour bus to the Fair? Our oversized parking is free \u2014 no surcharge, no advance booking required. Same for cars, trucks, and SUVs."
-      },
-      {
-        "title": "Group rates for Fair weekends",
-        "body": "Hosting friends and family for the Fair? Call sales at (315) 715-7410 for 5+ room blocks. We hold space for vendors, performers, and 4-H groups every year."
+        "title": "Group and vendor rates",
+        "body": "Blocks for vendor booths, performer crews, and sports tournaments. Call sales at (315) 715-7410 to lock a rate."
       }
     ],
     "nearby": [
@@ -950,12 +946,24 @@
         "a": "About 13 minutes / 8 miles west via I-90. Straight shot down the Thruway to exit 39."
       },
       {
-        "q": "Do you offer NYS Fair week rates or shuttle service?",
-        "a": "We hold group blocks for Fair week \u2014 call (315) 715-7410 to lock a rate. No shuttle, but rideshare from our front door to the Fair runs about $18-22."
+        "q": "Do you offer Fairgrounds event rates or group blocks?",
+        "a": "Yes \u2014 we hold group blocks for the Great NYS Fair (Aug-Sep), plus concerts, trade shows, RV/boat shows, holiday markets, and every other Expo Center event year-round. Call (315) 715-7410 to lock a rate."
       },
       {
         "q": "Can I park a truck or RV during the Fair?",
         "a": "Yes \u2014 free oversized parking on-site for trucks, RVs, and trailers. Much easier than parking near the fairgrounds."
+      },
+      {
+        "q": "What events happen at the NYS Fairgrounds outside of Fair season?",
+        "a": "The Expo Center and Empire Room host trade shows, RV and boat shows, gun and knife shows, monster truck rallies, cheerleading nationals, holiday markets, and craft fairs year-round. Empower FCU Amphitheater on the same grounds hosts concerts May through September."
+      },
+      {
+        "q": "How far is Empower FCU Amphitheater from the hotel?",
+        "a": "About 12 minutes \u2014 Empower Amphitheater sits on the same Fairgrounds property. Easy 15-min drive back after a concert."
+      },
+      {
+        "q": "Do you offer vendor rates for trade shows at the Expo Center?",
+        "a": "Yes. Vendors and crews get discounted weekly rates plus free parking (including trucks and trailers). Call (315) 715-7410 to set it up."
       }
     ],
     "internalLinks": [
