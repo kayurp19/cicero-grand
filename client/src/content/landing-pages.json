@@ -243,6 +243,75 @@
       {
         "q": "Are there kitchen facilities for long stays?",
         "a": "Every suite has a kitchenette \u2014 full-size fridge, microwave, sink, and prep area. Coin laundry is available on-site. Two grocery stores are within five minutes."
+      },
+      {
+        "q": "How far is the hotel from downtown Syracuse?",
+        "a": "About 12 minutes south via I-81. Close enough for a client dinner downtown, far enough to skip city traffic on your morning commute to the Micron site."
+      },
+      {
+        "q": "Do you accept per-diem or corporate direct billing?",
+        "a": "Yes. We set up direct billing for approved contractors and vendors working the Micron project. Send W-9 and credit reference to sales@cicerogrand.com or call (315) 715-7410."
+      },
+      {
+        "q": "Is breakfast included?",
+        "a": "Yes \u2014 complimentary hot breakfast served from 6:30 AM daily so your crew is fed before you're on site."
+      },
+      {
+        "q": "Can I bring my dog for a long project stay?",
+        "a": "Yes. We're pet-friendly with a one-time pet fee. No weight limit. Grass lawn on-site for walks."
+      },
+      {
+        "q": "How many rooms do you have for a large project crew booking?",
+        "a": "65 all-suite rooms. For groups of 10+ we offer group rates, blocked dates, and consolidated billing. Call (315) 715-7410 for a group quote."
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Micron crew long-stay program",
+        "path": "/micron-crew-long-stay",
+        "description": "Weekly and monthly rates, direct billing, per-diem-friendly."
+      },
+      {
+        "title": "Hotels in Clay, NY",
+        "path": "/hotels-clay-ny",
+        "description": "The closest full-service hotel in Clay for the Micron corridor."
+      },
+      {
+        "title": "Hotels in Cicero, NY",
+        "path": "/hotels-cicero-ny",
+        "description": "Cicero exit off I-81 \u2014 everything you need at one stop."
+      },
+      {
+        "title": "Pet-friendly Syracuse hotels",
+        "path": "/pet-friendly-hotels-syracuse",
+        "description": "Bring the dog on the project. No weight limit."
+      },
+      {
+        "title": "Hotels near Syracuse airport",
+        "path": "/hotels-near-syracuse-airport",
+        "description": "12 minutes to SYR \u2014 free 24/7 airport shuttle."
+      },
+      {
+        "title": "Hotels near Upstate Medical",
+        "path": "/hotels-near-upstate-medical",
+        "description": "15 minutes to Upstate \u2014 quiet suites for rest between shifts."
+      },
+      {
+        "title": "Hotels in Liverpool, NY",
+        "path": "/hotels-liverpool-ny",
+        "description": "Just north of Onondaga Lake \u2014 8 minutes from the hotel."
+      }
+    ],
+    "reviews": [
+      {
+        "rating": 5,
+        "author": "Micron project vendor \u00b7 May 2025",
+        "text": "Stayed six weeks on the Micron install. Kitchenette was a lifesaver \u2014 hard to eat out every night. Front desk knew us by name by week two. Truck parking was never a problem."
+      },
+      {
+        "rating": 5,
+        "author": "Electrical contractor \u00b7 March 2025",
+        "text": "Crew of eight, all in one hotel, direct billed to our office. Sales team locked in a monthly rate before we even arrived. Six minutes to site. Would not stay anywhere else in the area."
       }
     ]
   },
@@ -509,6 +578,43 @@
       {
         "q": "What's the closest hotel to the NYS Fairgrounds?",
         "a": "The closest hotels are in Geddes and Solvay (5-10 min from the gate), but rates spike during Fair days and most are limited-service. The Cicero Grand is thirteen minutes north with all-suite rooms, free breakfast, indoor pool, and free oversized parking \u2014 typically a better value for families and groups during Fair weeks."
+      }
+    ],
+    "internalLinks": [
+      {
+        "title": "Hotels in Syracuse, NY",
+        "path": "/hotels-syracuse-ny",
+        "description": "Full-service suites just north of the city."
+      },
+      {
+        "title": "Hotels in Liverpool, NY",
+        "path": "/hotels-liverpool-ny",
+        "description": "Same exit off I-90 as the fairgrounds route."
+      },
+      {
+        "title": "Hotels near Syracuse airport",
+        "path": "/hotels-near-syracuse-airport",
+        "description": "12 minutes to SYR \u2014 free 24/7 shuttle."
+      },
+      {
+        "title": "Hotels near Destiny USA",
+        "path": "/hotels-near-destiny-usa",
+        "description": "Ten minutes to the mall for post-fair shopping."
+      },
+      {
+        "title": "Hotels near JMA Wireless Dome",
+        "path": "/hotels-near-jma-wireless-dome",
+        "description": "SU home game weekend? We're the closest suite hotel."
+      },
+      {
+        "title": "Pet-friendly Syracuse hotels",
+        "path": "/pet-friendly-hotels-syracuse",
+        "description": "Bring the dog to the fair. Grass lawn on-site."
+      },
+      {
+        "title": "Event center for reunions and receptions",
+        "path": "/event-center",
+        "description": "Book your after-fair reunion or reception with us."
       }
     ]
   },
