@@ -262,6 +262,31 @@ const ROUTE_SCHEMA: Record<string, { title: string; description: string; schema:
     description: "Closest all-suite hotel to SRCTec and SRC Inc. — six minutes away. Direct billing for defense corporate accounts, quiet suites for engineers, secure parking. Book direct.",
     schema: [],
   },
+  "/hotels-near-rtx-raytheon-syracuse": {
+    title: "Hotels Near RTX / Raytheon East Syracuse · 12 Min · The Cicero Grand",
+    description: "All-suite hotel 12 minutes from RTX/Raytheon Technologies in East Syracuse. Direct billing for defense corporate accounts, quiet suites, secure parking. Book direct at (315) 883-8288.",
+    schema: [],
+  },
+  "/hotels-near-raytheon-syracuse": {
+    title: "Hotels Near Raytheon East Syracuse · 12 Min · The Cicero Grand",
+    description: "All-suite hotel 12 minutes from Raytheon/RTX in East Syracuse. Direct billing for defense corporate accounts, quiet suites, secure parking. Book direct at (315) 883-8288.",
+    schema: [],
+  },
+  "/hotels-near-national-grid-syracuse": {
+    title: "Hotels Near National Grid Syracuse · Storm-Response Rates · The Cicero Grand",
+    description: "All-suite hotel 12 minutes from National Grid's Syracuse offices. Emergency storm-response block pricing, direct billing, hot breakfast starting 6 AM, free parking. Book direct at (315) 883-8288.",
+    schema: [],
+  },
+  "/hotels-near-va-medical-center-syracuse": {
+    title: "Hotels Near Syracuse VA Medical Center · Veteran Rates · The Cicero Grand",
+    description: "All-suite hotel 18 minutes from Syracuse VA Medical Center. Veteran discount, patient-family rates, ADA rooms with roll-in shower, 24/7 check-in, free breakfast, free parking. Book direct at (315) 883-8288.",
+    schema: [],
+  },
+  "/hotels-near-le-moyne-college": {
+    title: "Hotels Near Le Moyne College · 18 Min · Parent Weekend Rates · The Cicero Grand",
+    description: "All-suite hotel 18 minutes from Le Moyne College campus. Parent-weekend rates, group blocks for athletic teams and admitted-student events, free breakfast, free parking. Book direct at (315) 883-8288.",
+    schema: [],
+  },
 };
 
 function injectRouteSchema(html: string, route: string): string {

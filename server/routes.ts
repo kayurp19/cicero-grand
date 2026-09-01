@@ -266,6 +266,16 @@ export async function registerRoutes(
     { path: "/hotels-baldwinsville-ny", changefreq: "weekly", priority: "0.85" },
     { path: "/hotels-east-syracuse-ny", changefreq: "weekly", priority: "0.85" },
     { path: "/hotels-liverpool-ny", changefreq: "weekly", priority: "0.85" },
+    // Corporate & institutional landing pages
+    { path: "/hotels-near-lockheed-martin-syracuse", changefreq: "weekly", priority: "0.85" },
+    { path: "/hotels-near-srctec-syracuse", changefreq: "weekly", priority: "0.85" },
+    { path: "/hotels-near-rtx-raytheon-syracuse", changefreq: "weekly", priority: "0.85" },
+    { path: "/hotels-near-national-grid-syracuse", changefreq: "weekly", priority: "0.85" },
+    { path: "/hotels-near-syracuse-university", changefreq: "weekly", priority: "0.85" },
+    { path: "/hotels-near-crouse-hospital", changefreq: "weekly", priority: "0.85" },
+    { path: "/hotels-near-st-josephs-hospital-syracuse", changefreq: "weekly", priority: "0.85" },
+    { path: "/hotels-near-va-medical-center-syracuse", changefreq: "weekly", priority: "0.85" },
+    { path: "/hotels-near-le-moyne-college", changefreq: "weekly", priority: "0.8" },
     // Legal
     { path: "/privacy", changefreq: "yearly", priority: "0.3" },
     { path: "/terms", changefreq: "yearly", priority: "0.3" },

@@ -192,6 +192,21 @@ function AppRouter() {
         <Route path="/hotels-near-srctec-syracuse">
           {() => <LandingPage slug="srctec" />}
         </Route>
+        <Route path="/hotels-near-rtx-raytheon-syracuse">
+          {() => <LandingPage slug="rtx-raytheon" />}
+        </Route>
+        <Route path="/hotels-near-raytheon-syracuse">
+          {() => <LandingPage slug="rtx-raytheon" />}
+        </Route>
+        <Route path="/hotels-near-national-grid-syracuse">
+          {() => <LandingPage slug="national-grid" />}
+        </Route>
+        <Route path="/hotels-near-va-medical-center-syracuse">
+          {() => <LandingPage slug="va-medical-center" />}
+        </Route>
+        <Route path="/hotels-near-le-moyne-college">
+          {() => <LandingPage slug="le-moyne" />}
+        </Route>
         <Route component={NotFound} />
       </Switch>
     </PublicLayout>
