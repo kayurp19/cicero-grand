@@ -595,6 +595,38 @@ export async function registerRoutes(
   const PROMO_CODE = process.env.PROMO_CODE || "WELCOME15";
   const PROMO_AMOUNT = "$15";
   const PROMO_VALIDITY_DAYS = 60;
+  const POPUP_COOKIE_NAME = "cg_popup";
+  const POPUP_COOKIE_MAX_AGE_MS = 180 * 24 * 60 * 60 * 1000; // 180 days
+
+  function setPopupCookie(res: Response, state: "claimed" | "dismissed") {
+    res.cookie(POPUP_COOKIE_NAME, state, {
+      maxAge: POPUP_COOKIE_MAX_AGE_MS,
+      httpOnly: false, // readable by client so it can skip fetch on repeat visits
+      sameSite: "lax",
+      secure: process.env.NODE_ENV === "production",
+      path: "/",
+    });
+  }
+
+  // GET /api/email-lead/status — cheap check: has this device already claimed / dismissed?
+  // Popup calls this on mount before arming any triggers.
+  app.get("/api/email-lead/status", (req, res) => {
+    const state = req.cookies?.[POPUP_COOKIE_NAME] || null;
+    res.json({ state }); // { state: "claimed" | "dismissed" | null }
+  });
+
+  // POST /api/email-lead/dismiss — user closed the popup without submitting.
+  // Silences it for this device for a shorter window (30 days).
+  app.post("/api/email-lead/dismiss", (_req, res) => {
+    res.cookie(POPUP_COOKIE_NAME, "dismissed", {
+      maxAge: 30 * 24 * 60 * 60 * 1000,
+      httpOnly: false,
+      sameSite: "lax",
+      secure: process.env.NODE_ENV === "production",
+      path: "/",
+    });
+    res.json({ ok: true });
+  });
 
   app.post("/api/email-lead", async (req, res) => {
     const parse = insertEmailLeadSchema.safeParse(req.body);
@@ -608,6 +640,7 @@ export async function registerRoutes(
     // Duplicate protection: same email = return same code, don't re-email.
     const existing = await storage.getEmailLead(email);
     if (existing) {
+      setPopupCookie(res, "claimed");
       return res.json({
         ok: true,
         alreadyClaimed: true,
@@ -629,6 +662,7 @@ export async function registerRoutes(
     });
     console.log(`[email-lead] new #${lead.id} from ${email} (source: ${sourcePage || "unknown"})`);
 
+    setPopupCookie(res, "claimed");
     res.json({
       ok: true,
       alreadyClaimed: false,

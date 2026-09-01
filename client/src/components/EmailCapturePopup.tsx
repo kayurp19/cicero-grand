@@ -26,17 +26,20 @@ export function EmailCapturePopup() {
   const [alreadyClaimed, setAlreadyClaimed] = useState(false);
   const [copied, setCopied] = useState(false);
 
-  // Boot: check session flag, then arm triggers.
+  // Boot: check server-backed device state, then arm triggers if allowed.
   useEffect(() => {
     const prior = getSessionFlag(STORAGE_KEY);
     if (prior === "dismissed" || prior === "success") return;
 
+    let cancelled = false;
     let firedRef = false;
+    let timer: number | undefined;
+    const listeners: Array<() => void> = [];
+
     const fire = (reason: string) => {
-      if (firedRef) return;
+      if (firedRef || cancelled) return;
       firedRef = true;
       setState("shown");
-      // Track fire reason on window for debugging.
       try {
         (window as any).dataLayer?.push({ event: "email_popup_open", reason });
       } catch {
@@ -44,27 +47,50 @@ export function EmailCapturePopup() {
       }
     };
 
-    // 1. Time trigger — 30 seconds
-    const timer = window.setTimeout(() => fire("time"), 30000);
+    const armTriggers = () => {
+      // 1. Time trigger — 30 seconds
+      timer = window.setTimeout(() => fire("time"), 30000);
 
-    // 2. Scroll trigger — 60% depth
-    const onScroll = () => {
-      const doc = document.documentElement;
-      const scrolled = (window.scrollY + window.innerHeight) / doc.scrollHeight;
-      if (scrolled >= 0.6) fire("scroll");
-    };
-    window.addEventListener("scroll", onScroll, { passive: true });
+      // 2. Scroll trigger — 60% depth
+      const onScroll = () => {
+        const doc = document.documentElement;
+        const scrolled = (window.scrollY + window.innerHeight) / doc.scrollHeight;
+        if (scrolled >= 0.6) fire("scroll");
+      };
+      window.addEventListener("scroll", onScroll, { passive: true });
+      listeners.push(() => window.removeEventListener("scroll", onScroll));
 
-    // 3. Exit-intent — mouse leaves top of viewport
-    const onMouseLeave = (e: MouseEvent) => {
-      if (e.clientY <= 0) fire("exit_intent");
+      // 3. Exit-intent — mouse leaves top of viewport
+      const onMouseLeave = (e: MouseEvent) => {
+        if (e.clientY <= 0) fire("exit_intent");
+      };
+      document.addEventListener("mouseleave", onMouseLeave);
+      listeners.push(() => document.removeEventListener("mouseleave", onMouseLeave));
     };
-    document.addEventListener("mouseleave", onMouseLeave);
+
+    // Check device state first. If server says claimed/dismissed, don't arm.
+    (async () => {
+      try {
+        const res = await fetch("/api/email-lead/status", { credentials: "same-origin" });
+        if (cancelled) return;
+        if (res.ok) {
+          const data = await res.json();
+          if (data.state === "claimed" || data.state === "dismissed") {
+            // Silenced on this device.
+            setSessionFlag(STORAGE_KEY, data.state);
+            return;
+          }
+        }
+      } catch {
+        // Network fail — arm anyway.
+      }
+      if (!cancelled) armTriggers();
+    })();
 
     return () => {
-      window.clearTimeout(timer);
-      window.removeEventListener("scroll", onScroll);
-      document.removeEventListener("mouseleave", onMouseLeave);
+      cancelled = true;
+      if (timer) window.clearTimeout(timer);
+      listeners.forEach((off) => off());
     };
   }, []);
 
@@ -82,8 +108,19 @@ export function EmailCapturePopup() {
   const close = () => {
     if (state === "success") {
       setSessionFlag(STORAGE_KEY, "success");
+      // Server already set 'claimed' cookie on submit — nothing more to do.
     } else {
       setSessionFlag(STORAGE_KEY, "dismissed");
+      // Tell server to remember dismissal on this device (30 days).
+      try {
+        fetch("/api/email-lead/dismiss", {
+          method: "POST",
+          credentials: "same-origin",
+          keepalive: true,
+        });
+      } catch {
+        /* ignore */
+      }
     }
     setState("hidden");
   };
@@ -99,6 +136,7 @@ export function EmailCapturePopup() {
     try {
       const res = await fetch("/api/email-lead", {
         method: "POST",
+        credentials: "same-origin",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           email: email.trim(),
