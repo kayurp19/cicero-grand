@@ -1,5 +1,5 @@
-import { contentBlocks, contactSubmissions, menuRequests } from "@shared/schema";
-import type { ContentBlock, ContactSubmission, InsertContact, MenuRequest, InsertMenuRequest } from "@shared/schema";
+import { contentBlocks, contactSubmissions, menuRequests, emailLeads } from "@shared/schema";
+import type { ContentBlock, ContactSubmission, InsertContact, MenuRequest, InsertMenuRequest, EmailLead, InsertEmailLead } from "@shared/schema";
 import { drizzle } from "drizzle-orm/better-sqlite3";
 import Database from "better-sqlite3";
 import { desc, eq } from "drizzle-orm";
@@ -64,6 +64,17 @@ sqlite.exec(`
     notes TEXT,
     created_at INTEGER NOT NULL
   );
+  CREATE TABLE IF NOT EXISTS email_leads (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    email TEXT NOT NULL UNIQUE,
+    first_name TEXT,
+    source_page TEXT,
+    promo_code TEXT NOT NULL,
+    ip_address TEXT,
+    user_agent TEXT,
+    claimed INTEGER NOT NULL DEFAULT 0,
+    created_at INTEGER NOT NULL
+  );
 `);
 
 export const db = drizzle(sqlite);
@@ -78,6 +89,9 @@ export interface IStorage {
   deleteContact(id: number): Promise<void>;
   createMenuRequest(data: InsertMenuRequest): Promise<MenuRequest>;
   listMenuRequests(limit?: number): Promise<MenuRequest[]>;
+  getEmailLead(email: string): Promise<EmailLead | undefined>;
+  createEmailLead(data: InsertEmailLead & { promoCode: string; ipAddress?: string; userAgent?: string }): Promise<EmailLead>;
+  listEmailLeads(limit?: number): Promise<EmailLead[]>;
 }
 
 export class DatabaseStorage implements IStorage {
@@ -168,6 +182,38 @@ export class DatabaseStorage implements IStorage {
       .select()
       .from(menuRequests)
       .orderBy(desc(menuRequests.createdAt))
+      .limit(limit)
+      .all();
+  }
+
+  async getEmailLead(email: string): Promise<EmailLead | undefined> {
+    return db.select().from(emailLeads).where(eq(emailLeads.email, email.toLowerCase())).get();
+  }
+
+  async createEmailLead(
+    data: InsertEmailLead & { promoCode: string; ipAddress?: string; userAgent?: string },
+  ): Promise<EmailLead> {
+    return db
+      .insert(emailLeads)
+      .values({
+        email: data.email.toLowerCase(),
+        firstName: data.firstName,
+        sourcePage: data.sourcePage,
+        promoCode: data.promoCode,
+        ipAddress: data.ipAddress,
+        userAgent: data.userAgent,
+        claimed: 0,
+        createdAt: Date.now(),
+      })
+      .returning()
+      .get();
+  }
+
+  async listEmailLeads(limit = 500): Promise<EmailLead[]> {
+    return db
+      .select()
+      .from(emailLeads)
+      .orderBy(desc(emailLeads.createdAt))
       .limit(limit)
       .all();
   }

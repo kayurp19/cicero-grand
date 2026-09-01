@@ -8,7 +8,7 @@ import crypto from "node:crypto";
 import multer from "multer";
 import cookieParser from "cookie-parser";
 import { storage } from "./storage";
-import { insertContactSchema, insertMenuRequestSchema } from "@shared/schema";
+import { insertContactSchema, insertMenuRequestSchema, insertEmailLeadSchema } from "@shared/schema";
 import nodemailer from "nodemailer";
 
 // ----- Config -----
@@ -589,6 +589,165 @@ export async function registerRoutes(
   app.get("/api/admin/menu-requests", requireAdmin, async (_req, res) => {
     const rows = await storage.listMenuRequests();
     res.json(rows.map((r) => ({ ...r, menusRequested: JSON.parse(r.menusRequested) })));
+  });
+
+  // ----- Email leads (popup $15 coupon signup) -----
+  const PROMO_CODE = process.env.PROMO_CODE || "WELCOME15";
+  const PROMO_AMOUNT = "$15";
+  const PROMO_VALIDITY_DAYS = 60;
+
+  app.post("/api/email-lead", async (req, res) => {
+    const parse = insertEmailLeadSchema.safeParse(req.body);
+    if (!parse.success) {
+      return res.status(400).json({ ok: false, message: "Please enter a valid email address." });
+    }
+    const email = parse.data.email.toLowerCase().trim();
+    const firstName = parse.data.firstName?.trim();
+    const sourcePage = parse.data.sourcePage;
+
+    // Duplicate protection: same email = return same code, don't re-email.
+    const existing = await storage.getEmailLead(email);
+    if (existing) {
+      return res.json({
+        ok: true,
+        alreadyClaimed: true,
+        promoCode: existing.promoCode,
+        message: "You've already claimed your discount. Here's your code again.",
+      });
+    }
+
+    const ipAddress = (req.headers["x-forwarded-for"] as string || req.socket.remoteAddress || "").split(",")[0].trim();
+    const userAgent = (req.headers["user-agent"] as string || "").slice(0, 500);
+
+    const lead = await storage.createEmailLead({
+      email,
+      firstName,
+      sourcePage,
+      promoCode: PROMO_CODE,
+      ipAddress,
+      userAgent,
+    });
+    console.log(`[email-lead] new #${lead.id} from ${email} (source: ${sourcePage || "unknown"})`);
+
+    res.json({
+      ok: true,
+      alreadyClaimed: false,
+      promoCode: PROMO_CODE,
+      message: `Your ${PROMO_AMOUNT} off code is on its way.`,
+    });
+
+    // Fire-and-forget auto-reply with code.
+    const greetingName = firstName ? escapeHtml(firstName) : "there";
+    const replySubject = `Your ${PROMO_AMOUNT} off code for The Cicero Grand`;
+    const replyText = [
+      `Hi ${firstName || "there"},`,
+      ``,
+      `Thanks for signing up. Here's your ${PROMO_AMOUNT} off code:`,
+      ``,
+      `    ${PROMO_CODE}`,
+      ``,
+      `How to use it:`,
+      `• Book direct at www.cicerogrand.com`,
+      `• Enter code ${PROMO_CODE} at checkout, OR mention it at check-in`,
+      `• Valid ${PROMO_VALIDITY_DAYS} days from today`,
+      `• Direct bookings only — not valid on Expedia, Booking.com, or other OTAs`,
+      `• One use per guest`,
+      ``,
+      `Book here: https://www.cicerogrand.com`,
+      ``,
+      `Questions? Reply to this email or call (315) 752-0150.`,
+      ``,
+      `— The Cicero Grand`,
+      `5875 Carmenica Drive · Cicero, NY 13039`,
+      `www.cicerogrand.com · (315) 752-0150`,
+    ].join("\n");
+    const replyHtml = `
+      <div style="font-family:Georgia,serif;max-width:560px;margin:0 auto;padding:32px 24px;color:#1a1a1a;background:#ffffff;">
+        <div style="text-align:center;padding-bottom:20px;border-bottom:1px solid #d4cdb8;">
+          <div style="font-size:11px;letter-spacing:0.25em;text-transform:uppercase;color:#a36b3f;">The Cicero Grand</div>
+          <div style="font-size:13px;color:#6b6b6b;margin-top:4px;">All-Suite Hotel · Cicero, NY</div>
+        </div>
+        <h2 style="font-size:26px;margin:28px 0 10px;color:#1a1a1a;">Your ${PROMO_AMOUNT} off is here.</h2>
+        <p style="font-family:system-ui,sans-serif;font-size:15px;line-height:1.6;color:#1a1a1a;margin:0 0 24px;">Hi ${greetingName} — thanks for signing up. Your one-time discount code is below.</p>
+        <div style="text-align:center;padding:28px 20px;background:#f5f0e6;border:2px dashed #a36b3f;border-radius:6px;margin:0 0 24px;">
+          <div style="font-family:system-ui,sans-serif;font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:#6b6b6b;margin-bottom:8px;">Your code</div>
+          <div style="font-family:'Courier New',monospace;font-size:32px;font-weight:700;letter-spacing:0.15em;color:#a36b3f;">${PROMO_CODE}</div>
+          <div style="font-family:system-ui,sans-serif;font-size:13px;color:#6b6b6b;margin-top:10px;">${PROMO_AMOUNT} off · direct bookings only · valid ${PROMO_VALIDITY_DAYS} days</div>
+        </div>
+        <div style="font-family:system-ui,sans-serif;font-size:14px;line-height:1.7;color:#1a1a1a;margin:0 0 24px;">
+          <strong style="display:block;margin-bottom:6px;">How to use it</strong>
+          • Book direct at <a href="https://www.cicerogrand.com" style="color:#a36b3f;text-decoration:none;font-weight:600;">cicerogrand.com</a><br>
+          • Enter <strong>${PROMO_CODE}</strong> at checkout — or mention it at check-in<br>
+          • Valid ${PROMO_VALIDITY_DAYS} days from today<br>
+          • Direct bookings only (not valid on Expedia, Booking.com, or other OTAs)<br>
+          • One use per guest
+        </div>
+        <div style="text-align:center;margin:0 0 24px;">
+          <a href="https://www.cicerogrand.com" style="display:inline-block;padding:14px 32px;background:#a36b3f;color:#ffffff;text-decoration:none;border-radius:2px;font-family:system-ui,sans-serif;font-size:15px;font-weight:600;letter-spacing:0.03em;">Book direct now</a>
+        </div>
+        <p style="font-family:system-ui,sans-serif;font-size:14px;line-height:1.6;color:#1a1a1a;margin:24px 0 0;">Questions? Reply to this email or call <a href="tel:+13157520150" style="color:#a36b3f;text-decoration:none;font-weight:600;">(315) 752-0150</a>.</p>
+        <div style="margin-top:32px;padding-top:20px;border-top:1px solid #d4cdb8;font-family:system-ui,sans-serif;font-size:12px;color:#6b6b6b;line-height:1.55;">
+          The Cicero Grand · 5875 Carmenica Drive, Cicero, NY 13039<br>
+          <a href="mailto:hello@cicerogrand.com" style="color:#a36b3f;text-decoration:none;">hello@cicerogrand.com</a> · <a href="tel:+13157520150" style="color:#a36b3f;text-decoration:none;">(315) 752-0150</a> · <a href="https://www.cicerogrand.com" style="color:#a36b3f;text-decoration:none;">www.cicerogrand.com</a>
+        </div>
+      </div>
+    `;
+
+    (async () => {
+      if (usingResendApi()) {
+        try {
+          const info: any = await sendViaResend({ from: SMTP_FROM, to: email, subject: replySubject, text: replyText, html: replyHtml });
+          console.log(`[email-lead] code email Resend OK for #${lead.id}: id=${info?.id || "?"}`);
+        } catch (err: any) {
+          console.error(`[email-lead] code email Resend FAILED for #${lead.id}: ${err?.message}`);
+        }
+      } else if (mailer) {
+        try {
+          const info = await mailer.sendMail({ from: SMTP_FROM, to: email, subject: replySubject, text: replyText, html: replyHtml });
+          console.log(`[email-lead] code email SMTP OK for #${lead.id}: ${info.messageId}`);
+        } catch (err: any) {
+          console.error(`[email-lead] code email SMTP FAILED for #${lead.id}: ${err?.message}`);
+        }
+      } else {
+        console.warn(`[email-lead] no transport — #${lead.id} code email skipped (code was: ${PROMO_CODE})`);
+      }
+    })();
+
+    return;
+  });
+
+  // List email leads (admin)
+  app.get("/api/admin/email-leads", requireAdmin, async (_req, res) => {
+    const rows = await storage.listEmailLeads();
+    res.json(rows);
+  });
+
+  // CSV export of email leads (admin)
+  app.get("/api/admin/email-leads.csv", requireAdmin, async (_req, res) => {
+    const rows = await storage.listEmailLeads(10000);
+    const header = ["id", "email", "first_name", "source_page", "promo_code", "claimed", "created_at", "ip_address"];
+    const escapeCsv = (v: any) => {
+      if (v === null || v === undefined) return "";
+      const s = String(v);
+      if (/[",\n\r]/.test(s)) return `"${s.replace(/"/g, '""')}"`;
+      return s;
+    };
+    const lines = [header.join(",")];
+    for (const r of rows) {
+      lines.push([
+        r.id,
+        r.email,
+        r.firstName || "",
+        r.sourcePage || "",
+        r.promoCode,
+        r.claimed,
+        new Date(r.createdAt).toISOString(),
+        r.ipAddress || "",
+      ].map(escapeCsv).join(","));
+    }
+    res.setHeader("Content-Type", "text/csv; charset=utf-8");
+    res.setHeader("Content-Disposition", `attachment; filename="cicero-grand-email-leads-${new Date().toISOString().slice(0, 10)}.csv"`);
+    res.send(lines.join("\n"));
   });
 
   // ----- Email diagnostic -----

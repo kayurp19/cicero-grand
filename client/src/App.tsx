@@ -11,6 +11,7 @@ import { StickyBookBar } from "@/components/StickyBookBar";
 import { CookieConsent } from "@/components/CookieConsent";
 import { RateBanner } from "@/components/RateBanner";
 import { Canonical } from "@/components/Canonical";
+import { EmailCapturePopup } from "@/components/EmailCapturePopup";
 
 import Home from "@/pages/Home";
 import Rooms from "@/pages/Rooms";
@@ -28,6 +29,7 @@ import Privacy from "@/pages/Privacy";
 import Terms from "@/pages/Terms";
 import Accessibility from "@/pages/Accessibility";
 import LandingPage from "@/pages/LandingPage";
+import Corporate from "@/pages/Corporate";
 import Packages from "@/pages/Packages";
 import Menus from "@/pages/Menus";
 import MicronCrewLongStay from "@/pages/MicronCrewLongStay";
@@ -80,6 +82,7 @@ function PublicLayout({ children }: { children: React.ReactNode }) {
       <Footer />
       <StickyBookBar />
       <CookieConsent />
+      <EmailCapturePopup />
     </>
   );
 }
@@ -207,6 +210,9 @@ function AppRouter() {
         <Route path="/hotels-near-le-moyne-college">
           {() => <LandingPage slug="le-moyne" />}
         </Route>
+        <Route path="/corporate" component={Corporate} />
+        <Route path="/corporate-rates" component={Corporate} />
+        <Route path="/business-travel" component={Corporate} />
         <Route component={NotFound} />
       </Switch>
     </PublicLayout>

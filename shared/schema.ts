@@ -65,3 +65,25 @@ export const insertMenuRequestSchema = z.object({
 
 export type InsertMenuRequest = z.infer<typeof insertMenuRequestSchema>;
 export type MenuRequest = typeof menuRequests.$inferSelect;
+
+// ----- Email leads (popup $15 coupon signup) -----
+export const emailLeads = sqliteTable("email_leads", {
+  id: integer("id").primaryKey({ autoIncrement: true }),
+  email: text("email").notNull().unique(),
+  firstName: text("first_name"),
+  sourcePage: text("source_page"),
+  promoCode: text("promo_code").notNull(),
+  ipAddress: text("ip_address"),
+  userAgent: text("user_agent"),
+  claimed: integer("claimed").notNull().default(0), // 0=unclaimed, 1=claimed at checkin
+  createdAt: integer("created_at").notNull(),
+});
+
+export const insertEmailLeadSchema = z.object({
+  email: z.string().email().max(200),
+  firstName: z.string().max(100).optional().nullable().transform((v) => v || undefined),
+  sourcePage: z.string().max(200).optional().nullable().transform((v) => v || undefined),
+});
+
+export type InsertEmailLead = z.infer<typeof insertEmailLeadSchema>;
+export type EmailLead = typeof emailLeads.$inferSelect;
