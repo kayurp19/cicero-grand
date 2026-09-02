@@ -49,7 +49,7 @@ export const TRACKING = {
    * Powers retargeting audiences on Facebook + Instagram. Empty = no-op
    * (safe to deploy before you have an ID).
    */
-  META_PIXEL_ID: "" as string,
+  META_PIXEL_ID: "28743800258546034" as string,
 };
 
 /**
