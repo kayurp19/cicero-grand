@@ -4,15 +4,74 @@
  * it short-circuits to no-ops in that case.
  */
 
-import { TRACKING, isTrackingEnabled } from "./tracking-config";
+import {
+  TRACKING,
+  isTrackingEnabled,
+  isMetaPixelEnabled,
+} from "./tracking-config";
 
 declare global {
   interface Window {
     dataLayer: any[];
+    fbq?: any;
+    _fbq?: any;
   }
 }
 
 let gtmLoaded = false;
+let metaPixelLoaded = false;
+
+/**
+ * Bootstrap Meta (Facebook) Pixel. Safe to call multiple times — the pixel
+ * script only injects once. No-ops if META_PIXEL_ID isn't configured.
+ *
+ * Powers retargeting on Facebook + Instagram: every visitor gets tagged so
+ * you can run ads to "people who viewed cicerogrand.com in the last 30 days."
+ */
+export function initMetaPixel(): void {
+  if (typeof window === "undefined") return;
+  if (!isMetaPixelEnabled()) return;
+  if (metaPixelLoaded) return;
+  metaPixelLoaded = true;
+
+  // Standard Meta Pixel bootstrap, transcribed from the docs.
+  (function (f: any, b: Document, e: string, v: string) {
+    if (f.fbq) return;
+    const n: any = (f.fbq = function () {
+      n.callMethod
+        ? n.callMethod.apply(n, arguments)
+        : n.queue.push(arguments);
+    });
+    if (!f._fbq) f._fbq = n;
+    n.push = n;
+    n.loaded = true;
+    n.version = "2.0";
+    n.queue = [];
+    const t = b.createElement(e) as HTMLScriptElement;
+    t.async = true;
+    t.src = v;
+    const s = b.getElementsByTagName(e)[0];
+    s.parentNode?.insertBefore(t, s);
+  })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+
+  window.fbq("init", TRACKING.META_PIXEL_ID);
+  window.fbq("track", "PageView");
+}
+
+/**
+ * Fire a Meta Pixel event. No-op when pixel isn't configured or hasn't loaded.
+ * Use this to mirror key events (Lead, InitiateCheckout, Contact) to Meta.
+ */
+function fbqTrack(eventName: string, params?: Record<string, unknown>): void {
+  if (typeof window === "undefined") return;
+  if (!isMetaPixelEnabled()) return;
+  if (!window.fbq) return;
+  if (params) {
+    window.fbq("track", eventName, params);
+  } else {
+    window.fbq("track", eventName);
+  }
+}
 
 /**
  * Initialize the dataLayer and inject the GTM <script> snippet into the
@@ -43,6 +102,10 @@ export function initTracking(): void {
   script.async = true;
   script.src = `https://www.googletagmanager.com/gtm.js?id=${encodeURIComponent(id)}`;
   document.head.appendChild(script);
+
+  // Also bootstrap Meta Pixel if configured. Kept next to GTM so a single
+  // initTracking() call wires up both platforms.
+  initMetaPixel();
 }
 
 /**
@@ -58,6 +121,10 @@ export function trackPageView(path: string, title?: string): void {
     page_location: window.location.origin + path,
     page_title: title || document.title,
   });
+
+  // Mirror to Meta Pixel for SPA route changes (initial load already fires
+  // PageView in initMetaPixel).
+  fbqTrack("PageView");
 }
 
 /**
@@ -82,6 +149,14 @@ export function trackBookNow(meta?: {
       value: 125,
     },
   });
+
+  // Mirror to Meta Pixel — InitiateCheckout is Meta's booking-intent event.
+  fbqTrack("InitiateCheckout", {
+    content_category: "hotel_booking",
+    content_name: meta?.ratePlan || meta?.source || "book_now",
+    currency: "USD",
+    value: 125,
+  });
 }
 
 /**
@@ -97,6 +172,14 @@ export function trackPhoneClick(meta?: { source?: string }): void {
       currency: "USD",
       value: 25, // Estimated lead value per the handoff doc
     },
+  });
+
+  // Mirror to Meta Pixel — Lead is Meta's phone/inquiry event.
+  fbqTrack("Lead", {
+    content_name: "phone_click",
+    content_category: "hotel_inquiry",
+    currency: "USD",
+    value: 25,
   });
 }
 
@@ -117,6 +200,14 @@ export function trackContactSubmit(meta?: {
       currency: "USD",
       value: 25,
     },
+  });
+
+  // Mirror to Meta Pixel — Contact is Meta's form-submission event.
+  fbqTrack("Contact", {
+    content_name: meta?.topic || "contact_form",
+    content_category: "hotel_inquiry",
+    currency: "USD",
+    value: 25,
   });
 }
 

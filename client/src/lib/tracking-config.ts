@@ -40,6 +40,16 @@ export const TRACKING = {
     BEGIN_CHECKOUT: "" as string,
     PHONE_CLICK: "zI1UCLj8rascEOOs-Io-" as string,
   },
+
+  /**
+   * Meta (Facebook) Pixel ID — 16-digit number like "1234567890123456".
+   * Where to find: business.facebook.com → Events Manager → your Pixel →
+   * Settings → Pixel ID.
+   *
+   * Powers retargeting audiences on Facebook + Instagram. Empty = no-op
+   * (safe to deploy before you have an ID).
+   */
+  META_PIXEL_ID: "" as string,
 };
 
 /**
@@ -49,4 +59,12 @@ export const TRACKING = {
  */
 export function isTrackingEnabled(): boolean {
   return /^GTM-[A-Z0-9]+$/i.test(TRACKING.GTM_CONTAINER_ID);
+}
+
+/**
+ * Helper — returns true only when a valid Meta Pixel ID is configured.
+ * Used to short-circuit pixel calls before an ID is pasted in.
+ */
+export function isMetaPixelEnabled(): boolean {
+  return /^\d{15,16}$/.test(TRACKING.META_PIXEL_ID);
 }

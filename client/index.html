@@ -72,7 +72,7 @@
         { "@type": "LocationFeatureSpecification", "name": "All-Suite Rooms", "value": true }
       ],
       "sameAs": [
-        "https://www.facebook.com/ComfortSuitesSyrCicero",
+        "https://www.facebook.com/CiceroGrandsyr",
         "https://www.google.com/maps?cid=10426371224060360838"
       ]
     }
@@ -101,7 +101,7 @@
         "availableLanguage": ["English"]
       }],
       "sameAs": [
-        "https://www.facebook.com/ComfortSuitesSyrCicero",
+        "https://www.facebook.com/CiceroGrandsyr",
         "https://www.google.com/maps?cid=10426371224060360838"
       ]
     }
@@ -176,6 +176,20 @@
         width="0"
         style="display:none;visibility:hidden"
       ></iframe>
+    </noscript>
+    <!--
+      Meta Pixel noscript fallback. Only replace META_PIXEL_ID once you have
+      the real 16-digit ID from business.facebook.com → Events Manager.
+      Until then this <img> loads a broken pixel (harmless).
+    -->
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        style="display:none"
+        alt=""
+        src="https://www.facebook.com/tr?id=META_PIXEL_ID&ev=PageView&noscript=1"
+      />
     </noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
