@@ -21,9 +21,18 @@
       ]
     },
     {
+      "title": "For boaters",
+      "items": [
+        { "name": "30 boat trailer parking spaces", "description": "Free for guests. Room for the boat, trailer, and truck." },
+        { "name": "30+ 110V shore-power outlets", "description": "Keep your batteries charged overnight while you sleep." },
+        { "name": "8 minutes to Oneida Shores", "description": "Oneida Lake public boat launch — a straight shot up Route 11." },
+        { "name": "Fish-friendly access", "description": "Onondaga Lake, Erie Canal, and Finger Lakes all within a short drive." }
+      ]
+    },
+    {
       "title": "On the property",
       "items": [
-        { "name": "Free parking", "description": "Cars, trucks, RVs, motorcoaches." },
+        { "name": "Free parking", "description": "Cars, trucks, RVs, motorcoaches, boat trailers." },
         { "name": "24-hour business center", "description": "Print, copy, fax, scan." },
         { "name": "Guest laundry", "description": "On-site, all guests." },
         { "name": "Sundry shop", "description": "Snacks, essentials, forgot-it items." },

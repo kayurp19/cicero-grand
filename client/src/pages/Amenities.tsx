@@ -10,9 +10,9 @@ export default function Amenities() {
   const site = useContent<typeof siteSeed>('site');
 
   useSeo({
-    title: 'Indoor Pool, Free Hot Breakfast, Pet-Friendly · Cicero NY Hotel | The Cicero Grand',
+    title: 'Boat Parking, Indoor Pool, Free Breakfast · Cicero NY Hotel | The Cicero Grand',
     description:
-      'Indoor heated pool, free hot breakfast, fitness center, free parking, free Wi-Fi, pet-friendly suites, and 24-hr business essentials. 6 min from Micron. Off I-81 Exit 98. Book direct — (315) 752-0150.',
+      'Free boat trailer parking with 30+ shore-power outlets, 8 min to Oneida Shores. Indoor pool, free hot breakfast, pet-friendly suites. Off I-81 Exit 98. Book direct — (315) 752-0150.',
     canonicalPath: '/amenities',
     ogImage: '/photos/pool.jpg',
   });

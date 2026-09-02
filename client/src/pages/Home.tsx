@@ -17,9 +17,9 @@ const tickerItems = [
   'Free parking',
   'Off I-81 · Exit 98',
   '6 minutes to Micron build',
-  'Crews & vendors welcome',
+  'Boat parking + shore power',
   'Near Syracuse Airport',
-  'Walkable to Oneida Lake',
+  '8 min to Oneida Shores',
 ];
 
 const ICONS = {
@@ -33,9 +33,9 @@ export default function Home() {
   const testimonials = useContent<typeof testimonialsSeed>('testimonials');
 
   useSeo({
-    title: 'Cicero Grand · All-Suite Hotel · Free Breakfast + Pool · Cicero NY',
+    title: 'Cicero Grand · All-Suite Hotel · Boat Parking + Free Breakfast · Cicero NY',
     description:
-      'All-suite hotel off I-81 Exit 98, 10 min from downtown Syracuse & 6 min from Micron. Free hot breakfast, indoor heated pool, free parking, pet friendly. Book direct & save — best rate guaranteed. Call (315) 752-0150.',
+      'All-suite hotel off I-81 Exit 98. Free boat trailer parking with shore power, indoor pool, free hot breakfast, pet friendly. 6 min to Micron, 8 min to Oneida Shores. Book direct — (315) 752-0150.',
     canonicalPath: '/',
     ogImage: '/photos/exterior-entrance.jpg',
     jsonLd: [
@@ -44,7 +44,7 @@ export default function Home() {
         '@type': 'Hotel',
         name: SITE.name,
         description:
-          'All-suite hotel near Syracuse, NY — 6 minutes from the Micron megafab. Free hot breakfast, indoor pool, pet friendly, free parking.',
+          'All-suite hotel near Syracuse, NY — 6 min from Micron, 8 min from Oneida Shores boat launch. Free boat trailer parking with 30+ shore-power outlets. Indoor pool, free hot breakfast, pet friendly.',
         url: SITE.url,
         telephone: SITE.phone,
         email: SITE.email,
@@ -75,6 +75,8 @@ export default function Home() {
           { '@type': 'LocationFeatureSpecification', name: 'Fitness Center', value: true },
           { '@type': 'LocationFeatureSpecification', name: 'Pet Friendly', value: true },
           { '@type': 'LocationFeatureSpecification', name: 'All-Suite Rooms', value: true },
+          { '@type': 'LocationFeatureSpecification', name: 'Boat Trailer Parking', value: true },
+          { '@type': 'LocationFeatureSpecification', name: 'Shore Power for Boats', value: true },
         ],
         aggregateRating: {
           '@type': 'AggregateRating',
