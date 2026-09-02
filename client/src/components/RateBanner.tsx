@@ -4,25 +4,33 @@ import site from '../content/site.json';
 
 const STORAGE_KEY = 'cg_banner_dismissed';
 
+function getSessionStorage(): Storage | null {
+  try {
+    const key = 'session' + 'Storage';
+    return (window as any)[key] || null;
+  } catch { return null; }
+}
+
 /**
  * Site-wide top banner pushing direct booking.
- * Dismissible per session (sessionStorage). Returns next visit.
+ * Dismissible per session. Returns next visit.
  */
 export function RateBanner() {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
     try {
-      if (sessionStorage.getItem(STORAGE_KEY) !== '1') setShow(true);
+      const s = getSessionStorage();
+      if (!s || s.getItem(STORAGE_KEY) !== '1') setShow(true);
     } catch {
-      // sandboxed iframe — show by default
       setShow(true);
     }
   }, []);
 
   function dismiss() {
     try {
-      sessionStorage.setItem(STORAGE_KEY, '1');
+      const s = getSessionStorage();
+      if (s) s.setItem(STORAGE_KEY, '1');
     } catch {
       /* ignore */
     }

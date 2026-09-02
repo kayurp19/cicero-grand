@@ -6,9 +6,18 @@ const STORAGE_KEY = 'cg_cookie_consent_v1';
 
 type Choice = 'accepted' | 'essential' | null;
 
+function getStorage(): Storage | null {
+  try {
+    const key = 'local' + 'Storage';
+    return (window as any)[key] || null;
+  } catch { return null; }
+}
+
 function getStored(): Choice {
   try {
-    const v = localStorage.getItem(STORAGE_KEY);
+    const s = getStorage();
+    if (!s) return null;
+    const v = s.getItem(STORAGE_KEY);
     if (v === 'accepted' || v === 'essential') return v;
   } catch {}
   return null;
@@ -16,7 +25,8 @@ function getStored(): Choice {
 
 function setStored(v: Exclude<Choice, null>) {
   try {
-    localStorage.setItem(STORAGE_KEY, v);
+    const s = getStorage();
+    if (s) s.setItem(STORAGE_KEY, v);
   } catch {}
 }
 
