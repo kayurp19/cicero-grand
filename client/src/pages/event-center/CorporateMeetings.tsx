@@ -43,7 +43,7 @@ export default function CorporateMeetings() {
           latitude: SITE.latitude,
           longitude: SITE.longitude,
         },
-        maximumAttendeeCapacity: 200,
+        maximumAttendeeCapacity: 250,
       },
       {
         '@context': 'https://schema.org',
@@ -73,7 +73,7 @@ export default function CorporateMeetings() {
         image="/photos/venue-ballroom-empty.jpg"
         seoH1="Corporate Meeting Rooms & Conference Space in Syracuse, NY"
         title={<>Meetings that <em className="italic font-light">land</em>.</>}
-        intro="Half-day sessions, full-day conferences, training, and off-sites. Configurable as classroom, theater, U-shape, or boardroom. Breakfast, lunch, and breaks built around your agenda."
+        intro="Half-day sessions, full-day conferences, training, and off-sites. 9 setup styles — banquet rounds, crescent, theater, classroom, conference, U-shape, hollow square, reception, or trade-show exhibits. Breakfast, lunch, and breaks built around your agenda."
       />
 
       {/* Breadcrumb */}
@@ -135,34 +135,45 @@ export default function CorporateMeetings() {
                 Set the room <em className="italic font-light">to</em> the agenda.
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Pick classroom for training, theater for keynotes, U-shape for workshops, boardroom for executive sessions. Same room — different setup. We'll flip it during your lunch break if you need.
+                Pick classroom for training, theater for keynotes, U-shape or hollow square for workshops, conference for executive sessions, crescent rounds for talks with meals, reception for standing cocktail, or exhibits for a trade show. Same room — different setup. We'll flip it during your lunch break if you need.
               </p>
             </div>
           </Reveal>
 
           <Reveal>
             <div className="rounded-3xl border border-border overflow-hidden bg-card">
+              <p className="lg:hidden px-6 pt-4 pb-2 text-xs text-muted-foreground italic">Scroll table → to see all 9 setup styles</p>
               <div className="overflow-x-auto">
-                <table className="w-full text-sm">
+                <table className="w-full text-sm min-w-[900px]">
                   <thead className="bg-muted/50">
                     <tr className="text-left">
-                      <th className="px-6 py-4 font-medium">Space</th>
-                      <th className="px-4 py-4 font-medium whitespace-nowrap">Size</th>
-                      <th className="px-4 py-4 font-medium text-center">Classroom</th>
-                      <th className="px-4 py-4 font-medium text-center">Theater</th>
-                      <th className="px-4 py-4 font-medium text-center">U-Shape</th>
-                      <th className="px-4 py-4 font-medium text-center">Boardroom</th>
+                      <th className="px-6 py-4 font-medium sticky left-0 bg-muted/50 z-10">Space</th>
+                      <th className="px-3 py-4 font-medium whitespace-nowrap">Size</th>
+                      <th className="px-3 py-4 font-medium text-center whitespace-nowrap" title="Rounds of 8–10 for plated meals">Banquet<br/><span className="text-[10px] font-normal text-muted-foreground uppercase tracking-wider">Rounds</span></th>
+                      <th className="px-3 py-4 font-medium text-center whitespace-nowrap" title="Half-round tables facing front for talks with meals">Crescent<br/><span className="text-[10px] font-normal text-muted-foreground uppercase tracking-wider">Rounds</span></th>
+                      <th className="px-3 py-4 font-medium text-center" title="Rows of chairs, no tables">Theater</th>
+                      <th className="px-3 py-4 font-medium text-center" title="6ft tables in rows, 3 per table">Classroom</th>
+                      <th className="px-3 py-4 font-medium text-center" title="Single long conference table">Conference</th>
+                      <th className="px-3 py-4 font-medium text-center whitespace-nowrap" title="Perimeter tables, open in middle">U-Shape</th>
+                      <th className="px-3 py-4 font-medium text-center whitespace-nowrap" title="Perimeter tables, closed square">Hollow<br/><span className="text-[10px] font-normal text-muted-foreground uppercase tracking-wider">Square</span></th>
+                      <th className="px-3 py-4 font-medium text-center" title="Standing cocktail, no seating">Reception</th>
+                      <th className="px-3 py-4 font-medium text-center whitespace-nowrap" title="8×10 vendor booths with aisles">Exhibits<br/><span className="text-[10px] font-normal text-muted-foreground uppercase tracking-wider">8×10 booths</span></th>
                     </tr>
                   </thead>
                   <tbody>
                     {events.spaces.map((s) => (
                       <tr key={s.name} className="border-t border-border">
-                        <td className="px-6 py-5 font-display text-xl tracking-tight">{s.name}</td>
-                        <td className="px-4 py-5 text-muted-foreground whitespace-nowrap">{s.size}</td>
-                        <td className="px-4 py-5 text-center tabular-nums">{s.classroom}</td>
-                        <td className="px-4 py-5 text-center tabular-nums">{s.theater}</td>
-                        <td className="px-4 py-5 text-center tabular-nums">{s.uShape}</td>
-                        <td className="px-4 py-5 text-center tabular-nums">{s.boardroom}</td>
+                        <td className="px-6 py-5 font-display text-xl tracking-tight sticky left-0 bg-card z-10">{s.name}</td>
+                        <td className="px-3 py-5 text-muted-foreground whitespace-nowrap">{s.size}</td>
+                        <td className="px-3 py-5 text-center tabular-nums font-medium">{s.banquet}</td>
+                        <td className="px-3 py-5 text-center tabular-nums">{s.crescent}</td>
+                        <td className="px-3 py-5 text-center tabular-nums">{s.theater}</td>
+                        <td className="px-3 py-5 text-center tabular-nums">{s.classroom}</td>
+                        <td className="px-3 py-5 text-center tabular-nums">{s.conference}</td>
+                        <td className="px-3 py-5 text-center tabular-nums">{s.uShape}</td>
+                        <td className="px-3 py-5 text-center tabular-nums">{s.hollowSquare}</td>
+                        <td className="px-3 py-5 text-center tabular-nums">{s.reception}</td>
+                        <td className="px-3 py-5 text-center tabular-nums">{s.exhibits}</td>
                       </tr>
                     ))}
                   </tbody>

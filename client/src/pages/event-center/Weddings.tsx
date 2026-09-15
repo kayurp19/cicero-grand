@@ -14,7 +14,7 @@ export default function Weddings() {
   useSeo({
     title: 'Wedding Venues in Syracuse, NY · 5.0 ★ WeddingWire · Outside Caterers Welcome | The Cicero Grand',
     description:
-      'Syracuse wedding venue for 30–175 guests. 5.0/5.0 on WeddingWire. Bring your own caterer, on-site suites for guests, outdoor ceremony option, Getting Ready Room. Micro weddings, elopements, and full receptions. Call (315) 752-0150.',
+      'Syracuse wedding venue for 30–200 guests. 5.0/5.0 on WeddingWire. Bring your own caterer, on-site suites for guests, outdoor ceremony option, Getting Ready Room. Micro weddings, elopements, and full receptions. Call (315) 752-0150.',
     canonicalPath: '/event-center/weddings',
     ogImage: '/photos/venue-ballroom-empty.jpg',
     jsonLd: [
@@ -28,7 +28,7 @@ export default function Weddings() {
         telephone: SITE.salesPhone,
         email: SITE.email,
         image: `${SITE.url}/photos/venue-ballroom-empty.jpg`,
-        maximumAttendeeCapacity: 200,
+        maximumAttendeeCapacity: 350,
         address: {
           '@type': 'PostalAddress',
           streetAddress: SITE.street,

@@ -55,7 +55,7 @@ export default function SocialEvents() {
         postalCode: SITE.postalCode,
         addressCountry: SITE.country,
       },
-      maximumAttendeeCapacity: 200,
+      maximumAttendeeCapacity: 350,
     },
   });
 
@@ -65,7 +65,7 @@ export default function SocialEvents() {
         eyebrow="Event Center · Social"
         image="/photos/venue-ballroom-empty.jpg"
         title={<>Banquets that <em className="italic font-light">feel</em> like home.</>}
-        intro="Showers, reunions, birthdays, holiday parties, religious & cultural gatherings — up to 200 guests. Bring your own caterer for the dishes that matter, or use ours. One ballroom. Every tradition welcome."
+        intro="Showers, reunions, birthdays, holiday parties, religious & cultural gatherings — up to 200 seated (350 cocktail). Bring your own caterer for the dishes that matter, or use ours. One ballroom. Every tradition welcome."
       />
 
       {/* Breadcrumb */}
@@ -90,7 +90,7 @@ export default function SocialEvents() {
                   If it's worth <em className="italic font-light">celebrating</em>, we'll host it.
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Our 2,530 sq ft ballroom seats up to 175 guests at rounds or 200 theater-style, with a movable-wall configuration that divides it into two 1,265 sq ft half-rooms plus a 500 sq ft Oasis Room for showers, intimate dinners, and smaller meetings.
+                  Our 2,760 sq ft ballroom (60ft × 46ft) seats up to 200 at rounds, 250 theater-style, or 350 for a standing cocktail reception. Divide it in half for a smaller crowd (1,380 sq ft each) or use our 500 sq ft Oasis Room for showers, intimate dinners, and smaller meetings.
                 </p>
               </div>
               <div className="col-span-12 lg:col-span-6 grid grid-cols-2 gap-3">

@@ -564,7 +564,7 @@ export default function Home() {
               { href: '/hotels-syracuse-ny', title: 'Hotels in Syracuse, NY', desc: 'All-suite hotel 10 min from downtown Syracuse. Free breakfast, indoor pool, and free parking for cars, trucks, and RVs.' },
               { href: '/hotels-near-destiny-usa', title: 'Hotels Near Destiny USA', desc: '15 minutes from Destiny USA — shopping, dining, and go-karts — with free breakfast and free parking.' },
               { href: '/micron-crew-long-stay', title: 'Micron Crew Long-Stay', desc: 'Weekly and monthly rates for Micron contractors. 7 minutes to the Clay megafab, boat/truck parking, laundry on site.' },
-              { href: '/event-center', title: 'Banquet Hall & Event Center', desc: 'Weddings, showers, milestones, sports teams, celebrations of life. Up to 175 guests seated with in-house or outside catering.' },
+              { href: '/event-center', title: 'Banquet Hall & Event Center', desc: 'Weddings, showers, milestones, sports teams, celebrations of life. Up to 200 seated (350 cocktail) with in-house or outside catering.' },
             ].map((item) => (
               <Link
                 key={item.href}

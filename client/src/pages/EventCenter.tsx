@@ -74,7 +74,7 @@ export default function EventCenter() {
         postalCode: SITE.postalCode,
         addressCountry: SITE.country,
       },
-      maximumAttendeeCapacity: 200,
+      maximumAttendeeCapacity: 350,
       amenityFeature: [
         { '@type': 'LocationFeatureSpecification', name: 'Outside Caterers Welcome', value: true },
         { '@type': 'LocationFeatureSpecification', name: 'On-site Audio/Visual', value: true },
@@ -90,7 +90,7 @@ export default function EventCenter() {
         eyebrow="The Event Center"
         image="/photos/venue-ballroom-empty.jpg"
         title={<>One ballroom. <em className="italic font-light">Every</em> kind of gathering.</>}
-        intro="A 55 × 46 ballroom (2,530 sq ft) plus flexible half-room configurations — built to host meetings, banquets, and weddings up to 200 guests. Outside caterers welcome, on-site suites for overnight guests, and one coordinator from booking through teardown."
+        intro="A 60 × 46 ballroom (2,760 sq ft) plus flexible half-room configurations and 9 setup styles — built to host meetings, banquets, and weddings up to 200 seated (350 cocktail). Outside caterers welcome, on-site suites for overnight guests, and one coordinator from booking through teardown."
       />
 
       {/* CALL-FIRST CTA BAR — directly under hero so ad traffic sees it immediately */}
@@ -202,29 +202,38 @@ export default function EventCenter() {
                   ✦ Spaces & capacities
                 </span>
               </div>
+              <p className="lg:hidden px-6 pt-4 pb-2 text-xs text-muted-foreground italic">Scroll table → to see all 9 setup styles</p>
               <div className="overflow-x-auto">
-                <table className="w-full text-sm">
+                <table className="w-full text-sm min-w-[900px]">
                   <thead className="bg-muted/50">
                     <tr className="text-left">
-                      <th className="px-6 py-4 font-medium">Space</th>
-                      <th className="px-4 py-4 font-medium whitespace-nowrap">Size</th>
-                      <th className="px-4 py-4 font-medium text-center">Classroom</th>
-                      <th className="px-4 py-4 font-medium text-center">Theater</th>
-                      <th className="px-4 py-4 font-medium text-center">Banquet</th>
-                      <th className="px-4 py-4 font-medium text-center">U-Shape</th>
-                      <th className="px-4 py-4 font-medium text-center">Boardroom</th>
+                      <th className="px-6 py-4 font-medium sticky left-0 bg-muted/50 z-10">Space</th>
+                      <th className="px-3 py-4 font-medium whitespace-nowrap">Size</th>
+                      <th className="px-3 py-4 font-medium text-center whitespace-nowrap" title="Rounds of 8–10 for plated meals">Banquet<br/><span className="text-[10px] font-normal text-muted-foreground uppercase tracking-wider">Rounds</span></th>
+                      <th className="px-3 py-4 font-medium text-center whitespace-nowrap" title="Half-round tables facing front for talks with meals">Crescent<br/><span className="text-[10px] font-normal text-muted-foreground uppercase tracking-wider">Rounds</span></th>
+                      <th className="px-3 py-4 font-medium text-center" title="Rows of chairs, no tables">Theater</th>
+                      <th className="px-3 py-4 font-medium text-center" title="6ft tables in rows, 3 per table">Classroom</th>
+                      <th className="px-3 py-4 font-medium text-center" title="Single long conference table">Conference</th>
+                      <th className="px-3 py-4 font-medium text-center whitespace-nowrap" title="Perimeter tables, open in middle">U-Shape</th>
+                      <th className="px-3 py-4 font-medium text-center whitespace-nowrap" title="Perimeter tables, closed square">Hollow<br/><span className="text-[10px] font-normal text-muted-foreground uppercase tracking-wider">Square</span></th>
+                      <th className="px-3 py-4 font-medium text-center" title="Standing cocktail, no seating">Reception</th>
+                      <th className="px-3 py-4 font-medium text-center whitespace-nowrap" title="8×10 vendor booths with aisles">Exhibits<br/><span className="text-[10px] font-normal text-muted-foreground uppercase tracking-wider">8×10 booths</span></th>
                     </tr>
                   </thead>
                   <tbody>
                     {events.spaces.map((s) => (
                       <tr key={s.name} className="border-t border-border">
-                        <td className="px-6 py-5 font-display text-xl tracking-tight">{s.name}</td>
-                        <td className="px-4 py-5 text-muted-foreground whitespace-nowrap">{s.size}</td>
-                        <td className="px-4 py-5 text-center tabular-nums">{s.classroom}</td>
-                        <td className="px-4 py-5 text-center tabular-nums">{s.theater}</td>
-                        <td className="px-4 py-5 text-center tabular-nums">{s.banquet}</td>
-                        <td className="px-4 py-5 text-center tabular-nums">{s.uShape}</td>
-                        <td className="px-4 py-5 text-center tabular-nums">{s.boardroom}</td>
+                        <td className="px-6 py-5 font-display text-xl tracking-tight sticky left-0 bg-card z-10">{s.name}</td>
+                        <td className="px-3 py-5 text-muted-foreground whitespace-nowrap">{s.size}</td>
+                        <td className="px-3 py-5 text-center tabular-nums font-medium">{s.banquet}</td>
+                        <td className="px-3 py-5 text-center tabular-nums">{s.crescent}</td>
+                        <td className="px-3 py-5 text-center tabular-nums">{s.theater}</td>
+                        <td className="px-3 py-5 text-center tabular-nums">{s.classroom}</td>
+                        <td className="px-3 py-5 text-center tabular-nums">{s.conference}</td>
+                        <td className="px-3 py-5 text-center tabular-nums">{s.uShape}</td>
+                        <td className="px-3 py-5 text-center tabular-nums">{s.hollowSquare}</td>
+                        <td className="px-3 py-5 text-center tabular-nums">{s.reception}</td>
+                        <td className="px-3 py-5 text-center tabular-nums">{s.exhibits}</td>
                       </tr>
                     ))}
                   </tbody>

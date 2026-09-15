@@ -3,39 +3,55 @@
   "spaces": [
     {
       "name": "The Ballroom",
-      "size": "55ft × 46ft (2,530 sq ft)",
-      "classroom": 130,
-      "theater": 200,
-      "banquet": 175,
-      "uShape": 75,
-      "boardroom": 60
+      "size": "60ft × 46ft (2,760 sq ft)",
+      "banquet": 200,
+      "crescent": 160,
+      "theater": 250,
+      "classroom": 150,
+      "conference": 60,
+      "uShape": 80,
+      "hollowSquare": 75,
+      "reception": 350,
+      "exhibits": 30
     },
     {
       "name": "Cicero Room",
-      "size": "27ft × 46ft (~1,265 sq ft)",
-      "classroom": 65,
-      "theater": 100,
-      "banquet": 80,
-      "uShape": 35,
-      "boardroom": 30
+      "size": "30ft × 46ft (~1,380 sq ft)",
+      "banquet": 100,
+      "crescent": 80,
+      "theater": 125,
+      "classroom": 75,
+      "conference": 45,
+      "uShape": 45,
+      "hollowSquare": 40,
+      "reception": 175,
+      "exhibits": 15
     },
     {
       "name": "Syracuse Room",
-      "size": "27ft × 46ft (~1,265 sq ft)",
-      "classroom": 65,
-      "theater": 100,
-      "banquet": 80,
-      "uShape": 35,
-      "boardroom": 30
+      "size": "30ft × 46ft (~1,380 sq ft)",
+      "banquet": 100,
+      "crescent": 80,
+      "theater": 125,
+      "classroom": 75,
+      "conference": 45,
+      "uShape": 45,
+      "hollowSquare": 40,
+      "reception": 175,
+      "exhibits": 15
     },
     {
       "name": "Oasis Room",
       "size": "20ft × 25ft (500 sq ft)",
-      "classroom": "—",
-      "theater": 40,
       "banquet": 30,
+      "crescent": 25,
+      "theater": 40,
+      "classroom": 25,
+      "conference": 20,
       "uShape": 15,
-      "boardroom": 20
+      "hollowSquare": "—",
+      "reception": 60,
+      "exhibits": "—"
     }
   ],
   "features": [
