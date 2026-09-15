@@ -71,6 +71,7 @@ export default function CorporateMeetings() {
       <PageHero
         eyebrow="Event Center · Corporate"
         image="/photos/venue-ballroom-empty.jpg"
+        seoH1="Corporate Meeting Rooms & Conference Space in Syracuse, NY"
         title={<>Meetings that <em className="italic font-light">land</em>.</>}
         intro="Half-day sessions, full-day conferences, training, and off-sites. Configurable as classroom, theater, U-shape, or boardroom. Breakfast, lunch, and breaks built around your agenda."
       />

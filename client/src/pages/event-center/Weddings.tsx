@@ -75,6 +75,7 @@ export default function Weddings() {
       <PageHero
         eyebrow="Event Center · Weddings"
         image="/photos/venue-ballroom-empty.jpg"
+        seoH1="Wedding Venues in Syracuse, NY — The Cicero Grand"
         title={<>Your day. <em className="italic font-light">All</em> in one place.</>}
         intro={w.intro}
       />

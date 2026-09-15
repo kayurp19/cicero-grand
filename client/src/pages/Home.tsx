@@ -544,6 +544,45 @@ export default function Home() {
       </section>
 
       {/* CLOSING CTA */}
+      {/* Popular searches — internal linking hub for SEO. Passes homepage link
+         equity to high-value landing pages (weddings, corporate meetings,
+         Syracuse hotels) so Google treats them as prominent. */}
+      <section className="bg-background py-20 lg:py-28 border-t border-border">
+        <div className="max-w-[1400px] mx-auto px-5 lg:px-10">
+          <Reveal>
+            <span className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-muted-foreground mb-6">
+              <span className="w-8 h-px bg-border" /> Popular searches
+            </span>
+            <h2 className="font-display text-[clamp(2rem,4.5vw,3.5rem)] leading-[1] tracking-tight text-balance mb-12 max-w-3xl">
+              What guests come to us for.
+            </h2>
+          </Reveal>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              { href: '/event-center/weddings', title: 'Wedding Venues in Syracuse, NY', desc: 'Rated 5.0/5.0 on WeddingWire. Bring your own caterer, on-site suites for guests, and a Getting Ready Room.' },
+              { href: '/event-center/corporate-meetings', title: 'Corporate Meeting Rooms Syracuse', desc: 'Half-day, full-day, and multi-day meetings 6 min from Micron. Free A/V, Wi-Fi, and parking.' },
+              { href: '/hotels-syracuse-ny', title: 'Hotels in Syracuse, NY', desc: 'All-suite hotel 10 min from downtown Syracuse. Free breakfast, indoor pool, and free parking for cars, trucks, and RVs.' },
+              { href: '/hotels-near-destiny-usa', title: 'Hotels Near Destiny USA', desc: '15 minutes from Destiny USA — shopping, dining, and go-karts — with free breakfast and free parking.' },
+              { href: '/micron-crew-long-stay', title: 'Micron Crew Long-Stay', desc: 'Weekly and monthly rates for Micron contractors. 7 minutes to the Clay megafab, boat/truck parking, laundry on site.' },
+              { href: '/event-center', title: 'Banquet Hall & Event Center', desc: 'Weddings, showers, milestones, sports teams, celebrations of life. Up to 220 guests with in-house or outside catering.' },
+            ].map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="group block p-6 rounded-2xl border border-border bg-background hover:bg-muted/40 transition-colors"
+                data-testid={`popular-search-${item.href.replace(/[^a-z0-9]/gi, '-')}`}
+              >
+                <div className="flex items-start justify-between gap-3 mb-2">
+                  <h3 className="font-display text-lg lg:text-xl leading-tight text-balance">{item.title}</h3>
+                  <ArrowUpRight className="w-5 h-5 flex-shrink-0 text-muted-foreground group-hover:text-foreground transition-colors" />
+                </div>
+                <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="relative bg-foreground text-background py-32 lg:py-44 overflow-hidden">
         <img
           src="/photos/lobby-fireplace.jpg"
