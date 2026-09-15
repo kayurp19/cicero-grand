@@ -46,7 +46,7 @@ export function EventsForm({
                 <Field label="Name">
                   <TextInput value={space.name} onChange={(v) => update({ ...space, name: v })} />
                 </Field>
-                <Field label="Size" hint="e.g. '45ft × 64ft'">
+                <Field label="Size" hint="e.g. '55ft × 46ft (2,530 sq ft)'">
                   <TextInput value={space.size} onChange={(v) => update({ ...space, size: v })} />
                 </Field>
                 <Field label="Classroom">

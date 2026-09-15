@@ -3,50 +3,122 @@
     {
       "title": "Wake up easy",
       "items": [
-        { "name": "Free hot breakfast", "description": "Every morning. No charge, no fuss." },
-        { "name": "Free coffee", "description": "Going from open to close in the lobby." },
-        { "name": "Indoor heated pool", "description": "Open year-round, every season." },
-        { "name": "Fitness center", "description": "Cardio + free weights, 24/7 access." }
+        {
+          "name": "Free hot breakfast",
+          "description": "Every morning. No charge, no fuss."
+        },
+        {
+          "name": "Free coffee",
+          "description": "Going from open to close in the lobby."
+        },
+        {
+          "name": "Indoor heated pool",
+          "description": "Open year-round, every season."
+        },
+        {
+          "name": "Fitness center",
+          "description": "Cardio + free weights, 24/7 access."
+        }
       ]
     },
     {
       "title": "In every suite",
       "items": [
-        { "name": "55\" 4K smart TV", "description": "Cast from your phone, free." },
-        { "name": "Mini-fridge & microwave", "description": "Standard in every room." },
-        { "name": "Pillow-top mattresses", "description": "On every bed." },
-        { "name": "Free high-speed Wi-Fi", "description": "Wired & wireless, no fees." },
-        { "name": "Workspace", "description": "Desk + ergonomic chair." },
-        { "name": "Iron, hair dryer, in-room coffee", "description": "All the standards." }
+        {
+          "name": "55\" 4K smart TV",
+          "description": "Cast from your phone, free."
+        },
+        {
+          "name": "Mini-fridge & microwave",
+          "description": "Standard in every room."
+        },
+        {
+          "name": "Pillow-top mattresses",
+          "description": "On every bed."
+        },
+        {
+          "name": "Free high-speed Wi-Fi",
+          "description": "Wired & wireless, no fees."
+        },
+        {
+          "name": "Workspace",
+          "description": "Desk + ergonomic chair."
+        },
+        {
+          "name": "Iron, hair dryer, in-room coffee",
+          "description": "All the standards."
+        }
       ]
     },
     {
       "title": "For boaters",
       "items": [
-        { "name": "30 boat trailer parking spaces", "description": "Free for guests. Room for the boat, trailer, and truck." },
-        { "name": "30+ 110V shore-power outlets", "description": "Keep your batteries charged overnight while you sleep." },
-        { "name": "8 minutes to Oneida Shores", "description": "Oneida Lake public boat launch — a straight shot up Route 11." },
-        { "name": "Fish-friendly access", "description": "Onondaga Lake, Erie Canal, and Finger Lakes all within a short drive." }
+        {
+          "name": "30 boat trailer parking spaces",
+          "description": "Free for guests. Room for the boat, trailer, and truck."
+        },
+        {
+          "name": "30+ 110V shore-power outlets",
+          "description": "Keep your batteries charged overnight while you sleep."
+        },
+        {
+          "name": "8 minutes to Oneida Shores",
+          "description": "Oneida Lake public boat launch — a straight shot up Route 11."
+        },
+        {
+          "name": "Fish-friendly access",
+          "description": "Onondaga Lake, Erie Canal, and Finger Lakes all within a short drive."
+        }
       ]
     },
     {
       "title": "On the property",
       "items": [
-        { "name": "Free parking", "description": "Cars, trucks, RVs, motorcoaches, boat trailers." },
-        { "name": "24-hour business center", "description": "Print, copy, fax, scan." },
-        { "name": "Guest laundry", "description": "On-site, all guests." },
-        { "name": "Sundry shop", "description": "Snacks, essentials, forgot-it items." },
-        { "name": "Banquet & meeting rooms", "description": "Up to 220 guests." },
-        { "name": "Elevator + interior corridors", "description": "Climate-controlled access throughout." }
+        {
+          "name": "Free parking",
+          "description": "Cars, trucks, RVs, motorcoaches, boat trailers."
+        },
+        {
+          "name": "24-hour business center",
+          "description": "Print, copy, fax, scan."
+        },
+        {
+          "name": "Guest laundry",
+          "description": "On-site, all guests."
+        },
+        {
+          "name": "Sundry shop",
+          "description": "Snacks, essentials, forgot-it items."
+        },
+        {
+          "name": "Banquet & meeting rooms",
+          "description": "Up to 200 guests."
+        },
+        {
+          "name": "Elevator + interior corridors",
+          "description": "Climate-controlled access throughout."
+        }
       ]
     },
     {
       "title": "Welcome rules",
       "items": [
-        { "name": "Pet friendly", "description": "Bring your dog. Small fee applies." },
-        { "name": "100% smoke-free", "description": "Inside and out at room entries." },
-        { "name": "FEMA approved", "description": "Government per-diem rates available." },
-        { "name": "ADA accessible suites", "description": "Available — request at booking." }
+        {
+          "name": "Pet friendly",
+          "description": "Bring your dog. Small fee applies."
+        },
+        {
+          "name": "100% smoke-free",
+          "description": "Inside and out at room entries."
+        },
+        {
+          "name": "FEMA approved",
+          "description": "Government per-diem rates available."
+        },
+        {
+          "name": "ADA accessible suites",
+          "description": "Available — request at booking."
+        }
       ]
     }
   ]

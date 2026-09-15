@@ -43,7 +43,7 @@ export default function CorporateMeetings() {
           latitude: SITE.latitude,
           longitude: SITE.longitude,
         },
-        maximumAttendeeCapacity: 220,
+        maximumAttendeeCapacity: 200,
       },
       {
         '@context': 'https://schema.org',

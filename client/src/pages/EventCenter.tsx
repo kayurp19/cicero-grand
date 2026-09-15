@@ -74,7 +74,7 @@ export default function EventCenter() {
         postalCode: SITE.postalCode,
         addressCountry: SITE.country,
       },
-      maximumAttendeeCapacity: 250,
+      maximumAttendeeCapacity: 200,
       amenityFeature: [
         { '@type': 'LocationFeatureSpecification', name: 'Outside Caterers Welcome', value: true },
         { '@type': 'LocationFeatureSpecification', name: 'On-site Audio/Visual', value: true },
@@ -90,7 +90,7 @@ export default function EventCenter() {
         eyebrow="The Event Center"
         image="/photos/venue-ballroom-empty.jpg"
         title={<>One ballroom. <em className="italic font-light">Every</em> kind of gathering.</>}
-        intro="A 45 × 64 ballroom plus three flexible breakout rooms — built to host meetings, banquets, and weddings up to 250 guests. Outside caterers welcome, on-site suites for overnight guests, and one coordinator from booking through teardown."
+        intro="A 55 × 46 ballroom (2,530 sq ft) plus flexible half-room configurations — built to host meetings, banquets, and weddings up to 200 guests. Outside caterers welcome, on-site suites for overnight guests, and one coordinator from booking through teardown."
       />
 
       {/* CALL-FIRST CTA BAR — directly under hero so ad traffic sees it immediately */}
