@@ -65,7 +65,7 @@ export default function SocialEvents() {
         eyebrow="Event Center · Social"
         image="/photos/venue-ballroom-empty.jpg"
         title={<>Banquets that <em className="italic font-light">feel</em> like home.</>}
-        intro="Showers, reunions, birthdays, holiday parties, religious & cultural gatherings — up to 200 seated (350 cocktail). Bring your own caterer for the dishes that matter, or use ours. One ballroom. Every tradition welcome."
+        intro="Showers, reunions, birthdays, holiday parties, religious & cultural gatherings — up to 200 seated (350 standing cocktail). Bring your own caterer for the dishes that matter, or use ours. One ballroom. Every tradition welcome."
       />
 
       {/* Breadcrumb */}

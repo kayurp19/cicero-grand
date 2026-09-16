@@ -149,14 +149,14 @@ export default function CorporateMeetings() {
                     <tr className="text-left">
                       <th className="px-6 py-4 font-medium sticky left-0 bg-muted/50 z-10">Space</th>
                       <th className="px-3 py-4 font-medium whitespace-nowrap">Size</th>
-                      <th className="px-3 py-4 font-medium text-center whitespace-nowrap" title="Rounds of 8–10 for plated meals">Banquet<br/><span className="text-[10px] font-normal text-muted-foreground uppercase tracking-wider">Rounds</span></th>
+                      <th className="px-3 py-4 font-medium text-center whitespace-nowrap" title="Rounds of 8–10 for plated meals — seated dinner">Banquet<br/><span className="text-[10px] font-normal text-muted-foreground uppercase tracking-wider">Seated • Rounds</span></th>
                       <th className="px-3 py-4 font-medium text-center whitespace-nowrap" title="Half-round tables facing front for talks with meals">Crescent<br/><span className="text-[10px] font-normal text-muted-foreground uppercase tracking-wider">Rounds</span></th>
-                      <th className="px-3 py-4 font-medium text-center" title="Rows of chairs, no tables">Theater</th>
-                      <th className="px-3 py-4 font-medium text-center" title="6ft tables in rows, 3 per table">Classroom</th>
-                      <th className="px-3 py-4 font-medium text-center" title="Single long conference table">Conference</th>
+                      <th className="px-3 py-4 font-medium text-center whitespace-nowrap" title="Rows of chairs, no tables — seated ceremony or keynote">Theater<br/><span className="text-[10px] font-normal text-muted-foreground uppercase tracking-wider">Seated • Rows</span></th>
+                      <th className="px-3 py-4 font-medium text-center whitespace-nowrap" title="6ft tables in rows, 3 per table — training-style seated">Classroom<br/><span className="text-[10px] font-normal text-muted-foreground uppercase tracking-wider">Seated • Training</span></th>
+                      <th className="px-3 py-4 font-medium text-center whitespace-nowrap" title="Single long conference table — executive boardroom-style">Conference<br/><span className="text-[10px] font-normal text-muted-foreground uppercase tracking-wider">Seated • One table</span></th>
                       <th className="px-3 py-4 font-medium text-center whitespace-nowrap" title="Perimeter tables, open in middle">U-Shape</th>
                       <th className="px-3 py-4 font-medium text-center whitespace-nowrap" title="Perimeter tables, closed square">Hollow<br/><span className="text-[10px] font-normal text-muted-foreground uppercase tracking-wider">Square</span></th>
-                      <th className="px-3 py-4 font-medium text-center" title="Standing cocktail, no seating">Reception</th>
+                      <th className="px-3 py-4 font-medium text-center whitespace-nowrap" title="Standing cocktail-style — no chairs, high-tops around perimeter, guests mingle">Reception<br/><span className="text-[10px] font-normal text-muted-foreground uppercase tracking-wider">Standing • Cocktail</span></th>
                       <th className="px-3 py-4 font-medium text-center whitespace-nowrap" title="8×10 vendor booths with aisles">Exhibits<br/><span className="text-[10px] font-normal text-muted-foreground uppercase tracking-wider">8×10 booths</span></th>
                     </tr>
                   </thead>
@@ -178,6 +178,9 @@ export default function CorporateMeetings() {
                     ))}
                   </tbody>
                 </table>
+              </div>
+              <div className="px-6 py-4 border-t border-border bg-muted/20 text-xs text-muted-foreground leading-relaxed">
+                <span className="font-medium text-foreground">Reading the numbers:</span> Banquet, Crescent, Theater, Classroom, Conference, U-Shape, and Hollow Square are <span className="font-medium">seated</span> capacities (guests at tables or in chairs). Reception is <span className="font-medium">standing cocktail-style</span> — no chairs, high-tops around the perimeter, guests mingle. Exhibits is 8×10 vendor booths for trade shows.
               </div>
             </div>
           </Reveal>
