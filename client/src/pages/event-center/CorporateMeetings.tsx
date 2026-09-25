@@ -2,6 +2,7 @@ import { Check, ChevronDown } from 'lucide-react';
 import { Link } from 'wouter';
 import { PageHero } from '../../components/PageHero';
 import { Reveal } from '../../components/Reveal';
+import { VenueGallery } from '../../components/VenueGallery';
 import { useContent } from '../../lib/content';
 import { useSeo, SITE } from '../../hooks/useSeo';
 import eventsSeed from '../../content/events.json';
@@ -18,7 +19,7 @@ export default function CorporateMeetings() {
     description:
       'Conference & meeting rooms 6 min from Micron, off I-81 Exit 98. Free A/V, Wi-Fi & parking. Catered breakfast and lunch packages. Discounted suite blocks for out-of-town attendees. Call (315) 752-0150.',
     canonicalPath: '/event-center/corporate-meetings',
-    ogImage: '/photos/venue-ballroom-empty.jpg',
+    ogImage: '/photos/cicero-grand-ballroom-wide.jpg',
     jsonLd: [
       {
         '@context': 'https://schema.org',
@@ -29,7 +30,7 @@ export default function CorporateMeetings() {
         url: `${SITE.url}/event-center/corporate-meetings`,
         telephone: SITE.salesPhone,
         email: SITE.email,
-        image: `${SITE.url}/photos/venue-ballroom-empty.jpg`,
+        image: `${SITE.url}/photos/cicero-grand-ballroom-wide.jpg`,
         address: {
           '@type': 'PostalAddress',
           streetAddress: SITE.street,
@@ -70,7 +71,7 @@ export default function CorporateMeetings() {
     <>
       <PageHero
         eyebrow="Event Center · Corporate"
-        image="/photos/venue-ballroom-empty.jpg"
+        image="/photos/cicero-grand-ballroom-wide.jpg"
         seoH1="Corporate Meeting Rooms & Conference Space in Syracuse, NY"
         title={<>Meetings that <em className="italic font-light">land</em>.</>}
         intro="Half-day sessions, full-day conferences, training, and off-sites. 9 setup styles — banquet rounds, crescent, theater, classroom, conference, U-shape, hollow square, reception, or trade-show exhibits. Breakfast, lunch, and breaks built around your agenda."
@@ -186,6 +187,8 @@ export default function CorporateMeetings() {
           </Reveal>
         </div>
       </section>
+
+      <VenueGallery compact />
 
       {/* CORPORATE PACKAGES */}
       {corporate && (

@@ -37,7 +37,7 @@ const MENUS = [
     title: 'Sports Teams & Tournament Travel',
     blurb:
       'Boxed road meals, pizza & wings, and taco bars built for the bus. Plus team rates on all-suite rooms, fast-service team meals, and free bus parking right outside the event center.',
-    image: '/photos/venue-ballroom-empty.jpg',
+    image: '/photos/cicero-grand-ballroom-wide.jpg',
   },
   {
     slug: 'hosted-open-bar',

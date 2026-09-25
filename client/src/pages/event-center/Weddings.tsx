@@ -2,6 +2,7 @@ import { Check, Star, ChevronDown } from 'lucide-react';
 import { Link } from 'wouter';
 import { PageHero } from '../../components/PageHero';
 import { Reveal } from '../../components/Reveal';
+import { VenueGallery } from '../../components/VenueGallery';
 import { useContent } from '../../lib/content';
 import { useSeo, SITE } from '../../hooks/useSeo';
 import weddingsSeed from '../../content/weddings.json';
@@ -16,7 +17,7 @@ export default function Weddings() {
     description:
       'Syracuse wedding venue for 30–200 guests. 5.0/5.0 on WeddingWire. Bring your own caterer, on-site suites for guests, outdoor ceremony option, Getting Ready Room. Micro weddings, elopements, and full receptions. Call (315) 752-0150.',
     canonicalPath: '/event-center/weddings',
-    ogImage: '/photos/venue-ballroom-empty.jpg',
+    ogImage: '/photos/cicero-grand-ballroom-wide.jpg',
     jsonLd: [
       {
         '@context': 'https://schema.org',
@@ -27,7 +28,7 @@ export default function Weddings() {
         url: `${SITE.url}/event-center/weddings`,
         telephone: SITE.salesPhone,
         email: SITE.email,
-        image: `${SITE.url}/photos/venue-ballroom-empty.jpg`,
+        image: `${SITE.url}/photos/cicero-grand-ballroom-wide.jpg`,
         maximumAttendeeCapacity: 350,
         address: {
           '@type': 'PostalAddress',
@@ -74,7 +75,7 @@ export default function Weddings() {
     <>
       <PageHero
         eyebrow="Event Center · Weddings"
-        image="/photos/venue-ballroom-empty.jpg"
+        image="/photos/cicero-grand-ballroom-wide.jpg"
         seoH1="Wedding Venues in Syracuse, NY — The Cicero Grand"
         title={<>Your day. <em className="italic font-light">All</em> in one place.</>}
         intro={w.intro}
@@ -132,6 +133,8 @@ export default function Weddings() {
           </Reveal>
         </div>
       </section>
+
+      <VenueGallery compact />
 
       {/* DAY-OF FLOW */}
       <section className="bg-foreground text-background py-24 lg:py-32">

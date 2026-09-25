@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { X } from 'lucide-react';
 import { PageHero } from '../components/PageHero';
 import { Reveal } from '../components/Reveal';
+import { VenueGallery } from '../components/VenueGallery';
 import { useContent } from '../lib/content';
 import { useSeo } from '../hooks/useSeo';
 import gallerySeed from '../content/gallery.json';
@@ -24,6 +25,8 @@ export default function Gallery() {
         image="/photos/lobby-2.jpg"
         title={<>The <em className="italic font-light">place</em> in pictures.</>}
       />
+
+      <VenueGallery />
 
       <section className="bg-background py-24 lg:py-32">
         <div className="max-w-[1400px] mx-auto px-5 lg:px-10">

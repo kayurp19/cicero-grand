@@ -23,7 +23,7 @@ const weddingsSchema = [
     "url": `${SITE_URL}/event-center/weddings`,
     "telephone": "+1-315-752-0150",
     "email": "sales@cicerogrand.com",
-    "image": `${SITE_URL}/photos/venue-ballroom-empty.jpg`,
+    "image": `${SITE_URL}/photos/cicero-grand-ballroom-wide.jpg`,
     "maximumAttendeeCapacity": 180,
     "address": {
       "@type": "PostalAddress",
@@ -75,7 +75,7 @@ const corporateSchema = [
     "url": `${SITE_URL}/event-center/corporate-meetings`,
     "telephone": "+1-315-752-0150",
     "email": "sales@cicerogrand.com",
-    "image": `${SITE_URL}/photos/venue-ballroom-empty.jpg`,
+    "image": `${SITE_URL}/photos/cicero-grand-ballroom-wide.jpg`,
     "maximumAttendeeCapacity": 220,
     "address": {
       "@type": "PostalAddress",
@@ -318,6 +318,20 @@ function injectRouteSchema(html: string, route: string): string {
     `<link rel="canonical" href="${SITE_URL}${route}" />`
   );
 
+  // Social crawlers do not execute React. Use the real venue photo in the
+  // initial HTML so Facebook and other shared event links preview correctly.
+  if (route === "/gallery" || route.startsWith("/event-center")) {
+    const image = `${SITE_URL}/photos/cicero-grand-ballroom-wide.jpg`;
+    const safeTitle = config.title.replace(/&/g, "&amp;").replace(/"/g, "&quot;");
+    out = out.replace(/<meta property="og:title" content="[^"]*"\s*\/?>/, `<meta property="og:title" content="${safeTitle}" />`);
+    out = out.replace(/<meta property="og:url" content="[^"]*"\s*\/?>/, `<meta property="og:url" content="${SITE_URL}${route}" />`);
+    out = out.replace(/<meta (?:property|name)="(?:og:image|og:image:alt|twitter:image|twitter:image:alt)"[^>]*>/g, "");
+    out = out.replace("</head>", `<meta property="og:image" content="${image}" />
+      <meta property="og:image:alt" content="The actual Cicero Grand ballroom in Cicero, NY" />
+      <meta name="twitter:image" content="${image}" />
+      <meta name="twitter:image:alt" content="The actual Cicero Grand ballroom in Cicero, NY" />
+    </head>`);
+  }
   return out;
 }
 

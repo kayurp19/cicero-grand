@@ -2,6 +2,7 @@ import { Check, ChevronDown } from 'lucide-react';
 import { Link } from 'wouter';
 import { PageHero } from '../../components/PageHero';
 import { Reveal } from '../../components/Reveal';
+import { VenueGallery } from '../../components/VenueGallery';
 import { useContent } from '../../lib/content';
 import { useSeo, SITE } from '../../hooks/useSeo';
 import eventsSeed from '../../content/events.json';
@@ -36,7 +37,7 @@ export default function SocialEvents() {
     description:
       'Syracuse-area banquet hall for showers, reunions, Quinceañeras, holiday parties, and celebrations of life. Outside caterers welcome. Buffet, plated, or stations. On-site hotel suites for guests. Call (315) 752-0150.',
     canonicalPath: '/event-center/social-events',
-    ogImage: '/photos/venue-ballroom-empty.jpg',
+    ogImage: '/photos/cicero-grand-ballroom-wide.jpg',
     jsonLd: {
       '@context': 'https://schema.org',
       '@type': 'EventVenue',
@@ -46,7 +47,7 @@ export default function SocialEvents() {
       url: `${SITE.url}/event-center/social-events`,
       telephone: SITE.salesPhone,
       email: SITE.email,
-      image: `${SITE.url}/photos/venue-ballroom-empty.jpg`,
+      image: `${SITE.url}/photos/cicero-grand-ballroom-wide.jpg`,
       address: {
         '@type': 'PostalAddress',
         streetAddress: SITE.street,
@@ -63,10 +64,12 @@ export default function SocialEvents() {
     <>
       <PageHero
         eyebrow="Event Center · Social"
-        image="/photos/venue-ballroom-empty.jpg"
+        image="/photos/cicero-grand-ballroom-wide.jpg"
         title={<>Banquets that <em className="italic font-light">feel</em> like home.</>}
         intro="Showers, reunions, birthdays, holiday parties, religious & cultural gatherings — up to 200 seated (350 standing cocktail). Bring your own caterer for the dishes that matter, or use ours. One ballroom. Every tradition welcome."
       />
+
+      <VenueGallery compact />
 
       {/* Breadcrumb */}
       <nav className="bg-background border-b border-border" aria-label="Breadcrumb">

@@ -544,6 +544,8 @@ export default function Home() {
       </section>
 
       {/* CLOSING CTA */}
+      <VenueGallery compact />
+
       {/* Popular searches — internal linking hub for SEO. Passes homepage link
          equity to high-value landing pages (weddings, corporate meetings,
          Syracuse hotels) so Google treats them as prominent. */}
@@ -625,3 +627,4 @@ export default function Home() {
     </>
   );
 }
+import { VenueGallery } from '../components/VenueGallery';

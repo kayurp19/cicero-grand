@@ -2,6 +2,7 @@ import { Link } from 'wouter';
 import { Check, ArrowUpRight, ChevronDown, Phone, Calendar } from 'lucide-react';
 import { PageHero } from '../components/PageHero';
 import { Reveal } from '../components/Reveal';
+import { VenueGallery } from '../components/VenueGallery';
 import { useContent } from '../lib/content';
 import { useSeo, SITE } from '../hooks/useSeo';
 import eventsSeed from '../content/events.json';
@@ -14,7 +15,7 @@ const categories = [
     title: 'Corporate Meetings & Conferences',
     blurb:
       'Boardrooms, classrooms, breakouts, and full-day conferences — with A/V, breakfast, lunch, and discounted suite blocks for out-of-town attendees.',
-    image: '/photos/venue-corporate-banquet.jpg',
+    image: '/photos/cicero-grand-ballroom-daylight.webp',
     cta: 'Plan a meeting',
   },
   {
@@ -23,7 +24,7 @@ const categories = [
     title: 'Social Events & Banquets',
     blurb:
       'Showers, birthdays, reunions, holiday parties, religious & cultural gatherings. Bring your own caterer — or use ours. Buffet, plated, or stations.',
-    image: '/photos/venue-tablescape.jpg',
+    image: '/photos/cicero-grand-event-entrance.webp',
     cta: 'Plan a banquet',
   },
   {
@@ -32,7 +33,7 @@ const categories = [
     title: 'Weddings',
     blurb:
       'Ceremony to last dance — all on-site. Rated 5.0/5.0 on WeddingWire. Outside caterers welcome. Getting Ready Room and guest-room block included.',
-    image: '/photos/venue-wedding-reception.jpg',
+    image: '/photos/cicero-grand-ballroom-chandeliers.webp',
     cta: 'Plan a wedding',
   },
   {
@@ -41,7 +42,7 @@ const categories = [
     title: 'Banquet & Catering Menus',
     blurb:
       'Download our wedding, corporate, social, sports-team, and hosted-bar menus — every package and option in branded PDFs. Custom quote within one business day.',
-    image: '/photos/venue-tablescape.jpg',
+    image: '/photos/cicero-grand-event-entrance.webp',
     cta: 'See the menus',
   },
 ];
@@ -55,7 +56,7 @@ export default function EventCenter() {
     description:
       'All-in-one Syracuse-area event venue. Wedding ballroom, corporate meeting rooms, and banquet hall. Outside caterers welcome. On-site hotel suites for out-of-town guests. Tour the space — call (315) 752-0150.',
     canonicalPath: '/event-center',
-    ogImage: '/photos/venue-ballroom-empty.jpg',
+    ogImage: '/photos/cicero-grand-ballroom-wide.jpg',
     jsonLd: {
       '@context': 'https://schema.org',
       '@type': 'EventVenue',
@@ -65,7 +66,7 @@ export default function EventCenter() {
       url: `${SITE.url}/event-center`,
       telephone: SITE.salesPhone,
       email: SITE.email,
-      image: `${SITE.url}/photos/venue-ballroom-empty.jpg`,
+      image: `${SITE.url}/photos/cicero-grand-ballroom-wide.jpg`,
       address: {
         '@type': 'PostalAddress',
         streetAddress: SITE.street,
@@ -88,7 +89,7 @@ export default function EventCenter() {
     <>
       <PageHero
         eyebrow="The Event Center"
-        image="/photos/venue-ballroom-empty.jpg"
+        image="/photos/cicero-grand-ballroom-wide.jpg"
         title={<>One ballroom. <em className="italic font-light">Every</em> kind of gathering.</>}
         intro="A 60 × 46 ballroom (2,760 sq ft) plus flexible half-room configurations and 9 setup styles — built to host meetings, banquets, and weddings up to 200 seated (350 standing cocktail). Outside caterers welcome, on-site suites for overnight guests, and one coordinator from booking through teardown."
       />
@@ -122,6 +123,8 @@ export default function EventCenter() {
           </div>
         </div>
       </section>
+
+      <VenueGallery />
 
       {/* CATEGORY CARDS — 3 sub-pages */}
       <section className="bg-background py-24 lg:py-32">
@@ -338,7 +341,7 @@ export default function EventCenter() {
             </div>
           </div>
           <div className="col-span-12 lg:col-span-7 grid grid-cols-2 gap-3">
-            <img src="/photos/venue-ballroom-empty.jpg" alt="The Ballroom" loading="lazy" className="aspect-[4/5] object-cover rounded-3xl" />
+            <img src="/photos/cicero-grand-ballroom-wide.jpg" alt="The Ballroom" loading="lazy" className="aspect-[4/5] object-cover rounded-3xl" />
             <img src="/photos/venue-dance-floor.jpg" alt="Reception with dance floor" loading="lazy" className="aspect-[4/5] object-cover rounded-3xl mt-10" />
           </div>
         </div>
