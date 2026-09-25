@@ -9,6 +9,12 @@ import { useSeo } from '../hooks/useSeo';
 
 type Photo = { src: string; label: string; alt: string };
 type Section = { id: string; title: string; intro: string; photos: Photo[] };
+// Byte-identical aliases in the existing library; retain one copy in the gallery.
+const duplicatePhotos = new Set([
+  'king-suite-2.jpg', 'two-queen-suite-2.jpg', 'two-queen-suite-4.jpg',
+  'king-jacuzzi-2.jpg', 'lobby-2.jpg', 'lobby-sitting-2.jpg',
+  'pool-2.jpg', 'breakfast-2.jpg', 'exterior-2.jpg', 'exterior-3.jpg',
+]);
 const sections = [
   { id: 'events', title: 'Event Center', intro: 'Explore the ballroom and entrance spaces before event setup.' },
   { id: 'rooms', title: 'Guest Rooms', intro: 'A closer look at our suites, sleeping areas and guest bathrooms.' },
@@ -47,7 +53,7 @@ export default function Gallery() {
   const groups: Section[] = sections.map(s => ({
     ...s,
     photos: s.id === 'events' ? realVenue : [...new Set(photos)]
-      .filter(src => category(src) === s.id)
+      .filter(src => category(src) === s.id && !duplicatePhotos.has(src.split('/').pop() || ''))
       .map(src => ({ src, label: label(src), alt: `${label(src)} at the Cicero Grand in Cicero, NY` })),
   })).filter(s => s.photos.length > 0);
   const current = open?.section.photos[open.index];
