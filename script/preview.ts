@@ -9,6 +9,6 @@ for (const file of await readdir(assetDir)) {
   if (!file.endsWith('.js')) continue;
   const path = `${assetDir}/${file}`;
   const original = await readFile(path, 'utf8');
-  const modified = original.replace(/(["'`])\/(photos|brand|menus)\//g, '$1https://www.cicerogrand.com/$2/');
+  const modified = original.replace(/(["'`])\/(photos|brand|menus)\//g, '$1./$2/');
   await writeFile(path, modified);
 }
