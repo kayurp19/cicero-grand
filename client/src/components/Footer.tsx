@@ -6,7 +6,9 @@ import site from '../content/site.json';
 export function Footer() {
   return (
     <footer className="bg-foreground text-background mt-32" data-testid="site-footer">
-      <div className="max-w-[1400px] mx-auto px-5 lg:px-10 pt-20 pb-10">
+      {/* Keep navigation and accessibility assistance visible and crawlable,
+          but do not let shared boilerplate replace page-specific snippets. */}
+      <div data-nosnippet="" className="max-w-[1400px] mx-auto px-5 lg:px-10 pt-20 pb-10">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mb-16">
           <div className="md:col-span-5">
             <Logo textClassName="text-background" />

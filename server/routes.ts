@@ -251,7 +251,6 @@ export async function registerRoutes(
     // SEO landing pages (geo + intent)
     { path: "/hotels-syracuse-ny", changefreq: "weekly", priority: "0.9" },
     { path: "/hotel-syracuse-ny", changefreq: "weekly", priority: "0.9" },
-    { path: "/cicero-ny-hotels", changefreq: "weekly", priority: "0.9" },
     { path: "/hotels-near-micron", changefreq: "weekly", priority: "0.9" },
     { path: "/hotels-near-syracuse-airport", changefreq: "weekly", priority: "0.85" },
     { path: "/hotels-near-destiny-usa", changefreq: "weekly", priority: "0.85" },
@@ -261,10 +260,7 @@ export async function registerRoutes(
     { path: "/hotels-near-upstate-medical", changefreq: "weekly", priority: "0.85" },
     { path: "/hotels-near-nys-fair", changefreq: "weekly", priority: "0.85" },
     { path: "/pet-friendly-hotels-syracuse", changefreq: "weekly", priority: "0.85" },
-    { path: "/hotels-brewerton-ny", changefreq: "weekly", priority: "0.85" },
     { path: "/hotels-clay-ny", changefreq: "weekly", priority: "0.85" },
-    { path: "/hotels-baldwinsville-ny", changefreq: "weekly", priority: "0.85" },
-    { path: "/hotels-east-syracuse-ny", changefreq: "weekly", priority: "0.85" },
     { path: "/hotels-liverpool-ny", changefreq: "weekly", priority: "0.85" },
     // Corporate & institutional landing pages
     { path: "/hotels-near-lockheed-martin-syracuse", changefreq: "weekly", priority: "0.85" },

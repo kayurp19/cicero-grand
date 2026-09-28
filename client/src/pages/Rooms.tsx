@@ -13,7 +13,7 @@ export default function Rooms() {
   useSeo({
     title: 'All-Suite Rooms · Sleeps 4 · The Cicero Grand Hotel, Syracuse NY',
     description:
-      'Spacious all-suite rooms near Syracuse, NY — each suite sleeps up to 4 with a separate living area, kitchenette, and free hot breakfast. Book direct for the lowest rate.',
+      'Explore king, two-queen and accessible suites at Cicero Grand in Cicero, NY. Microwave, mini-fridge and free hot breakfast. View room options and book direct.',
     canonicalPath: '/rooms',
     ogImage: '/photos/exterior-entrance.jpg',
     jsonLd: {

@@ -2,6 +2,7 @@ import express from 'express';
 import type { Express } from 'express';
 import fs from "node:fs";
 import path from "node:path";
+import { PAGE_SEO } from "../shared/page-seo";
 
 // =============================================================================
 // Per-route JSON-LD injection
@@ -289,9 +290,14 @@ const ROUTE_SCHEMA: Record<string, { title: string; description: string; schema:
   },
 };
 
-function injectRouteSchema(html: string, route: string): string {
-  const config = ROUTE_SCHEMA[route];
-  if (!config) return html;
+export function injectRouteSchema(html: string, route: string): string {
+  const existing = ROUTE_SCHEMA[route];
+  const metadata = PAGE_SEO[route];
+  if (!existing && !metadata) return html;
+  const config = { ...existing, ...metadata, schema: existing?.schema ?? [] };
+  const escapeHtml = (value: string) => value
+    .replace(/&/g, "&amp;").replace(/"/g, "&quot;")
+    .replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
   const scriptBlocks = config.schema
     .map((s) => `    <script type="application/ld+json">\n${JSON.stringify(s, null, 2)}\n    </script>`)
@@ -303,13 +309,13 @@ function injectRouteSchema(html: string, route: string): string {
   // Override the <title> for this route
   out = out.replace(
     /<title>[^<]*<\/title>/,
-    `<title>${config.title}</title>`
+    `<title>${escapeHtml(config.title)}</title>`
   );
 
   // Override the meta description
   out = out.replace(
     /<meta name="description" content="[^"]*"\s*\/?>/,
-    `<meta name="description" content="${config.description}" />`
+    `<meta name="description" content="${escapeHtml(config.description)}" />`
   );
 
   // Update canonical
@@ -317,6 +323,19 @@ function injectRouteSchema(html: string, route: string): string {
     /<link rel="canonical" href="[^"]*"\s*\/?>/,
     `<link rel="canonical" href="${SITE_URL}${route}" />`
   );
+
+  // Synchronize social metadata on every route, not just the event pages.
+  for (const [attr, key, value] of [
+    ["property", "og:title", config.title],
+    ["property", "og:description", config.description],
+    ["property", "og:url", `${SITE_URL}${route === "/" ? "" : route}`],
+    ["name", "twitter:title", config.title],
+    ["name", "twitter:description", config.description],
+  ]) {
+    const tag = `<meta ${attr}="${key}" content="${escapeHtml(value)}" />`;
+    const pattern = new RegExp(`<meta ${attr}="${key}" content="[^"]*"\\s*\\/?>`);
+    out = pattern.test(out) ? out.replace(pattern, tag) : out.replace("</head>", `${tag}\n</head>`);
+  }
 
   // Social crawlers do not execute React. Use the real venue photo in the
   // initial HTML so Facebook and other shared event links preview correctly.

@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { PAGE_SEO } from "@shared/page-seo";
 
 const SITE_URL = "https://www.cicerogrand.com";
 
@@ -40,6 +41,9 @@ function setLink(rel: string, href: string) {
 const JSONLD_ID = "ld-json-page";
 
 export function useSeo({ title, description, canonicalPath, ogImage, jsonLd, noindex }: SeoOptions) {
+  const sharedMeta = PAGE_SEO[canonicalPath ?? window.location.pathname];
+  title = sharedMeta?.title ?? title;
+  description = sharedMeta?.description ?? description;
   useEffect(() => {
     document.title = title;
 
@@ -50,6 +54,8 @@ export function useSeo({ title, description, canonicalPath, ogImage, jsonLd, noi
     setMeta('meta[property="og:title"]', "property", "og:title", title);
     setMeta('meta[property="og:description"]', "property", "og:description", description);
     setMeta('meta[property="og:type"]', "property", "og:type", "website");
+    setMeta('meta[name="twitter:title"]', "name", "twitter:title", title);
+    setMeta('meta[name="twitter:description"]', "name", "twitter:description", description);
 
     const path = canonicalPath ?? window.location.pathname;
     const canonical = `${SITE_URL}${path === "/" ? "" : path}`;

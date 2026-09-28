@@ -52,7 +52,7 @@ export default function Gallery() {
   const realVenue = venuePhotos.map(p => ({ src: `/photos/${p.slug}.webp`, label: p.label, alt: p.alt }));
   const groups: Section[] = sections.map(s => ({
     ...s,
-    photos: s.id === 'events' ? realVenue : [...new Set(photos)]
+    photos: s.id === 'events' ? realVenue : Array.from(new Set(photos))
       .filter(src => category(src) === s.id && !duplicatePhotos.has(src.split('/').pop() || ''))
       .map(src => ({ src, label: label(src), alt: `${label(src)} at the Cicero Grand in Cicero, NY` })),
   })).filter(s => s.photos.length > 0);

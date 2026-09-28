@@ -4,14 +4,16 @@ import { PageHero } from '../components/PageHero';
 import { Reveal } from '../components/Reveal';
 import { useSeo, SITE } from '../hooks/useSeo';
 import landingData from '../content/landing-pages.json';
+import { PAGE_SEO } from '@shared/page-seo';
 
 interface LandingPageProps {
   slug: keyof typeof landingData;
 }
 
 export default function LandingPage({ slug }: LandingPageProps) {
-  const data = (landingData as any)[slug];
-  if (!data) return null;
+  const source = (landingData as any)[slug];
+  if (!source) return null;
+  const data = { ...source, ...PAGE_SEO[source.path] };
 
   useSeo({
     title: data.title,
