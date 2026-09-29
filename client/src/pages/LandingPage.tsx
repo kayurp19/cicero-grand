@@ -14,6 +14,7 @@ export default function LandingPage({ slug }: LandingPageProps) {
   const source = (landingData as any)[slug];
   if (!source) return null;
   const data = { ...source, ...PAGE_SEO[source.path] };
+  const correctedAdPage = ['syracuse-airport', 'micron', 'syracuse-hotels'].includes(slug);
 
   useSeo({
     title: data.title,
@@ -44,12 +45,12 @@ export default function LandingPage({ slug }: LandingPageProps) {
           latitude: SITE.latitude,
           longitude: SITE.longitude,
         },
-        aggregateRating: {
+        ...(!correctedAdPage ? { aggregateRating: {
           '@type': 'AggregateRating',
           ratingValue: '5.0',
           reviewCount: data.reviews ? String(data.reviews.length + 31) : '31',
           bestRating: '5',
-        },
+        } } : {}),
         ...(data.reviews && data.reviews.length > 0
           ? {
               review: data.reviews.map((r: any) => ({
@@ -91,7 +92,7 @@ export default function LandingPage({ slug }: LandingPageProps) {
   return (
     <>
       <PageHero
-        eyebrow={`${data.venue.drive} from The Cicero Grand`}
+        eyebrow={correctedAdPage ? 'Cicero, NY · I-81 Exit 98' : `${data.venue.drive} from The Cicero Grand`}
         image={data.ogImage}
         title={
           <>
@@ -111,25 +112,25 @@ export default function LandingPage({ slug }: LandingPageProps) {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             <div className="bg-card border border-card-border rounded-2xl p-5">
               <div className="text-xs uppercase tracking-[0.16em] text-muted-foreground mb-1">
-                Drive time
+                {correctedAdPage ? 'Location' : 'Drive time'}
               </div>
               <div className="font-display text-3xl tracking-tight tabular-nums">
-                {data.venue.drive}
+                {correctedAdPage ? 'Cicero, NY' : data.venue.drive}
               </div>
             </div>
             <div className="bg-card border border-card-border rounded-2xl p-5">
               <div className="text-xs uppercase tracking-[0.16em] text-muted-foreground mb-1">
-                Distance
+                {correctedAdPage ? 'Access' : 'Distance'}
               </div>
               <div className="font-display text-3xl tracking-tight tabular-nums">
-                {data.venue.miles.split(' ')[0]} mi
+                {correctedAdPage ? 'I-81 Exit 98' : `${data.venue.miles.split(' ')[0]} mi`}
               </div>
             </div>
             <div className="bg-card border border-card-border rounded-2xl p-5">
               <div className="text-xs uppercase tracking-[0.16em] text-muted-foreground mb-1">
-                Sleeps
+                {correctedAdPage ? 'Room type' : 'Sleeps'}
               </div>
-              <div className="font-display text-3xl tracking-tight tabular-nums">4</div>
+              <div className="font-display text-3xl tracking-tight tabular-nums">{correctedAdPage ? 'All suites' : '4'}</div>
             </div>
             <div className="bg-card border border-card-border rounded-2xl p-5">
               <div className="text-xs uppercase tracking-[0.16em] text-muted-foreground mb-1">
@@ -492,7 +493,7 @@ export default function LandingPage({ slug }: LandingPageProps) {
         <div className="max-w-[1400px] mx-auto px-5 lg:px-10 text-center">
           <Reveal>
             <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
-              {data.venue.drive} from {data.venue.name}
+              {correctedAdPage ? 'Cicero, NY · Check availability and book direct' : `${data.venue.drive} from ${data.venue.name}`}
             </span>
             <h2 className="font-display text-[clamp(2rem,5vw,3.6rem)] leading-[1.05] tracking-tight mt-3 max-w-3xl mx-auto text-balance">
               Make The Cicero Grand your basecamp.

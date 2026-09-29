@@ -15,7 +15,7 @@ const tiers = [
     nights: '7+ nights',
     rate: 'Contact us',
     note: 'special crew rates — call (315) 715-7410',
-    bullets: ['Free hot breakfast', 'Indoor pool, fitness center, business center', 'Free parking + EV charging', 'Pet-friendly'],
+    bullets: ['Free hot breakfast', 'Indoor pool, fitness center, business center', 'Free parking', 'Pet-friendly'],
   },
   {
     name: '10–24 rooms',
@@ -52,7 +52,7 @@ const amenities = [
   { icon: Dumbbell, label: '24/7 fitness center' },
   { icon: Wifi, label: 'Fast free Wi-Fi' },
   { icon: Briefcase, label: 'Business center' },
-  { icon: Car, label: 'Free parking + EV' },
+  { icon: Car, label: 'Free parking' },
   { icon: Dog, label: 'Pet-friendly' },
 ];
 
@@ -165,7 +165,7 @@ ${fd.get('notes') || '—'}`,
                 Block rates that <em className="italic font-light">scale</em> with your project.
               </h2>
               <p className="mt-6 text-base text-muted-foreground leading-relaxed">
-                Weekly and monthly pricing, billed direct or by purchase order. No minimum commitment — scale up or down by week as your crews ramp. Every rate is all-in: breakfast, gym, pool, parking, EV charging, Wi-Fi.
+                Ask about weekly and monthly pricing for your crew. Rates, availability, billing arrangements and stay terms are confirmed with your quote. Enjoy free breakfast, parking and Wi-Fi, plus our indoor pool and fitness center.
               </p>
             </div>
           </Reveal>

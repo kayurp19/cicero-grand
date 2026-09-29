@@ -121,146 +121,87 @@
   },
   "syracuse-airport": {
     "path": "/hotels-near-syracuse-airport",
-    "title": "Hotels Near Syracuse Hancock Airport (SYR) · 14 Min · The Cicero Grand",
-    "description": "Just 14 minutes from Syracuse Hancock International Airport. All-suite rooms, free breakfast, indoor pool, free parking — leave your car while you fly. Book direct.",
+    "title": "Hotel Near Syracuse Hancock Airport (SYR) | Cicero Grand",
+    "description": "Stay at Cicero Grand near Syracuse Hancock Airport. All-suite rooms in Cicero, NY, with free breakfast, parking and Wi-Fi. Check rates and book direct.",
     "h1": "Hotels Near Syracuse Hancock International Airport (SYR)",
-    "subtitle": "Fourteen minutes south on I-81. Free breakfast, free parking, and a king suite for the price of a downtown queen.",
+    "subtitle": "All-suite stays in Cicero, NY, with easy I-81 access, free breakfast and free parking during your stay.",
     "venue": {
       "name": "Syracuse Hancock International Airport (SYR)",
       "address": "1000 Col. Eileen Collins Blvd, Syracuse, NY 13212",
-      "drive": "14 minutes",
-      "miles": "8.5 mi north on I-81"
+      "drive": "Check current route",
+      "miles": "Hotel: I-81 Exit 98"
     },
     "ogImage": "/photos/exterior-entrance.jpg",
     "highlights": [
-      "14 minutes from SYR airport — straight shot south on I-81",
-      "All-suite rooms sleep 4 — full living area and kitchenette",
-      "Free hot breakfast starting 6:30 AM — perfect for early flights",
-      "Free parking · ask about park-and-fly rates",
-      "24-hour front desk and shuttle assistance",
-      "Pet-friendly · indoor pool · free Wi-Fi"
+      "All-suite hotel in Cicero, NY",
+      "Microwave and mini-fridge in every suite",
+      "Free hot breakfast, parking and Wi-Fi",
+      "Indoor pool and fitness center",
+      "Pet-friendly stays; contact us for current pet policies",
+      "Convenient access from I-81 Exit 98"
     ],
-    "intro": "Syracuse Hancock International (SYR) connects Central New York to Atlanta, DC, Chicago, JFK, Boston, Charlotte, and other hubs. The Cicero Grand sits fourteen minutes south on I-81 — closer than most downtown hotels, with bigger rooms and free overnight parking. Fly out early without dealing with city traffic, or land late and be checked in within twenty minutes of pulling your bag off the carousel.",
+    "intro": "Traveling through Syracuse Hancock International Airport? Stay at The Cicero Grand in Cicero, NY, off I-81 Exit 98. Settle into a suite with a microwave and mini-fridge, enjoy free hot breakfast, and use free hotel parking during your stay. Check your flight schedule and arrange transportation before you travel.",
     "why": [
       {
-        "title": "Park & fly",
-        "body": "Free parking during your stay — and we'll work with you on extended park-and-fly arrangements. Call the front desk to coordinate."
+        "title": "Suites for your trip",
+        "body": "Choose an all-suite hotel with a microwave, mini-fridge and space to settle in before or after your flight. View room details for the layout and occupancy that fit your party."
       },
       {
-        "title": "Real breakfast for early flights",
-        "body": "Hot breakfast starts at 6:30 AM. Eggs, bacon, waffles, fruit, coffee — not a granola bar in a basket. Eat first, fly second."
+        "title": "Breakfast included",
+        "body": "Free hot breakfast is included. Contact the front desk for current breakfast hours when planning an early departure."
       },
       {
-        "title": "Closer than downtown",
-        "body": "Most downtown Syracuse hotels are 20+ minutes from SYR. We're 14. Less driving, less stress, more sleep."
+        "title": "Plan your airport transfer",
+        "body": "Arrange your airport transportation separately. Call (315) 752-0150 with questions before arrival; a complimentary shuttle is not promised with your reservation."
       }
     ],
     "nearby": [
-      "Lockheed Martin (Electronics Park) — 5 min",
-      "Onondaga Lake Park — 10 min",
-      "Heid's of Liverpool — 8 min (since 1917)",
-      "Destiny USA — 12 min",
-      "Downtown Syracuse — 15 min"
+      "Syracuse Hancock International Airport (SYR)",
+      "I-81 Exit 98",
+      "Downtown Syracuse",
+      "Destiny USA",
+      "Micron project site in Clay, NY"
     ],
     "faqs": [
       {
-        "q": "How far is The Cicero Grand from Syracuse Hancock Airport?",
-        "a": "Fourteen minutes by car. Take I-81 South from the airport — no tolls, mostly highway. Ten miles total."
+        "q": "Where is the hotel located?",
+        "a": "The Cicero Grand is at 5875 Carmenica Drive, Cicero, NY 13039, off I-81 Exit 98. Use current navigation for your route and allow for traffic."
       },
       {
-        "q": "Do you offer airport shuttle service?",
-        "a": "Call the front desk at (315) 752-0150 to coordinate. We work with several local taxi and rideshare partners and can help arrange transportation."
+        "q": "Is airport transportation included?",
+        "a": "Please arrange airport transportation separately. Contact the front desk at (315) 752-0150 for questions before booking; do not assume a complimentary airport shuttle is included."
       },
       {
-        "q": "Can I park here while I fly?",
-        "a": "Yes. Parking is free during your stay, and we work with guests on extended park-and-fly arrangements — call the front desk to set this up."
+        "q": "Can I leave my car while I fly?",
+        "a": "Parking is free during your hotel stay. Contact the front desk before booking if you need parking beyond your stay; extended parking is subject to confirmation and is not included as a published park-and-fly package."
       },
       {
-        "q": "Is there free breakfast for early flights?",
-        "a": "Hot breakfast starts at 6:30 AM. If you're flying earlier, just let the front desk know — we keep coffee, fruit, and grab-and-go items available 24/7."
+        "q": "Is breakfast included?",
+        "a": "Yes, free hot breakfast is included. Ask the front desk about current serving hours before an early flight."
       },
       {
-        "q": "Do you have an airport shuttle?",
-        "a": "Yes — complimentary 24/7 shuttle to and from Syracuse Hancock International Airport. Call the front desk on arrival at (315) 752-0150."
-      },
-      {
-        "q": "How far is the hotel from SYR?",
-        "a": "About 12 minutes / 6 miles. Straight up I-81 to exit 26."
-      },
-      {
-        "q": "Can I park my car during my flight?",
-        "a": "Yes — ask about our Park, Stay & Fly package. Includes one night plus up to 7 days of free parking."
+        "q": "Do the suites have kitchenettes?",
+        "a": "No. Suites have a microwave and mini-fridge, not a kitchenette or full kitchen."
       }
     ],
     "internalLinks": [
       {
-        "title": "Hotels near Destiny USA",
-        "path": "/hotels-near-destiny-usa",
-        "description": "Ten minutes to the mall via I-81."
+        "title": "Suites and rooms",
+        "path": "/rooms",
+        "description": "Explore suite layouts and check availability."
       },
       {
-        "title": "Hotels near JMA Wireless Dome",
-        "path": "/hotels-near-jma-wireless-dome",
-        "description": "SU home game weekend? We're the closest suite hotel."
+        "title": "Hotel amenities",
+        "path": "/amenities",
+        "description": "Breakfast, indoor pool, fitness center and parking."
       },
       {
-        "title": "Hotels near Micron Megafab",
-        "path": "/hotels-near-micron",
-        "description": "Six minutes from the Clay build site."
-      },
-      {
-        "title": "Hotels near Turning Stone",
-        "path": "/hotels-near-turning-stone",
-        "description": "35 minutes to the casino — cheaper than staying on-property."
-      },
-      {
-        "title": "Hotels near Empower Amphitheater",
-        "path": "/hotels-near-empower-amphitheater",
-        "description": "10 minutes to the lakefront venue."
-      },
-      {
-        "title": "Hotels near Upstate Medical",
-        "path": "/hotels-near-upstate-medical",
-        "description": "15 minutes to Upstate — quiet suites for family stays."
-      },
-      {
-        "title": "Hotels near the NY State Fair",
-        "path": "/hotels-near-nys-fair",
-        "description": "13 minutes to the fairgrounds."
-      },
-      {
-        "title": "Hotels near RTX / Raytheon East Syracuse",
-        "path": "/hotels-near-rtx-raytheon-syracuse",
-        "description": "12 min via I-481."
-      },
-      {
-        "title": "Hotels near National Grid Syracuse",
-        "path": "/hotels-near-national-grid-syracuse",
-        "description": "Storm-response blocks & direct billing."
-      },
-      {
-        "title": "Hotels near VA Medical Center",
-        "path": "/hotels-near-va-medical-center-syracuse",
-        "description": "Veteran + patient-family rates."
-      },
-      {
-        "title": "Hotels near Le Moyne College",
-        "path": "/hotels-near-le-moyne-college",
-        "description": "Parent weekend & team blocks."
+        "title": "Contact Cicero Grand",
+        "path": "/contact",
+        "description": "Ask about your dates, room needs and group stays."
       }
     ],
-    "reviews": [
-      {
-        "rating": 5,
-        "author": "Business traveler · July 2025",
-        "text": "Suites are enormous, the bed is legitimately comfortable, and breakfast was hot at 6:15 AM when I needed it. Way better than the chain hotels closer to downtown."
-      },
-      {
-        "rating": 5,
-        "author": "Weekend guest · June 2025",
-        "text": "Booked direct and got a rate 20% better than the OTAs. Front desk upgraded us at check-in. Pool and gym were clean and empty when we used them."
-      }
-    ]
+    "reviews": []
   },
   "jma-wireless-dome": {
     "path": "/hotels-near-jma-wireless-dome",
@@ -388,155 +329,90 @@
   },
   "micron": {
     "path": "/hotels-near-micron",
-    "title": "Hotels Near Micron Megafab · 6 Min Away · The Cicero Grand",
-    "description": "Closest full-service hotel to Micron's Clay megafab. Six minutes from the build site. Extended-stay rates, direct billing, free truck parking. Book project crew rooms direct.",
+    "title": "Hotel Near Micron in Clay NY | Cicero Grand",
+    "description": "Ask about Micron crew and extended-stay lodging at Cicero Grand in Cicero, NY. Suites with a microwave and mini-fridge, free breakfast, parking and Wi-Fi.",
     "h1": "Hotels Near the Micron Megafab",
-    "subtitle": "Six minutes from the Clay build site — the closest full-service hotel to the project. Built for crews, vendors, and visiting engineers.",
+    "subtitle": "All-suite lodging for Micron project crews, contractors, vendors and visiting professionals near Clay, NY.",
     "venue": {
-      "name": "Micron Technology Megafab",
-      "address": "Clay, NY (NY-31 corridor)",
-      "drive": "6 minutes",
-      "miles": "3.2 mi north on I-81"
+      "name": "Micron project site",
+      "address": "Clay, NY",
+      "drive": "Check current route",
+      "miles": "Hotel: I-81 Exit 98"
     },
     "ogImage": "/photos/exterior-entrance.jpg",
     "highlights": [
-      "6 minutes from the Micron build site in Clay, NY",
-      "Extended-stay weekly and monthly rates available",
-      "Direct billing for approved corporate accounts",
-      "Free truck, trailer, and oversized vehicle parking",
-      "Full kitchenette in every suite — cook, store, repeat",
-      "Coin laundry on-site · pet-friendly · 24/7 front desk"
+      "All-suite hotel in Cicero, NY",
+      "Microwave and mini-fridge in every suite",
+      "Free hot breakfast, parking and Wi-Fi",
+      "Ask about weekly, monthly and crew rates",
+      "Request a quote for your dates and room count",
+      "I-81 Exit 98 in Cicero, NY"
     ],
-    "intro": "Micron's $100B megafab in Clay, NY is the largest semiconductor project in U.S. history — and it's six minutes from our front desk. The Cicero Grand was rebuilt for the people doing the work: project managers, electricians, contractors, equipment vendors, visiting engineers. Every suite sleeps four, with a separate living area and a kitchenette so you can cook your own dinner and store breakfast for the morning. Direct billing, weekly and monthly rates, and free parking for whatever you drove in.",
+    "intro": "Working on or visiting the Micron project in Clay, NY? The Cicero Grand offers 65 suites in nearby Cicero, off I-81 Exit 98. Each suite has a microwave and mini-fridge. Free hot breakfast, parking and Wi-Fi help make project stays practical. Tell our sales team your dates, number of rooms and expected length of stay for a tailored quote.",
     "why": [
       {
-        "title": "Closest full-service hotel to the build",
-        "body": "Six minutes door-to-site via I-81. No other full-service hotel is closer. Save 30+ minutes a day in commute time over staying in downtown Syracuse."
+        "title": "Micron project lodging",
+        "body": "A Cicero base for contractors, vendors, engineers and visiting project teams. Confirm your site entrance and current travel route before departure."
       },
       {
-        "title": "Built for crews",
-        "body": "Free parking for trucks, vans, and trailers. On-site coin laundry. Kitchenette in every suite — full fridge, microwave, sink, prep area. Hot breakfast 6:30 AM so you're fed before you're on the road."
+        "title": "Comfort for longer stays",
+        "body": "Suites include a microwave and mini-fridge, with free hot breakfast, Wi-Fi and parking. There is no kitchenette or full kitchen."
       },
       {
-        "title": "Extended-stay rates",
-        "body": "Weekly and monthly rates for stays of 7+ nights. Direct billing available for approved corporate accounts. Call our sales line (315) 715-7410 to lock in a project rate."
+        "title": "Request a crew quote",
+        "body": "Call sales at (315) 715-7410 to discuss weekly or monthly stays, room counts and availability. Any billing arrangements and rate terms are confirmed with your quote."
       }
     ],
     "nearby": [
-      "Micron Megafab (Clay) — 6 min",
-      "I-81 Exit 98 — at our doorstep",
-      "I-90 NY State Thruway — 8 min",
-      "Lockheed Martin (Electronics Park) — 12 min",
-      "Wegmans (Cicero) — 5 min",
-      "Walmart Supercenter — 5 min"
+      "Micron project site in Clay, NY",
+      "I-81 Exit 98",
+      "Syracuse Hancock International Airport",
+      "Cicero shopping and dining"
     ],
     "faqs": [
       {
-        "q": "What's the closest hotel to the Micron site in Clay, NY?",
-        "a": "The Cicero Grand at 5875 Carmenica Drive, Cicero, NY 13039. Six minutes from the megafab via I-81. We host project crews, vendors, and visiting engineers daily."
+        "q": "Where can Micron crews stay near Clay, NY?",
+        "a": "The Cicero Grand is at 5875 Carmenica Drive, Cicero, NY 13039, off I-81 Exit 98. Use current navigation for your route and allow for traffic. Contact sales at (315) 715-7410 about project lodging."
       },
       {
-        "q": "Do you offer extended-stay rates for Micron crews?",
-        "a": "Yes. We offer weekly and monthly rates for stays of seven nights or more, plus direct billing for approved corporate accounts. Call our sales team at (315) 715-7410."
+        "q": "Do you offer weekly or monthly stays?",
+        "a": "Ask our sales team about weekly and monthly options for your dates and room count. Rates, availability and terms are confirmed in your quote."
       },
       {
-        "q": "Is there parking for work trucks and trailers?",
-        "a": "Yes — free oversized parking on-site for work trucks, vans, trailers, and even tour buses. Plenty of room to maneuver."
+        "q": "Do suites have a kitchen?",
+        "a": "No. Every suite has a microwave and mini-fridge, not a kitchenette, cooking range or full-size refrigerator."
       },
       {
-        "q": "Are there kitchen facilities for long stays?",
-        "a": "Every suite has a kitchenette — full-size fridge, microwave, sink, and prep area. Coin laundry is available on-site. Two grocery stores are within five minutes."
+        "q": "Can we arrange parking for work vehicles?",
+        "a": "Hotel parking is free. Tell sales about any trucks, trailers or oversized vehicles so the team can confirm parking arrangements before arrival."
       },
       {
-        "q": "How far is the hotel from downtown Syracuse?",
-        "a": "About 12 minutes south via I-81. Close enough for a client dinner downtown, far enough to skip city traffic on your morning commute to the Micron site."
+        "q": "Can I request corporate billing?",
+        "a": "Discuss billing requirements with sales before booking. Any approved billing arrangements must be confirmed in writing."
       },
       {
-        "q": "Do you accept per-diem or corporate direct billing?",
-        "a": "Yes. We set up direct billing for approved contractors and vendors working the Micron project. Send W-9 and credit reference to sales@cicerogrand.com or call (315) 715-7410."
-      },
-      {
-        "q": "Is breakfast included?",
-        "a": "Yes — complimentary hot breakfast served from 6:30 AM daily so your crew is fed before you're on site."
-      },
-      {
-        "q": "Can I bring my dog for a long project stay?",
-        "a": "Yes. We're pet-friendly with a one-time pet fee. No weight limit. Grass lawn on-site for walks."
-      },
-      {
-        "q": "How many rooms do you have for a large project crew booking?",
-        "a": "65 all-suite rooms. For groups of 10+ we offer group rates, blocked dates, and consolidated billing. Call (315) 715-7410 for a group quote."
+        "q": "How many rooms does the hotel have?",
+        "a": "Cicero Grand has 65 suites. Crew availability depends on your dates; call (315) 715-7410 for a quote."
       }
     ],
     "internalLinks": [
       {
-        "title": "Micron crew long-stay program",
-        "path": "/micron-crew-long-stay",
-        "description": "Weekly and monthly rates, direct billing, per-diem-friendly."
+        "title": "Suites and rooms",
+        "path": "/rooms",
+        "description": "Explore suite layouts and check availability."
       },
       {
-        "title": "Hotels in Clay, NY",
-        "path": "/hotels-clay-ny",
-        "description": "The closest full-service hotel in Clay for the Micron corridor."
+        "title": "Hotel amenities",
+        "path": "/amenities",
+        "description": "Breakfast, indoor pool, fitness center and parking."
       },
       {
-        "title": "Hotels in Cicero, NY",
-        "path": "/hotels-cicero-ny",
-        "description": "Cicero exit off I-81 — everything you need at one stop."
-      },
-      {
-        "title": "Pet-friendly Syracuse hotels",
-        "path": "/pet-friendly-hotels-syracuse",
-        "description": "Bring the dog on the project. No weight limit."
-      },
-      {
-        "title": "Hotels near Syracuse airport",
-        "path": "/hotels-near-syracuse-airport",
-        "description": "12 minutes to SYR — free 24/7 airport shuttle."
-      },
-      {
-        "title": "Hotels near Upstate Medical",
-        "path": "/hotels-near-upstate-medical",
-        "description": "15 minutes to Upstate — quiet suites for rest between shifts."
-      },
-      {
-        "title": "Hotels in Liverpool, NY",
-        "path": "/hotels-liverpool-ny",
-        "description": "Just north of Onondaga Lake — 8 minutes from the hotel."
-      },
-      {
-        "title": "Hotels near RTX / Raytheon East Syracuse",
-        "path": "/hotels-near-rtx-raytheon-syracuse",
-        "description": "12 min via I-481."
-      },
-      {
-        "title": "Hotels near National Grid Syracuse",
-        "path": "/hotels-near-national-grid-syracuse",
-        "description": "Storm-response blocks & direct billing."
-      },
-      {
-        "title": "Hotels near VA Medical Center",
-        "path": "/hotels-near-va-medical-center-syracuse",
-        "description": "Veteran + patient-family rates."
-      },
-      {
-        "title": "Hotels near Le Moyne College",
-        "path": "/hotels-near-le-moyne-college",
-        "description": "Parent weekend & team blocks."
+        "title": "Contact Cicero Grand",
+        "path": "/contact",
+        "description": "Ask about your dates, room needs and group stays."
       }
     ],
-    "reviews": [
-      {
-        "rating": 5,
-        "author": "Micron project vendor · May 2025",
-        "text": "Stayed six weeks on the Micron install. Kitchenette was a lifesaver — hard to eat out every night. Front desk knew us by name by week two. Truck parking was never a problem."
-      },
-      {
-        "rating": 5,
-        "author": "Electrical contractor · March 2025",
-        "text": "Crew of eight, all in one hotel, direct billed to our office. Sales team locked in a monthly rate before we even arrived. Six minutes to site. Would not stay anywhere else in the area."
-      }
-    ]
+    "reviews": []
   },
   "turning-stone": {
     "path": "/hotels-near-turning-stone",
@@ -1066,7 +942,7 @@
     "title": "Hotels in Syracuse NY · The Cicero Grand · All-Suite",
     "description": "Looking for hotels in Syracuse, NY? The Cicero Grand is an all-suite hotel just outside the city — minutes from Micron, Destiny USA, the Dome, and the airport. Free breakfast, indoor pool, free parking.",
     "h1": "Hotels in Syracuse, NY",
-    "subtitle": "An all-suite hotel just outside Syracuse — quieter than downtown, closer to Micron, and free parking that downtown can't match.",
+    "subtitle": "All-suite stays in Cicero, NY, with access to Syracuse, Micron in Clay and Syracuse Hancock Airport.",
     "venue": {
       "name": "Syracuse, NY",
       "address": "Central New York · Onondaga County",
@@ -1075,144 +951,90 @@
     },
     "ogImage": "/photos/exterior-1.jpg",
     "highlights": [
-      "All-suite hotel · every room sleeps four · separate living area",
-      "10 minutes to downtown Syracuse · 7 minutes to Micron",
-      "Free hot breakfast · indoor heated pool · 24-hour fitness",
-      "Free parking — cars, trucks, RVs, tour buses",
-      "Pet-friendly · 100% smoke-free property",
-      "I-81 Exit 98 · easy in-and-out for road trips & business travel"
+      "All-suite hotel in Cicero, NY",
+      "Microwave and mini-fridge in every suite",
+      "Free hot breakfast, parking and Wi-Fi",
+      "Indoor pool and fitness center",
+      "Pet-friendly stays; contact us for current pet policies",
+      "Convenient access from I-81 Exit 98"
     ],
-    "intro": "If you're searching for hotels in Syracuse, NY, you're looking at two basic choices: stay downtown and pay for parking, or stay just outside the city and get more room for less. The Cicero Grand is an all-suite hotel ten minutes north of downtown Syracuse, off I-81 Exit 98 — putting you closer to Micron, Syracuse Hancock airport, Destiny USA, and the NYS Fairgrounds than most downtown Syracuse hotels. Every suite sleeps four with a separate living area and kitchenette. Parking is free — cars, trucks, RVs, tour buses. Breakfast is free. The pool is heated and indoor. It's the practical choice for families, Micron project crews, wedding-guest blocks, and business travelers who want quiet nights and no surprise fees.",
+    "intro": "Looking for a hotel near Syracuse, NY? The Cicero Grand is a 65-suite hotel in Cicero, off I-81 Exit 98. Suites include a microwave and mini-fridge, with free hot breakfast, parking and Wi-Fi. Choose a stay for business travel, family visits, Micron project work or an event at our on-site event center.",
     "why": [
       {
-        "title": "All-suite, not a single hotel-room cube",
-        "body": "Every Cicero Grand suite has a separate sleeping area, separate living area, and a kitchenette. You're not paying $200 for a single queen and 9 square feet of bathroom — you're getting a real apartment-style stay."
+        "title": "All-suite stays",
+        "body": "Explore our room layouts and choose the suite that fits your party. Every suite has a microwave and mini-fridge, not a kitchenette."
       },
       {
-        "title": "Closer to Micron than downtown is",
-        "body": "Micron's Clay megafab is seven minutes from us. From most downtown Syracuse hotels, it's twenty. If your trip involves Micron — contractor work, vendor visits, relocation house-hunting — staying with us cuts your daily commute in half."
+        "title": "A Cicero base for Central New York",
+        "body": "Use I-81 to reach Syracuse-area destinations. Check current navigation for your airport, worksite or event route."
       },
       {
-        "title": "Free parking — even for the truck",
-        "body": "Most downtown Syracuse hotels charge $15-25/night for parking. Some don't have on-site parking at all. We have free parking for cars, trucks, SUVs, RVs, trailers, and tour buses. No advance booking, no surcharge."
+        "title": "Breakfast and parking included",
+        "body": "Enjoy free hot breakfast, hotel parking and Wi-Fi during your stay. Ask the front desk about breakfast hours or special parking needs."
       },
       {
-        "title": "Better breakfast, indoor pool, and a quiet night",
-        "body": "Free hot breakfast 6:30–9:30 AM with eggs, meat, waffles, fruit, and coffee. Indoor heated pool open year-round. And because we're north of the city, you actually sleep — no late-night downtown traffic noise."
+        "title": "More ways to unwind",
+        "body": "Enjoy the indoor pool and fitness center. Contact the hotel for current hours and pet policies."
       }
     ],
     "nearby": [
-      "Downtown Syracuse — 15 min · Armory Square, restaurants, nightlife",
-      "Syracuse Hancock International Airport (SYR) — 10 min",
-      "Destiny USA — 12 min · 250+ stores, the largest mall in NY",
-      "Syracuse University & JMA Wireless Dome — 16 min",
-      "Micron Megafab (Clay) — 7 min · closer than downtown hotels",
-      "Onondaga Lake Park — 10 min · 7-mile lakeside trail",
-      "NYS Fairgrounds — 13 min · State Fair, concerts, expos",
-      "Empower FCU Amphitheater — 12 min · summer concert venue",
-      "Upstate Medical University — 15 min",
-      "Turning Stone Resort Casino — 25 min",
-      "Skaneateles Lake — 25 min · the Finger Lakes' clearest lake"
+      "Syracuse Hancock International Airport",
+      "Micron project site in Clay, NY",
+      "Downtown Syracuse",
+      "Destiny USA",
+      "Syracuse University and JMA Wireless Dome",
+      "NYS Fairgrounds"
     ],
     "faqs": [
       {
-        "q": "What hotel in Syracuse, NY has the best amenities?",
-        "a": "The Cicero Grand offers all-suite rooms (every room sleeps four), free hot breakfast, an indoor heated pool, 24-hour fitness center, free parking (including oversized vehicles), free WiFi, and a pet-friendly policy. We're rated highly for value among Syracuse-area hotels."
+        "q": "Where is Cicero Grand?",
+        "a": "The Cicero Grand is at 5875 Carmenica Drive, Cicero, NY 13039, off I-81 Exit 98. Use current navigation for your route and allow for traffic."
       },
       {
-        "q": "Where should I stay in Syracuse — downtown or outside the city?",
-        "a": "It depends on your trip. If your visit centers on Syracuse University or downtown nightlife, downtown might be convenient — but expect smaller rooms and paid parking. If your trip involves Micron, the airport, Destiny USA, or the State Fair, staying just outside the city (like at The Cicero Grand) gives you bigger rooms, free parking, and a quieter night, with all of those destinations 10-15 minutes away by interstate."
+        "q": "What is included with my stay?",
+        "a": "Free hot breakfast, parking and Wi-Fi, with access to our indoor pool and fitness center. Check your selected rate for its full terms."
       },
       {
-        "q": "Are there pet-friendly hotels in Syracuse?",
-        "a": "Yes. The Cicero Grand is pet-friendly and 100% smoke-free, with non-smoking suites and a small pet fee. We welcome dogs and cats — call ahead for any special requests."
+        "q": "Do you offer extended stays for Micron contractors?",
+        "a": "Yes. Contact sales at (315) 715-7410 about weekly or monthly options, crew room counts and current availability."
       },
       {
-        "q": "Which Syracuse hotel is closest to the airport?",
-        "a": "Several hotels sit within 5-10 minutes of Syracuse Hancock International Airport. The Cicero Grand is 10 minutes from the airport via I-81 — close enough for early flights, far enough that you actually sleep through the night."
+        "q": "Do the suites have kitchenettes?",
+        "a": "No. Suites include a microwave and mini-fridge, not a kitchenette or full kitchen."
       },
       {
-        "q": "Which Syracuse hotel is closest to Micron?",
-        "a": "The Cicero Grand is the closest practical hotel to Micron's Clay megafab — about 7 minutes by car. Most downtown Syracuse hotels are 18-25 minutes away. If your trip is Micron-related, staying at The Cicero Grand cuts your daily commute significantly."
-      },
-      {
-        "q": "Are there hotels in Syracuse with indoor pools?",
-        "a": "Yes — The Cicero Grand has an indoor heated pool open year-round, plus a 24-hour fitness center. Many limited-service hotels in the area do not have pools, so this is one of the things families specifically book us for."
-      },
-      {
-        "q": "What's a good hotel in Syracuse for a long stay?",
-        "a": "The Cicero Grand is purpose-built for extended stays. Every room is an all-suite layout with a separate living area, kitchenette, and mini-fridge. We offer weekly project rates for stays of 7+ nights — ideal for relocation, contractors, or anyone working a multi-week assignment in CNY."
-      },
-      {
-        "q": "What are the cheapest hotels near Syracuse, NY?",
-        "a": "The Cicero Grand is one of the best value all-suite hotels in the Syracuse area. Because every room is a suite that sleeps four, you're getting more space for the same price as a single-room rate downtown. Free breakfast, free parking, and no resort fees. Book direct at cicerogrand.com for our lowest published rate — always cheaper than OTAs after their fees."
-      },
-      {
-        "q": "Are there extended stay hotels in Syracuse for Micron contractors?",
-        "a": "Yes. The Cicero Grand offers weekly and monthly long-stay rates specifically for Micron project crews, contractors, and traveling professionals. Every suite has a kitchenette, mini-fridge, separate living area, on-site laundry, and free parking for trucks and work vehicles. We're seven minutes from Micron's Clay megafab. See our Micron Crew Long-Stay page for weekly rate pricing."
-      },
-      {
-        "q": "Which Syracuse hotel is best for families?",
-        "a": "The Cicero Grand is built for families. Every suite sleeps four with a separate sleeping area and a living area with a pull-out couch, so kids have their own space. Indoor heated pool open year-round, free hot breakfast (kids eat free), free parking, and we're 12 minutes from Destiny USA and 15 minutes from Onondaga Lake Park. Pack-and-plays and cribs available at no charge."
-      },
-      {
-        "q": "How far is The Cicero Grand from downtown Syracuse?",
-        "a": "10 minutes via I-81. We're at Exit 98 in Cicero, NY — just north of Syracuse. Close enough that downtown is a quick ride when you want it, far enough that you actually sleep at night and pay nothing to park."
-      },
-      {
-        "q": "Do Syracuse hotels have shuttles to the airport?",
-        "a": "The Cicero Grand is 10 minutes from Syracuse Hancock International Airport (SYR). Ride-share and taxis run under $20 to the terminal. Ask the front desk about scheduled shuttle availability for group bookings and early flights."
+        "q": "Are pets welcome?",
+        "a": "Cicero Grand is pet-friendly. Contact the hotel before booking to confirm current fees, restrictions and availability."
       }
     ],
     "internalLinks": [
       {
-        "title": "Hotels near Destiny USA",
-        "path": "/hotels-near-destiny-usa",
-        "description": "Ten minutes to the mall via I-81."
+        "title": "Suites and rooms",
+        "path": "/rooms",
+        "description": "Explore suite layouts and check availability."
       },
       {
-        "title": "Hotels near Syracuse airport",
-        "path": "/hotels-near-syracuse-airport",
-        "description": "12 minutes to SYR — free 24/7 airport shuttle."
+        "title": "Hotel amenities",
+        "path": "/amenities",
+        "description": "Breakfast, indoor pool, fitness center and parking."
       },
       {
-        "title": "Hotels near JMA Wireless Dome",
-        "path": "/hotels-near-jma-wireless-dome",
-        "description": "SU home game weekend? We're the closest suite hotel."
+        "title": "Contact Cicero Grand",
+        "path": "/contact",
+        "description": "Ask about your dates, room needs and group stays."
       },
       {
-        "title": "Hotels near Micron Megafab",
+        "title": "Hotel near Micron",
         "path": "/hotels-near-micron",
-        "description": "Six minutes from the Clay build site."
+        "description": "Crew and extended-stay lodging near Clay, NY."
       },
       {
-        "title": "Hotels near Turning Stone",
-        "path": "/hotels-near-turning-stone",
-        "description": "35 minutes to the casino — cheaper than staying on-property."
-      },
-      {
-        "title": "Hotels near Empower Amphitheater",
-        "path": "/hotels-near-empower-amphitheater",
-        "description": "10 minutes to the lakefront venue."
-      },
-      {
-        "title": "Hotels near Upstate Medical",
-        "path": "/hotels-near-upstate-medical",
-        "description": "15 minutes to Upstate — quiet suites for family stays."
+        "title": "Hotel near Syracuse Airport",
+        "path": "/hotels-near-syracuse-airport",
+        "description": "Plan your stay before or after a flight."
       }
     ],
-    "reviews": [
-      {
-        "rating": 5,
-        "author": "Business traveler · July 2025",
-        "text": "Suites are enormous, the bed is legitimately comfortable, and breakfast was hot at 6:15 AM when I needed it. Way better than the chain hotels closer to downtown."
-      },
-      {
-        "rating": 5,
-        "author": "Weekend guest · June 2025",
-        "text": "Booked direct and got a rate 20% better than the OTAs. Front desk upgraded us at check-in. Pool and gym were clean and empty when we used them."
-      }
-    ]
+    "reviews": []
   },
   "cicero-ny-hotels": {
     "path": "/cicero-ny-hotels",
