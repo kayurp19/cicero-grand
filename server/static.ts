@@ -106,8 +106,8 @@ const ROUTE_SCHEMA: Record<string, { title: string; description: string; schema:
     schema: [],
   },
   "/rooms": {
-    title: "All-Suite Hotel Rooms · Sleeps 4 · Kitchenette · Cicero Grand Syracuse NY",
-    description: "Every room is a suite — sleeps 4 with kitchenette, separate living area, 55\" smart TV. King, queen, and accessible options. Free breakfast + parking. Book direct at (315) 752-0150.",
+    title: "All-Suite Hotel Rooms · Microwave & Mini-Fridge · Cicero Grand",
+    description: "All-suite rooms with a microwave, mini-fridge, separate living area and 55\" smart TV. King, queen and accessible options. Free breakfast and parking. Book direct.",
     schema: [],
   },
   "/amenities": {
@@ -132,7 +132,7 @@ const ROUTE_SCHEMA: Record<string, { title: string; description: string; schema:
   },
   "/micron-crew-long-stay": {
     title: "Micron Crew Housing · 6 min from White Pine Fab · Cicero Grand",
-    description: "Closest all-suite hotel to Micron's Clay megafab — 6 min off I-81 Exit 98. Weekly & monthly crew rates, kitchenettes, free breakfast, laundry, secure parking for trucks. Call (315) 752-0150.",
+    description: "Ask about Micron crew stays at Cicero Grand off I-81 Exit 98. Suites with a microwave and mini-fridge, free breakfast and parking. Sales: (315) 715-7410.",
     schema: [],
   },
   "/event-center": {
@@ -225,7 +225,7 @@ const ROUTE_SCHEMA: Record<string, { title: string; description: string; schema:
   },
   "/hotels-clay-ny": {
     title: "Hotels Near Micron Clay NY · 7 Min from White Pine Fab · Cicero Grand",
-    description: "Closest all-suite hotel to Micron's Clay megafab and White Pine Commerce Park — 7 minutes off I-81 Exit 98. Weekly & monthly crew rates, free breakfast, kitchenettes, secure truck parking. Call (315) 752-0150.",
+    description: "Stay near Clay, NY, at Cicero Grand off I-81 Exit 98. Suites with a microwave and mini-fridge, free breakfast and parking. Ask about crew rates: (315) 715-7410.",
     schema: [],
   },
   "/hotel-syracuse-ny": {
@@ -255,7 +255,7 @@ const ROUTE_SCHEMA: Record<string, { title: string; description: string; schema:
   },
   "/hotels-near-st-josephs-hospital-syracuse": {
     title: "Hotels Near St. Joseph's Hospital Syracuse · Family Rates · The Cicero Grand",
-    description: "All-suite hotel 15 minutes from St. Joseph's Hospital in Syracuse. Patient-family rates, quiet suites, kitchenette in every room, free breakfast. Call (315) 752-0150 to book direct.",
+    description: "All-suite hotel near St. Joseph's Hospital in Syracuse. Suites with a microwave and mini-fridge, free breakfast and parking. Call (315) 752-0150 to book direct.",
     schema: [],
   },
   "/hotels-near-srctec-syracuse": {

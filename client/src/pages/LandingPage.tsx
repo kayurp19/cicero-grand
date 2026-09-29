@@ -175,8 +175,8 @@ export default function LandingPage({ slug }: LandingPageProps) {
                     Lowest rate, guaranteed.
                   </h3>
                   <p className="mt-4 text-sm text-background/75 leading-relaxed">
-                    Book direct on cicerogrand.com and skip the OTA fees. Every suite
-                    sleeps four with a kitchenette and separate living area.
+                    Book direct on cicerogrand.com and skip the OTA fees. Our suites
+                    include a microwave, mini-fridge and separate living area.
                   </p>
                   <div className="mt-6 space-y-3">
                     <a
