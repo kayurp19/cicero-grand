@@ -41,6 +41,7 @@ import AdminLogin from "@/pages/admin/Login";
 import AdminDashboard from "@/pages/admin/Dashboard";
 import AdminEditor from "@/pages/admin/Editor";
 import AdminSubmissions from "@/pages/admin/Submissions";
+import AdminEmailLeads from "@/pages/admin/EmailLeads";
 import { initTracking, trackPageView, installGlobalClickTracking } from "@/lib/tracking";
 
 function ScrollToTop() {
@@ -97,6 +98,7 @@ function AppRouter() {
         <Route path="/admin" component={AdminLogin} />
         <Route path="/admin/dashboard" component={AdminDashboard} />
         <Route path="/admin/submissions" component={AdminSubmissions} />
+        <Route path="/admin/email-leads" component={AdminEmailLeads} />
         <Route path="/admin/edit/:key" component={AdminEditor} />
         <Route component={NotFound} />
       </Switch>

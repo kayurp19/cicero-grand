@@ -27,6 +27,7 @@ type Section = {
 };
 
 const SECTIONS: Section[] = [
+  { key: "email-leads", href: "/admin/email-leads", label: "$15 Promo Signups", icon: Tag, desc: "See who requested the offer, search signups, and download CSV", highlight: true },
   { key: "submissions", href: "/admin/submissions", label: "Form submissions", icon: Inbox, desc: "Inquiries from the website Contact form", highlight: true },
   { key: "site", href: "/admin/edit/site", label: "Site & contact info", icon: Building2, desc: "Phones, address, taglines, social" },
   { key: "rooms", href: "/admin/edit/rooms", label: "Suites", icon: BedDouble, desc: "Room types, photos, features" },

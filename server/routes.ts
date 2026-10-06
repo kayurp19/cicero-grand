@@ -758,7 +758,9 @@ export async function registerRoutes(
     const header = ["id", "email", "first_name", "source_page", "promo_code", "claimed", "created_at", "ip_address"];
     const escapeCsv = (v: any) => {
       if (v === null || v === undefined) return "";
-      const s = String(v);
+      // Guest-provided values must remain text when opened in spreadsheets.
+      const raw = String(v);
+      const s = /^[\s]*[=+\-@]|^[\t\r\n]/.test(raw) ? `'${raw}` : raw;
       if (/[",\n\r]/.test(s)) return `"${s.replace(/"/g, '""')}"`;
       return s;
     };
