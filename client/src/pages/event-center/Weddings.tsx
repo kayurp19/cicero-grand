@@ -43,12 +43,8 @@ export default function Weddings() {
           latitude: SITE.latitude,
           longitude: SITE.longitude,
         },
-        aggregateRating: {
-          '@type': 'AggregateRating',
-          ratingValue: '5.0',
-          reviewCount: '31',
-          bestRating: '5',
-        },
+        // EventVenue is not an eligible reviewed-item type for Google review
+        // snippets. Keep the visible WeddingWire badge, not rating markup.
       },
       {
         '@context': 'https://schema.org',

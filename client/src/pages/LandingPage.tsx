@@ -45,26 +45,8 @@ export default function LandingPage({ slug }: LandingPageProps) {
           latitude: SITE.latitude,
           longitude: SITE.longitude,
         },
-        ...(!correctedAdPage ? { aggregateRating: {
-          '@type': 'AggregateRating',
-          ratingValue: '5.0',
-          reviewCount: data.reviews ? String(data.reviews.length + 31) : '31',
-          bestRating: '5',
-        } } : {}),
-        ...(data.reviews && data.reviews.length > 0
-          ? {
-              review: data.reviews.map((r: any) => ({
-                '@type': 'Review',
-                author: { '@type': 'Person', name: r.author },
-                reviewRating: {
-                  '@type': 'Rating',
-                  ratingValue: String(r.rating),
-                  bestRating: '5',
-                },
-                reviewBody: r.text,
-              })),
-            }
-          : {}),
+        // Keep testimonials in the page content, not self-serving hotel review
+        // markup. Do not infer review counts from curated quotes.
         potentialAction: {
           '@type': 'ReserveAction',
           target: {

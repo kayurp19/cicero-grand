@@ -78,18 +78,8 @@ export default function Home() {
           { '@type': 'LocationFeatureSpecification', name: 'Boat Trailer Parking', value: true },
           { '@type': 'LocationFeatureSpecification', name: 'Shore Power for Boats', value: true },
         ],
-        aggregateRating: {
-          '@type': 'AggregateRating',
-          ratingValue: testimonials.rating,
-          reviewCount: String(testimonials.reviewCount),
-          bestRating: '5',
-        },
-        review: testimonials.items.slice(0, 4).map((t) => ({
-          '@type': 'Review',
-          reviewRating: { '@type': 'Rating', ratingValue: String(t.stars), bestRating: '5' },
-          author: { '@type': 'Person', name: t.name },
-          reviewBody: t.quote,
-        })),
+        // Our own hotel's testimonials remain visible content, not self-serving
+        // Review/AggregateRating markup for Google review snippets.
         potentialAction: {
           '@type': 'ReserveAction',
           target: {
