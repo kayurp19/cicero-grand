@@ -290,7 +290,7 @@ export function EmailCapturePopup() {
               </button>
 
               <p className="text-center text-[11px] leading-relaxed text-neutral-500">
-                Direct bookings only. One use per guest. Valid 60 days. Not valid on Expedia, Booking.com, or other OTAs.
+                Valid on reservations made directly with the hotel. One use per guest. Valid 60 days.
               </p>
             </form>
           </>

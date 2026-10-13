@@ -64,8 +64,8 @@ export function RateBanner() {
     >
       <div className="max-w-[1400px] mx-auto px-4 lg:px-10 py-2 lg:py-2 flex items-center gap-3 text-[12px] lg:text-[13px]">
         <p className="flex-1 leading-tight">
-          <strong className="font-semibold">Book direct and save</strong>
-          <span className="opacity-80"> · best rate guaranteed, no booking fees.</span>
+          <strong className="font-semibold">Book direct with us</strong>
+          <span className="opacity-80"> · thoughtful perks for your stay.</span>
           <a
             href={site.bookingUrl}
             target="_blank"

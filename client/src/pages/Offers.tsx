@@ -13,7 +13,7 @@ export default function Offers() {
   useSeo({
     title: 'Hotel Deals & Special Offers · The Cicero Grand, Syracuse NY',
     description:
-      'Current hotel deals near Syracuse, NY: extended-stay rates, project-crew packages, weekend getaways, and AAA discounts at The Cicero Grand. Book direct for the lowest price.',
+      'Current hotel deals near Syracuse, NY: extended-stay rates, project-crew packages, weekend getaways, and AAA discounts at The Cicero Grand. Explore our direct-booking perks.',
     canonicalPath: '/offers',
   });
 
@@ -22,8 +22,8 @@ export default function Offers() {
       <PageHero
         eyebrow="Offers"
         image="/photos/lobby-fireplace.jpg"
-        title={<>Better rates, <em className="italic font-light">direct</em>.</>}
-        intro="Book direct for the best price, latest availability, and zero surprise fees. Project rates, group rates, and government per-diems available."
+        title={<>Offers for your <em className="italic font-light">stay</em>.</>}
+        intro="Book direct for thoughtful perks, current availability, and help from our hotel team. Project rates, group rates, and government per-diems available."
       />
 
       <section className="bg-background py-24 lg:py-32">

@@ -538,7 +538,7 @@ export default function Area() {
               </h2>
               <p className="mt-5 text-base text-muted-foreground max-w-xl mx-auto">
                 One quiet exit off I-81. Free hot breakfast, indoor pool, all-suite rooms
-                that sleep four. Book direct for the lowest rate.
+                that sleep four. Explore our direct-booking perks.
               </p>
               <div className="mt-8 flex flex-wrap gap-3 justify-center">
                 <Link

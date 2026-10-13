@@ -329,7 +329,7 @@ export default function Corporate() {
               </h2>
               <p className="mt-5 text-lg leading-relaxed text-foreground/80 max-w-prose">
                 Every employer, campus, and hospital we serve has its own page with drive time,
-                relevant amenities, and a direct booking link that bypasses OTA fees. Send a link
+                relevant amenities, and a direct booking link for your team. Send a link
                 to your travel coordinator or bookmark for repeat trips.
               </p>
             </div>

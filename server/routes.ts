@@ -680,7 +680,7 @@ export async function registerRoutes(
       `• Book direct at www.cicerogrand.com`,
       `• Enter code ${PROMO_CODE} at checkout, OR mention it at check-in`,
       `• Valid ${PROMO_VALIDITY_DAYS} days from today`,
-      `• Direct bookings only — not valid on Expedia, Booking.com, or other OTAs`,
+      `• Valid on reservations made directly with the hotel`,
       `• One use per guest`,
       ``,
       `Book here: https://www.cicerogrand.com`,
@@ -709,7 +709,7 @@ export async function registerRoutes(
           • Book direct at <a href="https://www.cicerogrand.com" style="color:#a36b3f;text-decoration:none;font-weight:600;">cicerogrand.com</a><br>
           • Enter <strong>${PROMO_CODE}</strong> at checkout — or mention it at check-in<br>
           • Valid ${PROMO_VALIDITY_DAYS} days from today<br>
-          • Direct bookings only (not valid on Expedia, Booking.com, or other OTAs)<br>
+          • Valid on reservations made directly with the hotel<br>
           • One use per guest
         </div>
         <div style="text-align:center;margin:0 0 24px;">

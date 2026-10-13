@@ -8,9 +8,9 @@ import site from '../content/site.json';
 
 export default function Packages() {
   useSeo({
-    title: 'Hotel Packages · Book Direct & Save · The Cicero Grand',
+    title: 'Hotel Packages · Direct Booking Perks · The Cicero Grand',
     description:
-      'Hotel packages at The Cicero Grand: Micron crew rates, JMA Dome game days, Empower Amphitheater concert nights, Turning Stone casino weekends, and family Destiny stays. Book direct for the lowest rate.',
+      'Hotel packages at The Cicero Grand: Micron crew rates, JMA Dome game days, Empower Amphitheater concert nights, Turning Stone casino weekends, and family Destiny stays. Explore our direct-booking perks.',
     canonicalPath: '/packages',
     jsonLd: [
       {
@@ -154,7 +154,7 @@ export default function Packages() {
             <div className="grid grid-cols-12 gap-6 mb-12">
               <div className="col-span-12 md:col-span-5">
                 <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
-                  Best rate guaranteed
+                  Direct booking benefits
                 </span>
                 <h2 className="font-display text-[clamp(2rem,4vw,3.4rem)] leading-[1] tracking-tight mt-3 text-balance">
                   Why <em className="italic font-light">book direct</em>.
@@ -162,19 +162,19 @@ export default function Packages() {
               </div>
               <div className="col-span-12 md:col-span-7 md:pt-3">
                 <p className="text-base text-muted-foreground max-w-prose">
-                  Expedia, Booking.com, Hotels.com — they all add 10–18% in fees that you don't see until the final screen, and we don't get to give you the perks we'd give you direct. Skip the middleman, save real money, and talk to humans who actually answer the phone.
+                  Plan your stay with the people who know the property. Book on cicerogrand.com for direct-booking perks, or call our team for help choosing a package, arranging a group stay, or sharing a special request.
                 </p>
               </div>
             </div>
           </Reveal>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
-              { t: 'Best rate guaranteed', b: "Find a lower rate elsewhere within 24 hours and we'll match it plus another 10% off." },
-              { t: 'No booking fees', b: 'OTAs add 10–18% in service fees and resort fees. We don\'t. The price you see is the price you pay.' },
-              { t: 'Free room upgrade if available', b: 'Direct bookers get first dibs at check-in — same suite class or better, depending on availability.' },
-              { t: 'Late checkout free', b: '1pm checkout instead of 11am, no charge — just ask the front desk in the morning.' },
-              { t: 'Easy modification', b: 'Change dates by phone, no fees. No 30-minute call center holds. No "policy change" surprises.' },
-              { t: 'Talk to humans', b: 'Direct line to the property — not a third-party call center in another country. We answer questions about the room, the pool, parking, and pets in person.' },
+              { t: 'Help choosing your stay', b: 'Speak with our team about room options, packages, group blocks, and extended stays.' },
+              { t: 'Welcome amenity', b: 'A bottle of water and a snack are a small thank-you for booking directly with us.' },
+              { t: 'Complimentary upgrade', b: 'Ask about a room upgrade at check-in, subject to availability.' },
+              { t: 'Late checkout', b: 'Request checkout up to 1 PM at no additional cost, subject to availability.' },
+              { t: 'Reservation assistance', b: 'Contact the hotel for help with requests or date changes. Your selected rate terms apply.' },
+              { t: 'A return-stay offer', b: 'Enjoy 10% off your next direct stay within 12 months. Ask our team for redemption details.' },
             ].map((r, i) => (
               <Reveal key={r.t} delay={i * 40}>
                 <div className="h-full bg-background border border-border rounded-2xl p-6 lg:p-7">
@@ -198,7 +198,7 @@ export default function Packages() {
               Reserve a stay
             </span>
             <h2 className="font-display text-[clamp(2rem,5vw,3.6rem)] leading-[1.05] tracking-tight mt-3 max-w-3xl mx-auto text-balance">
-              Pick a package · book direct · save the markup.
+              Pick a package · book direct · make yourself at home.
             </h2>
             <div className="mt-8 flex flex-wrap gap-3 justify-center">
               <a

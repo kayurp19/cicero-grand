@@ -1,6 +1,10 @@
 // One source for initial HTML and React metadata on the priority search pages.
 // Avoid unsupported rates, travel-time guarantees, room capacities or perks.
 export const PAGE_SEO: Record<string, { title: string; description: string }> = {
+  "/direct-perks": {
+    title: "Direct Booking Perks · Upgrades & Late Checkout · Cicero Grand",
+    description: "Explore direct-booking perks at The Cicero Grand: room upgrades and late checkout subject to availability, a return-stay offer, and a welcome amenity.",
+  },
   "/": {
     title: "Cicero Grand | All-Suite Hotel in Cicero, NY",
     description: "Stay at Cicero Grand off I-81 Exit 98. All-suite rooms, free hot breakfast, indoor pool and boat parking with charging. Check rates and book direct.",

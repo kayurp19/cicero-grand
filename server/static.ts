@@ -102,7 +102,7 @@ const corporateSchema = [
 const ROUTE_SCHEMA: Record<string, { title: string; description: string; schema: object[] }> = {
   "/": {
     title: "Cicero Grand · All-Suite Hotel · Free Breakfast + Pool · Cicero NY",
-    description: "All-suite hotel off I-81 Exit 98, 10 min from downtown Syracuse & 6 min from Micron. Free hot breakfast, indoor heated pool, free parking, pet friendly. Book direct & save — best rate guaranteed. Call (315) 752-0150.",
+    description: "All-suite hotel off I-81 Exit 98, 10 min from downtown Syracuse & 6 min from Micron. Free hot breakfast, indoor heated pool, free parking, pet friendly. Explore our direct-booking perks. Call (315) 752-0150.",
     schema: [],
   },
   "/rooms": {
@@ -122,12 +122,12 @@ const ROUTE_SCHEMA: Record<string, { title: string; description: string; schema:
   },
   "/offers": {
     title: "Hotel Deals & Special Offers · The Cicero Grand · Syracuse NY",
-    description: "Book direct and save. Weekly and monthly long-stay rates, weekend getaway packages, sports team blocks, and Micron crew rates. Best price guaranteed — call (315) 752-0150.",
+    description: "Explore direct-booking perks. Weekly and monthly long-stay rates, weekend getaway packages, sports team blocks, and Micron crew rates. Ask about current offers — call (315) 752-0150.",
     schema: [],
   },
   "/direct-perks": {
-    title: "Book Direct & Save · Free Upgrade + Late Checkout · Cicero Grand",
-    description: "Skip Expedia. Book direct for the lowest rate, free room upgrade at check-in, late checkout to 1 PM, welcome water + snack, and 10% off your next stay. Call (315) 752-0150.",
+    title: "Direct Booking Perks · Upgrades & Late Checkout · Cicero Grand",
+    description: "Explore direct-booking perks at The Cicero Grand: room upgrades and late checkout subject to availability, a return-stay offer, and a welcome amenity.",
     schema: [],
   },
   "/micron-crew-long-stay": {
@@ -170,7 +170,7 @@ const ROUTE_SCHEMA: Record<string, { title: string; description: string; schema:
   // "hotels near micron", "hotels in cicero ny", etc. Now Googlebot sees unique metadata.
   "/hotels-near-destiny-usa": {
     title: "Hotels Near Destiny USA · 12 Min from Mall · The Cicero Grand",
-    description: "Stay 12 minutes from Destiny USA at The Cicero Grand. All-suite rooms sleep 4, free hot breakfast, indoor pool, free parking. Book direct for the lowest rate.",
+    description: "Stay 12 minutes from Destiny USA at The Cicero Grand. All-suite rooms sleep 4, free hot breakfast, indoor pool, free parking. Explore our direct-booking perks.",
     schema: [],
   },
   "/hotels-near-syracuse-airport": {
@@ -230,7 +230,7 @@ const ROUTE_SCHEMA: Record<string, { title: string; description: string; schema:
   },
   "/hotel-syracuse-ny": {
     title: "Hotel in Syracuse, NY · The Cicero Grand · All-Suite, Free Parking & Breakfast",
-    description: "The Cicero Grand is the top-rated all-suite hotel near Syracuse, NY — 15 min from downtown, 16 min from Syracuse University & JMA Dome, 6 min from Micron's Clay megafab. Free parking, free hot breakfast, pet-friendly. Book direct for the lowest rate.",
+    description: "The Cicero Grand is the top-rated all-suite hotel near Syracuse, NY — 15 min from downtown, 16 min from Syracuse University & JMA Dome, 6 min from Micron's Clay megafab. Free parking, free hot breakfast, pet-friendly. Explore our direct-booking perks.",
     schema: [],
   },
   "/hotels-liverpool-ny": {

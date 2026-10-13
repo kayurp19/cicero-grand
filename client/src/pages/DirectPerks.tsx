@@ -1,4 +1,4 @@
-import { ArrowUpRight, BedDouble, Clock, Percent, Gift } from 'lucide-react';
+import { BedDouble, Clock, Percent, Gift } from 'lucide-react';
 import { PageHero } from '../components/PageHero';
 import { Reveal } from '../components/Reveal';
 import { BookingWidget } from '../components/BookingWidget';
@@ -13,7 +13,7 @@ const perks = [
     icon: BedDouble,
     title: 'Free room upgrade at check-in',
     description:
-      'When you book direct, we move you up to the next room category if availability allows — King Suite to Executive King, 2 Queen to Executive 2 Queen. No request needed. Just show up.',
+      'Enjoy a complimentary room upgrade at check-in when a suitable room is available. Ask our front desk about availability for your stay.',
   },
   {
     id: 'late-checkout',
@@ -29,7 +29,7 @@ const perks = [
     icon: Percent,
     title: '10% off your next direct stay',
     description:
-      'Every direct booking earns you 10% off your next stay — guaranteed for 12 months. We add the code to your reservation receipt automatically. No app, no points, no tiers.',
+      'Enjoy 10% off your next direct stay within 12 months. Ask our team for the details and how to redeem your return-stay offer.',
   },
   {
     id: 'welcome',
@@ -45,9 +45,9 @@ export default function DirectPerks() {
   const site = useContent<typeof siteSeed>('site');
 
   useSeo({
-    title: 'Book Direct & Save · Free Upgrade + Late Checkout up to 1 PM · The Cicero Grand',
+    title: 'Direct Booking Perks · Upgrades & Late Checkout · The Cicero Grand',
     description:
-      'Book direct at The Cicero Grand for four perks Expedia and Booking.com cannot offer: free room upgrade, late checkout up to 1 PM at no additional cost, 10% off your next stay, and a welcome amenity. No booking fees, best rate guaranteed.',
+      'Explore direct-booking perks at The Cicero Grand: room upgrades and late checkout subject to availability, a return-stay offer, and a welcome amenity.',
     canonicalPath: '/direct-perks',
   });
 
@@ -57,7 +57,7 @@ export default function DirectPerks() {
         eyebrow="Cicero Grand Direct"
         image="/photos/lobby-fireplace.jpg"
         title={<>Four reasons to book <em className="italic font-light">direct</em>.</>}
-        intro="When you book at cicerogrand.com instead of through an OTA, you get four perks Expedia and Booking.com literally cannot offer. Same price. More value. Every time."
+        intro="Make your stay a little more special. Book at cicerogrand.com and enjoy thoughtful extras, with our hotel team here to help you plan your visit."
       />
 
       {/* Perks grid */}
@@ -92,55 +92,6 @@ export default function DirectPerks() {
         </div>
       </section>
 
-      {/* Comparison strip */}
-      <section className="bg-card border-y border-card-border py-20 lg:py-24">
-        <div className="max-w-[1100px] mx-auto px-5 lg:px-10">
-          <Reveal>
-            <h2 className="font-display text-[clamp(1.8rem,3.5vw,2.8rem)] leading-[1.1] tracking-tight mb-12 text-center text-balance">
-              Direct vs. third-party booking sites
-            </h2>
-          </Reveal>
-
-          <Reveal>
-            <div className="overflow-hidden rounded-3xl border border-card-border bg-background">
-              <table className="w-full text-sm md:text-base">
-                <thead>
-                  <tr className="bg-foreground text-background">
-                    <th className="text-left p-4 lg:p-6 font-medium uppercase tracking-[0.12em] text-xs">What you get</th>
-                    <th className="p-4 lg:p-6 font-medium uppercase tracking-[0.12em] text-xs">Direct</th>
-                    <th className="p-4 lg:p-6 font-medium uppercase tracking-[0.12em] text-xs opacity-70">Expedia / Booking</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {[
-                    ['Best available rate', '✓', '✓'],
-                    ['No booking fees', '✓', '✗'],
-                    ['Free room upgrade at check-in', '✓', '✗'],
-                    ['Late checkout up to 1 PM', '✓', '✗'],
-                    ['10% off your next stay', '✓', '✗'],
-                    ['Welcome amenity', '✓', '✗'],
-                    ['Flexible cancellation', '✓', 'Varies'],
-                    ['Direct line to the property', '✓', '✗'],
-                  ].map((row, i) => (
-                    <tr key={i} className="border-t border-card-border">
-                      <td className="p-4 lg:p-6 text-foreground">{row[0]}</td>
-                      <td className="p-4 lg:p-6 text-center text-primary font-medium text-lg">{row[1]}</td>
-                      <td className="p-4 lg:p-6 text-center text-muted-foreground">{row[2]}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </Reveal>
-
-          <Reveal>
-            <p className="text-center text-sm text-muted-foreground mt-8 max-w-2xl mx-auto">
-              Best Rate Guarantee: find the same room and date cheaper anywhere online before you book, and we'll match it and give you 10% off on top. Submit your finding to <a href="mailto:hello@cicerogrand.com" className="text-primary hover:underline">hello@cicerogrand.com</a> before booking.
-            </p>
-          </Reveal>
-        </div>
-      </section>
-
       {/* Booking widget */}
       <section className="bg-background py-20 lg:py-24">
         <div className="max-w-[1100px] mx-auto px-5 lg:px-10">
@@ -150,12 +101,12 @@ export default function DirectPerks() {
                 Book direct now
               </h2>
               <p className="text-muted-foreground max-w-xl mx-auto">
-                All four perks apply automatically when you book at cicerogrand.com. No code needed.
+                Reserve your stay at cicerogrand.com. Upgrades and late checkout are subject to availability; our team can help with perk details.
               </p>
             </div>
           </Reveal>
           <Reveal>
-            <BookingWidget variant="default" />
+            <BookingWidget variant="panel" />
           </Reveal>
         </div>
       </section>
@@ -167,7 +118,7 @@ export default function DirectPerks() {
             Questions? Call us direct.
           </h2>
           <p className="text-lg text-background/70 mb-8 max-w-xl mx-auto">
-            Our front desk is staffed 24/7. Call us for the best rate, room availability, group bookings, or anything else.
+            Our front desk is staffed 24/7. Call us for current rates, room availability, group bookings, or help planning your stay.
           </p>
           <a
             href={`tel:${site.salesPhoneRaw}`}

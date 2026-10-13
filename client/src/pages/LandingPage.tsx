@@ -154,11 +154,11 @@ export default function LandingPage({ slug }: LandingPageProps) {
                     Book direct
                   </span>
                   <h3 className="font-display text-3xl lg:text-4xl tracking-tight mt-3">
-                    Lowest rate, guaranteed.
+                    A little extra for your stay.
                   </h3>
                   <p className="mt-4 text-sm text-background/75 leading-relaxed">
-                    Book direct on cicerogrand.com and skip the OTA fees. Our suites
-                    include a microwave, mini-fridge and separate living area.
+                    Explore our direct-booking perks and get help from our hotel team.
+                    Our suites include a microwave, mini-fridge and separate living area.
                   </p>
                   <div className="mt-6 space-y-3">
                     <a

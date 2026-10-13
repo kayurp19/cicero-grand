@@ -103,7 +103,7 @@ export default function Home() {
           { '@type': 'SiteNavigationElement', position: 4, name: 'Local Area & Cicero Guide', description: 'Things to do near The Cicero Grand — Syracuse, Oneida Lake, Destiny USA, and Cicero attractions.', url: `${SITE.url}/area` },
           { '@type': 'SiteNavigationElement', position: 5, name: 'Amenities', description: 'Free hot breakfast, indoor heated pool, 24-hour fitness, free parking, pet-friendly, free WiFi.', url: `${SITE.url}/amenities` },
           { '@type': 'SiteNavigationElement', position: 6, name: 'Micron Crew Long-Stay', description: 'Weekly and monthly long-stay rates for Micron contractors and project crews.', url: `${SITE.url}/micron-crew-long-stay` },
-          { '@type': 'SiteNavigationElement', position: 7, name: 'Book Direct & Save', description: 'Lowest rate guarantee, free upgrade, late checkout upon request, and 10% off your next stay when you book direct.', url: `${SITE.url}/direct-perks` },
+          { '@type': 'SiteNavigationElement', position: 7, name: 'Direct Booking Perks', description: 'Direct-booking perks: upgrades and late checkout subject to availability, a welcome amenity, and a return-stay offer.', url: `${SITE.url}/direct-perks` },
           { '@type': 'SiteNavigationElement', position: 8, name: 'Contact', description: 'Front desk, sales, and reservations: hello@cicerogrand.com · (315) 752-0150.', url: `${SITE.url}/contact` },
         ],
       },
@@ -175,7 +175,7 @@ export default function Home() {
           </div>
 
           <div className="mt-auto pt-10 lg:pt-14">
-            {/* Direct-booking perks strip — pulls guests away from OTAs */}
+            {/* Direct-booking perks strip */}
             <Link href="/direct-perks" className="group block mb-4 rounded-2xl bg-primary/15 border border-primary/30 backdrop-blur-sm px-4 py-3 hover:bg-primary/20 transition-colors">
               <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-1 text-xs md:text-sm text-white font-medium text-center">
                 <span className="inline-flex items-center gap-1.5"><span className="text-primary">✓</span> Free upgrade</span>
@@ -431,7 +431,7 @@ export default function Home() {
                   ✦ Offers
                 </span>
                 <h2 className="font-display text-[clamp(2.2rem,5vw,4.5rem)] leading-[1] tracking-tight text-balance max-w-3xl">
-                  Better rates, <em className="italic font-light">direct</em>.
+                  Offers for your <em className="italic font-light">stay</em>.
                 </h2>
               </div>
               <Link
@@ -592,7 +592,7 @@ export default function Home() {
               Your Central NY <em className="italic font-light">basecamp</em> is ready.
             </h2>
             <p className="mt-8 text-lg text-background/70 max-w-xl mx-auto">
-              Book direct for the best rate, latest availability, and no surprise fees.
+              Book direct for thoughtful perks, current availability, and help from our hotel team.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-3 justify-center">
               <a

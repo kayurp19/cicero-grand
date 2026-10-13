@@ -2,7 +2,7 @@
   "destiny-usa": {
     "path": "/hotels-near-destiny-usa",
     "title": "Hotels Near Destiny USA · 12 Min from Mall · The Cicero Grand",
-    "description": "Stay 12 minutes from Destiny USA at The Cicero Grand. All-suite rooms sleep 4, free hot breakfast, indoor pool, free parking. Book direct for the lowest rate.",
+    "description": "Stay 12 minutes from Destiny USA at The Cicero Grand. All-suite rooms sleep 4, free hot breakfast, indoor pool, free parking. Explore our direct-booking perks.",
     "h1": "Hotels Near Destiny USA",
     "subtitle": "Twelve minutes north on I-81 — quieter, cheaper, and you still wake up at the mall before doors open.",
     "venue": {
@@ -111,11 +111,6 @@
         "rating": 5,
         "author": "Business traveler · July 2025",
         "text": "Suites are enormous, the bed is legitimately comfortable, and breakfast was hot at 6:15 AM when I needed it. Way better than the chain hotels closer to downtown."
-      },
-      {
-        "rating": 5,
-        "author": "Weekend guest · June 2025",
-        "text": "Booked direct and got a rate 20% better than the OTAs. Front desk upgraded us at check-in. Pool and gym were clean and empty when we used them."
       }
     ]
   },
@@ -319,11 +314,6 @@
         "rating": 5,
         "author": "Business traveler · July 2025",
         "text": "Suites are enormous, the bed is legitimately comfortable, and breakfast was hot at 6:15 AM when I needed it. Way better than the chain hotels closer to downtown."
-      },
-      {
-        "rating": 5,
-        "author": "Weekend guest · June 2025",
-        "text": "Booked direct and got a rate 20% better than the OTAs. Front desk upgraded us at check-in. Pool and gym were clean and empty when we used them."
       }
     ]
   },
@@ -526,11 +516,6 @@
         "rating": 5,
         "author": "Business traveler · July 2025",
         "text": "Suites are enormous, the bed is legitimately comfortable, and breakfast was hot at 6:15 AM when I needed it. Way better than the chain hotels closer to downtown."
-      },
-      {
-        "rating": 5,
-        "author": "Weekend guest · June 2025",
-        "text": "Booked direct and got a rate 20% better than the OTAs. Front desk upgraded us at check-in. Pool and gym were clean and empty when we used them."
       }
     ]
   },
@@ -656,11 +641,6 @@
         "rating": 5,
         "author": "Business traveler · July 2025",
         "text": "Suites are enormous, the bed is legitimately comfortable, and breakfast was hot at 6:15 AM when I needed it. Way better than the chain hotels closer to downtown."
-      },
-      {
-        "rating": 5,
-        "author": "Weekend guest · June 2025",
-        "text": "Booked direct and got a rate 20% better than the OTAs. Front desk upgraded us at check-in. Pool and gym were clean and empty when we used them."
       }
     ]
   },
@@ -791,11 +771,6 @@
         "rating": 5,
         "author": "Business traveler · July 2025",
         "text": "Suites are enormous, the bed is legitimately comfortable, and breakfast was hot at 6:15 AM when I needed it. Way better than the chain hotels closer to downtown."
-      },
-      {
-        "rating": 5,
-        "author": "Weekend guest · June 2025",
-        "text": "Booked direct and got a rate 20% better than the OTAs. Front desk upgraded us at check-in. Pool and gym were clean and empty when we used them."
       }
     ]
   },
@@ -929,11 +904,6 @@
         "rating": 5,
         "author": "Business traveler · July 2025",
         "text": "Suites are enormous, the bed is legitimately comfortable, and breakfast was hot at 6:15 AM when I needed it. Way better than the chain hotels closer to downtown."
-      },
-      {
-        "rating": 5,
-        "author": "Weekend guest · June 2025",
-        "text": "Booked direct and got a rate 20% better than the OTAs. Front desk upgraded us at check-in. Pool and gym were clean and empty when we used them."
       }
     ]
   },
@@ -1092,7 +1062,7 @@
     "faqs": [
       {
         "q": "What hotels are actually in Cicero, NY?",
-        "a": "The Cicero Grand at 5875 Carmenica Drive (I-81 Exit 98) is the primary all-suite hotel inside the Town of Cicero. Other properties listed as \"Cicero hotels\" on OTAs are typically budget motels along Route 11 in North Syracuse or Mattydale, just outside Cicero's town lines."
+        "a": "The Cicero Grand is an all-suite hotel at 5875 Carmenica Drive in the Town of Cicero, just off I-81 Exit 98. Contact our team for directions and help planning your stay."
       },
       {
         "q": "What I-81 exit is The Cicero Grand at?",
@@ -1126,7 +1096,7 @@
     "longContent": [
       {
         "h2": "The only true hotel in Cicero, NY",
-        "body": "The Cicero Grand sits at 5875 Carmenica Drive in the heart of the Town of Cicero, just off I-81 Exit 98 — the only full-service all-suite hotel inside Cicero's town lines. Most other \"Cicero hotels\" listed on OTAs are actually budget motels along Route 11 in North Syracuse or Mattydale. We're a 3-star property with an indoor heated pool, free hot breakfast, 24-hour fitness room, business center, free parking, and pet-friendly rooms. Every suite sleeps four with a separate living area, kitchenette, mini-fridge, microwave, and 55\" smart TV with Netflix, Hulu, and casting built in."
+        "body": "The Cicero Grand sits at 5875 Carmenica Drive in the Town of Cicero, just off I-81 Exit 98. Enjoy all-suite accommodations with a microwave and mini-fridge, an indoor heated pool, free hot breakfast, free parking, and pet-friendly room options. Our team can help with room choices and local recommendations."
       },
       {
         "h2": "What's around The Cicero Grand",
@@ -1185,7 +1155,7 @@
       },
       {
         "href": "/direct-perks",
-        "label": "Book Direct & Save"
+        "label": "Direct Booking Perks"
       },
       {
         "href": "/hotels-liverpool-ny",
@@ -1197,11 +1167,6 @@
         "rating": 5,
         "author": "Business traveler · July 2025",
         "text": "Suites are enormous, the bed is legitimately comfortable, and breakfast was hot at 6:15 AM when I needed it. Way better than the chain hotels closer to downtown."
-      },
-      {
-        "rating": 5,
-        "author": "Weekend guest · June 2025",
-        "text": "Booked direct and got a rate 20% better than the OTAs. Front desk upgraded us at check-in. Pool and gym were clean and empty when we used them."
       }
     ]
   },
@@ -1340,7 +1305,7 @@
       },
       {
         "href": "/direct-perks",
-        "label": "Book Direct & Save"
+        "label": "Direct Booking Perks"
       },
       {
         "href": "/hotels-liverpool-ny",
@@ -1352,11 +1317,6 @@
         "rating": 5,
         "author": "Business traveler · July 2025",
         "text": "Suites are enormous, the bed is legitimately comfortable, and breakfast was hot at 6:15 AM when I needed it. Way better than the chain hotels closer to downtown."
-      },
-      {
-        "rating": 5,
-        "author": "Weekend guest · June 2025",
-        "text": "Booked direct and got a rate 20% better than the OTAs. Front desk upgraded us at check-in. Pool and gym were clean and empty when we used them."
       }
     ]
   },
@@ -1501,7 +1461,7 @@
       },
       {
         "href": "/direct-perks",
-        "label": "Book Direct & Save"
+        "label": "Direct Booking Perks"
       },
       {
         "href": "/hotels-liverpool-ny",
@@ -1513,18 +1473,13 @@
         "rating": 5,
         "author": "Business traveler · July 2025",
         "text": "Suites are enormous, the bed is legitimately comfortable, and breakfast was hot at 6:15 AM when I needed it. Way better than the chain hotels closer to downtown."
-      },
-      {
-        "rating": 5,
-        "author": "Weekend guest · June 2025",
-        "text": "Booked direct and got a rate 20% better than the OTAs. Front desk upgraded us at check-in. Pool and gym were clean and empty when we used them."
       }
     ]
   },
   "syracuse-hotel": {
     "path": "/hotel-syracuse-ny",
     "title": "Hotel in Syracuse, NY · The Cicero Grand · All-Suite, Free Parking & Breakfast",
-    "description": "The Cicero Grand is the top-rated all-suite hotel near Syracuse, NY — 15 min from downtown, 16 min from Syracuse University & JMA Dome, 6 min from Micron's Clay megafab. Free parking, free hot breakfast, pet-friendly. Book direct for the lowest rate.",
+    "description": "The Cicero Grand is the top-rated all-suite hotel near Syracuse, NY — 15 min from downtown, 16 min from Syracuse University & JMA Dome, 6 min from Micron's Clay megafab. Free parking, free hot breakfast, pet-friendly. Explore our direct-booking perks.",
     "h1": "Hotel in Syracuse, NY",
     "subtitle": "An all-suite hotel 15 minutes north of downtown Syracuse on I-81 — quieter nights, free parking, every room a full suite. Built for guests who want Syracuse access without the downtown markup.",
     "venue": {
@@ -1576,7 +1531,7 @@
     "faqs": [
       {
         "q": "Is The Cicero Grand actually in Syracuse, NY?",
-        "a": "We're in Cicero, NY — a town in northern Onondaga County, 15 minutes north of downtown Syracuse on I-81 Exit 98. Most search engines, OTAs, and corporate travel platforms treat the Cicero / Syracuse North area as part of the Syracuse hotel market because of the short drive and shared airport."
+        "a": "We're in Cicero, NY, in northern Onondaga County, with convenient access to Syracuse and Hancock International Airport via I-81 Exit 98."
       },
       {
         "q": "Why stay at The Cicero Grand instead of a downtown Syracuse hotel?",
@@ -1608,7 +1563,7 @@
       },
       {
         "q": "What's the best hotel near Syracuse University?",
-        "a": "If you want lowest rates and free parking, The Cicero Grand is sixteen minutes north on I-81 — same drive as downtown hotels but without game-day surge pricing or $30/night parking fees. Our all-suite rooms also fit four guests, ideal for families visiting students. For travelers who want to walk to campus, the Sheraton Syracuse University is the on-campus option, though rates run high on home football and basketball weekends."
+        "a": "The Cicero Grand offers all-suite accommodations and free parking north of Syracuse on I-81. Ask our team about room options for families visiting students and availability for campus events."
       },
       {
         "q": "Is The Cicero Grand the best hotel in Syracuse for Micron contractors?",
@@ -1659,8 +1614,8 @@
         "body": "Within a five-minute drive: Wegmans, Tops, Aldi, Target, Home Depot, Lowes, Walmart Supercenter, Northern Lights Plaza retail, the Cicero Driving Range, and the Cicero Swamp Wildlife Management Area. Restaurants within walking distance include Tully's Good Times, Texas Roadhouse, Buffalo Wild Wings, Panera, Chipotle, Five Guys, and a dozen more along Route 11 and Route 31. For finer dining, downtown Syracuse and Armory Square are 15 minutes south."
       },
       {
-        "h2": "Booking The Cicero Grand direct vs. an OTA",
-        "body": "Book direct on cicerogrand.com to get our lowest rate, free room upgrade when available, late checkout upon request at no additional cost up to 1 PM, and 10% off your next stay. Direct guests also skip OTA service fees that aren't always disclosed up front. We honor a Best Rate Guarantee on direct bookings — find a lower public rate for the same room and dates before booking and we'll beat it. Already booked through Expedia, Booking.com, or another OTA? Call (315) 752-0150 the day of arrival and we'll add a complimentary upgrade if available."
+        "h2": "Direct-booking perks at The Cicero Grand",
+        "body": "Book at cicerogrand.com for a complimentary room upgrade when available, late checkout up to 1 PM upon request and subject to availability, a welcome amenity, and 10% off your next direct stay within 12 months. Contact our hotel team at (315) 752-0150 for help with your stay and perk details."
       }
     ],
     "internalLinks": [
@@ -1933,7 +1888,7 @@
       },
       {
         "href": "/direct-perks",
-        "label": "Book Direct & Save"
+        "label": "Direct Booking Perks"
       }
     ],
     "reviews": [
@@ -1941,11 +1896,6 @@
         "rating": 5,
         "author": "Business traveler · July 2025",
         "text": "Suites are enormous, the bed is legitimately comfortable, and breakfast was hot at 6:15 AM when I needed it. Way better than the chain hotels closer to downtown."
-      },
-      {
-        "rating": 5,
-        "author": "Weekend guest · June 2025",
-        "text": "Booked direct and got a rate 20% better than the OTAs. Front desk upgraded us at check-in. Pool and gym were clean and empty when we used them."
       }
     ]
   },
@@ -2066,11 +2016,6 @@
         "rating": 5,
         "author": "Business traveler · July 2025",
         "text": "Suites are enormous, the bed is legitimately comfortable, and breakfast was hot at 6:15 AM when I needed it. Way better than the chain hotels closer to downtown."
-      },
-      {
-        "rating": 5,
-        "author": "Weekend guest · June 2025",
-        "text": "Booked direct and got a rate 20% better than the OTAs. Front desk upgraded us at check-in. Pool and gym were clean and empty when we used them."
       }
     ]
   },
@@ -2191,11 +2136,6 @@
         "rating": 5,
         "author": "Business traveler · July 2025",
         "text": "Suites are enormous, the bed is legitimately comfortable, and breakfast was hot at 6:15 AM when I needed it. Way better than the chain hotels closer to downtown."
-      },
-      {
-        "rating": 5,
-        "author": "Weekend guest · June 2025",
-        "text": "Booked direct and got a rate 20% better than the OTAs. Front desk upgraded us at check-in. Pool and gym were clean and empty when we used them."
       }
     ]
   },
@@ -2316,11 +2256,6 @@
         "rating": 5,
         "author": "Business traveler · July 2025",
         "text": "Suites are enormous, the bed is legitimately comfortable, and breakfast was hot at 6:15 AM when I needed it. Way better than the chain hotels closer to downtown."
-      },
-      {
-        "rating": 5,
-        "author": "Weekend guest · June 2025",
-        "text": "Booked direct and got a rate 20% better than the OTAs. Front desk upgraded us at check-in. Pool and gym were clean and empty when we used them."
       }
     ]
   },
@@ -2441,11 +2376,6 @@
         "rating": 5,
         "author": "Business traveler · July 2025",
         "text": "Suites are enormous, the bed is legitimately comfortable, and breakfast was hot at 6:15 AM when I needed it. Way better than the chain hotels closer to downtown."
-      },
-      {
-        "rating": 5,
-        "author": "Weekend guest · June 2025",
-        "text": "Booked direct and got a rate 20% better than the OTAs. Front desk upgraded us at check-in. Pool and gym were clean and empty when we used them."
       }
     ]
   },
@@ -2566,11 +2496,6 @@
         "rating": 5,
         "author": "Business traveler · July 2025",
         "text": "Suites are enormous, the bed is legitimately comfortable, and breakfast was hot at 6:15 AM when I needed it. Way better than the chain hotels closer to downtown."
-      },
-      {
-        "rating": 5,
-        "author": "Weekend guest · June 2025",
-        "text": "Booked direct and got a rate 20% better than the OTAs. Front desk upgraded us at check-in. Pool and gym were clean and empty when we used them."
       }
     ]
   },
