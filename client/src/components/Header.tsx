@@ -50,7 +50,7 @@ export function Header() {
             <Logo />
           </Link>
 
-          <nav className="hidden lg:flex items-center gap-7 text-sm">
+          <nav className="hidden xl:flex items-center gap-7 text-sm whitespace-nowrap">
             {nav.map((n) => (
               <Link
                 key={n.href}
@@ -72,7 +72,7 @@ export function Header() {
             <a
               href={`tel:${site.phoneRaw}`}
               data-testid="header-phone"
-              className="hidden md:flex items-center gap-2 text-sm opacity-80 hover:opacity-100 transition-opacity"
+              className="hidden md:flex xl:hidden 2xl:flex items-center gap-2 text-sm whitespace-nowrap opacity-80 hover:opacity-100 transition-opacity"
             >
               <Phone className="w-4 h-4" />
               {site.phone}
@@ -82,13 +82,13 @@ export function Header() {
               target="_blank"
               rel="noopener noreferrer"
               data-testid="header-book-now"
-              className="hidden sm:inline-flex items-center px-5 h-10 rounded-full bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 transition-colors"
+              className="hidden sm:inline-flex shrink-0 whitespace-nowrap items-center px-5 h-10 rounded-full bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 transition-colors"
             >
               Book Now
             </a>
             <button
               onClick={() => setMobileOpen((s) => !s)}
-              className="lg:hidden w-10 h-10 grid place-items-center"
+              className="xl:hidden w-10 h-10 grid place-items-center"
               data-testid="button-menu-toggle"
               aria-label="Toggle menu"
             >
@@ -100,12 +100,12 @@ export function Header() {
 
       {/* Mobile drawer */}
       <div
-        className={`fixed inset-0 z-40 bg-background transition-opacity duration-300 lg:hidden ${
+        className={`fixed inset-0 z-40 bg-background transition-opacity duration-300 xl:hidden ${
           mobileOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         }`}
         data-testid="mobile-menu"
       >
-        <div className="pt-[72px] px-6 pb-10 h-full overflow-y-auto flex flex-col">
+        <div style={{ paddingTop: 'calc(72px + var(--banner-height, 0px))' }} className="px-6 pb-10 h-full overflow-y-auto flex flex-col">
           <nav className="flex flex-col">
             {nav.map((n, i) => (
               <Link

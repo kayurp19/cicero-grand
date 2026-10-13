@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { X } from 'lucide-react';
 import site from '../content/site.json';
 
@@ -17,6 +17,7 @@ function getSessionStorage(): Storage | null {
  */
 export function RateBanner() {
   const [show, setShow] = useState(false);
+  const bannerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     try {
@@ -45,18 +46,20 @@ export function RateBanner() {
       return;
     }
     function set() {
-      const h = window.matchMedia('(min-width: 768px)').matches ? 38 : 64;
+      const h = bannerRef.current?.getBoundingClientRect().height ?? 0;
       document.documentElement.style.setProperty('--banner-height', `${h}px`);
     }
     set();
-    window.addEventListener('resize', set);
-    return () => window.removeEventListener('resize', set);
+    const observer = new ResizeObserver(set);
+    if (bannerRef.current) observer.observe(bannerRef.current);
+    return () => observer.disconnect();
   }, [show]);
 
   if (!show) return null;
 
   return (
     <div
+      ref={bannerRef}
       className="fixed top-0 inset-x-0 z-[60] bg-primary text-primary-foreground"
       data-testid="rate-banner"
       role="region"
