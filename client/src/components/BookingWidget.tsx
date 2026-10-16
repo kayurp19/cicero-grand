@@ -1,18 +1,20 @@
 import { useState, FormEvent } from 'react';
 import { Calendar, Users } from 'lucide-react';
 import site from '../content/site.json';
+import { localDate, nextDate, validStay } from '@shared/booking-dates';
 
 /** Big in-page booking widget. Submitting opens the Cloudbeds booking
  *  page with the user's selections appended as query params. */
 export function BookingWidget({ variant = 'overlay' }: { variant?: 'overlay' | 'panel' }) {
-  const today = new Date().toISOString().slice(0, 10);
-  const tomorrow = new Date(Date.now() + 86_400_000).toISOString().slice(0, 10);
+  const today = localDate();
+  const tomorrow = nextDate(today);
   const [checkin, setCheckin] = useState(today);
   const [checkout, setCheckout] = useState(tomorrow);
   const [adults, setAdults] = useState(2);
 
   const onSubmit = (e: FormEvent) => {
     e.preventDefault();
+    if (!validStay(checkin, checkout, localDate())) return;
     const url = new URL(site.bookingUrl);
     url.searchParams.set('checkin', checkin);
     url.searchParams.set('checkout', checkout);
@@ -39,14 +41,13 @@ export function BookingWidget({ variant = 'overlay' }: { variant?: 'overlay' | '
           </span>
           <input
             type="date"
+            required
             value={checkin}
             min={today}
             onChange={(e) => {
               setCheckin(e.target.value);
               if (e.target.value >= checkout) {
-                const next = new Date(e.target.value);
-                next.setDate(next.getDate() + 1);
-                setCheckout(next.toISOString().slice(0, 10));
+                setCheckout(nextDate(e.target.value));
               }
             }}
             data-testid="input-checkin"
@@ -59,8 +60,9 @@ export function BookingWidget({ variant = 'overlay' }: { variant?: 'overlay' | '
           </span>
           <input
             type="date"
+            required
             value={checkout}
-            min={checkin}
+            min={nextDate(checkin || today)}
             onChange={(e) => setCheckout(e.target.value)}
             data-testid="input-checkout"
             className="mt-0.5 w-full bg-transparent border-0 outline-none text-sm font-medium tabular-nums"
@@ -68,7 +70,7 @@ export function BookingWidget({ variant = 'overlay' }: { variant?: 'overlay' | '
         </label>
         <label className="block bg-muted/40 rounded-2xl px-4 py-3 cursor-pointer hover:bg-muted transition-colors col-span-2 md:col-span-1">
           <span className="flex items-center gap-1.5 text-[10px] uppercase tracking-[0.12em] text-muted-foreground font-medium">
-            <Users className="w-3 h-3" /> Guests
+            <Users className="w-3 h-3" /> Adults
           </span>
           <select
             value={adults}
@@ -77,7 +79,7 @@ export function BookingWidget({ variant = 'overlay' }: { variant?: 'overlay' | '
             className="mt-0.5 w-full bg-transparent border-0 outline-none text-sm font-medium appearance-none"
           >
             {[1, 2, 3, 4, 5, 6].map((n) => (
-              <option key={n} value={n}>{n} {n === 1 ? 'guest' : 'guests'}</option>
+              <option key={n} value={n}>{n} {n === 1 ? 'adult' : 'adults'}</option>
             ))}
           </select>
         </label>
@@ -89,6 +91,7 @@ export function BookingWidget({ variant = 'overlay' }: { variant?: 'overlay' | '
           Search Rooms →
         </button>
       </div>
+      <p className="px-4 pt-2 pb-1 text-xs text-muted-foreground">Add children and confirm room occupancy in the booking engine.</p>
     </form>
   );
 }

@@ -7,7 +7,7 @@ import site from '../content/site.json';
 const nav = [
   { href: '/rooms', label: 'Suites' },
   { href: '/amenities', label: 'Amenities' },
-  { href: '/area-guide', label: 'Area Guide' },
+  { href: '/area', label: 'Area Guide' },
   { href: '/event-center', label: 'Event Center' },
   { href: '/packages', label: 'Packages' },
   { href: '/offers', label: 'Offers' },
@@ -38,7 +38,7 @@ export function Header() {
     <>
       <header
         style={{ top: 'var(--banner-height, 0px)' }}
-        className={`fixed left-0 right-0 z-50 transition-all duration-500 ${
+        className={`fixed left-0 right-0 z-50 transition-colors duration-500 ${
           transparent
             ? 'bg-transparent text-white'
             : 'bg-background/85 backdrop-blur-xl text-foreground border-b border-border/60'

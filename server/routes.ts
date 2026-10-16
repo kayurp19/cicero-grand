@@ -229,14 +229,13 @@ export async function registerRoutes(
   // Dedicated healthcheck endpoint — always returns 200 if the server is up.
   // Railway uses this to confirm a new deploy is healthy before swapping traffic.
   // ----- Dynamic sitemap.xml -----
-  // Stamped with today's date on every request so Google sees fresh `lastmod`
-  // values and recrawls regularly. Static sitemap files go stale and Google
-  // de-prioritizes recrawling them, which kills indexing freshness.
+  // List only final canonical URLs. Omit lastmod until per-page modification
+  // dates are maintained; request time is not a content modification date.
   const SITEMAP_URLS: Array<{ path: string; changefreq: string; priority: string }> = [
     { path: "/", changefreq: "daily", priority: "1.0" },
     { path: "/rooms", changefreq: "weekly", priority: "0.9" },
     { path: "/amenities", changefreq: "monthly", priority: "0.7" },
-    { path: "/area-guide", changefreq: "monthly", priority: "0.8" },
+    { path: "/area", changefreq: "monthly", priority: "0.8" },
     { path: "/event-center", changefreq: "weekly", priority: "0.95" },
     { path: "/event-center/corporate-meetings", changefreq: "weekly", priority: "0.9" },
     { path: "/event-center/social-events", changefreq: "weekly", priority: "0.9" },
@@ -249,6 +248,7 @@ export async function registerRoutes(
     { path: "/contact", changefreq: "monthly", priority: "0.6" },
     { path: "/micron-crew-long-stay", changefreq: "weekly", priority: "0.85" },
     // SEO landing pages (geo + intent)
+    { path: "/cicero-ny-hotels", changefreq: "weekly", priority: "0.9" },
     { path: "/hotels-syracuse-ny", changefreq: "weekly", priority: "0.9" },
     { path: "/hotel-syracuse-ny", changefreq: "weekly", priority: "0.9" },
     { path: "/hotels-near-micron", changefreq: "weekly", priority: "0.9" },
@@ -279,7 +279,6 @@ export async function registerRoutes(
   ];
 
   app.get(["/sitemap.xml", "/sitemap"], (_req, res) => {
-    const today = new Date().toISOString().split("T")[0]; // YYYY-MM-DD
     const xml =
       `<?xml version="1.0" encoding="UTF-8"?>\n` +
       `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
@@ -287,7 +286,6 @@ export async function registerRoutes(
         (u) =>
           `  <url>\n` +
           `    <loc>https://www.cicerogrand.com${u.path}</loc>\n` +
-          `    <lastmod>${today}</lastmod>\n` +
           `    <changefreq>${u.changefreq}</changefreq>\n` +
           `    <priority>${u.priority}</priority>\n` +
           `  </url>`,
@@ -883,7 +881,7 @@ export async function registerRoutes(
   });
 
   app.get("/api/admin/submissions/:id", requireAdmin, async (req, res) => {
-    const id = parseInt(req.params.id, 10);
+    const id = parseInt(String(req.params.id), 10);
     if (!Number.isFinite(id)) return res.status(400).json({ message: "Bad id" });
     const item = await storage.getContact(id);
     if (!item) return res.status(404).json({ message: "Not found" });
@@ -899,7 +897,7 @@ export async function registerRoutes(
   });
 
   app.delete("/api/admin/submissions/:id", requireAdmin, async (req, res) => {
-    const id = parseInt(req.params.id, 10);
+    const id = parseInt(String(req.params.id), 10);
     if (!Number.isFinite(id)) return res.status(400).json({ message: "Bad id" });
     await storage.deleteContact(id);
     return res.json({ ok: true });
@@ -907,7 +905,7 @@ export async function registerRoutes(
 
   // ----- Admin: write content -----
   app.put("/api/admin/content/:key", requireAdmin, async (req, res) => {
-    const { key } = req.params;
+    const key = String(req.params.key);
     if (!VALID_KEYS.has(key)) {
       return res.status(404).json({ message: "Unknown content key" });
     }

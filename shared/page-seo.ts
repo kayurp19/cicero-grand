@@ -1,6 +1,30 @@
 // One source for initial HTML and React metadata on the priority search pages.
 // Avoid unsupported rates, travel-time guarantees, room capacities or perks.
 export const PAGE_SEO: Record<string, { title: string; description: string }> = {
+  "/event-center/menus": {
+    title: "Banquet & Catering Menus | Cicero Grand Event Center",
+    description: "Explore wedding, corporate, social and sports-team banquet menus at Cicero Grand in Cicero, NY. Contact our team for a current event proposal.",
+  },
+  "/packages": {
+    title: "Hotel Packages & Stay Ideas | Cicero Grand",
+    description: "Explore stay ideas for work trips, Syracuse events and family visits. Ask Cicero Grand about current package availability and terms for your dates.",
+  },
+  "/privacy": {
+    title: "Privacy Policy | Cicero Grand",
+    description: "Read how Cicero Grand describes its collection, use and handling of personal information, and how to contact us with privacy questions.",
+  },
+  "/terms": {
+    title: "Terms of Use | Cicero Grand",
+    description: "Read the terms governing use of the Cicero Grand website. Review the separate terms of your selected room and rate before booking.",
+  },
+  "/accessibility": {
+    title: "Accessibility Statement | Cicero Grand",
+    description: "Read Cicero Grand's accessibility information and contact the hotel for help with the website or specific room and accommodation needs.",
+  },
+  "/area": {
+    title: "Syracuse Area & Trip Planning Guide | Cicero Grand",
+    description: "Plan your visit from Cicero Grand in Cicero, NY. Explore Syracuse-area destinations and check current routes, opening hours and visitor arrangements.",
+  },
   "/direct-perks": {
     title: "Direct Booking Perks · Upgrades & Late Checkout · Cicero Grand",
     description: "Explore direct-booking perks at The Cicero Grand: room upgrades and late checkout subject to availability, a return-stay offer, and a welcome amenity.",

@@ -21,7 +21,7 @@ export default function Area() {
       'Things to Do in Syracuse NY · Drive Times to Micron, Destiny USA, SU | The Cicero Grand',
     description:
       "Local's guide to Syracuse, NY: drive times to Micron, Destiny USA, JMA Wireless Dome, Hancock Airport & Onondaga Lake. 100+ restaurants, breweries, parks & attractions — all within 20 min of The Cicero Grand.",
-    canonicalPath: '/area-guide',
+    canonicalPath: '/area',
     ogImage: '/photos/exterior-1.jpg',
     jsonLd: [
       {
@@ -29,7 +29,7 @@ export default function Area() {
         '@type': 'TouristAttraction',
         name: 'Syracuse, NY — Visitor & Area Guide',
         description: area.seoBlurb || area.intro,
-        url: `${SITE.url}/area-guide`,
+        url: `${SITE.url}/area`,
         address: {
           '@type': 'PostalAddress',
           addressLocality: 'Syracuse',

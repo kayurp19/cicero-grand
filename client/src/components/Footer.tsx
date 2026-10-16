@@ -13,8 +13,8 @@ export function Footer() {
           <div className="md:col-span-5">
             <Logo textClassName="text-background" />
             <p className="mt-6 text-background/70 max-w-md leading-relaxed">
-              An all-suite hotel just off I-81 at Exit 98. Six minutes from Micron's New York
-              megafab in Clay, plus Syracuse and Hancock International Airport.
+              An all-suite hotel in Cicero, just off I-81 at Exit 98.
+              Plan a stay for Syracuse visits, airport arrivals or project work in nearby Clay.
             </p>
             <a
               href={site.bookingUrl}
@@ -55,6 +55,7 @@ export function Footer() {
               <li><Link href="/packages" className="hover:text-background">Packages</Link></li>
               <li><Link href="/offers" className="hover:text-background">Offers</Link></li>
               <li><Link href="/direct-perks" className="hover:text-background">Direct Booking Perks</Link></li>
+              <li><Link href="/micron-crew-long-stay" className="hover:text-background">Crew & extended stays</Link></li>
               <li><Link href="/gallery" className="hover:text-background">Gallery</Link></li>
             </ul>
           </div>
@@ -67,7 +68,7 @@ export function Footer() {
               <li><Link href="/event-center/social-events" className="hover:text-background">Social events & banquets</Link></li>
               <li><Link href="/event-center/weddings" className="hover:text-background">Weddings</Link></li>
               <li><Link href="/event-center/menus" className="hover:text-background">Banquet menus</Link></li>
-              <li><Link href="/area-guide" className="hover:text-background">Area Guide</Link></li>
+              <li><Link href="/area" className="hover:text-background">Area Guide</Link></li>
               <li><Link href="/contact" className="hover:text-background">Contact</Link></li>
             </ul>
           </div>

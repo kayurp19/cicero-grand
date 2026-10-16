@@ -3,6 +3,7 @@ import type { Express } from 'express';
 import fs from "node:fs";
 import path from "node:path";
 import { PAGE_SEO } from "../shared/page-seo";
+import landingData from "../client/src/content/landing-pages.json";
 
 // =============================================================================
 // Per-route JSON-LD injection
@@ -292,7 +293,8 @@ const ROUTE_SCHEMA: Record<string, { title: string; description: string; schema:
 
 export function injectRouteSchema(html: string, route: string): string {
   const existing = ROUTE_SCHEMA[route];
-  const metadata = PAGE_SEO[route];
+  const landing = Object.values(landingData).find(page => page.path === route);
+  const metadata = PAGE_SEO[route] ?? (landing ? { title: landing.title, description: landing.description } : undefined);
   if (!existing && !metadata) return html;
   const config = { ...existing, ...metadata, schema: existing?.schema ?? [] };
   const escapeHtml = (value: string) => value
@@ -328,7 +330,7 @@ export function injectRouteSchema(html: string, route: string): string {
   for (const [attr, key, value] of [
     ["property", "og:title", config.title],
     ["property", "og:description", config.description],
-    ["property", "og:url", `${SITE_URL}${route === "/" ? "" : route}`],
+    ["property", "og:url", `${SITE_URL}${route}`],
     ["name", "twitter:title", config.title],
     ["name", "twitter:description", config.description],
   ]) {

@@ -5,6 +5,7 @@ import { Reveal } from '../components/Reveal';
 import { useSeo, SITE } from '../hooks/useSeo';
 import landingData from '../content/landing-pages.json';
 import { PAGE_SEO } from '@shared/page-seo';
+import { relatedLinks } from '@shared/related-links';
 
 interface LandingPageProps {
   slug: keyof typeof landingData;
@@ -14,7 +15,8 @@ export default function LandingPage({ slug }: LandingPageProps) {
   const source = (landingData as any)[slug];
   if (!source) return null;
   const data = { ...source, ...PAGE_SEO[source.path] };
-  const correctedAdPage = ['syracuse-airport', 'micron', 'syracuse-hotels'].includes(slug);
+  const correctedAdPage = ['syracuse-airport', 'micron', 'syracuse-hotels', 'syracuse-hotel', 'cicero-ny-hotels'].includes(slug);
+  const links = relatedLinks(data.internalLinks, data.path);
 
   useSeo({
     title: data.title,
@@ -110,9 +112,9 @@ export default function LandingPage({ slug }: LandingPageProps) {
             </div>
             <div className="bg-card border border-card-border rounded-2xl p-5">
               <div className="text-xs uppercase tracking-[0.16em] text-muted-foreground mb-1">
-                {correctedAdPage ? 'Room type' : 'Sleeps'}
+                Room type
               </div>
-              <div className="font-display text-3xl tracking-tight tabular-nums">{correctedAdPage ? 'All suites' : '4'}</div>
+              <div className="font-display text-3xl tracking-tight tabular-nums">All suites</div>
             </div>
             <div className="bg-card border border-card-border rounded-2xl p-5">
               <div className="text-xs uppercase tracking-[0.16em] text-muted-foreground mb-1">
@@ -202,7 +204,7 @@ export default function LandingPage({ slug }: LandingPageProps) {
               Why The Cicero Grand
             </span>
             <h2 className="font-display text-[clamp(2rem,5vw,3.6rem)] leading-[1.05] tracking-tight mt-3 max-w-3xl text-balance">
-              Closer than downtown. Bigger than the airport. Quieter than both.
+              A comfortable base for your stay.
             </h2>
           </Reveal>
 
@@ -409,8 +411,8 @@ export default function LandingPage({ slug }: LandingPageProps) {
       </section>
 
       {/* Internal links / Related pages */}
-      {data.internalLinks && data.internalLinks.length > 0 && (
-        <section className="bg-background py-20 lg:py-28 border-t border-border">
+      {links.length > 0 && (
+        <section aria-label="Related pages" className="bg-background py-20 lg:py-28 border-t border-border">
           <div className="max-w-[1400px] mx-auto px-5 lg:px-10">
             <Reveal>
               <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
@@ -421,11 +423,11 @@ export default function LandingPage({ slug }: LandingPageProps) {
               </h2>
             </Reveal>
             <ul className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-              {data.internalLinks.map((link: any, i: number) => (
-                <li key={i}>
+              {links.map((link) => (
+                <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="group flex items-center justify-between gap-4 px-5 py-4 rounded-2xl border border-border bg-card hover:bg-foreground hover:text-background transition-colors"
+                    className="group flex items-center justify-between gap-4 px-5 py-4 rounded-2xl border border-border bg-card hover:bg-foreground hover:text-background focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary transition-colors"
                   >
                     <span className="text-sm font-medium">{link.label}</span>
                     <ArrowUpRight className="w-4 h-4 shrink-0 opacity-60 group-hover:opacity-100" />

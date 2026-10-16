@@ -7,42 +7,37 @@ import { useSeo, SITE } from '../hooks/useSeo';
 import { trackContactSubmit } from '../lib/tracking';
 
 const heroSubcopy =
-  '65 all-suite rooms · 6 minutes from White Pine Commerce Park · weekly + monthly crew rates · billed by PO · no minimum commitment · pet-friendly.';
+  'All-suite lodging in Cicero for project crews working near Micron in Clay. Ask about weekly or monthly stays, room availability and a quote for your dates.';
 
 const tiers = [
   {
     name: '5–9 rooms',
-    nights: '7+ nights',
+    nights: 'Share your dates',
     rate: 'Contact us',
     note: 'special crew rates — call (315) 715-7410',
     bullets: ['Free hot breakfast', 'Indoor pool, fitness center, business center', 'Free parking', 'Pet-friendly'],
   },
   {
     name: '10–24 rooms',
-    nights: '30+ nights',
+    nights: 'Share your project schedule',
     rate: 'Contact us',
     note: 'special crew rates — call (315) 715-7410',
-    bullets: ['Dedicated check-in lane for your crew', 'Direct billing or purchase order', 'Weekly housekeeping (or skip-and-save)', 'Late-night arrivals welcome — 24/7 desk'],
+    bullets: ['Ask about room-block availability', 'Billing terms confirmed with your quote', 'Confirm housekeeping arrangements', '24-hour front desk'],
     featured: true,
   },
   {
     name: '25+ rooms',
-    nights: '30+ nights',
+    nights: 'Availability confirmed by the hotel',
     rate: 'Contact us',
-    note: "we'll beat any modular-camp per-bed cost",
-    bullets: ['Block reserved for your project', 'Named account manager', 'Quarterly review + flex scaling', 'Block roll-ups for tax + reporting'],
+    note: 'Request a project-specific proposal',
+    bullets: ['Share your room count and dates', 'Confirm arrival and departure schedules', 'Discuss changes to your room block', 'Review payment and cancellation terms'],
   },
 ];
 
-const compareRows = [
-  { label: 'Distance to Micron gate', us: '6 min drive', camp: 'On-site or adjacent' },
-  { label: 'Per-bed/night (loaded)', us: 'Special crew pricing — call for quote', camp: 'Comparable, but breakfast, gym, pool extra' },
-  { label: 'Available today', us: 'Yes — 65 rooms, fully operational', camp: 'Permitting + construction first' },
-  { label: 'Room type', us: 'Full hotel suite, real bed, real bathroom, sitting area', camp: 'Modular dorm-style unit' },
-  { label: 'Breakfast', us: 'Included — hot buffet, 6am–10am', camp: 'Cafeteria add-on' },
-  { label: 'Gym / pool', us: 'Included', camp: 'Add-on facility' },
-  { label: 'Pet-friendly', us: 'Yes — for relocating supervisors', camp: 'Typically no' },
-  { label: 'Local tax revenue', us: 'Stays in Onondaga County', camp: 'Out-of-state operator' },
+const planningNotes = [
+  { title: 'Confirm the worksite', body: 'Ask your employer for the exact gate or meeting point. Check current routes from 5875 Carmenica Drive; traffic and site access can change travel times.' },
+  { title: 'Match rooms to your crew', body: 'Share the number of people and rooms you need. Confirm room occupancy and bedding with the hotel; sleeper sofas should not be assumed available.' },
+  { title: 'Review your quote', body: 'Rates, minimum stays, deposits, billing approval and cancellation terms depend on the confirmed proposal. A quote request does not reserve a room block.' },
 ];
 
 const amenities = [
@@ -53,15 +48,17 @@ const amenities = [
   { icon: Wifi, label: 'Fast free Wi-Fi' },
   { icon: Briefcase, label: 'Business center' },
   { icon: Car, label: 'Free parking' },
-  { icon: Dog, label: 'Pet-friendly' },
+  { icon: Dog, label: 'Pet-friendly; confirm fees' },
 ];
 
 const nearby = [
-  { name: 'Micron Megafab (White Pine)', drive: '7 min' },
-  { name: 'SRCTec (Cicero)', drive: '6 min' },
-  { name: 'Hancock International Airport', drive: '8 min' },
-  { name: 'Lockheed Martin Salina', drive: '10 min' },
-  { name: 'Downtown Syracuse', drive: '14 min' },
+  { name: 'Micron-area stays', href: '/hotels-near-micron' },
+  { name: 'SRCTec business stays', href: '/hotels-near-srctec-syracuse' },
+  { name: 'Syracuse airport arrivals', href: '/hotels-near-syracuse-airport' },
+  { name: 'Lockheed Martin business stays', href: '/hotels-near-lockheed-martin-syracuse' },
+  { name: 'National Grid business stays', href: '/hotels-near-national-grid-syracuse' },
+  { name: 'RTX / Raytheon business stays', href: '/hotels-near-rtx-raytheon-syracuse' },
+  { name: 'Liverpool-area stays', href: '/hotels-liverpool-ny' },
 ];
 
 export default function MicronCrewLongStay() {
@@ -70,9 +67,9 @@ export default function MicronCrewLongStay() {
   const [error, setError] = useState<string | null>(null);
 
   useSeo({
-    title: 'Micron Construction Crew Long-Stay Program · The Cicero Grand · 6 min from White Pine Commerce Park',
+    title: 'Micron Crew & Extended-Stay Hotel | Cicero Grand',
     description:
-      'Weekly and monthly hotel rates for Micron construction crews and contractors. 65 all-suite rooms 6 minutes from the White Pine Commerce Park gate. PO billing, dedicated check-in, no minimum commitment.',
+      'Request a quote for crew lodging in Cicero near Micron in Clay. Suites with a microwave and mini-fridge, free breakfast and parking.',
     canonicalPath: '/micron-crew-long-stay',
     jsonLd: [
       {
@@ -90,7 +87,7 @@ export default function MicronCrewLongStay() {
         provider: { '@type': 'Hotel', name: SITE.name, url: SITE.url, telephone: '+1-315-752-0150', address: { '@type': 'PostalAddress', streetAddress: '5875 Carmenica Dr', addressLocality: 'Cicero', addressRegion: 'NY', postalCode: '13039', addressCountry: 'US' } },
         areaServed: 'Cicero, NY · Clay, NY · Onondaga County',
         description:
-          'Weekly and monthly hotel rates for Micron construction crews, contractors, vendors, and engineering teams. 65 all-suite rooms 6 minutes from the White Pine Commerce Park gate.',
+          'Crew and extended-stay lodging in Cicero for contractors, vendors and project teams visiting the Micron area in Clay. Availability and terms confirmed by quote.',
         offers: tiers.map((t) => ({ '@type': 'Offer', name: t.name, description: 'Contact for special crew rates' })),
       },
     ],
@@ -110,9 +107,9 @@ export default function MicronCrewLongStay() {
           email: fd.get('email'),
           phone: fd.get('phone') || undefined,
           topic: 'Corporate / extended stays',
-          message: `— EVENT LEAD DETAILS —
+          message: `— CREW LODGING INQUIRY —
 Lead source: Micron Crew Long-Stay page
-Event type: Crew long-stay / project housing
+Stay type: Crew long-stay / project housing
 Company / organization: ${fd.get('company') || '—'}
 Rooms needed: ${fd.get('rooms')}
 Start date: ${fd.get('startDate')}
@@ -136,9 +133,9 @@ ${fd.get('notes') || '—'}`,
     <div className="bg-background text-foreground">
       <PageHero
         eyebrow="Micron Crew Long-Stay Program"
-        title="65 suites. 6 minutes from the gate."
-        subtitle={heroSubcopy}
-        image="/photos/exterior-hero.jpg"
+        title="Micron crew stays in Cicero."
+        intro={heroSubcopy}
+        image="/photos/exterior-1.jpg"
       />
 
       {/* HERO CTA STRIP */}
@@ -183,7 +180,7 @@ ${fd.get('notes') || '—'}`,
                 >
                   {t.featured && (
                     <span className="absolute -top-3 left-8 px-3 py-1 rounded-full bg-primary text-primary-foreground text-[10px] uppercase tracking-[0.2em]">
-                      Most popular
+                      Project stays
                     </span>
                   )}
                   <div className="text-xs uppercase tracking-[0.18em] opacity-70 mb-2">{t.name}</div>
@@ -208,7 +205,7 @@ ${fd.get('notes') || '—'}`,
                         : 'bg-foreground text-background hover:opacity-90'
                     }`}
                   >
-                    Get this rate <ArrowUpRight className="w-4 h-4" />
+                    Request a quote <ArrowUpRight className="w-4 h-4" />
                   </a>
                 </article>
               </Reveal>
@@ -216,7 +213,7 @@ ${fd.get('notes') || '—'}`,
           </div>
 
           <p className="mt-8 text-xs text-muted-foreground max-w-2xl">
-            All rates subject to availability + final scope. Quoted rates assume direct billing or PO; credit-card-only stays may carry a small premium. Block rates reserved for verified Micron-affiliated contractors and vendors.
+            Room counts are planning examples, not guaranteed inventory or minimum-stay policies. All rates, availability, payment arrangements and stay terms require a confirmed quote. Cicero Grand is an independent hotel, not affiliated with Micron.
           </p>
         </div>
       </section>
@@ -228,35 +225,24 @@ ${fd.get('notes') || '—'}`,
             <div className="max-w-3xl mb-14">
               <span className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">✦ Why us</span>
               <h2 className="font-display text-[clamp(2rem,4.5vw,4rem)] leading-[1.05] tracking-tight">
-                Real hotel vs. <em className="italic font-light">modular camp</em>.
+                Plan your crew's <em className="italic font-light">stay</em>.
               </h2>
               <p className="mt-6 text-base text-muted-foreground leading-relaxed">
-                Both have a place. We're already open, your crews can check in tonight, and you're keeping bed-tax dollars in Onondaga County.
+                A few details help us match your project schedule to available rooms. For an individual stay, check live availability in our booking engine.
               </p>
             </div>
           </Reveal>
 
           <Reveal>
-            <div className="overflow-x-auto rounded-3xl border border-card-border bg-background">
-              <table className="w-full text-sm" data-testid="comparison-table">
-                <thead>
-                  <tr className="border-b border-card-border bg-card/60">
-                    <th className="text-left p-5 font-medium uppercase tracking-[0.12em] text-xs text-muted-foreground"></th>
-                    <th className="text-left p-5 font-medium uppercase tracking-[0.12em] text-xs">The Cicero Grand</th>
-                    <th className="text-left p-5 font-medium uppercase tracking-[0.12em] text-xs text-muted-foreground">Modular workforce camp</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {compareRows.map((r) => (
-                    <tr key={r.label} className="border-b border-card-border last:border-0">
-                      <td className="p-5 text-muted-foreground align-top">{r.label}</td>
-                      <td className="p-5 align-top font-medium">{r.us}</td>
-                      <td className="p-5 align-top text-muted-foreground">{r.camp}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+            <div className="grid md:grid-cols-3 gap-5">
+              {planningNotes.map(n => (
+                <article key={n.title} className="rounded-3xl border border-card-border bg-background p-7">
+                  <h3 className="font-display text-2xl mb-4">{n.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{n.body}</p>
+                </article>
+              ))}
             </div>
+            <a href={SITE.bookingUrl} target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex rounded-full px-6 py-3 bg-primary text-primary-foreground font-medium">Check rates & book <ArrowUpRight className="ml-2 w-5 h-5" /></a>
           </Reveal>
         </div>
       </section>
@@ -284,14 +270,12 @@ ${fd.get('notes') || '—'}`,
           <Reveal>
             <div>
               <span className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">✦ Site adjacencies</span>
-              <h3 className="font-display text-4xl lg:text-5xl tracking-tight mb-8">Closest to where you work.</h3>
+              <h3 className="font-display text-4xl lg:text-5xl tracking-tight mb-8">Plan your work trip.</h3>
               <ul className="divide-y divide-card-border border-y border-card-border">
                 {nearby.map((n) => (
                   <li key={n.name} className="flex items-center justify-between py-4">
-                    <span className="text-sm">{n.name}</span>
-                    <span className="inline-flex items-center gap-2 text-sm text-muted-foreground">
-                      <Clock className="w-3.5 h-3.5" /> {n.drive}
-                    </span>
+                    <Link href={n.href} className="text-sm underline underline-offset-4 hover:text-primary">{n.name}</Link>
+                    <ArrowUpRight className="w-4 h-4" />
                   </li>
                 ))}
               </ul>
@@ -313,7 +297,7 @@ ${fd.get('notes') || '—'}`,
                 Tell us what your crew <em className="italic font-light">needs</em>.
               </h2>
               <p className="mt-6 text-base opacity-75 leading-relaxed">
-                We respond within 4 business hours. Or call sales direct: <a href="tel:+13157520150" className="underline">(315) 752-0150</a>.
+                Share your dates and room needs below, or call sales: <a href="tel:+13157157410" className="underline">(315) 715-7410</a>.
               </p>
             </div>
           </Reveal>
@@ -323,7 +307,7 @@ ${fd.get('notes') || '—'}`,
               <div className="p-10 rounded-3xl bg-background/10 border border-background/20">
                 <h3 className="font-display text-3xl mb-3">Got it. We'll be in touch shortly.</h3>
                 <p className="opacity-75 text-sm">
-                  Sales will follow up within 4 business hours with a quote and walk-through times. Need to talk now? Call (315) 752-0150.
+                  Our team will review your request and contact you about availability and terms. This inquiry does not confirm a reservation. Need to talk now? Call (315) 715-7410.
                 </p>
               </div>
             </Reveal>
