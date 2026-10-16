@@ -2,6 +2,7 @@ import { Link } from 'wouter';
 import { ArrowUpRight, MapPin, Star, Wifi, Coffee, Waves, Dumbbell, Dog, Car, Sparkles } from 'lucide-react';
 import { BookingWidget } from '../components/BookingWidget';
 import { Reveal } from '../components/Reveal';
+import { ResponsiveImage } from '../components/ResponsiveImage';
 import { useContent } from '../lib/content';
 import { useSeo, SITE } from '../hooks/useSeo';
 import siteSeed from '../content/site.json';
@@ -97,7 +98,7 @@ export default function Home() {
         '@type': 'ItemList',
         name: 'The Cicero Grand site navigation',
         itemListElement: [
-          { '@type': 'SiteNavigationElement', position: 1, name: 'Rooms & Suites', description: 'All-suite hotel rooms — every suite sleeps four with kitchenette, separate living area, and 55" smart TV.', url: `${SITE.url}/rooms` },
+          { '@type': 'SiteNavigationElement', position: 1, name: 'Rooms & Suites', description: 'All-suite hotel rooms with a microwave and mini-fridge. Confirm occupancy and bedding for your selected room.', url: `${SITE.url}/rooms` },
           { '@type': 'SiteNavigationElement', position: 2, name: 'Event Center & Weddings', description: 'Banquet hall, wedding venue, corporate meetings, and group events at The Cicero Grand.', url: `${SITE.url}/event-center` },
           { '@type': 'SiteNavigationElement', position: 3, name: 'Group Rates & Room Blocks', description: 'Group room blocks for weddings, sports teams, corporate events, and Micron project crews.', url: `${SITE.url}/event-center/corporate-meetings` },
           { '@type': 'SiteNavigationElement', position: 4, name: 'Local Area & Cicero Guide', description: 'Things to do near The Cicero Grand — Syracuse, Oneida Lake, Destiny USA, and Cicero attractions.', url: `${SITE.url}/area` },
@@ -148,12 +149,15 @@ export default function Home() {
     <>
       {/* HERO */}
       <section className="relative h-[100svh] min-h-[640px] w-full overflow-hidden">
-        <img
-          src="/photos/exterior-entrance.jpg"
-          alt="Cicero Grand exterior at the porte-cochère entrance"
-          className="absolute inset-0 w-full h-full object-cover scale-105"
-          fetchPriority="high"
-        />
+        <picture>
+          <source media="(max-width: 767px)" srcSet="/photos/exterior-entrance-mobile.webp" type="image/webp" />
+          <ResponsiveImage
+            src="/photos/exterior-entrance.jpg"
+            alt="Cicero Grand exterior at the porte-cochère entrance"
+            className="absolute inset-0 w-full h-full object-cover scale-105"
+            fetchPriority="high"
+          />
+        </picture>
         <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/15 to-black/70" />
 
         <div className="relative z-10 h-full max-w-[1400px] mx-auto px-5 lg:px-10 pt-32 pb-32 lg:pb-40 flex flex-col">
@@ -264,10 +268,11 @@ export default function Home() {
                   className="group relative aspect-[4/5] overflow-hidden rounded-3xl bg-background/5"
                   data-testid={`card-room-${room.id}`}
                 >
-                  <img
+                  <ResponsiveImage
                     src={room.image}
                     alt={room.name}
                     loading="lazy"
+                    sizes="(min-width: 768px) 50vw, 100vw"
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] group-hover:scale-[1.04]"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent" />
@@ -576,7 +581,7 @@ export default function Home() {
       </section>
 
       <section className="relative bg-foreground text-background py-32 lg:py-44 overflow-hidden">
-        <img
+        <ResponsiveImage
           src="/photos/lobby-fireplace.jpg"
           alt=""
           className="absolute inset-0 w-full h-full object-cover opacity-25"

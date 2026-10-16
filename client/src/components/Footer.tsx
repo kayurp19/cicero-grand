@@ -117,7 +117,7 @@ export function Footer() {
         </div>
 
         {/* Copyright + ADA */}
-        <div className="pt-6 mt-6 border-t border-background/10 text-xs text-background/45 leading-relaxed space-y-2">
+        <div className="pt-6 mt-6 border-t border-background/10 text-xs text-background/60 leading-relaxed space-y-2">
           <p>
             © {new Date().getFullYear()} The Cicero Grand. All rights reserved. The Cicero Grand is an independently owned and operated hotel.
           </p>

@@ -1,0 +1,956 @@
+{
+  "/photos/accessible-queen.jpg": {
+    "width": 1620,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/photos/accessible-queen-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/accessible-queen-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/accessible-queen-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/bathroom-2.jpg": {
+    "width": 1620,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/photos/bathroom-2-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/bathroom-2-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/bathroom-2-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/bathroom.jpg": {
+    "width": 1620,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/photos/bathroom-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/bathroom-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/bathroom-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/breakfast-2.jpg": {
+    "width": 1620,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/photos/breakfast-2-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/breakfast-2-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/breakfast-2-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/breakfast.jpg": {
+    "width": 1620,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/photos/breakfast-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/breakfast-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/breakfast-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/cicero-grand-ballroom-chandeliers.jpg": {
+    "width": 1920,
+    "height": 1440,
+    "variants": [
+      {
+        "src": "/photos/cicero-grand-ballroom-chandeliers-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/cicero-grand-ballroom-chandeliers-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/cicero-grand-ballroom-chandeliers-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/cicero-grand-ballroom-daylight.jpg": {
+    "width": 1920,
+    "height": 1440,
+    "variants": [
+      {
+        "src": "/photos/cicero-grand-ballroom-daylight-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/cicero-grand-ballroom-daylight-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/cicero-grand-ballroom-daylight-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/cicero-grand-ballroom-wide.jpg": {
+    "width": 1920,
+    "height": 1486,
+    "variants": [
+      {
+        "src": "/photos/cicero-grand-ballroom-wide-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/cicero-grand-ballroom-wide-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/cicero-grand-ballroom-wide-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/cicero-grand-ballroom-windows.jpg": {
+    "width": 1920,
+    "height": 1440,
+    "variants": [
+      {
+        "src": "/photos/cicero-grand-ballroom-windows-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/cicero-grand-ballroom-windows-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/cicero-grand-ballroom-windows-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/cicero-grand-event-entrance.jpg": {
+    "width": 1920,
+    "height": 1485,
+    "variants": [
+      {
+        "src": "/photos/cicero-grand-event-entrance-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/cicero-grand-event-entrance-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/cicero-grand-event-entrance-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/cicero-grand-event-foyer.jpg": {
+    "width": 1920,
+    "height": 1440,
+    "variants": [
+      {
+        "src": "/photos/cicero-grand-event-foyer-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/cicero-grand-event-foyer-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/cicero-grand-event-foyer-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/event-1.jpg": {
+    "width": 1620,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/photos/event-1-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/event-1-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/event-1-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/event-2.jpg": {
+    "width": 1620,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/photos/event-2-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/event-2-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/event-2-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/event-3.jpg": {
+    "width": 1620,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/photos/event-3-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/event-3-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/event-3-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/event-4.jpg": {
+    "width": 1620,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/photos/event-4-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/event-4-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/event-4-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/event-5.jpg": {
+    "width": 1620,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/photos/event-5-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/event-5-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/event-5-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/event-6.jpg": {
+    "width": 1620,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/photos/event-6-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/event-6-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/event-6-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/event-7.jpg": {
+    "width": 1620,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/photos/event-7-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/event-7-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/event-7-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/exterior-1.jpg": {
+    "width": 1620,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/photos/exterior-1-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/exterior-1-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/exterior-1-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/exterior-2.jpg": {
+    "width": 1620,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/photos/exterior-2-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/exterior-2-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/exterior-2-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/exterior-3.jpg": {
+    "width": 1620,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/photos/exterior-3-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/exterior-3-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/exterior-3-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/exterior-entrance.jpg": {
+    "width": 1620,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/photos/exterior-entrance-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/exterior-entrance-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/exterior-entrance-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/king-jacuzzi-2.jpg": {
+    "width": 1620,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/photos/king-jacuzzi-2-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/king-jacuzzi-2-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/king-jacuzzi-2-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/king-jacuzzi.jpg": {
+    "width": 1620,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/photos/king-jacuzzi-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/king-jacuzzi-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/king-jacuzzi-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/king-suite-2.jpg": {
+    "width": 1620,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/photos/king-suite-2-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/king-suite-2-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/king-suite-2-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/king-suite.jpg": {
+    "width": 1620,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/photos/king-suite-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/king-suite-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/king-suite-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/lobby-2.jpg": {
+    "width": 1620,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/photos/lobby-2-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/lobby-2-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/lobby-2-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/lobby-fireplace.jpg": {
+    "width": 1620,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/photos/lobby-fireplace-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/lobby-fireplace-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/lobby-fireplace-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/lobby-sitting-2.jpg": {
+    "width": 1620,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/photos/lobby-sitting-2-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/lobby-sitting-2-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/lobby-sitting-2-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/lobby-sitting.jpg": {
+    "width": 1620,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/photos/lobby-sitting-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/lobby-sitting-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/lobby-sitting-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/pool-2.jpg": {
+    "width": 1620,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/photos/pool-2-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/pool-2-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/pool-2-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/pool.jpg": {
+    "width": 1620,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/photos/pool-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/pool-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/pool-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/two-queen-suite-2.jpg": {
+    "width": 1620,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/photos/two-queen-suite-2-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/two-queen-suite-2-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/two-queen-suite-2-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/two-queen-suite-3.jpg": {
+    "width": 1620,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/photos/two-queen-suite-3-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/two-queen-suite-3-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/two-queen-suite-3-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/two-queen-suite-4.jpg": {
+    "width": 1620,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/photos/two-queen-suite-4-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/two-queen-suite-4-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/two-queen-suite-4-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/two-queen-suite.jpg": {
+    "width": 1620,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/photos/two-queen-suite-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/two-queen-suite-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/two-queen-suite-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/venue-ballroom-empty.jpg": {
+    "width": 1440,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/photos/venue-ballroom-empty-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/venue-ballroom-empty-960w.webp",
+        "width": 960
+      }
+    ]
+  },
+  "/photos/venue-ceremony-arch.jpg": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/photos/venue-ceremony-arch-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/venue-ceremony-arch-960w.webp",
+        "width": 960
+      }
+    ]
+  },
+  "/photos/venue-cocktail-hour.jpg": {
+    "width": 1024,
+    "height": 1536,
+    "variants": [
+      {
+        "src": "/photos/venue-cocktail-hour-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/venue-cocktail-hour-960w.webp",
+        "width": 960
+      }
+    ]
+  },
+  "/photos/venue-corporate-banquet.jpg": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/photos/venue-corporate-banquet-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/venue-corporate-banquet-960w.webp",
+        "width": 960
+      }
+    ]
+  },
+  "/photos/venue-dance-floor.jpg": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/photos/venue-dance-floor-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/venue-dance-floor-960w.webp",
+        "width": 960
+      }
+    ]
+  },
+  "/photos/venue-foyer-entrance.jpg": {
+    "width": 1440,
+    "height": 1080,
+    "variants": [
+      {
+        "src": "/photos/venue-foyer-entrance-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/venue-foyer-entrance-960w.webp",
+        "width": 960
+      }
+    ]
+  },
+  "/photos/venue-foyer-prefunction.jpg": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/photos/venue-foyer-prefunction-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/venue-foyer-prefunction-960w.webp",
+        "width": 960
+      }
+    ]
+  },
+  "/photos/venue-tablescape.jpg": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/photos/venue-tablescape-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/venue-tablescape-960w.webp",
+        "width": 960
+      }
+    ]
+  },
+  "/photos/venue-wedding-reception.jpg": {
+    "width": 1024,
+    "height": 1536,
+    "variants": [
+      {
+        "src": "/photos/venue-wedding-reception-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/venue-wedding-reception-960w.webp",
+        "width": 960
+      }
+    ]
+  },
+  "/photos/area/civic-center.jpg": {
+    "width": 1787,
+    "height": 1054,
+    "variants": [
+      {
+        "src": "/photos/area/civic-center-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/area/civic-center-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/area/civic-center-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/area/destiny-usa.jpg": {
+    "width": 1280,
+    "height": 960,
+    "variants": [
+      {
+        "src": "/photos/area/destiny-usa-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/area/destiny-usa-960w.webp",
+        "width": 960
+      }
+    ]
+  },
+  "/photos/area/downtown-syracuse.jpg": {
+    "width": 1440,
+    "height": 808,
+    "variants": [
+      {
+        "src": "/photos/area/downtown-syracuse-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/area/downtown-syracuse-960w.webp",
+        "width": 960
+      }
+    ]
+  },
+  "/photos/area/empower-amphitheater.jpg": {
+    "width": 1400,
+    "height": 499,
+    "variants": [
+      {
+        "src": "/photos/area/empower-amphitheater-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/area/empower-amphitheater-960w.webp",
+        "width": 960
+      }
+    ]
+  },
+  "/photos/area/landmark-theatre.jpg": {
+    "width": 1152,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/photos/area/landmark-theatre-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/area/landmark-theatre-960w.webp",
+        "width": 960
+      }
+    ]
+  },
+  "/photos/area/micron.jpg": {
+    "width": 1981,
+    "height": 1021,
+    "variants": [
+      {
+        "src": "/photos/area/micron-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/area/micron-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/area/micron-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/area/oncenter-arena.jpg": {
+    "width": 2000,
+    "height": 1047,
+    "variants": [
+      {
+        "src": "/photos/area/oncenter-arena-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/area/oncenter-arena-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/area/oncenter-arena-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/area/oncenter-convention.jpg": {
+    "width": 1993,
+    "height": 1033,
+    "variants": [
+      {
+        "src": "/photos/area/oncenter-convention-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/area/oncenter-convention-960w.webp",
+        "width": 960
+      },
+      {
+        "src": "/photos/area/oncenter-convention-1600w.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/photos/area/onondaga-lake.jpg": {
+    "width": 900,
+    "height": 555,
+    "variants": [
+      {
+        "src": "/photos/area/onondaga-lake-640w.webp",
+        "width": 640
+      }
+    ]
+  },
+  "/photos/area/state-fair.jpg": {
+    "width": 1000,
+    "height": 750,
+    "variants": [
+      {
+        "src": "/photos/area/state-fair-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/area/state-fair-960w.webp",
+        "width": 960
+      }
+    ]
+  },
+  "/photos/area/syracuse-university.jpg": {
+    "width": 1300,
+    "height": 866,
+    "variants": [
+      {
+        "src": "/photos/area/syracuse-university-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/area/syracuse-university-960w.webp",
+        "width": 960
+      }
+    ]
+  },
+  "/photos/area/zoo.jpg": {
+    "width": 1280,
+    "height": 731,
+    "variants": [
+      {
+        "src": "/photos/area/zoo-640w.webp",
+        "width": 640
+      },
+      {
+        "src": "/photos/area/zoo-960w.webp",
+        "width": 960
+      }
+    ]
+  }
+}

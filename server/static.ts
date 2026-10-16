@@ -4,6 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { PAGE_SEO } from "../shared/page-seo";
 import landingData from "../client/src/content/landing-pages.json";
+import imageManifest from "../shared/image-manifest.json";
 
 // =============================================================================
 // Per-route JSON-LD injection
@@ -307,6 +308,17 @@ export function injectRouteSchema(html: string, route: string): string {
 
   // Inject route-specific schema right before </head>
   let out = html.replace("</head>", `${scriptBlocks}\n  </head>`);
+  const hero = route === "/" ? "/photos/exterior-entrance.jpg"
+    : route === "/micron-crew-long-stay" ? "/photos/exterior-1.jpg"
+    : landing?.ogImage;
+  const image = hero ? imageManifest[hero as keyof typeof imageManifest] : undefined;
+  if (image?.variants.length) {
+    const largest = image.variants[image.variants.length - 1];
+    const srcset = image.variants.map(v => `${v.src} ${v.width}w`).join(", ");
+    const media = route === "/" ? ' media="(min-width: 768px)"' : "";
+    const mobile = route === "/" ? '<link rel="preload" as="image" type="image/webp" href="/photos/exterior-entrance-mobile.webp" media="(max-width: 767px)" fetchpriority="high" />\n' : "";
+    out = out.replace("</head>", `${mobile}<link rel="preload" as="image" type="image/webp" href="${largest.src}" imagesrcset="${srcset}" imagesizes="100vw" fetchpriority="high"${media} />\n</head>`);
+  }
 
   // Override the <title> for this route
   out = out.replace(
@@ -368,7 +380,17 @@ export function serveStatic(app: Express) {
   const indexHtmlPath = path.resolve(distPath, "index.html");
   const indexHtml = fs.readFileSync(indexHtmlPath, "utf-8");
 
-  app.use(express.static(distPath, { index: false }));
+  app.use(express.static(distPath, {
+    index: false,
+    setHeaders(res, file) {
+      if (/[\\/]assets[\\/]/.test(file)) {
+        // Vite filenames contain content hashes; never apply this to HTML or APIs.
+        res.setHeader("Cache-Control", "public, max-age=31536000, immutable");
+      } else if (/\.(?:webp|avif|jpg|jpeg|png|woff2)$/i.test(file)) {
+        res.setHeader("Cache-Control", "public, max-age=86400");
+      }
+    },
+  }));
 
   // 301 redirects for retired thin-content landing pages. These pages had
   // 90-day CTR of 0% and were pruned to consolidate authority into the
@@ -403,6 +425,7 @@ export function serveStatic(app: Express) {
     const route = fullPath.replace(/\/+$/, "") || "/";
     const html = injectRouteSchema(indexHtml, route);
     res.setHeader("Content-Type", "text/html; charset=utf-8");
+    res.setHeader("Cache-Control", "no-cache");
     res.send(html);
   });
 }

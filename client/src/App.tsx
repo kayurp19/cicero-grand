@@ -1,5 +1,5 @@
 import { Switch, Route, useLocation } from "wouter";
-import { useEffect } from "react";
+import { useEffect, lazy, Suspense } from "react";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
@@ -14,34 +14,34 @@ import { Canonical } from "@/components/Canonical";
 import { EmailCapturePopup } from "@/components/EmailCapturePopup";
 
 import Home from "@/pages/Home";
-import Rooms from "@/pages/Rooms";
-import Amenities from "@/pages/Amenities";
-import Area from "@/pages/Area";
-import EventCenter from "@/pages/EventCenter";
-import CorporateMeetings from "@/pages/event-center/CorporateMeetings";
-import SocialEvents from "@/pages/event-center/SocialEvents";
-import Weddings from "@/pages/event-center/Weddings";
-import Offers from "@/pages/Offers";
-import DirectPerks from "@/pages/DirectPerks";
-import Gallery from "@/pages/Gallery";
-import Contact from "@/pages/Contact";
-import Privacy from "@/pages/Privacy";
-import Terms from "@/pages/Terms";
-import Accessibility from "@/pages/Accessibility";
-import LandingPage from "@/pages/LandingPage";
-import Corporate from "@/pages/Corporate";
-import Packages from "@/pages/Packages";
-import Menus from "@/pages/Menus";
-import MicronCrewLongStay from "@/pages/MicronCrewLongStay";
-import TrackingTest from "@/pages/TrackingTest";
-import Guest from "@/pages/Guest";
-import NotFound from "@/pages/not-found";
+const Rooms = lazy(() => import("@/pages/Rooms"));
+const Amenities = lazy(() => import("@/pages/Amenities"));
+const Area = lazy(() => import("@/pages/Area"));
+const EventCenter = lazy(() => import("@/pages/EventCenter"));
+const CorporateMeetings = lazy(() => import("@/pages/event-center/CorporateMeetings"));
+const SocialEvents = lazy(() => import("@/pages/event-center/SocialEvents"));
+const Weddings = lazy(() => import("@/pages/event-center/Weddings"));
+const Offers = lazy(() => import("@/pages/Offers"));
+const DirectPerks = lazy(() => import("@/pages/DirectPerks"));
+const Gallery = lazy(() => import("@/pages/Gallery"));
+const Contact = lazy(() => import("@/pages/Contact"));
+const Privacy = lazy(() => import("@/pages/Privacy"));
+const Terms = lazy(() => import("@/pages/Terms"));
+const Accessibility = lazy(() => import("@/pages/Accessibility"));
+const LandingPage = lazy(() => import("@/pages/LandingPage"));
+const Corporate = lazy(() => import("@/pages/Corporate"));
+const Packages = lazy(() => import("@/pages/Packages"));
+const Menus = lazy(() => import("@/pages/Menus"));
+const MicronCrewLongStay = lazy(() => import("@/pages/MicronCrewLongStay"));
+const TrackingTest = lazy(() => import("@/pages/TrackingTest"));
+const Guest = lazy(() => import("@/pages/Guest"));
+const NotFound = lazy(() => import("@/pages/not-found"));
 
-import AdminLogin from "@/pages/admin/Login";
-import AdminDashboard from "@/pages/admin/Dashboard";
-import AdminEditor from "@/pages/admin/Editor";
-import AdminSubmissions from "@/pages/admin/Submissions";
-import AdminEmailLeads from "@/pages/admin/EmailLeads";
+const AdminLogin = lazy(() => import("@/pages/admin/Login"));
+const AdminDashboard = lazy(() => import("@/pages/admin/Dashboard"));
+const AdminEditor = lazy(() => import("@/pages/admin/Editor"));
+const AdminSubmissions = lazy(() => import("@/pages/admin/Submissions"));
+const AdminEmailLeads = lazy(() => import("@/pages/admin/EmailLeads"));
 import { initTracking, trackPageView, installGlobalClickTracking } from "@/lib/tracking";
 
 function ScrollToTop() {
@@ -227,9 +227,12 @@ function App() {
       <TooltipProvider>
         <Toaster />
         <ScrollToTop />
-        <TrackingProvider />
         <Canonical />
-        <AppRouter />
+        <Suspense fallback={<div role="status" className="min-h-[60vh] px-6 pt-40 text-center">Loading page…</div>}>
+          <AppRouter />
+          {/* Commit the page view only after a lazy route and its metadata are ready. */}
+          <TrackingProvider />
+        </Suspense>
       </TooltipProvider>
     </QueryClientProvider>
   );

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -10,7 +10,10 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,100..900,0..100,0..1;1,9..144,100..900,0..100,0..1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:wght@300..700&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300..700;1,300..700&amp;family=Inter:wght@400..700&amp;display=swap" /></noscript>
     <title>Cicero Grand · All-Suite Hotel · Free Breakfast + Pool · Cicero NY</title>
     <meta name="description" content="All-suite hotel off I-81 Exit 98, 10 min from downtown Syracuse & 6 min from Micron. Free hot breakfast, indoor heated pool, free parking, pet friendly. Explore our direct-booking perks. Call (315) 752-0150." />
     <meta property="og:title" content="Cicero Grand · All-Suite Hotel · Free Breakfast + Pool · Cicero NY" />
@@ -159,21 +162,7 @@
       fbq('track', 'PageView');
     </script>
     <!-- End Meta Pixel Code -->
-    <script>
-      // Strip leftover hash routing from old URLs (e.g. /#/, /#/events).
-      // Migrates browser history entries from hash routing to clean paths.
-      (function () {
-        try {
-          var h = window.location.hash;
-          if (h && h.startsWith('#/')) {
-            var newPath = h.slice(1) || '/';
-            window.history.replaceState(null, '', newPath + window.location.search);
-          } else if (h === '#' || h === '#/') {
-            window.history.replaceState(null, '', window.location.pathname + window.location.search);
-          }
-        } catch (e) {}
-      })();
-    </script>
+    <!-- Legacy hash migration lives in main.tsx, where it is disabled for previews. -->
   </head>
   <body>
     <!--

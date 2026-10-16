@@ -21,6 +21,8 @@ export function Logo({
     <div className={`flex items-center gap-2.5 ${className}`}>
       <img
         src={mark}
+        width={290}
+        height={369}
         alt=""
         aria-hidden="true"
         className="h-9 w-auto select-none"

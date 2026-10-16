@@ -6,6 +6,7 @@ import { localDate, nextDate, validStay } from '../shared/booking-dates';
 import { injectRouteSchema } from '../server/static';
 import { PAGE_SEO } from '../shared/page-seo';
 import pages from '../client/src/content/landing-pages.json';
+import imageManifest from '../shared/image-manifest.json';
 
 test('related links handle both historic shapes and remove invalid/self/duplicate links', () => {
   assert.deepEqual(relatedLinks([
@@ -45,4 +46,23 @@ test('date handling preserves local day, month boundaries and DST dates', () => 
   assert.equal(validStay('2026-10-16','2026-10-16','2026-10-16'), false);
   assert.equal(validStay('2026-10-15','2026-10-17','2026-10-16'), false);
   assert.equal(validStay('2026-10-16','2026-10-17','2026-10-16'), true);
+});
+test('responsive image variants exist and have explicit source dimensions', () => {
+  for (const [src, image] of Object.entries(imageManifest)) {
+    assert(image.width > 0 && image.height > 0, src);
+    for (const variant of image.variants) {
+      assert(fs.existsSync(`client/public${variant.src}`), variant.src);
+      assert(variant.width <= image.width, src);
+    }
+  }
+  assert(fs.existsSync('client/public/photos/exterior-entrance-mobile.webp'));
+});
+test('home image discovery and accessibility restrictions', () => {
+  const template = fs.readFileSync('client/index.html', 'utf8');
+  const home = injectRouteSchema(template, '/');
+  assert(!/maximum-scale|user-scalable/.test(template));
+  assert(home.includes('imagesrcset='));
+  assert(home.includes('exterior-entrance-mobile.webp'));
+  assert(home.includes('media="(max-width: 767px)"'));
+  assert(template.includes('media="print"'));
 });

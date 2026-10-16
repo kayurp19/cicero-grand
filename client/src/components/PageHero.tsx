@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import { ResponsiveImage } from './ResponsiveImage';
 
 interface PageHeroProps {
   eyebrow: string;
@@ -20,7 +21,7 @@ export function PageHero({ eyebrow, title, intro, image, align = 'left', seoH1 }
   return (
     <section className="relative pt-[72px] bg-foreground text-background">
       <div className="relative h-[68svh] min-h-[480px] overflow-hidden">
-        <img
+        <ResponsiveImage
           src={image}
           alt=""
           className="absolute inset-0 w-full h-full object-cover scale-105"
