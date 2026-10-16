@@ -382,12 +382,12 @@ export default function Area() {
                               id={itemId}
                               className="py-4 border-b border-border/60 scroll-mt-32"
                             >
-                              <div className="flex items-baseline justify-between gap-3">
+                              <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 sm:gap-3">
                                 <span className="font-medium text-base leading-tight">
                                   {item.name}
                                 </span>
                                 {item.note && (
-                                  <span className="text-xs text-muted-foreground tabular-nums shrink-0 text-right">
+                                  <span className="text-xs text-muted-foreground tabular-nums sm:max-w-[50%] sm:text-right break-words">
                                     {item.note}
                                   </span>
                                 )}
