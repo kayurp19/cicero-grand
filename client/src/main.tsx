@@ -3,6 +3,7 @@ import App from "./App";
 import { Router } from "wouter";
 import { useHashLocation } from "wouter/use-hash-location";
 import "./index.css";
+import "./fonts.css";
 
 // Strip any leftover hash route (e.g. /#/area-guide → /area-guide) so the
 // path-based router takes over cleanly on production. Old bookmarks and
@@ -14,7 +15,7 @@ if (!isPreview && window.location.hash.startsWith("#/")) {
   window.history.replaceState(null, "", target + window.location.search);
 }
 
-if (isPreview && !window.location.hash) window.location.hash = "/event-center";
+if (isPreview && !window.location.hash) window.location.hash = "/";
 createRoot(document.getElementById("root")!).render(
   <Router hook={isPreview ? useHashLocation : undefined}><App /></Router>
 );

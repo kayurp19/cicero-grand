@@ -42,7 +42,7 @@ export const TRACKING = {
   },
 
   /**
-   * Meta (Facebook) Pixel ID — 16-digit number like "1234567890123456".
+   * Meta (Facebook) Pixel ID — numeric ID copied from Events Manager.
    * Where to find: business.facebook.com → Events Manager → your Pixel →
    * Settings → Pixel ID.
    *
@@ -58,6 +58,7 @@ export const TRACKING = {
  * GTM container on production.
  */
 export function isTrackingEnabled(): boolean {
+  if (import.meta.env?.VITE_PREVIEW === "true") return false;
   return /^GTM-[A-Z0-9]+$/i.test(TRACKING.GTM_CONTAINER_ID);
 }
 
@@ -66,5 +67,8 @@ export function isTrackingEnabled(): boolean {
  * Used to short-circuit pixel calls before an ID is pasted in.
  */
 export function isMetaPixelEnabled(): boolean {
-  return /^\d{15,16}$/.test(TRACKING.META_PIXEL_ID);
+  if (import.meta.env?.VITE_PREVIEW === "true") return false;
+  // The configured property uses a 17-digit ID. Do not silently disable
+  // route and conversion events by assuming all Meta IDs are 15–16 digits.
+  return /^\d{5,20}$/.test(TRACKING.META_PIXEL_ID);
 }

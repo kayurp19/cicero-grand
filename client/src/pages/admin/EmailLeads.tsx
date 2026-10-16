@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "wouter";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, QueryClientProvider } from "@tanstack/react-query";
 import { ArrowLeft, Download, RefreshCw, Search, Tag } from "lucide-react";
 import { Logo } from "@/components/Logo";
-import { apiRequest } from "@/lib/queryClient";
+import { apiRequest, queryClient } from "@/lib/queryClient";
 import type { EmailLead } from "@shared/schema";
 
 const dateFormat = new Intl.DateTimeFormat("en-US", {
@@ -12,6 +12,10 @@ const dateFormat = new Intl.DateTimeFormat("en-US", {
 const buttonClass = "inline-flex items-center justify-center gap-2 rounded-full border border-border px-4 min-h-11 text-sm hover:bg-muted disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary";
 
 export default function AdminEmailLeads() {
+  return <QueryClientProvider client={queryClient}><EmailLeadsContent /></QueryClientProvider>;
+}
+
+function EmailLeadsContent() {
   const [, setLocation] = useLocation();
   const [search, setSearch] = useState("");
   const [exporting, setExporting] = useState(false);

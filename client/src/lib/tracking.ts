@@ -55,7 +55,6 @@ export function initMetaPixel(): void {
   })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
 
   window.fbq("init", TRACKING.META_PIXEL_ID);
-  window.fbq("track", "PageView");
 }
 
 /**
@@ -118,12 +117,12 @@ export function trackPageView(path: string, title?: string): void {
   window.dataLayer.push({
     event: "page_view",
     page_path: path,
-    page_location: window.location.origin + path,
+    // Retain campaign parameters on initial and subsequent route views.
+    page_location: window.location.origin + path + window.location.search,
     page_title: title || document.title,
   });
 
-  // Mirror to Meta Pixel for SPA route changes (initial load already fires
-  // PageView in initMetaPixel).
+  // The router is the single owner of both initial and subsequent page views.
   fbqTrack("PageView");
 }
 
@@ -254,6 +253,7 @@ export function installGlobalClickTracking(): void {
 
       // Book Now — anything pointing at Cloudbeds reservation
       if (href.includes("cloudbeds.com/reservation") || href.includes("us2.cloudbeds.com")) {
+        if (anchor.dataset.bookingSource === "booking_widget" && !anchor.closest("form")?.checkValidity()) return;
         const source = anchor.dataset.bookingSource || anchor.dataset.testid || "book_now";
         const ratePlan = anchor.dataset.ratePlan;
         trackBookNow({ source, ratePlan });

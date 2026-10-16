@@ -1,9 +1,5 @@
 import { Switch, Route, useLocation } from "wouter";
 import { useEffect, lazy, Suspense } from "react";
-import { queryClient } from "./lib/queryClient";
-import { QueryClientProvider } from "@tanstack/react-query";
-import { Toaster } from "@/components/ui/toaster";
-import { TooltipProvider } from "@/components/ui/tooltip";
 
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -226,9 +222,7 @@ function AppRouter() {
 
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <Toaster />
+    <>
         <ScrollToTop />
         <Canonical />
         <Suspense fallback={<div role="status" className="min-h-[60vh] px-6 pt-40 text-center">Loading page…</div>}>
@@ -236,8 +230,7 @@ function App() {
           {/* Commit the page view only after a lazy route and its metadata are ready. */}
           <TrackingProvider />
         </Suspense>
-      </TooltipProvider>
-    </QueryClientProvider>
+    </>
   );
 }
 

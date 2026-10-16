@@ -65,7 +65,8 @@ test('home image discovery and accessibility restrictions', () => {
   assert(home.includes('imagesrcset='));
   assert(home.includes('exterior-entrance-mobile.webp'));
   assert(home.includes('media="(max-width: 767px)"'));
-  assert(template.includes('media="print"'));
+  assert(template.includes('as="font"'));
+  assert(!template.includes('fonts.googleapis.com'));
 });
 test('event inquiry routes preserve event intent without replacing room booking', () => {
   assert.equal(eventInquiry('/rooms'), null);

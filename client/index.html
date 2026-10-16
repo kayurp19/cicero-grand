@@ -5,15 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,100..900,0..100,0..1;1,9..144,100..900,0..100,0..1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:wght@300..700&display=swap"
-      rel="stylesheet"
-      media="print"
-      onload="this.media='all'"
-    />
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300..700;1,300..700&amp;family=Inter:wght@400..700&amp;display=swap" /></noscript>
+    <!-- Same brand fonts, served locally without the external CSS discovery chain. -->
+    <link rel="preload" href="/src/assets/fonts/fraunces-latin-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/src/assets/fonts/fraunces-latin-italic.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/src/assets/fonts/inter-latin-normal.woff2" as="font" type="font/woff2" crossorigin />
     <title>Cicero Grand · All-Suite Hotel · Free Breakfast + Pool · Cicero NY</title>
     <meta name="description" content="All-suite hotel off I-81 Exit 98, 10 min from downtown Syracuse & 6 min from Micron. Free hot breakfast, indoor heated pool, free parking, pet friendly. Explore our direct-booking perks. Call (315) 752-0150." />
     <meta property="og:title" content="Cicero Grand · All-Suite Hotel · Free Breakfast + Pool · Cicero NY" />
@@ -148,20 +143,7 @@
     <script>
       window.dataLayer = window.dataLayer || [];
     </script>
-    <!-- Meta Pixel Code -->
-    <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '28743800258546034');
-      fbq('track', 'PageView');
-    </script>
-    <!-- End Meta Pixel Code -->
+    <!-- Meta is initialized once by tracking.ts, with page views owned by the router. -->
     <!-- Legacy hash migration lives in main.tsx, where it is disabled for previews. -->
   </head>
   <body>
