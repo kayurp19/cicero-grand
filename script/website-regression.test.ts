@@ -7,6 +7,7 @@ import { injectRouteSchema } from '../server/static';
 import { PAGE_SEO } from '../shared/page-seo';
 import pages from '../client/src/content/landing-pages.json';
 import imageManifest from '../shared/image-manifest.json';
+import { eventInquiry } from '../shared/event-inquiry';
 
 test('related links handle both historic shapes and remove invalid/self/duplicate links', () => {
   assert.deepEqual(relatedLinks([
@@ -65,4 +66,25 @@ test('home image discovery and accessibility restrictions', () => {
   assert(home.includes('exterior-entrance-mobile.webp'));
   assert(home.includes('media="(max-width: 767px)"'));
   assert(template.includes('media="print"'));
+});
+test('event inquiry routes preserve event intent without replacing room booking', () => {
+  assert.equal(eventInquiry('/rooms'), null);
+  assert.equal(eventInquiry('/'), null);
+  assert.equal(eventInquiry('/contact'), null);
+  for (const p of ['/event-center','/event-center/weddings','/event-center/social-events','/event-center/corporate-meetings','/event-center/menus']) {
+    const links = eventInquiry(p)!;
+    assert(links.quote.startsWith('/contact?'));
+    assert(links.tour.includes('tour=1'));
+    const params = new URL('https://www.cicerogrand.com'+links.quote).searchParams;
+    assert.equal(params.get('topic'), p.endsWith('weddings') ? 'Wedding inquiry' : 'Event / meeting inquiry');
+  }
+});
+test('event metadata is explicit and contains no unsupported rating or capacity markup', () => {
+  const template = fs.readFileSync('client/index.html', 'utf8');
+  for (const p of ['/event-center','/event-center/social-events','/event-center/weddings','/event-center/corporate-meetings','/event-center/menus']) {
+    const html = injectRouteSchema(template,p);
+    assert(html.includes(PAGE_SEO[p].description.replaceAll('&','&amp;')),p);
+    assert(!html.includes('5.0/5.0'),p);
+    assert(!html.includes('maximumAttendeeCapacity'),p);
+  }
 });

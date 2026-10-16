@@ -59,6 +59,7 @@ export default function Contact() {
   const [tourRequested, setTourRequested] = useState<boolean>(false);
 
   const formRef = useRef<HTMLFormElement | null>(null);
+  const submissionLocked = useRef(false);
 
   // Show event-lead fields for any event-related topic
   const isEventLead =
@@ -115,13 +116,15 @@ export default function Contact() {
     if (budget) lines.push(`Budget range: ${budget}`);
     if (companyOrg) lines.push(`Company / organization: ${companyOrg}`);
     if (tourRequested) lines.push(`Tour requested: Yes`);
-    if (lines.length === 1) return baseMessage; // only header, no details — skip
+    if (lines.length === 1) return baseMessage || `Please contact me about my ${topic.toLowerCase()}.`;
     const header = lines.join('\n');
     return baseMessage ? `${header}\n\n— MESSAGE —\n${baseMessage}` : header;
   }
 
   const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (submissionLocked.current) return;
+    submissionLocked.current = true;
     setStatus('sending');
     setErrorMsg('');
     const formEl = e.currentTarget;
@@ -156,10 +159,12 @@ export default function Contact() {
         setCompanyOrg('');
         setTourRequested(false);
       } else {
+        submissionLocked.current = false;
         setStatus('error');
         setErrorMsg(data.message || `Server error (${res.status})`);
       }
     } catch (err) {
+      submissionLocked.current = false;
       setStatus('error');
       setErrorMsg('Network error — check your connection');
     }
@@ -317,7 +322,7 @@ export default function Contact() {
                       <div className="mb-4">
                         <span className="text-xs uppercase tracking-[0.18em] text-primary font-medium">Event details</span>
                         <p className="text-xs text-muted-foreground mt-1">
-                          A few quick details so our coordinator can prep options before they call you back.
+                          Share what you know. Planning details are optional; dates and availability are confirmed by our team.
                         </p>
                       </div>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -352,6 +357,9 @@ export default function Contact() {
                             className="mt-1.5 w-full bg-background border border-border rounded-xl px-4 h-12 outline-none focus:border-primary transition-colors"
                           />
                         </label>
+                        <details className="md:col-span-2">
+                          <summary className="cursor-pointer py-2 font-medium text-sm">More planning details (optional)</summary>
+                          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-3">
                         <label className="block">
                           <span className="text-xs uppercase tracking-[0.16em] text-muted-foreground">Alternate date</span>
                           <input
@@ -426,6 +434,8 @@ export default function Contact() {
                             className="mt-1.5 w-full bg-background border border-border rounded-xl px-4 h-12 outline-none focus:border-primary transition-colors"
                           />
                         </label>
+                          </div>
+                        </details>
                         <label className="flex items-start gap-3 md:col-span-2 cursor-pointer">
                           <input
                             type="checkbox"
@@ -461,14 +471,14 @@ export default function Contact() {
                 </div>
                 <div className="mt-7 flex items-center justify-between gap-4 flex-wrap">
                   <p className={`text-xs ${status === 'sent' ? 'text-green-700 dark:text-green-400' : status === 'error' ? 'text-red-700 dark:text-red-400' : 'text-muted-foreground'}`}>
-                    {status === 'sent' && '✓ Thanks — we received your message. We respond within one business day.'}
+                    {status === 'sent' && 'Thanks. Your inquiry has been saved. Our team will follow up using the contact information you provided.'}
                     {status === 'error' && `Could not send: ${errorMsg}. Please call us at ${site.phone} or email ${site.email}.`}
-                    {status === 'idle' && 'We respond within one business day.'}
+                    {status === 'idle' && 'Our team will confirm availability and next steps. For time-sensitive plans, call sales.'}
                     {status === 'sending' && 'Sending...'}
                   </p>
                   <button
                     type="submit"
-                    disabled={status === 'sending'}
+                    disabled={status === 'sending' || status === 'sent'}
                     data-testid="button-submit"
                     className="inline-flex items-center gap-2 px-7 h-12 rounded-full bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors disabled:opacity-50"
                   >

@@ -14,9 +14,10 @@ interface PageHeroProps {
    * still has a strong visual headline while giving Google a keyword-rich H1.
    */
   seoH1?: string;
+  compactTitle?: boolean;
 }
 
-export function PageHero({ eyebrow, title, intro, image, align = 'left', seoH1 }: PageHeroProps) {
+export function PageHero({ eyebrow, title, intro, image, align = 'left', seoH1, compactTitle = false }: PageHeroProps) {
   const alignCls = align === 'center' ? 'text-center mx-auto' : '';
   return (
     <section className="relative pt-[72px] bg-foreground text-background">
@@ -45,7 +46,7 @@ export function PageHero({ eyebrow, title, intro, image, align = 'left', seoH1 }
                 </p>
               </>
             ) : (
-              <h1 className="font-display text-[clamp(2.6rem,7vw,6.5rem)] leading-[0.95] tracking-tight text-balance">
+              <h1 className={`font-display ${compactTitle ? 'text-[clamp(2rem,4.8vw,4.5rem)] leading-[1.03]' : 'text-[clamp(2.6rem,7vw,6.5rem)] leading-[0.95]'} tracking-tight text-balance`}>
                 {title}
               </h1>
             )}

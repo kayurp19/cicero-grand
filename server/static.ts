@@ -22,12 +22,11 @@ const weddingsSchema = [
     "@context": "https://schema.org",
     "@type": "EventVenue",
     "name": "The Cicero Grand — Weddings",
-    "description": "Wedding venue near Syracuse, NY. Outside caterers welcome. Getting Ready Room for the wedding party and on-site hotel suites for guests. Rated 5.0/5.0 on WeddingWire.",
+    "description": "Wedding venue in Cicero, NY, near Syracuse, with a ballroom and on-site hotel suites. Contact the events team about your plans.",
     "url": `${SITE_URL}/event-center/weddings`,
     "telephone": "+1-315-752-0150",
     "email": "sales@cicerogrand.com",
     "image": `${SITE_URL}/photos/cicero-grand-ballroom-wide.jpg`,
-    "maximumAttendeeCapacity": 180,
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "5875 Carmenica Drive",
@@ -79,7 +78,6 @@ const corporateSchema = [
     "telephone": "+1-315-752-0150",
     "email": "sales@cicerogrand.com",
     "image": `${SITE_URL}/photos/cicero-grand-ballroom-wide.jpg`,
-    "maximumAttendeeCapacity": 220,
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "5875 Carmenica Drive",
@@ -143,8 +141,8 @@ const ROUTE_SCHEMA: Record<string, { title: string; description: string; schema:
     schema: [],
   },
   "/event-center/weddings": {
-    title: "Syracuse Wedding Venue · 5.0 ★ WeddingWire · Bring Your Own Caterer | The Cicero Grand",
-    description: "Rated 5.0/5.0 on WeddingWire. Flexible Syracuse-area ballroom with outside caterers welcome. Getting Ready Room for the wedding party and on-site guest rooms. Open bar packages. Tour the venue — call (315) 752-0150.",
+    title: "Wedding Venue Near Syracuse, NY | Cicero Grand",
+    description: "Plan a wedding celebration in Cicero, NY, near Syracuse. Ask about ballroom layouts, catering arrangements and hotel suites for guests. Request a tour.",
     schema: weddingsSchema,
   },
   "/event-center/corporate-meetings": {

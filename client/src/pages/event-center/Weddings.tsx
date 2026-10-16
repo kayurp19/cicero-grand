@@ -3,6 +3,8 @@ import { Link } from 'wouter';
 import { PageHero } from '../../components/PageHero';
 import { Reveal } from '../../components/Reveal';
 import { VenueGallery } from '../../components/VenueGallery';
+import { EventInquiryActions } from '../../components/EventInquiryActions';
+import { ResponsiveImage } from '../../components/ResponsiveImage';
 import { useContent } from '../../lib/content';
 import { useSeo, SITE } from '../../hooks/useSeo';
 import weddingsSeed from '../../content/weddings.json';
@@ -13,9 +15,9 @@ export default function Weddings() {
   const site = useContent<typeof siteSeed>('site');
 
   useSeo({
-    title: 'Wedding Venues in Syracuse, NY · 5.0 ★ WeddingWire · Outside Caterers Welcome | The Cicero Grand',
+    title: 'Wedding Venue Near Syracuse, NY | Cicero Grand',
     description:
-      'Syracuse wedding venue for 30–200 guests. 5.0/5.0 on WeddingWire. Bring your own caterer, on-site suites for guests, outdoor ceremony option, Getting Ready Room. Micro weddings, elopements, and full receptions. Call (315) 752-0150.',
+      'Plan a wedding celebration in Cicero, NY, near Syracuse. Ask about ballroom layouts, catering arrangements and hotel suites for guests. Request a tour.',
     canonicalPath: '/event-center/weddings',
     ogImage: '/photos/cicero-grand-ballroom-wide.jpg',
     jsonLd: [
@@ -24,12 +26,11 @@ export default function Weddings() {
         '@type': 'EventVenue',
         name: `${SITE.name} — Weddings`,
         description:
-          'Wedding venue near Syracuse, NY. Outside caterers welcome. Getting Ready Room for the wedding party and on-site hotel suites for guests. Rated 5.0/5.0 on WeddingWire.',
+          'Wedding venue in Cicero, NY, near Syracuse, with a ballroom and on-site hotel suites. Contact the events team about your plans.',
         url: `${SITE.url}/event-center/weddings`,
         telephone: SITE.salesPhone,
         email: SITE.email,
         image: `${SITE.url}/photos/cicero-grand-ballroom-wide.jpg`,
-        maximumAttendeeCapacity: 350,
         address: {
           '@type': 'PostalAddress',
           streetAddress: SITE.street,
@@ -44,7 +45,7 @@ export default function Weddings() {
           longitude: SITE.longitude,
         },
         // EventVenue is not an eligible reviewed-item type for Google review
-        // snippets. Keep the visible WeddingWire badge, not rating markup.
+        // snippets. Do not substitute hotel reviews or an unverified venue score.
       },
       {
         '@context': 'https://schema.org',
@@ -76,7 +77,7 @@ export default function Weddings() {
         title={<>Your day. <em className="italic font-light">All</em> in one place.</>}
         intro={w.intro}
       />
-
+      <EventInquiryActions />
       {/* Breadcrumb */}
       <nav className="bg-background border-b border-border" aria-label="Breadcrumb">
         <div className="max-w-[1400px] mx-auto px-5 lg:px-10 py-4 flex items-center gap-2 text-sm text-muted-foreground">
@@ -112,18 +113,12 @@ export default function Weddings() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 text-sm hover:text-primary transition-colors"
                 >
-                  <span className="flex items-center gap-0.5">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-primary text-primary" />
-                    ))}
-                  </span>
-                  <span className="font-medium">{w.rating}</span>
-                  <span className="text-muted-foreground">{w.ratingSource}</span>
+                  <span className="font-medium underline underline-offset-4">Read venue reviews on WeddingWire</span>
                 </a>
               </div>
               <div className="col-span-12 lg:col-span-6 grid grid-cols-2 gap-3">
-                <img src="/photos/venue-ceremony-arch.jpg" alt="Candlelit aisle detail with white roses and eucalyptus" loading="lazy" className="aspect-[3/4] object-cover rounded-3xl" />
-                <img src="/photos/venue-tablescape.jpg" alt="Reception tablescape detail" loading="lazy" className="aspect-[3/4] object-cover rounded-3xl mt-12" />
+                <ResponsiveImage src="/photos/cicero-grand-ballroom-chandeliers.jpg" alt="Cicero Grand ballroom before wedding setup" loading="lazy" sizes="(min-width:768px)25vw,50vw" className="aspect-[3/4] object-cover rounded-3xl" />
+                <ResponsiveImage src="/photos/cicero-grand-event-entrance.jpg" alt="Actual entrance to the Cicero Grand event center" loading="lazy" sizes="(min-width:768px)25vw,50vw" className="aspect-[3/4] object-cover rounded-3xl mt-12" />
               </div>
             </div>
           </Reveal>

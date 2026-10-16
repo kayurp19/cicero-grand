@@ -52,7 +52,10 @@ export function RateBanner() {
     set();
     const observer = new ResizeObserver(set);
     if (bannerRef.current) observer.observe(bannerRef.current);
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      document.documentElement.style.setProperty('--banner-height', '0px');
+    };
   }, [show]);
 
   if (!show) return null;

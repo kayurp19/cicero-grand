@@ -1,8 +1,9 @@
 import { Link } from 'wouter';
-import { Check, ArrowUpRight, ChevronDown, Phone, Calendar } from 'lucide-react';
+import { Check, ArrowUpRight, ChevronDown } from 'lucide-react';
 import { PageHero } from '../components/PageHero';
 import { Reveal } from '../components/Reveal';
 import { VenueGallery } from '../components/VenueGallery';
+import { EventInquiryActions } from '../components/EventInquiryActions';
 import { useContent } from '../lib/content';
 import { useSeo, SITE } from '../hooks/useSeo';
 import eventsSeed from '../content/events.json';
@@ -32,7 +33,7 @@ const categories = [
     eyebrow: '03',
     title: 'Weddings',
     blurb:
-      'Ceremony to last dance — all on-site. Rated 5.0/5.0 on WeddingWire. Outside caterers welcome. Getting Ready Room and guest-room block included.',
+      'Plan your ceremony and reception in Cicero, near Syracuse. Ask about catering arrangements, a getting-ready room and hotel rooms for overnight guests.',
     image: '/photos/cicero-grand-ballroom-chandeliers.webp',
     cta: 'Plan a wedding',
   },
@@ -41,7 +42,7 @@ const categories = [
     eyebrow: '04',
     title: 'Banquet & Catering Menus',
     blurb:
-      'Download our wedding, corporate, social, sports-team, and hosted-bar menus — every package and option in branded PDFs. Custom quote within one business day.',
+      'Explore wedding, corporate, social, sports-team and hosted-bar menus. Share your plans for a quote tailored to your date and guest count.',
     image: '/photos/cicero-grand-event-entrance.webp',
     cta: 'See the menus',
   },
@@ -75,7 +76,6 @@ export default function EventCenter() {
         postalCode: SITE.postalCode,
         addressCountry: SITE.country,
       },
-      maximumAttendeeCapacity: 350,
       amenityFeature: [
         { '@type': 'LocationFeatureSpecification', name: 'Outside Caterers Welcome', value: true },
         { '@type': 'LocationFeatureSpecification', name: 'On-site Audio/Visual', value: true },
@@ -90,39 +90,11 @@ export default function EventCenter() {
       <PageHero
         eyebrow="The Event Center"
         image="/photos/cicero-grand-ballroom-wide.jpg"
-        title={<>One ballroom. <em className="italic font-light">Every</em> kind of gathering.</>}
-        intro="A 60 × 46 ballroom (2,760 sq ft) plus flexible half-room configurations and 9 setup styles — built to host meetings, banquets, and weddings up to 200 seated (350 standing cocktail). Outside caterers welcome, on-site suites for overnight guests, and one coordinator from booking through teardown."
+        title={<>Banquet Hall &amp; Event Venue in <em className="italic font-light">Cicero, NY,</em> Near Syracuse</>}
+        compactTitle
+        intro="One ballroom. Every kind of gathering. Plan a wedding, company meeting or celebration at 5875 Carmenica Drive. Tell us your date, guest count and plans for a layout and catering proposal."
       />
-
-      {/* CALL-FIRST CTA BAR — directly under hero so ad traffic sees it immediately */}
-      <section className="bg-primary text-primary-foreground">
-        <div className="max-w-[1400px] mx-auto px-5 lg:px-10 py-8 lg:py-10 grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
-          <div className="lg:col-span-7">
-            <p className="text-sm uppercase tracking-[0.2em] opacity-80 mb-2">Tour the ballroom this week</p>
-            <h2 className="font-display text-2xl lg:text-3xl leading-tight tracking-tight">
-              Talk to a coordinator now — availability, pricing, and menus in one call.
-            </h2>
-          </div>
-          <div className="lg:col-span-5 flex flex-col sm:flex-row gap-3 lg:justify-end">
-            <a
-              href={`tel:${site.salesPhoneRaw}`}
-              data-testid="event-hero-call"
-              className="inline-flex items-center justify-center gap-2 px-6 h-14 rounded-full bg-background text-foreground font-medium hover:bg-background/90 transition-colors"
-            >
-              <Phone className="w-5 h-5" strokeWidth={2.2} />
-              Call {site.salesPhone}
-            </a>
-            <a
-              href="/contact?topic=Event%20%2F%20meeting%20inquiry&tour=1#contact-form"
-              data-testid="event-hero-tour"
-              className="inline-flex items-center justify-center gap-2 px-6 h-14 rounded-full border border-background/40 hover:bg-background/10 transition-colors"
-            >
-              <Calendar className="w-5 h-5" strokeWidth={2.2} />
-              Request a tour
-            </a>
-          </div>
-        </div>
-      </section>
+      <EventInquiryActions />
 
       <VenueGallery />
 
@@ -204,6 +176,7 @@ export default function EventCenter() {
                 <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
                   ✦ Spaces & capacities
                 </span>
+                <p className="mt-2 text-sm text-muted-foreground">Planning figures below must be confirmed for your selected layout, aisles, staging and accessibility needs. Your written proposal confirms the approved guest count and included spaces.</p>
               </div>
               <p className="lg:hidden px-6 pt-4 pb-2 text-xs text-muted-foreground italic">Scroll table → to see all 9 setup styles</p>
               <div className="overflow-x-auto">
@@ -322,7 +295,7 @@ export default function EventCenter() {
               Get a <em className="italic font-light">proposal</em>.
             </h2>
             <p className="text-lg text-background/70 leading-relaxed mb-8">
-              Tell us about your event — meeting, banquet, reunion, holiday party, wedding. Our team will respond with availability, custom menus, and a quote within one business day.
+              Tell us about your meeting, banquet, reunion, holiday party or wedding. Our team will follow up about availability, menus and a proposal for your plans.
             </p>
             <div className="flex flex-wrap gap-3">
               <a

@@ -43,6 +43,7 @@ const AdminEditor = lazy(() => import("@/pages/admin/Editor"));
 const AdminSubmissions = lazy(() => import("@/pages/admin/Submissions"));
 const AdminEmailLeads = lazy(() => import("@/pages/admin/EmailLeads"));
 import { initTracking, trackPageView, installGlobalClickTracking } from "@/lib/tracking";
+import { eventInquiry } from "@shared/event-inquiry";
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -75,15 +76,17 @@ function TrackingProvider() {
 }
 
 function PublicLayout({ children }: { children: React.ReactNode }) {
+  const [path] = useLocation();
+  const isEvent = Boolean(eventInquiry(path, window.location.search));
   return (
     <>
-      <RateBanner />
+      {!isEvent && <RateBanner />}
       <Header />
       <main>{children}</main>
       <Footer />
       <StickyBookBar />
       <CookieConsent />
-      <EmailCapturePopup />
+      {!isEvent && <EmailCapturePopup />}
     </>
   );
 }

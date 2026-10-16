@@ -3,6 +3,7 @@ import { Link } from 'wouter';
 import { PageHero } from '../../components/PageHero';
 import { Reveal } from '../../components/Reveal';
 import { VenueGallery } from '../../components/VenueGallery';
+import { EventInquiryActions } from '../../components/EventInquiryActions';
 import { useContent } from '../../lib/content';
 import { useSeo, SITE } from '../../hooks/useSeo';
 import eventsSeed from '../../content/events.json';
@@ -44,7 +45,6 @@ export default function CorporateMeetings() {
           latitude: SITE.latitude,
           longitude: SITE.longitude,
         },
-        maximumAttendeeCapacity: 250,
       },
       {
         '@context': 'https://schema.org',
@@ -76,7 +76,7 @@ export default function CorporateMeetings() {
         title={<>Meetings that <em className="italic font-light">land</em>.</>}
         intro="Half-day sessions, full-day conferences, training, and off-sites. 9 setup styles — banquet rounds, crescent, theater, classroom, conference, U-shape, hollow square, reception, or trade-show exhibits. Breakfast, lunch, and breaks built around your agenda."
       />
-
+      <EventInquiryActions />
       {/* Breadcrumb */}
       <nav className="bg-background border-b border-border" aria-label="Breadcrumb">
         <div className="max-w-[1400px] mx-auto px-5 lg:px-10 py-4 flex items-center gap-2 text-sm text-muted-foreground">
@@ -310,7 +310,7 @@ export default function CorporateMeetings() {
             Get a meeting <em className="italic font-light">proposal</em>.
           </h2>
           <p className="text-lg text-background/70 leading-relaxed mb-10 max-w-xl mx-auto">
-            Tell us your dates, head count, and agenda. We'll send a proposal with menus, A/V, and a guest-room block within one business day.
+            Tell us your dates, head count and agenda. Our team will follow up about room layouts, menus, A/V requirements and overnight rooms.
           </p>
           <div className="inline-flex flex-wrap gap-3 justify-center">
             <a

@@ -3,6 +3,8 @@ import { Link } from 'wouter';
 import { PageHero } from '../../components/PageHero';
 import { Reveal } from '../../components/Reveal';
 import { VenueGallery } from '../../components/VenueGallery';
+import { EventInquiryActions } from '../../components/EventInquiryActions';
+import { ResponsiveImage } from '../../components/ResponsiveImage';
 import { useContent } from '../../lib/content';
 import { useSeo, SITE } from '../../hooks/useSeo';
 import eventsSeed from '../../content/events.json';
@@ -56,7 +58,6 @@ export default function SocialEvents() {
         postalCode: SITE.postalCode,
         addressCountry: SITE.country,
       },
-      maximumAttendeeCapacity: 350,
     },
   });
 
@@ -65,10 +66,11 @@ export default function SocialEvents() {
       <PageHero
         eyebrow="Event Center · Social"
         image="/photos/cicero-grand-ballroom-wide.jpg"
-        title={<>Banquets that <em className="italic font-light">feel</em> like home.</>}
-        intro="Showers, reunions, birthdays, holiday parties, religious & cultural gatherings — up to 200 seated (350 standing cocktail). Bring your own caterer for the dishes that matter, or use ours. One ballroom. Every tradition welcome."
+        title={<>Banquet Hall for Parties &amp; Celebrations <em className="italic font-light">Near Syracuse</em></>}
+        compactTitle
+        intro="Gather in Cicero, NY, for a shower, birthday, reunion or holiday party. Share your date and guest count, then discuss the room layout, food service and overnight-room needs with our events team."
       />
-
+      <EventInquiryActions />
       <VenueGallery compact />
 
       {/* Breadcrumb */}
@@ -97,8 +99,8 @@ export default function SocialEvents() {
                 </p>
               </div>
               <div className="col-span-12 lg:col-span-6 grid grid-cols-2 gap-3">
-                <img src="/photos/venue-tablescape.jpg" alt="Banquet tablescape detail" loading="lazy" className="aspect-[3/4] object-cover rounded-3xl" />
-                <img src="/photos/venue-cocktail-hour.jpg" alt="Cocktail hour detail" loading="lazy" className="aspect-[3/4] object-cover rounded-3xl mt-12" />
+                <ResponsiveImage src="/photos/cicero-grand-ballroom-chandeliers.jpg" alt="Cicero Grand ballroom before event setup" loading="lazy" sizes="(min-width:768px)25vw,50vw" className="aspect-[3/4] object-cover rounded-3xl" />
+                <ResponsiveImage src="/photos/cicero-grand-event-foyer.jpg" alt="Cicero Grand event foyer before event setup" loading="lazy" sizes="(min-width:768px)25vw,50vw" className="aspect-[3/4] object-cover rounded-3xl mt-12" />
               </div>
             </div>
           </Reveal>
@@ -113,6 +115,20 @@ export default function SocialEvents() {
               ))}
             </ul>
           </Reveal>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-12">
+            {[
+              ['Showers', 'Discuss a brunch or lunch format, gift-table space and the timing of games or speeches. Tell us about dietary requirements and any décor you plan to bring.'],
+              ['Birthdays and milestones', 'Plan seating around your meal, cake presentation, music and activities. Let us know whether you need a dance floor, a display table or access for vendors.'],
+              ['Family reunions', 'Share the mix of ages, accessibility needs and overnight guests. Ask about available suite options separately from the event-space proposal.'],
+              ['Holiday parties', 'Send your preferred date and an alternate if you have one. Discuss dinner format, bar-service options, entertainment and setup time before finalizing the plan.'],
+            ].map(([heading, text]) => (
+              <article key={heading} className="rounded-2xl border border-border p-6">
+                <h3 className="font-display text-2xl mb-3">{heading}</h3>
+                <p className="text-muted-foreground leading-relaxed">{text}</p>
+              </article>
+            ))}
+          </div>
+          <p className="mt-6 text-sm text-muted-foreground">Availability, capacity by layout, outside-catering fees, kitchen access and included equipment are confirmed in your written proposal. Photos above show the venue before event setup.</p>
         </div>
       </section>
 
@@ -285,7 +301,7 @@ export default function SocialEvents() {
             Let's <em className="italic font-light">plan</em> it.
           </h2>
           <p className="text-lg text-background/70 leading-relaxed mb-10 max-w-xl mx-auto">
-            Tell us your date, head count, and the kind of event you're hosting. We'll send a proposal with menus, bar, and a guest-room block within one business day.
+            Tell us your date, head count and the kind of event you are hosting. Our team will follow up about menu options, service arrangements and any overnight rooms you need.
           </p>
           <div className="inline-flex flex-wrap gap-3 justify-center">
             <a
