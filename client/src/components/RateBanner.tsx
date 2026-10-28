@@ -1,15 +1,9 @@
 import { useState, useEffect, useRef } from 'react';
 import { X } from 'lucide-react';
 import site from '../content/site.json';
+import { getPreferenceStorage } from '@/lib/preference-storage';
 
 const STORAGE_KEY = 'cg_banner_dismissed';
-
-function getSessionStorage(): Storage | null {
-  try {
-    const key = 'session' + 'Storage';
-    return (window as any)[key] || null;
-  } catch { return null; }
-}
 
 /**
  * Site-wide top banner pushing direct booking.
@@ -21,7 +15,7 @@ export function RateBanner() {
 
   useEffect(() => {
     try {
-      const s = getSessionStorage();
+      const s = getPreferenceStorage("session");
       if (!s || s.getItem(STORAGE_KEY) !== '1') setShow(true);
     } catch {
       setShow(true);
@@ -30,7 +24,7 @@ export function RateBanner() {
 
   function dismiss() {
     try {
-      const s = getSessionStorage();
+      const s = getPreferenceStorage("session");
       if (s) s.setItem(STORAGE_KEY, '1');
     } catch {
       /* ignore */

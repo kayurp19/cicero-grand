@@ -1,4 +1,5 @@
 /** First-party preference storage only. No tracking or network requests here. */
+import { getPreferenceStorage } from "@/lib/preference-storage";
 export const CONSENT_KEY = "cg_cookie_consent_v2";
 export const CONSENT_VERSION = "2026-10-28";
 export const CONSENT_CHANGED = "cg:consent-changed";
@@ -28,7 +29,7 @@ export function getConsent(): ConsentRecord | null {
   try {
     record = PREVIEW || storageUnavailable
       ? memoryRecord
-      : JSON.parse(window.localStorage.getItem(CONSENT_KEY) || "null");
+      : JSON.parse(getPreferenceStorage("persistent")?.getItem(CONSENT_KEY) || "null");
   } catch {
     record = memoryRecord;
   }
@@ -60,15 +61,17 @@ export function saveConsent(choice: ConsentChoice): void {
     expiresAt: now + MAX_AGE,
   };
   if (!PREVIEW) try {
-    window.localStorage.setItem(CONSENT_KEY, JSON.stringify(memoryRecord));
-    window.localStorage.removeItem("cg_cookie_consent_v1");
+    const store = getPreferenceStorage("persistent");
+    if (!store) throw new Error("Preference storage unavailable");
+    store.setItem(CONSENT_KEY, JSON.stringify(memoryRecord));
+    store.removeItem("cg_cookie_consent_v1");
     storageUnavailable = false;
   } catch {
     // A blocked/full storage area must not make the page unusable. This choice
     // lasts only in memory; a fresh load asks again and starts with tracking off.
     storageUnavailable = true;
     if (essential) {
-      try { window.localStorage.removeItem(CONSENT_KEY); } catch { /* cookie safeguard remains */ }
+      try { getPreferenceStorage("persistent")?.removeItem(CONSENT_KEY); } catch { /* cookie safeguard remains */ }
     }
   }
   window.dispatchEvent(new Event(CONSENT_CHANGED));
