@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { X, Copy, Check, Mail } from "lucide-react";
 import { trackEvent } from "../lib/tracking";
-import { CONSENT_OPEN, getConsent } from "../lib/consent";
+import { CONSENT_OPEN, getConsent, openCookieSettings } from "../lib/consent";
 
 const STORAGE_KEY = "cg_popup_state_v1";
 
@@ -40,7 +40,9 @@ export function EmailCapturePopup() {
 
     const fire = (reason: string) => {
       if (firedRef || cancelled) return;
-      if (!getConsent() || document.querySelector('[data-testid="cookie-settings"]')) {
+      const footer = document.querySelector('[data-testid="site-footer"]');
+      if (!getConsent() || document.querySelector('[data-testid="cookie-settings"]') ||
+          (footer && footer.getBoundingClientRect().top < window.innerHeight)) {
         window.clearTimeout(timer);
         timer = window.setTimeout(() => fire(reason), 30000);
         return;
@@ -307,6 +309,10 @@ export function EmailCapturePopup() {
               <p className="text-center text-[11px] leading-relaxed text-neutral-500">
                 Valid on reservations made directly with the hotel. One use per guest. Valid 60 days.
               </p>
+              <button type="button" onClick={openCookieSettings}
+                className="block mx-auto text-xs text-neutral-700 underline underline-offset-2">
+                Cookie settings
+              </button>
             </form>
           </>
         )}
