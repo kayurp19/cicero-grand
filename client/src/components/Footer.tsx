@@ -2,6 +2,7 @@ import { Link } from 'wouter';
 import { Logo } from './Logo';
 import { Phone, Mail, MapPin, Facebook } from 'lucide-react';
 import site from '../content/site.json';
+import { openCookieSettings } from '../lib/consent';
 
 export function Footer() {
   return (
@@ -96,9 +97,10 @@ export function Footer() {
         <div className="pt-8 mt-8 border-t border-background/15 flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-xs text-background/55">
           <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
             <Link href="/privacy" className="hover:text-background">Privacy Policy</Link>
+            <button type="button" onClick={openCookieSettings} className="hover:text-background underline underline-offset-4">Cookie settings</button>
             <Link href="/terms" className="hover:text-background">Terms of Use</Link>
             <Link href="/accessibility" className="hover:text-background">Accessibility</Link>
-            <Link href="/contact" className="hover:text-background">Do Not Sell My Info</Link>
+            <button type="button" onClick={openCookieSettings} className="hover:text-background">Your privacy choices</button>
           </div>
           <div className="flex items-center gap-5">
             <span>Check-in {site.checkIn} · Check-out {site.checkOut}</span>

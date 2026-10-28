@@ -9,6 +9,9 @@ import {
   isTrackingEnabled,
   isMetaPixelEnabled,
 } from "./tracking-config";
+import {
+  CONSENT_CHANGED, CONSENT_KEY, optionalTrackingAllowed, clearOptionalCookies,
+} from "./consent";
 
 declare global {
   interface Window {
@@ -20,6 +23,41 @@ declare global {
 
 let gtmLoaded = false;
 let metaPixelLoaded = false;
+let consentListenersInstalled = false;
+
+function canTrack(): boolean {
+  return typeof window !== "undefined" && isTrackingEnabled() && optionalTrackingAllowed();
+}
+
+// Queue consent before loading the container, not after its tags have fired.
+function googleConsent(command: "default" | "update", granted: boolean): void {
+  function queue(..._args: unknown[]) { window.dataLayer.push(arguments); }
+  const state = granted ? "granted" : "denied";
+  queue("consent", command, {
+    analytics_storage: state, ad_storage: state,
+    ad_user_data: state, ad_personalization: state,
+  });
+}
+
+function syncConsent(): void {
+  if (canTrack()) {
+    if (!gtmLoaded) {
+      loadTracking();
+      // Only the current page is measured. Never replay pre-consent actions.
+      trackPageView(window.location.pathname, document.title);
+    }
+  } else {
+    clearOptionalCookies();
+    if (gtmLoaded || metaPixelLoaded) {
+      (window as any)[`ga-disable-${TRACKING.GA4_MEASUREMENT_ID}`] = true;
+      googleConsent("update", false);
+      window.fbq?.("consent", "revoke");
+      // Unload already-running third-party listeners as well as their cookies.
+      // The next document starts with the saved essential-only choice.
+      window.location.reload();
+    }
+  }
+}
 
 /**
  * Bootstrap Meta (Facebook) Pixel. Safe to call multiple times — the pixel
@@ -29,7 +67,7 @@ let metaPixelLoaded = false;
  * you can run ads to "people who viewed cicerogrand.com in the last 30 days."
  */
 export function initMetaPixel(): void {
-  if (typeof window === "undefined") return;
+  if (!canTrack()) return;
   if (!isMetaPixelEnabled()) return;
   if (metaPixelLoaded) return;
   metaPixelLoaded = true;
@@ -62,7 +100,7 @@ export function initMetaPixel(): void {
  * Use this to mirror key events (Lead, InitiateCheckout, Contact) to Meta.
  */
 function fbqTrack(eventName: string, params?: Record<string, unknown>): void {
-  if (typeof window === "undefined") return;
+  if (!canTrack()) return;
   if (!isMetaPixelEnabled()) return;
   if (!window.fbq) return;
   if (params) {
@@ -80,15 +118,28 @@ function fbqTrack(eventName: string, params?: Record<string, unknown>): void {
 export function initTracking(): void {
   if (typeof window === "undefined") return;
   window.dataLayer = window.dataLayer || [];
-
-  if (!isTrackingEnabled()) {
-    // Tracking IDs not pasted in yet — leave dataLayer in place so future
-    // .push() calls queue events for later, but skip loading GTM.
+  if (!consentListenersInstalled) {
+    consentListenersInstalled = true;
+    googleConsent("default", false);
+    window.addEventListener(CONSENT_CHANGED, syncConsent);
+    window.addEventListener("storage", event => {
+      if (event.key === CONSENT_KEY || event.key === null) syncConsent();
+    });
+    window.addEventListener("focus", syncConsent);
+    window.addEventListener("pageshow", syncConsent);
+  }
+  if (!canTrack()) {
+    clearOptionalCookies();
     return;
   }
+  loadTracking();
+}
 
+function loadTracking(): void {
+  if (!canTrack()) return;
   if (gtmLoaded) return;
   gtmLoaded = true;
+  googleConsent("update", true);
 
   // Standard GTM bootstrap, transcribed from the docs.
   window.dataLayer.push({
@@ -112,7 +163,7 @@ export function initTracking(): void {
  * so each route change is captured (otherwise GTM only fires on hard load).
  */
 export function trackPageView(path: string, title?: string): void {
-  if (typeof window === "undefined") return;
+  if (!canTrack()) return;
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({
     event: "page_view",
@@ -134,7 +185,7 @@ export function trackBookNow(meta?: {
   source?: string;
   ratePlan?: string;
 }): void {
-  if (typeof window === "undefined") return;
+  if (!canTrack()) return;
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({
     event: "begin_checkout",
@@ -162,7 +213,7 @@ export function trackBookNow(meta?: {
  * Push a "Phone Click" / generate_lead event when a tel: link is clicked.
  */
 export function trackPhoneClick(meta?: { source?: string }): void {
-  if (typeof window === "undefined") return;
+  if (!canTrack()) return;
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({
     event: "generate_lead",
@@ -189,7 +240,7 @@ export function trackContactSubmit(meta?: {
   topic?: string;
   source?: string;
 }): void {
-  if (typeof window === "undefined") return;
+  if (!canTrack()) return;
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({
     event: "generate_lead",
@@ -216,7 +267,7 @@ export function trackContactSubmit(meta?: {
  * because they document intent.
  */
 export function trackEvent(eventName: string, params?: Record<string, unknown>): void {
-  if (typeof window === "undefined") return;
+  if (!canTrack()) return;
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({
     event: eventName,

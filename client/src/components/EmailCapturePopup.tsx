@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { X, Copy, Check, Mail } from "lucide-react";
+import { trackEvent } from "../lib/tracking";
+import { CONSENT_OPEN, getConsent } from "../lib/consent";
 
 const STORAGE_KEY = "cg_popup_state_v1";
 
@@ -38,14 +40,28 @@ export function EmailCapturePopup() {
 
     const fire = (reason: string) => {
       if (firedRef || cancelled) return;
+      if (!getConsent() || document.querySelector('[data-testid="cookie-settings"]')) {
+        window.clearTimeout(timer);
+        timer = window.setTimeout(() => fire(reason), 30000);
+        return;
+      }
       firedRef = true;
       setState("shown");
       try {
-        (window as any).dataLayer?.push({ event: "email_popup_open", reason });
+        trackEvent("email_popup_open", { reason });
       } catch {
         /* ignore */
       }
     };
+
+    const privacyOpened = () => {
+      setState(current => current === "shown" ? "hidden" : current);
+      firedRef = false;
+      window.clearTimeout(timer);
+      timer = window.setTimeout(() => fire("after_privacy_settings"), 30000);
+    };
+    window.addEventListener(CONSENT_OPEN, privacyOpened);
+    listeners.push(() => window.removeEventListener(CONSENT_OPEN, privacyOpened));
 
     const armTriggers = () => {
       // 1. Time trigger — 30 seconds
@@ -155,8 +171,7 @@ export function EmailCapturePopup() {
       setState("success");
       // Track conversion.
       try {
-        (window as any).dataLayer?.push({
-          event: "email_popup_submit",
+        trackEvent("email_popup_submit", {
           already_claimed: !!data.alreadyClaimed,
         });
       } catch {

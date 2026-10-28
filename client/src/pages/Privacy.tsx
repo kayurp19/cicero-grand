@@ -1,15 +1,16 @@
 import { PageHero } from '../components/PageHero';
 import { useSeo } from '../hooks/useSeo';
+import { openCookieSettings } from '../lib/consent';
 
 export default function Privacy() {
   useSeo({
     title: 'Privacy Policy · The Cicero Grand',
     description:
-      'How The Cicero Grand collects, uses, and protects your personal information. CCPA, GDPR, and US privacy law disclosures.',
+      'How The Cicero Grand handles personal information, cookies and optional Google and Meta tracking. Manage your cookie choices.',
     canonicalPath: '/privacy',
   });
 
-  const lastUpdated = 'May 9, 2026';
+  const lastUpdated = 'October 28, 2026';
 
   return (
     <>
@@ -56,18 +57,41 @@ export default function Privacy() {
               </ul>
             </div>
 
-            <div>
-              <h2 className="font-display text-2xl tracking-tight mb-3">4. Cookies and tracking technologies</h2>
+            <div id="cookies">
+              <h2 className="font-display text-2xl tracking-tight mb-3">4. Cookie policy and tracking choices</h2>
               <p>
-                We use cookies and similar technologies for website functionality, analytics,
-                and advertising. You can manage cookie preferences through the consent banner
-                on our site or your browser settings. Categories of cookies:
+                Optional analytics and advertising on cicerogrand.com stay off until you
+                choose Accept all. Essential only keeps Google Tag Manager, Google Analytics,
+                Google Ads and the Meta Pixel from loading. Browsing, inquiry forms and links
+                to book a room remain available with either choice.
               </p>
               <ul className="list-disc pl-6 space-y-2 mt-3">
-                <li><strong>Strictly necessary:</strong> required for the site to function (booking, security).</li>
-                <li><strong>Analytics:</strong> Google Analytics or similar — measures site usage.</li>
-                <li><strong>Advertising:</strong> Google Ads, Meta — measures campaign performance.</li>
+                <li><strong>Preferences and functional storage:</strong> cg_cookie_consent_v2 stores your choice, notice version, time and expiry in this browser for 180 days. The cg_tracking_optout cookie safeguards an essential-only choice for up to 180 days. These are browser-local records, not a centralized consent audit log. The cg_popup cookie remembers a dismissed or completed offer for up to 180 days; cg_admin supports authenticated staff access. These are not advertising cookies.</li>
+                <li><strong>Analytics, only after Accept all:</strong> Google Analytics measures site usage. Its cookies can include _ga and _ga_ followed by a property identifier.</li>
+                <li><strong>Advertising, only after Accept all:</strong> Google Ads and Meta measure campaigns and may support advertising audiences. Their cookies can include _gcl_au, other _gcl_ cookies, _fbp and _fbc. Google Tag Manager loads the configured Google measurement tools. Vendor cookie names and lifetimes can vary with their configuration.</li>
               </ul>
+              <p className="mt-3">
+                You can reopen Cookie settings in the footer at any time. Choosing Essential
+                only after accepting stops optional tracking, removes known accessible
+                first-party tracking cookies and reloads the page to unload running trackers.
+                It does not undo information already sent or delete cookies on other domains.
+                If your browser sends Global Privacy Control, optional analytics and
+                advertising stay off. If browser storage is unavailable, your choice lasts
+                only for the current page session; an essential-only safeguard cookie may
+                still remember your rejection. A fresh load without a valid acceptance
+                starts with tracking off.
+              </p>
+              <button type="button" onClick={openCookieSettings}
+                className="mt-4 rounded-full border border-foreground px-5 py-3 text-sm font-medium hover:bg-foreground hover:text-background">
+                Cookie settings
+              </button>
+              <p className="mt-4">
+                Room reservations open on Cloudbeds, a separate service with its own cookies
+                and privacy controls. This website setting does not change Cloudbeds&apos;
+                settings. Essential server logs and information you intentionally submit in
+                a form are separate from optional tracking; accepting cookies does not sign
+                you up for marketing emails.
+              </p>
             </div>
 
             <div>
@@ -79,7 +103,9 @@ export default function Privacy() {
                 <li><strong>Business transfers:</strong> in the event of a sale or merger, your information may be transferred.</li>
               </ul>
               <p className="mt-3">
-                <strong>We do not sell your personal information.</strong>
+                Optional advertising tools can involve sharing information for advertising.
+                Use Cookie settings to keep these tools off. For other privacy requests,
+                contact us using the details below.
               </p>
             </div>
 

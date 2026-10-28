@@ -3,6 +3,7 @@ import { Check, ArrowRight, Download, Mail, Phone } from 'lucide-react';
 import { PageHero } from '../components/PageHero';
 import { Reveal } from '../components/Reveal';
 import { useSeo, SITE } from '../hooks/useSeo';
+import { optionalTrackingAllowed } from '../lib/consent';
 
 // Catalog mirrors server/routes.ts MENU_CATALOG. No pricing displayed publicly.
 const MENUS = [
@@ -150,7 +151,7 @@ export default function Menus() {
       const body = await r.json();
       setDownloads(body.downloads || []);
       // GA4 event
-      if (typeof window !== 'undefined' && (window as any).gtag) {
+      if (optionalTrackingAllowed() && typeof window !== 'undefined' && (window as any).gtag) {
         (window as any).gtag('event', 'menu_request', {
           event_category: 'lead',
           event_label: form.eventType,

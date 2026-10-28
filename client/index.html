@@ -147,35 +147,7 @@
     <!-- Legacy hash migration lives in main.tsx, where it is disabled for previews. -->
   </head>
   <body>
-    <!--
-      GTM noscript fallback. The container ID is injected at build time via a
-      Vite plugin if you'd rather hard-code it; for now we inject the JS-based
-      loader from src/lib/tracking.ts. The placeholder iframe below is left as
-      a documented spot for you to paste the GTM-XXXXXXX ID if you want a
-      noscript fallback for the small fraction of users with JS disabled.
-    -->
-    <noscript>
-      <iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-T39JPZVF"
-        height="0"
-        width="0"
-        style="display:none;visibility:hidden"
-      ></iframe>
-    </noscript>
-    <!--
-      Meta Pixel noscript fallback. Only replace META_PIXEL_ID once you have
-      the real 16-digit ID from business.facebook.com → Events Manager.
-      Until then this <img> loads a broken pixel (harmless).
-    -->
-    <noscript>
-      <img
-        height="1"
-        width="1"
-        style="display:none"
-        alt=""
-        src="https://www.facebook.com/tr?id=28743800258546034&ev=PageView&noscript=1"
-      />
-    </noscript>
+    <!-- No tracking fallback: without a consent choice, optional tags stay off. -->
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
