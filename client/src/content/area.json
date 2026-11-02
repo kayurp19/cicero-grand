@@ -1479,6 +1479,15 @@
   },
   "featured": [
     {
+      "name": "Oneida Lake",
+      "image": "",
+      "drive": "Boating & fishing",
+      "blurb": "Plan a day of boating or fishing on Oneida Lake, with public access at Oneida Shores Park in Brewerton. Check launch conditions and fishing regulations before your visit.",
+      "address": "Brewerton lake access",
+      "sourceUrl": "https://dec.ny.gov/places/oneida-lake-madison-onondaga-oswego-and-oneida",
+      "sourceLabel": "Lake information from NYSDEC"
+    },
+    {
       "name": "Micron Campus",
       "image": "/photos/area/micron.jpg",
       "drive": "7 min",

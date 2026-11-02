@@ -177,20 +177,19 @@ export default function Weddings() {
                   <span className="w-8 h-px bg-foreground/40" /> What sets us apart
                 </span>
                 <h2 className="font-display text-[clamp(2rem,4.5vw,3.8rem)] leading-[1] tracking-tight text-balance">
-                  Bring your own <em className="italic font-light">caterer</em>.
+                  Catering that fits your <em className="italic font-light">event</em>.
                 </h2>
               </div>
               <div className="col-span-12 lg:col-span-7">
                 <p className="text-lg leading-relaxed mb-6 max-w-prose">
-                  Most hotel ballrooms lock you into their kitchen. We don't. Bring the caterer your family has used for 30 years, your favorite restaurant, a cultural specialist for traditional cuisine — whoever fits your day.
+                  Choose the catering arrangement that fits your wedding. Work with our in-house catering team or bring an outside caterer, with the menu, service style and setup confirmed in your event proposal.
                 </p>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-base mb-6">
                   {[
-                    'Cultural & ethnic catering welcome',
-                    'Or use our in-house kitchen',
-                    'Kosher, halal, vegetarian, vegan',
-                    'Family recipes & favorite restaurants',
-                    'Or use our full on-site catering',
+                    'In-house catering options',
+                    'Outside caterers welcome',
+                    'Buffet, plated or station service',
+                    'Planning with our event team',
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3">
                       <Check className="w-5 h-5 text-primary mt-0.5 shrink-0" strokeWidth={2.5} />
@@ -199,7 +198,7 @@ export default function Weddings() {
                   ))}
                 </ul>
                 <p className="text-sm text-muted-foreground max-w-prose">
-                  Two paths: use our in-house kitchen — plated, buffet, stations, carving, prepared by Chef Ken and his team — or bring your own caterer with a modest catering fee. Either way we provide tables, chairs, linens, china, glassware, silverware, and full kitchen access.
+                  Tables, chairs and house linens are included. China, glassware, silverware and kitchen access are available at additional cost, not included in the base rental. Outside-catering fees apply. Your written proposal confirms the selected services and charges.
                 </p>
               </div>
             </div>

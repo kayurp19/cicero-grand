@@ -16,8 +16,8 @@ const occasions = [
   'Family reunions',
   'Holiday parties (corporate or family)',
   'Anniversaries & vow renewals',
-  'Religious & cultural celebrations',
-  'Quinceañeras & Sweet 16s',
+  'Private celebrations',
+  'Sweet 16s',
   'Graduations & retirement parties',
   'Memorials & celebrations of life',
   'Sports teams & group travel',
@@ -37,7 +37,7 @@ export default function SocialEvents() {
   useSeo({
     title: 'Banquet Hall Syracuse NY · Showers, Reunions, Holiday Parties | The Cicero Grand',
     description:
-      'Syracuse-area banquet hall for showers, reunions, Quinceañeras, holiday parties, and celebrations of life. Outside caterers welcome. Buffet, plated, or stations. On-site hotel suites for guests. Call (315) 752-0150.',
+      'Syracuse-area banquet hall for showers, reunions, birthdays, holiday parties and celebrations of life. In-house and outside catering options. On-site hotel suites for guests.',
     canonicalPath: '/event-center/social-events',
     ogImage: '/photos/cicero-grand-ballroom-wide.jpg',
     jsonLd: {
@@ -45,7 +45,7 @@ export default function SocialEvents() {
       '@type': 'EventVenue',
       name: `${SITE.name} — Social Events & Banquets`,
       description:
-        'Banquet hall and social event venue near Syracuse, NY. Outside caterers welcome — kosher, halal, cultural, family. On-site suites for guests.',
+        'Banquet hall and social event venue near Syracuse, NY. In-house catering or outside caterers, with services and fees confirmed in your proposal. On-site suites for guests.',
       url: `${SITE.url}/event-center/social-events`,
       telephone: SITE.salesPhone,
       email: SITE.email,
@@ -142,20 +142,19 @@ export default function SocialEvents() {
                   <span className="w-8 h-px bg-background/40" /> What sets us apart
                 </span>
                 <h2 className="font-display text-[clamp(2rem,4.5vw,3.8rem)] leading-[1] tracking-tight text-balance">
-                  Bring your own <em className="italic font-light">caterer</em>.
+                  Catering that fits your <em className="italic font-light">event</em>.
                 </h2>
               </div>
               <div className="col-span-12 lg:col-span-7">
                 <p className="text-lg leading-relaxed mb-6 max-w-prose text-background/90">
-                  This is the question we get most. The answer is yes. Family recipes. Cultural specialists. The restaurant your community has used for thirty years. Religious dietary laws — kosher, halal, jain. We provide the room, the kitchen access, and everything on the table. You bring the food.
+                  Choose the catering arrangement that fits your celebration. Work with our in-house catering team or bring an outside caterer, with the menu, service style and setup confirmed in your event proposal.
                 </p>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-base mb-6">
                   {[
-                    'Cultural & ethnic catering welcome',
-                    'Or use our in-house kitchen',
-                    'Kosher, halal, vegetarian, vegan, jain',
-                    'Family recipes & community caterers',
-                    'Or use our full on-site catering',
+                    'In-house catering options',
+                    'Outside caterers welcome',
+                    'Buffet, plated or station service',
+                    'Planning with our event team',
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3">
                       <Check className="w-5 h-5 text-primary mt-0.5 shrink-0" strokeWidth={2.5} />
@@ -164,7 +163,7 @@ export default function SocialEvents() {
                   ))}
                 </ul>
                 <p className="text-sm text-background/60 max-w-prose">
-                  Two paths: use our in-house kitchen — plated, buffet, stations, carving, prepared by Chef Ken and his team — or bring your own caterer with a modest catering fee. Either way we provide tables, chairs, linens, china, glassware, silverware, and full kitchen access.
+                  Tables, chairs and house linens are included. China, glassware, silverware and kitchen access are available at additional cost, not included in the base rental. Outside-catering fees apply. Your written proposal confirms the selected services and charges.
                 </p>
               </div>
             </div>

@@ -1,5 +1,17 @@
 # Cookie consent repair: acceptance and regression checks
 
+## November 2 catering-copy correction
+- Event center, weddings and social events use neutral catering descriptions.
+- No ethnicity/religion-focused promotional copy remains on these event pages.
+- China, glassware, silverware and kitchen access are paid extras, not base inclusions.
+- Expand related FAQs; verify the same terms in visible text and wedding JSON-LD.
+- Existing rates, menu prices, catering fees and booking systems remain unchanged.
+- Mobile/desktop catering layout and quote/tour links remain usable.
+- Public CMS events/weddings endpoints had no overrides (404) before this edit.
+- Oneida Lake is a first-position Area Guide highlight with a working NYSDEC link.
+- Lake highlight uses an intentional wave illustration, not an unrelated lake photograph.
+- No new lake driving-time or opening-hours guarantees are introduced.
+
 ## Consent choices
 - A fresh desktop/mobile visit makes no Google or Meta tracking requests.
 - Essential only and closing an undecided banner save essential-only preference.

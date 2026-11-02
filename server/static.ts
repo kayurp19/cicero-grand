@@ -48,11 +48,11 @@ const weddingsSchema = [
       { "@type": "Question", "name": "Do you offer a guest-room block?",
         "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every wedding qualifies for a discounted block of suites at preferred rates, plus a complimentary suite for the couple on the wedding night." } },
       { "@type": "Question", "name": "Can we bring our own caterer?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes — and this is one of our biggest differences from most hotel venues. Many ballrooms force you to use their kitchen. We welcome outside licensed caterers, including cultural and family-owned restaurants." } },
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Choose our in-house catering team or bring an outside caterer. Outside-catering fees apply. Tables, chairs and house linens are included. China, glassware, silverware and kitchen access are available at additional cost, not included in the base rental. Your written proposal confirms the selected services and charges." } },
       { "@type": "Question", "name": "What about other outside vendors?",
         "acceptedAnswer": { "@type": "Answer", "text": "Florists, photographers, videographers, DJs, bands, and officiants are all welcome. We can recommend trusted local vendors or work with anyone you choose." } },
       { "@type": "Question", "name": "What about decor and setup?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Tables, chairs, linens, china, glassware, and silverware are included. We set up the room to your floor plan and break it down after the event." } },
+        "acceptedAnswer": { "@type": "Answer", "text": "Tables, chairs and house linens are included. We'll set up your centerpieces, place cards and signage at no extra charge; please drop them off ahead of time. China, glassware, silverware and kitchen access are optional paid add-ons, not included in the base rental. Your written proposal confirms selected services and fees." } },
       { "@type": "Question", "name": "How far in advance should we book?",
         "acceptedAnswer": { "@type": "Answer", "text": "Most weddings book 9–18 months ahead. Saturday evenings during peak season (May–October) book first, so reach out as early as you can." } }
     ]
@@ -152,7 +152,7 @@ const ROUTE_SCHEMA: Record<string, { title: string; description: string; schema:
   },
   "/event-center/social-events": {
     title: "Syracuse Banquet Hall · Showers, Birthdays, Reunions | The Cicero Grand",
-    description: "Private banquet hall in Cicero, NY for showers, birthdays, quinces, reunions & celebrations of life. Outside caterers welcome. 40–180 guests. Call (315) 752-0150.",
+    description: "Private banquet hall in Cicero, NY for showers, birthdays, reunions and celebrations. In-house and outside catering options. Ask about services and fees.",
     schema: [],
   },
   "/contact": {

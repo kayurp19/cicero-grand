@@ -1,5 +1,5 @@
 import { Link } from 'wouter';
-import { ArrowUpRight, MapPin, ChevronDown } from 'lucide-react';
+import { ArrowUpRight, MapPin, ChevronDown, Waves } from 'lucide-react';
 import { PageHero } from '../components/PageHero';
 import { Reveal } from '../components/Reveal';
 import { useContent } from '../lib/content';
@@ -86,7 +86,7 @@ export default function Area() {
               <div className="grid grid-cols-12 gap-6 mb-10">
                 <div className="col-span-12 md:col-span-5">
                   <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
-                    Within fifteen minutes
+                    Nearby highlights
                   </span>
                   <h2 className="font-display text-[clamp(2rem,4vw,3.4rem)] leading-[1] tracking-tight mt-3 text-balance">
                     Why people come <em className="italic font-light">to Syracuse</em>.
@@ -94,7 +94,7 @@ export default function Area() {
                 </div>
                 <div className="col-span-12 md:col-span-7 md:pt-3">
                   <p className="text-base text-muted-foreground max-w-prose">
-                    Twelve headline stops — every one a short drive from our front door at I-81 Exit 98. From the Micron megafab seven minutes north, to the Dome and Destiny USA south on the highway.
+                    Explore lakes, attractions and destinations around Cicero and Syracuse. Plan your visit from our location at I-81 Exit 98, and check current routes, opening hours and visitor information before heading out.
                   </p>
                 </div>
               </div>
@@ -103,12 +103,17 @@ export default function Area() {
               {(area.featured as any[]).map((f, i) => (
                 <Reveal key={f.name} delay={i * 40}>
                   <article className="group relative aspect-[4/5] rounded-2xl overflow-hidden bg-muted">
-                    <img
+                    {f.image ? <img
                       src={f.image}
                       alt={f.name}
                       loading="lazy"
                       className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    />
+                    /> : (
+                      <div className="absolute inset-0 bg-[#173c43] p-7 text-white">
+                        <Waves className="mt-12 h-16 w-16 opacity-80" aria-hidden="true" strokeWidth={1} />
+                        <span className="mt-4 block text-xs uppercase tracking-[0.2em] text-white/80">Lake days</span>
+                      </div>
+                    )}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
                     <div className="absolute top-4 right-4">
                       <span className="inline-flex items-center px-2.5 h-7 rounded-full bg-background/90 text-foreground text-xs font-medium tabular-nums">
@@ -122,6 +127,12 @@ export default function Area() {
                       {f.blurb && (
                         <p className="mt-2 text-sm text-white/85 leading-snug max-w-[36ch]">
                           {f.blurb}
+                          {f.sourceUrl && (
+                            <>{" "}<a href={f.sourceUrl} target="_blank" rel="noopener noreferrer"
+                              className="relative z-10 mt-3 inline-flex items-center gap-1 text-white underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4">
+                              {f.sourceLabel}<ArrowUpRight className="h-4 w-4 shrink-0" aria-hidden="true" />
+                            </a></>
+                          )}
                         </p>
                       )}
                       {f.address && (
