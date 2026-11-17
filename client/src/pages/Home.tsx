@@ -583,7 +583,7 @@ export default function Home() {
       <section className="relative bg-foreground text-background py-32 lg:py-44 overflow-hidden">
         <ResponsiveImage
           src="/photos/lobby-fireplace.jpg"
-          alt=""
+          alt="The Cicero Grand lobby fireplace lounge"
           className="absolute inset-0 w-full h-full object-cover opacity-25"
           loading="lazy"
         />

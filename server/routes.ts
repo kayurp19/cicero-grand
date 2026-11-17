@@ -247,6 +247,7 @@ export async function registerRoutes(
     { path: "/gallery", changefreq: "monthly", priority: "0.7" },
     { path: "/contact", changefreq: "monthly", priority: "0.6" },
     { path: "/micron-crew-long-stay", changefreq: "weekly", priority: "0.85" },
+    { path: "/corporate", changefreq: "weekly", priority: "0.9" },
     // SEO landing pages (geo + intent)
     { path: "/cicero-ny-hotels", changefreq: "weekly", priority: "0.9" },
     { path: "/hotels-syracuse-ny", changefreq: "weekly", priority: "0.9" },

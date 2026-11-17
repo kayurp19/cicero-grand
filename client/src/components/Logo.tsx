@@ -23,8 +23,7 @@ export function Logo({
         src={mark}
         width={290}
         height={369}
-        alt=""
-        aria-hidden="true"
+        alt="Cicero Grand hotel logo"
         className="h-9 w-auto select-none"
         draggable={false}
       />
