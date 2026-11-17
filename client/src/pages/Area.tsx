@@ -318,7 +318,7 @@ export default function Area() {
                 Stay 5 minutes away
               </span>
               <h3 className="font-display text-2xl lg:text-3xl tracking-tight mt-2 text-balance">
-                Spacious all-suite rooms at I-81 Exit 98 — every suite sleeps four.
+                Spacious all-suite rooms at I-81 Exit 98 — occupancy varies by suite.
               </h3>
             </div>
             <div className="col-span-12 md:col-span-4 flex md:justify-end gap-3">
@@ -549,7 +549,7 @@ export default function Area() {
               </h2>
               <p className="mt-5 text-base text-muted-foreground max-w-xl mx-auto">
                 One quiet exit off I-81. Free hot breakfast, indoor pool, all-suite rooms
-                that sleep four. Explore our direct-booking perks.
+                with occupancy options by suite. Explore our direct-booking perks.
               </p>
               <div className="mt-8 flex flex-wrap gap-3 justify-center">
                 <Link

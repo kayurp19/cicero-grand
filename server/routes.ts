@@ -8,6 +8,7 @@ import crypto from "node:crypto";
 import multer from "multer";
 import cookieParser from "cookie-parser";
 import { storage } from "./storage";
+import { correctLegacyOccupancy } from "./content-corrections";
 import { insertContactSchema, insertMenuRequestSchema, insertEmailLeadSchema } from "@shared/schema";
 import nodemailer from "nodemailer";
 
@@ -329,7 +330,7 @@ export async function registerRoutes(
     }
     try {
       const parsed = JSON.parse(block.value);
-      return res.json(parsed);
+      return res.json(correctLegacyOccupancy(key, parsed));
     } catch {
       return res.status(500).json({ message: "Stored content is not valid JSON" });
     }

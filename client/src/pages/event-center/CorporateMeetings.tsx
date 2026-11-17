@@ -244,7 +244,7 @@ export default function CorporateMeetings() {
               </span>
               <h3 className="font-display text-3xl lg:text-4xl tracking-tight mb-5 text-balance">Stay where you meet.</h3>
               <p className="text-background/80 leading-relaxed mb-4">
-                Block 10+ all-suite rooms at preferred rates for out-of-town attendees. Every suite sleeps 4, so teams can share when budgets are tight. Free hot breakfast included.
+                Block 10+ all-suite rooms at preferred rates for out-of-town attendees. Occupancy varies by suite; confirm bedding and guest limits when arranging your block. Free hot breakfast included.
               </p>
               <a
                 href="/contact?topic=Group%20blocks&event_type=Corporate%20meeting%20room%20block#contact-form"

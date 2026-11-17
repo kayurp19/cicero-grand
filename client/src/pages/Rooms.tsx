@@ -11,7 +11,7 @@ export default function Rooms() {
   const site = useContent<typeof siteSeed>('site');
 
   useSeo({
-    title: 'All-Suite Rooms · Sleeps 4 · The Cicero Grand Hotel, Syracuse NY',
+    title: 'Hotel Suites in Cicero, NY | Cicero Grand',
     description:
       'Explore king, two-queen and accessible suites at Cicero Grand in Cicero, NY. Microwave, mini-fridge and free hot breakfast. View room options and book direct.',
     canonicalPath: '/rooms',
@@ -35,6 +35,12 @@ export default function Rooms() {
             '@type': 'Offer',
             name: r.name,
             description: r.tagline,
+            itemOffered: {
+              '@type': 'HotelRoom',
+              name: r.name,
+              bed: r.beds,
+              occupancy: { '@type': 'QuantitativeValue', maxValue: r.sleeps },
+            },
             priceCurrency: 'USD',
             price: r.startingFrom,
             url: `${SITE.url}/rooms`,
@@ -49,7 +55,7 @@ export default function Rooms() {
         eyebrow="The Suites"
         image="/photos/king-jacuzzi.jpg"
         title={<>Eight suite types. <em className="italic font-light">No</em> regular rooms.</>}
-        intro="Every stay at Cicero Grand comes with a separate living area, sofa sleeper, microwave, mini-fridge, pillow-top mattress, and 4K TV. Pick the layout — we'll handle the rest."
+        intro="Every stay at Cicero Grand comes with a separate living area, microwave, mini-fridge, pillow-top mattress, and 4K TV. Bedding and maximum occupancy vary by suite. Pick the layout — we'll handle the rest."
       />
 
       <section className="bg-background py-24 lg:py-32">

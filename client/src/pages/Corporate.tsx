@@ -255,7 +255,7 @@ export default function Corporate() {
                     'Corporate direct billing with net-30 terms',
                     'Weekly and monthly long-stay rates for crews and contractors',
                     'Dedicated blocks for storm response, project mobilization, and events',
-                    'Every suite sleeps four with kitchenette (microwave + full-size fridge)',
+                    'Suite occupancy varies; confirm bedding for your selected room',
                     'Free hot breakfast and free parking for every guest',
                     '24/7 front desk for shift schedules, late arrivals, and surgery mornings',
                     'ADA rooms with roll-in shower for accessible bookings',

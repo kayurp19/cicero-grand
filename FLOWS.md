@@ -1,5 +1,29 @@
 # Cookie consent repair: acceptance and regression checks
 
+## November 17 room occupancy and Tripadvisor verification
+- Executive King shows Sleeps 4 on homepage and Suites; King Jacuzzi stays at 2.
+- Jacuzzi has one king bed and a sofa for relaxing, never additional sleeper capacity.
+- Remove blanket every-suite-sleeps-four and all-suite-sofa-sleeper claims, including packages and event/area copy.
+- Rooms offers JSON-LD declares maximum occupancy from the same room records.
+- Offers, packages, guest directory and initial server metadata contain no contrary occupancy claims.
+- CMS rooms/offers/weddings have no override; inspect site/area overrides separately.
+- Exact supplied Tripadvisor URL retains all four UTM parameters at arrival.
+- With consent, real booking clicks acquire Google's _gl linker; client/session identity persists on Cloudbeds and ignores self-referral.
+- Repeat after internal navigation and via mobile widget / keyboard activation.
+- Essential-only consent must still block website measurement.
+- GA4 historical purchase report checks transaction ID, USD value and per-ID event counts; no synthetic purchase, real booking or payment is submitted.
+- No new purchase tag, integration-mode change, rate change or budget change.
+
+### November 17 validation results
+- TypeScript, regression tests, production build and analytics-disabled preview build pass.
+- Browser checks: shared homepage/Suites cards and room-offer JSON-LD show Executive King 4 and Jacuzzi 2; mobile navigation, cookie settings, event inquiry topic and affected routes work without new page errors.
+- Legacy CMS site highlight is corrected on read by exact string match; unrelated settings and stored content remain intact.
+- Live supplied Tripadvisor landing captures UTMs. Header, mobile sticky and keyboard date-widget booking links receive `_gl`, including after navigating to Offers.
+- Website and Cloudbeds GA4 requests use the same client/session IDs; Cloudbeds sends `ir=1`. GA4 domain configuration includes cloudbeds.com and cicerogrand.com.
+- GA4 purchase report for November 1–16, 2026 has 11 nonempty unique transaction IDs, each with one purchase event, one ecommerce purchase, positive purchase revenue and USD currency. This is a report sample, not reconciliation against PMS records or proof of universal deduplication.
+- No Tripadvisor purchase appears in the reviewed report. A new completed Tripadvisor reservation, its amount/currency reconciliation and confirmation-page reload deduplication are NOT end-to-end verified; no reservation or payment was submitted.
+- Cloudbeds guest interface loads in Comet; the sandbox browser encountered a Cloudbeds loading error. No booking-engine settings were changed.
+
 ## November 2 catering-copy correction
 - Event center, weddings and social events use neutral catering descriptions.
 - No ethnicity/religion-focused promotional copy remains on these event pages.

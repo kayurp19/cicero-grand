@@ -170,7 +170,7 @@ const ROUTE_SCHEMA: Record<string, { title: string; description: string; schema:
   // "hotels near micron", "hotels in cicero ny", etc. Now Googlebot sees unique metadata.
   "/hotels-near-destiny-usa": {
     title: "Hotels Near Destiny USA · 12 Min from Mall · The Cicero Grand",
-    description: "Stay 12 minutes from Destiny USA at The Cicero Grand. All-suite rooms sleep 4, free hot breakfast, indoor pool, free parking. Explore our direct-booking perks.",
+    description: "Stay 12 minutes from Destiny USA at The Cicero Grand. Suite occupancy varies by room type. Free hot breakfast, indoor pool, free parking. Explore our direct-booking perks.",
     schema: [],
   },
   "/hotels-near-syracuse-airport": {
@@ -190,7 +190,7 @@ const ROUTE_SCHEMA: Record<string, { title: string; description: string; schema:
   },
   "/hotels-near-turning-stone": {
     title: "Hotels Near Turning Stone Casino · 35 Min · The Cicero Grand",
-    description: "Stay 35 minutes from Turning Stone Casino at The Cicero Grand. All-suite rooms sleep 4, free breakfast, free parking. Better rates than staying on-site for shows and events.",
+    description: "Stay 35 minutes from Turning Stone Casino at The Cicero Grand. Suite occupancy varies by room type. Free breakfast, free parking. Better rates than staying on-site for shows and events.",
     schema: [],
   },
   "/hotels-near-empower-amphitheater": {
