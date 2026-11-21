@@ -121,7 +121,7 @@ export function Footer() {
         {/* Copyright + ADA */}
         <div className="pt-6 mt-6 border-t border-background/10 text-xs text-background/60 leading-relaxed space-y-2">
           <p>
-            © {new Date().getFullYear()} The Cicero Grand. All rights reserved. The Cicero Grand is an independently owned and operated hotel.
+            © {new Date().getFullYear()} Cicero Grand - Syracuse North. All rights reserved. Independently owned and operated.
           </p>
           <p>
             The Cicero Grand is committed to making this website accessible to all visitors. If you experience any difficulty accessing this site or need assistance with your reservation, please call <a href="tel:+13157520150" className="underline hover:text-background">(315) 752-0150</a>. See our <Link href="/accessibility" className="underline hover:text-background">Accessibility Statement</Link> for details.

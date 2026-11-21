@@ -6,6 +6,7 @@ export function correctLegacyOccupancy(key: string, content: unknown): unknown {
   if (!Array.isArray(site.highlights)) return content;
   return {
     ...site,
+    ...(site.name === "The Cicero Grand" ? { name: "Cicero Grand - Syracuse North" } : {}),
     highlights: site.highlights.map((highlight) =>
       highlight === "All-suite hotel — every room sleeps four"
         ? "All-suite hotel — room occupancy varies by suite"

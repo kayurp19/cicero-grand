@@ -85,7 +85,7 @@ export function useSeo({ title, description, canonicalPath, ogImage, jsonLd, noi
 
 export const SITE = {
   url: SITE_URL,
-  name: "The Cicero Grand",
+  name: "Cicero Grand - Syracuse North",
   legalName: "The Cicero Grand Hotel",
   street: "5875 Carmenica Drive",
   locality: "Cicero",

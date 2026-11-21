@@ -236,7 +236,7 @@ export function EmailCapturePopup() {
                 className="mb-2 text-[11px] font-semibold uppercase tracking-[0.25em]"
                 style={{ color: "#a36b3f" }}
               >
-                The Cicero Grand
+                Cicero Grand - Syracuse North
               </div>
               <h2
                 id="popup-title"

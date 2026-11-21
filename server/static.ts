@@ -21,7 +21,7 @@ const weddingsSchema = [
   {
     "@context": "https://schema.org",
     "@type": "EventVenue",
-    "name": "The Cicero Grand — Weddings",
+    "name": "Cicero Grand - Syracuse North — Weddings",
     "description": "Wedding venue in Cicero, NY, near Syracuse, with a ballroom and on-site hotel suites. Contact the events team about your plans.",
     "url": `${SITE_URL}/event-center/weddings`,
     "telephone": "+1-315-752-0150",
@@ -72,7 +72,7 @@ const corporateSchema = [
   {
     "@context": "https://schema.org",
     "@type": "EventVenue",
-    "name": "The Cicero Grand — Corporate Meetings & Conferences",
+    "name": "Cicero Grand - Syracuse North — Corporate Meetings & Conferences",
     "description": "Corporate meeting venue near Syracuse, NY. A/V, in-house catering (or bring your own), and on-site hotel suites for attendees.",
     "url": `${SITE_URL}/event-center/corporate-meetings`,
     "telephone": "+1-315-752-0150",

@@ -23,7 +23,7 @@ export function Logo({
         src={mark}
         width={290}
         height={369}
-        alt="Cicero Grand hotel logo"
+        alt={showWordmark ? '' : 'Cicero Grand - Syracuse North'}
         className="h-9 w-auto select-none"
         draggable={false}
       />
@@ -31,7 +31,7 @@ export function Logo({
         <span
           className={`font-display text-[1.3rem] leading-none tracking-tight ${textClassName}`}
         >
-          The Cicero Grand
+          Cicero Grand<span className="block text-[0.75em] mt-0.5"> - Syracuse North</span>
         </span>
       )}
     </div>

@@ -6,6 +6,19 @@ import { PAGE_SEO } from '../shared/page-seo';
 const html = fs.readFileSync('client/index.html', 'utf8');
 const decode = (s: string) => s.replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
 const descriptions = new Set<string>();
+const brand = 'Cicero Grand - Syracuse North';
+const paths = [...fs.readFileSync('server/routes.ts', 'utf8').matchAll(/\{ path: "([^"]+)", changefreq:/g)].map(m => m[1]);
+assert(paths.length > 30);
+for (const path of paths) {
+  const page = injectRouteSchema(html, path);
+  assert(page.match(/<title>(.*?)<\/title>/)?.[1].includes(brand), `Unbranded title: ${path}`);
+  assert(page.includes(`rel="canonical" href="https://www.cicerogrand.com${path}"`), `Wrong canonical: ${path}`);
+  assert(page.includes(`property="og:site_name" content="${brand}"`));
+}
+for (const entity of ['Hotel','WebSite','Organization']) {
+  const schema = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map(m => JSON.parse(m[1]));
+  assert.equal(schema.find(s => s['@type'] === entity)?.name, brand, entity);
+}
 for (const [route, expected] of Object.entries(PAGE_SEO)) {
   const out = injectRouteSchema(html, route);
   assert.equal(decode(out.match(/<title>(.*?)<\/title>/)![1]), expected.title);

@@ -1,5 +1,9 @@
 # Cookie consent repair: acceptance and regression checks
 
+## November 21 property name
+- Match the homepage H1, shared header/footer, branded titles and Hotel, Organization and WebSite names to Cicero Grand - Syracuse North.
+- Preserve the original logo mark, page topics, booking links, analytics, legal terms, addresses and canonical URLs. Verify before requesting a homepage recrawl.
+
 ## November 17 room occupancy and Tripadvisor verification
 - Executive King shows Sleeps 4 on homepage and Suites; King Jacuzzi stays at 2.
 - Jacuzzi has one king bed and a sofa for relaxing, never additional sleeper capacity.

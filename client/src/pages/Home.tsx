@@ -43,6 +43,7 @@ export default function Home() {
       {
         '@context': 'https://schema.org',
         '@type': 'Hotel',
+        '@id': `${SITE.url}/#hotel`,
         name: SITE.name,
         description:
           'All-suite hotel near Syracuse, NY — 6 min from Micron, 8 min from Oneida Shores boat launch. Free boat trailer parking with 30+ shore-power outlets. Indoor pool, free hot breakfast, pet friendly.',
@@ -111,6 +112,7 @@ export default function Home() {
       {
         '@context': 'https://schema.org',
         '@type': 'WebSite',
+        '@id': `${SITE.url}/#website`,
         name: SITE.name,
         url: SITE.url,
         potentialAction: {
@@ -122,7 +124,8 @@ export default function Home() {
       {
         '@context': 'https://schema.org',
         '@type': 'Organization',
-        name: SITE.legalName,
+        '@id': `${SITE.url}/#organization`,
+        name: SITE.name,
         url: SITE.url,
         logo: SITE.logo,
         contactPoint: [
@@ -163,15 +166,13 @@ export default function Home() {
         <div className="relative z-10 h-full max-w-[1400px] mx-auto px-5 lg:px-10 pt-32 pb-32 lg:pb-40 flex flex-col">
           <div className="max-w-4xl text-white">
             <span className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] opacity-90 mb-6">
-              <span className="w-8 h-px bg-white/70" /> Syracuse North · Cicero, NY
+              <span className="w-8 h-px bg-white/70" /> All-suite hotel in Cicero, NY
             </span>
             <h1
               className="font-display text-[clamp(3.2rem,9vw,8.5rem)] leading-[0.92] tracking-[-0.02em] text-balance"
               data-testid="hero-headline"
             >
-              An all-suite stay
-              <br />
-              in <em className="italic font-light">central</em> New York.
+              Cicero Grand <span className="block text-[0.78em] leading-tight">- Syracuse North</span>
             </h1>
             <p className="mt-7 text-base md:text-lg max-w-xl opacity-90 leading-relaxed">
               {site.shortDescription}

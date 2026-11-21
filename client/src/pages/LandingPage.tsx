@@ -76,7 +76,7 @@ export default function LandingPage({ slug }: LandingPageProps) {
   return (
     <>
       <PageHero
-        eyebrow={correctedAdPage ? 'Cicero, NY · I-81 Exit 98' : `${data.venue.drive} from The Cicero Grand`}
+        eyebrow={correctedAdPage ? 'Cicero, NY · I-81 Exit 98' : `${data.venue.drive} from ${SITE.name}`}
         image={data.ogImage}
         title={
           <>
