@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'wouter';
 import { Menu, X, Phone } from 'lucide-react';
-import { Logo } from './Logo';
+import headerLogoLight from '/brand/cicero-grand-full-light.png';
+import headerLogoDark from '/brand/cicero-grand-full-dark.png';
 import site from '../content/site.json';
 import { eventInquiry } from '@shared/event-inquiry';
 
@@ -51,8 +52,13 @@ export function Header() {
         data-testid="site-header"
       >
         <div className="max-w-[1400px] mx-auto px-5 lg:px-10 h-[72px] flex items-center justify-between gap-6">
-          <Link href="/" data-testid="link-home" className="shrink-0">
-            <Logo />
+          <Link href="/" data-testid="link-home" className="shrink-0 inline-flex items-center gap-3.5" aria-label="Cicero Grand - Syracuse North home">
+            <img src={transparent ? headerLogoLight : headerLogoDark}
+              width={48} height={64} alt="Cicero Grand - Syracuse North"
+              className="block h-16 w-auto select-none" draggable={false} />
+            <span aria-hidden="true" className="border-l border-current/40 pl-3.5 font-display text-[1rem] sm:text-[1.1rem] leading-none whitespace-nowrap">
+              Syracuse North
+            </span>
           </Link>
 
           <nav className="hidden xl:flex items-center gap-7 text-sm whitespace-nowrap">

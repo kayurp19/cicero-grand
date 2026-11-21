@@ -1,6 +1,7 @@
 # Cookie consent repair: acceptance and regression checks
 
 ## November 21 property name
+- Header logo follow-up: full supplied logo artwork in light/dark versions, with only the location “Syracuse North” alongside; accessible home link; header height, navigation, footer and homepage SEO remain intact.
 - Match the homepage H1, shared header/footer, branded titles and Hotel, Organization and WebSite names to Cicero Grand - Syracuse North.
 - Preserve the original logo mark, page topics, booking links, analytics, legal terms, addresses and canonical URLs. Verify before requesting a homepage recrawl.
 
