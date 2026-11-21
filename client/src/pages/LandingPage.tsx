@@ -88,6 +88,15 @@ export default function LandingPage({ slug }: LandingPageProps) {
           </>
         }
         intro={data.subtitle}
+        compactTitle={slug === 'syracuse-airport'}
+        actions={slug === 'syracuse-hotels' || slug === 'syracuse-airport' ? <>
+          <a href={SITE.bookingUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-white text-black px-5 h-11 text-sm font-medium">
+            Check dates <ArrowUpRight className="w-4 h-4" aria-hidden="true" />
+          </a>
+          <Link href="/rooms" className="inline-flex items-center h-11 text-white underline underline-offset-4">Compare suites</Link>
+        </> : slug === 'syracuse-hotel' ?
+          <Link href="/hotels-syracuse-ny" className="inline-flex items-center gap-2 rounded-full bg-white text-black px-5 h-11 text-sm font-medium">Explore the hotel and suites</Link>
+          : undefined}
       />
 
       {/* Quick facts strip */}

@@ -71,3 +71,7 @@
 - No rate, budget, discount, booking integration or conversion-definition changes.
 - Consent records are browser-local, not a central server-side audit ledger.
 - Preview builds disable all live measurement regardless of preference.
+
+## Syracuse hotel search pages
+- On desktop and mobile, the Syracuse shopper and airport heroes offer Check dates (existing Cloudbeds destination) and Compare suites (/rooms).
+- The visitor guide leads to the shopper page; all three retain independent headings and canonical URLs. Airport copy limits included parking to the stay and does not offer a shuttle.

@@ -75,11 +75,11 @@ export const PAGE_SEO: Record<string, { title: string; description: string }> = 
   },
   "/hotels-syracuse-ny": {
     title: "All-Suite Hotel Near Syracuse, NY | Cicero Grand - Syracuse North",
-    description: "Stay near Syracuse at Cicero Grand in Cicero, NY. All-suite rooms, free hot breakfast, indoor pool and free parking off I-81 Exit 98. Book direct.",
+    description: "Compare king and two-queen suites in Cicero, north of Syracuse off I-81. Free hot breakfast, an indoor pool and parking during your stay. Check your dates.",
   },
   "/hotel-syracuse-ny": {
-    title: "Visiting Syracuse? Stay in Cicero, NY | Cicero Grand - Syracuse North",
-    description: "Visiting Syracuse for work, an event or a getaway? Explore Cicero Grand's suites in Cicero, NY, with free breakfast and parking. Check availability.",
+    title: "Syracuse Visitor Guide from Cicero | Cicero Grand - Syracuse North",
+    description: "Plan a campus visit, hospital appointment or event in Syracuse from Cicero. Find destination guides and practical tips for getting there and parking.",
   },
   "/micron-crew-long-stay": {
     title: "Micron Crew & Extended-Stay Hotel | Cicero Grand - Syracuse North",

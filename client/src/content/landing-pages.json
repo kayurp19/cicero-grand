@@ -110,9 +110,9 @@
   "syracuse-airport": {
     "path": "/hotels-near-syracuse-airport",
     "title": "Hotel Near Syracuse Hancock Airport (SYR) | Cicero Grand - Syracuse North",
-    "description": "Visiting Syracuse Hancock Airport (SYR)? Stay at Cicero Grand in Cicero, NY, with all-suite rooms, free breakfast and parking. Check dates and direct availability.",
-    "h1": "Hotels Near Syracuse Hancock International Airport (SYR)",
-    "subtitle": "All-suite stays in Cicero, NY, with easy I-81 access, free breakfast and free parking during your stay.",
+    "description": "Stay in a suite near Syracuse Hancock Airport (SYR) in Cicero, NY. Hot breakfast and parking during your stay are included. Arrange airport transportation separately.",
+    "h1": "All-suite hotel near Syracuse Hancock Airport (SYR)",
+    "subtitle": "Stay in Cicero before or after your flight. Hot breakfast and parking during your stay are included. Arrange your own airport ride; extended parking is not included.",
     "venue": {
       "name": "Syracuse Hancock International Airport (SYR)",
       "address": "1000 Col. Eileen Collins Blvd, Syracuse, NY 13212",
@@ -860,17 +860,17 @@
   },
   "syracuse-hotels": {
     "path": "/hotels-syracuse-ny",
-    "title": "Hotels in Syracuse NY · Cicero Grand - Syracuse North · All-Suite",
-    "description": "Looking for hotels in Syracuse, NY? The Cicero Grand is an all-suite hotel just outside the city — minutes from Micron, Destiny USA, the Dome, and the airport. Free breakfast, indoor pool, free parking.",
+    "title": "All-Suite Hotel Near Syracuse, NY | Cicero Grand - Syracuse North",
+    "description": "Compare king and two-queen suites in Cicero, north of Syracuse off I-81. Free hot breakfast, an indoor pool and parking during your stay. Check your dates.",
     "h1": "All-suite hotel near Syracuse",
-    "subtitle": "All-suite stays in Cicero, NY, with access to Syracuse, Micron in Clay and Syracuse Hancock Airport.",
+    "subtitle": "Choose a king or two-queen suite in Cicero, north of Syracuse off I-81. Every stay includes hot breakfast, Wi-Fi and parking.",
     "venue": {
       "name": "Syracuse, NY",
-      "address": "Central New York · Onondaga County",
+      "address": "5875 Carmenica Drive, Cicero, NY 13039",
       "drive": "10–18 minutes",
       "miles": "I-81 Exit 98"
     },
-    "ogImage": "/photos/exterior-1.jpg",
+    "ogImage": "/photos/king-suite.jpg",
     "highlights": [
       "All-suite hotel in Cicero, NY",
       "Microwave and mini-fridge in every suite",
@@ -1375,8 +1375,8 @@
   },
   "syracuse-hotel": {
     "path": "/hotel-syracuse-ny",
-    "title": "Hotel in Syracuse, NY · Cicero Grand - Syracuse North · All-Suite, Free Parking & Breakfast",
-    "description": "The Cicero Grand is the top-rated all-suite hotel near Syracuse, NY — 15 min from downtown, 16 min from Syracuse University & JMA Dome, 6 min from Micron's Clay megafab. Free parking, free hot breakfast, pet-friendly. Explore our direct-booking perks.",
+    "title": "Syracuse Visitor Guide from Cicero | Cicero Grand - Syracuse North",
+    "description": "Plan a campus visit, hospital appointment or event in Syracuse from Cicero. Find destination guides and practical tips for getting there and parking.",
     "h1": "Plan your Syracuse visit",
     "subtitle": "Campus visits, medical appointments, airport arrivals and event nights: plan your route from our all-suite hotel in Cicero.",
     "venue": {

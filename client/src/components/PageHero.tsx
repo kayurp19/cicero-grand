@@ -15,9 +15,10 @@ interface PageHeroProps {
    */
   seoH1?: string;
   compactTitle?: boolean;
+  actions?: ReactNode;
 }
 
-export function PageHero({ eyebrow, title, intro, image, align = 'left', seoH1, compactTitle = false }: PageHeroProps) {
+export function PageHero({ eyebrow, title, intro, image, align = 'left', seoH1, compactTitle = false, actions }: PageHeroProps) {
   const alignCls = align === 'center' ? 'text-center mx-auto' : '';
   return (
     <section className="relative pt-[72px] bg-foreground text-background">
@@ -55,6 +56,7 @@ export function PageHero({ eyebrow, title, intro, image, align = 'left', seoH1, 
                 {intro}
               </p>
             )}
+            {actions && <div className="mt-5 flex flex-wrap items-center gap-4">{actions}</div>}
           </div>
         </div>
       </div>
